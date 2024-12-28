@@ -1,0 +1,36 @@
+Question Type Display Name,Question Type,Result Type,Multiple Question Type
+Multiple Choice,0,integer,FALSE
+Slider,3,numeric,FALSE
+Time Picker,1,integer,FALSE
+Reducing Slider,2,integer,FALSE
+Core Affect Grid,4,integer(s),TRUE
+Multimedia Response,5,character,FALSE
+Informational Fullscreen,6,NA,FALSE
+Multiple Select,7,integer,TRUE
+Discrete Slider,8,integer,FALSE
+One Question Survey,9,NA,FALSE
+Time Scale Slider,2,integer,FALSE
+Unit Scale Slider,2,integer,FALSE
+Draw Graph,10,other,FALSE
+Free Response,11,character,FALSE
+Time Picker With Response,12,integer,FALSE
+Continuous Location,13,other,FALSE
+Multiple Reducing Slider,14,NA,TRUE
+Multiple Time Scale Slider,15,NA,TRUE
+Multiple Unit Scale Slider,16,NA,TRUE
+Multiple Slider,17,NA,TRUE
+Multiple Discrete Slider,18,NA,TRUE
+Time Picker Spinner,19,integer,FALSE
+End Survey,20,NA,FALSE
+End Block,21,NA,FALSE
+Time Picker With Checkboxes,22,integer,FALSE
+Multimedia Image,23,character,FALSE
+Webview,24,character,TRUE
+Numeric,25,numeric,FALSE
+Image Select Response,26,integer,FALSE
+Cognitive Test,27,other,FALSE
+Multiple Short Free Response,28,NA,TRUE
+Multimedia Video,29,character,FALSE
+Numeric Picker,30,numeric,FALSE
+Cognitive Test - Webview,31,character,FALSE
+Forced Choice,32,integer,FALSE
