@@ -12,16 +12,18 @@ if(Sys.getenv("SINGULARITY_CONTAINER")=="") {
 p_load(jsonlite)
 p_load(collections)
 conflict_prefer_all("dplyr", quiet=TRUE)
+conflicts_prefer(hms::hms, curl::parse_date)
 
-# TODO: Put this in whichever package folder it should go in (inst?)
-WearIT.blockTypes <- ifelse(file.exists("question_types.csv"),
-                            read.csv("question_types.csv"),
-                            # Shim for RStudio development
-                            ifelse(rstudioapi::isAvailable(),
-                                   read.csv(file.path(rstudioapi::getActiveProject(),
-                                               "inst/question_types.csv")),
-                                   read.csv(system.file("inst", "question_types.csv",
-                                                        package="WearItReadR"))))
+# # TODO: Put this in whichever package folder it should go in (inst?)
+# WearIT.blockTypes <- ifelse(file.exists("question_types.csv"),
+#                             read.csv("question_types.csv"),
+#                             # Shim for RStudio development
+#                             ifelse(rstudioapi::isAvailable(),
+#                                    read.csv(file.path(rstudioapi::getActiveProject(),
+#                                                "inst/question_types.csv")),
+#                                    read.csv(system.file("inst", "question_types.csv",
+#                                                         package="WearItReadR"))))
+
 
 # getWearItCredentials
 #

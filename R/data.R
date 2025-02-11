@@ -1,0 +1,15 @@
+#' Wear-IT Block Types and related metadata
+#'
+#' Information about Wear-IT API's encoding of item and block types
+#'
+#'
+#' @format ## `WearIT.blockTypes`
+#' A data frame with 7,240 rows and 60 columns:
+#' \describe{
+#'   \item{Question.Type.Display.Name}{Human-readable name of the question type}
+#'   \item{Question.Type}{Integer code used by Wear-IT for this type}
+#'   \item{Result.Type}{Representation type of output (integer, numeric, string, or NA)}
+#'   \item{Multiple.Question.Type}{Boolean: does this question type return multiple answers?}
+#' }
+#' @source Assembled via the Wear-IT Server.
+"WearIT.blockTypes"
