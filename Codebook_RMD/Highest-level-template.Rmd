@@ -1,0 +1,101 @@
+---
+title: "Mock Codebook"
+author: "Kile, O. E., & Brick, R. T."
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc-depth: 5 
+---
+
+
+```{r library, include = FALSE}
+library(knitr)
+
+#############################
+# Knit expand provenance
+#############################
+
+# 1.) Highest Level Template.Rmd
+
+# 2.) Codebook.Rmd
+
+# 3.) DataTypes/question_type_no_space.Rmd
+
+#############################
+#############################
+#############################
+
+
+#Title Page
+title <- "Recovery Community Center Project"
+authors <- "Timothy R. Brick, Ethan O. Kile"
+funding <- "Funded by Pennsylvania State University"
+##Add in graphic
+
+
+#Abstract page
+abstract <- "This study was conducted.... who what where when"
+
+
+##Brief description of study 
+summary <- "This study found..... x y and z"
+
+
+
+##Study aims 
+
+##History, and date of data collection 
+
+##Location of data collection 
+
+##People involved and respective roles of those people 
+
+##Who, what, where, when, + what did you do 
+
+
+
+
+#Executive Summary (optional) 
+#Effectively a results page summarizing main findings of the study 
+#May not be necessary for all studies, especially those without any results thus far and for large scale data collection ventures without any one main aim that can be confirmed by a few analyses,  
+#.... but strongly suggested? 
+
+
+
+
+
+#Variable List
+#Load survey_data
+thisData <- read.csv("loadedData/survey_data.csv")
+
+#Load block_map
+blockMap <- read.csv("loadedData/block_map.csv")
+
+#Load survey_info
+surveyInfo <- read.csv("loadedData/survey_info.csv")
+
+#Load responseMap
+responseKey <- read.csv("loadedData/responseMap.csv")
+
+
+###############
+## Take out practice questions (this will need to go into the processing of the data)
+###############
+
+thisData <- thisData[thisData$Survey.Name == "Daily Diary",]
+
+blockMap <- blockMap[!grepl("Practice", blockMap$Survey), ]
+
+
+```
+
+
+```{r knit_expand, include = FALSE}
+out <- knit_expand("Codebook.Rmd")
+
+```
+
+
+`r knit(text=out)`
+

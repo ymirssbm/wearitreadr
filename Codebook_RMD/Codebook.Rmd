@@ -1,0 +1,78 @@
+---
+
+# Title Page
+## Name of study: 
+
+{{title}}
+
+## Authors: 
+
+{{authors}}
+
+## Desired graphic
+
+## Funding source: 
+
+{{funding}}
+
+
+---
+
+
+# Abstract Page
+
+{{abstract}}
+
+
+---
+
+
+# Effective Summary
+
+{{summary}}
+
+
+---
+
+
+# Variable List
+
+
+
+```{r test, include = FALSE}
+library(knitr)
+library(dplyr)
+
+blockMap <- blockMap %>%
+  left_join(surveyInfo %>% select(Item.ID, Item.Type), by = "Item.ID")
+
+out2 <- ""
+
+
+
+for(blockIdx in 1:nrow(blockMap)) {
+  thisBlock <- blockMap[blockIdx, ]
+  
+  if(thisBlock$Item.Type == "Question") {
+    attach(thisBlock)
+    question_type <- thisBlock$Question.Type.Display.Name
+    question_type_no_space <- gsub(" ", "", question_type)
+
+    out2 <- paste(
+      out2,
+      knit_expand(
+        file = paste0("DataTypes/", question_type_no_space, ".Rmd"),
+        question_text = thisBlock$Question.Text,
+        item_id = thisBlock$Item.ID,
+        question_type = thisBlock$Question.Type.Display.Name,
+        result_type = thisBlock$Result.Type,
+        question_id = thisBlock$Question.ID
+      )
+    )
+    detach(thisBlock)
+  }
+}
+```
+
+`r knit(text=out2)`
+

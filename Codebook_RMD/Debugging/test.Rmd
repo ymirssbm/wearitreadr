@@ -1,0 +1,18 @@
+---
+title: "test"
+output: html_document
+---
+
+```{r, include = F}
+print("error")
+
+```
+
+
+```{r}
+summed <- a + b
+
+print(summed)
+
+
+```

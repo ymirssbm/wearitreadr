@@ -3,14 +3,24 @@ output: html_document
 editor_options: 
   chunk_output_type: console
 ---
+
+```{r, include = FALSE}
+library(knitr)
+
+```
+
 # {{Survey_Name}}
 ```{r populate, include=FALSE}
-thisData <- studyData$data
+thisData <- {thisData}
 ```
 
 
 Survey block diagram:
-```{r}
+```{r,include=FALSE}
+blockMap <- {{blockMap}}
+surveyInfo <- {{surveyInfo}}
+responseKey <- {{responseKey}}
+output_set <- {{output_set}}
 
 ```
 
@@ -35,13 +45,10 @@ ggplot(thisByDay, aes(x=dayOfStudy, y=PctCompleted)) +
 ```
 
 ```{r echo=FALSE}
-# TOOD: Pass these in from the higher-level template
-blockMap <- read.csv("ExampleData/BlockMap.csv")
-surveyInfo <- read.csv("ExampleData/SurveyInfo.csv")
-responseKey <- read.csv("ExampleData/ResponseKey.csv")
-output_set <- ""
+
 
 for(blockIdx in 1:nrow(blockMap)) {
+  blockIdx <- blockIdx
   thisBlock <- blockMap[blockIdx,]
   if(thisBlock$Item.Type == "Question") {
     if(thisBlock$Question.Type.Display.Name == "Informational Fullscreen") {
@@ -53,6 +60,8 @@ for(blockIdx in 1:nrow(blockMap)) {
   }
 }
 ```
+
+
 
 `r knit(text=out)`
 
