@@ -1,0 +1,58 @@
+---
+
+### Title Page
+#### Name of study: 
+
+{{title}}
+
+#### Authors: 
+
+{{authors}}
+
+#### Desired graphic
+
+#### Funding source: 
+
+{{funding}}
+
+
+---
+
+
+### Abstract Page
+
+{{abstract}}
+
+
+---
+
+
+### Effective Summary
+
+{{summary}}
+
+
+---
+
+
+### Variable List
+
+
+
+```{r test, include = FALSE}
+library(knitr)
+recurse <- nrow(blockMap)
+item_id <- blockMap$Item.ID[recurse]
+question_type <- blockMap$Question.Type.Display.Name[recurse]
+question_type_no_space <- gsub(" ", "", question_type)
+question_text <- blockMap$Question.Text[recurse]
+result_type <- blockMap$Result.Type[recurse]
+question_id <- blockMap$Question.ID[recurse]
+n <- sum(length(unique(thisData$External.ID)))
+
+
+out2 <- knit_expand("VariablePage.Rmd")
+
+```
+
+`r knit(text=out2)`

@@ -1,0 +1,136 @@
+---
+
+### Title Page
+#### Name of study: 
+
+{{title}}
+
+#### Authors: 
+
+{{authors}}
+
+#### Desired graphic
+
+#### Funding source: 
+
+{{funding}}
+
+
+---
+
+
+### Abstract Page
+
+{{abstract}}
+
+
+---
+
+
+### Effective Summary
+
+{{summary}}
+
+
+---
+
+
+### Variable List
+
+
+
+```{r test, include = FALSE}
+library(knitr)
+library(dplyr)
+library(tidyr)
+
+      
+
+blockMap <- blockMap %>%
+  left_join(surveyInfo %>% select(Item.ID, Item.Type), by = "Item.ID")
+
+out2 <- ""
+
+
+
+for(blockIdx in 1:nrow(blockMap)) {
+  thisBlock <- blockMap[blockIdx, ]
+  
+  if(thisBlock$Item.Type == "Question") {
+    attach(thisBlock)
+    
+    # Make check for multiple slider and call a for loop to iteratively call each quesiton so that the Table of Contents is generated
+    if (thisBlock$Question.Type.Display.Name == "Multiple Slider") {
+      
+      question_id = thisBlock$Question.ID
+          
+      # String split and unlist on current question id
+      raw_data <- unlist(strsplit(thisData$User.Response[thisData$Question.ID == question_id], ","))
+      
+      
+      # Split on colon now keeping the question identifier and user response together
+      temp_df <- as.data.frame(do.call(rbind, strsplit(raw_data, split = ":")))
+      
+      # Convert to numeric
+      temp_df$V2 <- as.numeric(temp_df$V2)
+      
+      # Remove missingness from data frame so that it doesn't try to group by NA values
+      no_missing_df <- temp_df[complete.cases(temp_df), ]
+      
+
+      # Add a row ID to preserve position within each group
+      no_missing_df <- no_missing_df %>%
+        group_by(V1) %>%
+        mutate(row_id = row_number()) %>%
+        ungroup()
+      
+      # Pivot to wide format
+      wide_df <- no_missing_df %>%
+        pivot_wider(names_from = V1, values_from = V2) %>%
+        select(-row_id)
+       
+      
+      # Now call for loop for each column in the dataframe we created
+      for (col in 1:ncol(wide_df)) {
+        
+        # Grab current variable
+        thisVar <- wide_df[,col]
+        
+        
+        # Grab question text
+        question_text = responseKey$definition[responseKey$question == question_id & responseKey$value == names(thisVar)]
+      
+        out2 <- paste0(
+          out2,
+          knit_expand(
+            file = "DataTypes/MultipleSlider.Rmd",
+            question_text = question_text
+          )
+        )
+      }
+         
+    # If not multiple slider type, proceed as usual
+    } else  {
+      
+    question_type <- thisBlock$Question.Type.Display.Name
+    question_type_no_space <- gsub(" ", "", question_type)
+
+    out2 <- paste(
+      out2,
+      knit_expand(
+        file = paste0("DataTypes/", question_type_no_space, ".Rmd"),
+        question_text = thisBlock$Question.Text,
+        item_id = thisBlock$Item.ID,
+        question_type = thisBlock$Question.Type.Display.Name,
+        result_type = thisBlock$Result.Type,
+        question_id = thisBlock$Question.ID
+      )
+    )
+    }
+    detach(thisBlock)
+  }
+}
+```
+
+`r knit(text=out2)`
+

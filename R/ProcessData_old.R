@@ -6,7 +6,6 @@ p_load(lubridate)
 p_load(hms)
 p_load(crul)
 p_load(curl)  # #TODO: Replace with CRUL functions
-p_load(logger)
 if(Sys.getenv("SINGULARITY_CONTAINER")=="") {
   p_load(keyring)  # Won't run if running on RC in a container
 }
@@ -36,7 +35,7 @@ conflicts_prefer(hms::hms, curl::parse_date)
 # @param [String] baseURL Base URL, in case you have a variant server
 #
 # @return A list containing the auth string and data URL.
-wearIT_authorize <- function(study_ID = "1045",
+wearIT_authorize <- function(study_ID = "1000",
                              base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api",
                              fmt_date = "%YYYY-mm-dd",
                              key_name = "WearIT-API-key",
@@ -102,7 +101,6 @@ wearIT_authorize <- function(study_ID = "1045",
   }
   authkey <- paste0("?api_token=", auth)
   dataURL <- paste(base_URL, "getData", study_ID, sep="/")
-
   nextURL <- dataURL
   crulConn <- HttpClient$new(
     url = base_URL,
@@ -288,11 +286,11 @@ getFitbitData <- function(participant, datelist, endpointInfo,
 # ggplot(filter(splitSleep, isMainSleep==TRUE), aes(x=startDate, y=startTime)) + geom_crossbar(stat="identity", color="blue", fill="blue", aes(ymin=startTime, ymax=endTime, group=startDate)) + geom_linerange(aes(y=hms(0,0,0), ymin=hms(0,0,0), ymax=hms(0,0,24))) + stat_summary(aes(x=startDate, yintercept=meanStart), geom="hline", fun="mean") + stat_summary(aes(x=startDate, yintercept=meanEnd), geom="hline", fun="mean")
 
 
-parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount=1) {
+parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount=3) {
 
   # Process metadata
   metaJSON <- studyJSON
-  if(simpleMeta && metaCount <= length(studyJSON)) {
+  if(simpleMeta && metaCount >= length(studyJSON)) {
     metaJSON <- studyJSON[1:metaCount]
   }
 
@@ -310,25 +308,16 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
   # browser()
 
   # Process Survey Questions
-  log_info("Processing Survey Questions.")
   survey_data <- data.frame()
+  studyCount <- 1
+  for(a_data_set in studyJSON) {
+    if(studyCount %% 100 == 0) {message("Processing set ", studyCount)}
+    studyCount <- studyCount + 1
+    survey_data <- processStudyData(a_data_set$data, survey_data)
+  }
 
-  # Extract full set of just the data parts
-  unwrappedJSON <- unwrap(studyJSON)  # Combine HTML pulls
-  unwrappedData <- unwrappedJSON[names(unwrappedJSON) == "data"] # Get the data elements
-  fullDataSet <- unwrap(unwrappedData)
-  metaNames <- setdiff(names(fullDataSet[[1]]), "User Responses")
-  # Complex unpacking: pull the data and non-data elments from each block and stack'em
-  survey_data <- map_dfr(fullDataSet, \(x){data.frame(data.frame(t(unlist(x[metaNames]))), map_dfr(x$`User Responses`,unlist))})
-
-####################### Changed studyDataSet to survey_data so it has proper name ~ Ethan
-
-
-
-
-  # Note that this will only grab the first External ID.
-  # TODO: Use a handleOneEntry() function that handles EIDs better
-  # browser()
+  survey_data <- dplyr::rename(survey_data, "Question.ID"="Question")
+  names(survey_data) <- gsub("[ ]", ".", names(survey_data))
 
   # Handle Timezones (Ugh)
   # TZLookup <- c("US/Eastern"=0, "US/Central"=1,
@@ -363,17 +352,8 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
  # names(studyKey$SurveyInfo) <- gsub("[ ]", ".", names(studyKey$SurveyInfo))
 
   # browser()
-
-  ######### Adding a temp fix check to see if Question.ID is getting named Question, if so rename it ~ Ethan
-  if("Question" %in% names(survey_data)) { names(survey_data)[names(survey_data) == "Question"] <- "Question.ID" }
-
-
-
   survey_answers <- survey_data |>
     left_join(block_map, by=join_by(Question.ID, Item))
-
-  if(!"Short.Descriptor" %in% names(survey_data)) { survey_data$Short.Descriptor <- survey_data$Item} #this is a temporary default, and we'll need to figure out whether there's a better approach.
-  if(!"Cog.Test.Result" %in% names(survey_data)) { survey_data$Cog.Test.Result <- rep(NA, nrow(survey_data))} #this is a temporary default, and we'll need to figure out whether there's a better approach.
 
   survey_question_lookup <- survey_data |>
                         group_by(Survey.ID, Survey.Name, Question.ID, Item, Short.Descriptor) |>
@@ -399,7 +379,7 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
              Result.Type == "integer" ~ as.numeric(User.Response),
              .default=NA))
   # browser()
-  czogtest_data <- survey_data %>%
+  cogtest_data <- survey_data %>%
                     filter(!is.na(Cog.Test.Result)) %>%
                     cogdata_unnest()
 #  cognames <- list(names(cogtest_data), paste(names(cogtest_data), "cog", sep="."))
@@ -414,11 +394,11 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
                   pivot_wider(names_from=c(Short.Descriptor),
                               values_from=c(User.Response))
 
-  return(list(questionMap=as.data.frame(studyKey$SurveyInfo),
+  return(list(#questionMap=as.data.frame(studyKey$SurveyInfo),
               responseMap=as.data.frame(studyKey$ResponseKey),
               surveyData=as.data.frame(survey_wide),
-              surveyCombined=as.data.frame(survey_combined)))
-              #cogtest_data = as.data.frame(cogtest_data))) Just took this out ~ Ethan
+              surveyCombined=as.data.frame(survey_combined),
+              cogtest_data = as.data.frame(cogtest_data)))
 
   # Handle the stranger item types
   # id_Data <- processIdentifierData(studyJSON$IDlist)
@@ -773,27 +753,26 @@ processSubQuestions <- function(thisCol, keyInfo, qName, subRequest=NA, verbose=
   return(newCols)
 }
 
-# getStudyData
+# getStudyJSON
 #
 #   Pulls down all the study JSON in raw format.  Mostly, this function just
 #   makes repeated requests and concatenates the JSON data
 #
 #
-# @param [String] study_ID A file containing just the study ID number # I CHANGED THIS FROM studyID to study_ID ~ ethan
+# @param [String] studyID A file containing just the study ID number
 # @param [String] keyFile A file containing just the app key
 # @param [String] baseURL Base URL, in case you have a variant server
 #
 # @return A list containing the auth string and data URL.
 
-getStudyData <- function(study_ID = "1045", backup_key_file = "~/.auth/.wearit",
-                         base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api", ...) { # Removed a / at end of url ~ Ethan
+getStudyData <- function(studyID = "1000", keyFile = "~/.auth/.wearit",
+                         baseURL = "https://wearables.vmhost.psu.edu/wearables-survey/api/", ...) {
 
-  creds <- wearIT_authorize(study_ID = study_ID, backup_key_file = backup_key_file, base_URL = base_URL)
+  creds <- wearIT_authorize(studyID, keyFile, baseURL)
   requestResults <- makeAllRequests(creds)
-  studyData <- parseStudyJSON(requestResults, simpleMeta = TRUE)
+  studyData <- parseStudyJSON(requestResults)
 
 }
-
 
 
 # Additional block-mapping stuff
@@ -926,8 +905,6 @@ cogdata_validation <- function(original_data, unnested_data) {
               all_records_processed = len_overlap_check))
 }
 
-unwrap <- function(x) {unlist(x, recursive=FALSE)}
-
 #' Read WearIT Survey data ----
 #'
 #' \code{unnest_cogtask_data} unnests M2C2 Cogtask JSON data from WearIT platform
@@ -947,3 +924,4 @@ cogdata_unnest <- function(.data) {
     select(-Cog.Test.Result)
   return(unnested)
 }
+
