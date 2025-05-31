@@ -1,0 +1,69 @@
+---
+title: "Missingness Section"
+output: 
+  html_document:
+    toc: false
+    css: styles.css  # optional
+---
+
+```{r, echo = FALSE}
+# Made-up example stats
+minimum_value <- 2
+maximum_value <- 18
+mean_value <- 7.4
+std_value <- 3.6
+
+paste0("Min = ", minimum_value, 
+       ", max = ", maximum_value, 
+       ", mean = ", mean_value, 
+       ", std = ", std_value)
+
+icc_value <- 0.41  # Made-up value
+paste0("Estimated ICC = ", icc_value)
+
+
+```
+
+
+## Missingness Codes
+
+The following dropdown provides a reference for interpreting special numeric codes used to indicate missing or skipped responses in the dataset.
+
+<details>
+<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
+
+<br>
+
+| Code | Description           |
+|------|-----------------------|
+| -1   | Skipped by respondent |
+| -3   | No response recorded  |
+| -6   | Survey timeout        |
+| -8   | Consent withdrawn     |
+| -9   | Other missing reason  |
+
+</details>
+
+---
+
+## 1-5 Likert Scale Codes
+
+<details>
+<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view Likert scale codes</summary>
+
+<br>
+
+| Value | Description           |
+|-------|-----------------------|
+| 1     | Strongly Disagree     |
+| 2     | Disagree              |
+| 3     | Neutral               |
+| 4     | Agree                 |
+| 5     | Strongly Agree        |
+
+</details>
+
+
+
+
+

@@ -5,6 +5,10 @@
 
 ### {{question_text}}
 
+
+---
+
+
 Item ID: {{item_id}}
 
 Way the question was delivered: {{question_type}}
@@ -65,9 +69,9 @@ for (i in seq_along(names(multiple_select_table))) {
 }
 
 multiple_select_table
-hist(multiple_select_table)
+
 ```
 
 
 
----
+
