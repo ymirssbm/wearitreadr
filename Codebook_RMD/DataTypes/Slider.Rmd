@@ -1,19 +1,27 @@
+<!-- Header section -->
+
+<div class = "header-shading">
+
+### {{question_text}} <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  [{{item_id}}]
+</div>
 
 
----
+</div>
 
 
-### {{question_text}}
+
+<!-- Body -->
 
 
----
+<div class = "anchor">
 
 
-Item ID: {{item_id}}
+**Way the question was delivered:** {{question_type}}
 
-Way the question was delivered: {{question_type}}
-
-Type of data: {{result_type}}
+**Type of data:** {{result_type}}
 
 ```{r, echo = FALSE}
 ### This is a simple skip logic check
@@ -77,3 +85,5 @@ hist(thisBlock_df$User.Response, main = "Histogram", col ="#619CFF", border = "b
 
 ```
 
+
+</div>

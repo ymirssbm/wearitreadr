@@ -3,13 +3,11 @@
 ---
 
 
-### {{question_text}}
+### {{question_text}} <span style="font-weight: bold; color: #2a5caa;">Item ID: {{item_id}}</span>
 
 
 ---
 
-
-Item ID: {{item_id}}
 
 Way the question was delivered: {{question_type}}
 

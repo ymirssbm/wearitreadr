@@ -1,23 +1,31 @@
+<!-- Header section -->
+
+<div class = "header-shading">
+
+### {{question_text}} <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  [{{item_id}}]
+</div>
 
 
----
-
-
-### {{question_text}}
-
-
----
-
-
-Item ID: {{item_id}}
-
-Way the question was delivered: {{question_type}}
-
-Type of data: {{result_type}}
+</div>
 
 
 
-```{r, echo = FALSE}
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Way the question was delivered:** {{question_type}}
+
+**Type of data:** {{result_type}}
+
+
+
+```{r, echo = FALSE, results = 'asis'}
 ### This is a simple skip logic check
 ### If this is a conditional question, print out parent item_id and parent question text
 
@@ -34,7 +42,17 @@ if (item_id %in% blockMap$Conditional.Child.Item.ID) {
   parent_row <- subset(blockMap, Conditional.Child.Item.ID == item_id)
   parent_text <- parent_row$Question.Text
   parent_itemID <- parent_row$Item.ID
-  cat("This question is only delivered if participant answered question ", parent_itemID, ": ", parent_text)
+  
+  # Display message
+  msg <- paste0(
+    "<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; ",
+    "border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'>",
+    "<strong>Note:</strong> This question is only delivered if participant answered question ",
+    "<em>", parent_itemID, "</em>: <em>", parent_text, "</em>.",
+    "</div>"
+  )
+  
+  cat(msg)
 }
 
 
@@ -53,7 +71,7 @@ if (item_id %in% blockMap$Conditional.Child.Item.ID) {
 ```
 
 
-```{r, echo = FALSE}
+```{r, echo = FALSE, results = 'asis'}
 ###################################################
 ### Missingness
 ####################################################
@@ -115,9 +133,10 @@ if (item_id %in% blockMap$Conditional.Child.Item.ID) {
 
     
   # Print out missingness report
-  print(report)
+  cat(report)
 
 ```
 
 
 
+</div>
