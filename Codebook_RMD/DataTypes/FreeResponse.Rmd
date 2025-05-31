@@ -5,6 +5,10 @@
 
 ### {{question_text}}
 
+
+---
+
+
 Item ID: {{item_id}}
 
 Way the question was delivered: {{question_type}}
@@ -49,4 +53,71 @@ if (item_id %in% blockMap$Conditional.Child.Item.ID) {
 ```
 
 
----
+```{r, echo = FALSE}
+###################################################
+### Missingness
+####################################################
+# This displays the count of missingness for people who actually recieved the item (i.e.... out of the 100 people it was delivered to, 50 responded to this question)
+####################################################
+#
+# If skip logic exists, display the amount it was delivered to, otherwise list count
+#
+####################################################
+
+## 1.) Calculate values
+
+  ## Get the count of the number of parent_itemID rows in the data where User.Response does not equal NA
+  
+  ### Check if parent_itemID exists
+  if (exists("parent_itemID") == T) {
+    
+    ## If it exists.... Grab count of people who answered the PARENT question
+    
+    n_delivered_to <- length(thisData[thisData$Item == parent_itemID & !is.na(thisData$User.Response), ])
+    
+  } else {
+    
+    ## Grab the count of people who answered the CURRENT question
+    n_delivered_to <- length(thisData[thisData$Item == item_id, ])
+  }
+
+
+  ## Get the number of people who answered the current survey question
+  n <- length(thisData[thisData$Item == item_id & !is.na(thisData$User.Response), ])
+
+  ## Calculate percentage
+  if (n_delivered_to > 0) {
+  percentage <- round((n / n_delivered_to) * 100, 1)
+  } else {
+    percentage <- NA
+  }
+
+  
+  
+## 2.) Print out the results
+  
+  # If this is a skip logic question, display special type of missingness....
+    report <- if (is.na(percentage)) {
+      
+      # If delivered to no one....
+      paste0("This question was not delivered to any participants")
+   
+    
+      # If delivered to some....  
+      } else if (item_id %in% blockMap$Conditional.Child.Item.ID) {
+      paste0("out of the ", n_delivered_to, " people this question was delivered to, ", n, " responded to this question... or... ", percentage, "%")
+  
+        
+      # If delivered to everyone.... 
+      } else {
+       paste0("n = ", n, ", ", percentage, "%")
+    }
+
+    
+  # Print out missingness report
+  print(report)
+
+```
+
+
+

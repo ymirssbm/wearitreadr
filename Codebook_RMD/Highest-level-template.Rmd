@@ -1,13 +1,16 @@
 ---
-title: "Mock Codebook"
+title: "Recovery Community Center Project Mock Codebook"
 author: "Kile, O. E., & Brick, R. T."
-date: "`r Sys.Date()`"
+date: "Codebook Generated `r Sys.Date()`"
 output: 
   html_document:
     toc: true
-    toc-depth: 5 
+    toc-depth: 5
+    css: styles.css
+    includes:
+      before_body: logo.html
 ---
-
+  
 
 ```{r library, include = FALSE}
 library(knitr)
@@ -30,16 +33,19 @@ library(knitr)
 #Title Page
 title <- "Recovery Community Center Project"
 authors <- "Timothy R. Brick, Ethan O. Kile"
-funding <- "Funded by Pennsylvania State University"
-##Add in graphic
+funding <- "This work has been funded by Pennsylvania State University, Department of Human Development and Family Studies"
+
+
+
+
 
 
 #Abstract page
-abstract <- "This study was conducted.... who what where when"
+abstract <- "This study looked to review the current EMA reporting standards for complex data types as to assess areas in need of improvement. This work also looked to develop a reference implementation that can be used to help EMA researchers adhere to our proposed gold standard EMA reporting standard. The mock codebook has been generated from data provided by Hobart H. Cleveland from his Recovery Community Center Project. This work has been conducted by Ethan O. Kile & Timothy R. Brick with the help of the Wear-IT team at the Department of Human Development and Family Studies at Pennsylvania State University."
 
 
 ##Brief description of study 
-summary <- "This study found..... x y and z"
+summary <- "This study found that current EMA reporting standards, especially in regard to complex study designs, are lacking in areas of reporting user interface elements, missingness, skip logic and adaptive triggers. Additionally, this study has also found that it is possible to streamline the reporting of essential para and meta data elements through automated codebook generation as to ensure that data is findable, accessible, interoperable and reusable (Gilmore et al., 2018)."
 
 
 
@@ -86,6 +92,9 @@ responseKey <- read.csv("loadedData/responseMap.csv")
 thisData <- thisData[thisData$Survey.Name == "Daily Diary",]
 
 blockMap <- blockMap[!grepl("Practice", blockMap$Survey), ]
+
+# Not sure where these are coming from, they are repeats but not marked practice
+blockMap <- blockMap[!grepl("Item 6026", blockMap$Survey), ]
 
 
 ```

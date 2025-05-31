@@ -15,6 +15,7 @@ Way the question was delivered: {{question_type}}
 
 Type of data: {{result_type}}
 
+
 ```{r, echo = FALSE}
 ### This is a simple skip logic check
 ### If this is a conditional question, print out parent item_id and parent question text
@@ -49,31 +50,36 @@ if (item_id %in% blockMap$Conditional.Child.Item.ID) {
 
 
 ```
+```{r, echo = FALSE}
+# This is a simple check and display for the type of data
+#if (!is.na(blockMap$Result.Type[blockMap$Question.ID == "{{question_id}}"])) {
+#  cat("This data type is ", blockMap$Result.Type[blockMap$Question.ID == "{{question_id}}"])
+#}
+
+```
+
+
 
 ```{r, echo = FALSE}
-thisBlock_df <- thisData[thisData$Question.ID == "{{question_id}}",]
-thisBlock_df$User.Response <- as.numeric(thisBlock_df$User.Response)
+# This is a simple frequency table
+
+multiple_select_table <- table(unlist(strsplit(thisData$User.Response[thisData$Question.ID == "{{question_id}}"], ",")))
+multiple_select_table <- multiple_select_table[order(as.numeric(names(multiple_select_table)))]
 
 
-# Grab basic descriptives
-minimum_value <- round(min(thisBlock_df$User.Response, na.rm = TRUE), 2)
-maximum_value <- round(max(thisBlock_df$User.Response, na.rm = TRUE), 2)
-mean_value <- round(mean(thisBlock_df$User.Response, na.rm = TRUE), 2)
-std_value <- round(sd(thisBlock_df$User.Response, na.rm = TRUE), 2)
+for (i in seq_along(names(multiple_select_table))) {
+  val <- as.numeric(names(multiple_select_table)[i])
+  match_row <- responseKey$definition[responseKey$value == val & responseKey$question == "{{question_id}}"]
+  
+  if (length(match_row) == 1) {
+    names(multiple_select_table)[i] <- match_row
+  }
+}
 
-
-paste0("Min = ", minimum_value, ", max = ", maximum_value, ", mean = ", mean_value, ", std = ", std_value)
-
+multiple_select_table
 
 
 ```
 
-```{r, echo = FALSE}
-#################
-# This is a basic histogram for continous data
-######################
-hist(thisBlock_df$User.Response, main = "Histogram", col ="#619CFF", border = "black", xlab = "0 - 100 Slider")
 
-
-```
 

@@ -1,0 +1,37 @@
+body {
+  font-family: Times New Roman;
+  font-size: 24px;
+}
+
+.toc a {
+  font-weight: normal;
+  text-decoration: none;
+  color: darkblue;
+}
+
+/* Body headers - ensure they're bold */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.toc h2 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Style for code *chunks* (input) */
+pre code {
+  font-size: 18px;
+  font-family: Times New Roman;
+}
+
+/* Style for code *chunks* (input) */
+pre {
+  font-size: 18px;
+  font-family: Times New Roman;
+}
+
+/* Center All Header 1 */
+h1 {
+  text-align: center;
+}

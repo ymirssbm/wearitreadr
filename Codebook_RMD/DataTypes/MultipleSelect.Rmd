@@ -5,6 +5,10 @@
 
 ### {{question_text}}
 
+
+---
+
+
 Item ID: {{item_id}}
 
 Way the question was delivered: {{question_type}}
@@ -54,28 +58,69 @@ if (item_id %in% blockMap$Conditional.Child.Item.ID) {
 
 ```
 
+```{r, include = FALSE}
+# I'm just hiding this 
 
+##<details>
+#<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view frequency table</summary>
+```
+  
+### Descriptives {.tabset}
+
+
+#### Frequency Table
 
 ```{r, echo = FALSE}
 # This is a simple frequency table
-
 multiple_select_table <- table(unlist(strsplit(thisData$User.Response[thisData$Question.ID == "{{question_id}}"], ",")))
+
+# This gives us the raw counts, ordered for each possible response
 multiple_select_table <- multiple_select_table[order(as.numeric(names(multiple_select_table)))]
 
+# These are the numeric values in the data
+response_indicator <- names(multiple_select_table)
+
+# Make each item a character that is N = *insert count*
+n_counts <- sapply(multiple_select_table, function(x) paste0("N = ", x))
+
+
+
+
+# Next pull out the name labels
+response_labels <- list()
 
 for (i in seq_along(names(multiple_select_table))) {
   val <- as.numeric(names(multiple_select_table)[i])
-  match_row <- responseKey$definition[responseKey$value == val & responseKey$question == "{{question_id}}"]
-  
-  if (length(match_row) == 1) {
-    names(multiple_select_table)[i] <- match_row
-  }
+  response_labels[i] <- responseKey$definition[responseKey$value == val & responseKey$question == "{{question_id}}"]
 }
 
-multiple_select_table
+# Unlist 
+response_labels <- unlist(response_labels)
+ 
+# Grab percentages
+percentages <- round(100 * multiple_select_table / sum(multiple_select_table), 1)
 
+# Make characters
+percentages <- sapply(percentages, function(x) paste0(x, "%"))
+
+
+
+# Combine all into a dataframe
+df <- data.frame(Value = response_indicator, Label = response_labels, Counts = n_counts, Percentages = percentages)
+
+
+library(kableExtra)
+
+df %>%
+  kbl() %>%
+  kable_styling() %>% 
+  column_spec(3, color = "darkgreen")
 
 ```
 
 
----
+
+
+```{r, include=FALSE}
+#</details>
+```

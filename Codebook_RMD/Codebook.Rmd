@@ -1,17 +1,34 @@
 ---
 
-# Title Page
-## Name of study: 
+# **Title Page**
+
+---
+
+## Name of study
 
 {{title}}
 
-## Authors: 
+## Authors
 
 {{authors}}
 
 ## Desired graphic
 
-## Funding source: 
+```{r, echo = FALSE}
+knitr::include_graphics("images/rts.png")
+```
+
+<div style="text-align: center;">
+
+## Question Screenshot
+
+</div>
+
+```{r, echo = FALSE}
+knitr::include_graphics("images/screenshot.png")
+```
+
+## Funding source
 
 {{funding}}
 
@@ -19,7 +36,11 @@
 ---
 
 
-# Abstract Page
+# **Abstract Page**
+
+
+---
+
 
 {{abstract}}
 
@@ -27,7 +48,11 @@
 ---
 
 
-# Effective Summary
+# **Effective Summary**
+
+
+---
+
 
 {{summary}}
 
@@ -35,7 +60,7 @@
 ---
 
 
-# Variable List
+# **Variable List**
 
 
 
