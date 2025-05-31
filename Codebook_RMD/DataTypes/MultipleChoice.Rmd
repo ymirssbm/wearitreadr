@@ -1,20 +1,24 @@
+<!-- Header section -->
+
+<div class = "header-shading">
+
+### {{question_text}} <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  [{{item_id}}]
+</div>
 
 
----
+</div>
 
 
-### {{question_text}}
 
+<!-- Body -->
 
----
+<div class = "anchor">
+**Way the question was delivered:** {{question_type}}
 
-
-Item ID: {{item_id}}
-
-Way the question was delivered: {{question_type}}
-
-Type of data: {{result_type}}
-
+**Type of data:** {{result_type}}
 
 ```{r, echo = FALSE}
 ### This is a simple skip logic check
@@ -52,26 +56,100 @@ if (item_id %in% blockMap$Conditional.Child.Item.ID) {
 ```
 
 
-```{r, echo = FALSE}
-# This is a simple frequency table
-
-multiple_select_table <- table(unlist(strsplit(thisData$User.Response[thisData$Question.ID == "{{question_id}}"], ",")))
-multiple_select_table <- multiple_select_table[order(as.numeric(names(multiple_select_table)))]
-
-
-for (i in seq_along(names(multiple_select_table))) {
-  val <- as.numeric(names(multiple_select_table)[i])
-  match_row <- responseKey$definition[responseKey$value == val & responseKey$question == "{{question_id}}"]
-  
-  if (length(match_row) == 1) {
-    names(multiple_select_table)[i] <- match_row
-  }
-}
-
-multiple_select_table
-
+```{r, include = FALSE}
+# Library packages
+library(kableExtra)
+library(ggplot2)
 ```
 
 
+<button 
+  onclick="let e = document.getElementById('{{item_id}}');
+           let arrow = document.getElementById('{{item_id}}_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="{{item_id}}_arrow">▼</span>
+</button>
+
+<div id="{{item_id}}" style="display: none;">
 
 
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+#### Frequency Table
+
+```{r, echo = FALSE}
+# This is a simple frequency table
+multiple_select_table <- table(unlist(strsplit(thisData$User.Response[thisData$Question.ID == "{{question_id}}"], ",")))
+
+# This gives us the raw counts, ordered for each possible response
+multiple_select_table <- multiple_select_table[order(as.numeric(names(multiple_select_table)))]
+
+# These are the numeric values in the data
+response_indicator <- names(multiple_select_table)
+
+# Make each item a character that is N = *insert count*
+n_counts <- sapply(multiple_select_table, function(x) paste0("N = ", x))
+
+
+
+
+# Next pull out the name labels
+response_labels <- list()
+
+for (i in seq_along(names(multiple_select_table))) {
+  val <- as.numeric(names(multiple_select_table)[i])
+  response_labels[i] <- responseKey$definition[responseKey$value == val & responseKey$question == "{{question_id}}"]
+}
+
+# Unlist 
+response_labels <- unlist(response_labels)
+ 
+# Grab percentages
+percentages <- round(100 * multiple_select_table / sum(multiple_select_table), 1)
+
+# Make characters
+percentages <- sapply(percentages, function(x) paste0(x, "%"))
+
+
+
+# Combine all into a dataframe
+df <- data.frame(Value = response_indicator, Label = response_labels, Counts = n_counts, Percentages = percentages)
+
+
+
+df %>%
+  kbl() %>%
+  kable_styling() %>% 
+  column_spec(3, color = "darkgreen")
+
+```
+
+#### Barplot
+
+```{r, echo = FALSE}
+# Convert to data frame dynamically
+df <- data.frame(
+  Option = factor(names(multiple_select_table), levels = names(multiple_select_table)),
+  Count = as.numeric(multiple_select_table)
+)
+
+# Create ggplot
+ggplot(df, aes(x = Option, y = Count)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  labs(
+    title = "{{question_text}}",
+    x = "",
+    y = ""
+  ) +
+  theme_minimal()
+
+```
+
+</div>
+
+
+</div>

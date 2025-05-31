@@ -1,37 +1,101 @@
-body {
-  font-family: Times New Roman;
-  font-size: 24px;
-}
 
-.toc a {
-  font-weight: normal;
-  text-decoration: none;
-  color: darkblue;
-}
 
-/* Body headers - ensure they're bold */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
 
-.toc h2 {
-  font-weight: bold;
-  font-size: 18px;
-}
+/*============================================================================================
+				Header Styling
+============================================================================================*/
 
-/* Style for code *chunks* (input) */
-pre code {
-  font-size: 18px;
-  font-family: Times New Roman;
-}
+	/*==============================================
+		This makes all the headers bold
+	==============================================*/	
 
-/* Style for code *chunks* (input) */
-pre {
-  font-size: 18px;
-  font-family: Times New Roman;
-}
+	h1, h2, h3, h4, h5, h6 {
+	  font-weight: bold;              
+	}
 
-/* Center All Header 1 */
-h1 {
-  text-align: center;
-}
+
+	/*==============================================
+		This Centers H1 headers (main titles)
+	==============================================*/
+
+	h1 {
+	  text-align: center;            
+	}
+
+
+	/*================================================================
+		This controls the header shadings for the variable pages
+	================================================================*/
+	.header-shading {
+	  background-color: #fafafa;
+	  padding: 1px;
+	  border-radius: 0px;
+	}
+
+
+
+/*============================================================================================
+				Global Body Styling
+============================================================================================*/
+
+
+	/* ==============================================
+	   This controls body text font size and style
+	   ============================================== */
+
+	body {
+	  font-family: Times New Roman;     
+	  font-size: 20px;                 
+	}
+
+/*============================================================================================
+				Table of Contents (TOC)
+============================================================================================*/
+
+
+
+	.toc a {
+	  font-weight: normal;             /* TOC links not bold */
+	  text-decoration: none;           /* Remove underline */
+	  color: darkblue;                 /* TOC link color */
+	}
+
+
+	.toc h2 {
+	  font-weight: bold;              /* Bold section headers in TOC */
+	  font-size: 18px;                /* Smaller font for TOC headers */
+	}
+
+
+
+
+/*============================================================================================
+				Variable Page Elements
+============================================================================================*/
+
+
+	/*==============================================
+		Anchoring
+	==============================================*/
+	
+	/* This determines the margin on the left side for everything below a variable page header */
+	.anchor {
+	margin-left: 2em;
+	}
+
+
+	/*==============================================
+		Code Chunk Styling
+	==============================================*/
+
+	/* Style for inline code in pre blocks (e.g., R chunks) */
+	pre code {
+  	font-size: 18px;
+  	font-family: Times New Roman;
+	}
+
+	/* Style for preformatted text blocks */
+	pre {
+	  font-size: 18px;
+	  font-family: Times New Roman;
+	}

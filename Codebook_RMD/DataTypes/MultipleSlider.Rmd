@@ -1,16 +1,28 @@
-------------------------------------------------------------------------
+<!-- Header section -->
 
-## {{question_text}}
+<div class = "header-shading">
+
+### {{question_text}} <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  [{{item_id}}]
+</div>
 
 
----
+</div>
 
 
-Item ID: {{item_id}}
 
-Way the question was delivered: {{question_type}}
+<!-- Body -->
 
-Type of data: {{result_type}}
+
+
+<div class = "anchor">
+
+
+**Way the question was delivered:** {{question_type}}
+
+**Type of data:** {{result_type}}
 
 ```{r, echo = FALSE}
 ### This is a simple skip logic check
@@ -111,6 +123,7 @@ for (col in 1:ncol(wide_df)) {
 ```
 
 
+</div>
 
 `r knit(text=out3)`
 
