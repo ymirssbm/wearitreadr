@@ -168,6 +168,59 @@ ggplot(df, aes(x = Option, y = Count)) +
 ```
 
 
+#### Missingness
+
+
+
+```{r, echo = FALSE}
+#########################
+# Missingness descriptives
+########################
+
+
+# Made-up example stats
+minimum_value <- 2
+maximum_value <- 18
+mean_value <- 7.4
+std_value <- 3.6
+
+
+icc_value <- 0.41  # Made-up value
+
+
+```
+
+**Missingness Descriptives**
+
+Min = `r minimum_value`, max = `r maximum_value`, mean = `r mean_value`, std = `r std_value`
+
+Interclass Correlation (ICC) = `r icc_value`
+
+**Missingness Codes**
+
+<details>
+<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
+
+<br>
+
+| Code | Description           |
+|------|-----------------------|
+| -1   | Skipped by respondent |
+| -3   | No response recorded  |
+| -6   | Survey timeout        |
+| -8   | Consent withdrawn     |
+| -9   | Other missing reason  |
+
+</details>
+
+
+
+
+
+#### Screenshot
+
+
+
 </div>
 
 

@@ -59,6 +59,9 @@ if (item_id %in% blockMap$Conditional.Child.Item.ID) {
 ```
 
 ```{r, echo = FALSE}
+#########################
+# Descriptives
+#########################
 thisBlock_df <- thisData[thisData$Question.ID == "{{question_id}}",]
 thisBlock_df$User.Response <- as.numeric(thisBlock_df$User.Response)
 
@@ -69,12 +72,44 @@ maximum_value <- round(max(thisBlock_df$User.Response, na.rm = TRUE), 2)
 mean_value <- round(mean(thisBlock_df$User.Response, na.rm = TRUE), 2)
 std_value <- round(sd(thisBlock_df$User.Response, na.rm = TRUE), 2)
 
-
-paste0("Min = ", minimum_value, ", max = ", maximum_value, ", mean = ", mean_value, ", std = ", std_value)
-
-
-
 ```
+
+
+**Descriptives**
+Min = `r minimum_value`, max = `r maximum_value`, mean = `r mean_value`, std = `r std_value`
+
+
+```{r, include = FALSE}
+# Library packages
+library(kableExtra)
+library(ggplot2)
+```
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('{{item_id}}');
+           let arrow = document.getElementById('{{item_id}}_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="{{item_id}}_arrow">▼</span>
+</button>
+
+<div id="{{item_id}}" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
 
 ```{r, echo = FALSE}
 #################
@@ -85,5 +120,63 @@ hist(thisBlock_df$User.Response, main = "Histogram", col ="#619CFF", border = "b
 
 ```
 
+
+#### Missingness
+
+
+
+
+
+```{r, echo = FALSE}
+#########################
+# Missingness descriptives
+########################
+
+
+# Made-up example stats
+minimum_value <- 2
+maximum_value <- 18
+mean_value <- 7.4
+std_value <- 3.6
+
+
+icc_value <- 0.41  # Made-up value
+
+
+```
+
+**Missingness Descriptives**
+
+Min = `r minimum_value`, max = `r maximum_value`, mean = `r mean_value`, std = `r std_value`
+
+Interclass Correlation (ICC) = `r icc_value`
+
+**Missingness Codes**
+
+<details>
+<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
+
+<br>
+
+| Code | Description           |
+|------|-----------------------|
+| -1   | Skipped by respondent |
+| -3   | No response recorded  |
+| -6   | Survey timeout        |
+| -8   | Consent withdrawn     |
+| -9   | Other missing reason  |
+
+</details>
+
+
+
+
+
+
+
+#### Screenshot
+
+
+</div>
 
 </div>

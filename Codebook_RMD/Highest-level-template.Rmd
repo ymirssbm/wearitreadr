@@ -69,20 +69,34 @@ summary <- "This study found that current EMA reporting standards, especially in
 
 
 
-
-
 #Variable List
 #Load survey_data
-thisData <- read.csv("loadedData/survey_data.csv")
+thisData <- read.csv("processedData/surveyCombined.csv")
 
 #Load block_map
-blockMap <- read.csv("loadedData/block_map.csv")
+blockMap <- read.csv("processedData/questionMap.csv")
 
 #Load survey_info
 surveyInfo <- read.csv("loadedData/survey_info.csv")
 
 #Load responseMap
-responseKey <- read.csv("loadedData/responseMap.csv")
+responseKey <- read.csv("processedData/responseMap.csv")
+
+
+
+
+#Variable List
+#Load survey_data
+#thisData <- read.csv("loadedData/survey_data.csv")
+
+#Load block_map
+#blockMap <- read.csv("loadedData/block_map.csv")
+
+#Load survey_info
+#surveyInfo <- read.csv("loadedData/survey_info.csv")
+
+#Load responseMap
+#responseKey <- read.csv("loadedData/responseMap.csv")
 
 
 ###############
@@ -95,12 +109,13 @@ blockMap <- blockMap[!grepl("Practice", blockMap$Survey), ]
 
 # Not sure where these are coming from, they are repeats but not marked practice
 blockMap <- blockMap[!grepl("Item 6026", blockMap$Survey), ]
-
+blockMap <- blockMap[-1, ]
+blockMap <- blockMap[-(47:51), ]
 
 ```
 
 
-```{r knit_expand, include = FALSE}
+```{r knit_expand, include = FALSE, error = TRUE}
 out <- knit_expand("Codebook.Rmd")
 
 ```

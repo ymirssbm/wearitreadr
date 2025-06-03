@@ -785,6 +785,8 @@ processSubQuestions <- function(thisCol, keyInfo, qName, subRequest=NA, verbose=
 #
 # @return A list containing the auth string and data URL.
 
+
+
 getStudyData <- function(study_ID = "1045", backup_key_file = "~/.auth/.wearit",
                          base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api", ...) { # Removed a / at end of url ~ Ethan
 
