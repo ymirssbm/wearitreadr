@@ -42,11 +42,14 @@ knitr::include_graphics("images/rts.png")
 
 # **Variable List**
 
-```{r test, include = FALSE}
+------------------------------------------------------------------------
+
+```{r test, include = FALSE, error = TRUE}
 library(knitr)
 library(dplyr)
 
 blockMap <- blockMap %>%
+  select(-Item.Type) %>%   # drop old column if exists
   left_join(surveyInfo %>% select(Item.ID, Item.Type), by = "Item.ID")
 
 out2 <- ""
