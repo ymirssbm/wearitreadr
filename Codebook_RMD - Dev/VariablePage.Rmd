@@ -1,0 +1,55 @@
+
+
+```{r, include = FALSE}
+library(knitr)
+```
+
+### {{question_text}}
+
+Item ID: {{item_id}}
+
+Way the question was delivered: {{question_type}}
+
+Type of data: {{result_type}}
+
+```{r, include = FALSE}
+out3 <- knit_expand("DataTypes/{{question_type_no_space}}.Rmd", 
+                     question_id = question_id, 
+                     thisData = thisData, 
+                     responseKey = responseKey)
+
+```
+
+
+
+---
+
+
+```{r, include = FALSE}
+#recurse
+
+
+recurse <- {{recurse}}-1
+item_id <- blockMap$Item.ID[recurse]
+question_type <- blockMap$Question.Type.Display.Name[recurse]
+question_type_no_space <- gsub(" ", "", question_type)
+question_text <- blockMap$Question.Text[recurse]
+result_type <- blockMap$Result.Type[recurse]
+question_id <- blockMap$Question.ID[recurse]
+
+```
+
+
+
+```{r, include = FALSE}
+if(recurse > 0) {
+out3 <- paste(out3, knit_expand("VariablePage.Rmd"))
+} else {
+  out3 <- "Complete!"
+}
+
+```
+
+
+`r knit(text=out3)`
+

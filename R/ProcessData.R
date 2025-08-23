@@ -318,6 +318,13 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
   unwrappedData <- unwrappedJSON[names(unwrappedJSON) == "data"] # Get the data elements
   fullDataSet <- unwrap(unwrappedData)
   metaNames <- setdiff(names(fullDataSet[[1]]), "User Responses")
+
+  ### TEMP FIX Filter out user responses without anything to get this to run ~ Ethan
+
+  fullDataSet <- Filter(function(x) {
+    !is.null(x$'User Responses') && length(x$'User Responses') > 0
+  }, fullDataSet)
+
   # Complex unpacking: pull the data and non-data elments from each block and stack'em
   survey_data <- map_dfr(fullDataSet, \(x){data.frame(data.frame(t(unlist(x[metaNames]))), map_dfr(x$`User Responses`,unlist))})
 
@@ -385,7 +392,9 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
     mutate(Short.Descriptor=
              case_when(is.na(Short.Descriptor) ~
                          Question.ID, .default=Short.Descriptor)) |>
-    filter(!is.na(Result.Type))  # Remove Informationals and End Blocks
+    filter(!is.na(Result.Type) | Question.Type.Display.Name == "Multiple Slider")  # Remove Informationals and End Blocks
+  # added in '| Question.Type.Display.Name == "Multiple Slider"' so that it didnt get rid of multiple slider ~ Ethan
+
   survey_separated <- survey_combined |>
     mutate(Text.Response = case_when(Result.Type == "character" ~ User.Response,
                                      .default=NA),
@@ -827,7 +836,12 @@ processBlockMap <- function(json_blockmap, old_block_map=data.frame()) {
                      Sub.block=gsub("[_]", " ", Sub.block),
                      Item=gsub("[_]", " ", Item),
                      Column = gsub("[_ ]", ".", Column))
-  output <- pivot_wider(awkTall, names_from="Column", values_from = "Value")
+  output <- pivot_wider(
+    awkTall,
+    names_from = "Column",
+    values_from = "Value",
+    values_fn = list(Value = function(x) x[[1]])  # Just take the first value temp defualt ~ Ethan
+  )
   output$Question.Type <- as.integer(output$Question.Type)
   output <- left_join(output, WearIT.blockTypes, by = join_by(Question.Type))
   output <- distinct(rbind.fill(old_block_map, output))

@@ -1,0 +1,12 @@
+---
+title: "test 2"
+output: html_document
+---
+
+
+```{r}
+
+print({{df}}$x)
+
+```
+

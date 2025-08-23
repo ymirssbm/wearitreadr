@@ -1,0 +1,153 @@
+---
+title: "Recovery Community Center Project Mock Codebook"
+author: "Kile, O. E., & Brick, R. T."
+date: "Codebook Generated `r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc-depth: 5
+    css: styles.css
+    includes:
+      before_body: logo.html
+---
+
+
+```{r Highest-Level-Template-Chunk, include = FALSE}
+library(knitr)
+
+#############################
+# Knit expand provenance
+#############################
+
+# 1.) Highest Level Template.Rmd
+
+# 2.) Codebook.Rmd
+
+# 3.) DataTypes/question_type_no_space.Rmd
+
+#############################
+#############################
+#############################
+
+
+#Title Page
+title <- "Recovery General Project"
+authors <- "Timothy R. Brick, Ethan O. Kile"
+funding <- "This work has been funded by Pennsylvania State University, Department of Human Development and Family Studies"
+
+
+
+
+
+
+#Abstract page
+abstract <- "This study looked to review the current EMA reporting standards for complex data types as to assess areas in need of improvement. This work also looked to develop a reference implementation that can be used to help EMA researchers adhere to our proposed gold standard EMA reporting standard. The mock codebook has been generated from data provided by Hobart H. Cleveland from his Recovery General Project. This work has been conducted by Ethan O. Kile & Timothy R. Brick with the help of the Wear-IT team at the Department of Human Development and Family Studies at Pennsylvania State University."
+
+
+##Brief description of study 
+summary <- "This study found that current EMA reporting standards, especially in regard to complex study designs, are lacking in areas of reporting user interface elements, missingness, skip logic and adaptive triggers. Additionally, this study has also found that it is possible to streamline the reporting of essential para and meta data elements through automated codebook generation as to ensure that data is findable, accessible, interoperable and reusable (Gilmore et al., 2018)."
+
+
+
+#############
+# New data version
+#############
+
+
+# Load survey_data
+thisData <- read.csv("processedData/surveyCombined.csv")
+
+# Load block_map
+blockMap <- read.csv("processedData/questionMap.csv")
+
+# Load survey_info
+#surveyInfo <- read.csv("loadedData/survey_info.csv")
+
+# Load responseMap
+responseKey <- read.csv("processedData/responseMap.csv")
+
+ 
+
+
+#Variable List
+#Load survey_data
+#thisData <- read.csv("loadedData/survey_data.csv")
+
+#Load block_map
+#blockMap <- read.csv("loadedData/block_map.csv")
+
+#Load survey_info
+#surveyInfo <- read.csv("loadedData/survey_info.csv")
+
+#Load responseMap
+#responseKey <- read.csv("loadedData/responseMap.csv")
+
+
+######################################################################################
+## Take out practice questions (this will need to go into the processing of the data)
+######################################################################################
+
+thisData <- thisData[thisData$Survey.Name == "Daily Diary",]
+
+
+
+blockMap <- blockMap[!grepl("Practice", blockMap$Survey, ignore.case = TRUE), ]
+
+# Not sure where these are coming from, they are repeats but not marked practice
+#####################
+### Processing RCC
+####################
+#blockMap <- blockMap[!grepl("Item 6026", blockMap$Survey), ]
+#blockMap <- blockMap[-1, ]
+#blockMap <- blockMap[-(47:51), ]
+
+
+###############
+
+### Processing RG
+
+#############
+#blockMap <- blockMap[!is.na(blockMap$Question.Type.Display.Name), ]
+
+blockMap <- blockMap[-1, ]
+blockMap <- blockMap[-(62:74), ]
+
+
+blockMap <- blockMap[!grepl("Unit Scale Slider", blockMap$Question.Type.Display.Name), ]
+blockMap <- blockMap[!grepl("Time Scale Slider", blockMap$Question.Type.Display.Name), ]
+blockMap$Question.Type.Display.Name[blockMap$Question.Type.Display.Name == "Reducing Slider"] <- "Slider"
+
+# Talk to tim about this possible
+blockMap$Question.Text <- gsub("<[^>]+>", "", blockMap$Question.Text)
+blockMap$Question.Text <- gsub('[\"“”‘’\']', '', blockMap$Question.Text)
+
+
+blockMap <- blockMap[!grepl("Question 8648", blockMap$Question.ID), ]
+
+
+
+
+###############
+
+### Processing FamBes
+
+#############
+#blockMap$Question.Text <- gsub("<[^>]+>", "", blockMap$Question.Text)
+#blockMap$Question.Text <- gsub('[\"“”‘’\']', '', blockMap$Question.Text)
+#blockMap <- blockMap[!grepl("Unit Scale Slider", blockMap$Question.Type.Display.Name), ]
+#blockMap <- blockMap[!grepl("Time Scale Slider", blockMap$Question.Type.Display.Name), ]
+#blockMap$Question.Type.Display.Name[blockMap$Question.Type.Display.Name == "Reducing Slider"] <- "Slider"
+
+
+
+```
+
+
+```{r Highest-Knit-Expand, include = FALSE}
+out <- knit_expand("Codebook.Rmd")
+
+```
+
+
+`r knit(text=out)`
+

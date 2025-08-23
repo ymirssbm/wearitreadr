@@ -1,0 +1,36 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# {{Question_Name}}: {{Question_Text}}
+
+```{r populate, include=FALSE}
+Question <- {{Question_Name}}
+thisData <- {{tallData}} %>% filter(Question == Question) %>% ungroup() %>% right_join(allDays) %>% group_by(External.ID, dayOfStudy) %>% mutate_all(fill)
+```
+
+[Image Missing]
+
+This scale is a visual-analog sliding scale delivered as part of the {{survey}},
+with labels ranging from {{lowlabel}}(value {{lowval}}) to {{highlabel}} ({{highval}}).
+
+It is delivered **{{frequency}}**.  The 
+
+```{r CompletionRateCompute, echo=FALSE}
+# Determine completion rates.
+thisByDay <- thisData %>% group_by(dayOfStudy, YQ) %>% summarize(PctCompleted = 1-sum(Missing, na.rm=TRUE)/nrow())
+thisByID <- thisData %>% group_by(External.ID) %>% summarize(PctCompleted = 1-mean(Missing, na.rm=TRUE), YQ=first(YQ))
+```
+
+Overall completion rate is `r 1-mean(thisData$Missing, na.rm=TRUE)`.
+```{r CompletionByDay}
+ggplot(thisByDay, aes(x=dayOfStudy, y=PctCompleted)) + 
+  geom_col() + 
+  geom_step(alpha=.25) +  # TODO: Maybe days with only root Qs?
+  xlim(0,20) + facet_wrap(~YQ, scales = "free_y") + 
+  labs(title="Total Completion Plot", 
+       subtitle = "Character by status", x="Day of study", y="ID") +
+  guides(col=guide_legend("Daily Completeness (%)"))
+```
+
