@@ -1,0 +1,7 @@
+<!-- Header section -->
+
+<div class="survey-name-header-shading">
+
+## {{survey_name}}
+
+</div>

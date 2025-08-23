@@ -1,0 +1,284 @@
+<div class = "anchor">
+
+
+```{r skip-logic-{{chunk_label}}, echo = FALSE, results = 'asis'}
+### This is a simple skip logic check
+### If this is a conditional question, print out parent item_id and parent question text
+
+# Get current question ID
+item_id_numeric <- substring("{{item_id}}", 6)
+
+
+# Change Conditional Child Item ID column to character to make searching easy
+blockMap$Conditional.Child.Item.ID <- as.character(blockMap$Conditional.Child.Item.ID)
+
+# Check if Item ID is in conditional column....
+## If so, display parent info
+if (item_id_numeric %in% blockMap$Conditional.Child.Item.ID) {
+  parent_row <- subset(blockMap, Conditional.Child.Item.ID == item_id_numeric)
+  parent_text <- unique(parent_row$Question.Text)
+  parent_itemID <- unique(parent_row$Item.ID)
+  
+  # Set skip logic to true for easy access
+  skipLogic <- TRUE
+  
+  # Display message
+  msg <- paste0(
+    "<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; ",
+    "border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'>",
+    "<strong>Note:</strong> This question is only delivered if participant answered question ",
+    "<em>", parent_itemID, "</em>: <em>", parent_text, "</em>.",
+    "</div>"
+  )
+  
+  cat(msg)
+}
+
+
+
+
+##### I thought the child listed the parent not the other way around
+##### This will essentially give you the same in reverse
+
+#if (!is.na(blockMap$Conditional.Child.Item.ID[blockMap$Question.ID == "{{question_id}}"])) {
+#  Conditional_itemID <- blockMap$Conditional.Child.Item.ID[blockMap$Question.ID == "{{question_id}}"]
+#  Conditional_text <- blockMap$Question.Text[blockMap$Item.ID == Conditional_itemID]
+#  cat("This question is only delivered if participant answered question ", Conditional_itemID, ": ", Conditional_text)
+#}
+
+
+```
+
+
+
+```{r descriptives-{{chunk_label}}, echo = FALSE}
+#########################
+# Descriptives
+#########################
+
+# Make sure data exists for it
+if (any(thisData$Question.ID == "{{question_id}}") &&
+    any(!is.na(thisData$User.Response[thisData$Question.ID == "{{question_id}}"]))) {
+  
+    dataExists <- TRUE  
+  
+  
+  thisBlock_df <- thisData[thisData$Question.ID == "{{question_id}}",]
+  thisBlock_df$User.Response <- as.numeric(thisBlock_df$User.Response)
+  
+  
+  # Grab basic descriptives
+  minimum_value <- round(min(thisBlock_df$User.Response, na.rm = TRUE), 2)
+  maximum_value <- round(max(thisBlock_df$User.Response, na.rm = TRUE), 2)
+  mean_value <- round(mean(thisBlock_df$User.Response, na.rm = TRUE), 2)
+  std_value <- round(sd(thisBlock_df$User.Response, na.rm = TRUE), 2)
+
+} else {
+  
+  dataExists <- FALSE  
+  minimum_value <- NA
+  maximum_value <- NA
+  mean_value <- NA
+  std_value <- NA
+  
+}
+```
+
+
+**Descriptives**
+Min = `r minimum_value`, max = `r maximum_value`, mean = `r mean_value`, std = `r std_value`
+
+
+```{r library-{{chunk_label}}, include = FALSE}
+# Library packages
+library(kableExtra)
+library(ggplot2)
+```
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('{{question_id}}');
+           let arrow = document.getElementById('{{question_id}}_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="{{question_id}}_arrow">▼</span>
+</button>
+
+<div id="{{question_id}}" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+```{r histogram-{{chunk_label}}, echo = FALSE}
+#############################################################
+# This is a basic histogram for continous data
+##################################################################
+
+# Make sure this block df exists
+if (dataExists == TRUE) {
+
+  hist(thisBlock_df$User.Response, main = "Histogram", col ="#619CFF", border = "black", xlab = "0 - 100 Slider", prob = TRUE)
+  
+  # This line + prob = TRUE arg draws density plot over histogram
+  lines(density(thisBlock_df$User.Response, na.rm = TRUE), col="blue", lwd=2)
+
+}
+```
+
+
+
+#### Missingness
+
+
+
+```{r missingness-{{chunk_label}}, echo = FALSE, results = 'asis'}
+#########################
+# Missingness descriptives
+########################
+
+  # Grab amount of times question was delivered / delivered and not answered
+    # Grab number of times it was answered
+    times_delivered <- nrow(thisData[(thisData$Question.ID == "{{question_id}}"),])
+      
+    # Grab number of times it COULD have been answered
+    # This is calculated as the amount of times the parent item id was answered with a non NA value
+    times_answered <- 
+      nrow(thisData[(thisData$Question.ID == "{{question_id}}" & !is.na(thisData$User.Response)),])
+    
+    # Grab most basic missingness as times could have been answered
+    missing <- times_delivered - times_answered
+
+
+# If skip logic exists..... 
+if (exists("skipLogic") && skipLogic == TRUE) {
+  
+  ###############
+  # 1.) Display the amount of people the question was delivered to
+  ###############
+  
+    # Grab the amount of people the question was delivered to
+    # This is calculated as the amount of people who responded a non NA value to the parent item
+    people_delivered_to <- 
+      length(unique(thisData$Participant.ID[thisData$Question.ID == "{{question_id}}" & !is.na(thisData$User.Response)]))
+    
+    
+    # Make message
+      # If the question was delivered to everyone...
+      if (n == people_delivered_to) {
+        delivered_msg <- paste0("This questions was delivered to all ", n, " participants")
+        cat(delivered_msg)    
+        
+      # If the question was NOT delivered to everyone...
+      } else {
+        delivered_msg <- paste0("This questions was delivered only to ", people_delivered_to, " out of ", n, " participants")
+        cat(delivered_msg)          
+      }
+
+    
+}
+ 
+  
+  ###############
+  # 3.) Grab missingness descriptives
+  ###############    
+  
+  if (dataExists == TRUE) {  
+    
+    # Sum the missingness per person
+    missing_per_person <- thisData %>% 
+      filter(Question.ID == "{{question_id}}") %>%
+      group_by(Participant.ID) %>% 
+      summarize(missingness = sum(is.na(User.Response)))
+      
+    
+    
+    # Calculate descriptives
+      # Minimum
+      missing_minimum_value <- round(min(missing_per_person$missingness, na.rm = TRUE), 2)
+      
+      # Maximum
+      missing_maximum_value <- round(max(missing_per_person$missingness, na.rm = TRUE), 2)
+      
+      # Mean
+      missing_mean_value <- round(mean(missing_per_person$missingness, na.rm = TRUE), 2)
+      
+      # Standard Deviation
+      missing_std_value <- round(sd(missing_per_person$missingness, na.rm = TRUE), 2)
+            
+      
+      # ICC
+        # Between person variance
+        between_person_variance <- missing_std_value ^ 2
+        
+        # Within person variance
+        p_bar <- times_delivered / times_answered
+        within_person_variance <- p_bar * (1 - p_bar)
+        # Calculate the ICC
+        missing_icc_value <- round(between_person_variance / (between_person_variance + within_person_variance), 2)
+ 
+  # If no data       
+  } else {
+  missing_minimum_value <- NA
+  missing_maximum_value <- NA
+  missing_mean_value <- NA
+  missing_std_value <- NA
+  missing_icc_value <- NA
+}
+
+
+```
+
+**Missingness Descriptives**
+
+Delivered / Answered = `r times_delivered` / `r times_answered`
+
+Missing = `r missing`
+
+Min = `r missing_minimum_value`, max = `r missing_maximum_value`, mean = `r missing_mean_value`, std = `r missing_std_value`
+(Descriptives are rounded to 2 decimals)
+
+Missingness Interclass Correlation (ICC) = `r missing_icc_value`
+
+
+
+**Missingness Codes**
+
+<details>
+<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
+
+<br>
+
+| Code | Description           |
+|------|-----------------------|
+| -1   | Skipped by respondent |
+| -3   | No response recorded  |
+| -6   | Survey timeout        |
+| -8   | Consent withdrawn     |
+| -9   | Other missing reason  |
+
+</details>
+
+
+
+
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>

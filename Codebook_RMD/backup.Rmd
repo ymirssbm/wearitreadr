@@ -1,0 +1,22 @@
+
+for (col in 1:ncol(wide_df)) {
+  thisVar <- wide_df[, col]
+  varname <- names(thisVar)
+  
+  # THIS IS ABSOLUTELY REQUIRED OR IT BREAKS ALONG WITH THE {{chunk_label} IN MultipleSlider_B.Rmd}
+  chunk_label <- paste0("slider_", varname)
+  
+  question_text <- responseKey$definition[
+    responseKey$question == question_id & 
+    responseKey$value == varname
+  ]
+
+  out3 <- paste(
+    out3,
+    knit_expand(
+      file = "DataTypes/MultipleSlider_B.Rmd",
+      question_text = question_text,
+      chunk_label = chunk_label
+    )
+  )
+}
