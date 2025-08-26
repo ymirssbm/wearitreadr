@@ -5,16 +5,8 @@ output: html_document
 
 
 ```{r}
-library(knitr)
 
-a <- 1
-b <- 2
-
-out <- knit_expand("test.Rmd")
-knit(text = out)
-
-t <- rmarkdown::render("test.Rmd")
-
+print({{df}}$x)
 
 ```
 

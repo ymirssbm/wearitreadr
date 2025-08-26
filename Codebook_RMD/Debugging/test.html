@@ -353,10 +353,26 @@ display: none;
 </div>
 
 
-<pre class="r"><code>summed &lt;- {{a}} + {{b}}
+<pre class="r"><code>library(knitr)
+df &lt;- data.frame(x = &quot;apple&quot;)
 
-print(summed)</code></pre>
-<pre><code>## [1] 3</code></pre>
+
+
+out &lt;- &quot;&quot;
+
+out &lt;- paste(out, knit_expand(file = &quot;test2.Rmd&quot;, df = &quot;df&quot;))</code></pre>
+<table>
+<tbody>
+<tr class="odd">
+<td>itle: “test 2”</td>
+</tr>
+<tr class="even">
+<td>utput: html_document</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>print(df$x)</code></pre>
+<pre><code>## [1] &quot;apple&quot;</code></pre>
 
 
 

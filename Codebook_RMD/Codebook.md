@@ -100,7 +100,7 @@ This is a temp default summary, please set
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -230,7 +230,7 @@ Missingness Interclass Correlation (ICC) = 1.18
 #### Give you information, or ideas about how to make things better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 874]
+  <a href="#Item 874-anchor"> [Item 874] </a>
 </div>
 
 
@@ -243,12 +243,14 @@ Missingness Interclass Correlation (ICC) = 1.18
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5627
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -348,7 +350,7 @@ Missingness Interclass Correlation (ICC) = 1.18
 #### Do something to help you (ex: pick you up, help with homework) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 875]
+  <a href="#Item 875-anchor"> [Item 875] </a>
 </div>
 
 
@@ -361,12 +363,14 @@ Missingness Interclass Correlation (ICC) = 1.18
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1259
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -466,7 +470,7 @@ Missingness Interclass Correlation (ICC) = 1.15
 #### Give you emotional support (ex: listen to and comfort you) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 879]
+  <a href="#Item 879-anchor"> [Item 879] </a>
 </div>
 
 
@@ -479,12 +483,14 @@ Missingness Interclass Correlation (ICC) = 1.15
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1784
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -585,7 +591,7 @@ Missingness Interclass Correlation (ICC) = 1.19
 #### Overall, how helpful was your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1143]
+  <a href="#Item 1143-anchor"> [Item 1143] </a>
 </div>
 
 
@@ -598,12 +604,14 @@ Missingness Interclass Correlation (ICC) = 1.19
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2027
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -703,7 +711,7 @@ Missingness Interclass Correlation (ICC) = 1.29
 #### How much did you want your parent to... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1144]
+  <a href="#Item 1144-anchor"> [Item 1144] </a>
 </div>
 
 
@@ -717,10 +725,46 @@ Missingness Interclass Correlation (ICC) = 1.29
 <div class = "anchor">
 
 
+**Question ID**: Question 2026
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
 
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1199-anchor"> [Item 1199] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2028
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
 
 </div>  
 ### Block: Item 1361 <!-- Header section -->
@@ -730,7 +774,7 @@ Missingness Interclass Correlation (ICC) = 1.29
 #### Since your last survey, did you experience any stressful events at home, school or elsewhere? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4463]
+  <a href="#Item 4463-anchor"> [Item 4463] </a>
 </div>
 
 
@@ -740,7 +784,9 @@ Missingness Interclass Correlation (ICC) = 1.29
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4086
 
@@ -748,7 +794,8 @@ Missingness Interclass Correlation (ICC) = 1.29
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -861,7 +908,7 @@ Missingness Interclass Correlation (ICC) = 1.1
 #### Since your last survey, did you see or communicate with your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4464]
+  <a href="#Item 4464-anchor"> [Item 4464] </a>
 </div>
 
 
@@ -871,7 +918,9 @@ Missingness Interclass Correlation (ICC) = 1.1
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4087
 
@@ -879,7 +928,8 @@ Missingness Interclass Correlation (ICC) = 1.1
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -993,7 +1043,7 @@ Missingness Interclass Correlation (ICC) = 1.08
 #### Think about your sleep from last night to this morning: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6302]
+  <a href="#Item 6302-anchor"> [Item 6302] </a>
 </div>
 
 
@@ -1005,6 +1055,15 @@ Missingness Interclass Correlation (ICC) = 1.08
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 6762
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -1019,7 +1078,7 @@ Missingness Interclass Correlation (ICC) = 1.08
 #### How many minutes did it take for you to fall asleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6305]
+  <a href="#Item 6305-anchor"> [Item 6305] </a>
 </div>
 
 
@@ -1032,12 +1091,14 @@ Missingness Interclass Correlation (ICC) = 1.08
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6765
 
 **Way the question was delivered:** Free Response
 
 **Type of data:** character
 
+</div> <div class = "anchor">
 
 
 
@@ -1116,7 +1177,7 @@ Missingness Interclass Correlation (ICC) = 1.32
 #### Did you wake up during the night (Not counting your final wake-up in the morning)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6306]
+  <a href="#Item 6306-anchor"> [Item 6306] </a>
 </div>
 
 
@@ -1126,7 +1187,9 @@ Missingness Interclass Correlation (ICC) = 1.32
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 6766
 
@@ -1134,7 +1197,8 @@ Missingness Interclass Correlation (ICC) = 1.32
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -1248,7 +1312,7 @@ Missingness Interclass Correlation (ICC) = 1.34
 #### How would you rate the quality of your sleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6309]
+  <a href="#Item 6309-anchor"> [Item 6309] </a>
 </div>
 
 
@@ -1261,12 +1325,14 @@ Missingness Interclass Correlation (ICC) = 1.34
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6771
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -1366,7 +1432,7 @@ Missingness Interclass Correlation (ICC) = 1.35
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1118]
+  <a href="#Item 1118-anchor"> [Item 1118] </a>
 </div>
 
 
@@ -1379,12 +1445,14 @@ Missingness Interclass Correlation (ICC) = 1.35
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1769
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -1504,7 +1572,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -1640,7 +1708,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1122]
+  <a href="#Item 1122-anchor"> [Item 1122] </a>
 </div>
 
 
@@ -1653,12 +1721,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1772
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -1778,7 +1848,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -1902,7 +1972,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1126]
+  <a href="#Item 1126-anchor"> [Item 1126] </a>
 </div>
 
 
@@ -1915,12 +1985,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1775
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -2040,7 +2112,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -2164,7 +2236,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1130]
+  <a href="#Item 1130-anchor"> [Item 1130] </a>
 </div>
 
 
@@ -2177,12 +2249,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1778
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -2302,7 +2376,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -2446,7 +2520,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
 
@@ -2600,7 +2674,7 @@ Missingness Interclass Correlation (ICC) = 1.25
 #### How close did you feel to your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1134]
+  <a href="#Item 1134-anchor"> [Item 1134] </a>
 </div>
 
 
@@ -2613,12 +2687,14 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2025
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -2738,7 +2814,7 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -2900,7 +2976,7 @@ Missingness Interclass Correlation (ICC) = 1.19
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -3036,7 +3112,7 @@ Missingness Interclass Correlation (ICC) = 1.11
 #### Did you have an argument or disagreement? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1117]
+  <a href="#Item 1117-anchor"> [Item 1117] </a>
 </div>
 
 
@@ -3046,7 +3122,9 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1768
 
@@ -3054,7 +3132,8 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -3168,7 +3247,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Did you feel like you had a lot of demands placed on you that were stressful? (ex: had to do a chore; had too much homework)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1121]
+  <a href="#Item 1121-anchor"> [Item 1121] </a>
 </div>
 
 
@@ -3178,7 +3257,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1771
 
@@ -3186,7 +3267,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -3300,7 +3382,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Did you have some other problem or event that was stressful? (ex: forgot something; was late to an appointment)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1125]
+  <a href="#Item 1125-anchor"> [Item 1125] </a>
 </div>
 
 
@@ -3310,7 +3392,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1774
 
@@ -3318,7 +3402,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -3432,7 +3517,7 @@ Missingness Interclass Correlation (ICC) = 1.84
 #### Did someone else have a problem or event that turned out to be stressful for you? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1129]
+  <a href="#Item 1129-anchor"> [Item 1129] </a>
 </div>
 
 
@@ -3442,7 +3527,9 @@ Missingness Interclass Correlation (ICC) = 1.84
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1777
 
@@ -3450,7 +3537,8 @@ Missingness Interclass Correlation (ICC) = 1.84
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -3557,7 +3645,34 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 </div> 
-### Block: Item 1132  <!-- Header section -->
+### Block: Item 1132 <!-- Header section -->
+
+<div class = "header-shading">
+
+#### No Text <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1364-anchor"> [Item 1364] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2300
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
+</div>  <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -3584,7 +3699,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -3744,7 +3859,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### Please describe how you asked (ex: directly asking is when you use your words to say what you would like your parents to do; indirectly asking is when you hint at something and hope your parent understands) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5526]
+  <a href="#Item 5526-anchor"> [Item 5526] </a>
 </div>
 
 
@@ -3757,12 +3872,14 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5634
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
@@ -3882,7 +3999,7 @@ Missingness Interclass Correlation (ICC) = 1.5
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -4042,7 +4159,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### Please tell us about the interaction you had with your mom: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5528]
+  <a href="#Item 5528-anchor"> [Item 5528] </a>
 </div>
 
 
@@ -4054,6 +4171,15 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 5636
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -4068,7 +4194,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### I think that the interaction was high quality <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5529]
+  <a href="#Item 5529-anchor"> [Item 5529] </a>
 </div>
 
 
@@ -4078,7 +4204,9 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5721
 
@@ -4086,7 +4214,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -4217,7 +4346,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 #### The interaction was good <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5530]
+  <a href="#Item 5530-anchor"> [Item 5530] </a>
 </div>
 
 
@@ -4227,7 +4356,9 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5722
 
@@ -4235,7 +4366,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -4366,7 +4498,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 #### I feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5531]
+  <a href="#Item 5531-anchor"> [Item 5531] </a>
 </div>
 
 
@@ -4376,7 +4508,9 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5639
 
@@ -4384,7 +4518,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -4515,7 +4650,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 #### That was an excellent supportive interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5532]
+  <a href="#Item 5532-anchor"> [Item 5532] </a>
 </div>
 
 
@@ -4525,7 +4660,9 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5723
 
@@ -4533,7 +4670,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -4664,7 +4802,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### The interaction made me feel better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5533]
+  <a href="#Item 5533-anchor"> [Item 5533] </a>
 </div>
 
 
@@ -4674,7 +4812,9 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5724
 
@@ -4682,7 +4822,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -4813,7 +4954,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### The interaction made me feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5534]
+  <a href="#Item 5534-anchor"> [Item 5534] </a>
 </div>
 
 
@@ -4823,7 +4964,9 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5725
 
@@ -4831,7 +4974,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -4962,7 +5106,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### I dont feel better after the interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5535]
+  <a href="#Item 5535-anchor"> [Item 5535] </a>
 </div>
 
 
@@ -4972,7 +5116,9 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5643
 
@@ -4980,7 +5126,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -5111,7 +5258,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 #### The interaction made me feel worse <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5536]
+  <a href="#Item 5536-anchor"> [Item 5536] </a>
 </div>
 
 
@@ -5121,7 +5268,9 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5644
 
@@ -5129,7 +5278,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -5260,7 +5410,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 #### The interaction helped with a problem I was having <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5537]
+  <a href="#Item 5537-anchor"> [Item 5537] </a>
 </div>
 
 
@@ -5270,7 +5420,9 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5726
 
@@ -5278,7 +5430,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -5409,7 +5562,7 @@ Missingness Interclass Correlation (ICC) = 1.1
 #### The interaction helped me feel better about a problem <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5538]
+  <a href="#Item 5538-anchor"> [Item 5538] </a>
 </div>
 
 
@@ -5419,7 +5572,9 @@ Missingness Interclass Correlation (ICC) = 1.1
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5727
 
@@ -5427,7 +5582,8 @@ Missingness Interclass Correlation (ICC) = 1.1
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -5580,7 +5736,7 @@ Missingness Interclass Correlation (ICC) = 1.15
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 810</em>: <em>Check all that happened at school today:</em>.</div>
 
@@ -5736,7 +5892,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -5878,7 +6034,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 #### Today, how much did you feel <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 844]
+  <a href="#Item 844-anchor"> [Item 844] </a>
 </div>
 
 
@@ -5889,8 +6045,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 <!-- Body -->
 
 
-
 <div class = "anchor">
+
 
 **Question ID**: Question 1325
 
@@ -5898,32 +6054,19 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** NA
 
+</div> <div class = "anchor">
 
 
 
 
 
 
-
-
-</div>
-
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Cheerful <br>
 
 
 
 </div>
 
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6012,22 +6155,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Sad <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6116,22 +6244,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Happy <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6220,22 +6333,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Lively <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6324,22 +6422,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Proud <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6428,22 +6511,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Miserable <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6532,22 +6600,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Mad <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6636,22 +6689,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Afraid <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6740,22 +6778,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Joyful <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6844,22 +6867,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Scared <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -6956,7 +6964,7 @@ Interclass Correlation (ICC) = 0.41
 #### Overall, how stressed have you felt today? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 845]
+  <a href="#Item 845-anchor"> [Item 845] </a>
 </div>
 
 
@@ -6969,12 +6977,14 @@ Interclass Correlation (ICC) = 0.41
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1326
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -7095,7 +7105,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -7237,7 +7247,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 #### Please tell us about your day overall. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1358]
+  <a href="#Item 1358-anchor"> [Item 1358] </a>
 </div>
 
 
@@ -7249,6 +7259,15 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 2293
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -7284,7 +7303,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -7445,7 +7464,7 @@ Missingness Interclass Correlation (ICC) = 1.07
 #### Today, did you see or communicate with your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6310]
+  <a href="#Item 6310-anchor"> [Item 6310] </a>
 </div>
 
 
@@ -7455,7 +7474,9 @@ Missingness Interclass Correlation (ICC) = 1.07
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 6738
 
@@ -7463,7 +7484,8 @@ Missingness Interclass Correlation (ICC) = 1.07
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -7578,7 +7600,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1118]
+  <a href="#Item 1118-anchor"> [Item 1118] </a>
 </div>
 
 
@@ -7591,12 +7613,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1907
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -7716,7 +7740,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -7852,7 +7876,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1122]
+  <a href="#Item 1122-anchor"> [Item 1122] </a>
 </div>
 
 
@@ -7865,12 +7889,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1910
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -7990,7 +8016,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -8114,7 +8140,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1126]
+  <a href="#Item 1126-anchor"> [Item 1126] </a>
 </div>
 
 
@@ -8127,12 +8153,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1913
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -8252,7 +8280,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -8376,7 +8404,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1130]
+  <a href="#Item 1130-anchor"> [Item 1130] </a>
 </div>
 
 
@@ -8389,12 +8417,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2273
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -8514,7 +8544,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -8658,7 +8688,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
 
@@ -8812,7 +8842,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How close did you feel to your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1134]
+  <a href="#Item 1134-anchor"> [Item 1134] </a>
 </div>
 
 
@@ -8825,12 +8855,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2278
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -8950,7 +8982,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -9112,7 +9144,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -9248,7 +9280,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please think about the most stressful event, situation or experience you faced today. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1154]
+  <a href="#Item 1154-anchor"> [Item 1154] </a>
 </div>
 
 
@@ -9260,6 +9292,15 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 2294
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -9294,7 +9335,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4473</em>: <em>After experiencing this situation, I felt like I needed to talk to someone about it.</em>.</div>
 
@@ -9442,7 +9483,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### After experiencing this situation, I felt like I needed to talk to someone about it. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4473]
+  <a href="#Item 4473-anchor"> [Item 4473] </a>
 </div>
 
 
@@ -9452,7 +9493,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4113
 
@@ -9460,7 +9503,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -9566,6 +9610,33 @@ Missingness Interclass Correlation (ICC) = 1.02
 </div>
 
 
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 4474-anchor"> [Item 4474] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 4114
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
 </div>  <!-- Header section -->
 
 <div class = "header-shading">
@@ -9593,7 +9664,7 @@ Missingness Interclass Correlation (ICC) = 1.02
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -9723,7 +9794,7 @@ Missingness Interclass Correlation (ICC) = 1.12
 #### Give you information, or ideas about how to make things better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 874]
+  <a href="#Item 874-anchor"> [Item 874] </a>
 </div>
 
 
@@ -9736,12 +9807,14 @@ Missingness Interclass Correlation (ICC) = 1.12
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5628
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -9841,7 +9914,7 @@ Missingness Interclass Correlation (ICC) = 1.06
 #### Do something to help you (ex: pick you up, help with homework) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 875]
+  <a href="#Item 875-anchor"> [Item 875] </a>
 </div>
 
 
@@ -9854,12 +9927,14 @@ Missingness Interclass Correlation (ICC) = 1.06
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2285
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -9959,7 +10034,7 @@ Missingness Interclass Correlation (ICC) = 1.04
 #### Give you emotional support (ex: listen to and comfort you) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 879]
+  <a href="#Item 879-anchor"> [Item 879] </a>
 </div>
 
 
@@ -9972,12 +10047,14 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2283
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -10078,7 +10155,7 @@ Missingness Interclass Correlation (ICC) = 1.08
 #### Overall, how helpful was your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1143]
+  <a href="#Item 1143-anchor"> [Item 1143] </a>
 </div>
 
 
@@ -10091,12 +10168,14 @@ Missingness Interclass Correlation (ICC) = 1.08
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2292
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -10196,7 +10275,7 @@ Missingness Interclass Correlation (ICC) = 1.22
 #### How much did you want your parent to... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1144]
+  <a href="#Item 1144-anchor"> [Item 1144] </a>
 </div>
 
 
@@ -10210,10 +10289,46 @@ Missingness Interclass Correlation (ICC) = 1.22
 <div class = "anchor">
 
 
+**Question ID**: Question 2282
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
 
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1199-anchor"> [Item 1199] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2276
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
 
 </div>  
 ### Block: Item 1361 <!-- Header section -->
@@ -10223,7 +10338,7 @@ Missingness Interclass Correlation (ICC) = 1.22
 #### Since your last survey, did you experience any stressful events at home, school or elsewhere? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4463]
+  <a href="#Item 4463-anchor"> [Item 4463] </a>
 </div>
 
 
@@ -10233,7 +10348,9 @@ Missingness Interclass Correlation (ICC) = 1.22
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4097
 
@@ -10241,7 +10358,8 @@ Missingness Interclass Correlation (ICC) = 1.22
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -10354,7 +10472,7 @@ Missingness Interclass Correlation (ICC) = 1.12
 #### Since your last survey, did you see or communicate with your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4464]
+  <a href="#Item 4464-anchor"> [Item 4464] </a>
 </div>
 
 
@@ -10364,7 +10482,9 @@ Missingness Interclass Correlation (ICC) = 1.12
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4098
 
@@ -10372,7 +10492,8 @@ Missingness Interclass Correlation (ICC) = 1.12
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -10486,7 +10607,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Did you have an argument or disagreement? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1117]
+  <a href="#Item 1117-anchor"> [Item 1117] </a>
 </div>
 
 
@@ -10496,7 +10617,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 2269
 
@@ -10504,7 +10627,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -10618,7 +10742,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you feel like you had a lot of demands placed on you that were stressful? (ex: had to do a chore; had too much homework)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1121]
+  <a href="#Item 1121-anchor"> [Item 1121] </a>
 </div>
 
 
@@ -10628,7 +10752,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 2270
 
@@ -10636,7 +10762,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -10750,7 +10877,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you have some other problem or event that was stressful? (ex: forgot something; was late to an appointment)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1125]
+  <a href="#Item 1125-anchor"> [Item 1125] </a>
 </div>
 
 
@@ -10760,7 +10887,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 2271
 
@@ -10768,7 +10897,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -10882,7 +11012,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did someone else have a problem or event that turned out to be stressful for you? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1129]
+  <a href="#Item 1129-anchor"> [Item 1129] </a>
 </div>
 
 
@@ -10892,7 +11022,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 2272
 
@@ -10900,7 +11032,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -11007,7 +11140,34 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 </div> 
-### Block: Item 1132  <!-- Header section -->
+### Block: Item 1132 <!-- Header section -->
+
+<div class = "header-shading">
+
+#### No Text <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1364-anchor"> [Item 1364] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2301
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
+</div>  <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -11034,7 +11194,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -11194,7 +11354,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please describe how you asked (ex: directly asking is when you use your words to say what you would like your parents to do; indirectly asking is when you hint at something and hope your parent understands) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5526]
+  <a href="#Item 5526-anchor"> [Item 5526] </a>
 </div>
 
 
@@ -11207,12 +11367,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5648
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
@@ -11332,7 +11494,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -11492,7 +11654,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please tell us about the interaction you had with your mom: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5528]
+  <a href="#Item 5528-anchor"> [Item 5528] </a>
 </div>
 
 
@@ -11504,6 +11666,15 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 5650
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -11518,7 +11689,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I think that the interaction was high quality <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5529]
+  <a href="#Item 5529-anchor"> [Item 5529] </a>
 </div>
 
 
@@ -11528,7 +11699,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5728
 
@@ -11536,7 +11709,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -11667,7 +11841,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction was good <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5530]
+  <a href="#Item 5530-anchor"> [Item 5530] </a>
 </div>
 
 
@@ -11677,7 +11851,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5729
 
@@ -11685,7 +11861,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -11816,7 +11993,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5531]
+  <a href="#Item 5531-anchor"> [Item 5531] </a>
 </div>
 
 
@@ -11826,7 +12003,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5653
 
@@ -11834,7 +12013,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -11965,7 +12145,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### That was an excellent supportive interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5532]
+  <a href="#Item 5532-anchor"> [Item 5532] </a>
 </div>
 
 
@@ -11975,7 +12155,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5730
 
@@ -11983,7 +12165,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -12114,7 +12297,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5533]
+  <a href="#Item 5533-anchor"> [Item 5533] </a>
 </div>
 
 
@@ -12124,7 +12307,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5731
 
@@ -12132,7 +12317,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -12263,7 +12449,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5534]
+  <a href="#Item 5534-anchor"> [Item 5534] </a>
 </div>
 
 
@@ -12273,7 +12459,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5732
 
@@ -12281,7 +12469,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -12412,7 +12601,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I dont feel better after the interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5535]
+  <a href="#Item 5535-anchor"> [Item 5535] </a>
 </div>
 
 
@@ -12422,7 +12611,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5657
 
@@ -12430,7 +12621,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -12561,7 +12753,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel worse <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5536]
+  <a href="#Item 5536-anchor"> [Item 5536] </a>
 </div>
 
 
@@ -12571,7 +12763,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5658
 
@@ -12579,7 +12773,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -12710,7 +12905,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped with a problem I was having <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5537]
+  <a href="#Item 5537-anchor"> [Item 5537] </a>
 </div>
 
 
@@ -12720,7 +12915,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5733
 
@@ -12728,7 +12925,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -12859,7 +13057,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped me feel better about a problem <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5538]
+  <a href="#Item 5538-anchor"> [Item 5538] </a>
 </div>
 
 
@@ -12869,7 +13067,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5734
 
@@ -12877,7 +13077,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -13008,7 +13209,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How helpful was the support you received from: %% <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5544]
+  <a href="#Item 5544-anchor"> [Item 5544] </a>
 </div>
 
 
@@ -13021,12 +13222,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5719
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -13149,7 +13352,7 @@ Missingness Interclass Correlation (ICC) = 1.22
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -13336,7 +13539,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -13490,7 +13693,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 #### Tell us about your day with your family <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6311]
+  <a href="#Item 6311-anchor"> [Item 6311] </a>
 </div>
 
 
@@ -13502,6 +13705,15 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 6739
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -13516,7 +13728,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 #### I had fun with my parent today. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6312]
+  <a href="#Item 6312-anchor"> [Item 6312] </a>
 </div>
 
 
@@ -13529,12 +13741,14 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6740
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -13634,7 +13848,7 @@ Missingness Interclass Correlation (ICC) = 1.13
 #### My parent and I got along today. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6313]
+  <a href="#Item 6313-anchor"> [Item 6313] </a>
 </div>
 
 
@@ -13647,12 +13861,14 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6741
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -13752,7 +13968,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### My parent gave me love and attention today. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6314]
+  <a href="#Item 6314-anchor"> [Item 6314] </a>
 </div>
 
 
@@ -13765,12 +13981,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6742
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -13870,7 +14088,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### My parent got mad at me today. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6315]
+  <a href="#Item 6315-anchor"> [Item 6315] </a>
 </div>
 
 
@@ -13883,12 +14101,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6743
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -13988,7 +14208,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### I was angry at my parent today. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6316]
+  <a href="#Item 6316-anchor"> [Item 6316] </a>
 </div>
 
 
@@ -14001,12 +14221,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6744
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -14106,7 +14328,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### My parent punished me today. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6317]
+  <a href="#Item 6317-anchor"> [Item 6317] </a>
 </div>
 
 
@@ -14119,12 +14341,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6745
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -14244,7 +14468,7 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -14368,7 +14592,7 @@ Missingness Interclass Correlation (ICC) = 1.14
 #### Today, how much did you feel... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6319]
+  <a href="#Item 6319-anchor"> [Item 6319] </a>
 </div>
 
 
@@ -14380,6 +14604,15 @@ Missingness Interclass Correlation (ICC) = 1.14
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 6747
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -14394,7 +14627,7 @@ Missingness Interclass Correlation (ICC) = 1.14
 #### Accepted by your parent <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6320]
+  <a href="#Item 6320-anchor"> [Item 6320] </a>
 </div>
 
 
@@ -14407,12 +14640,14 @@ Missingness Interclass Correlation (ICC) = 1.14
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6748
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -14512,7 +14747,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Understood by your parent <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6321]
+  <a href="#Item 6321-anchor"> [Item 6321] </a>
 </div>
 
 
@@ -14525,12 +14760,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6749
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -14630,7 +14867,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Cared for by your parent <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6322]
+  <a href="#Item 6322-anchor"> [Item 6322] </a>
 </div>
 
 
@@ -14643,12 +14880,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6750
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -14748,7 +14987,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Overall, rate the quality of your parents support today. <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6323]
+  <a href="#Item 6323-anchor"> [Item 6323] </a>
 </div>
 
 
@@ -14761,12 +15000,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6751
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -14886,7 +15127,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -15048,7 +15289,7 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -15210,7 +15451,7 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -15360,7 +15601,7 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -15522,7 +15763,7 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -15684,7 +15925,7 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -15834,7 +16075,7 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -15996,7 +16237,7 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -16158,7 +16399,7 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -16288,7 +16529,7 @@ Missingness Interclass Correlation (ICC) = 1.03
 #### My parent gave me ____ help than I wanted today <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6333]
+  <a href="#Item 6333-anchor"> [Item 6333] </a>
 </div>
 
 
@@ -16301,12 +16542,14 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6761
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -16406,7 +16649,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 #### Think about your sleep from last night to this morning: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6302]
+  <a href="#Item 6302-anchor"> [Item 6302] </a>
 </div>
 
 
@@ -16418,6 +16661,15 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 6772
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -16432,7 +16684,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 #### How many minutes did it take for you to fall asleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6305]
+  <a href="#Item 6305-anchor"> [Item 6305] </a>
 </div>
 
 
@@ -16445,12 +16697,14 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6775
 
 **Way the question was delivered:** Free Response
 
 **Type of data:** character
 
+</div> <div class = "anchor">
 
 
 
@@ -16529,7 +16783,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Did you wake up during the night (Not counting your final wake-up in the morning)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6306]
+  <a href="#Item 6306-anchor"> [Item 6306] </a>
 </div>
 
 
@@ -16539,7 +16793,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 6776
 
@@ -16547,7 +16803,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -16661,7 +16918,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How would you rate the quality of your sleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6309]
+  <a href="#Item 6309-anchor"> [Item 6309] </a>
 </div>
 
 
@@ -16674,12 +16931,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6781
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -16801,7 +17060,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -16931,7 +17190,7 @@ Missingness Interclass Correlation (ICC) = 1.34
 #### Give you information, or ideas about how to make things better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 874]
+  <a href="#Item 874-anchor"> [Item 874] </a>
 </div>
 
 
@@ -16944,12 +17203,14 @@ Missingness Interclass Correlation (ICC) = 1.34
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5629
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -17049,7 +17310,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Do something to help you (ex: pick you up, help with homework) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 875]
+  <a href="#Item 875-anchor"> [Item 875] </a>
 </div>
 
 
@@ -17062,12 +17323,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1355
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -17167,7 +17430,7 @@ Missingness Interclass Correlation (ICC) = 1.33
 #### Give you emotional support (ex: listen to and comfort you) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 879]
+  <a href="#Item 879-anchor"> [Item 879] </a>
 </div>
 
 
@@ -17180,12 +17443,14 @@ Missingness Interclass Correlation (ICC) = 1.33
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1810
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -17286,7 +17551,7 @@ Missingness Interclass Correlation (ICC) = 1.33
 #### Overall, how helpful was your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1143]
+  <a href="#Item 1143-anchor"> [Item 1143] </a>
 </div>
 
 
@@ -17299,12 +17564,14 @@ Missingness Interclass Correlation (ICC) = 1.33
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2071
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -17404,7 +17671,7 @@ Missingness Interclass Correlation (ICC) = 1.34
 #### How much did you want your parent to... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1144]
+  <a href="#Item 1144-anchor"> [Item 1144] </a>
 </div>
 
 
@@ -17418,10 +17685,46 @@ Missingness Interclass Correlation (ICC) = 1.34
 <div class = "anchor">
 
 
+**Question ID**: Question 2070
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
 
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1199-anchor"> [Item 1199] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2072
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
 
 </div>  
 ### Block: Item 1361 <!-- Header section -->
@@ -17431,7 +17734,7 @@ Missingness Interclass Correlation (ICC) = 1.34
 #### Since your last survey, did you experience any stressful events at home, school or elsewhere? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4463]
+  <a href="#Item 4463-anchor"> [Item 4463] </a>
 </div>
 
 
@@ -17441,7 +17744,9 @@ Missingness Interclass Correlation (ICC) = 1.34
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4115
 
@@ -17449,7 +17754,8 @@ Missingness Interclass Correlation (ICC) = 1.34
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -17562,7 +17868,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Since your last survey, did you see or communicate with your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4464]
+  <a href="#Item 4464-anchor"> [Item 4464] </a>
 </div>
 
 
@@ -17572,7 +17878,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4116
 
@@ -17580,7 +17888,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -17694,7 +18003,7 @@ Missingness Interclass Correlation (ICC) = 1.16
 #### Think about your sleep from last night to this morning: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6302]
+  <a href="#Item 6302-anchor"> [Item 6302] </a>
 </div>
 
 
@@ -17706,6 +18015,15 @@ Missingness Interclass Correlation (ICC) = 1.16
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 6782
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -17720,7 +18038,7 @@ Missingness Interclass Correlation (ICC) = 1.16
 #### How many minutes did it take for you to fall asleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6305]
+  <a href="#Item 6305-anchor"> [Item 6305] </a>
 </div>
 
 
@@ -17733,12 +18051,14 @@ Missingness Interclass Correlation (ICC) = 1.16
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6785
 
 **Way the question was delivered:** Free Response
 
 **Type of data:** character
 
+</div> <div class = "anchor">
 
 
 
@@ -17817,7 +18137,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Did you wake up during the night (Not counting your final wake-up in the morning)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6306]
+  <a href="#Item 6306-anchor"> [Item 6306] </a>
 </div>
 
 
@@ -17827,7 +18147,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 6786
 
@@ -17835,7 +18157,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -17949,7 +18272,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How would you rate the quality of your sleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6309]
+  <a href="#Item 6309-anchor"> [Item 6309] </a>
 </div>
 
 
@@ -17962,12 +18285,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6791
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -18067,7 +18392,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1118]
+  <a href="#Item 1118-anchor"> [Item 1118] </a>
 </div>
 
 
@@ -18080,12 +18405,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1795
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -18205,7 +18532,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -18341,7 +18668,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1122]
+  <a href="#Item 1122-anchor"> [Item 1122] </a>
 </div>
 
 
@@ -18354,12 +18681,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1798
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -18479,7 +18808,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -18603,7 +18932,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1126]
+  <a href="#Item 1126-anchor"> [Item 1126] </a>
 </div>
 
 
@@ -18616,12 +18945,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1801
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -18741,7 +19072,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -18865,7 +19196,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1130]
+  <a href="#Item 1130-anchor"> [Item 1130] </a>
 </div>
 
 
@@ -18878,12 +19209,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1804
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -19003,7 +19336,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -19147,7 +19480,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
 
@@ -19301,7 +19634,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How close did you feel to your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1134]
+  <a href="#Item 1134-anchor"> [Item 1134] </a>
 </div>
 
 
@@ -19314,12 +19647,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2069
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -19439,7 +19774,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -19601,7 +19936,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -19737,7 +20072,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you have an argument or disagreement? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1117]
+  <a href="#Item 1117-anchor"> [Item 1117] </a>
 </div>
 
 
@@ -19747,7 +20082,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1794
 
@@ -19755,7 +20092,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -19869,7 +20207,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you feel like you had a lot of demands placed on you that were stressful? (ex: had to do a chore; had too much homework)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1121]
+  <a href="#Item 1121-anchor"> [Item 1121] </a>
 </div>
 
 
@@ -19879,7 +20217,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1797
 
@@ -19887,7 +20227,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -20001,7 +20342,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you have some other problem or event that was stressful? (ex: forgot something; was late to an appointment)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1125]
+  <a href="#Item 1125-anchor"> [Item 1125] </a>
 </div>
 
 
@@ -20011,7 +20352,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1800
 
@@ -20019,7 +20362,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -20133,7 +20477,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did someone else have a problem or event that turned out to be stressful for you? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1129]
+  <a href="#Item 1129-anchor"> [Item 1129] </a>
 </div>
 
 
@@ -20143,7 +20487,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1803
 
@@ -20151,7 +20497,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -20258,7 +20605,34 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 </div> 
-### Block: Item 1132  <!-- Header section -->
+### Block: Item 1132 <!-- Header section -->
+
+<div class = "header-shading">
+
+#### No Text <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1364-anchor"> [Item 1364] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2302
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
+</div>  <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -20285,7 +20659,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -20445,7 +20819,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please describe how you asked (ex: directly asking is when you use your words to say what you would like your parents to do; indirectly asking is when you hint at something and hope your parent understands) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5526]
+  <a href="#Item 5526-anchor"> [Item 5526] </a>
 </div>
 
 
@@ -20458,12 +20832,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5663
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
@@ -20583,7 +20959,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -20743,7 +21119,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please tell us about the interaction you had with your mom: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5528]
+  <a href="#Item 5528-anchor"> [Item 5528] </a>
 </div>
 
 
@@ -20755,6 +21131,15 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 5665
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -20769,7 +21154,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I think that the interaction was high quality <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5529]
+  <a href="#Item 5529-anchor"> [Item 5529] </a>
 </div>
 
 
@@ -20779,7 +21164,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5735
 
@@ -20787,7 +21174,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -20918,7 +21306,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction was good <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5530]
+  <a href="#Item 5530-anchor"> [Item 5530] </a>
 </div>
 
 
@@ -20928,7 +21316,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5736
 
@@ -20936,7 +21326,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -21067,7 +21458,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5531]
+  <a href="#Item 5531-anchor"> [Item 5531] </a>
 </div>
 
 
@@ -21077,7 +21468,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5668
 
@@ -21085,7 +21478,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -21216,7 +21610,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### That was an excellent supportive interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5532]
+  <a href="#Item 5532-anchor"> [Item 5532] </a>
 </div>
 
 
@@ -21226,7 +21620,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5737
 
@@ -21234,7 +21630,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -21365,7 +21762,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5533]
+  <a href="#Item 5533-anchor"> [Item 5533] </a>
 </div>
 
 
@@ -21375,7 +21772,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5738
 
@@ -21383,7 +21782,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -21514,7 +21914,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5534]
+  <a href="#Item 5534-anchor"> [Item 5534] </a>
 </div>
 
 
@@ -21524,7 +21924,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5739
 
@@ -21532,7 +21934,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -21663,7 +22066,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I dont feel better after the interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5535]
+  <a href="#Item 5535-anchor"> [Item 5535] </a>
 </div>
 
 
@@ -21673,7 +22076,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5672
 
@@ -21681,7 +22086,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -21812,7 +22218,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel worse <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5536]
+  <a href="#Item 5536-anchor"> [Item 5536] </a>
 </div>
 
 
@@ -21822,7 +22228,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5673
 
@@ -21830,7 +22238,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -21961,7 +22370,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped with a problem I was having <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5537]
+  <a href="#Item 5537-anchor"> [Item 5537] </a>
 </div>
 
 
@@ -21971,7 +22380,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5740
 
@@ -21979,7 +22390,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -22110,7 +22522,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped me feel better about a problem <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5538]
+  <a href="#Item 5538-anchor"> [Item 5538] </a>
 </div>
 
 
@@ -22120,7 +22532,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5741
 
@@ -22128,7 +22542,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -22281,7 +22696,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -22411,7 +22826,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 #### Give you information, or ideas about how to make things better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 874]
+  <a href="#Item 874-anchor"> [Item 874] </a>
 </div>
 
 
@@ -22424,12 +22839,14 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5630
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -22529,7 +22946,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### Do something to help you (ex: pick you up, help with homework) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 875]
+  <a href="#Item 875-anchor"> [Item 875] </a>
 </div>
 
 
@@ -22542,12 +22959,14 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1380
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -22647,7 +23066,7 @@ Missingness Interclass Correlation (ICC) = 1.25
 #### Give you emotional support (ex: listen to and comfort you) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 879]
+  <a href="#Item 879-anchor"> [Item 879] </a>
 </div>
 
 
@@ -22660,12 +23079,14 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1836
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -22766,7 +23187,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Overall, how helpful was your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1143]
+  <a href="#Item 1143-anchor"> [Item 1143] </a>
 </div>
 
 
@@ -22779,12 +23200,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2075
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -22884,7 +23307,7 @@ Missingness Interclass Correlation (ICC) = 1.25
 #### How much did you want your parent to... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1144]
+  <a href="#Item 1144-anchor"> [Item 1144] </a>
 </div>
 
 
@@ -22898,10 +23321,46 @@ Missingness Interclass Correlation (ICC) = 1.25
 <div class = "anchor">
 
 
+**Question ID**: Question 2074
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
 
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1199-anchor"> [Item 1199] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2076
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
 
 </div>  
 ### Block: Item 1361 <!-- Header section -->
@@ -22911,7 +23370,7 @@ Missingness Interclass Correlation (ICC) = 1.25
 #### Since your last survey, did you experience any stressful events at home, school or elsewhere? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4463]
+  <a href="#Item 4463-anchor"> [Item 4463] </a>
 </div>
 
 
@@ -22921,7 +23380,9 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4126
 
@@ -22929,7 +23390,8 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -23042,7 +23504,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Since your last survey, did you see or communicate with your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4464]
+  <a href="#Item 4464-anchor"> [Item 4464] </a>
 </div>
 
 
@@ -23052,7 +23514,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4127
 
@@ -23060,7 +23524,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -23174,7 +23639,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Think about your sleep from last night to this morning: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6302]
+  <a href="#Item 6302-anchor"> [Item 6302] </a>
 </div>
 
 
@@ -23186,6 +23651,15 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 6792
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -23200,7 +23674,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How many minutes did it take for you to fall asleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6305]
+  <a href="#Item 6305-anchor"> [Item 6305] </a>
 </div>
 
 
@@ -23213,12 +23687,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6795
 
 **Way the question was delivered:** Free Response
 
 **Type of data:** character
 
+</div> <div class = "anchor">
 
 
 
@@ -23297,7 +23773,7 @@ Missingness Interclass Correlation (ICC) = 2.41
 #### Did you wake up during the night (Not counting your final wake-up in the morning)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6306]
+  <a href="#Item 6306-anchor"> [Item 6306] </a>
 </div>
 
 
@@ -23307,7 +23783,9 @@ Missingness Interclass Correlation (ICC) = 2.41
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 6796
 
@@ -23315,7 +23793,8 @@ Missingness Interclass Correlation (ICC) = 2.41
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -23429,7 +23908,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How would you rate the quality of your sleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6309]
+  <a href="#Item 6309-anchor"> [Item 6309] </a>
 </div>
 
 
@@ -23442,12 +23921,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6801
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -23547,7 +24028,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1118]
+  <a href="#Item 1118-anchor"> [Item 1118] </a>
 </div>
 
 
@@ -23560,12 +24041,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1821
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -23685,7 +24168,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -23821,7 +24304,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1122]
+  <a href="#Item 1122-anchor"> [Item 1122] </a>
 </div>
 
 
@@ -23834,12 +24317,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1824
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -23959,7 +24444,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -24083,7 +24568,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1126]
+  <a href="#Item 1126-anchor"> [Item 1126] </a>
 </div>
 
 
@@ -24096,12 +24581,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1827
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -24221,7 +24708,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -24345,7 +24832,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1130]
+  <a href="#Item 1130-anchor"> [Item 1130] </a>
 </div>
 
 
@@ -24358,12 +24845,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1830
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -24483,7 +24972,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -24627,7 +25116,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
 
@@ -24781,7 +25270,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How close did you feel to your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1134]
+  <a href="#Item 1134-anchor"> [Item 1134] </a>
 </div>
 
 
@@ -24794,12 +25283,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2073
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -24919,7 +25410,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -25081,7 +25572,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -25217,7 +25708,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you have an argument or disagreement? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1117]
+  <a href="#Item 1117-anchor"> [Item 1117] </a>
 </div>
 
 
@@ -25227,7 +25718,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1820
 
@@ -25235,7 +25728,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -25349,7 +25843,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you feel like you had a lot of demands placed on you that were stressful? (ex: had to do a chore; had too much homework)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1121]
+  <a href="#Item 1121-anchor"> [Item 1121] </a>
 </div>
 
 
@@ -25359,7 +25853,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1823
 
@@ -25367,7 +25863,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -25481,7 +25978,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you have some other problem or event that was stressful? (ex: forgot something; was late to an appointment)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1125]
+  <a href="#Item 1125-anchor"> [Item 1125] </a>
 </div>
 
 
@@ -25491,7 +25988,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1826
 
@@ -25499,7 +25998,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -25613,7 +26113,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did someone else have a problem or event that turned out to be stressful for you? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1129]
+  <a href="#Item 1129-anchor"> [Item 1129] </a>
 </div>
 
 
@@ -25623,7 +26123,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1829
 
@@ -25631,7 +26133,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -25738,7 +26241,34 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 </div> 
-### Block: Item 1132  <!-- Header section -->
+### Block: Item 1132 <!-- Header section -->
+
+<div class = "header-shading">
+
+#### No Text <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1364-anchor"> [Item 1364] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2303
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
+</div>  <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -25765,7 +26295,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -25925,7 +26455,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please describe how you asked (ex: directly asking is when you use your words to say what you would like your parents to do; indirectly asking is when you hint at something and hope your parent understands) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5526]
+  <a href="#Item 5526-anchor"> [Item 5526] </a>
 </div>
 
 
@@ -25938,12 +26468,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5677
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
@@ -26063,7 +26595,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -26223,7 +26755,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please tell us about the interaction you had with your mom: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5528]
+  <a href="#Item 5528-anchor"> [Item 5528] </a>
 </div>
 
 
@@ -26235,6 +26767,15 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 5679
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -26249,7 +26790,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I think that the interaction was high quality <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5529]
+  <a href="#Item 5529-anchor"> [Item 5529] </a>
 </div>
 
 
@@ -26259,7 +26800,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5742
 
@@ -26267,7 +26810,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -26398,7 +26942,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction was good <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5530]
+  <a href="#Item 5530-anchor"> [Item 5530] </a>
 </div>
 
 
@@ -26408,7 +26952,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5743
 
@@ -26416,7 +26962,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -26547,7 +27094,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5531]
+  <a href="#Item 5531-anchor"> [Item 5531] </a>
 </div>
 
 
@@ -26557,7 +27104,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5682
 
@@ -26565,7 +27114,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -26696,7 +27246,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### That was an excellent supportive interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5532]
+  <a href="#Item 5532-anchor"> [Item 5532] </a>
 </div>
 
 
@@ -26706,7 +27256,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5744
 
@@ -26714,7 +27266,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -26845,7 +27398,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5533]
+  <a href="#Item 5533-anchor"> [Item 5533] </a>
 </div>
 
 
@@ -26855,7 +27408,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5745
 
@@ -26863,7 +27418,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -26994,7 +27550,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5534]
+  <a href="#Item 5534-anchor"> [Item 5534] </a>
 </div>
 
 
@@ -27004,7 +27560,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5746
 
@@ -27012,7 +27570,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -27143,7 +27702,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I dont feel better after the interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5535]
+  <a href="#Item 5535-anchor"> [Item 5535] </a>
 </div>
 
 
@@ -27153,7 +27712,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5686
 
@@ -27161,7 +27722,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -27292,7 +27854,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel worse <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5536]
+  <a href="#Item 5536-anchor"> [Item 5536] </a>
 </div>
 
 
@@ -27302,7 +27864,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5687
 
@@ -27310,7 +27874,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -27441,7 +28006,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped with a problem I was having <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5537]
+  <a href="#Item 5537-anchor"> [Item 5537] </a>
 </div>
 
 
@@ -27451,7 +28016,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5747
 
@@ -27459,7 +28026,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -27590,7 +28158,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped me feel better about a problem <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5538]
+  <a href="#Item 5538-anchor"> [Item 5538] </a>
 </div>
 
 
@@ -27600,7 +28168,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5748
 
@@ -27608,7 +28178,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -27761,7 +28332,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -27891,7 +28462,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### Give you information, or ideas about how to make things better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 874]
+  <a href="#Item 874-anchor"> [Item 874] </a>
 </div>
 
 
@@ -27904,12 +28475,14 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5631
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -28009,7 +28582,7 @@ Missingness Interclass Correlation (ICC) = 1.29
 #### Do something to help you (ex: pick you up, help with homework) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 875]
+  <a href="#Item 875-anchor"> [Item 875] </a>
 </div>
 
 
@@ -28022,12 +28595,14 @@ Missingness Interclass Correlation (ICC) = 1.29
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1405
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -28127,7 +28702,7 @@ Missingness Interclass Correlation (ICC) = 1.31
 #### Give you emotional support (ex: listen to and comfort you) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 879]
+  <a href="#Item 879-anchor"> [Item 879] </a>
 </div>
 
 
@@ -28140,12 +28715,14 @@ Missingness Interclass Correlation (ICC) = 1.31
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1862
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -28246,7 +28823,7 @@ Missingness Interclass Correlation (ICC) = 1.31
 #### Overall, how helpful was your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1143]
+  <a href="#Item 1143-anchor"> [Item 1143] </a>
 </div>
 
 
@@ -28259,12 +28836,14 @@ Missingness Interclass Correlation (ICC) = 1.31
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2079
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -28364,7 +28943,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### How much did you want your parent to... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1144]
+  <a href="#Item 1144-anchor"> [Item 1144] </a>
 </div>
 
 
@@ -28378,10 +28957,46 @@ Missingness Interclass Correlation (ICC) = 1.27
 <div class = "anchor">
 
 
+**Question ID**: Question 2078
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
 
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1199-anchor"> [Item 1199] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2080
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
 
 </div>  
 ### Block: Item 1361 <!-- Header section -->
@@ -28391,7 +29006,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 #### Since your last survey, did you experience any stressful events at home, school or elsewhere? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4463]
+  <a href="#Item 4463-anchor"> [Item 4463] </a>
 </div>
 
 
@@ -28401,7 +29016,9 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4137
 
@@ -28409,7 +29026,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -28522,7 +29140,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Since your last survey, did you see or communicate with your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4464]
+  <a href="#Item 4464-anchor"> [Item 4464] </a>
 </div>
 
 
@@ -28532,7 +29150,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4138
 
@@ -28540,7 +29160,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -28654,7 +29275,7 @@ Missingness Interclass Correlation (ICC) = 1.17
 #### Think about your sleep from last night to this morning: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6302]
+  <a href="#Item 6302-anchor"> [Item 6302] </a>
 </div>
 
 
@@ -28666,6 +29287,15 @@ Missingness Interclass Correlation (ICC) = 1.17
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 6802
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -28680,7 +29310,7 @@ Missingness Interclass Correlation (ICC) = 1.17
 #### How many minutes did it take for you to fall asleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6305]
+  <a href="#Item 6305-anchor"> [Item 6305] </a>
 </div>
 
 
@@ -28693,12 +29323,14 @@ Missingness Interclass Correlation (ICC) = 1.17
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6805
 
 **Way the question was delivered:** Free Response
 
 **Type of data:** character
 
+</div> <div class = "anchor">
 
 
 
@@ -28777,7 +29409,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Did you wake up during the night (Not counting your final wake-up in the morning)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6306]
+  <a href="#Item 6306-anchor"> [Item 6306] </a>
 </div>
 
 
@@ -28787,7 +29419,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 6806
 
@@ -28795,7 +29429,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -28909,7 +29544,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How would you rate the quality of your sleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6309]
+  <a href="#Item 6309-anchor"> [Item 6309] </a>
 </div>
 
 
@@ -28922,12 +29557,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6811
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -29027,7 +29664,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1118]
+  <a href="#Item 1118-anchor"> [Item 1118] </a>
 </div>
 
 
@@ -29040,12 +29677,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1847
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -29165,7 +29804,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -29301,7 +29940,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1122]
+  <a href="#Item 1122-anchor"> [Item 1122] </a>
 </div>
 
 
@@ -29314,12 +29953,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1850
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -29439,7 +30080,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -29563,7 +30204,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1126]
+  <a href="#Item 1126-anchor"> [Item 1126] </a>
 </div>
 
 
@@ -29576,12 +30217,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1853
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -29701,7 +30344,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -29825,7 +30468,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1130]
+  <a href="#Item 1130-anchor"> [Item 1130] </a>
 </div>
 
 
@@ -29838,12 +30481,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1856
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -29963,7 +30608,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -30107,7 +30752,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
 
@@ -30261,7 +30906,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How close did you feel to your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1134]
+  <a href="#Item 1134-anchor"> [Item 1134] </a>
 </div>
 
 
@@ -30274,12 +30919,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2077
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -30399,7 +31046,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -30561,7 +31208,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -30697,7 +31344,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you have an argument or disagreement? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1117]
+  <a href="#Item 1117-anchor"> [Item 1117] </a>
 </div>
 
 
@@ -30707,7 +31354,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1846
 
@@ -30715,7 +31364,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -30829,7 +31479,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you feel like you had a lot of demands placed on you that were stressful? (ex: had to do a chore; had too much homework)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1121]
+  <a href="#Item 1121-anchor"> [Item 1121] </a>
 </div>
 
 
@@ -30839,7 +31489,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1849
 
@@ -30847,7 +31499,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -30961,7 +31614,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you have some other problem or event that was stressful? (ex: forgot something; was late to an appointment)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1125]
+  <a href="#Item 1125-anchor"> [Item 1125] </a>
 </div>
 
 
@@ -30971,7 +31624,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1852
 
@@ -30979,7 +31634,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -31093,7 +31749,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did someone else have a problem or event that turned out to be stressful for you? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1129]
+  <a href="#Item 1129-anchor"> [Item 1129] </a>
 </div>
 
 
@@ -31103,7 +31759,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1855
 
@@ -31111,7 +31769,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -31218,7 +31877,34 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 </div> 
-### Block: Item 1132  <!-- Header section -->
+### Block: Item 1132 <!-- Header section -->
+
+<div class = "header-shading">
+
+#### No Text <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1364-anchor"> [Item 1364] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2304
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
+</div>  <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -31245,7 +31931,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -31405,7 +32091,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please describe how you asked (ex: directly asking is when you use your words to say what you would like your parents to do; indirectly asking is when you hint at something and hope your parent understands) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5526]
+  <a href="#Item 5526-anchor"> [Item 5526] </a>
 </div>
 
 
@@ -31418,12 +32104,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5691
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
@@ -31543,7 +32231,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -31703,7 +32391,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please tell us about the interaction you had with your mom: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5528]
+  <a href="#Item 5528-anchor"> [Item 5528] </a>
 </div>
 
 
@@ -31715,6 +32403,15 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 5693
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -31729,7 +32426,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I think that the interaction was high quality <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5529]
+  <a href="#Item 5529-anchor"> [Item 5529] </a>
 </div>
 
 
@@ -31739,7 +32436,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5749
 
@@ -31747,7 +32446,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -31878,7 +32578,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction was good <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5530]
+  <a href="#Item 5530-anchor"> [Item 5530] </a>
 </div>
 
 
@@ -31888,7 +32588,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5750
 
@@ -31896,7 +32598,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -32027,7 +32730,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5531]
+  <a href="#Item 5531-anchor"> [Item 5531] </a>
 </div>
 
 
@@ -32037,7 +32740,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5696
 
@@ -32045,7 +32750,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -32176,7 +32882,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### That was an excellent supportive interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5532]
+  <a href="#Item 5532-anchor"> [Item 5532] </a>
 </div>
 
 
@@ -32186,7 +32892,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5751
 
@@ -32194,7 +32902,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -32325,7 +33034,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5533]
+  <a href="#Item 5533-anchor"> [Item 5533] </a>
 </div>
 
 
@@ -32335,7 +33044,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5752
 
@@ -32343,7 +33054,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -32474,7 +33186,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5534]
+  <a href="#Item 5534-anchor"> [Item 5534] </a>
 </div>
 
 
@@ -32484,7 +33196,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5753
 
@@ -32492,7 +33206,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -32623,7 +33338,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I dont feel better after the interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5535]
+  <a href="#Item 5535-anchor"> [Item 5535] </a>
 </div>
 
 
@@ -32633,7 +33348,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5700
 
@@ -32641,7 +33358,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -32772,7 +33490,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel worse <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5536]
+  <a href="#Item 5536-anchor"> [Item 5536] </a>
 </div>
 
 
@@ -32782,7 +33500,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5701
 
@@ -32790,7 +33510,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -32921,7 +33642,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped with a problem I was having <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5537]
+  <a href="#Item 5537-anchor"> [Item 5537] </a>
 </div>
 
 
@@ -32931,7 +33652,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5754
 
@@ -32939,7 +33662,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -33070,7 +33794,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped me feel better about a problem <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5538]
+  <a href="#Item 5538-anchor"> [Item 5538] </a>
 </div>
 
 
@@ -33080,7 +33804,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5755
 
@@ -33088,7 +33814,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -33241,7 +33968,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -33371,7 +34098,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Give you information, or ideas about how to make things better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 874]
+  <a href="#Item 874-anchor"> [Item 874] </a>
 </div>
 
 
@@ -33384,12 +34111,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5632
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -33489,7 +34218,7 @@ Missingness Interclass Correlation (ICC) = 1.14
 #### Do something to help you (ex: pick you up, help with homework) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 875]
+  <a href="#Item 875-anchor"> [Item 875] </a>
 </div>
 
 
@@ -33502,12 +34231,14 @@ Missingness Interclass Correlation (ICC) = 1.14
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1430
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -33607,7 +34338,7 @@ Missingness Interclass Correlation (ICC) = 1.11
 #### Give you emotional support (ex: listen to and comfort you) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 879]
+  <a href="#Item 879-anchor"> [Item 879] </a>
 </div>
 
 
@@ -33620,12 +34351,14 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1888
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -33726,7 +34459,7 @@ Missingness Interclass Correlation (ICC) = 1.12
 #### Overall, how helpful was your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1143]
+  <a href="#Item 1143-anchor"> [Item 1143] </a>
 </div>
 
 
@@ -33739,12 +34472,14 @@ Missingness Interclass Correlation (ICC) = 1.12
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2083
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -33844,7 +34579,7 @@ Missingness Interclass Correlation (ICC) = 1.18
 #### How much did you want your parent to... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1144]
+  <a href="#Item 1144-anchor"> [Item 1144] </a>
 </div>
 
 
@@ -33858,10 +34593,46 @@ Missingness Interclass Correlation (ICC) = 1.18
 <div class = "anchor">
 
 
+**Question ID**: Question 2082
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
 
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1199-anchor"> [Item 1199] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2084
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
 
 </div>  
 ### Block: Item 1361 <!-- Header section -->
@@ -33871,7 +34642,7 @@ Missingness Interclass Correlation (ICC) = 1.18
 #### Since your last survey, did you experience any stressful events at home, school or elsewhere? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4463]
+  <a href="#Item 4463-anchor"> [Item 4463] </a>
 </div>
 
 
@@ -33881,7 +34652,9 @@ Missingness Interclass Correlation (ICC) = 1.18
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4148
 
@@ -33889,7 +34662,8 @@ Missingness Interclass Correlation (ICC) = 1.18
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -34002,7 +34776,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Since your last survey, did you see or communicate with your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 4464]
+  <a href="#Item 4464-anchor"> [Item 4464] </a>
 </div>
 
 
@@ -34012,7 +34786,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 4149
 
@@ -34020,7 +34796,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -34134,7 +34911,7 @@ Missingness Interclass Correlation (ICC) = 1.13
 #### Think about your sleep from last night to this morning: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6302]
+  <a href="#Item 6302-anchor"> [Item 6302] </a>
 </div>
 
 
@@ -34146,6 +34923,15 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 6812
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -34160,7 +34946,7 @@ Missingness Interclass Correlation (ICC) = 1.13
 #### How many minutes did it take for you to fall asleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6305]
+  <a href="#Item 6305-anchor"> [Item 6305] </a>
 </div>
 
 
@@ -34173,12 +34959,14 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6815
 
 **Way the question was delivered:** Free Response
 
 **Type of data:** character
 
+</div> <div class = "anchor">
 
 
 
@@ -34257,7 +35045,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### Did you wake up during the night (Not counting your final wake-up in the morning)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6306]
+  <a href="#Item 6306-anchor"> [Item 6306] </a>
 </div>
 
 
@@ -34267,7 +35055,9 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 6816
 
@@ -34275,7 +35065,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -34389,7 +35180,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How would you rate the quality of your sleep? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 6309]
+  <a href="#Item 6309-anchor"> [Item 6309] </a>
 </div>
 
 
@@ -34402,12 +35193,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 6821
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -34507,7 +35300,7 @@ Missingness Interclass Correlation (ICC) = NaN
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1118]
+  <a href="#Item 1118-anchor"> [Item 1118] </a>
 </div>
 
 
@@ -34520,12 +35313,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1873
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -34645,7 +35440,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -34781,7 +35576,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1122]
+  <a href="#Item 1122-anchor"> [Item 1122] </a>
 </div>
 
 
@@ -34794,12 +35589,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1876
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -34919,7 +35716,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -35043,7 +35840,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1126]
+  <a href="#Item 1126-anchor"> [Item 1126] </a>
 </div>
 
 
@@ -35056,12 +35853,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1879
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -35181,7 +35980,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -35305,7 +36104,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How bothered or stressed were you because of this? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1130]
+  <a href="#Item 1130-anchor"> [Item 1130] </a>
 </div>
 
 
@@ -35318,12 +36117,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 1882
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -35443,7 +36244,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -35587,7 +36388,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
 
@@ -35741,7 +36542,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### How close did you feel to your parent? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1134]
+  <a href="#Item 1134-anchor"> [Item 1134] </a>
 </div>
 
 
@@ -35754,12 +36555,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 2081
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -35879,7 +36682,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -36041,7 +36844,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -36177,7 +36980,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you have an argument or disagreement? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1117]
+  <a href="#Item 1117-anchor"> [Item 1117] </a>
 </div>
 
 
@@ -36187,7 +36990,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1872
 
@@ -36195,7 +37000,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -36309,7 +37115,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you feel like you had a lot of demands placed on you that were stressful? (ex: had to do a chore; had too much homework)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1121]
+  <a href="#Item 1121-anchor"> [Item 1121] </a>
 </div>
 
 
@@ -36319,7 +37125,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1875
 
@@ -36327,7 +37135,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -36441,7 +37250,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did you have some other problem or event that was stressful? (ex: forgot something; was late to an appointment)? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1125]
+  <a href="#Item 1125-anchor"> [Item 1125] </a>
 </div>
 
 
@@ -36451,7 +37260,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1878
 
@@ -36459,7 +37270,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -36573,7 +37385,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Did someone else have a problem or event that turned out to be stressful for you? <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 1129]
+  <a href="#Item 1129-anchor"> [Item 1129] </a>
 </div>
 
 
@@ -36583,7 +37395,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 1881
 
@@ -36591,7 +37405,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -36698,7 +37513,34 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 </div> 
-### Block: Item 1132  <!-- Header section -->
+### Block: Item 1132 <!-- Header section -->
+
+<div class = "header-shading">
+
+#### No Text <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 1364-anchor"> [Item 1364] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Question 2305
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
+</div>  <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -36725,7 +37567,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -36885,7 +37727,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please describe how you asked (ex: directly asking is when you use your words to say what you would like your parents to do; indirectly asking is when you hint at something and hope your parent understands) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5526]
+  <a href="#Item 5526-anchor"> [Item 5526] </a>
 </div>
 
 
@@ -36898,12 +37740,14 @@ Missingness Interclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+
 **Question ID**: Question 5705
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
@@ -37023,7 +37867,7 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> <div class = "anchor">
 
 
 
@@ -37183,7 +38027,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### Please tell us about the interaction you had with your mom: <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5528]
+  <a href="#Item 5528-anchor"> [Item 5528] </a>
 </div>
 
 
@@ -37195,6 +38039,15 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 <div class = "anchor">
+
+
+**Question ID**: Question 5707
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -37209,7 +38062,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I think that the interaction was high quality <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5529]
+  <a href="#Item 5529-anchor"> [Item 5529] </a>
 </div>
 
 
@@ -37219,7 +38072,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5756
 
@@ -37227,7 +38082,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -37358,7 +38214,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction was good <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5530]
+  <a href="#Item 5530-anchor"> [Item 5530] </a>
 </div>
 
 
@@ -37368,7 +38224,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5757
 
@@ -37376,7 +38234,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -37507,7 +38366,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5531]
+  <a href="#Item 5531-anchor"> [Item 5531] </a>
 </div>
 
 
@@ -37517,7 +38376,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5710
 
@@ -37525,7 +38386,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -37656,7 +38518,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### That was an excellent supportive interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5532]
+  <a href="#Item 5532-anchor"> [Item 5532] </a>
 </div>
 
 
@@ -37666,7 +38528,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5758
 
@@ -37674,7 +38538,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -37805,7 +38670,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel better <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5533]
+  <a href="#Item 5533-anchor"> [Item 5533] </a>
 </div>
 
 
@@ -37815,7 +38680,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5759
 
@@ -37823,7 +38690,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -37954,7 +38822,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel supported <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5534]
+  <a href="#Item 5534-anchor"> [Item 5534] </a>
 </div>
 
 
@@ -37964,7 +38832,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5760
 
@@ -37972,7 +38842,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -38103,7 +38974,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### I dont feel better after the interaction <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5535]
+  <a href="#Item 5535-anchor"> [Item 5535] </a>
 </div>
 
 
@@ -38113,7 +38984,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5714
 
@@ -38121,7 +38994,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -38252,7 +39126,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction made me feel worse <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5536]
+  <a href="#Item 5536-anchor"> [Item 5536] </a>
 </div>
 
 
@@ -38262,7 +39136,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5715
 
@@ -38270,7 +39146,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -38401,7 +39278,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped with a problem I was having <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5537]
+  <a href="#Item 5537-anchor"> [Item 5537] </a>
 </div>
 
 
@@ -38411,7 +39288,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5761
 
@@ -38419,7 +39298,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -38550,7 +39430,7 @@ Missingness Interclass Correlation (ICC) = NA
 #### The interaction helped me feel better about a problem <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
-  [Item 5538]
+  <a href="#Item 5538-anchor"> [Item 5538] </a>
 </div>
 
 
@@ -38560,7 +39440,9 @@ Missingness Interclass Correlation (ICC) = NA
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Question 5762
 
@@ -38568,7 +39450,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -38719,6 +39602,8 @@ Missingness Interclass Correlation (ICC) = NA
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 810</em>: <em>Check all that happened at school today:</em>.</div>
@@ -38875,6 +39760,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
+</div> <div class = "anchor">
+
 
 
 
@@ -39015,7 +39902,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 #### Today, how much did you feel <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 844-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 844]
 </div>
 
@@ -39027,14 +39914,16 @@ Missingness Interclass Correlation (ICC) = 1.09
 <!-- Body -->
 
 
-
 <div class = "anchor">
+
 
 **Question ID**: Item 844
 
 **Way the question was delivered:** Multiple Slider
 
 **Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -40093,7 +40982,7 @@ Interclass Correlation (ICC) = 0.41
 
 #### Overall, how stressed have you felt today? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 845-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 845]
 </div>
 
@@ -40107,12 +40996,14 @@ Interclass Correlation (ICC) = 0.41
 
 <div class = "anchor">
 
+
 **Question ID**: Item 845
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -40230,6 +41121,8 @@ Missingness Interclass Correlation (ICC) = NaN
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -40359,7 +41252,7 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 #### Give you information, or ideas about how to make things better <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 874-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 874]
 </div>
 
@@ -40373,12 +41266,14 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 <div class = "anchor">
 
+
 **Question ID**: Item 874
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -40476,7 +41371,7 @@ Missingness Interclass Correlation (ICC) = 1.01
 
 #### Do something to help you (ex: pick you up, help with homework) <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 875-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 875]
 </div>
 
@@ -40490,12 +41385,14 @@ Missingness Interclass Correlation (ICC) = 1.01
 
 <div class = "anchor">
 
+
 **Question ID**: Item 875
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -40593,7 +41490,7 @@ Missingness Interclass Correlation (ICC) = 1.01
 
 #### Give you emotional support (ex: listen to and comfort you) <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 879-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 879]
 </div>
 
@@ -40607,12 +41504,14 @@ Missingness Interclass Correlation (ICC) = 1.01
 
 <div class = "anchor">
 
+
 **Question ID**: Item 879
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -40710,7 +41609,7 @@ Missingness Interclass Correlation (ICC) = 1.01
 
 #### Did you have an argument or disagreement? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1117-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1117]
 </div>
 
@@ -40721,13 +41620,17 @@ Missingness Interclass Correlation (ICC) = 1.01
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 1117
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -40839,7 +41742,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### How bothered or stressed were you because of this? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1118-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1118]
 </div>
 
@@ -40853,12 +41756,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 1118
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -40976,6 +41881,8 @@ Missingness Interclass Correlation (ICC) = NaN
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -41111,7 +42018,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### Did you feel like you had a lot of demands placed on you that were stressful? (ex: had to do a chore; had too much homework)? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1121-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1121]
 </div>
 
@@ -41122,13 +42029,17 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 1121
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -41240,7 +42151,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### How bothered or stressed were you because of this? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1122-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1122]
 </div>
 
@@ -41254,12 +42165,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 1122
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -41377,6 +42290,8 @@ Missingness Interclass Correlation (ICC) = NaN
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -41500,7 +42415,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### Did you have some other problem or event that was stressful? (ex: forgot something; was late to an appointment)? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1125-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1125]
 </div>
 
@@ -41511,13 +42426,17 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 1125
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -41629,7 +42548,7 @@ Missingness Interclass Correlation (ICC) = 1.84
 
 #### How bothered or stressed were you because of this? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1126-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1126]
 </div>
 
@@ -41643,12 +42562,14 @@ Missingness Interclass Correlation (ICC) = 1.84
 
 <div class = "anchor">
 
+
 **Question ID**: Item 1126
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -41766,6 +42687,8 @@ Missingness Interclass Correlation (ICC) = NaN
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -41889,7 +42812,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### Did someone else have a problem or event that turned out to be stressful for you? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1129-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1129]
 </div>
 
@@ -41900,13 +42823,17 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 1129
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -42018,7 +42945,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### How bothered or stressed were you because of this? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1130-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1130]
 </div>
 
@@ -42032,12 +42959,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 1130
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -42155,6 +43084,8 @@ Missingness Interclass Correlation (ICC) = NaN
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -42298,6 +43229,8 @@ Missingness Interclass Correlation (ICC) = NaN
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
@@ -42451,7 +43384,7 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 #### How close did you feel to your parent? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1134-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1134]
 </div>
 
@@ -42465,12 +43398,14 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 <div class = "anchor">
 
+
 **Question ID**: Item 1134
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -42588,6 +43523,8 @@ Missingness Interclass Correlation (ICC) = 1.11
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -42729,7 +43666,7 @@ Missingness Interclass Correlation (ICC) = 1.19
 
 #### Overall, how helpful was your parent? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1143-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1143]
 </div>
 
@@ -42743,12 +43680,14 @@ Missingness Interclass Correlation (ICC) = 1.19
 
 <div class = "anchor">
 
+
 **Question ID**: Item 1143
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -42846,7 +43785,7 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 #### How much did you want your parent to... <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1144-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1144]
 </div>
 
@@ -42861,6 +43800,15 @@ Missingness Interclass Correlation (ICC) = 1.04
 <div class = "anchor">
 
 
+**Question ID**: Item 1144
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
 
 
 
@@ -42872,7 +43820,7 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 #### Please think about the most stressful event, situation or experience you faced today. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1154-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1154]
 </div>
 
@@ -42885,6 +43833,15 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 
 <div class = "anchor">
+
+
+**Question ID**: Item 1154
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
@@ -42918,6 +43875,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4473</em>: <em>After experiencing this situation, I felt like I needed to talk to someone about it.</em>.</div>
@@ -43059,6 +44018,33 @@ Missingness Interclass Correlation (ICC) = NaN
 </div>
 
 
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div id="Item 1199-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  [Item 1199]
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Item 1199
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
 </div>  <!-- Header section -->
 
 <div class = "header-shading">
@@ -43085,6 +44071,8 @@ Missingness Interclass Correlation (ICC) = NaN
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -43226,7 +44214,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 #### Please tell us about your day overall. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 1358-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 1358]
 </div>
 
@@ -43241,10 +44229,46 @@ Missingness Interclass Correlation (ICC) = 1.09
 <div class = "anchor">
 
 
+**Question ID**: Item 1358
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
 
 
 
 
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### No Text <br>
+
+<div id="Item 1364-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  [Item 1364]
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Item 1364
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
 
 </div>  <!-- Header section -->
 
@@ -43252,7 +44276,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 #### Since your last survey, did you experience any stressful events at home, school or elsewhere? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 4463-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 4463]
 </div>
 
@@ -43263,13 +44287,17 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 4463
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -43381,7 +44409,7 @@ Missingness Interclass Correlation (ICC) = 1.02
 
 #### Since your last survey, did you see or communicate with your parent? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 4464-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 4464]
 </div>
 
@@ -43392,13 +44420,17 @@ Missingness Interclass Correlation (ICC) = 1.02
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 4464
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -43530,6 +44562,8 @@ Missingness Interclass Correlation (ICC) = 1.02
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -43665,7 +44699,7 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 #### After experiencing this situation, I felt like I needed to talk to someone about it. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 4473-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 4473]
 </div>
 
@@ -43676,13 +44710,17 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 4473
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -43788,6 +44826,33 @@ Missingness Interclass Correlation (ICC) = 1.02
 </div>
 
 
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div id="Item 4474-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  [Item 4474]
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: Item 4474
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
 </div>  <!-- Header section -->
 
 <div class = "header-shading">
@@ -43814,6 +44879,8 @@ Missingness Interclass Correlation (ICC) = 1.02
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -43973,7 +45040,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 #### Please describe how you asked (ex: directly asking is when you use your words to say what you would like your parents to do; indirectly asking is when you hint at something and hope your parent understands) <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5526-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5526]
 </div>
 
@@ -43987,12 +45054,14 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <div class = "anchor">
 
+
 **Question ID**: Item 5526
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
 
@@ -44110,6 +45179,8 @@ Missingness Interclass Correlation (ICC) = 1.5
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -44269,7 +45340,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 #### Please tell us about the interaction you had with your mom: <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5528-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5528]
 </div>
 
@@ -44284,6 +45355,15 @@ Missingness Interclass Correlation (ICC) = 1.27
 <div class = "anchor">
 
 
+**Question ID**: Item 5528
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
 
 
 
@@ -44295,7 +45375,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 #### I think that the interaction was high quality <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5529-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5529]
 </div>
 
@@ -44306,13 +45386,17 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5529
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -44442,7 +45526,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 #### The interaction was good <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5530-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5530]
 </div>
 
@@ -44453,13 +45537,17 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5530
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -44589,7 +45677,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 #### I feel supported <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5531-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5531]
 </div>
 
@@ -44600,13 +45688,17 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5531
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -44736,7 +45828,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 #### That was an excellent supportive interaction <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5532-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5532]
 </div>
 
@@ -44747,13 +45839,17 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5532
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -44883,7 +45979,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 #### The interaction made me feel better <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5533-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5533]
 </div>
 
@@ -44894,13 +45990,17 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5533
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -45030,7 +46130,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 #### The interaction made me feel supported <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5534-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5534]
 </div>
 
@@ -45041,13 +46141,17 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5534
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -45177,7 +46281,7 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 #### I dont feel better after the interaction <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5535-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5535]
 </div>
 
@@ -45188,13 +46292,17 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5535
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -45324,7 +46432,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 #### The interaction made me feel worse <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5536-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5536]
 </div>
 
@@ -45335,13 +46443,17 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5536
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -45471,7 +46583,7 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 #### The interaction helped with a problem I was having <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5537-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5537]
 </div>
 
@@ -45482,13 +46594,17 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5537
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -45618,7 +46734,7 @@ Missingness Interclass Correlation (ICC) = 1.1
 
 #### The interaction helped me feel better about a problem <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5538-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5538]
 </div>
 
@@ -45629,13 +46745,17 @@ Missingness Interclass Correlation (ICC) = 1.1
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 5538
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -45785,6 +46905,8 @@ Missingness Interclass Correlation (ICC) = 1.15
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -45964,6 +47086,8 @@ Missingness Interclass Correlation (ICC) = 1.07
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -46150,6 +47274,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** integer
 
+</div> <div class = "anchor">
+
 
 
 
@@ -46302,7 +47428,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 #### How helpful was the support you received from: %% <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 5544-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 5544]
 </div>
 
@@ -46316,12 +47442,14 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 <div class = "anchor">
 
+
 **Question ID**: Item 5544
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -46422,7 +47550,7 @@ Missingness Interclass Correlation (ICC) = 1.22
 
 #### Think about your sleep from last night to this morning: <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6302-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6302]
 </div>
 
@@ -46437,6 +47565,15 @@ Missingness Interclass Correlation (ICC) = 1.22
 <div class = "anchor">
 
 
+**Question ID**: Item 6302
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
 
 
 
@@ -46448,7 +47585,7 @@ Missingness Interclass Correlation (ICC) = 1.22
 
 #### How many minutes did it take for you to fall asleep? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6305-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6305]
 </div>
 
@@ -46462,12 +47599,14 @@ Missingness Interclass Correlation (ICC) = 1.22
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6305
 
 **Way the question was delivered:** Free Response
 
 **Type of data:** character
 
+</div> <div class = "anchor">
 
 
 
@@ -46545,7 +47684,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 #### Did you wake up during the night (Not counting your final wake-up in the morning)? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6306-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6306]
 </div>
 
@@ -46556,13 +47695,17 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 6306
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -46674,7 +47817,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 #### How would you rate the quality of your sleep? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6309-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6309]
 </div>
 
@@ -46688,12 +47831,14 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6309
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -46791,7 +47936,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 #### Today, did you see or communicate with your parent? <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6310-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6310]
 </div>
 
@@ -46802,13 +47947,17 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 <!-- Body -->
 
+
 <div class = "anchor">
+
 
 **Question ID**: Item 6310
 
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -46920,7 +48069,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### Tell us about your day with your family <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6311-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6311]
 </div>
 
@@ -46935,6 +48084,15 @@ Missingness Interclass Correlation (ICC) = NaN
 <div class = "anchor">
 
 
+**Question ID**: Item 6311
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
 
 
 
@@ -46946,7 +48104,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### I had fun with my parent today. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6312-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6312]
 </div>
 
@@ -46960,12 +48118,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6312
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -47063,7 +48223,7 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 #### My parent and I got along today. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6313-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6313]
 </div>
 
@@ -47077,12 +48237,14 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6313
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -47180,7 +48342,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### My parent gave me love and attention today. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6314-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6314]
 </div>
 
@@ -47194,12 +48356,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6314
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -47297,7 +48461,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### My parent got mad at me today. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6315-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6315]
 </div>
 
@@ -47311,12 +48475,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6315
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -47414,7 +48580,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### I was angry at my parent today. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6316-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6316]
 </div>
 
@@ -47428,12 +48594,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6316
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -47531,7 +48699,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### My parent punished me today. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6317-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6317]
 </div>
 
@@ -47545,12 +48713,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6317
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -47668,6 +48838,8 @@ Missingness Interclass Correlation (ICC) = 1.13
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -47791,7 +48963,7 @@ Missingness Interclass Correlation (ICC) = 1.14
 
 #### Today, how much did you feel... <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6319-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6319]
 </div>
 
@@ -47806,6 +48978,15 @@ Missingness Interclass Correlation (ICC) = 1.14
 <div class = "anchor">
 
 
+**Question ID**: Item 6319
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
 
 
 
@@ -47817,7 +48998,7 @@ Missingness Interclass Correlation (ICC) = 1.14
 
 #### Accepted by your parent <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6320-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6320]
 </div>
 
@@ -47831,12 +49012,14 @@ Missingness Interclass Correlation (ICC) = 1.14
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6320
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -47934,7 +49117,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### Understood by your parent <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6321-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6321]
 </div>
 
@@ -47948,12 +49131,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6321
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -48051,7 +49236,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### Cared for by your parent <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6322-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6322]
 </div>
 
@@ -48065,12 +49250,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6322
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -48168,7 +49355,7 @@ Missingness Interclass Correlation (ICC) = NaN
 
 #### Overall, rate the quality of your parents support today. <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6323-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6323]
 </div>
 
@@ -48182,12 +49369,14 @@ Missingness Interclass Correlation (ICC) = NaN
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6323
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 
@@ -48305,6 +49494,8 @@ Missingness Interclass Correlation (ICC) = NaN
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -48467,6 +49658,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
+</div> <div class = "anchor">
+
 
 
 
@@ -48628,6 +49821,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
+</div> <div class = "anchor">
+
 
 
 
@@ -48776,6 +49971,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -48938,6 +50135,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
+</div> <div class = "anchor">
+
 
 
 
@@ -49099,6 +50298,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
+</div> <div class = "anchor">
+
 
 
 
@@ -49247,6 +50448,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 **Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
+
+</div> <div class = "anchor">
 
 
 
@@ -49409,6 +50612,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
+</div> <div class = "anchor">
+
 
 
 
@@ -49570,6 +50775,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
+</div> <div class = "anchor">
+
 
 
 
@@ -49698,7 +50905,7 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 #### My parent gave me ____ help than I wanted today <br>
 
-<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<div id="Item 6333-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   [Item 6333]
 </div>
 
@@ -49712,12 +50919,14 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 <div class = "anchor">
 
+
 **Question ID**: Item 6333
 
 **Way the question was delivered:** Slider
 
 **Type of data:** numeric
 
+</div> <div class = "anchor">
 
 
 

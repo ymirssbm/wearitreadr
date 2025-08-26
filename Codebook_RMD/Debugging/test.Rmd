@@ -3,16 +3,18 @@ title: "test"
 output: html_document
 ---
 
-```{r, include = F}
-print("error")
-
-```
-
 
 ```{r}
-summed <- a + b
+library(knitr)
+df <- data.frame(x = "apple")
 
-print(summed)
+
+
+out <- ""
+
+out <- paste(out, knit_expand(file = "test2.Rmd", df = "df"))
 
 
 ```
+
+`r knit(text=out)`

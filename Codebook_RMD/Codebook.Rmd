@@ -150,7 +150,24 @@ for (survey in surveys) {
           # Fail safe to clean any special characters that sneak in
           chunk_label <- gsub("[^A-Za-z0-9\\-]", "", chunk_label)
         
-        # Knit expand
+          
+        # Knit Queston Page
+        out2 <- paste( 
+          out2,
+          knit_expand(
+            file = paste0("DataTypes/QuestionPage.Rmd"),
+            question_text = itemBlock$Question.Text,
+            item_id = itemBlock$Item.ID,
+            question_type = itemBlock$Question.Type.Display.Name,
+            result_type = itemBlock$Result.Type,
+            question_id = itemBlock$Question.ID,
+            chunk_label = chunk_label,
+            itemBlock = itemBlock
+          )
+        )
+          
+          
+        # Knit Data type
         out2 <- paste( 
           out2,
           knit_expand(
@@ -175,6 +192,7 @@ for (survey in surveys) {
 
 # Section for by item description
 if (generate_item_description == TRUE) {
+
 
   out2 <- paste(out2, "# By Item Description", sep = "\n")
   
@@ -226,6 +244,23 @@ if (generate_item_description == TRUE) {
           # Fail safe to clean any special characters that sneak in
           chunk_label <- gsub("[^A-Za-z0-9\\-]", "", chunk_label)
         
+          
+        # Knit Item Page
+        out2 <- paste( 
+          out2,
+          knit_expand(
+            file = paste0("DataTypes_Item/ItemPage.Rmd"),
+            question_text = itemBlock$Question.Text,
+            item_id = itemBlock$Item.ID,
+            question_type = itemBlock$Question.Type.Display.Name,
+            result_type = itemBlock$Result.Type,
+            question_id = itemBlock$Question.ID,
+            chunk_label = chunk_label,
+            itemBlock = itemBlock
+          )
+        )
+          
+          
         # Knit expand
         out2 <- paste( 
           out2,
@@ -244,7 +279,7 @@ if (generate_item_description == TRUE) {
         detach(itemBlock)
       }
     }
-  }
+}
 
 
 
