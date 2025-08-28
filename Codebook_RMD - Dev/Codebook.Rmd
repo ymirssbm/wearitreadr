@@ -48,8 +48,9 @@ knitr::include_graphics("images/rts.png")
 
 out2 <- ""
 
+
 # Describe by Question
-describeByQuestion(out2, thisData, blockMap, responseKey)
+out2 <- describeByQuestion(out2, thisData, blockMap, responseKey)
 
 # Describe by item
 if (generate_item_description) {
