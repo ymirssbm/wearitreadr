@@ -14,11 +14,6 @@ p_load(dplyr)
 #blockMap = read.csv("processedData/questionMap.csv")
 #responseKey = read.csv("processedData/responseMap.csv")
 
-#' Generate Codebook
-#'
-#'
-#'
-#' @export
 
 generate_codebook <- function(title = "This is a temp default title, please set",
                               authors = "This is a temp default author list, please set",

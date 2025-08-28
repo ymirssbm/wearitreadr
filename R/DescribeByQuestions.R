@@ -49,7 +49,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
     )
 
     # Ensure that a level 3 header is created, it will be invisible, but then if a level 4 comes after it it will respect hierarchy
-    out2 <<- paste(out2, "### ", sep = "\n")
+    out2 <- paste(out2, "### ", sep = "\n")
 
 
 
@@ -82,7 +82,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
           chunk_label <- gsub("[^A-Za-z0-9\\-]", "", chunk_label)
 
           # Knit expand block rmd
-          out2 <<- paste(
+          out2 <- paste(
             out2,
             knit_expand(
               file = paste0("DataTypes/Block.Rmd"),
@@ -111,7 +111,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
 
 
           # Knit Queston Page
-          out2 <<- paste(
+          out2 <- paste(
             out2,
             knit_expand(
               file = paste0("DataTypes/QuestionPage.Rmd"),
@@ -127,7 +127,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
 
 
           # Knit Data type
-          out2 <<- paste(
+          out2 <- paste(
             out2,
             knit_expand(
               file = paste0("DataTypes/", question_type_no_space, ".Rmd"),
@@ -146,5 +146,5 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
       }
     }
   }
-  invisible(NULL)
+  return(out2 = out2)
 }
