@@ -56,12 +56,13 @@ frequencyTable <- function(id, thisData, responseKey){
 
 
     # Make table
-    return(
+    html_table <- as.character(
       df %>%
         kbl() %>%
         kable_styling() %>%
         column_spec(3, color = "darkgreen")
     )
+  cat(html_table)
 
     # If no data, make a table with 0's and labels
   } else {
@@ -76,11 +77,13 @@ frequencyTable <- function(id, thisData, responseKey){
     )
 
     # Kable empty table
-    return(
+    html_table <- as.character(
       df %>%
         kbl() %>%
         kable_styling() %>%
         column_spec(3, color = "darkgreen")
     )
+    cat(html_table)
   }
+  invisible(NULL)
 }
