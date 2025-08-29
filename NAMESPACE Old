@@ -1,5 +1,0 @@
-exportPattern("^[[:alpha:]]+")
-importFrom(kableExtra, kbl)
-importFrom(kableExtra, kable_styling)
-importFrom(kableExtra, column_spec)
-importFrom(dplyr, "%>%")

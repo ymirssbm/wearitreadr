@@ -1,7 +1,7 @@
 ---
 title: "This is a temp default title, please set"
 author: "This is a temp default author list, please set"
-date: "Codebook Generated 2025-08-26"
+date: "Codebook Generated 2025-08-29"
 output: 
   html_document:
     keep_md: true
@@ -100,16 +100,8 @@ This is a temp default summary, please set
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -132,9 +124,6 @@ Click to view visuals <span id="Question 4089_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -173,6 +162,7 @@ Click to view visuals <span id="Question 4089_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-4089-Item-872-1.png)<!-- -->
@@ -180,40 +170,14 @@ Click to view visuals <span id="Question 4089_arrow">▼</span>
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 693 / 688
-
 Missing = 5
-
-Min = 0, max = 2, mean = 0.04, std = 0.22
+Min = 0, Max = 2, Mean = 0.04, SD = 0.22
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.18
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.18 
 
 
 #### Screenshot
@@ -257,15 +221,8 @@ Missingness Interclass Correlation (ICC) = 1.18
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 51.64, std = 32.23
-
-
-
-
+Min = 0, Max = 100, Mean = 51.64, SD = 32.23 
 
 
 
@@ -288,53 +245,19 @@ Click to view visuals <span id="Question 5627_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-5627-Item-874-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 587 / 582
-
 Missing = 5
-
-Min = 0, max = 2, mean = 0.04, std = 0.24
+Min = 0, Max = 2, Mean = 0.04, SD = 0.24
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.18
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.18 
 
 
 
@@ -377,15 +300,8 @@ Missingness Interclass Correlation (ICC) = 1.18
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 54.31, std = 32.08
-
-
-
-
+Min = 0, Max = 100, Mean = 54.31, SD = 32.08 
 
 
 
@@ -408,53 +324,19 @@ Click to view visuals <span id="Question 1259_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1259-Item-875-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 724 / 721
-
 Missing = 3
-
-Min = 0, max = 2, mean = 0.02, std = 0.18
+Min = 0, Max = 2, Mean = 0.02, SD = 0.18
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.15
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.15 
 
 
 
@@ -497,15 +379,8 @@ Missingness Interclass Correlation (ICC) = 1.15
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 49.45, std = 31.57
-
-
-
-
+Min = 0, Max = 100, Mean = 49.45, SD = 31.57 
 
 
 
@@ -528,53 +403,19 @@ Click to view visuals <span id="Question 1784_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1784-Item-879-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 725 / 719
-
 Missing = 6
-
-Min = 0, max = 2, mean = 0.04, std = 0.23
+Min = 0, Max = 2, Mean = 0.04, SD = 0.23
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.19
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.19 
 
 
 
@@ -618,15 +459,8 @@ Missingness Interclass Correlation (ICC) = 1.19
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 71.47, std = 23.6
-
-
-
-
+Min = 0, Max = 100, Mean = 71.47, SD = 23.6 
 
 
 
@@ -649,53 +483,19 @@ Click to view visuals <span id="Question 2027_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-2027-Item-1143-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 709 / 705
-
 Missing = 4
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.29
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.29 
 
 
 
@@ -800,9 +600,6 @@ Missingness Interclass Correlation (ICC) = 1.29
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4086');
            let arrow = document.getElementById('Question 4086_arrow');
@@ -819,10 +616,8 @@ Click to view visuals <span id="Question 4086_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -849,49 +644,22 @@ Click to view visuals <span id="Question 4086_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4086-Item-4463-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-
 
 **Missingness Descriptives**
 
 Delivered / Answered = 1196 / 1191
-
 Missing = 5
-
-Min = 0, max = 2, mean = 0.03, std = 0.22
+Min = 0, Max = 2, Mean = 0.03, SD = 0.22
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.1
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.1 
 
 
 #### Screenshot
@@ -934,9 +702,6 @@ Missingness Interclass Correlation (ICC) = 1.1
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4087');
            let arrow = document.getElementById('Question 4087_arrow');
@@ -953,10 +718,8 @@ Click to view visuals <span id="Question 4087_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -983,49 +746,22 @@ Click to view visuals <span id="Question 4087_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4087-Item-4464-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-
 
 **Missingness Descriptives**
 
 Delivered / Answered = 1191 / 1185
-
 Missing = 6
-
-Min = 0, max = 2, mean = 0.04, std = 0.26
+Min = 0, Max = 2, Mean = 0.04, SD = 0.26
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.08
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.08 
 
 
 #### Screenshot
@@ -1105,8 +841,6 @@ Missingness Interclass Correlation (ICC) = 1.08
 
 
 
-
-
 <button 
   onclick="let e = document.getElementById('Question 6765');
            let arrow = document.getElementById('Question 6765_arrow');
@@ -1126,41 +860,14 @@ Click to view visuals <span id="Question 6765_arrow">▼</span>
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 326 / 324
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.32
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.32 
 
 
 #### Screenshot
@@ -1203,9 +910,6 @@ Missingness Interclass Correlation (ICC) = 1.32
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 6766');
            let arrow = document.getElementById('Question 6766_arrow');
@@ -1222,10 +926,8 @@ Click to view visuals <span id="Question 6766_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -1252,49 +954,22 @@ Click to view visuals <span id="Question 6766_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-6766-Item-6306-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-
 
 **Missingness Descriptives**
 
 Delivered / Answered = 326 / 325
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.11
+Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.34
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.34 
 
 
 #### Screenshot
@@ -1339,15 +1014,8 @@ Missingness Interclass Correlation (ICC) = 1.34
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 71.02, std = 25.03
-
-
-
-
+Min = 0, Max = 100, Mean = 71.02, SD = 25.03 
 
 
 
@@ -1370,53 +1038,19 @@ Click to view visuals <span id="Question 6771_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6771-Item-6309-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 324 / 321
-
 Missing = 3
-
-Min = 0, max = 1, mean = 0.04, std = 0.19
+Min = 0, Max = 1, Mean = 0.04, SD = 0.19
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.35
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.35 
 
 
 
@@ -1459,15 +1093,8 @@ Missingness Interclass Correlation (ICC) = 1.35
 
 
 
-
-
-
 **Descriptives**
-Min = 18, max = 100, mean = 66.97, std = 21.02
-
-
-
-
+Min = 18, Max = 100, Mean = 66.97, SD = 21.02 
 
 
 
@@ -1490,53 +1117,19 @@ Click to view visuals <span id="Question 1769_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1769-Item-1118-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 60 / 60
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -1572,16 +1165,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -1604,9 +1189,6 @@ Click to view visuals <span id="Question 1770_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -1651,6 +1233,7 @@ Click to view visuals <span id="Question 1770_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-1770-Item-1119-1.png)<!-- -->
@@ -1658,40 +1241,14 @@ Click to view visuals <span id="Question 1770_arrow">▼</span>
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 60 / 60
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -1735,15 +1292,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 27, max = 100, mean = 72.33, std = 15.83
-
-
-
-
+Min = 27, Max = 100, Mean = 72.33, SD = 15.83 
 
 
 
@@ -1766,53 +1316,19 @@ Click to view visuals <span id="Question 1772_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1772-Item-1122-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 78 / 78
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -1848,16 +1364,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -1880,9 +1388,6 @@ Click to view visuals <span id="Question 1773_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -1915,6 +1420,7 @@ Click to view visuals <span id="Question 1773_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-1773-Item-1123-1.png)<!-- -->
@@ -1922,40 +1428,14 @@ Click to view visuals <span id="Question 1773_arrow">▼</span>
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 78 / 78
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -1999,15 +1479,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 65.49, std = 24.38
-
-
-
-
+Min = 0, Max = 100, Mean = 65.49, SD = 24.38 
 
 
 
@@ -2030,53 +1503,19 @@ Click to view visuals <span id="Question 1775_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1775-Item-1126-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 68 / 68
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -2112,16 +1551,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -2144,9 +1575,6 @@ Click to view visuals <span id="Question 1776_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -2179,6 +1607,7 @@ Click to view visuals <span id="Question 1776_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-1776-Item-1127-1.png)<!-- -->
@@ -2186,40 +1615,14 @@ Click to view visuals <span id="Question 1776_arrow">▼</span>
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 68 / 68
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -2263,15 +1666,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 15, max = 98, mean = 66.08, std = 21.57
-
-
-
-
+Min = 15, Max = 98, Mean = 66.08, SD = 21.57 
 
 
 
@@ -2294,53 +1690,19 @@ Click to view visuals <span id="Question 1778_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1778-Item-1130-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 38 / 38
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -2376,16 +1738,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -2408,9 +1762,6 @@ Click to view visuals <span id="Question 1779_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -2443,6 +1794,7 @@ Click to view visuals <span id="Question 1779_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-1779-Item-1131-1.png)<!-- -->
@@ -2450,40 +1802,14 @@ Click to view visuals <span id="Question 1779_arrow">▼</span>
 
 #### Missingness
 
-
-
-
-
 **Missingness Descriptives**
 
 Delivered / Answered = 37 / 37
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -2520,16 +1846,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -2552,9 +1870,6 @@ Click to view visuals <span id="Question 1781_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -2617,6 +1932,7 @@ Click to view visuals <span id="Question 1781_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-1781-Item-1133-1.png)<!-- -->
@@ -2624,40 +1940,14 @@ Click to view visuals <span id="Question 1781_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 145 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 694 / 692
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.01, std = 0.12
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.25
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.25 
 
 
 #### Screenshot
@@ -2701,15 +1991,8 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 
 
-
-
-
 **Descriptives**
-Min = 1, max = 4, mean = 3.11, std = 0.8
-
-
-
-
+Min = 1, Max = 4, Mean = 3.11, SD = 0.8 
 
 
 
@@ -2732,53 +2015,19 @@ Click to view visuals <span id="Question 2025_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-2025-Item-1134-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 146 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 730 / 723
-
 Missing = 7
-
-Min = 0, max = 3, mean = 0.05, std = 0.32
+Min = 0, Max = 3, Mean = 0.05, SD = 0.32
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.11
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.11 
 
 
 
@@ -2814,16 +2063,8 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -2846,9 +2087,6 @@ Click to view visuals <span id="Question 1783_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -2899,6 +2137,7 @@ Click to view visuals <span id="Question 1783_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-1783-Item-1135-1.png)<!-- -->
@@ -2906,40 +2145,14 @@ Click to view visuals <span id="Question 1783_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 146 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 730 / 724
-
 Missing = 6
-
-Min = 0, max = 2, mean = 0.04, std = 0.23
+Min = 0, Max = 2, Mean = 0.04, SD = 0.23
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.19
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.19 
 
 
 #### Screenshot
@@ -2976,16 +2189,8 @@ Missingness Interclass Correlation (ICC) = 1.19
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -3008,9 +2213,6 @@ Click to view visuals <span id="Question 4088_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -3055,6 +2257,7 @@ Click to view visuals <span id="Question 4088_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-4088-Item-4465-1.png)<!-- -->
@@ -3062,40 +2265,14 @@ Click to view visuals <span id="Question 4088_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 137 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 705 / 703
-
 Missing = 2
-
-Min = 0, max = 2, mean = 0.01, std = 0.17
+Min = 0, Max = 2, Mean = 0.01, SD = 0.17
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.11
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.11 
 
 
 #### Screenshot
@@ -3138,9 +2315,6 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1768');
            let arrow = document.getElementById('Question 1768_arrow');
@@ -3157,10 +2331,8 @@ Click to view visuals <span id="Question 1768_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -3187,49 +2359,22 @@ Click to view visuals <span id="Question 1768_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-1768-Item-1117-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 76 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 155 / 155
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -3273,9 +2418,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1771');
            let arrow = document.getElementById('Question 1771_arrow');
@@ -3292,10 +2434,8 @@ Click to view visuals <span id="Question 1771_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -3322,49 +2462,22 @@ Click to view visuals <span id="Question 1771_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-1771-Item-1121-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 75 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 154 / 154
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -3408,9 +2521,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1774');
            let arrow = document.getElementById('Question 1774_arrow');
@@ -3427,10 +2537,8 @@ Click to view visuals <span id="Question 1774_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -3457,49 +2565,22 @@ Click to view visuals <span id="Question 1774_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-1774-Item-1125-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 74 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 154 / 153
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.12
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.84
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.84 
 
 
 #### Screenshot
@@ -3543,9 +2624,6 @@ Missingness Interclass Correlation (ICC) = 1.84
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1777');
            let arrow = document.getElementById('Question 1777_arrow');
@@ -3562,10 +2640,8 @@ Click to view visuals <span id="Question 1777_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -3592,49 +2668,22 @@ Click to view visuals <span id="Question 1777_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-1777-Item-1129-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 75 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 154 / 154
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -3699,16 +2748,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -3731,9 +2772,6 @@ Click to view visuals <span id="Question 5633_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -3802,6 +2840,7 @@ Click to view visuals <span id="Question 5633_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-5633-Item-5525-1.png)<!-- -->
@@ -3809,40 +2848,14 @@ Click to view visuals <span id="Question 5633_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 113 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 583 / 579
-
 Missing = 4
-
-Min = 0, max = 1, mean = 0.03, std = 0.18
+Min = 0, Max = 1, Mean = 0.03, SD = 0.18
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -3882,19 +2895,12 @@ Missingness Interclass Correlation (ICC) = 1.27
 </div> <div class = "anchor">
 
 
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
-
-
 
 
 
 
 **Descriptives**
-Min = 0, max = 100, mean = 71.47, std = 25.06
-
-
-
-
+Min = 0, Max = 100, Mean = 71.47, SD = 25.06 
 
 
 
@@ -3917,53 +2923,19 @@ Click to view visuals <span id="Question 5634_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-5634-Item-5526-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 86 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 250 / 249
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.11
+Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.5
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.5 
 
 
 
@@ -3999,16 +2971,8 @@ Missingness Interclass Correlation (ICC) = 1.5
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -4031,9 +2995,6 @@ Click to view visuals <span id="Question 5635_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -4102,6 +3063,7 @@ Click to view visuals <span id="Question 5635_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-5635-Item-5527-1.png)<!-- -->
@@ -4109,40 +3071,14 @@ Click to view visuals <span id="Question 5635_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 114 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 582 / 578
-
 Missing = 4
-
-Min = 0, max = 1, mean = 0.03, std = 0.18
+Min = 0, Max = 1, Mean = 0.03, SD = 0.18
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -4220,9 +3156,6 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5721');
            let arrow = document.getElementById('Question 5721_arrow');
@@ -4239,10 +3172,8 @@ Click to view visuals <span id="Question 5721_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -4287,49 +3218,22 @@ Click to view visuals <span id="Question 5721_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5721-Item-5529-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 579 / 576
-
 Missing = 3
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -4372,9 +3276,6 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5722');
            let arrow = document.getElementById('Question 5722_arrow');
@@ -4391,10 +3292,8 @@ Click to view visuals <span id="Question 5722_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -4439,49 +3338,22 @@ Click to view visuals <span id="Question 5722_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5722-Item-5530-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 574
-
 Missing = 3
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -4524,9 +3396,6 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5639');
            let arrow = document.getElementById('Question 5639_arrow');
@@ -4543,10 +3412,8 @@ Click to view visuals <span id="Question 5639_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -4591,49 +3458,22 @@ Click to view visuals <span id="Question 5639_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5639-Item-5531-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 578 / 575
-
 Missing = 3
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -4676,9 +3516,6 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5723');
            let arrow = document.getElementById('Question 5723_arrow');
@@ -4695,10 +3532,8 @@ Click to view visuals <span id="Question 5723_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -4743,49 +3578,22 @@ Click to view visuals <span id="Question 5723_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5723-Item-5532-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 576
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -4828,9 +3636,6 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5724');
            let arrow = document.getElementById('Question 5724_arrow');
@@ -4847,10 +3652,8 @@ Click to view visuals <span id="Question 5724_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -4895,49 +3698,22 @@ Click to view visuals <span id="Question 5724_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5724-Item-5533-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 576
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -4980,9 +3756,6 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5725');
            let arrow = document.getElementById('Question 5725_arrow');
@@ -4999,10 +3772,8 @@ Click to view visuals <span id="Question 5725_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -5047,49 +3818,22 @@ Click to view visuals <span id="Question 5725_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5725-Item-5534-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 576
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -5132,9 +3876,6 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5643');
            let arrow = document.getElementById('Question 5643_arrow');
@@ -5151,10 +3892,8 @@ Click to view visuals <span id="Question 5643_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -5199,49 +3938,22 @@ Click to view visuals <span id="Question 5643_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5643-Item-5535-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 575
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.02, std = 0.13
+Min = 0, Max = 1, Mean = 0.02, SD = 0.13
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -5284,9 +3996,6 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5644');
            let arrow = document.getElementById('Question 5644_arrow');
@@ -5303,10 +4012,8 @@ Click to view visuals <span id="Question 5644_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -5351,49 +4058,22 @@ Click to view visuals <span id="Question 5644_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5644-Item-5536-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 575
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.02, std = 0.13
+Min = 0, Max = 1, Mean = 0.02, SD = 0.13
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -5436,9 +4116,6 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5726');
            let arrow = document.getElementById('Question 5726_arrow');
@@ -5455,10 +4132,8 @@ Click to view visuals <span id="Question 5726_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -5503,49 +4178,22 @@ Click to view visuals <span id="Question 5726_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5726-Item-5537-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 576 / 571
-
 Missing = 5
-
-Min = 0, max = 3, mean = 0.04, std = 0.31
+Min = 0, Max = 3, Mean = 0.04, SD = 0.31
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.1
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.1 
 
 
 #### Screenshot
@@ -5588,9 +4236,6 @@ Missingness Interclass Correlation (ICC) = 1.1
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5727');
            let arrow = document.getElementById('Question 5727_arrow');
@@ -5607,10 +4252,8 @@ Click to view visuals <span id="Question 5727_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -5655,49 +4298,22 @@ Click to view visuals <span id="Question 5727_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-5727-Item-5538-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 575 / 571
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.04, std = 0.23
+Min = 0, Max = 2, Mean = 0.04, SD = 0.23
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.15
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.15 
 
 
 #### Screenshot
@@ -5736,16 +4352,8 @@ Missingness Interclass Correlation (ICC) = 1.15
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 810</em>: <em>Check all that happened at school today:</em>.</div>
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -5768,9 +4376,6 @@ Click to view visuals <span id="Question 2050_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -5815,6 +4420,7 @@ Click to view visuals <span id="Question 2050_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-2050-Item-809-1.png)<!-- -->
@@ -5822,40 +4428,14 @@ Click to view visuals <span id="Question 2050_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 105 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 373 / 373
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -5892,16 +4472,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -5924,9 +4496,6 @@ Click to view visuals <span id="Question 2049_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -5977,6 +4546,7 @@ Click to view visuals <span id="Question 2049_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-2049-Item-810-1.png)<!-- -->
@@ -5984,40 +4554,14 @@ Click to view visuals <span id="Question 2049_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 151 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1251 / 1247
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.03, std = 0.2
+Min = 0, Max = 2, Mean = 0.03, SD = 0.2
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -6991,15 +5535,8 @@ Interclass Correlation (ICC) = 0.41
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 33.98, std = 27.31
-
-
-
-
+Min = 0, Max = 100, Mean = 33.98, SD = 27.31 
 
 
 
@@ -7022,53 +5559,19 @@ Click to view visuals <span id="Question 1326_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1326-Item-845-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 154 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1253 / 1253
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -7105,16 +5608,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -7137,9 +5632,6 @@ Click to view visuals <span id="Question 2051_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -7190,6 +5682,7 @@ Click to view visuals <span id="Question 2051_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-2051-Item-1220-1.png)<!-- -->
@@ -7197,40 +5690,14 @@ Click to view visuals <span id="Question 2051_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 151 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1250 / 1246
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.03, std = 0.2
+Min = 0, Max = 2, Mean = 0.03, SD = 0.2
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -7303,16 +5770,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -7335,9 +5794,6 @@ Click to view visuals <span id="Question 5661_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -7406,6 +5862,7 @@ Click to view visuals <span id="Question 5661_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-5661-Item-5540-1.png)<!-- -->
@@ -7413,40 +5870,14 @@ Click to view visuals <span id="Question 5661_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 119 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1048 / 1042
-
 Missing = 6
-
-Min = 0, max = 2, mean = 0.05, std = 0.29
+Min = 0, Max = 2, Mean = 0.05, SD = 0.29
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.07
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.07 
 
 
 #### Screenshot
@@ -7490,9 +5921,6 @@ Missingness Interclass Correlation (ICC) = 1.07
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 6738');
            let arrow = document.getElementById('Question 6738_arrow');
@@ -7509,10 +5937,8 @@ Click to view visuals <span id="Question 6738_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -7539,49 +5965,22 @@ Click to view visuals <span id="Question 6738_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-6738-Item-6310-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 81 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 752 / 752
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -7627,15 +6026,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -7656,55 +6048,19 @@ Click to view visuals <span id="Question 1907_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -7740,16 +6096,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -7769,11 +6117,6 @@ Click to view visuals <span id="Question 1908_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -7819,47 +6162,20 @@ Click to view visuals <span id="Question 1908_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -7903,15 +6219,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -7932,55 +6241,19 @@ Click to view visuals <span id="Question 1910_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -8016,16 +6289,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -8045,11 +6310,6 @@ Click to view visuals <span id="Question 1911_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -8083,47 +6343,20 @@ Click to view visuals <span id="Question 1911_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -8167,15 +6400,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -8196,55 +6422,19 @@ Click to view visuals <span id="Question 1913_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -8280,16 +6470,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -8309,11 +6491,6 @@ Click to view visuals <span id="Question 1914_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -8347,47 +6524,20 @@ Click to view visuals <span id="Question 1914_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -8431,15 +6581,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -8460,55 +6603,19 @@ Click to view visuals <span id="Question 2273_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -8544,16 +6651,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -8573,11 +6672,6 @@ Click to view visuals <span id="Question 2274_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -8611,47 +6705,20 @@ Click to view visuals <span id="Question 2274_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -8688,16 +6755,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -8717,11 +6776,6 @@ Click to view visuals <span id="Question 2277_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -8785,47 +6839,20 @@ Click to view visuals <span id="Question 2277_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -8869,15 +6896,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -8898,55 +6918,19 @@ Click to view visuals <span id="Question 2278_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -8982,16 +6966,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -9011,11 +6987,6 @@ Click to view visuals <span id="Question 2279_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -9067,47 +7038,20 @@ Click to view visuals <span id="Question 2279_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -9144,16 +7088,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -9173,11 +7109,6 @@ Click to view visuals <span id="Question 4099_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -9223,47 +7154,20 @@ Click to view visuals <span id="Question 4099_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -9335,16 +7239,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4473</em>: <em>After experiencing this situation, I felt like I needed to talk to someone about it.</em>.</div>
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -9367,9 +7263,6 @@ Click to view visuals <span id="Question 2295_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -9426,6 +7319,7 @@ Click to view visuals <span id="Question 2295_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-2295-Item-1156-1.png)<!-- -->
@@ -9433,40 +7327,14 @@ Click to view visuals <span id="Question 2295_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 85 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 214 / 214
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -9509,9 +7377,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4113');
            let arrow = document.getElementById('Question 4113_arrow');
@@ -9528,10 +7393,8 @@ Click to view visuals <span id="Question 4113_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -9558,49 +7421,22 @@ Click to view visuals <span id="Question 4113_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4113-Item-4473-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 139 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 1211 / 1199
-
 Missing = 12
-
-Min = 0, max = 8, mean = 0.09, std = 0.72
+Min = 0, Max = 8, Mean = 0.09, SD = 0.72
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.02
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.02 
 
 
 #### Screenshot
@@ -9664,16 +7500,8 @@ Missingness Interclass Correlation (ICC) = 1.02
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -9696,9 +7524,6 @@ Click to view visuals <span id="Question 4100_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -9737,6 +7562,7 @@ Click to view visuals <span id="Question 4100_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-4100-Item-872-1.png)<!-- -->
@@ -9744,40 +7570,14 @@ Click to view visuals <span id="Question 4100_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 133 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 861 / 857
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.03, std = 0.21
+Min = 0, Max = 2, Mean = 0.03, SD = 0.21
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.12
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.12 
 
 
 #### Screenshot
@@ -9821,15 +7621,8 @@ Missingness Interclass Correlation (ICC) = 1.12
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 43.55, std = 33.27
-
-
-
-
+Min = 0, Max = 100, Mean = 43.55, SD = 33.27 
 
 
 
@@ -9852,53 +7645,19 @@ Click to view visuals <span id="Question 5628_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-5628-Item-874-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 113 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 715 / 709
-
 Missing = 6
-
-Min = 0, max = 4, mean = 0.05, std = 0.4
+Min = 0, Max = 4, Mean = 0.05, SD = 0.4
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.06
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.06 
 
 
 
@@ -9941,15 +7700,8 @@ Missingness Interclass Correlation (ICC) = 1.06
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 47.56, std = 33.77
-
-
-
-
+Min = 0, Max = 100, Mean = 47.56, SD = 33.77 
 
 
 
@@ -9972,53 +7724,19 @@ Click to view visuals <span id="Question 2285_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-2285-Item-875-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 143 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 884 / 878
-
 Missing = 6
-
-Min = 0, max = 5, mean = 0.04, std = 0.43
+Min = 0, Max = 5, Mean = 0.04, SD = 0.43
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.04
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.04 
 
 
 
@@ -10061,15 +7779,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 42.14, std = 31.54
-
-
-
-
+Min = 0, Max = 100, Mean = 42.14, SD = 31.54 
 
 
 
@@ -10092,53 +7803,19 @@ Click to view visuals <span id="Question 2283_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-2283-Item-879-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 143 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 886 / 881
-
 Missing = 5
-
-Min = 0, max = 3, mean = 0.03, std = 0.28
+Min = 0, Max = 3, Mean = 0.03, SD = 0.28
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.08
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.08 
 
 
 
@@ -10182,15 +7859,8 @@ Missingness Interclass Correlation (ICC) = 1.08
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 70.87, std = 22.96
-
-
-
-
+Min = 0, Max = 100, Mean = 70.87, SD = 22.96 
 
 
 
@@ -10213,53 +7883,19 @@ Click to view visuals <span id="Question 2292_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-2292-Item-1143-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 143 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 880 / 879
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.08
+Min = 0, Max = 1, Mean = 0.01, SD = 0.08
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.22
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.22 
 
 
 
@@ -10364,9 +8000,6 @@ Missingness Interclass Correlation (ICC) = 1.22
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4097');
            let arrow = document.getElementById('Question 4097_arrow');
@@ -10383,10 +8016,8 @@ Click to view visuals <span id="Question 4097_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -10413,49 +8044,22 @@ Click to view visuals <span id="Question 4097_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4097-Item-4463-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 143 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 1258 / 1256
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.01, std = 0.12
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.12
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.12 
 
 
 #### Screenshot
@@ -10498,9 +8102,6 @@ Missingness Interclass Correlation (ICC) = 1.12
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4098');
            let arrow = document.getElementById('Question 4098_arrow');
@@ -10517,10 +8118,8 @@ Click to view visuals <span id="Question 4098_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -10547,49 +8146,22 @@ Click to view visuals <span id="Question 4098_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4098-Item-4464-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 143 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 1257 / 1257
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -10633,9 +8205,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 2269');
            let arrow = document.getElementById('Question 2269_arrow');
@@ -10651,10 +8220,6 @@ Click to view visuals <span id="Question 2269_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -10682,49 +8247,20 @@ Click to view visuals <span id="Question 2269_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -10768,9 +8304,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 2270');
            let arrow = document.getElementById('Question 2270_arrow');
@@ -10786,10 +8319,6 @@ Click to view visuals <span id="Question 2270_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -10817,49 +8346,20 @@ Click to view visuals <span id="Question 2270_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -10903,9 +8403,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 2271');
            let arrow = document.getElementById('Question 2271_arrow');
@@ -10921,10 +8418,6 @@ Click to view visuals <span id="Question 2271_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -10952,49 +8445,20 @@ Click to view visuals <span id="Question 2271_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -11038,9 +8502,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 2272');
            let arrow = document.getElementById('Question 2272_arrow');
@@ -11056,10 +8517,6 @@ Click to view visuals <span id="Question 2272_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -11087,49 +8544,20 @@ Click to view visuals <span id="Question 2272_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -11194,16 +8622,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -11223,11 +8643,6 @@ Click to view visuals <span id="Question 5647_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -11297,47 +8712,20 @@ Click to view visuals <span id="Question 5647_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -11377,19 +8765,12 @@ Missingness Interclass Correlation (ICC) = NA
 </div> <div class = "anchor">
 
 
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
-
-
 
 
 
 
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -11410,55 +8791,19 @@ Click to view visuals <span id="Question 5648_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -11494,16 +8839,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -11523,11 +8860,6 @@ Click to view visuals <span id="Question 5649_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -11597,47 +8929,20 @@ Click to view visuals <span id="Question 5649_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -11715,9 +9020,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5728');
            let arrow = document.getElementById('Question 5728_arrow');
@@ -11733,10 +9035,6 @@ Click to view visuals <span id="Question 5728_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -11782,49 +9080,20 @@ Click to view visuals <span id="Question 5728_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -11867,9 +9136,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5729');
            let arrow = document.getElementById('Question 5729_arrow');
@@ -11885,10 +9151,6 @@ Click to view visuals <span id="Question 5729_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -11934,49 +9196,20 @@ Click to view visuals <span id="Question 5729_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -12019,9 +9252,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5653');
            let arrow = document.getElementById('Question 5653_arrow');
@@ -12037,10 +9267,6 @@ Click to view visuals <span id="Question 5653_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -12086,49 +9312,20 @@ Click to view visuals <span id="Question 5653_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -12171,9 +9368,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5730');
            let arrow = document.getElementById('Question 5730_arrow');
@@ -12189,10 +9383,6 @@ Click to view visuals <span id="Question 5730_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -12238,49 +9428,20 @@ Click to view visuals <span id="Question 5730_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -12323,9 +9484,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5731');
            let arrow = document.getElementById('Question 5731_arrow');
@@ -12341,10 +9499,6 @@ Click to view visuals <span id="Question 5731_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -12390,49 +9544,20 @@ Click to view visuals <span id="Question 5731_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -12475,9 +9600,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5732');
            let arrow = document.getElementById('Question 5732_arrow');
@@ -12493,10 +9615,6 @@ Click to view visuals <span id="Question 5732_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -12542,49 +9660,20 @@ Click to view visuals <span id="Question 5732_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -12627,9 +9716,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5657');
            let arrow = document.getElementById('Question 5657_arrow');
@@ -12645,10 +9731,6 @@ Click to view visuals <span id="Question 5657_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -12694,49 +9776,20 @@ Click to view visuals <span id="Question 5657_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -12779,9 +9832,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5658');
            let arrow = document.getElementById('Question 5658_arrow');
@@ -12797,10 +9847,6 @@ Click to view visuals <span id="Question 5658_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -12846,49 +9892,20 @@ Click to view visuals <span id="Question 5658_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -12931,9 +9948,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5733');
            let arrow = document.getElementById('Question 5733_arrow');
@@ -12949,10 +9963,6 @@ Click to view visuals <span id="Question 5733_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -12998,49 +10008,20 @@ Click to view visuals <span id="Question 5733_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -13083,9 +10064,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5734');
            let arrow = document.getElementById('Question 5734_arrow');
@@ -13101,10 +10079,6 @@ Click to view visuals <span id="Question 5734_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -13150,49 +10124,20 @@ Click to view visuals <span id="Question 5734_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -13238,16 +10183,12 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 ```
-## Warning: NAs introduced by coercion
+## Warning in sliderDescriptives(id = "Question 5719", thisData = thisData): NAs introduced by
+## coercion
 ```
 
-
 **Descriptives**
-Min = 18, max = 100, mean = 79, std = 16.68
-
-
-
-
+Min = 18, Max = 100, Mean = 79, SD = 16.68 
 
 
 
@@ -13270,53 +10211,23 @@ Click to view visuals <span id="Question 5719_arrow">▼</span>
 
 #### Histogram
 
-
-
-
+```
+## Warning in sliderHist(id = "Question 5719", thisData = thisData): NAs introduced by coercion
+```
 
 ![](Codebook_files/figure-html/histogram-Slider-Question-5719-Item-5544-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 105 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 554 / 553
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.1
+Min = 0, Max = 1, Mean = 0.01, SD = 0.1
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.22
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.22 
 
 
 
@@ -13352,16 +10263,8 @@ Missingness Interclass Correlation (ICC) = 1.22
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -13384,9 +10287,6 @@ Click to view visuals <span id="Question 5718_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -13461,6 +10361,7 @@ Click to view visuals <span id="Question 5718_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-5718-Item-5541-1.png)<!-- -->
@@ -13468,40 +10369,14 @@ Click to view visuals <span id="Question 5718_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 120 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1048 / 1043
-
 Missing = 5
-
-Min = 0, max = 2, mean = 0.04, std = 0.24
+Min = 0, Max = 2, Mean = 0.04, SD = 0.24
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -13539,16 +10414,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -13571,9 +10438,6 @@ Click to view visuals <span id="Question 5763_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -13636,6 +10500,7 @@ Click to view visuals <span id="Question 5763_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-5763-Item-5543-1.png)<!-- -->
@@ -13643,40 +10508,14 @@ Click to view visuals <span id="Question 5763_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 119 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1047 / 1043
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.03, std = 0.22
+Min = 0, Max = 2, Mean = 0.03, SD = 0.22
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -13755,15 +10594,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 68.35, std = 24.69
-
-
-
-
+Min = 0, Max = 100, Mean = 68.35, SD = 24.69 
 
 
 
@@ -13786,53 +10618,19 @@ Click to view visuals <span id="Question 6740_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6740-Item-6312-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 697 / 696
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.11
+Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.13
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.13 
 
 
 
@@ -13875,15 +10673,8 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 77.7, std = 20.45
-
-
-
-
+Min = 0, Max = 100, Mean = 77.7, SD = 20.45 
 
 
 
@@ -13906,53 +10697,19 @@ Click to view visuals <span id="Question 6741_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6741-Item-6313-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 697 / 697
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -13995,15 +10752,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 77.07, std = 20.47
-
-
-
-
+Min = 0, Max = 100, Mean = 77.07, SD = 20.47 
 
 
 
@@ -14026,53 +10776,19 @@ Click to view visuals <span id="Question 6742_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6742-Item-6314-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 697 / 697
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -14115,15 +10831,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 16.48, std = 21.37
-
-
-
-
+Min = 0, Max = 100, Mean = 16.48, SD = 21.37 
 
 
 
@@ -14146,53 +10855,19 @@ Click to view visuals <span id="Question 6743_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6743-Item-6315-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 696 / 696
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -14235,15 +10910,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 98, mean = 16.76, std = 22.83
-
-
-
-
+Min = 0, Max = 98, Mean = 16.76, SD = 22.83 
 
 
 
@@ -14266,53 +10934,19 @@ Click to view visuals <span id="Question 6744_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6744-Item-6316-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 695 / 695
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -14355,15 +10989,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 93, mean = 6.38, std = 12.81
-
-
-
-
+Min = 0, Max = 93, Mean = 6.38, SD = 12.81 
 
 
 
@@ -14386,53 +11013,19 @@ Click to view visuals <span id="Question 6745_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6745-Item-6317-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 695 / 693
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.13
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.13 
 
 
 
@@ -14468,16 +11061,8 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -14500,9 +11085,6 @@ Click to view visuals <span id="Question 6746_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -14535,6 +11117,7 @@ Click to view visuals <span id="Question 6746_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6746-Item-6318-1.png)<!-- -->
@@ -14542,40 +11125,14 @@ Click to view visuals <span id="Question 6746_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 693 / 692
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.11
+Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.14
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.14 
 
 
 #### Screenshot
@@ -14654,15 +11211,8 @@ Missingness Interclass Correlation (ICC) = 1.14
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 76.68, std = 20.99
-
-
-
-
+Min = 0, Max = 100, Mean = 76.68, SD = 20.99 
 
 
 
@@ -14685,53 +11235,19 @@ Click to view visuals <span id="Question 6748_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6748-Item-6320-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 693 / 693
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -14774,15 +11290,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 73.76, std = 23.45
-
-
-
-
+Min = 0, Max = 100, Mean = 73.76, SD = 23.45 
 
 
 
@@ -14805,53 +11314,19 @@ Click to view visuals <span id="Question 6749_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6749-Item-6321-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 693 / 693
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -14894,15 +11369,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 80.09, std = 19.76
-
-
-
-
+Min = 0, Max = 100, Mean = 80.09, SD = 19.76 
 
 
 
@@ -14925,53 +11393,19 @@ Click to view visuals <span id="Question 6750_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6750-Item-6322-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 693 / 693
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -15014,15 +11448,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 79.35, std = 18.95
-
-
-
-
+Min = 0, Max = 100, Mean = 79.35, SD = 18.95 
 
 
 
@@ -15045,53 +11472,19 @@ Click to view visuals <span id="Question 6751_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6751-Item-6323-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 692
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -15127,16 +11520,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -15159,9 +11544,6 @@ Click to view visuals <span id="Question 6752_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -15212,6 +11594,7 @@ Click to view visuals <span id="Question 6752_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6752-Item-6324-1.png)<!-- -->
@@ -15219,40 +11602,14 @@ Click to view visuals <span id="Question 6752_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 686
-
 Missing = 6
-
-Min = 0, max = 4, mean = 0.08, std = 0.47
+Min = 0, Max = 4, Mean = 0.08, SD = 0.47
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.04
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.04 
 
 
 #### Screenshot
@@ -15289,16 +11646,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -15321,9 +11670,6 @@ Click to view visuals <span id="Question 6753_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -15374,6 +11720,7 @@ Click to view visuals <span id="Question 6753_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6753-Item-6325-1.png)<!-- -->
@@ -15381,40 +11728,14 @@ Click to view visuals <span id="Question 6753_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 681
-
 Missing = 11
-
-Min = 0, max = 5, mean = 0.14, std = 0.67
+Min = 0, Max = 5, Mean = 0.14, SD = 0.67
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.04
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.04 
 
 
 #### Screenshot
@@ -15451,16 +11772,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -15483,9 +11796,6 @@ Click to view visuals <span id="Question 6754_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -15524,6 +11834,7 @@ Click to view visuals <span id="Question 6754_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6754-Item-6326-1.png)<!-- -->
@@ -15531,40 +11842,14 @@ Click to view visuals <span id="Question 6754_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 683
-
 Missing = 9
-
-Min = 0, max = 6, mean = 0.11, std = 0.7
+Min = 0, Max = 6, Mean = 0.11, SD = 0.7
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -15601,16 +11886,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -15633,9 +11910,6 @@ Click to view visuals <span id="Question 6755_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -15686,6 +11960,7 @@ Click to view visuals <span id="Question 6755_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6755-Item-6327-1.png)<!-- -->
@@ -15693,40 +11968,14 @@ Click to view visuals <span id="Question 6755_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 685
-
 Missing = 7
-
-Min = 0, max = 5, mean = 0.09, std = 0.58
+Min = 0, Max = 5, Mean = 0.09, SD = 0.58
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -15763,16 +12012,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -15795,9 +12036,6 @@ Click to view visuals <span id="Question 6756_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -15848,6 +12086,7 @@ Click to view visuals <span id="Question 6756_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6756-Item-6328-1.png)<!-- -->
@@ -15855,40 +12094,14 @@ Click to view visuals <span id="Question 6756_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 684
-
 Missing = 8
-
-Min = 0, max = 5, mean = 0.1, std = 0.59
+Min = 0, Max = 5, Mean = 0.1, SD = 0.59
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.04
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.04 
 
 
 #### Screenshot
@@ -15925,16 +12138,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -15957,9 +12162,6 @@ Click to view visuals <span id="Question 6757_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -15998,6 +12200,7 @@ Click to view visuals <span id="Question 6757_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6757-Item-6329-1.png)<!-- -->
@@ -16005,40 +12208,14 @@ Click to view visuals <span id="Question 6757_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 685
-
 Missing = 7
-
-Min = 0, max = 5, mean = 0.09, std = 0.58
+Min = 0, Max = 5, Mean = 0.09, SD = 0.58
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -16075,16 +12252,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -16107,9 +12276,6 @@ Click to view visuals <span id="Question 6758_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -16160,6 +12326,7 @@ Click to view visuals <span id="Question 6758_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6758-Item-6330-1.png)<!-- -->
@@ -16167,40 +12334,14 @@ Click to view visuals <span id="Question 6758_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 691 / 683
-
 Missing = 8
-
-Min = 0, max = 6, mean = 0.1, std = 0.69
+Min = 0, Max = 6, Mean = 0.1, SD = 0.69
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -16237,16 +12378,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -16269,9 +12402,6 @@ Click to view visuals <span id="Question 6759_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -16322,6 +12452,7 @@ Click to view visuals <span id="Question 6759_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6759-Item-6331-1.png)<!-- -->
@@ -16329,40 +12460,14 @@ Click to view visuals <span id="Question 6759_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 691 / 683
-
 Missing = 8
-
-Min = 0, max = 6, mean = 0.1, std = 0.69
+Min = 0, Max = 6, Mean = 0.1, SD = 0.69
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -16399,16 +12504,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -16431,9 +12528,6 @@ Click to view visuals <span id="Question 6760_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -16472,6 +12566,7 @@ Click to view visuals <span id="Question 6760_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-6760-Item-6332-1.png)<!-- -->
@@ -16479,40 +12574,14 @@ Click to view visuals <span id="Question 6760_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 691 / 682
-
 Missing = 9
-
-Min = 0, max = 6, mean = 0.11, std = 0.7
+Min = 0, Max = 6, Mean = 0.11, SD = 0.7
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -16556,15 +12625,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 63.28, std = 20.71
-
-
-
-
+Min = 0, Max = 100, Mean = 63.28, SD = 20.71 
 
 
 
@@ -16587,53 +12649,19 @@ Click to view visuals <span id="Question 6761_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6761-Item-6333-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 691 / 687
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.05, std = 0.27
+Min = 0, Max = 2, Mean = 0.05, SD = 0.27
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 
@@ -16711,8 +12739,6 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 
 
-
-
 <button 
   onclick="let e = document.getElementById('Question 6775');
            let arrow = document.getElementById('Question 6775_arrow');
@@ -16732,41 +12758,14 @@ Click to view visuals <span id="Question 6775_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 29 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 48 / 48
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -16809,9 +12808,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 6776');
            let arrow = document.getElementById('Question 6776_arrow');
@@ -16828,10 +12824,8 @@ Click to view visuals <span id="Question 6776_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -16858,49 +12852,22 @@ Click to view visuals <span id="Question 6776_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-6776-Item-6306-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 29 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 48 / 48
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -16945,15 +12912,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 13, max = 100, mean = 59.92, std = 23.17
-
-
-
-
+Min = 13, Max = 100, Mean = 59.92, SD = 23.17 
 
 
 
@@ -16976,53 +12936,19 @@ Click to view visuals <span id="Question 6781_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6781-Item-6309-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 29 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 48 / 48
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -17060,16 +12986,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -17092,9 +13010,6 @@ Click to view visuals <span id="Question 4118_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -17133,6 +13048,7 @@ Click to view visuals <span id="Question 4118_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-4118-Item-872-1.png)<!-- -->
@@ -17140,40 +13056,14 @@ Click to view visuals <span id="Question 4118_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 114 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 487 / 486
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.34
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.34 
 
 
 #### Screenshot
@@ -17217,15 +13107,8 @@ Missingness Interclass Correlation (ICC) = 1.34
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 43.8, std = 32.65
-
-
-
-
+Min = 0, Max = 100, Mean = 43.8, SD = 32.65 
 
 
 
@@ -17248,53 +13131,19 @@ Click to view visuals <span id="Question 5629_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-5629-Item-874-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 95 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 390 / 390
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -17337,15 +13186,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 48.05, std = 33.42
-
-
-
-
+Min = 0, Max = 100, Mean = 48.05, SD = 33.42 
 
 
 
@@ -17368,53 +13210,19 @@ Click to view visuals <span id="Question 1355_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1355-Item-875-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 119 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 499 / 498
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.33
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.33 
 
 
 
@@ -17457,15 +13265,8 @@ Missingness Interclass Correlation (ICC) = 1.33
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 42.68, std = 31.18
-
-
-
-
+Min = 0, Max = 100, Mean = 42.68, SD = 31.18 
 
 
 
@@ -17488,53 +13289,19 @@ Click to view visuals <span id="Question 1810_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1810-Item-879-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 119 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 501 / 500
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.33
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.33 
 
 
 
@@ -17578,15 +13345,8 @@ Missingness Interclass Correlation (ICC) = 1.33
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 70.62, std = 22.49
-
-
-
-
+Min = 0, Max = 100, Mean = 70.62, SD = 22.49 
 
 
 
@@ -17609,53 +13369,19 @@ Click to view visuals <span id="Question 2071_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-2071-Item-1143-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 119 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 493 / 492
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.34
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.34 
 
 
 
@@ -17760,9 +13486,6 @@ Missingness Interclass Correlation (ICC) = 1.34
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4115');
            let arrow = document.getElementById('Question 4115_arrow');
@@ -17779,10 +13502,8 @@ Click to view visuals <span id="Question 4115_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -17809,49 +13530,22 @@ Click to view visuals <span id="Question 4115_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4115-Item-4463-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 130 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 906 / 906
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -17894,9 +13588,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4116');
            let arrow = document.getElementById('Question 4116_arrow');
@@ -17913,10 +13604,8 @@ Click to view visuals <span id="Question 4116_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -17943,49 +13632,22 @@ Click to view visuals <span id="Question 4116_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4116-Item-4464-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 130 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 904 / 903
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.16
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.16 
 
 
 #### Screenshot
@@ -18065,8 +13727,6 @@ Missingness Interclass Correlation (ICC) = 1.16
 
 
 
-
-
 <button 
   onclick="let e = document.getElementById('Question 6785');
            let arrow = document.getElementById('Question 6785_arrow');
@@ -18086,41 +13746,14 @@ Click to view visuals <span id="Question 6785_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 73 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 466 / 466
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -18163,9 +13796,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 6786');
            let arrow = document.getElementById('Question 6786_arrow');
@@ -18182,10 +13812,8 @@ Click to view visuals <span id="Question 6786_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -18212,49 +13840,22 @@ Click to view visuals <span id="Question 6786_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-6786-Item-6306-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 73 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 466 / 466
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -18299,15 +13900,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 69.18, std = 23.77
-
-
-
-
+Min = 0, Max = 100, Mean = 69.18, SD = 23.77 
 
 
 
@@ -18330,53 +13924,19 @@ Click to view visuals <span id="Question 6791_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6791-Item-6309-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 73 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 465 / 465
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -18419,15 +13979,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -18448,55 +14001,19 @@ Click to view visuals <span id="Question 1795_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -18532,16 +14049,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -18561,11 +14070,6 @@ Click to view visuals <span id="Question 1796_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -18611,47 +14115,20 @@ Click to view visuals <span id="Question 1796_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -18695,15 +14172,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -18724,55 +14194,19 @@ Click to view visuals <span id="Question 1798_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -18808,16 +14242,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -18837,11 +14263,6 @@ Click to view visuals <span id="Question 1799_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -18875,47 +14296,20 @@ Click to view visuals <span id="Question 1799_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -18959,15 +14353,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -18988,55 +14375,19 @@ Click to view visuals <span id="Question 1801_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -19072,16 +14423,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -19101,11 +14444,6 @@ Click to view visuals <span id="Question 1802_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -19139,47 +14477,20 @@ Click to view visuals <span id="Question 1802_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -19223,15 +14534,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -19252,55 +14556,19 @@ Click to view visuals <span id="Question 1804_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -19336,16 +14604,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -19365,11 +14625,6 @@ Click to view visuals <span id="Question 1805_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -19403,47 +14658,20 @@ Click to view visuals <span id="Question 1805_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -19480,16 +14708,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -19509,11 +14729,6 @@ Click to view visuals <span id="Question 1807_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -19577,47 +14792,20 @@ Click to view visuals <span id="Question 1807_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -19661,15 +14849,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -19690,55 +14871,19 @@ Click to view visuals <span id="Question 2069_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -19774,16 +14919,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -19803,11 +14940,6 @@ Click to view visuals <span id="Question 1809_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -19859,47 +14991,20 @@ Click to view visuals <span id="Question 1809_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -19936,16 +15041,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -19965,11 +15062,6 @@ Click to view visuals <span id="Question 4117_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -20015,47 +15107,20 @@ Click to view visuals <span id="Question 4117_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -20098,9 +15163,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1794');
            let arrow = document.getElementById('Question 1794_arrow');
@@ -20116,10 +15178,6 @@ Click to view visuals <span id="Question 1794_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -20147,49 +15205,20 @@ Click to view visuals <span id="Question 1794_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -20233,9 +15262,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1797');
            let arrow = document.getElementById('Question 1797_arrow');
@@ -20251,10 +15277,6 @@ Click to view visuals <span id="Question 1797_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -20282,49 +15304,20 @@ Click to view visuals <span id="Question 1797_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -20368,9 +15361,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1800');
            let arrow = document.getElementById('Question 1800_arrow');
@@ -20386,10 +15376,6 @@ Click to view visuals <span id="Question 1800_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -20417,49 +15403,20 @@ Click to view visuals <span id="Question 1800_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -20503,9 +15460,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1803');
            let arrow = document.getElementById('Question 1803_arrow');
@@ -20521,10 +15475,6 @@ Click to view visuals <span id="Question 1803_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -20552,49 +15502,20 @@ Click to view visuals <span id="Question 1803_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -20659,16 +15580,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -20688,11 +15601,6 @@ Click to view visuals <span id="Question 5662_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -20762,47 +15670,20 @@ Click to view visuals <span id="Question 5662_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -20842,19 +15723,12 @@ Missingness Interclass Correlation (ICC) = NA
 </div> <div class = "anchor">
 
 
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
-
-
 
 
 
 
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -20875,55 +15749,19 @@ Click to view visuals <span id="Question 5663_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -20959,16 +15797,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -20988,11 +15818,6 @@ Click to view visuals <span id="Question 5664_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -21062,47 +15887,20 @@ Click to view visuals <span id="Question 5664_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -21180,9 +15978,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5735');
            let arrow = document.getElementById('Question 5735_arrow');
@@ -21198,10 +15993,6 @@ Click to view visuals <span id="Question 5735_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -21247,49 +16038,20 @@ Click to view visuals <span id="Question 5735_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -21332,9 +16094,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5736');
            let arrow = document.getElementById('Question 5736_arrow');
@@ -21350,10 +16109,6 @@ Click to view visuals <span id="Question 5736_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -21399,49 +16154,20 @@ Click to view visuals <span id="Question 5736_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -21484,9 +16210,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5668');
            let arrow = document.getElementById('Question 5668_arrow');
@@ -21502,10 +16225,6 @@ Click to view visuals <span id="Question 5668_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -21551,49 +16270,20 @@ Click to view visuals <span id="Question 5668_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -21636,9 +16326,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5737');
            let arrow = document.getElementById('Question 5737_arrow');
@@ -21654,10 +16341,6 @@ Click to view visuals <span id="Question 5737_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -21703,49 +16386,20 @@ Click to view visuals <span id="Question 5737_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -21788,9 +16442,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5738');
            let arrow = document.getElementById('Question 5738_arrow');
@@ -21806,10 +16457,6 @@ Click to view visuals <span id="Question 5738_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -21855,49 +16502,20 @@ Click to view visuals <span id="Question 5738_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -21940,9 +16558,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5739');
            let arrow = document.getElementById('Question 5739_arrow');
@@ -21958,10 +16573,6 @@ Click to view visuals <span id="Question 5739_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -22007,49 +16618,20 @@ Click to view visuals <span id="Question 5739_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -22092,9 +16674,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5672');
            let arrow = document.getElementById('Question 5672_arrow');
@@ -22110,10 +16689,6 @@ Click to view visuals <span id="Question 5672_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -22159,49 +16734,20 @@ Click to view visuals <span id="Question 5672_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -22244,9 +16790,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5673');
            let arrow = document.getElementById('Question 5673_arrow');
@@ -22262,10 +16805,6 @@ Click to view visuals <span id="Question 5673_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -22311,49 +16850,20 @@ Click to view visuals <span id="Question 5673_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -22396,9 +16906,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5740');
            let arrow = document.getElementById('Question 5740_arrow');
@@ -22414,10 +16921,6 @@ Click to view visuals <span id="Question 5740_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -22463,49 +16966,20 @@ Click to view visuals <span id="Question 5740_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -22548,9 +17022,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5741');
            let arrow = document.getElementById('Question 5741_arrow');
@@ -22566,10 +17037,6 @@ Click to view visuals <span id="Question 5741_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -22615,49 +17082,20 @@ Click to view visuals <span id="Question 5741_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -22696,16 +17134,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -22728,9 +17158,6 @@ Click to view visuals <span id="Question 4129_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -22769,6 +17196,7 @@ Click to view visuals <span id="Question 4129_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-4129-Item-872-1.png)<!-- -->
@@ -22776,40 +17204,14 @@ Click to view visuals <span id="Question 4129_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 123 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 599 / 598
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -22853,15 +17255,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 43.2, std = 32.89
-
-
-
-
+Min = 0, Max = 100, Mean = 43.2, SD = 32.89 
 
 
 
@@ -22884,53 +17279,19 @@ Click to view visuals <span id="Question 5630_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-5630-Item-874-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 100 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 482 / 480
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.02, std = 0.14
+Min = 0, Max = 1, Mean = 0.02, SD = 0.14
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 
@@ -22973,15 +17334,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 49.72, std = 33.41
-
-
-
-
+Min = 0, Max = 100, Mean = 49.72, SD = 33.41 
 
 
 
@@ -23004,53 +17358,19 @@ Click to view visuals <span id="Question 1380_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1380-Item-875-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 129 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 621 / 620
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.25
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.25 
 
 
 
@@ -23093,15 +17413,8 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 39.35, std = 32.51
-
-
-
-
+Min = 0, Max = 100, Mean = 39.35, SD = 32.51 
 
 
 
@@ -23124,53 +17437,19 @@ Click to view visuals <span id="Question 1836_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1836-Item-879-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 129 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 621 / 621
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -23214,15 +17493,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 70.08, std = 23.97
-
-
-
-
+Min = 0, Max = 100, Mean = 70.08, SD = 23.97 
 
 
 
@@ -23245,53 +17517,19 @@ Click to view visuals <span id="Question 2075_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-2075-Item-1143-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 129 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 612 / 611
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.25
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.25 
 
 
 
@@ -23396,9 +17634,6 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4126');
            let arrow = document.getElementById('Question 4126_arrow');
@@ -23415,10 +17650,8 @@ Click to view visuals <span id="Question 4126_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -23445,49 +17678,22 @@ Click to view visuals <span id="Question 4126_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4126-Item-4463-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 132 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 898 / 898
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -23530,9 +17736,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4127');
            let arrow = document.getElementById('Question 4127_arrow');
@@ -23549,10 +17752,8 @@ Click to view visuals <span id="Question 4127_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -23579,49 +17780,22 @@ Click to view visuals <span id="Question 4127_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4127-Item-4464-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 132 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 897 / 897
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -23701,8 +17875,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 <button 
   onclick="let e = document.getElementById('Question 6795');
            let arrow = document.getElementById('Question 6795_arrow');
@@ -23722,41 +17894,14 @@ Click to view visuals <span id="Question 6795_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 45 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 78 / 77
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.02, std = 0.15
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 2.41
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 2.41 
 
 
 #### Screenshot
@@ -23799,9 +17944,6 @@ Missingness Interclass Correlation (ICC) = 2.41
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 6796');
            let arrow = document.getElementById('Question 6796_arrow');
@@ -23818,10 +17960,8 @@ Click to view visuals <span id="Question 6796_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -23848,49 +17988,22 @@ Click to view visuals <span id="Question 6796_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-6796-Item-6306-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 45 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 78 / 78
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -23935,15 +18048,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 66.06, std = 24.94
-
-
-
-
+Min = 0, Max = 100, Mean = 66.06, SD = 24.94 
 
 
 
@@ -23966,53 +18072,19 @@ Click to view visuals <span id="Question 6801_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6801-Item-6309-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 44 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 77 / 77
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -24055,15 +18127,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -24084,55 +18149,19 @@ Click to view visuals <span id="Question 1821_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -24168,16 +18197,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -24197,11 +18218,6 @@ Click to view visuals <span id="Question 1822_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -24247,47 +18263,20 @@ Click to view visuals <span id="Question 1822_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -24331,15 +18320,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -24360,55 +18342,19 @@ Click to view visuals <span id="Question 1824_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -24444,16 +18390,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -24473,11 +18411,6 @@ Click to view visuals <span id="Question 1825_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -24511,47 +18444,20 @@ Click to view visuals <span id="Question 1825_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -24595,15 +18501,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -24624,55 +18523,19 @@ Click to view visuals <span id="Question 1827_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -24708,16 +18571,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -24737,11 +18592,6 @@ Click to view visuals <span id="Question 1828_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -24775,47 +18625,20 @@ Click to view visuals <span id="Question 1828_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -24859,15 +18682,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -24888,55 +18704,19 @@ Click to view visuals <span id="Question 1830_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -24972,16 +18752,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -25001,11 +18773,6 @@ Click to view visuals <span id="Question 1831_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -25039,47 +18806,20 @@ Click to view visuals <span id="Question 1831_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -25116,16 +18856,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -25145,11 +18877,6 @@ Click to view visuals <span id="Question 1833_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -25213,47 +18940,20 @@ Click to view visuals <span id="Question 1833_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -25297,15 +18997,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -25326,55 +19019,19 @@ Click to view visuals <span id="Question 2073_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -25410,16 +19067,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -25439,11 +19088,6 @@ Click to view visuals <span id="Question 1835_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -25495,47 +19139,20 @@ Click to view visuals <span id="Question 1835_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -25572,16 +19189,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -25601,11 +19210,6 @@ Click to view visuals <span id="Question 4128_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -25651,47 +19255,20 @@ Click to view visuals <span id="Question 4128_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -25734,9 +19311,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1820');
            let arrow = document.getElementById('Question 1820_arrow');
@@ -25752,10 +19326,6 @@ Click to view visuals <span id="Question 1820_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -25783,49 +19353,20 @@ Click to view visuals <span id="Question 1820_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -25869,9 +19410,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1823');
            let arrow = document.getElementById('Question 1823_arrow');
@@ -25887,10 +19425,6 @@ Click to view visuals <span id="Question 1823_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -25918,49 +19452,20 @@ Click to view visuals <span id="Question 1823_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -26004,9 +19509,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1826');
            let arrow = document.getElementById('Question 1826_arrow');
@@ -26022,10 +19524,6 @@ Click to view visuals <span id="Question 1826_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -26053,49 +19551,20 @@ Click to view visuals <span id="Question 1826_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -26139,9 +19608,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1829');
            let arrow = document.getElementById('Question 1829_arrow');
@@ -26157,10 +19623,6 @@ Click to view visuals <span id="Question 1829_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -26188,49 +19650,20 @@ Click to view visuals <span id="Question 1829_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -26295,16 +19728,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -26324,11 +19749,6 @@ Click to view visuals <span id="Question 5676_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -26398,47 +19818,20 @@ Click to view visuals <span id="Question 5676_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -26478,19 +19871,12 @@ Missingness Interclass Correlation (ICC) = NA
 </div> <div class = "anchor">
 
 
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
-
-
 
 
 
 
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -26511,55 +19897,19 @@ Click to view visuals <span id="Question 5677_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -26595,16 +19945,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -26624,11 +19966,6 @@ Click to view visuals <span id="Question 5678_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -26698,47 +20035,20 @@ Click to view visuals <span id="Question 5678_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -26816,9 +20126,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5742');
            let arrow = document.getElementById('Question 5742_arrow');
@@ -26834,10 +20141,6 @@ Click to view visuals <span id="Question 5742_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -26883,49 +20186,20 @@ Click to view visuals <span id="Question 5742_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -26968,9 +20242,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5743');
            let arrow = document.getElementById('Question 5743_arrow');
@@ -26986,10 +20257,6 @@ Click to view visuals <span id="Question 5743_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -27035,49 +20302,20 @@ Click to view visuals <span id="Question 5743_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -27120,9 +20358,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5682');
            let arrow = document.getElementById('Question 5682_arrow');
@@ -27138,10 +20373,6 @@ Click to view visuals <span id="Question 5682_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -27187,49 +20418,20 @@ Click to view visuals <span id="Question 5682_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -27272,9 +20474,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5744');
            let arrow = document.getElementById('Question 5744_arrow');
@@ -27290,10 +20489,6 @@ Click to view visuals <span id="Question 5744_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -27339,49 +20534,20 @@ Click to view visuals <span id="Question 5744_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -27424,9 +20590,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5745');
            let arrow = document.getElementById('Question 5745_arrow');
@@ -27442,10 +20605,6 @@ Click to view visuals <span id="Question 5745_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -27491,49 +20650,20 @@ Click to view visuals <span id="Question 5745_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -27576,9 +20706,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5746');
            let arrow = document.getElementById('Question 5746_arrow');
@@ -27594,10 +20721,6 @@ Click to view visuals <span id="Question 5746_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -27643,49 +20766,20 @@ Click to view visuals <span id="Question 5746_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -27728,9 +20822,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5686');
            let arrow = document.getElementById('Question 5686_arrow');
@@ -27746,10 +20837,6 @@ Click to view visuals <span id="Question 5686_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -27795,49 +20882,20 @@ Click to view visuals <span id="Question 5686_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -27880,9 +20938,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5687');
            let arrow = document.getElementById('Question 5687_arrow');
@@ -27898,10 +20953,6 @@ Click to view visuals <span id="Question 5687_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -27947,49 +20998,20 @@ Click to view visuals <span id="Question 5687_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -28032,9 +21054,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5747');
            let arrow = document.getElementById('Question 5747_arrow');
@@ -28050,10 +21069,6 @@ Click to view visuals <span id="Question 5747_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -28099,49 +21114,20 @@ Click to view visuals <span id="Question 5747_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -28184,9 +21170,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5748');
            let arrow = document.getElementById('Question 5748_arrow');
@@ -28202,10 +21185,6 @@ Click to view visuals <span id="Question 5748_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -28251,49 +21230,20 @@ Click to view visuals <span id="Question 5748_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -28332,16 +21282,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -28364,9 +21306,6 @@ Click to view visuals <span id="Question 4140_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -28405,6 +21344,7 @@ Click to view visuals <span id="Question 4140_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-4140-Item-872-1.png)<!-- -->
@@ -28412,40 +21352,14 @@ Click to view visuals <span id="Question 4140_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 122 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 583 / 582
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -28489,15 +21403,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 43.27, std = 33.35
-
-
-
-
+Min = 0, Max = 100, Mean = 43.27, SD = 33.35 
 
 
 
@@ -28520,53 +21427,19 @@ Click to view visuals <span id="Question 5631_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-5631-Item-874-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 102 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 469 / 466
-
 Missing = 3
-
-Min = 0, max = 1, mean = 0.03, std = 0.17
+Min = 0, Max = 1, Mean = 0.03, SD = 0.17
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.29
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.29 
 
 
 
@@ -28609,15 +21482,8 @@ Missingness Interclass Correlation (ICC) = 1.29
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 48.35, std = 33.8
-
-
-
-
+Min = 0, Max = 100, Mean = 48.35, SD = 33.8 
 
 
 
@@ -28640,53 +21506,19 @@ Click to view visuals <span id="Question 1405_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1405-Item-875-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 127 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 597 / 595
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.02, std = 0.12
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.31
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.31 
 
 
 
@@ -28729,15 +21561,8 @@ Missingness Interclass Correlation (ICC) = 1.31
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 41.47, std = 32.05
-
-
-
-
+Min = 0, Max = 100, Mean = 41.47, SD = 32.05 
 
 
 
@@ -28760,53 +21585,19 @@ Click to view visuals <span id="Question 1862_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1862-Item-879-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 126 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 598 / 596
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.02, std = 0.12
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.31
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.31 
 
 
 
@@ -28850,15 +21641,8 @@ Missingness Interclass Correlation (ICC) = 1.31
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 69.08, std = 24.42
-
-
-
-
+Min = 0, Max = 100, Mean = 69.08, SD = 24.42 
 
 
 
@@ -28881,53 +21665,19 @@ Click to view visuals <span id="Question 2079_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-2079-Item-1143-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 125 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 590 / 589
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 
@@ -29032,9 +21782,6 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4137');
            let arrow = document.getElementById('Question 4137_arrow');
@@ -29051,10 +21798,8 @@ Click to view visuals <span id="Question 4137_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -29081,49 +21826,22 @@ Click to view visuals <span id="Question 4137_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4137-Item-4463-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 129 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 857 / 857
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -29166,9 +21884,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4138');
            let arrow = document.getElementById('Question 4138_arrow');
@@ -29185,10 +21900,8 @@ Click to view visuals <span id="Question 4138_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -29215,49 +21928,22 @@ Click to view visuals <span id="Question 4138_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4138-Item-4464-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 129 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 856 / 855
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.17
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.17 
 
 
 #### Screenshot
@@ -29337,8 +22023,6 @@ Missingness Interclass Correlation (ICC) = 1.17
 
 
 
-
-
 <button 
   onclick="let e = document.getElementById('Question 6805');
            let arrow = document.getElementById('Question 6805_arrow');
@@ -29358,41 +22042,14 @@ Click to view visuals <span id="Question 6805_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 29 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 39 / 39
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -29435,9 +22092,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 6806');
            let arrow = document.getElementById('Question 6806_arrow');
@@ -29454,10 +22108,8 @@ Click to view visuals <span id="Question 6806_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -29484,49 +22136,22 @@ Click to view visuals <span id="Question 6806_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-6806-Item-6306-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 29 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 39 / 39
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -29571,15 +22196,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 9, max = 100, mean = 70.08, std = 21.95
-
-
-
-
+Min = 9, Max = 100, Mean = 70.08, SD = 21.95 
 
 
 
@@ -29602,53 +22220,19 @@ Click to view visuals <span id="Question 6811_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6811-Item-6309-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 29 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 39 / 39
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -29691,15 +22275,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -29720,55 +22297,19 @@ Click to view visuals <span id="Question 1847_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -29804,16 +22345,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -29833,11 +22366,6 @@ Click to view visuals <span id="Question 1848_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -29883,47 +22411,20 @@ Click to view visuals <span id="Question 1848_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -29967,15 +22468,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -29996,55 +22490,19 @@ Click to view visuals <span id="Question 1850_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -30080,16 +22538,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -30109,11 +22559,6 @@ Click to view visuals <span id="Question 1851_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -30147,47 +22592,20 @@ Click to view visuals <span id="Question 1851_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -30231,15 +22649,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -30260,55 +22671,19 @@ Click to view visuals <span id="Question 1853_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -30344,16 +22719,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -30373,11 +22740,6 @@ Click to view visuals <span id="Question 1854_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -30411,47 +22773,20 @@ Click to view visuals <span id="Question 1854_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -30495,15 +22830,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -30524,55 +22852,19 @@ Click to view visuals <span id="Question 1856_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -30608,16 +22900,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -30637,11 +22921,6 @@ Click to view visuals <span id="Question 1857_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -30675,47 +22954,20 @@ Click to view visuals <span id="Question 1857_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -30752,16 +23004,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -30781,11 +23025,6 @@ Click to view visuals <span id="Question 1859_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -30849,47 +23088,20 @@ Click to view visuals <span id="Question 1859_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -30933,15 +23145,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -30962,55 +23167,19 @@ Click to view visuals <span id="Question 2077_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -31046,16 +23215,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -31075,11 +23236,6 @@ Click to view visuals <span id="Question 1861_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -31131,47 +23287,20 @@ Click to view visuals <span id="Question 1861_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -31208,16 +23337,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -31237,11 +23358,6 @@ Click to view visuals <span id="Question 4139_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -31287,47 +23403,20 @@ Click to view visuals <span id="Question 4139_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -31370,9 +23459,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1846');
            let arrow = document.getElementById('Question 1846_arrow');
@@ -31388,10 +23474,6 @@ Click to view visuals <span id="Question 1846_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -31419,49 +23501,20 @@ Click to view visuals <span id="Question 1846_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -31505,9 +23558,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1849');
            let arrow = document.getElementById('Question 1849_arrow');
@@ -31523,10 +23573,6 @@ Click to view visuals <span id="Question 1849_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -31554,49 +23600,20 @@ Click to view visuals <span id="Question 1849_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -31640,9 +23657,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1852');
            let arrow = document.getElementById('Question 1852_arrow');
@@ -31658,10 +23672,6 @@ Click to view visuals <span id="Question 1852_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -31689,49 +23699,20 @@ Click to view visuals <span id="Question 1852_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -31775,9 +23756,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1855');
            let arrow = document.getElementById('Question 1855_arrow');
@@ -31793,10 +23771,6 @@ Click to view visuals <span id="Question 1855_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -31824,49 +23798,20 @@ Click to view visuals <span id="Question 1855_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -31931,16 +23876,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -31960,11 +23897,6 @@ Click to view visuals <span id="Question 5690_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -32034,47 +23966,20 @@ Click to view visuals <span id="Question 5690_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -32114,19 +24019,12 @@ Missingness Interclass Correlation (ICC) = NA
 </div> <div class = "anchor">
 
 
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
-
-
 
 
 
 
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -32147,55 +24045,19 @@ Click to view visuals <span id="Question 5691_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -32231,16 +24093,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -32260,11 +24114,6 @@ Click to view visuals <span id="Question 5692_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -32334,47 +24183,20 @@ Click to view visuals <span id="Question 5692_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -32452,9 +24274,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5749');
            let arrow = document.getElementById('Question 5749_arrow');
@@ -32470,10 +24289,6 @@ Click to view visuals <span id="Question 5749_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -32519,49 +24334,20 @@ Click to view visuals <span id="Question 5749_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -32604,9 +24390,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5750');
            let arrow = document.getElementById('Question 5750_arrow');
@@ -32622,10 +24405,6 @@ Click to view visuals <span id="Question 5750_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -32671,49 +24450,20 @@ Click to view visuals <span id="Question 5750_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -32756,9 +24506,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5696');
            let arrow = document.getElementById('Question 5696_arrow');
@@ -32774,10 +24521,6 @@ Click to view visuals <span id="Question 5696_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -32823,49 +24566,20 @@ Click to view visuals <span id="Question 5696_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -32908,9 +24622,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5751');
            let arrow = document.getElementById('Question 5751_arrow');
@@ -32926,10 +24637,6 @@ Click to view visuals <span id="Question 5751_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -32975,49 +24682,20 @@ Click to view visuals <span id="Question 5751_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -33060,9 +24738,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5752');
            let arrow = document.getElementById('Question 5752_arrow');
@@ -33078,10 +24753,6 @@ Click to view visuals <span id="Question 5752_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -33127,49 +24798,20 @@ Click to view visuals <span id="Question 5752_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -33212,9 +24854,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5753');
            let arrow = document.getElementById('Question 5753_arrow');
@@ -33230,10 +24869,6 @@ Click to view visuals <span id="Question 5753_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -33279,49 +24914,20 @@ Click to view visuals <span id="Question 5753_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -33364,9 +24970,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5700');
            let arrow = document.getElementById('Question 5700_arrow');
@@ -33382,10 +24985,6 @@ Click to view visuals <span id="Question 5700_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -33431,49 +25030,20 @@ Click to view visuals <span id="Question 5700_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -33516,9 +25086,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5701');
            let arrow = document.getElementById('Question 5701_arrow');
@@ -33534,10 +25101,6 @@ Click to view visuals <span id="Question 5701_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -33583,49 +25146,20 @@ Click to view visuals <span id="Question 5701_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -33668,9 +25202,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5754');
            let arrow = document.getElementById('Question 5754_arrow');
@@ -33686,10 +25217,6 @@ Click to view visuals <span id="Question 5754_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -33735,49 +25262,20 @@ Click to view visuals <span id="Question 5754_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -33820,9 +25318,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5755');
            let arrow = document.getElementById('Question 5755_arrow');
@@ -33838,10 +25333,6 @@ Click to view visuals <span id="Question 5755_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -33887,49 +25378,20 @@ Click to view visuals <span id="Question 5755_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -33968,16 +25430,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -34000,9 +25454,6 @@ Click to view visuals <span id="Question 4151_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -34041,6 +25492,7 @@ Click to view visuals <span id="Question 4151_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Select-Question-4151-Item-872-1.png)<!-- -->
@@ -34048,40 +25500,14 @@ Click to view visuals <span id="Question 4151_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 80 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 567 / 567
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -34125,15 +25551,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 49.66, std = 36.43
-
-
-
-
+Min = 0, Max = 100, Mean = 49.66, SD = 36.43 
 
 
 
@@ -34156,53 +25575,19 @@ Click to view visuals <span id="Question 5632_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-5632-Item-874-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 66 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 417 / 412
-
 Missing = 5
-
-Min = 0, max = 2, mean = 0.08, std = 0.32
+Min = 0, Max = 2, Mean = 0.08, SD = 0.32
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.14
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.14 
 
 
 
@@ -34245,15 +25630,8 @@ Missingness Interclass Correlation (ICC) = 1.14
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 47.46, std = 35.78
-
-
-
-
+Min = 0, Max = 100, Mean = 47.46, SD = 35.78 
 
 
 
@@ -34276,53 +25654,19 @@ Click to view visuals <span id="Question 1430_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1430-Item-875-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 84 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 586 / 582
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.05, std = 0.26
+Min = 0, Max = 2, Mean = 0.05, SD = 0.26
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.11
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.11 
 
 
 
@@ -34365,15 +25709,8 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 43.16, std = 33.65
-
-
-
-
+Min = 0, Max = 100, Mean = 43.16, SD = 33.65 
 
 
 
@@ -34396,53 +25733,19 @@ Click to view visuals <span id="Question 1888_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-1888-Item-879-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 84 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 586 / 581
-
 Missing = 5
-
-Min = 0, max = 2, mean = 0.06, std = 0.28
+Min = 0, Max = 2, Mean = 0.06, SD = 0.28
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.12
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.12 
 
 
 
@@ -34486,15 +25789,8 @@ Missingness Interclass Correlation (ICC) = 1.12
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 71.54, std = 24.14
-
-
-
-
+Min = 0, Max = 100, Mean = 71.54, SD = 24.14 
 
 
 
@@ -34517,53 +25813,19 @@ Click to view visuals <span id="Question 2083_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-2083-Item-1143-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 84 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 580 / 578
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.02, std = 0.15
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.18
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.18 
 
 
 
@@ -34668,9 +25930,6 @@ Missingness Interclass Correlation (ICC) = 1.18
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4148');
            let arrow = document.getElementById('Question 4148_arrow');
@@ -34687,10 +25946,8 @@ Click to view visuals <span id="Question 4148_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -34717,49 +25974,22 @@ Click to view visuals <span id="Question 4148_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4148-Item-4463-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 84 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 794 / 794
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -34802,9 +26032,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 4149');
            let arrow = document.getElementById('Question 4149_arrow');
@@ -34821,10 +26048,8 @@ Click to view visuals <span id="Question 4149_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -34851,49 +26076,22 @@ Click to view visuals <span id="Question 4149_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-4149-Item-4464-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 84 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 792 / 790
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.02, std = 0.15
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.13
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.13 
 
 
 #### Screenshot
@@ -34973,8 +26171,6 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 
 
-
-
 <button 
   onclick="let e = document.getElementById('Question 6815');
            let arrow = document.getElementById('Question 6815_arrow');
@@ -34994,41 +26190,14 @@ Click to view visuals <span id="Question 6815_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 30 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 66 / 66
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -35071,9 +26240,6 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 6816');
            let arrow = document.getElementById('Question 6816_arrow');
@@ -35090,10 +26256,8 @@ Click to view visuals <span id="Question 6816_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -35120,49 +26284,22 @@ Click to view visuals <span id="Question 6816_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-6816-Item-6306-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 30 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 66 / 66
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -35207,15 +26344,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = 4, max = 100, mean = 71.11, std = 26.28
-
-
-
-
+Min = 4, Max = 100, Mean = 71.11, SD = 26.28 
 
 
 
@@ -35238,53 +26368,19 @@ Click to view visuals <span id="Question 6821_arrow">▼</span>
 
 #### Histogram
 
-
-
-
-
 ![](Codebook_files/figure-html/histogram-Slider-Question-6821-Item-6309-1.png)<!-- -->
-
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 30 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 66 / 66
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 
@@ -35327,15 +26423,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -35356,55 +26445,19 @@ Click to view visuals <span id="Question 1873_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -35440,16 +26493,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -35469,11 +26514,6 @@ Click to view visuals <span id="Question 1874_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -35519,47 +26559,20 @@ Click to view visuals <span id="Question 1874_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -35603,15 +26616,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -35632,55 +26638,19 @@ Click to view visuals <span id="Question 1876_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -35716,16 +26686,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -35745,11 +26707,6 @@ Click to view visuals <span id="Question 1877_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -35783,47 +26740,20 @@ Click to view visuals <span id="Question 1877_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -35867,15 +26797,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -35896,55 +26819,19 @@ Click to view visuals <span id="Question 1879_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -35980,16 +26867,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -36009,11 +26888,6 @@ Click to view visuals <span id="Question 1880_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -36047,47 +26921,20 @@ Click to view visuals <span id="Question 1880_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -36131,15 +26978,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -36160,55 +27000,19 @@ Click to view visuals <span id="Question 1882_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -36244,16 +27048,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -36273,11 +27069,6 @@ Click to view visuals <span id="Question 1883_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -36311,47 +27102,20 @@ Click to view visuals <span id="Question 1883_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -36388,16 +27152,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -36417,11 +27173,6 @@ Click to view visuals <span id="Question 1885_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -36485,47 +27236,20 @@ Click to view visuals <span id="Question 1885_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -36569,15 +27293,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -36598,55 +27315,19 @@ Click to view visuals <span id="Question 2081_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -36682,16 +27363,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -36711,11 +27384,6 @@ Click to view visuals <span id="Question 1887_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -36767,47 +27435,20 @@ Click to view visuals <span id="Question 1887_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -36844,16 +27485,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -36873,11 +27506,6 @@ Click to view visuals <span id="Question 4150_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -36923,47 +27551,20 @@ Click to view visuals <span id="Question 4150_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -37006,9 +27607,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1872');
            let arrow = document.getElementById('Question 1872_arrow');
@@ -37024,10 +27622,6 @@ Click to view visuals <span id="Question 1872_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -37055,49 +27649,20 @@ Click to view visuals <span id="Question 1872_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -37141,9 +27706,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1875');
            let arrow = document.getElementById('Question 1875_arrow');
@@ -37159,10 +27721,6 @@ Click to view visuals <span id="Question 1875_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -37190,49 +27748,20 @@ Click to view visuals <span id="Question 1875_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -37276,9 +27805,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1878');
            let arrow = document.getElementById('Question 1878_arrow');
@@ -37294,10 +27820,6 @@ Click to view visuals <span id="Question 1878_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -37325,49 +27847,20 @@ Click to view visuals <span id="Question 1878_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -37411,9 +27904,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 1881');
            let arrow = document.getElementById('Question 1881_arrow');
@@ -37429,10 +27919,6 @@ Click to view visuals <span id="Question 1881_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -37460,49 +27946,20 @@ Click to view visuals <span id="Question 1881_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -37567,16 +28024,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -37596,11 +28045,6 @@ Click to view visuals <span id="Question 5704_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -37670,47 +28114,20 @@ Click to view visuals <span id="Question 5704_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -37750,19 +28167,12 @@ Missingness Interclass Correlation (ICC) = NA
 </div> <div class = "anchor">
 
 
-<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
-
-
 
 
 
 
 **Descriptives**
-Min = NA, max = NA, mean = NA, std = NA
-
-
-
-
+Min = NA, Max = NA, Mean = NA, SD = NA 
 
 
 
@@ -37783,55 +28193,19 @@ Click to view visuals <span id="Question 5705_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -37867,16 +28241,8 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -37896,11 +28262,6 @@ Click to view visuals <span id="Question 5706_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -37970,47 +28331,20 @@ Click to view visuals <span id="Question 5706_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -38088,9 +28422,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5756');
            let arrow = document.getElementById('Question 5756_arrow');
@@ -38106,10 +28437,6 @@ Click to view visuals <span id="Question 5756_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -38155,49 +28482,20 @@ Click to view visuals <span id="Question 5756_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -38240,9 +28538,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5757');
            let arrow = document.getElementById('Question 5757_arrow');
@@ -38258,10 +28553,6 @@ Click to view visuals <span id="Question 5757_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -38307,49 +28598,20 @@ Click to view visuals <span id="Question 5757_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -38392,9 +28654,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5710');
            let arrow = document.getElementById('Question 5710_arrow');
@@ -38410,10 +28669,6 @@ Click to view visuals <span id="Question 5710_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -38459,49 +28714,20 @@ Click to view visuals <span id="Question 5710_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -38544,9 +28770,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5758');
            let arrow = document.getElementById('Question 5758_arrow');
@@ -38562,10 +28785,6 @@ Click to view visuals <span id="Question 5758_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -38611,49 +28830,20 @@ Click to view visuals <span id="Question 5758_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -38696,9 +28886,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5759');
            let arrow = document.getElementById('Question 5759_arrow');
@@ -38714,10 +28901,6 @@ Click to view visuals <span id="Question 5759_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -38763,49 +28946,20 @@ Click to view visuals <span id="Question 5759_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -38848,9 +29002,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5760');
            let arrow = document.getElementById('Question 5760_arrow');
@@ -38866,10 +29017,6 @@ Click to view visuals <span id="Question 5760_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -38915,49 +29062,20 @@ Click to view visuals <span id="Question 5760_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -39000,9 +29118,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5714');
            let arrow = document.getElementById('Question 5714_arrow');
@@ -39018,10 +29133,6 @@ Click to view visuals <span id="Question 5714_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -39067,49 +29178,20 @@ Click to view visuals <span id="Question 5714_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -39152,9 +29234,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5715');
            let arrow = document.getElementById('Question 5715_arrow');
@@ -39170,10 +29249,6 @@ Click to view visuals <span id="Question 5715_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -39219,49 +29294,20 @@ Click to view visuals <span id="Question 5715_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -39304,9 +29350,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5761');
            let arrow = document.getElementById('Question 5761_arrow');
@@ -39322,10 +29365,6 @@ Click to view visuals <span id="Question 5761_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -39371,49 +29410,20 @@ Click to view visuals <span id="Question 5761_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -39456,9 +29466,6 @@ Missingness Interclass Correlation (ICC) = NA
 
 
 
-
-
-
 <button 
   onclick="let e = document.getElementById('Question 5762');
            let arrow = document.getElementById('Question 5762_arrow');
@@ -39474,10 +29481,6 @@ Click to view visuals <span id="Question 5762_arrow">▼</span>
 <!-- TOC-IGNORE-BEGIN -->
 
 ### Descriptives {.tabset}
-
-#### Frequency Table
-
-
 
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
@@ -39523,49 +29526,20 @@ Click to view visuals <span id="Question 5762_arrow">▼</span>
 </tbody>
 </table>
 
-#### Barplot
-
 
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 0 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 0 / 0
-
 Missing = 0
-
-Min = NA, max = NA, mean = NA, std = NA
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NA
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 #### Screenshot
@@ -39603,19 +29577,10 @@ Missingness Interclass Correlation (ICC) = NA
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
+</div> 
+<div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 810</em>: <em>Check all that happened at school today:</em>.</div>
-
-
-
-
-
-
-
-
-
 
 
 <button 
@@ -39636,9 +29601,6 @@ Click to view visuals <span id="Item 809_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -39683,6 +29645,7 @@ Click to view visuals <span id="Item 809_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-809-Item-809-1.png)<!-- -->
@@ -39690,40 +29653,14 @@ Click to view visuals <span id="Item 809_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 105 out of 183 participants
-
-**Missingness Descriptives**
+This question/item was delivered only to 105 out of 183 participants**Missingness Descriptives**
 
 Delivered / Answered = 373 / 373
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -39760,17 +29697,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -39793,9 +29721,6 @@ Click to view visuals <span id="Item 810_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -39846,6 +29771,7 @@ Click to view visuals <span id="Item 810_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-810-Item-810-1.png)<!-- -->
@@ -39853,40 +29779,14 @@ Click to view visuals <span id="Item 810_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 151 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1251 / 1247
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.03, std = 0.2
+Min = 0, Max = 2, Mean = 0.03, SD = 0.2
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -39935,22 +29835,7 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Cheerful <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -40039,22 +29924,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Sad <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -40143,22 +30013,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Happy <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -40247,22 +30102,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Lively <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -40351,22 +30191,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Proud <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -40455,22 +30280,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Miserable <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -40559,22 +30369,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Mad <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -40663,22 +30458,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Afraid <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -40767,22 +30547,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Joyful <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -40871,22 +30636,7 @@ Interclass Correlation (ICC) = 0.41
 
 </div>
 
- <!-- Header section -->
-
-<div class = "header-shading">
-
-##### Scared <br>
-
-
-
-</div>
-
-
-
-<!-- Body -->
-
-
-<div class = "anchor">
+ <div class = "anchor">
 
 
 
@@ -41010,14 +30760,8 @@ Interclass Correlation (ICC) = 0.41
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 33.98, std = 27.31
-
-
-
-
+Min = 0, Max = 100, Mean = 33.98, SD = 27.31 
 
 
 
@@ -41038,55 +30782,19 @@ Click to view visuals <span id="Item 845_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-845-Item-845-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 154 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 1253 / 1253
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -41122,17 +30830,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -41155,9 +30854,6 @@ Click to view visuals <span id="Item 872_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -41196,6 +30892,7 @@ Click to view visuals <span id="Item 872_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-872-Item-872-1.png)<!-- -->
@@ -41203,40 +30900,14 @@ Click to view visuals <span id="Item 872_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 151 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 3790 / 3778
-
 Missing = 12
-
-Min = 0, max = 2, mean = 0.08, std = 0.34
+Min = 0, Max = 2, Mean = 0.08, SD = 0.34
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -41280,14 +30951,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 45.86, std = 33.55
-
-
-
-
+Min = 0, Max = 100, Mean = 45.86, SD = 33.55 
 
 
 
@@ -41308,55 +30973,19 @@ Click to view visuals <span id="Item 874_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-874-Item-874-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 122 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 3060 / 3039
-
-Missing = 21
-
-Min = 0, max = 7, mean = 0.17, std = 0.74
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.01
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -41399,14 +31028,8 @@ Missingness Interclass Correlation (ICC) = 1.01
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 49.32, std = 33.75
-
-
-
-
+Min = 0, Max = 100, Mean = 49.32, SD = 33.75 
 
 
 
@@ -41427,55 +31050,19 @@ Click to view visuals <span id="Item 875_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-875-Item-875-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 166 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 3911 / 3894
-
-Missing = 17
-
-Min = 0, max = 8, mean = 0.1, std = 0.69
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.01
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -41518,14 +31105,8 @@ Missingness Interclass Correlation (ICC) = 1.01
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 43.16, std = 32.2
-
-
-
-
+Min = 0, Max = 100, Mean = 43.16, SD = 32.2 
 
 
 
@@ -41546,55 +31127,19 @@ Click to view visuals <span id="Item 879_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-879-Item-879-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 165 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 3917 / 3898
-
-Missing = 19
-
-Min = 0, max = 6, mean = 0.11, std = 0.58
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.01
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -41630,10 +31175,8 @@ Missingness Interclass Correlation (ICC) = 1.01
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -41654,10 +31197,8 @@ Click to view visuals <span id="Item 1117_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -41684,49 +31225,22 @@ Click to view visuals <span id="Item 1117_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-1117-Item-1117-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 76 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 155 / 155
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -41770,14 +31284,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 18, max = 100, mean = 66.97, std = 21.02
-
-
-
-
+Min = 18, Max = 100, Mean = 66.97, SD = 21.02 
 
 
 
@@ -41798,55 +31306,19 @@ Click to view visuals <span id="Item 1118_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-1118-Item-1118-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 35 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 60 / 60
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -41882,17 +31354,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -41915,9 +31378,6 @@ Click to view visuals <span id="Item 1119_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -41962,6 +31422,7 @@ Click to view visuals <span id="Item 1119_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-1119-Item-1119-1.png)<!-- -->
@@ -41969,40 +31430,14 @@ Click to view visuals <span id="Item 1119_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 35 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 60 / 60
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -42039,10 +31474,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -42063,10 +31496,8 @@ Click to view visuals <span id="Item 1121_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -42093,49 +31524,22 @@ Click to view visuals <span id="Item 1121_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-1121-Item-1121-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 75 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 154 / 154
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -42179,14 +31583,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 27, max = 100, mean = 72.33, std = 15.83
-
-
-
-
+Min = 27, Max = 100, Mean = 72.33, SD = 15.83 
 
 
 
@@ -42207,55 +31605,19 @@ Click to view visuals <span id="Item 1122_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-1122-Item-1122-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 43 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 78 / 78
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -42291,17 +31653,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -42324,9 +31677,6 @@ Click to view visuals <span id="Item 1123_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -42359,6 +31709,7 @@ Click to view visuals <span id="Item 1123_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-1123-Item-1123-1.png)<!-- -->
@@ -42366,40 +31717,14 @@ Click to view visuals <span id="Item 1123_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 43 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 78 / 78
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -42436,10 +31761,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -42460,10 +31783,8 @@ Click to view visuals <span id="Item 1125_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -42490,49 +31811,22 @@ Click to view visuals <span id="Item 1125_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-1125-Item-1125-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 74 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 154 / 153
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.12
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.84
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.84 
 
 
 #### Screenshot
@@ -42576,14 +31870,8 @@ Missingness Interclass Correlation (ICC) = 1.84
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 65.49, std = 24.38
-
-
-
-
+Min = 0, Max = 100, Mean = 65.49, SD = 24.38 
 
 
 
@@ -42604,55 +31892,19 @@ Click to view visuals <span id="Item 1126_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-1126-Item-1126-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 38 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 68 / 68
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -42688,17 +31940,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -42721,9 +31964,6 @@ Click to view visuals <span id="Item 1127_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -42756,6 +31996,7 @@ Click to view visuals <span id="Item 1127_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-1127-Item-1127-1.png)<!-- -->
@@ -42763,40 +32004,14 @@ Click to view visuals <span id="Item 1127_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 38 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 68 / 68
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -42833,10 +32048,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -42857,10 +32070,8 @@ Click to view visuals <span id="Item 1129_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -42887,49 +32098,22 @@ Click to view visuals <span id="Item 1129_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-1129-Item-1129-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 75 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 154 / 154
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -42973,14 +32157,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 15, max = 98, mean = 66.08, std = 21.57
-
-
-
-
+Min = 15, Max = 98, Mean = 66.08, SD = 21.57 
 
 
 
@@ -43001,55 +32179,19 @@ Click to view visuals <span id="Item 1130_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-1130-Item-1130-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 23 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 38 / 38
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -43085,17 +32227,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -43118,9 +32251,6 @@ Click to view visuals <span id="Item 1131_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -43153,6 +32283,7 @@ Click to view visuals <span id="Item 1131_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-1131-Item-1131-1.png)<!-- -->
@@ -43160,40 +32291,14 @@ Click to view visuals <span id="Item 1131_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 23 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 37 / 37
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -43230,19 +32335,10 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
+</div> 
+<div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4465</em>: <em>Check all the ways that you interacted with parents.</em>.</div>
-
-
-
-
-
-
-
-
-
 
 
 <button 
@@ -43263,9 +32359,6 @@ Click to view visuals <span id="Item 1133_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -43328,6 +32421,7 @@ Click to view visuals <span id="Item 1133_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-1133-Item-1133-1.png)<!-- -->
@@ -43335,40 +32429,14 @@ Click to view visuals <span id="Item 1133_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 145 out of 183 participants
-
-**Missingness Descriptives**
+This question/item was delivered only to 145 out of 183 participants**Missingness Descriptives**
 
 Delivered / Answered = 694 / 692
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.01, std = 0.12
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.25
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.25 
 
 
 #### Screenshot
@@ -43412,14 +32480,8 @@ Missingness Interclass Correlation (ICC) = 1.25
 
 
 
-
-
 **Descriptives**
-Min = 1, max = 4, mean = 3.11, std = 0.8
-
-
-
-
+Min = 1, Max = 4, Mean = 3.11, SD = 0.8 
 
 
 
@@ -43440,55 +32502,19 @@ Click to view visuals <span id="Item 1134_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-1134-Item-1134-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 146 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 730 / 723
-
-Missing = 7
-
-Min = 0, max = 3, mean = 0.05, std = 0.32
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.11
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -43524,17 +32550,8 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -43557,9 +32574,6 @@ Click to view visuals <span id="Item 1135_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -43610,6 +32624,7 @@ Click to view visuals <span id="Item 1135_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-1135-Item-1135-1.png)<!-- -->
@@ -43617,40 +32632,14 @@ Click to view visuals <span id="Item 1135_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 146 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 730 / 724
-
 Missing = 6
-
-Min = 0, max = 2, mean = 0.04, std = 0.23
+Min = 0, Max = 2, Mean = 0.04, SD = 0.23
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.19
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.19 
 
 
 #### Screenshot
@@ -43694,14 +32683,8 @@ Missingness Interclass Correlation (ICC) = 1.19
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 70.65, std = 23.59
-
-
-
-
+Min = 0, Max = 100, Mean = 70.65, SD = 23.59 
 
 
 
@@ -43722,55 +32705,19 @@ Click to view visuals <span id="Item 1143_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-1143-Item-1143-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 163 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 3864 / 3854
-
-Missing = 10
-
-Min = 0, max = 2, mean = 0.06, std = 0.26
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.04
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -43876,19 +32823,10 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
+</div> 
+<div class = "anchor">
 
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 4473</em>: <em>After experiencing this situation, I felt like I needed to talk to someone about it.</em>.</div>
-
-
-
-
-
-
-
-
-
 
 
 <button 
@@ -43909,9 +32847,6 @@ Click to view visuals <span id="Item 1156_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -43968,6 +32903,7 @@ Click to view visuals <span id="Item 1156_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-1156-Item-1156-1.png)<!-- -->
@@ -43975,40 +32911,14 @@ Click to view visuals <span id="Item 1156_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 85 out of 183 participants
-
-**Missingness Descriptives**
+This question/item was delivered only to 85 out of 183 participants**Missingness Descriptives**
 
 Delivered / Answered = 214 / 214
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -44072,17 +32982,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -44105,9 +33006,6 @@ Click to view visuals <span id="Item 1220_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -44158,6 +33056,7 @@ Click to view visuals <span id="Item 1220_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-1220-Item-1220-1.png)<!-- -->
@@ -44165,40 +33064,14 @@ Click to view visuals <span id="Item 1220_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 151 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1250 / 1246
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.03, std = 0.2
+Min = 0, Max = 2, Mean = 0.03, SD = 0.2
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -44297,10 +33170,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -44321,10 +33192,8 @@ Click to view visuals <span id="Item 4463_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -44351,49 +33220,22 @@ Click to view visuals <span id="Item 4463_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-4463-Item-4463-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 153 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 5909 / 5902
-
 Missing = 7
-
-Min = 0, max = 2, mean = 0.05, std = 0.24
+Min = 0, Max = 2, Mean = 0.05, SD = 0.24
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.02
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.02 
 
 
 #### Screenshot
@@ -44430,10 +33272,8 @@ Missingness Interclass Correlation (ICC) = 1.02
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -44454,10 +33294,8 @@ Click to view visuals <span id="Item 4464_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -44484,49 +33322,22 @@ Click to view visuals <span id="Item 4464_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-4464-Item-4464-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 154 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 5897 / 5887
-
 Missing = 10
-
-Min = 0, max = 2, mean = 0.06, std = 0.29
+Min = 0, Max = 2, Mean = 0.06, SD = 0.29
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.02
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.02 
 
 
 #### Screenshot
@@ -44563,17 +33374,8 @@ Missingness Interclass Correlation (ICC) = 1.02
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -44596,9 +33398,6 @@ Click to view visuals <span id="Item 4465_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -44643,6 +33442,7 @@ Click to view visuals <span id="Item 4465_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-4465-Item-4465-1.png)<!-- -->
@@ -44650,40 +33450,14 @@ Click to view visuals <span id="Item 4465_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 137 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 705 / 703
-
 Missing = 2
-
-Min = 0, max = 2, mean = 0.01, std = 0.17
+Min = 0, Max = 2, Mean = 0.01, SD = 0.17
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.11
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.11 
 
 
 #### Screenshot
@@ -44720,10 +33494,8 @@ Missingness Interclass Correlation (ICC) = 1.11
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -44744,10 +33516,8 @@ Click to view visuals <span id="Item 4473_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -44774,49 +33544,22 @@ Click to view visuals <span id="Item 4473_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-4473-Item-4473-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 139 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 1211 / 1199
-
 Missing = 12
-
-Min = 0, max = 8, mean = 0.09, std = 0.72
+Min = 0, Max = 8, Mean = 0.09, SD = 0.72
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.02
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.02 
 
 
 #### Screenshot
@@ -44880,17 +33623,8 @@ Missingness Interclass Correlation (ICC) = 1.02
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -44913,9 +33647,6 @@ Click to view visuals <span id="Item 5525_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -44984,6 +33715,7 @@ Click to view visuals <span id="Item 5525_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-5525-Item-5525-1.png)<!-- -->
@@ -44991,40 +33723,14 @@ Click to view visuals <span id="Item 5525_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 113 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 583 / 579
-
 Missing = 4
-
-Min = 0, max = 1, mean = 0.03, std = 0.18
+Min = 0, Max = 1, Mean = 0.03, SD = 0.18
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -45063,19 +33769,13 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 </div> <div class = "anchor">
 
+
 <div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'><strong>Note:</strong> This question is only delivered if participant answered question <em>Item 5525</em>: <em>Did you ask your parent to</em>.</div>
 
 
 
-
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 71.47, std = 25.06
-
-
-
-
+Min = 0, Max = 100, Mean = 71.47, SD = 25.06 
 
 
 
@@ -45096,55 +33796,19 @@ Click to view visuals <span id="Item 5526_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-5526-Item-5526-1.png)<!-- -->
 
 
 
 #### Missingness
 
+This question/item was delivered only to 0 out of 183 participants**Missingness Descriptives**
 
-
-This questions was delivered only to 86 out of 183 participants
-
-**Missingness Descriptives**
-
-Delivered / Answered = 250 / 249
-
-Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.11
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.5
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -45180,17 +33844,8 @@ Missingness Interclass Correlation (ICC) = 1.5
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -45213,9 +33868,6 @@ Click to view visuals <span id="Item 5527_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -45284,6 +33936,7 @@ Click to view visuals <span id="Item 5527_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-5527-Item-5527-1.png)<!-- -->
@@ -45291,40 +33944,14 @@ Click to view visuals <span id="Item 5527_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 114 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 582 / 578
-
 Missing = 4
-
-Min = 0, max = 1, mean = 0.03, std = 0.18
+Min = 0, Max = 1, Mean = 0.03, SD = 0.18
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -45396,10 +34023,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -45420,10 +34045,8 @@ Click to view visuals <span id="Item 5529_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -45468,49 +34091,22 @@ Click to view visuals <span id="Item 5529_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5529-Item-5529-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 579 / 576
-
 Missing = 3
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -45547,10 +34143,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -45571,10 +34165,8 @@ Click to view visuals <span id="Item 5530_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -45619,49 +34211,22 @@ Click to view visuals <span id="Item 5530_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5530-Item-5530-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 574
-
 Missing = 3
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -45698,10 +34263,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -45722,10 +34285,8 @@ Click to view visuals <span id="Item 5531_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -45770,49 +34331,22 @@ Click to view visuals <span id="Item 5531_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5531-Item-5531-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 578 / 575
-
 Missing = 3
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -45849,10 +34383,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -45873,10 +34405,8 @@ Click to view visuals <span id="Item 5532_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -45921,49 +34451,22 @@ Click to view visuals <span id="Item 5532_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5532-Item-5532-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 576
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -46000,10 +34503,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -46024,10 +34525,8 @@ Click to view visuals <span id="Item 5533_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -46072,49 +34571,22 @@ Click to view visuals <span id="Item 5533_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5533-Item-5533-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 576
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -46151,10 +34623,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -46175,10 +34645,8 @@ Click to view visuals <span id="Item 5534_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -46223,49 +34691,22 @@ Click to view visuals <span id="Item 5534_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5534-Item-5534-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 576
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.09
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.27
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.27 
 
 
 #### Screenshot
@@ -46302,10 +34743,8 @@ Missingness Interclass Correlation (ICC) = 1.27
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -46326,10 +34765,8 @@ Click to view visuals <span id="Item 5535_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -46374,49 +34811,22 @@ Click to view visuals <span id="Item 5535_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5535-Item-5535-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 575
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.02, std = 0.13
+Min = 0, Max = 1, Mean = 0.02, SD = 0.13
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -46453,10 +34863,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -46477,10 +34885,8 @@ Click to view visuals <span id="Item 5536_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -46525,49 +34931,22 @@ Click to view visuals <span id="Item 5536_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5536-Item-5536-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 577 / 575
-
 Missing = 2
-
-Min = 0, max = 1, mean = 0.02, std = 0.13
+Min = 0, Max = 1, Mean = 0.02, SD = 0.13
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.26
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.26 
 
 
 #### Screenshot
@@ -46604,10 +34983,8 @@ Missingness Interclass Correlation (ICC) = 1.26
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -46628,10 +35005,8 @@ Click to view visuals <span id="Item 5537_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -46676,49 +35051,22 @@ Click to view visuals <span id="Item 5537_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5537-Item-5537-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 576 / 571
-
 Missing = 5
-
-Min = 0, max = 3, mean = 0.04, std = 0.31
+Min = 0, Max = 3, Mean = 0.04, SD = 0.31
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.1
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.1 
 
 
 #### Screenshot
@@ -46755,10 +35103,8 @@ Missingness Interclass Correlation (ICC) = 1.1
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -46779,10 +35125,8 @@ Click to view visuals <span id="Item 5538_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -46827,49 +35171,22 @@ Click to view visuals <span id="Item 5538_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-5538-Item-5538-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 114 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 575 / 571
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.04, std = 0.23
+Min = 0, Max = 2, Mean = 0.04, SD = 0.23
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.15
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.15 
 
 
 #### Screenshot
@@ -46906,17 +35223,8 @@ Missingness Interclass Correlation (ICC) = 1.15
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -46939,9 +35247,6 @@ Click to view visuals <span id="Item 5540_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -47010,6 +35315,7 @@ Click to view visuals <span id="Item 5540_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-5540-Item-5540-1.png)<!-- -->
@@ -47017,40 +35323,14 @@ Click to view visuals <span id="Item 5540_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 119 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1048 / 1042
-
 Missing = 6
-
-Min = 0, max = 2, mean = 0.05, std = 0.29
+Min = 0, Max = 2, Mean = 0.05, SD = 0.29
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.07
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.07 
 
 
 #### Screenshot
@@ -47087,17 +35367,8 @@ Missingness Interclass Correlation (ICC) = 1.07
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -47120,9 +35391,6 @@ Click to view visuals <span id="Item 5541_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -47197,6 +35465,7 @@ Click to view visuals <span id="Item 5541_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-5541-Item-5541-1.png)<!-- -->
@@ -47204,40 +35473,14 @@ Click to view visuals <span id="Item 5541_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 120 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1048 / 1043
-
 Missing = 5
-
-Min = 0, max = 2, mean = 0.04, std = 0.24
+Min = 0, Max = 2, Mean = 0.04, SD = 0.24
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -47274,17 +35517,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -47307,9 +35541,6 @@ Click to view visuals <span id="Item 5543_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -47372,6 +35603,7 @@ Click to view visuals <span id="Item 5543_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-5543-Item-5543-1.png)<!-- -->
@@ -47379,40 +35611,14 @@ Click to view visuals <span id="Item 5543_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 119 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1047 / 1043
-
 Missing = 4
-
-Min = 0, max = 2, mean = 0.03, std = 0.22
+Min = 0, Max = 2, Mean = 0.03, SD = 0.22
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -47456,17 +35662,14 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 
 
-```
-## Warning: NAs introduced by coercion
-```
 
+```
+## Warning in sliderDescriptives(id = "Item 5544", thisData = thisData_item): NAs introduced by
+## coercion
+```
 
 **Descriptives**
-Min = 18, max = 100, mean = 79, std = 16.68
-
-
-
-
+Min = 18, Max = 100, Mean = 79, SD = 16.68 
 
 
 
@@ -47487,55 +35690,19 @@ Click to view visuals <span id="Item 5544_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-5544-Item-5544-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 105 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 554 / 553
-
-Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.1
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.22
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -47613,8 +35780,6 @@ Missingness Interclass Correlation (ICC) = 1.22
 
 
 
-
-
 <button 
   onclick="let e = document.getElementById('Item 6305');
            let arrow = document.getElementById('Item 6305_arrow');
@@ -47634,41 +35799,14 @@ Click to view visuals <span id="Item 6305_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 84 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 1023 / 1020
-
 Missing = 3
-
-Min = 0, max = 1, mean = 0.04, std = 0.19
+Min = 0, Max = 1, Mean = 0.04, SD = 0.19
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -47705,10 +35843,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -47729,10 +35865,8 @@ Click to view visuals <span id="Item 6306_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -47759,49 +35893,22 @@ Click to view visuals <span id="Item 6306_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-6306-Item-6306-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 84 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 1023 / 1022
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.11
+Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.09 
 
 
 #### Screenshot
@@ -47845,14 +35952,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 69.25, std = 24.41
-
-
-
-
+Min = 0, Max = 100, Mean = 69.25, SD = 24.41 
 
 
 
@@ -47873,55 +35974,19 @@ Click to view visuals <span id="Item 6309_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6309-Item-6309-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 83 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 1019 / 1016
-
-Missing = 3
-
-Min = 0, max = 1, mean = 0.04, std = 0.19
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -47957,10 +36022,8 @@ Missingness Interclass Correlation (ICC) = 1.09
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -47981,10 +36044,8 @@ Click to view visuals <span id="Item 6310_arrow">▼</span>
 
 ### Descriptives {.tabset}
 
+
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -48011,49 +36072,22 @@ Click to view visuals <span id="Item 6310_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-6310-Item-6310-1.png)<!-- -->
 
 
-
 #### Missingness
-
-
-
-This questions was delivered only to 81 out of 183 participants
 
 **Missingness Descriptives**
 
 Delivered / Answered = 752 / 752
-
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = NaN 
 
 
 #### Screenshot
@@ -48132,14 +36166,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 68.35, std = 24.69
-
-
-
-
+Min = 0, Max = 100, Mean = 68.35, SD = 24.69 
 
 
 
@@ -48160,55 +36188,19 @@ Click to view visuals <span id="Item 6312_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6312-Item-6312-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 697 / 696
-
-Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.11
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.13
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -48251,14 +36243,8 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 77.7, std = 20.45
-
-
-
-
+Min = 0, Max = 100, Mean = 77.7, SD = 20.45 
 
 
 
@@ -48279,55 +36265,19 @@ Click to view visuals <span id="Item 6313_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6313-Item-6313-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 697 / 697
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -48370,14 +36320,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 77.07, std = 20.47
-
-
-
-
+Min = 0, Max = 100, Mean = 77.07, SD = 20.47 
 
 
 
@@ -48398,55 +36342,19 @@ Click to view visuals <span id="Item 6314_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6314-Item-6314-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 697 / 697
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -48489,14 +36397,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 16.48, std = 21.37
-
-
-
-
+Min = 0, Max = 100, Mean = 16.48, SD = 21.37 
 
 
 
@@ -48517,55 +36419,19 @@ Click to view visuals <span id="Item 6315_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6315-Item-6315-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 696 / 696
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -48608,14 +36474,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 98, mean = 16.76, std = 22.83
-
-
-
-
+Min = 0, Max = 98, Mean = 16.76, SD = 22.83 
 
 
 
@@ -48636,55 +36496,19 @@ Click to view visuals <span id="Item 6316_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6316-Item-6316-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 695 / 695
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -48727,14 +36551,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 93, mean = 6.38, std = 12.81
-
-
-
-
+Min = 0, Max = 93, Mean = 6.38, SD = 12.81 
 
 
 
@@ -48755,55 +36573,19 @@ Click to view visuals <span id="Item 6317_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6317-Item-6317-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 695 / 693
-
-Missing = 2
-
-Min = 0, max = 1, mean = 0.03, std = 0.16
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.13
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -48839,17 +36621,8 @@ Missingness Interclass Correlation (ICC) = 1.13
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -48872,9 +36645,6 @@ Click to view visuals <span id="Item 6318_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -48907,6 +36677,7 @@ Click to view visuals <span id="Item 6318_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6318-Item-6318-1.png)<!-- -->
@@ -48914,40 +36685,14 @@ Click to view visuals <span id="Item 6318_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 693 / 692
-
 Missing = 1
-
-Min = 0, max = 1, mean = 0.01, std = 0.11
+Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.14
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.14 
 
 
 #### Screenshot
@@ -49026,14 +36771,8 @@ Missingness Interclass Correlation (ICC) = 1.14
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 76.68, std = 20.99
-
-
-
-
+Min = 0, Max = 100, Mean = 76.68, SD = 20.99 
 
 
 
@@ -49054,55 +36793,19 @@ Click to view visuals <span id="Item 6320_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6320-Item-6320-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 693 / 693
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -49145,14 +36848,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 73.76, std = 23.45
-
-
-
-
+Min = 0, Max = 100, Mean = 73.76, SD = 23.45 
 
 
 
@@ -49173,55 +36870,19 @@ Click to view visuals <span id="Item 6321_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6321-Item-6321-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 693 / 693
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -49264,14 +36925,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 80.09, std = 19.76
-
-
-
-
+Min = 0, Max = 100, Mean = 80.09, SD = 19.76 
 
 
 
@@ -49292,55 +36947,19 @@ Click to view visuals <span id="Item 6322_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6322-Item-6322-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 693 / 693
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -49383,14 +37002,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 79.35, std = 18.95
-
-
-
-
+Min = 0, Max = 100, Mean = 79.35, SD = 18.95 
 
 
 
@@ -49411,55 +37024,19 @@ Click to view visuals <span id="Item 6323_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6323-Item-6323-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 692 / 692
-
+Delivered / Answered = 0 / 0
 Missing = 0
-
-Min = 0, max = 0, mean = 0, std = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = NaN
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 
@@ -49495,17 +37072,8 @@ Missingness Interclass Correlation (ICC) = NaN
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -49528,9 +37096,6 @@ Click to view visuals <span id="Item 6324_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -49581,6 +37146,7 @@ Click to view visuals <span id="Item 6324_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6324-Item-6324-1.png)<!-- -->
@@ -49588,40 +37154,14 @@ Click to view visuals <span id="Item 6324_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 686
-
 Missing = 6
-
-Min = 0, max = 4, mean = 0.08, std = 0.47
+Min = 0, Max = 4, Mean = 0.08, SD = 0.47
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.04
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.04 
 
 
 #### Screenshot
@@ -49658,17 +37198,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -49691,9 +37222,6 @@ Click to view visuals <span id="Item 6325_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -49744,6 +37272,7 @@ Click to view visuals <span id="Item 6325_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6325-Item-6325-1.png)<!-- -->
@@ -49751,40 +37280,14 @@ Click to view visuals <span id="Item 6325_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 681
-
 Missing = 11
-
-Min = 0, max = 5, mean = 0.14, std = 0.67
+Min = 0, Max = 5, Mean = 0.14, SD = 0.67
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.04
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.04 
 
 
 #### Screenshot
@@ -49821,17 +37324,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -49854,9 +37348,6 @@ Click to view visuals <span id="Item 6326_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -49895,6 +37386,7 @@ Click to view visuals <span id="Item 6326_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6326-Item-6326-1.png)<!-- -->
@@ -49902,40 +37394,14 @@ Click to view visuals <span id="Item 6326_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 683
-
 Missing = 9
-
-Min = 0, max = 6, mean = 0.11, std = 0.7
+Min = 0, Max = 6, Mean = 0.11, SD = 0.7
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -49972,17 +37438,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -50005,9 +37462,6 @@ Click to view visuals <span id="Item 6327_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -50058,6 +37512,7 @@ Click to view visuals <span id="Item 6327_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6327-Item-6327-1.png)<!-- -->
@@ -50065,40 +37520,14 @@ Click to view visuals <span id="Item 6327_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 685
-
 Missing = 7
-
-Min = 0, max = 5, mean = 0.09, std = 0.58
+Min = 0, Max = 5, Mean = 0.09, SD = 0.58
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -50135,17 +37564,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -50168,9 +37588,6 @@ Click to view visuals <span id="Item 6328_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -50221,6 +37638,7 @@ Click to view visuals <span id="Item 6328_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6328-Item-6328-1.png)<!-- -->
@@ -50228,40 +37646,14 @@ Click to view visuals <span id="Item 6328_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 684
-
 Missing = 8
-
-Min = 0, max = 5, mean = 0.1, std = 0.59
+Min = 0, Max = 5, Mean = 0.1, SD = 0.59
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.04
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.04 
 
 
 #### Screenshot
@@ -50298,17 +37690,8 @@ Missingness Interclass Correlation (ICC) = 1.04
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -50331,9 +37714,6 @@ Click to view visuals <span id="Item 6329_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -50372,6 +37752,7 @@ Click to view visuals <span id="Item 6329_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6329-Item-6329-1.png)<!-- -->
@@ -50379,40 +37760,14 @@ Click to view visuals <span id="Item 6329_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 692 / 685
-
 Missing = 7
-
-Min = 0, max = 5, mean = 0.09, std = 0.58
+Min = 0, Max = 5, Mean = 0.09, SD = 0.58
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -50449,17 +37804,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -50482,9 +37828,6 @@ Click to view visuals <span id="Item 6330_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -50535,6 +37878,7 @@ Click to view visuals <span id="Item 6330_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6330-Item-6330-1.png)<!-- -->
@@ -50542,40 +37886,14 @@ Click to view visuals <span id="Item 6330_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 691 / 683
-
 Missing = 8
-
-Min = 0, max = 6, mean = 0.1, std = 0.69
+Min = 0, Max = 6, Mean = 0.1, SD = 0.69
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -50612,17 +37930,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -50645,9 +37954,6 @@ Click to view visuals <span id="Item 6331_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -50698,6 +38004,7 @@ Click to view visuals <span id="Item 6331_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6331-Item-6331-1.png)<!-- -->
@@ -50705,40 +38012,14 @@ Click to view visuals <span id="Item 6331_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 691 / 683
-
 Missing = 8
-
-Min = 0, max = 6, mean = 0.1, std = 0.69
+Min = 0, Max = 6, Mean = 0.1, SD = 0.69
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -50775,17 +38056,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 **Type of data:** integer
 
-</div> <div class = "anchor">
-
-
-
-
-
-
-
-
-
-
+</div> 
+<div class = "anchor">
 
 
 
@@ -50808,9 +38080,6 @@ Click to view visuals <span id="Item 6332_arrow">▼</span>
 
 
 #### Frequency Table
-
-
-
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
@@ -50849,6 +38118,7 @@ Click to view visuals <span id="Item 6332_arrow">▼</span>
 </tbody>
 </table>
 
+
 #### Barplot
 
 ![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Select-Item-6332-Item-6332-1.png)<!-- -->
@@ -50856,40 +38126,14 @@ Click to view visuals <span id="Item 6332_arrow">▼</span>
 
 #### Missingness
 
-
-
-This questions was delivered only to 78 out of 183 participants
-
 **Missingness Descriptives**
 
 Delivered / Answered = 691 / 682
-
 Missing = 9
-
-Min = 0, max = 6, mean = 0.11, std = 0.7
+Min = 0, Max = 6, Mean = 0.11, SD = 0.7
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.03
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
+Missingness Intraclass Correlation (ICC) = 1.03 
 
 
 #### Screenshot
@@ -50933,14 +38177,8 @@ Missingness Interclass Correlation (ICC) = 1.03
 
 
 
-
-
 **Descriptives**
-Min = 0, max = 100, mean = 63.28, std = 20.71
-
-
-
-
+Min = 0, Max = 100, Mean = 63.28, SD = 20.71 
 
 
 
@@ -50961,55 +38199,19 @@ Click to view visuals <span id="Item 6333_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
-
-
-
-
-
-![](Codebook_files/figure-html/histogram-By-Item-Description-Slider-Item-6333-Item-6333-1.png)<!-- -->
 
 
 
 #### Missingness
 
-
-
-This questions was delivered only to 79 out of 183 participants
-
 **Missingness Descriptives**
 
-Delivered / Answered = 691 / 687
-
-Missing = 4
-
-Min = 0, max = 2, mean = 0.05, std = 0.27
+Delivered / Answered = 0 / 0
+Missing = 0
+Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
-Missingness Interclass Correlation (ICC) = 1.09
-
-
-
-**Missingness Codes**
-
-<details>
-<summary style="font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">Click to view missingness codes</summary>
-
-<br>
-
-| Code | Description           |
-|------|-----------------------|
-| -1   | Skipped by respondent |
-| -3   | No response recorded  |
-| -6   | Survey timeout        |
-| -8   | Consent withdrawn     |
-| -9   | Other missing reason  |
-
-</details>
-
-
-
-
+Missingness Intraclass Correlation (ICC) = NA 
 
 
 

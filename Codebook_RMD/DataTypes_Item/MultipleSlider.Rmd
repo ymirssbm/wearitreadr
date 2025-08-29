@@ -2,48 +2,7 @@
 
 
 ```{r skip-logic-{{chunk_label}}, echo = FALSE, results = 'asis'}
-### This is a simple skip logic check
-### If this is a conditional question, print out parent item_id and parent question text
-
-# Get current question ID
-item_id <- substring("{{item_id}}", 6)
-
-
-# Change Conditional Child Item ID column to character to make searching easy
-blockMap$Conditional.Child.Item.ID <- as.character(blockMap$Conditional.Child.Item.ID)
-
-# Check if Item ID is in conditional column....
-## If so, display parent info
-if (item_id %in% blockMap$Conditional.Child.Item.ID) {
-  parent_row <- subset(blockMap, Conditional.Child.Item.ID == item_id)
-  parent_text <- parent_row$Question.Text
-  parent_itemID <- parent_row$Item.ID
-  
-  # Display message
-  msg <- paste0(
-    "<div style='font-size:16px; line-height:1.5; margin: 1em 0; padding: 0.5em 1em; ",
-    "border-left: 4px solid #2a5caa; background-color: #f9faff; color: #333;'>",
-    "<strong>Note:</strong> This question is only delivered if participant answered question ",
-    "<em>", parent_itemID, "</em>: <em>", parent_text, "</em>.",
-    "</div>"
-  )
-  
-  cat(msg)
-}
-
-
-
-
-##### I thought the child listed the parent not the other way around
-##### This will essentially give you the same in reverse
-
-#if (!is.na(blockMap$Conditional.Child.Item.ID[blockMap$Question.ID == "{{question_id}}"])) {
-#  Conditional_itemID <- blockMap$Conditional.Child.Item.ID[blockMap$Question.ID == "{{question_id}}"]
-#  Conditional_text <- blockMap$Question.Text[blockMap$Item.ID == Conditional_itemID]
-#  cat("This question is only delivered if participant answered question ", Conditional_itemID, ": ", Conditional_text)
-#}
-
-
+displaySkipLogic(id = "{{question_id}}", blockMap = blockMap_item)
 ```
 
 
@@ -51,12 +10,12 @@ if (item_id %in% blockMap$Conditional.Child.Item.ID) {
 ```{r, echo = FALSE, results = 'hide'}
 
 # Make sure data exists
-if (any(thisData_new$Question.ID == "{{question_id}}") &&
-    any(!is.na(thisData_new$User.Response[thisData_new$Question.ID == "{{question_id}}"]))) {
+if (any(thisData$Question.ID == "{{question_id}}") &&
+    any(!is.na(thisData$User.Response[thisData$Question.ID == "{{question_id}}"]))) {
 
   
   # String split and unlist on current question id
-  raw_data <- unlist(strsplit(thisData_new$User.Response[thisData_new$Question.ID == "{{question_id}}"], ","))
+  raw_data <- unlist(strsplit(thisData$User.Response[thisData$Question.ID == "{{question_id}}"], ","))
   
   
   # Split on colon now keeping the question identifier and user response together
@@ -109,13 +68,13 @@ if (exists("wide_df")) {
   
     
     # Grab question text
-    question_text = responseKey_new$definition[responseKey_new$Question.ID == "{{question_id}}" & responseKey_new$value == names(thisVar)]
+    question_text = responseKey$definition[responseKey$Question.ID == "{{question_id}}" & responseKey$value == names(thisVar)]
     
   
     out3 <- paste(
       out3,
       knit_expand(
-        file = "DataTypes_Item/MultipleSlider_B.Rmd",
+        file = "DataTypes/MultipleSlider_B.Rmd",
         question_text = question_text,
         chunk_label = chunk_label,
         thisVar = thisVar,
