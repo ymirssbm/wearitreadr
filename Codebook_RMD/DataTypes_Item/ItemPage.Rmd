@@ -19,7 +19,6 @@
 <div class = "anchor">
 
 
-**Question ID**: {{question_id}}
 
 **Way the question was delivered:** {{question_type}}
 

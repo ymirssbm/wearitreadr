@@ -18,8 +18,9 @@
 
 <div class = "anchor">
 
-
-**Question ID**: {{question_id}}
+<div id="{{question_id}}-anchor">
+  <strong>Question ID</strong>: {{question_id}}
+</div>
 
 **Way the question was delivered:** {{question_type}}
 
