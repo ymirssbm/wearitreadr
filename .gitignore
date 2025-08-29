@@ -3,3 +3,8 @@
 .RData
 .Ruserdata
 .DS_Store
+
+# R Markdown generated folders that create long paths
+*_files/
+*_cache/
+*.html
