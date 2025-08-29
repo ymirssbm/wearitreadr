@@ -40,7 +40,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
   for (survey in surveys) {
 
     # Call survey page
-    out2 <<- paste(
+    out2 <- paste(
       out2,
       knit_expand(
         file = "Survey.Rmd",

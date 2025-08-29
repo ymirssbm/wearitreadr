@@ -1,7 +1,7 @@
 <div class = "anchor">
 
 ```{r skip-logic-{{chunk_label}}, echo = FALSE, results = 'asis'}
-displaySkipLogic(id = "{{question_type}}", blockMap = blockMap)
+displaySkipLogic(id = "{{question_id}}", blockMap = blockMap)
 
 ```
 
@@ -26,7 +26,7 @@ Click to view visuals <span id="{{question_id}}_arrow">▼</span>
 
 
 ```{r missingness-{{chunk_label}}, echo = FALSE, results = 'asis'}
-describeMissingness(id = "{{question_type}}", thisData = thisData, blockMap = blockMap)
+describeMissingness(id = "{{question_id}}", thisData = thisData, blockMap = blockMap)
 
 ```
 

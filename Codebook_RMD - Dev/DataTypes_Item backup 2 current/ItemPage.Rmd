@@ -1,0 +1,28 @@
+<!-- Header section -->
+
+<div class = "header-shading">
+
+#### {{question_text}} <br>
+
+<div id="{{item_id}}-anchor" style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  [{{item_id}}]
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+
+**Question ID**: {{question_id}}
+
+**Way the question was delivered:** {{question_type}}
+
+**Type of data:** {{result_type}}
+
+</div>
