@@ -41,6 +41,13 @@ describeMissingness(id = "{{question_id}}", thisData = thisData_item, blockMap =
 ```
 
 
+```{r list-questions-ids-{{chunk_label}}, echo = FALSE, results = 'asis'}
+
+listQuestionIds(id = "{{question_id}}", blockMap = blockMap)
+
+```
+
+
 #### Screenshot
 
 
