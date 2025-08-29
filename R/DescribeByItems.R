@@ -24,15 +24,15 @@ describeByItem <- function(out2, thisData, blockMap, responseKey) {
     arrange(!(Parent %in% Survey), as.numeric(gsub("Item ", "", Item.ID)))
 
 
-  out2 <<- paste(out2, "# By Item Description", sep = "\n")
+  out2 <- paste(out2, "# By Item Description", sep = "\n")
 
 
   # Write over question id in this data
-  thisData_new <- thisData
-  thisData_new$Question.ID <- thisData_new$Item.ID
+  thisData_item <<- thisData
+  thisData_item$Question.ID <<- thisData_item$Item.ID
 
   # Write over question id with item id
-  responseKey_new <- responseKey %>%
+  responseKey_item <<- responseKey %>%
     left_join(
       blockMap %>%
         group_by(Question.ID) %>%
@@ -45,11 +45,11 @@ describeByItem <- function(out2, thisData, blockMap, responseKey) {
 
 
   # Grab just items not blocks
-  blockMap_item <- blockMap[(blockMap$Item.Type == "Question"),]
+  blockMap_item <<- blockMap[(blockMap$Item.Type == "Question"),]
   # Coerce questions ids to be item ids
-  blockMap_item$Question.ID <- blockMap_item$Item.ID
+  blockMap_item$Question.ID <<- blockMap_item$Item.ID
   # Grab 1 row for each unique item id
-  blockMap_item <- blockMap_item %>%
+  blockMap_item <<- blockMap_item %>%
     distinct(Item.ID, .keep_all = TRUE)
 
 
@@ -76,7 +76,7 @@ describeByItem <- function(out2, thisData, blockMap, responseKey) {
 
 
       # Knit Item Page
-      out2 <<- paste(
+      out2 <- paste(
         out2,
         knit_expand(
           file = paste0("DataTypes_Item/ItemPage.Rmd"),
@@ -92,7 +92,7 @@ describeByItem <- function(out2, thisData, blockMap, responseKey) {
 
 
       # Knit expand
-      out2 <<- paste(
+      out2 <- paste(
         out2,
         knit_expand(
           file = paste0("DataTypes_Item/", question_type_no_space, ".Rmd"),
@@ -109,4 +109,5 @@ describeByItem <- function(out2, thisData, blockMap, responseKey) {
       detach(itemBlock)
     }
   }
+  return(out2 = out2)
 }

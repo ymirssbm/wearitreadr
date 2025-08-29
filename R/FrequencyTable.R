@@ -8,7 +8,7 @@
 #' @return Frequency table on codebook page
 #' @export
 #' @importFrom knitr kable
-#' @importFrom kableExtra kable_styling column_spec
+#' @importFrom kableExtra kbl kable_styling column_spec
 #' @importFrom dplyr %>%
 
 frequencyTable <- function(id, thisData, responseKey){

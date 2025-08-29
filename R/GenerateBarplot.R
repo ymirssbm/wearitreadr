@@ -9,10 +9,10 @@
 #'@export
 #'@importFrom ggplot2 ggplot geom_bar labs theme_minimal aes
 
-generateBarplot <- function() {
+generateBarplot <- function(id, thisData, questionText) {
 
   # Check to make sure the last call made a table
-  dataExists <- checkDataExists(id, thisData, questionText)
+  dataExists <- checkDataExists(id, thisData)
 
   if (dataExists) {
 

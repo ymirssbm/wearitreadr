@@ -2,13 +2,13 @@
 
 
 ```{r skip-logic-{{chunk_label}}, echo = FALSE, results = 'asis'}
-displaySkipLogic(id = "{{question_type}}", blockMap = blockMap)
+displaySkipLogic(id = "{{question_id}}", blockMap = blockMap)
 ```
 
 
 
-```{r descriptives-{{chunk_label}}, echo = FALSE}
-sliderDescriptives(id = "{{question_type}}", thisData = thisData)
+```{r descriptives-{{chunk_label}}, echo = FALSE, results = 'asis'}
+sliderDescriptives(id = "{{question_id}}", thisData = thisData)
 ```
 
 
@@ -30,13 +30,13 @@ Click to view visuals <span id="{{question_id}}_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-```{r histogram-{{chunk_label}}, echo = FALSE}
-sliderHist(id = {{"question_id"}}, thisData = thisData)
+```{r histogram-{{chunk_label}}, echo = FALSE, results = 'asis'}
+sliderHist(id = "{{question_id}}", thisData = thisData)
 ```
 
 
 ```{r missingness-{{chunk_label}}, echo = FALSE, results = 'asis'}
-describeMissingness(id = "{{question_type}}", thisData = thisData, blockMap = blockMap)
+describeMissingness(id = "{{question_id}}", thisData = thisData, blockMap = blockMap)
 ```
 
 
