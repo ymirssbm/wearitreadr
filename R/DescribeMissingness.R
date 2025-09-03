@@ -7,6 +7,10 @@
 #' @param blockMap This is needed for the check skip logic call
 #' @return cat msg on codebook page
 #' @export
+#' @importFrom rmarkdown render
+#' @importFrom dplyr filter group_by ungroup
+#' @importFrom utils read.csv
+#' @importFrom stats sd mean
 
 
 
