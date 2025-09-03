@@ -13,8 +13,13 @@ Most straightforward way to run is to use the 'using codebook.r' script and run 
 - Survey beeps
 - Graphical representation of study decision tree
 - Figure out how to fix TOC when the first item in a survey is not a block
+- Citations for scales
+- Scale metadata
+- Create data dictionary data generation tool
+- Create data manual generation tool
 
 ## Contributers
 
 Ethan Kile - eok5206@psu.edu
+
 Timothy Brick - tbrick@psu.edu
