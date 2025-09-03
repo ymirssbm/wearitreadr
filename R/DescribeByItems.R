@@ -20,8 +20,11 @@ describeByItem <- function(out2, thisData, blockMap, responseKey) {
   n <- length(unique(thisData$Participant.ID))
 
   # Arrange item id to get order that PI put in items (but ensure that rows with a Parent of the survey always come first)
-  blockMap <- blockMap %>%
-    arrange(!(Parent %in% Survey), as.numeric(gsub("Item ", "", Item.ID)))
+  if ("Parent" %in% names(blockMap)) {
+    blockMap <- blockMap %>%
+      arrange(!(Parent %in% Survey), as.numeric(gsub("Item ", "", Item.ID)))
+  }
+
 
 
   out2 <- paste(out2, "# By Item Description", sep = "\n")
@@ -30,7 +33,7 @@ describeByItem <- function(out2, thisData, blockMap, responseKey) {
   # Write over question id in this data
   thisData_item <<- thisData
   thisData_item$Question.ID <<- thisData_item$Item.ID
-
+  #responseKey <- responseKey %>% rename(Question.ID = question) # Add into data processing script probably ~ Ethan
   # Write over question id with item id
   responseKey_item <<- responseKey %>%
     left_join(

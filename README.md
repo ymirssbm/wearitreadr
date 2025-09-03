@@ -6,6 +6,10 @@ This is a codebook generator r package that can interface with WearIT's api. The
 
 Most straightforward way to run is to use the 'using codebook.r' script and run it. It will use data saved to the Codebook_RMD/processedData folder. Run get study data with the approprate study ID and save the resulting dataframes into processedData as a csv to generate on different studies data.
 
+## Urgent TDL
+
+- Fix multiple slider generation
+
 ## Known Issues / To do list
 
 - Implement screenshots
