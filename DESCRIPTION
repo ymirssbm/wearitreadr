@@ -16,5 +16,9 @@ Imports:
     knitr,
     dplyr,
     kableExtra
+    pacman,
+    rmarkdown,
+    utils,
+    stats
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2

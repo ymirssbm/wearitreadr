@@ -1,6 +1,22 @@
-require(pacman)
-p_load(knitr)
-p_load(dplyr)
+#' Generate Codebook
+#'
+#' This generates a codebook for a studies WearIT data
+#'
+#' @param title Character string denoting the desired title
+#' @param authors Character string listing study or codebook authors
+#' @param funding Character string denoting funding sources
+#' @param abstract Character string containing abstract of study
+#' @param summary Character string containing summary of study findings
+#' @param thisData Dataframe containing data
+#' @param blockMap Dataframe containing blockMap
+#' @param responseKey Dataframe containing responseKey
+#' @param include_practice_items Logical indicating whether to include practice item in the data description - note... this is not supported currently
+#' @param include_html Logical indicating whether to keep html formatting - note... html formatting for question text not supported currently
+#' @param print_blockmap_missing Logical. If true, will display the rows with NA values for Question.Type.Display.Name of which, will be automatically removed
+#' @param generate_item_description Logical indicating whether to include by item description
+#' @return codebook.html file in Codebook_RMD folder
+#' @export
+
 
 # Ensure directory is set (temp default)
 #setwd(dirname(normalizePath(sys.frame(1)$ofile)))
@@ -15,7 +31,7 @@ p_load(dplyr)
 #responseKey = read.csv("processedData/responseMap.csv")
 
 
-generate_codebook <- function(title = "This is a temp default title, please set",
+generateCodebook <- function(title = "This is a temp default title, please set",
                               authors = "This is a temp default author list, please set",
                               funding = "This is a temp default funding source, please set",
                               abstract = "This is a temp default abstract, please set",

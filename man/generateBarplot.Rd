@@ -4,7 +4,7 @@
 \alias{generateBarplot}
 \title{Generate Barplot}
 \usage{
-generateBarplot()
+generateBarplot(id, thisData, questionText)
 }
 \arguments{
 \item{id}{Question or Item id}
