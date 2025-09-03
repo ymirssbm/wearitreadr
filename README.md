@@ -17,6 +17,7 @@ Most straightforward way to run is to use the 'using codebook.r' script and run 
 - Scale metadata
 - Create data dictionary data generation tool
 - Create data manual generation tool
+- Decide on name for the project
 
 ## Contributers
 
