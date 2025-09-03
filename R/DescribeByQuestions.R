@@ -30,8 +30,10 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
 
 
   # Arrange item id to get order that PI put in items (but ensure that rows with a Parent of the survey always come first)
+  if ("Parent" %in% names(blockMap)) {
   blockMap <- blockMap %>%
     arrange(!(Parent %in% Survey), as.numeric(gsub("Item ", "", Item.ID)))
+  }
 
   # Grab list of surveys
   surveys <- unique(na.omit(blockMap$Survey))
