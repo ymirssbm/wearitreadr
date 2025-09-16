@@ -1,4 +1,4 @@
-![Wear-IT photo] (img/WearIT_logo.png)
+![Wear-IT photo](img/WearIT_logo.png)
 
 
 # What Is Wear-IT
