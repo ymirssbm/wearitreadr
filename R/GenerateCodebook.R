@@ -196,7 +196,6 @@ generateCodebook <- function(title = "This is a temp default title, please set",
   cat("Dropping unsupported data types ... \n")
   blockMap <- blockMap[!(blockMap$Question.Type.Display.Name %in% unsupported_data_types), ]
 
-
   # Render codebook
   # Save temp workspace
   save.image(file = "temp_workspace.RData")

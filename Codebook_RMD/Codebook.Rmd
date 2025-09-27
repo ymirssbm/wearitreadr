@@ -53,7 +53,7 @@ out2 <- ""
 out2 <- describeByQuestion(out2, thisData, blockMap, responseKey)
 
 # Describe by item
-if (generate_item_description) {
+if (generate_item_description == TRUE) {
   out2 <- describeByItem(out2, thisData, blockMap, responseKey)
 }  
 

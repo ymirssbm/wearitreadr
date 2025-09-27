@@ -1,5 +1,5 @@
-setwd("~/R/Tim Lab/GIT R directory/wearitreadr/Codebook_RMD")
-
+setwd("~/R/GitHub Projects/wearitreadr/Codebook_RMD")
+rm(list = ls())
 #devtools::document()
 devtools::load_all()
 

@@ -101,6 +101,7 @@ wearIT_authorize <- function(study_ID = "1045",
              error=\(x) {print("Error setting key."); print(x)})
   }
   authkey <- paste0("?api_token=", auth)
+
   dataURL <- paste(base_URL, "getData", study_ID, sep="/")
 
   nextURL <- dataURL

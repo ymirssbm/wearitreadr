@@ -15,7 +15,7 @@ Imports:
     ggplot2,
     knitr,
     dplyr,
-    kableExtra
+    kableExtra,
     pacman,
     rmarkdown,
     utils,

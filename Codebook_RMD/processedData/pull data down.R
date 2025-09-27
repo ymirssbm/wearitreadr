@@ -1,4 +1,5 @@
-data <- getStudyData(study_ID = "1009")
+source("~/R/Tim Lab/GIT R directory/wearitreadr/R/ProcessData.R")
+data <- getStudyData(study_ID = "1057")
 
 # Write each data frame in 'data' to a CSV file named after its name
 write.csv(data$questionMap, "questionMap.csv", row.names = FALSE)
