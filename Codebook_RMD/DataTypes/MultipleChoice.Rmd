@@ -25,6 +25,7 @@ Click to view visuals <span id="{{question_id}}_arrow">▼</span>
 
 
 ```{r frequency-table-{{chunk_label}}, echo = FALSE, results = 'asis'}
+
 frequencyTable(id = "{{question_id}}", thisData = thisData, responseKey = responseKey)
 
 ```

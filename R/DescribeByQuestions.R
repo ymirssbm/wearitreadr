@@ -73,9 +73,10 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
       # For each item blockBlock
       for (item in items) {
         itemBlock <- blockBlock[(blockBlock$Item.ID == item),]
+        #browser()
 
         # If block, knit block rmd
-        if (itemBlock$Item.Type == "Block") {
+        if (nrow(itemBlock) == 1 && itemBlock$Item.Type == "Block") {
 
           # Initalize chunk label for block
           chunk_label <- paste(itemBlock$Question.Type.Display.Name, itemBlock$Question.ID, item)
@@ -100,7 +101,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
         }
 
         # If Question, knit respective question rmd file
-        if(itemBlock$Item.Type == "Question") {
+        if(nrow(itemBlock) == 1 && itemBlock$Item.Type == "Question") {
           attach(itemBlock)
           question_type <- itemBlock$Question.Type.Display.Name
           question_type_no_space <- gsub(" ", "", question_type)
