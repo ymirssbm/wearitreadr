@@ -13,7 +13,7 @@ displaySkipLogic(id = "{{question_id}}", blockMap = blockMap)
 if (any(thisData$Question.ID == "{{question_id}}") &&
     any(!is.na(thisData$User.Response[thisData$Question.ID == "{{question_id}}"]))) {
 
-  
+
   # String split and unlist on current question id
   raw_data <- unlist(strsplit(thisData$User.Response[thisData$Question.ID == "{{question_id}}"], ","))
   

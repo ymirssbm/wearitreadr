@@ -61,6 +61,29 @@ generateCodebook <- function(title = "This is a temp default title, please set",
     names(responseKey)[names(responseKey) == "question"] <- "Question.ID"
   }
 
+  newCols <- c("parentTrue", "childTrue")
+  blockMap[,newCols] <- NA
+
+
+  # Create boolean cols for parent and child status
+  # For each row in blockMap
+  for (i in 1:nrow(blockMap)) {
+    # Set parentTrue
+    if (blockMap$Item.ID[i] %in% blockMap$Parent) {
+      blockMap$parentTrue[i] <- TRUE
+    } else {
+      blockMap$parentTrue[i] <- FALSE
+    }
+
+    # Set childTrue
+    if (blockMap$Parent[i] %in% blockMap$Item.ID) {
+      blockMap$childTrue[i] <- TRUE
+    } else {
+      blockMap$childTrue[i] <- FALSE
+    }
+  }
+
+
   #responseKey <- responseKey %>%
   #  left_join(blockMap[, c("Question.ID", "Item.ID")], by = "Question.ID", relationship = "many-to-many")
 

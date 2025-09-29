@@ -58,6 +58,8 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
 
     surveyBlock <- blockMap[(blockMap$Survey == survey & !is.na(blockMap$Survey)), ]
 
+
+
     # Grab list of blocks for survey i
     blocks <- unique(surveyBlock[(surveyBlock$Item.Type == "Block"),])
 

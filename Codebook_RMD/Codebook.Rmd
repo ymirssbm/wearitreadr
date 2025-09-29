@@ -48,7 +48,7 @@ knitr::include_graphics("images/rts.png")
 
 out2 <- ""
 
-
+browser()
 # Describe by Question
 out2 <- describeByQuestion(out2, thisData, blockMap, responseKey)
 
