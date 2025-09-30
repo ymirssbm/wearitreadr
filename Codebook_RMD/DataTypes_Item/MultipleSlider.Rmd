@@ -10,12 +10,12 @@ displaySkipLogic(id = "{{question_id}}", blockMap = blockMap_item)
 ```{r, echo = FALSE, results = 'hide'}
 
 # Make sure data exists
-if (any(thisData$Question.ID == "{{question_id}}") &&
-    any(!is.na(thisData$User.Response[thisData$Question.ID == "{{question_id}}"]))) {
+if (any(thisData_item$Question.ID == "{{question_id}}") &&
+    any(!is.na(thisData_item$User.Response[thisData_item$Question.ID == "{{question_id}}"]))) {
 
   
   # String split and unlist on current question id
-  raw_data <- unlist(strsplit(thisData$User.Response[thisData$Question.ID == "{{question_id}}"], ","))
+  raw_data <- unlist(strsplit(thisData_item$User.Response[thisData_item$Question.ID == "{{question_id}}"], ","))
   
   
   # Split on colon now keeping the question identifier and user response together
@@ -68,7 +68,7 @@ if (exists("wide_df")) {
   
     
     # Grab question text
-    question_text = responseKey$definition[responseKey$Question.ID == "{{question_id}}" & responseKey$value == names(thisVar)]
+    question_text = responseKey_item$definition[responseKey_item$Question.ID == "{{question_id}}" & responseKey_item$value == names(thisVar)]
     
   
     out3 <- paste(

@@ -1,6 +1,6 @@
 ---
-title: "This is a temp default title, please set"
-author: "This is a temp default author list, please set"
+title: "UH3 GLP-1 Codebook"
+author: "Ethan O. Kile, Timothy R. Brick"
 date: "Codebook Generated 2025-09-30"
 output: 
   html_document:
@@ -37,11 +37,11 @@ params:
 
 ## Name of study
 
-This is a temp default title, please set
+UH3 GLP-1 Codebook
 
 ## Authors
 
-This is a temp default author list, please set
+Ethan O. Kile, Timothy R. Brick
 
 ## Desired graphic
 
@@ -49,7 +49,7 @@ This is a temp default author list, please set
 
 ## Funding source
 
-This is a temp default funding source, please set
+Sponsor: Milton S. Hershey Medical Center
 
 ------------------------------------------------------------------------
 
@@ -57,7 +57,16 @@ This is a temp default funding source, please set
 
 ------------------------------------------------------------------------
 
-This is a temp default abstract, please set
+The goal of this clinical trial is to learn if semaglutide can reduce illicit opioid use in adults in outpatient treatment for opioid use disorder, and who are receiving either buprenorphine or methadone maintenance treatment. The main question it aims to answer is:
+
+    • Does semaglutide increase the likelihood that participants will refrain from using illicit and nonprescribed opioids?
+
+  The investigators will compare semaglutide to a placebo (a needle prick that contains no drug) to see if semaglutide works to reduce use of illicit and nonprescribed opioids.
+
+  The participants will:
+    Take semaglutide or a placebo every week for 12 weeks
+    Visit the clinic every week for urine drug screening and pregnancy testing, vital signs, and to complete mental health and drug use questionnaires
+    Complete smartphone surveys sent at set times during the study
 
 ------------------------------------------------------------------------
 
@@ -65,7 +74,7 @@ This is a temp default abstract, please set
 
 ------------------------------------------------------------------------
 
-This is a temp default summary, please set
+This study is still in data collection and therefore has no findings to report at this time.
 
 ------------------------------------------------------------------------
 
@@ -163,7 +172,7 @@ Click to view visuals <span id="Question 88_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-88-Item-41-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-88-Item-41-1.png)<!-- -->
 
 
 #### Missingness
@@ -245,7 +254,7 @@ Click to view visuals <span id="Question 87_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Time-Picker-Question-87-Item-43-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Time-Picker-Question-87-Item-43-1.png)<!-- -->
 
 
 #### Missingness
@@ -326,7 +335,7 @@ Click to view visuals <span id="Question 101_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Time-Picker-Question-101-Item-111-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Time-Picker-Question-101-Item-111-1.png)<!-- -->
 
 
 #### Missingness
@@ -407,7 +416,7 @@ Click to view visuals <span id="Question 102_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Time-Picker-Question-102-Item-109-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Time-Picker-Question-102-Item-109-1.png)<!-- -->
 
 
 #### Missingness
@@ -488,7 +497,7 @@ Click to view visuals <span id="Question 91_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Time-Picker-Question-91-Item-110-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Time-Picker-Question-91-Item-110-1.png)<!-- -->
 
 
 #### Missingness
@@ -674,7 +683,7 @@ Click to view visuals <span id="multiplesliderQuestion-127988_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-127988_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-127988_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -746,7 +755,7 @@ Click to view visuals <span id="multiplesliderQuestion-127990_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-127990_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-127990_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -818,7 +827,7 @@ Click to view visuals <span id="multiplesliderQuestion-127992_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-127992_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-127992_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -890,7 +899,7 @@ Click to view visuals <span id="multiplesliderQuestion-127994_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-127994_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-127994_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -962,7 +971,7 @@ Click to view visuals <span id="multiplesliderQuestion-127996_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-127996_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-127996_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1034,7 +1043,7 @@ Click to view visuals <span id="multiplesliderQuestion-127998_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-127998_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-127998_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1106,7 +1115,7 @@ Click to view visuals <span id="multiplesliderQuestion-1271000_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1271000_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1271000_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1219,7 +1228,7 @@ Click to view visuals <span id="multiplesliderQuestion-1281002_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1281002_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1281002_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1291,7 +1300,7 @@ Click to view visuals <span id="multiplesliderQuestion-1281004_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1281004_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1281004_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1363,7 +1372,7 @@ Click to view visuals <span id="multiplesliderQuestion-1281006_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1281006_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1281006_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1435,7 +1444,7 @@ Click to view visuals <span id="multiplesliderQuestion-1281008_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1281008_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1281008_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1507,7 +1516,7 @@ Click to view visuals <span id="multiplesliderQuestion-1281010_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1281010_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1281010_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1579,7 +1588,7 @@ Click to view visuals <span id="multiplesliderQuestion-1281012_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1281012_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1281012_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1651,7 +1660,7 @@ Click to view visuals <span id="multiplesliderQuestion-1281014_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1281014_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1281014_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1764,7 +1773,7 @@ Click to view visuals <span id="multiplesliderQuestion-1291016_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1291016_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1291016_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1836,7 +1845,7 @@ Click to view visuals <span id="multiplesliderQuestion-1291018_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1291018_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1291018_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1908,7 +1917,7 @@ Click to view visuals <span id="multiplesliderQuestion-1291020_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1291020_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1291020_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -1991,7 +2000,7 @@ Click to view visuals <span id="Question 130_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-130-Item-59-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-130-Item-59-1.png)<!-- -->
 
 
 #### Missingness
@@ -2072,7 +2081,7 @@ Click to view visuals <span id="Question 131_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-131-Item-60-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-131-Item-60-1.png)<!-- -->
 
 
 #### Missingness
@@ -2153,7 +2162,7 @@ Click to view visuals <span id="Question 132_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-132-Item-61-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-132-Item-61-1.png)<!-- -->
 
 
 #### Missingness
@@ -2264,7 +2273,7 @@ Click to view visuals <span id="multiplesliderQuestion-1331028_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1331028_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1331028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -2336,7 +2345,7 @@ Click to view visuals <span id="multiplesliderQuestion-1331030_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1331030_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1331030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -2455,7 +2464,7 @@ Click to view visuals <span id="Question 134_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-134-Item-64-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-134-Item-64-1.png)<!-- -->
 
 
 #### Missingness
@@ -2536,7 +2545,7 @@ Click to view visuals <span id="Question 135_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-135-Item-65-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-135-Item-65-1.png)<!-- -->
 
 
 #### Missingness
@@ -2675,7 +2684,7 @@ Click to view visuals <span id="Question 27_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-27-Item-76-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-27-Item-76-1.png)<!-- -->
 
 
 #### Missingness
@@ -2757,7 +2766,7 @@ Click to view visuals <span id="Question 28_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Time-Picker-Question-28-Item-66-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Time-Picker-Question-28-Item-66-1.png)<!-- -->
 
 
 #### Missingness
@@ -2838,7 +2847,7 @@ Click to view visuals <span id="Question 29_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Time-Picker-Question-29-Item-67-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Time-Picker-Question-29-Item-67-1.png)<!-- -->
 
 
 #### Missingness
@@ -2959,7 +2968,7 @@ Click to view visuals <span id="Question 30_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-30-Item-68-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-30-Item-68-1.png)<!-- -->
 
 
 #### Missingness
@@ -3041,7 +3050,7 @@ Click to view visuals <span id="Question 116_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-116-Item-71-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-116-Item-71-1.png)<!-- -->
 
 
 #### Missingness
@@ -3150,7 +3159,7 @@ Click to view visuals <span id="Question 35_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-35-Item-73-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-35-Item-73-1.png)<!-- -->
 
 
 #### Missingness
@@ -3254,7 +3263,7 @@ Click to view visuals <span id="Question 36_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-36-Item-74-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-36-Item-74-1.png)<!-- -->
 
 
 #### Missingness
@@ -3428,7 +3437,7 @@ Click to view visuals <span id="Question 118_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-118-Item-47-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-118-Item-47-1.png)<!-- -->
 
 
 #### Missingness
@@ -3509,7 +3518,7 @@ Click to view visuals <span id="Question 119_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-119-Item-48-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-119-Item-48-1.png)<!-- -->
 
 
 #### Missingness
@@ -3590,7 +3599,7 @@ Click to view visuals <span id="Question 120_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-120-Item-49-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-120-Item-49-1.png)<!-- -->
 
 
 #### Missingness
@@ -3671,7 +3680,7 @@ Click to view visuals <span id="Question 121_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-121-Item-50-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-121-Item-50-1.png)<!-- -->
 
 
 #### Missingness
@@ -3752,7 +3761,7 @@ Click to view visuals <span id="Question 122_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-122-Item-51-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-122-Item-51-1.png)<!-- -->
 
 
 #### Missingness
@@ -3833,7 +3842,7 @@ Click to view visuals <span id="Question 123_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-123-Item-52-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-123-Item-52-1.png)<!-- -->
 
 
 #### Missingness
@@ -3914,7 +3923,7 @@ Click to view visuals <span id="Question 124_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-124-Item-53-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-124-Item-53-1.png)<!-- -->
 
 
 #### Missingness
@@ -3995,7 +4004,7 @@ Click to view visuals <span id="Question 125_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-125-Item-54-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-125-Item-54-1.png)<!-- -->
 
 
 #### Missingness
@@ -4076,7 +4085,7 @@ Click to view visuals <span id="Question 126_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-126-Item-55-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-126-Item-55-1.png)<!-- -->
 
 
 #### Missingness
@@ -4233,7 +4242,7 @@ Click to view visuals <span id="Question 136_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-136-Item-47-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-136-Item-47-1.png)<!-- -->
 
 
 #### Missingness
@@ -4314,7 +4323,7 @@ Click to view visuals <span id="Question 137_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-137-Item-48-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-137-Item-48-1.png)<!-- -->
 
 
 #### Missingness
@@ -4395,7 +4404,7 @@ Click to view visuals <span id="Question 138_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-138-Item-49-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-138-Item-49-1.png)<!-- -->
 
 
 #### Missingness
@@ -4476,7 +4485,7 @@ Click to view visuals <span id="Question 139_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-139-Item-50-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-139-Item-50-1.png)<!-- -->
 
 
 #### Missingness
@@ -4557,7 +4566,7 @@ Click to view visuals <span id="Question 140_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-140-Item-51-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-140-Item-51-1.png)<!-- -->
 
 
 #### Missingness
@@ -4638,7 +4647,7 @@ Click to view visuals <span id="Question 141_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-141-Item-52-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-141-Item-52-1.png)<!-- -->
 
 
 #### Missingness
@@ -4719,7 +4728,7 @@ Click to view visuals <span id="Question 142_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-142-Item-53-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-142-Item-53-1.png)<!-- -->
 
 
 #### Missingness
@@ -4800,7 +4809,7 @@ Click to view visuals <span id="Question 143_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-143-Item-54-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-143-Item-54-1.png)<!-- -->
 
 
 #### Missingness
@@ -4881,7 +4890,7 @@ Click to view visuals <span id="Question 144_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-144-Item-55-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-144-Item-55-1.png)<!-- -->
 
 
 #### Missingness
@@ -4992,7 +5001,7 @@ Click to view visuals <span id="multiplesliderQuestion-1451056_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1451056_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1451056_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5064,7 +5073,7 @@ Click to view visuals <span id="multiplesliderQuestion-1451058_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1451058_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1451058_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5136,7 +5145,7 @@ Click to view visuals <span id="multiplesliderQuestion-1451060_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1451060_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1451060_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5208,7 +5217,7 @@ Click to view visuals <span id="multiplesliderQuestion-1451062_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1451062_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1451062_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5280,7 +5289,7 @@ Click to view visuals <span id="multiplesliderQuestion-1451054_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1451054_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1451054_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5393,7 +5402,7 @@ Click to view visuals <span id="multiplesliderQuestion-1461072_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1461072_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1461072_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5465,7 +5474,7 @@ Click to view visuals <span id="multiplesliderQuestion-1461064_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1461064_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1461064_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5537,7 +5546,7 @@ Click to view visuals <span id="multiplesliderQuestion-1461066_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1461066_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1461066_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5609,7 +5618,7 @@ Click to view visuals <span id="multiplesliderQuestion-1461068_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1461068_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1461068_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5681,7 +5690,7 @@ Click to view visuals <span id="multiplesliderQuestion-1461070_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1461070_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1461070_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5794,7 +5803,7 @@ Click to view visuals <span id="multiplesliderQuestion-1471074_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1471074_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1471074_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5866,7 +5875,7 @@ Click to view visuals <span id="multiplesliderQuestion-1471076_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1471076_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1471076_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5938,7 +5947,7 @@ Click to view visuals <span id="multiplesliderQuestion-1471078_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1471078_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1471078_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -6021,7 +6030,7 @@ Click to view visuals <span id="Question 148_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-148-Item-88-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-148-Item-88-1.png)<!-- -->
 
 
 #### Missingness
@@ -6102,7 +6111,7 @@ Click to view visuals <span id="Question 149_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-149-Item-89-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-149-Item-89-1.png)<!-- -->
 
 
 #### Missingness
@@ -6183,7 +6192,7 @@ Click to view visuals <span id="Question 150_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-150-Item-90-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-150-Item-90-1.png)<!-- -->
 
 
 #### Missingness
@@ -6299,7 +6308,7 @@ Click to view visuals <span id="multiplesliderQuestion-1511088_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1511088_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1511088_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -6371,7 +6380,7 @@ Click to view visuals <span id="multiplesliderQuestion-1511086_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1511086_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1511086_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -6484,7 +6493,7 @@ Click to view visuals <span id="multiplesliderQuestion-1521090_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1521090_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1521090_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -6556,7 +6565,7 @@ Click to view visuals <span id="multiplesliderQuestion-1521092_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-1521092_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderQuestion-1521092_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -6697,7 +6706,7 @@ Click to view visuals <span id="Question 64_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-64-Item-76-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-64-Item-76-1.png)<!-- -->
 
 
 #### Missingness
@@ -7432,7 +7441,7 @@ Click to view visuals <span id="Question 153_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-153-Item-95-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-153-Item-95-1.png)<!-- -->
 
 
 #### Missingness
@@ -7513,7 +7522,7 @@ Click to view visuals <span id="Question 154_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-154-Item-96-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-154-Item-96-1.png)<!-- -->
 
 
 #### Missingness
@@ -7616,7 +7625,7 @@ Click to view visuals <span id="Question 79_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-79-Item-97-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-79-Item-97-1.png)<!-- -->
 
 
 #### Missingness
@@ -7720,7 +7729,7 @@ Click to view visuals <span id="Question 80_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-80-Item-98-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-80-Item-98-1.png)<!-- -->
 
 
 #### Missingness
@@ -7824,7 +7833,7 @@ Click to view visuals <span id="Question 100_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-100-Item-99-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-100-Item-99-1.png)<!-- -->
 
 
 #### Missingness
@@ -7928,7 +7937,7 @@ Click to view visuals <span id="Question 82_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-82-Item-102-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-82-Item-102-1.png)<!-- -->
 
 
 #### Missingness
@@ -8010,7 +8019,7 @@ Click to view visuals <span id="Question 155_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-155-Item-100-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-155-Item-100-1.png)<!-- -->
 
 
 #### Missingness
@@ -8091,7 +8100,7 @@ Click to view visuals <span id="Question 156_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-156-Item-101-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Slider-Question-156-Item-101-1.png)<!-- -->
 
 
 #### Missingness
@@ -8271,7 +8280,7 @@ Click to view visuals <span id="Question 96_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-96-Item-121-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-Multiple-Choice-Question-96-Item-121-1.png)<!-- -->
 
 
 #### Missingness
@@ -8390,7 +8399,7 @@ Click to view visuals <span id="Question 1517_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Time-Picker-Question-1517-Item-1474-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Time-Picker-Question-1517-Item-1474-1.png)<!-- -->
 
 
 #### Missingness
@@ -8471,7 +8480,7 @@ Click to view visuals <span id="Question 1518_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Time-Picker-Question-1518-Item-1475-1.png)<!-- -->
+![](UH3GLP~1/figure-html/histogram-Time-Picker-Question-1518-Item-1475-1.png)<!-- -->
 
 
 #### Missingness
@@ -8579,7 +8588,7 @@ Click to view visuals <span id="Item 41_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-41-Item-41-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-41-Item-41-1.png)<!-- -->
 
 
 #### Missingness
@@ -8867,7 +8876,7 @@ Click to view visuals <span id="multiplesliderItem-56988_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-56988_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-56988_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -8939,7 +8948,7 @@ Click to view visuals <span id="multiplesliderItem-56990_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-56990_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-56990_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9011,7 +9020,7 @@ Click to view visuals <span id="multiplesliderItem-56992_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-56992_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-56992_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9083,7 +9092,7 @@ Click to view visuals <span id="multiplesliderItem-56994_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-56994_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-56994_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9155,7 +9164,7 @@ Click to view visuals <span id="multiplesliderItem-56996_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-56996_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-56996_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9227,7 +9236,7 @@ Click to view visuals <span id="multiplesliderItem-56998_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-56998_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-56998_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9299,7 +9308,7 @@ Click to view visuals <span id="multiplesliderItem-561000_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-561000_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-561000_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9410,7 +9419,7 @@ Click to view visuals <span id="multiplesliderItem-571002_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-571002_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-571002_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9482,7 +9491,7 @@ Click to view visuals <span id="multiplesliderItem-571004_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-571004_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-571004_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9554,7 +9563,7 @@ Click to view visuals <span id="multiplesliderItem-571006_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-571006_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-571006_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9626,7 +9635,7 @@ Click to view visuals <span id="multiplesliderItem-571008_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-571008_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-571008_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9698,7 +9707,7 @@ Click to view visuals <span id="multiplesliderItem-571010_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-571010_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-571010_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9770,7 +9779,7 @@ Click to view visuals <span id="multiplesliderItem-571012_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-571012_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-571012_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9842,7 +9851,7 @@ Click to view visuals <span id="multiplesliderItem-571014_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-571014_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-571014_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9953,7 +9962,7 @@ Click to view visuals <span id="multiplesliderItem-581016_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-581016_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-581016_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10025,7 +10034,7 @@ Click to view visuals <span id="multiplesliderItem-581018_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-581018_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-581018_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10097,7 +10106,7 @@ Click to view visuals <span id="multiplesliderItem-581020_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-581020_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-581020_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10454,7 +10463,7 @@ Click to view visuals <span id="multiplesliderItem-621028_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-621028_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-621028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10526,7 +10535,7 @@ Click to view visuals <span id="multiplesliderItem-621030_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-621030_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-621030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10861,7 +10870,7 @@ Click to view visuals <span id="Item 76_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-76-Item-76-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-76-Item-76-1.png)<!-- -->
 
 
 #### Missingness
@@ -11040,7 +11049,7 @@ Click to view visuals <span id="Item 68_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-68-Item-68-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-68-Item-68-1.png)<!-- -->
 
 
 #### Missingness
@@ -11238,7 +11247,7 @@ Click to view visuals <span id="Item 73_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-73-Item-73-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-73-Item-73-1.png)<!-- -->
 
 
 #### Missingness
@@ -11347,7 +11356,7 @@ Click to view visuals <span id="Item 74_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-74-Item-74-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-74-Item-74-1.png)<!-- -->
 
 
 #### Missingness
@@ -12365,7 +12374,7 @@ Click to view visuals <span id="multiplesliderItem-851056_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-851056_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-851056_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -12437,7 +12446,7 @@ Click to view visuals <span id="multiplesliderItem-851058_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-851058_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-851058_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -12509,7 +12518,7 @@ Click to view visuals <span id="multiplesliderItem-851060_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-851060_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-851060_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -12581,7 +12590,7 @@ Click to view visuals <span id="multiplesliderItem-851062_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-851062_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-851062_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -12653,7 +12662,7 @@ Click to view visuals <span id="multiplesliderItem-851054_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-851054_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-851054_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -12764,7 +12773,7 @@ Click to view visuals <span id="multiplesliderItem-861072_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-861072_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-861072_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -12836,7 +12845,7 @@ Click to view visuals <span id="multiplesliderItem-861064_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-861064_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-861064_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -12908,7 +12917,7 @@ Click to view visuals <span id="multiplesliderItem-861066_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-861066_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-861066_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -12980,7 +12989,7 @@ Click to view visuals <span id="multiplesliderItem-861068_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-861068_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-861068_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -13052,7 +13061,7 @@ Click to view visuals <span id="multiplesliderItem-861070_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-861070_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-861070_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -13163,7 +13172,7 @@ Click to view visuals <span id="multiplesliderItem-871074_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-871074_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-871074_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -13235,7 +13244,7 @@ Click to view visuals <span id="multiplesliderItem-871076_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-871076_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-871076_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -13307,7 +13316,7 @@ Click to view visuals <span id="multiplesliderItem-871078_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-871078_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-871078_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -13669,7 +13678,7 @@ Click to view visuals <span id="multiplesliderItem-911088_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-911088_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-911088_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -13741,7 +13750,7 @@ Click to view visuals <span id="multiplesliderItem-911086_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-911086_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-911086_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -13852,7 +13861,7 @@ Click to view visuals <span id="multiplesliderItem-921090_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-921090_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-921090_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -13924,7 +13933,7 @@ Click to view visuals <span id="multiplesliderItem-921092_arrow">▼</span>
 
 
 
-![](Codebook_files/figure-html/multiplesliderItem-921092_histogram-1.png)<!-- -->
+![](UH3GLP~1/figure-html/multiplesliderItem-921092_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -14225,7 +14234,7 @@ Click to view visuals <span id="Item 97_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-97-Item-97-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-97-Item-97-1.png)<!-- -->
 
 
 #### Missingness
@@ -14333,7 +14342,7 @@ Click to view visuals <span id="Item 98_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-98-Item-98-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-98-Item-98-1.png)<!-- -->
 
 
 #### Missingness
@@ -14441,7 +14450,7 @@ Click to view visuals <span id="Item 99_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-99-Item-99-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-99-Item-99-1.png)<!-- -->
 
 
 #### Missingness
@@ -14549,7 +14558,7 @@ Click to view visuals <span id="Item 102_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-102-Item-102-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-102-Item-102-1.png)<!-- -->
 
 
 #### Missingness
@@ -14889,7 +14898,7 @@ Click to view visuals <span id="Item 121_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-121-Item-121-1.png)<!-- -->
+![](UH3GLP~1/figure-html/barplot-By-Item-Description-Multiple-Choice-Item-121-Item-121-1.png)<!-- -->
 
 
 #### Missingness
