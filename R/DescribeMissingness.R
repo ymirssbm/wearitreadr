@@ -119,7 +119,7 @@ describeMissingness <- function(id, thisData, blockMap) {
   # Create missingness msg
   msg <- paste0(
     "**Missingness Descriptives**\n\n",
-    "Delivered / Answered = ", times_delivered, " / ", times_answered, "\n",
+    "Answered / Delivered = ", times_answered, " / ", times_delivered, "\n\n",
     "Missing = ", missing, "\n",
     "Min = ", missing_minimum_value,
     ", Max = ", missing_maximum_value,

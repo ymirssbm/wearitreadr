@@ -14,6 +14,10 @@ output:
         - logo.html
       after_body: 
         - content-wrapper-end.html
+knitr:
+  opts_chunk:
+    message: false
+    warning: false
 params:
   title: "Default Title"
   authors: "Default Author"
