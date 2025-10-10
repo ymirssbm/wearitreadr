@@ -3,7 +3,7 @@ rm(list = ls())
 #devtools::document()
 devtools::load_all()
 
-generateCodebook()
+generateCodebook(generate_item_description = FALSE)
 
 
 
@@ -26,3 +26,10 @@ generateCodebook(
     Complete smartphone surveys sent at set times during the study",
   summary = "This study is still in data collection and therefore has no findings to report at this time.",
   output_file = "UH3 GLP-1 EMA Codebook")
+
+
+# RG codebook
+generateCodebook(generate_item_description = FALSE,
+                 title = "Recovery General Project Codebook",
+                 authors = "Ethan O. Kile")
+
