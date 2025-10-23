@@ -3,7 +3,7 @@ rm(list = ls())
 #devtools::document()
 devtools::load_all()
 
-generateCodebook()
+generateCodebook(generate_item_description = FALSE)
 
 
 
@@ -28,6 +28,7 @@ generateCodebook(
   output_file = "UH3 GLP-1 EMA Codebook")
 
 
+<<<<<<< HEAD
 # RCC RG combined
 
 thisData = read.csv("rccRgData/surveyCombined.csv")
@@ -90,3 +91,10 @@ generateCodebook(
   summary = "",
   generate_item_description = FALSE,
   output_file = "rccRgCodebook")
+=======
+# RG codebook
+generateCodebook(generate_item_description = FALSE,
+                 title = "Recovery General Project Codebook",
+                 authors = "Ethan O. Kile")
+
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c

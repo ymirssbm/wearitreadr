@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 title: "This is a temp default title, please set"
 author: "This is a temp default author list, please set"
 date: "Codebook Generated 2025-10-22"
+=======
+title: "Recovery General Project Codebook"
+author: "Ethan O. Kile"
+date: "Codebook Generated 2025-10-02"
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 output: 
   html_document:
     keep_md: true
@@ -37,11 +43,11 @@ params:
 
 ## Name of study
 
-This is a temp default title, please set
+Recovery General Project Codebook
 
 ## Authors
 
-This is a temp default author list, please set
+Ethan O. Kile
 
 ## Desired graphic
 
@@ -98,6 +104,7 @@ This is a temp default summary, please set
 
 <div id="Question 8176-anchor">
   <strong>Question ID</strong>: Question 8176
+<<<<<<< HEAD
 </div>
 
 **Way the question was delivered:** Multiple Select
@@ -640,9 +647,11 @@ Missingness Intraclass Correlation (ICC) = 3.37
 
 <div id="Question 8069-anchor">
   <strong>Question ID</strong>: Question 8069
+=======
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
-**Way the question was delivered:** Multiple Choice
+**Way the question was delivered:** Multiple Select
 
 **Type of data:** integer
 
@@ -653,6 +662,7 @@ Missingness Intraclass Correlation (ICC) = 3.37
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('Question 8069');
            let arrow = document.getElementById('Question 8069_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -1381,6 +1391,1317 @@ Click to view visuals <span id="Question 8075_arrow">▼</span>
 </button>
 
 <div id="Question 8075" style="display: none;">
+=======
+  onclick="let e = document.getElementById('Question 8176');
+           let arrow = document.getElementById('Question 8176_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8176_arrow">▼</span>
+</button>
+
+<div id="Question 8176" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+<<<<<<< HEAD
+   <td style="text-align:left;"> Yes </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 38 </td>
+   <td style="text-align:left;"> 3.6% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 1010 </td>
+   <td style="text-align:left;"> 96.4% </td>
+=======
+   <td style="text-align:left;"> Healthcare </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 82 </td>
+   <td style="text-align:left;"> 6.6% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> Financial needs </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 61 </td>
+   <td style="text-align:left;"> 4.9% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> Food </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 104 </td>
+   <td style="text-align:left;"> 8.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> Shelter </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 71 </td>
+   <td style="text-align:left;"> 5.7% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> Transportation </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 85 </td>
+   <td style="text-align:left;"> 6.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> Other types of help to address your practical needs and physical wellbeing </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 218 </td>
+   <td style="text-align:left;"> 17.5% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> I did not receive any assistance, support, or help in any of these areas today. </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 628 </td>
+   <td style="text-align:left;"> 50.3% </td>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+<<<<<<< HEAD
+![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8075-Item-7616-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8176-Item-7605-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+<<<<<<< HEAD
+Answered / Delivered = 17543 / 17642
+
+Missing = 99
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.34 
+=======
+Answered / Delivered = 1042 / 1055
+
+Missing = 13
+Min = 0, Max = 5, Mean = 0.1, SD = 0.53
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.05 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+<<<<<<< HEAD
+#### How much time did you spend at a recovery house today (NOT counting sleeping time)?(Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7617-anchor"> [Item 7617] </a>
+=======
+#### Whom did you receive this practical support from today? SELECT ALL THAT APPLY (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7606-anchor"> [Item 7606] </a>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<<<<<<< HEAD
+<div id="Question 8076-anchor">
+  <strong>Question ID</strong>: Question 8076
+</div>
+
+=======
+<div id="Question 8066-anchor">
+  <strong>Question ID</strong>: Question 8066
+</div>
+
+**Way the question was delivered:** Multiple Select
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8066');
+           let arrow = document.getElementById('Question 8066_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8066_arrow">▼</span>
+</button>
+
+<div id="Question 8066" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> Certified Recovery Coach/specialist </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 19 </td>
+   <td style="text-align:left;"> 2.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> Non-recovery friends and family </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 163 </td>
+   <td style="text-align:left;"> 24.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> Recovering friends and family </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 179 </td>
+   <td style="text-align:left;"> 26.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> My sponsor </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 50 </td>
+   <td style="text-align:left;"> 7.5% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> Therapist/counselor </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 30 </td>
+   <td style="text-align:left;"> 4.5% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> Community Resource – recovery center, mutual aid meeting, drug courts, educational setting, recovery housing,  treatment center, etc. </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 79 </td>
+   <td style="text-align:left;"> 11.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> Cultural/Spiritual/Faith-Based Institution </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 32 </td>
+   <td style="text-align:left;"> 4.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 8 </td>
+   <td style="text-align:left;"> Another source of support </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 115 </td>
+   <td style="text-align:left;"> 17.2% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8066-Item-7606-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 415 / 416
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.01, SD = 0.1
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.32 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Did you receive emotional or interpersonal assistance, support, or help today in any of the following areas?  SELECT  ALL THAT APPLY  (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7607-anchor"> [Item 7607] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8177-anchor">
+  <strong>Question ID</strong>: Question 8177
+</div>
+
+**Way the question was delivered:** Multiple Select
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8177');
+           let arrow = document.getElementById('Question 8177_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8177_arrow">▼</span>
+</button>
+
+<div id="Question 8177" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> Dealing with personal relationships </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 275 </td>
+   <td style="text-align:left;"> 17.6% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> Finding meaning and purpose in life </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 171 </td>
+   <td style="text-align:left;"> 10.9% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> Problem solving skills and tasks </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 261 </td>
+   <td style="text-align:left;"> 16.7% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> Recovery support </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 270 </td>
+   <td style="text-align:left;"> 17.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> Other interpersonal support not described above </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 176 </td>
+   <td style="text-align:left;"> 11.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> I did not receive any assistance, support, or help today. </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 409 </td>
+   <td style="text-align:left;"> 26.2% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8177-Item-7607-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 1047 / 1049
+
+Missing = 2
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Whom did you receive this support from today?  SELECT ALL THAT APPLY  (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7608-anchor"> [Item 7608] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8178-anchor">
+  <strong>Question ID</strong>: Question 8178
+</div>
+
+**Way the question was delivered:** Multiple Select
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8178');
+           let arrow = document.getElementById('Question 8178_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8178_arrow">▼</span>
+</button>
+
+<div id="Question 8178" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> Certified Recovery Coach/specialist </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 33 </td>
+   <td style="text-align:left;"> 3.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> Non-recovery friends and family </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 253 </td>
+   <td style="text-align:left;"> 23.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> Recovering friends and family </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 371 </td>
+   <td style="text-align:left;"> 34.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> My sponsor </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 117 </td>
+   <td style="text-align:left;"> 10.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> Therapist/counselor </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 55 </td>
+   <td style="text-align:left;"> 5.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> Community Resource – recovery center, mutual aid meeting, drug courts, educational setting, recovery housing, treatment center, etc. </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 80 </td>
+   <td style="text-align:left;"> 7.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> Cultural/Spiritual/Faith-Based Institution </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 53 </td>
+   <td style="text-align:left;"> 4.9% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 8 </td>
+   <td style="text-align:left;"> Another source of support </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 119 </td>
+   <td style="text-align:left;"> 11% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8178-Item-7608-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 637 / 638
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.24 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### How much time did you spend at a recovery community center (RCC) today? (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7609-anchor"> [Item 7609] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8069-anchor">
+  <strong>Question ID</strong>: Question 8069
+</div>
+
+**Way the question was delivered:** Multiple Choice
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8069');
+           let arrow = document.getElementById('Question 8069_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8069_arrow">▼</span>
+</button>
+
+<div id="Question 8069" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> I did not spend any time at a Recovery Center today </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 871 </td>
+   <td style="text-align:left;"> 83% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> 1 – 30 minutes </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 28 </td>
+   <td style="text-align:left;"> 2.7% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> 30 – 60 minutes </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 29 </td>
+   <td style="text-align:left;"> 2.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> 1 – 2 hours </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 51 </td>
+   <td style="text-align:left;"> 4.9% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> 2 – 4 hours </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 20 </td>
+   <td style="text-align:left;"> 1.9% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> 4 – 6 hours </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 12 </td>
+   <td style="text-align:left;"> 1.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> More than 6 hours </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 39 </td>
+   <td style="text-align:left;"> 3.7% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8069-Item-7609-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 1050 / 1052
+
+Missing = 2
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### While AT a Recovery Center, which of the following activities/services did you take part in? Please check all that apply  (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7610-anchor"> [Item 7610] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8070-anchor">
+  <strong>Question ID</strong>: Question 8070
+</div>
+
+**Way the question was delivered:** Multiple Select
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8070');
+           let arrow = document.getElementById('Question 8070_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8070_arrow">▼</span>
+</button>
+
+<div id="Question 8070" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> Attended a recovery support group meeting (e.g., 12 step or ANY other group meeting) </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 75 </td>
+   <td style="text-align:left;"> 19.2% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> Just hung out/ social activities </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 36 </td>
+   <td style="text-align:left;"> 9.2% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> Volunteered/gave back to community </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 32 </td>
+   <td style="text-align:left;"> 8.2% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> Connected to the recovery community </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 66 </td>
+   <td style="text-align:left;"> 16.9% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> Used computer or internet or WiFi </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 29 </td>
+   <td style="text-align:left;"> 7.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> Received recovery coaching </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 18 </td>
+   <td style="text-align:left;"> 4.6% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> Tried to help or be there for others </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 69 </td>
+   <td style="text-align:left;"> 17.6% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 8 </td>
+   <td style="text-align:left;"> Got advice for financial, legal, housing, education, psychological, or medical issues </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 20 </td>
+   <td style="text-align:left;"> 5.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 9 </td>
+   <td style="text-align:left;"> Took part in health/exercise/meditation/self-care class </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 15 </td>
+   <td style="text-align:left;"> 3.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 10 </td>
+   <td style="text-align:left;"> Other (write in) </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 31 </td>
+   <td style="text-align:left;"> 7.9% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8070-Item-7610-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 179 / 179
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Please specify activity: <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7679-anchor"> [Item 7679] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8179-anchor">
+  <strong>Question ID</strong>: Question 8179
+</div>
+
+**Way the question was delivered:** Free Response
+
+**Type of data:** character
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8179');
+           let arrow = document.getElementById('Question 8179_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8179_arrow">▼</span>
+</button>
+
+<div id="Question 8179" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 31 / 109
+
+Missing = 78
+Min = 0, Max = 9, Mean = 1.9, SD = 2.35
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = -1.66 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Which recovery support meetings did you attend today? Check all that apply.  (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7611-anchor"> [Item 7611] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8071-anchor">
+  <strong>Question ID</strong>: Question 8071
+</div>
+
+**Way the question was delivered:** Multiple Select
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8071');
+           let arrow = document.getElementById('Question 8071_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8071_arrow">▼</span>
+</button>
+
+<div id="Question 8071" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;color: darkgreen !important;"> “All Recovery” </td>
+   <td style="text-align:left;"> N = 2 </td>
+   <td style="text-align:left;"> 2.2% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Dual Recovery Anonymous </td>
+   <td style="text-align:left;"> N = 2 </td>
+   <td style="text-align:left;"> 2.2% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Recovery Life </td>
+   <td style="text-align:left;"> N = 2 </td>
+   <td style="text-align:left;"> 2.2% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;color: darkgreen !important;"> SMART Recovery </td>
+   <td style="text-align:left;"> N = 5 </td>
+   <td style="text-align:left;"> 5.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;color: darkgreen !important;"> AA/NA/HA (12-step oriented meeting) </td>
+   <td style="text-align:left;"> N = 62 </td>
+   <td style="text-align:left;"> 66.7% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;color: darkgreen !important;"> MAT/MAR Meeting </td>
+   <td style="text-align:left;"> N = 1 </td>
+   <td style="text-align:left;"> 1.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 8 </td>
+   <td style="text-align:left;"> 8 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Mindfulness-based recovery </td>
+   <td style="text-align:left;"> N = 4 </td>
+   <td style="text-align:left;"> 4.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 9 </td>
+   <td style="text-align:left;"> 9 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Grief support </td>
+   <td style="text-align:left;"> N = 1 </td>
+   <td style="text-align:left;"> 1.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 10 </td>
+   <td style="text-align:left;"> 10 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Faith-based Meeting </td>
+   <td style="text-align:left;"> N = 9 </td>
+   <td style="text-align:left;"> 9.7% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 11 </td>
+   <td style="text-align:left;"> 11 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Other </td>
+   <td style="text-align:left;"> N = 5 </td>
+   <td style="text-align:left;"> 5.4% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8071-Item-7611-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 75 / 75
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### When thinking about your time at the Recovery Center today... <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7621-anchor"> [Item 7621] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8072-anchor">
+  <strong>Question ID</strong>: Question 8072
+</div>
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### How helpful was being at the Recovery Center to your recovery? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7612-anchor"> [Item 7612] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8073-anchor">
+  <strong>Question ID</strong>: Question 8073
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 82.87, SD = 19.89 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8073');
+           let arrow = document.getElementById('Question 8073_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8073_arrow">▼</span>
+</button>
+
+<div id="Question 8073" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8073-Item-7612-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 178 / 179
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.65 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### How helpful was being at the Recovery Center to your overall well-being? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7614-anchor"> [Item 7614] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8074-anchor">
+  <strong>Question ID</strong>: Question 8074
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 83.44, SD = 19.83 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8074');
+           let arrow = document.getElementById('Question 8074_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8074_arrow">▼</span>
+</button>
+
+<div id="Question 8074" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8074-Item-7614-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 179 / 179
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Do you reside in a recovery house? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7616-anchor"> [Item 7616] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8075-anchor">
+  <strong>Question ID</strong>: Question 8075
+</div>
+
+**Way the question was delivered:** Multiple Choice
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8075');
+           let arrow = document.getElementById('Question 8075_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8075_arrow">▼</span>
+</button>
+
+<div id="Question 8075" style="display: none;">
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -1425,13 +2746,13 @@ Click to view visuals <span id="Question 8075_arrow">▼</span>
 
 **Missingness Descriptives**
 
-Answered / Delivered = 17543 / 17642
+Answered / Delivered = 1048 / 1051
 
-Missing = 99
+Missing = 3
 Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
-Missingness Intraclass Correlation (ICC) = 1.34 
+Missingness Intraclass Correlation (ICC) = 1.15 
 
 
 #### Screenshot
@@ -1465,6 +2786,7 @@ Missingness Intraclass Correlation (ICC) = 1.34
   <strong>Question ID</strong>: Question 8076
 </div>
 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 **Way the question was delivered:** Multiple Choice
 
 **Type of data:** integer
@@ -1559,6 +2881,7 @@ Click to view visuals <span id="Question 8076_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16533 / 16629
 
 Missing = 96
@@ -1566,6 +2889,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 38 / 38
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Screenshot
@@ -1743,6 +3075,7 @@ Click to view visuals <span id="Question 8077_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16531 / 16627
 
 Missing = 96
@@ -1750,6 +3083,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 36 / 36
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Screenshot
@@ -1815,6 +3157,7 @@ Click to view visuals <span id="Question 8078_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16496 / 16625
 
 Missing = 129
@@ -1822,6 +3165,15 @@ Min = 1, Max = 10, Mean = 4.71, SD = 4.39
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1 
+=======
+Answered / Delivered = 1 / 34
+
+Missing = 33
+Min = 1, Max = 10, Mean = 4.71, SD = 4.39
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = -0.02 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Screenshot
@@ -1971,6 +3323,7 @@ Click to view visuals <span id="Question 8079_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16502 / 16627
 
 Missing = 125
@@ -1978,6 +3331,15 @@ Min = 0, Max = 10, Mean = 3.22, SD = 4.18
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1 
+=======
+Answered / Delivered = 7 / 36
+
+Missing = 29
+Min = 0, Max = 10, Mean = 3.22, SD = 4.18
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = -4.56 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Screenshot
@@ -2089,6 +3451,7 @@ Click to view visuals <span id="Question 8081_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16531 / 16627
 
 Missing = 96
@@ -2096,6 +3459,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 36 / 36
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 
@@ -2170,6 +3542,7 @@ Click to view visuals <span id="Question 8082_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16531 / 16627
 
 Missing = 96
@@ -2177,6 +3550,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 36 / 36
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 
@@ -2349,6 +3731,7 @@ Click to view visuals <span id="Question 8084_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 17541 / 17639
 
 Missing = 98
@@ -2356,6 +3739,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.64 
+=======
+Answered / Delivered = 1046 / 1048
+
+Missing = 2
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Screenshot
@@ -2421,6 +3813,7 @@ Click to view visuals <span id="Question 8085_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16571 / 17178
 
 Missing = 607
@@ -2428,6 +3821,15 @@ Min = 0, Max = 12, Mean = 5.74, SD = 4.13
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1 
+=======
+Answered / Delivered = 76 / 587
+
+Missing = 511
+Min = 0, Max = 12, Mean = 5.74, SD = 4.13
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = -0.49 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Screenshot
@@ -2584,6 +3986,7 @@ Click to view visuals <span id="Question 8180_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16704 / 16800
 
 Missing = 96
@@ -2591,6 +3994,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 209 / 209
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Screenshot
@@ -2718,6 +4130,7 @@ Click to view visuals <span id="Question 8087_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16707 / 16803
 
 Missing = 96
@@ -2725,6 +4138,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 212 / 212
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Screenshot
@@ -2836,6 +4258,7 @@ Click to view visuals <span id="Question 8089_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 17540 / 17639
 
 Missing = 99
@@ -2843,6 +4266,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.34 
+=======
+Answered / Delivered = 1045 / 1048
+
+Missing = 3
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 
@@ -2917,6 +4349,7 @@ Click to view visuals <span id="Question 8090_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 17540 / 17638
 
 Missing = 98
@@ -2924,6 +4357,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.64 
+=======
+Answered / Delivered = 1045 / 1047
+
+Missing = 2
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 
@@ -3062,9 +4504,15 @@ Click to view visuals <span id="Question 8181_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 17532 / 17634
 
 Missing = 102
+=======
+Answered / Delivered = 1037 / 1043
+
+Missing = 6
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 Min = 0, Max = 2, Mean = 0.05, SD = 0.24
 (Descriptives are rounded to 2 decimals)
 
@@ -3075,6 +4523,7 @@ Missingness Intraclass Correlation (ICC) = 1.11
 
 
 
+<<<<<<< HEAD
 </div>
 
 
@@ -4838,28 +6287,26 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 <div id="Question 8107-anchor">
   <strong>Question ID</strong>: Question 8107
+=======
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
-
-**Way the question was delivered:** Informational Fullscreen
-
-**Type of data:** NA
-
-</div> <div class = "anchor">
-
-
-
-
-
 
 
 </div> <!-- Header section -->
 
 <div class = "header-shading">
 
+<<<<<<< HEAD
 #### My day has been...  (Scroll down for all responses) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   <a href="#Item 7659-anchor"> [Item 7659] </a>
+=======
+#### How difficult was it to get where you needed to go today? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7640-anchor"> [Item 7640] </a>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 
@@ -4872,6 +6319,7 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 <div class = "anchor">
 
+<<<<<<< HEAD
 <div id="Question 8108-anchor">
   <strong>Question ID</strong>: Question 8108
 </div>
@@ -6203,6 +7651,10 @@ Missingness Intraclass Correlation (ICC) = 1.64
 
 <div id="Question 8183-anchor">
   <strong>Question ID</strong>: Question 8183
+=======
+<div id="Question 8092-anchor">
+  <strong>Question ID</strong>: Question 8092
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 **Way the question was delivered:** Multiple Choice
@@ -6216,6 +7668,7 @@ Missingness Intraclass Correlation (ICC) = 1.64
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('Question 8183');
            let arrow = document.getElementById('Question 8183_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -6225,6 +7678,16 @@ Click to view visuals <span id="Question 8183_arrow">▼</span>
 </button>
 
 <div id="Question 8183" style="display: none;">
+=======
+  onclick="let e = document.getElementById('Question 8092');
+           let arrow = document.getElementById('Question 8092_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8092_arrow">▼</span>
+</button>
+
+<div id="Question 8092" style="display: none;">
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -6246,6 +7709,130 @@ Click to view visuals <span id="Question 8183_arrow">▼</span>
 <tbody>
   <tr>
    <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> Extremely Difficult </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 7 </td>
+   <td style="text-align:left;"> 0.7% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> Very difficult </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 15 </td>
+   <td style="text-align:left;"> 1.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> Moderately Difficult </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 32 </td>
+   <td style="text-align:left;"> 3.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> Slightly Difficult </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 87 </td>
+   <td style="text-align:left;"> 8.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> Not at all Difficult </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 902 </td>
+   <td style="text-align:left;"> 86.5% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8092-Item-7640-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 1043 / 1046
+
+Missing = 3
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Did you work for pay today? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7641-anchor"> [Item 7641] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8093-anchor">
+  <strong>Question ID</strong>: Question 8093
+</div>
+
+**Way the question was delivered:** Multiple Choice
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8093');
+           let arrow = document.getElementById('Question 8093_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8093_arrow">▼</span>
+</button>
+
+<div id="Question 8093" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+<<<<<<< HEAD
    <td style="text-align:left;"> I DID NOT interact with kid or kids today </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 78 </td>
    <td style="text-align:left;"> 14% </td>
@@ -6255,6 +7842,17 @@ Click to view visuals <span id="Question 8183_arrow">▼</span>
    <td style="text-align:left;"> I DID interact with kid or kids today </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 481 </td>
    <td style="text-align:left;"> 86% </td>
+=======
+   <td style="text-align:left;"> Yes </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 518 </td>
+   <td style="text-align:left;"> 49.6% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 526 </td>
+   <td style="text-align:left;"> 50.4% </td>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
   </tr>
 </tbody>
 </table>
@@ -6262,14 +7860,474 @@ Click to view visuals <span id="Question 8183_arrow">▼</span>
 
 #### Barplot
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8183-Item-7690-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8093-Item-7641-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 17054 / 17150
+=======
+Answered / Delivered = 1044 / 1046
+
+Missing = 2
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### I ENJOYED work <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7642-anchor"> [Item 7642] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8094-anchor">
+  <strong>Question ID</strong>: Question 8094
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 74.2, SD = 25.31 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8094');
+           let arrow = document.getElementById('Question 8094_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8094_arrow">▼</span>
+</button>
+
+<div id="Question 8094" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8094-Item-7642-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 515 / 518
+
+Missing = 3
+Min = 0, Max = 1, Mean = 0.03, SD = 0.17
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.25 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### I felt COMPETENT at work <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7643-anchor"> [Item 7643] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8095-anchor">
+  <strong>Question ID</strong>: Question 8095
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 82.02, SD = 20.36 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8095');
+           let arrow = document.getElementById('Question 8095_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8095_arrow">▼</span>
+</button>
+
+<div id="Question 8095" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8095-Item-7643-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 516 / 518
+
+Missing = 2
+Min = 0, Max = 1, Mean = 0.02, SD = 0.14
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.25 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### I felt a sense of ACCOMPLISHMENT at work <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7644-anchor"> [Item 7644] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8096-anchor">
+  <strong>Question ID</strong>: Question 8096
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 78.79, SD = 23.43 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8096');
+           let arrow = document.getElementById('Question 8096_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8096_arrow">▼</span>
+</button>
+
+<div id="Question 8096" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8096-Item-7644-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 517 / 518
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.01, SD = 0.1
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.24 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### I felt CONNECTED to my work or with other people at work <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7645-anchor"> [Item 7645] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8097-anchor">
+  <strong>Question ID</strong>: Question 8097
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 75.89, SD = 26.26 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8097');
+           let arrow = document.getElementById('Question 8097_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8097_arrow">▼</span>
+</button>
+
+<div id="Question 8097" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8097-Item-7645-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 517 / 518
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.01, SD = 0.1
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.24 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Why did you not go to work? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7646-anchor"> [Item 7646] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8098-anchor">
+  <strong>Question ID</strong>: Question 8098
+</div>
+
+**Way the question was delivered:** Multiple Choice
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8098');
+           let arrow = document.getElementById('Question 8098_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8098_arrow">▼</span>
+</button>
+
+<div id="Question 8098" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;color: darkgreen !important;"> I don’t have a paying job right now </td>
+   <td style="text-align:left;"> N = 196 </td>
+   <td style="text-align:left;"> 37.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Weekend </td>
+   <td style="text-align:left;"> N = 137 </td>
+   <td style="text-align:left;"> 26% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Not scheduled </td>
+   <td style="text-align:left;"> N = 149 </td>
+   <td style="text-align:left;"> 28.3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Felt sick </td>
+   <td style="text-align:left;"> N = 16 </td>
+   <td style="text-align:left;"> 3% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;color: darkgreen !important;"> Skipped for other reason </td>
+   <td style="text-align:left;"> N = 28 </td>
+   <td style="text-align:left;"> 5.3% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8098-Item-7646-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 526 / 526
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 Missing = 96
 Min = 0, Max = 0, Mean = 0, SD = 0
@@ -6289,10 +8347,17 @@ Missingness Intraclass Correlation (ICC) = 0
 
 <div class = "header-shading">
 
+<<<<<<< HEAD
 #### Please check off all the ways in which you interacted with your kid or kids today:  (Scroll down for all responses) <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   <a href="#Item 7667-anchor"> [Item 7667] </a>
+=======
+#### The following questions ask about how you have felt today  Click below to continue <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7649-anchor"> [Item 7649] </a>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 
@@ -6305,6 +8370,7 @@ Missingness Intraclass Correlation (ICC) = 0
 
 <div class = "anchor">
 
+<<<<<<< HEAD
 <div id="Question 8648-anchor">
   <strong>Question ID</strong>: Question 8648
 </div>
@@ -9317,6 +11383,10 @@ Missingness Intraclass Correlation (ICC) = NA
 
 <div id="Question 5997-anchor">
   <strong>Question ID</strong>: Question 5997
+=======
+<div id="Question 8099-anchor">
+  <strong>Question ID</strong>: Question 8099
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 **Way the question was delivered:** Informational Fullscreen
@@ -9335,10 +11405,17 @@ Missingness Intraclass Correlation (ICC) = NA
 
 <div class = "header-shading">
 
+<<<<<<< HEAD
 #### THIS EVENING... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   <a href="#Item 5765-anchor"> [Item 5765] </a>
+=======
+#### Today... <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7652-anchor"> [Item 7652] </a>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 
@@ -9351,8 +11428,13 @@ Missingness Intraclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+<<<<<<< HEAD
 <div id="Question 5998-anchor">
   <strong>Question ID</strong>: Question 5998
+=======
+<div id="Question 8100-anchor">
+  <strong>Question ID</strong>: Question 8100
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 **Way the question was delivered:** Informational Fullscreen
@@ -9371,10 +11453,17 @@ Missingness Intraclass Correlation (ICC) = NA
 
 <div class = "header-shading">
 
+<<<<<<< HEAD
 #### THIS EVENING, have you felt... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   <a href="#Item 5769-anchor"> [Item 5769] </a>
+=======
+#### How FREQUENT have your alcohol or drug cravings been? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7650-anchor"> [Item 7650] </a>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 
@@ -9387,8 +11476,373 @@ Missingness Intraclass Correlation (ICC) = NA
 
 <div class = "anchor">
 
+<<<<<<< HEAD
 <div id="Question 6001-anchor">
   <strong>Question ID</strong>: Question 6001
+=======
+<div id="Question 8101-anchor">
+  <strong>Question ID</strong>: Question 8101
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 9.73, SD = 18.1 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8101');
+           let arrow = document.getElementById('Question 8101_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8101_arrow">▼</span>
+</button>
+
+<div id="Question 8101" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8101-Item-7650-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 1046 / 1046
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### How INTENSE have your alcohol or drug cravings been? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7651-anchor"> [Item 7651] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8102-anchor">
+  <strong>Question ID</strong>: Question 8102
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 9.05, SD = 17.45 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8102');
+           let arrow = document.getElementById('Question 8102_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8102_arrow">▼</span>
+</button>
+
+<div id="Question 8102" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8102-Item-7651-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 1045 / 1046
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.13 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### TODAY, have you felt any... <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7653-anchor"> [Item 7653] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8103-anchor">
+  <strong>Question ID</strong>: Question 8103
+</div>
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### PHYSICAL DISCOMFORT? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7654-anchor"> [Item 7654] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8104-anchor">
+  <strong>Question ID</strong>: Question 8104
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 33.8, SD = 31.17 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8104');
+           let arrow = document.getElementById('Question 8104_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8104_arrow">▼</span>
+</button>
+
+<div id="Question 8104" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8104-Item-7654-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 1044 / 1046
+
+Missing = 2
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### PHYSICAL PAIN? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7655-anchor"> [Item 7655] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8105-anchor">
+  <strong>Question ID</strong>: Question 8105
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 33.03, SD = 31.81 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8105');
+           let arrow = document.getElementById('Question 8105_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8105_arrow">▼</span>
+</button>
+
+<div id="Question 8105" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8105-Item-7655-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 1044 / 1046
+
+Missing = 2
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### TODAY, have you felt...  (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7656-anchor"> [Item 7656] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8106-anchor">
+  <strong>Question ID</strong>: Question 8106
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 **Way the question was delivered:** Multiple Slider
@@ -9409,7 +11863,10 @@ Missingness Intraclass Correlation (ICC) = NA
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### 
+=======
+#### SAD?
 
 </div>
 
@@ -9422,7 +11879,7 @@ Missingness Intraclass Correlation (ICC) = NA
 
 
 **Descriptives**
-Min = 0, max = 100, mean = 37.12, std = 29.47
+Min = 0, max = 100, mean = 25.26, std = 28.08
 
 
 
@@ -9433,15 +11890,15 @@ Min = 0, max = 100, mean = 37.12, std = 29.47
 
 
 <button 
-  onclick="let e = document.getElementById('multiplesliderQuestion-600150024');
-           let arrow = document.getElementById('multiplesliderQuestion-600150024_arrow');
+  onclick="let e = document.getElementById('multiplesliderQuestion-810649993');
+           let arrow = document.getElementById('multiplesliderQuestion-810649993_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
            arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
   style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
-Click to view visuals <span id="multiplesliderQuestion-600150024_arrow">▼</span>
+Click to view visuals <span id="multiplesliderQuestion-810649993_arrow">▼</span>
 </button>
 
-<div id="multiplesliderQuestion-600150024" style="display: none;">
+<div id="multiplesliderQuestion-810649993" style="display: none;">
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -9456,6 +11913,168 @@ Click to view visuals <span id="multiplesliderQuestion-600150024_arrow">▼</spa
 
 
 
+![](Codebook_files/figure-html/multiplesliderQuestion-810649993_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### LONELY?
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 23.57, std = 27.05
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810649987');
+           let arrow = document.getElementById('multiplesliderQuestion-810649987_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810649987_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810649987" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810649987_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### IRRITABLE?
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+<<<<<<< HEAD
+Min = 0, max = 100, mean = 37.12, std = 29.47
+=======
+Min = 0, max = 100, mean = 31.09, std = 28.65
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+
+
+
+
+
+
+
+
+
+<button 
+<<<<<<< HEAD
+  onclick="let e = document.getElementById('multiplesliderQuestion-600150024');
+           let arrow = document.getElementById('multiplesliderQuestion-600150024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600150024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600150024" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-810649989');
+           let arrow = document.getElementById('multiplesliderQuestion-810649989_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810649989_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810649989" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-600150024_histogram-1.png)<!-- -->
 
 
@@ -9601,6 +12220,9 @@ Click to view visuals <span id="multiplesliderQuestion-600150028_arrow">▼</spa
 
 
 ![](Codebook_files/figure-html/multiplesliderQuestion-600150028_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-810649989_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -9638,7 +12260,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 73.79, std = 24.3
+=======
+Min = 0, max = 100, mean = 35.35, std = 31.42
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 
@@ -9649,6 +12275,7 @@ Min = 0, max = 100, mean = 73.79, std = 24.3
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600150030');
            let arrow = document.getElementById('multiplesliderQuestion-600150030_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -9658,6 +12285,17 @@ Click to view visuals <span id="multiplesliderQuestion-600150030_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600150030" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-810649991');
+           let arrow = document.getElementById('multiplesliderQuestion-810649991_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810649991_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810649991" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -9672,6 +12310,7 @@ Click to view visuals <span id="multiplesliderQuestion-600150030_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-600150030_histogram-1.png)<!-- -->
 
 
@@ -9786,6 +12425,9 @@ Click to view visuals <span id="multiplesliderQuestion-600450024_arrow">▼</spa
 
 
 ![](Codebook_files/figure-html/multiplesliderQuestion-600450024_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-810649991_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -9810,7 +12452,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### 
+=======
+#### RELAXED?
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 </div>
 
@@ -9823,7 +12469,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 75.53, std = 22.61
+=======
+Min = 0, max = 100, mean = 55.98, std = 27.85
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 
@@ -9834,6 +12484,7 @@ Min = 0, max = 100, mean = 75.53, std = 22.61
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600450026');
            let arrow = document.getElementById('multiplesliderQuestion-600450026_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -9843,6 +12494,17 @@ Click to view visuals <span id="multiplesliderQuestion-600450026_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600450026" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-810649995');
+           let arrow = document.getElementById('multiplesliderQuestion-810649995_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810649995_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810649995" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -9857,7 +12519,11 @@ Click to view visuals <span id="multiplesliderQuestion-600450026_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-600450026_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-810649995_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -9882,7 +12548,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### 
+=======
+#### HAPPY?
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 </div>
 
@@ -9895,7 +12565,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 47.83, std = 32.22
+=======
+Min = 0, max = 100, mean = 66.12, std = 24.99
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 
@@ -9906,6 +12580,7 @@ Min = 0, max = 100, mean = 47.83, std = 32.22
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600450028');
            let arrow = document.getElementById('multiplesliderQuestion-600450028_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -9915,6 +12590,17 @@ Click to view visuals <span id="multiplesliderQuestion-600450028_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600450028" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-810649997');
+           let arrow = document.getElementById('multiplesliderQuestion-810649997_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810649997_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810649997" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -9929,6 +12615,7 @@ Click to view visuals <span id="multiplesliderQuestion-600450028_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-600450028_histogram-1.png)<!-- -->
 
 
@@ -10115,6 +12802,9 @@ Click to view visuals <span id="multiplesliderQuestion-603150024_arrow">▼</spa
 
 
 ![](Codebook_files/figure-html/multiplesliderQuestion-603150024_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-810649997_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -10139,7 +12829,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### 
+=======
+#### CALM?
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 </div>
 
@@ -10152,7 +12846,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 75.53, std = 22.61
+=======
+Min = 0, max = 100, mean = 61.49, std = 25.93
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 
@@ -10163,6 +12861,7 @@ Min = 0, max = 100, mean = 75.53, std = 22.61
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-603150026');
            let arrow = document.getElementById('multiplesliderQuestion-603150026_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10172,6 +12871,17 @@ Click to view visuals <span id="multiplesliderQuestion-603150026_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-603150026" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-810649999');
+           let arrow = document.getElementById('multiplesliderQuestion-810649999_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810649999_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810649999" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -10186,7 +12896,11 @@ Click to view visuals <span id="multiplesliderQuestion-603150026_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-603150026_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-810649999_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -10211,7 +12925,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### 
+=======
+#### JOYFUL?
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 </div>
 
@@ -10224,7 +12942,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 47.83, std = 32.22
+=======
+Min = 0, max = 100, mean = 64.14, std = 27.18
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 
@@ -10235,6 +12957,7 @@ Min = 0, max = 100, mean = 47.83, std = 32.22
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-603150028');
            let arrow = document.getElementById('multiplesliderQuestion-603150028_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10244,6 +12967,17 @@ Click to view visuals <span id="multiplesliderQuestion-603150028_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-603150028" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-810650001');
+           let arrow = document.getElementById('multiplesliderQuestion-810650001_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810650001_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810650001" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -10258,6 +12992,7 @@ Click to view visuals <span id="multiplesliderQuestion-603150028_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-603150028_histogram-1.png)<!-- -->
 
 
@@ -11354,6 +14089,9 @@ Click to view visuals <span id="multiplesliderQuestion-600950030_arrow">▼</spa
 
 
 ![](Codebook_files/figure-html/multiplesliderQuestion-600950030_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-810650001_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -11381,10 +14119,17 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 <div class = "header-shading">
 
+<<<<<<< HEAD
 #### When thinking about tomorrow... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   <a href="#Item 5778-anchor"> [Item 5778] </a>
+=======
+#### Please think of your experiences throughout THE ENTIRE DAY <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7658-anchor"> [Item 7658] </a>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 
@@ -11397,6 +14142,7 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 <div class = "anchor">
 
+<<<<<<< HEAD
 <div id="Question 6010-anchor">
   <strong>Question ID</strong>: Question 6010
 </div>
@@ -11456,6 +14202,869 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
  <div class = "header-shading">
 
 #### 
+=======
+<div id="Question 8107-anchor">
+  <strong>Question ID</strong>: Question 8107
+</div>
+
+**Way the question was delivered:** Informational Fullscreen
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### My day has been...  (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7659-anchor"> [Item 7659] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8108-anchor">
+  <strong>Question ID</strong>: Question 8108
+</div>
+
+**Way the question was delivered:** Multiple Slider
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+
+
+
+</div>
+
+ <div class = "header-shading">
+
+#### MEANINGFUL
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 73.08, std = 23.82
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810850004');
+           let arrow = document.getElementById('multiplesliderQuestion-810850004_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810850004_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810850004" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810850004_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### GRATIFYING
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 73.25, std = 25.08
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810850006');
+           let arrow = document.getElementById('multiplesliderQuestion-810850006_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810850006_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810850006" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810850006_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### PURPOSEFUL
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 75.45, std = 23.95
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810850008');
+           let arrow = document.getElementById('multiplesliderQuestion-810850008_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810850008_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810850008" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810850008_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### SATISFYING
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 71.77, std = 26.29
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810850010');
+           let arrow = document.getElementById('multiplesliderQuestion-810850010_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810850010_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810850010" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810850010_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+
+ <!-- Header section -->
+
+<div class = "header-shading">
+
+#### THINKING ABOUT TODAY, I feel like...  (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7660-anchor"> [Item 7660] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8109-anchor">
+  <strong>Question ID</strong>: Question 8109
+</div>
+
+**Way the question was delivered:** Multiple Slider
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+
+
+
+</div>
+
+ <div class = "header-shading">
+
+#### I was committed to my recovery
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 85.72, std = 19.92
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810950012');
+           let arrow = document.getElementById('multiplesliderQuestion-810950012_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810950012_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810950012" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810950012_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### I worked hard on my recovery
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 69.79, std = 27.52
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810950014');
+           let arrow = document.getElementById('multiplesliderQuestion-810950014_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810950014_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810950014" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810950014_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### I kept my recovery central to my day
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 74.87, std = 25.52
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810950016');
+           let arrow = document.getElementById('multiplesliderQuestion-810950016_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810950016_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810950016" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810950016_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### I felt connected to other people in recovery
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 69.85, std = 31.42
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810950018');
+           let arrow = document.getElementById('multiplesliderQuestion-810950018_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810950018_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810950018" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810950018_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### I was grateful to be in recovery
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 89.38, std = 17.79
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810950020');
+           let arrow = document.getElementById('multiplesliderQuestion-810950020_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810950020_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810950020" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810950020_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### I missed my old drug use/drinking social group
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 9.3, std = 20.32
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-810950022');
+           let arrow = document.getElementById('multiplesliderQuestion-810950022_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-810950022_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-810950022" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](Codebook_files/figure-html/multiplesliderQuestion-810950022_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+
+ <!-- Header section -->
+
+<div class = "header-shading">
+
+#### When thinking about tomorrow, I think tomorrow will be...  (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7661-anchor"> [Item 7661] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8110-anchor">
+  <strong>Question ID</strong>: Question 8110
+</div>
+
+**Way the question was delivered:** Multiple Slider
+
+**Type of data:** NA
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+
+
+
+</div>
+
+ <div class = "header-shading">
+
+#### a STRESSFUL day
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 </div>
 
@@ -11479,6 +15088,7 @@ Min = 0, max = 100, mean = 37.12, std = 29.47
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601150024');
            let arrow = document.getElementById('multiplesliderQuestion-601150024_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11488,6 +15098,17 @@ Click to view visuals <span id="multiplesliderQuestion-601150024_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601150024" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-811050024');
+           let arrow = document.getElementById('multiplesliderQuestion-811050024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-811050024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-811050024" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11502,7 +15123,11 @@ Click to view visuals <span id="multiplesliderQuestion-601150024_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-601150024_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-811050024_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -11527,7 +15152,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### 
+=======
+#### a POSITIVE day
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 </div>
 
@@ -11551,6 +15180,7 @@ Min = 0, max = 100, mean = 75.53, std = 22.61
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601150026');
            let arrow = document.getElementById('multiplesliderQuestion-601150026_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11560,6 +15190,17 @@ Click to view visuals <span id="multiplesliderQuestion-601150026_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601150026" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-811050026');
+           let arrow = document.getElementById('multiplesliderQuestion-811050026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-811050026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-811050026" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11574,7 +15215,11 @@ Click to view visuals <span id="multiplesliderQuestion-601150026_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-601150026_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-811050026_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -11599,7 +15244,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### 
+=======
+#### a CHALLENGING day
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 </div>
 
@@ -11623,6 +15272,7 @@ Min = 0, max = 100, mean = 47.83, std = 32.22
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601150028');
            let arrow = document.getElementById('multiplesliderQuestion-601150028_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11632,6 +15282,17 @@ Click to view visuals <span id="multiplesliderQuestion-601150028_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601150028" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-811050028');
+           let arrow = document.getElementById('multiplesliderQuestion-811050028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-811050028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-811050028" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11646,7 +15307,11 @@ Click to view visuals <span id="multiplesliderQuestion-601150028_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-601150028_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-811050028_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -11671,7 +15336,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### 
+=======
+#### an ENJOYABLE day
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 </div>
 
@@ -11695,6 +15364,7 @@ Min = 0, max = 100, mean = 73.79, std = 24.3
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601150030');
            let arrow = document.getElementById('multiplesliderQuestion-601150030_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11704,6 +15374,17 @@ Click to view visuals <span id="multiplesliderQuestion-601150030_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601150030" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-811050030');
+           let arrow = document.getElementById('multiplesliderQuestion-811050030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-811050030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-811050030" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11718,7 +15399,11 @@ Click to view visuals <span id="multiplesliderQuestion-601150030_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](Codebook_files/figure-html/multiplesliderQuestion-601150030_histogram-1.png)<!-- -->
+=======
+![](Codebook_files/figure-html/multiplesliderQuestion-811050030_histogram-1.png)<!-- -->
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 #### Missingness
@@ -11749,7 +15434,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 #### Im worried about my ability to... <br>
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+<<<<<<< HEAD
   <a href="#Item 5780-anchor"> [Item 5780] </a>
+=======
+  <a href="#Item 7662-anchor"> [Item 7662] </a>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 
@@ -11762,11 +15451,19 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 <div class = "anchor">
 
+<<<<<<< HEAD
 <div id="Question 6012-anchor">
   <strong>Question ID</strong>: Question 6012
 </div>
 
 **Way the question was delivered:** Multiple Slider
+=======
+<div id="Question 8111-anchor">
+  <strong>Question ID</strong>: Question 8111
+</div>
+
+**Way the question was delivered:** Informational Fullscreen
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 **Type of data:** NA
 
@@ -11778,6 +15475,7 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 
+<<<<<<< HEAD
 
 
 </div>
@@ -12079,6 +15777,16 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 <div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
   <a href="#Item 5787-anchor"> [Item 5787] </a>
+=======
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Maintain MY RECOVERY tomorrow <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7663-anchor"> [Item 7663] </a>
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 </div>
 
 
@@ -12091,6 +15799,7 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 <div class = "anchor">
 
+<<<<<<< HEAD
 <div id="Question 6032-anchor">
   <strong>Question ID</strong>: Question 6032
 </div>
@@ -12098,6 +15807,15 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 **Way the question was delivered:** Free Response
 
 **Type of data:** character
+=======
+<div id="Question 8112-anchor">
+  <strong>Question ID</strong>: Question 8112
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 </div> <div class = "anchor">
 
@@ -12106,6 +15824,7 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 
+<<<<<<< HEAD
 <button 
   onclick="let e = document.getElementById('Question 6032');
            let arrow = document.getElementById('Question 6032_arrow');
@@ -12116,6 +15835,23 @@ Click to view visuals <span id="Question 6032_arrow">▼</span>
 </button>
 
 <div id="Question 6032" style="display: none;">
+=======
+**Descriptives**
+Min = 0, Max = 100, Mean = 12.97, SD = 23.53 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8112');
+           let arrow = document.getElementById('Question 8112_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8112_arrow">▼</span>
+</button>
+
+<div id="Question 8112" style="display: none;">
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -12123,10 +15859,19 @@ Click to view visuals <span id="Question 6032_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
+=======
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8112-Item-7663-1.png)<!-- -->
+
+
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 16495 / 16591
 
 Missing = 96
@@ -12208,6 +15953,207 @@ Min = NA, Max = NA, Mean = NA, SD = NA
 Missingness Intraclass Correlation (ICC) = NA 
 
 
+=======
+Answered / Delivered = 1043 / 1044
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.13 
+
+
+
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+#### Screenshot
+
+
+</div>
+
+<<<<<<< HEAD
+
+</div>
+
+
+=======
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Maintain MY GENERAL WELLBEING tomorrow <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7664-anchor"> [Item 7664] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8113-anchor">
+  <strong>Question ID</strong>: Question 8113
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 25.1, SD = 30.65 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8113');
+           let arrow = document.getElementById('Question 8113_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8113_arrow">▼</span>
+</button>
+
+<div id="Question 8113" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8113-Item-7664-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 1042 / 1044
+
+Missing = 2
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.15 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Did you interact in-person, or by phone, text, or social media with your child(ren) today? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7690-anchor"> [Item 7690] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8183-anchor">
+  <strong>Question ID</strong>: Question 8183
+</div>
+
+**Way the question was delivered:** Multiple Choice
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8183');
+           let arrow = document.getElementById('Question 8183_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8183_arrow">▼</span>
+</button>
+
+<div id="Question 8183" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> I DID NOT interact with kid or kids today </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 78 </td>
+   <td style="text-align:left;"> 14% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> I DID interact with kid or kids today </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 481 </td>
+   <td style="text-align:left;"> 86% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8183-Item-7690-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 559 / 559
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+
+
 #### Screenshot
 
 
@@ -12215,6 +16161,590 @@ Missingness Intraclass Correlation (ICC) = NA
 </div>
 
 
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Please check off all the ways in which you interacted with your kid or kids today:  (Scroll down for all responses) <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7667-anchor"> [Item 7667] </a>
 </div>
 
 
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8648-anchor">
+  <strong>Question ID</strong>: Question 8648
+</div>
+
+**Way the question was delivered:** Multiple Select
+
+**Type of data:** integer
+
+</div> 
+<div class = "anchor">
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8648');
+           let arrow = document.getElementById('Question 8648_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8648_arrow">▼</span>
+</button>
+
+<div id="Question 8648" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Frequency Table
+
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Value </th>
+   <th style="text-align:left;"> Label </th>
+   <th style="text-align:left;"> Counts </th>
+   <th style="text-align:left;"> Percentages </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 1 </td>
+   <td style="text-align:left;"> Phone call </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 114 </td>
+   <td style="text-align:left;"> 13.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2 </td>
+   <td style="text-align:left;"> Voice message </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 26 </td>
+   <td style="text-align:left;"> 3.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 3 </td>
+   <td style="text-align:left;"> Video call </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 52 </td>
+   <td style="text-align:left;"> 6.1% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 4 </td>
+   <td style="text-align:left;"> Text message </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 182 </td>
+   <td style="text-align:left;"> 21.4% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 5 </td>
+   <td style="text-align:left;"> In-person </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 396 </td>
+   <td style="text-align:left;"> 46.6% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 6 </td>
+   <td style="text-align:left;"> Posting to social media about kid </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 23 </td>
+   <td style="text-align:left;"> 2.7% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 7 </td>
+   <td style="text-align:left;"> Responding to a kid's post </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 7 </td>
+   <td style="text-align:left;"> 0.8% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 8 </td>
+   <td style="text-align:left;"> Messaging through facebook or other social media </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 38 </td>
+   <td style="text-align:left;"> 4.5% </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 9 </td>
+   <td style="text-align:left;"> Other </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 11 </td>
+   <td style="text-align:left;"> 1.3% </td>
+  </tr>
+</tbody>
+</table>
+
+
+#### Barplot
+
+![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8648-Item-7667-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 479 / 479
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Thinking of all your interactions with your child(ren) today --OVERALL how POSITIVE were they? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7669-anchor"> [Item 7669] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8117-anchor">
+  <strong>Question ID</strong>: Question 8117
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 85.65, SD = 18.99 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8117');
+           let arrow = document.getElementById('Question 8117_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8117_arrow">▼</span>
+</button>
+
+<div id="Question 8117" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8117-Item-7669-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 484 / 484
+
+Missing = 0
+Min = 0, Max = 0, Mean = 0, SD = 0
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NaN 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Thinking of all your interactions with your child(ren) today --OVERALL how NEGATIVE were they? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7670-anchor"> [Item 7670] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8118-anchor">
+  <strong>Question ID</strong>: Question 8118
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 14.48, SD = 20.9 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8118');
+           let arrow = document.getElementById('Question 8118_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8118_arrow">▼</span>
+</button>
+
+<div id="Question 8118" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8118-Item-7670-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 483 / 484
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.17 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Thinking of all your interactions with your child(ren) today --OVERALL how FULFILLING were they? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7671-anchor"> [Item 7671] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8119-anchor">
+  <strong>Question ID</strong>: Question 8119
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 84.39, SD = 19.43 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8119');
+           let arrow = document.getElementById('Question 8119_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8119_arrow">▼</span>
+</button>
+
+<div id="Question 8119" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8119-Item-7671-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 483 / 484
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.17 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### Thinking of all your interactions with your child(ren) today --OVERALL how FRUSTRATING were they? <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7672-anchor"> [Item 7672] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8120-anchor">
+  <strong>Question ID</strong>: Question 8120
+</div>
+
+**Way the question was delivered:** Slider
+
+**Type of data:** numeric
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, Max = 100, Mean = 22.74, SD = 27.03 
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8120');
+           let arrow = document.getElementById('Question 8120_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8120_arrow">▼</span>
+</button>
+
+<div id="Question 8120" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+![](Codebook_files/figure-html/histogram-Slider-Question-8120-Item-7672-1.png)<!-- -->
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 483 / 484
+
+Missing = 1
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.17 
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div> <!-- Header section -->
+
+<div class = "header-shading">
+
+#### End Block <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7674-anchor"> [Item 7674] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8121-anchor">
+  <strong>Question ID</strong>: Question 8121
+</div>
+
+**Way the question was delivered:** End Block
+
+**Type of data:** NA
+
+</div>  <!-- Header section -->
+
+<div class = "header-shading">
+
+#### OPTIONAL DAILY REFLECTION: Describe what was challenging and/or good about your day and how you feel about it (about recovery or not):  Up to around 100 words <br>
+
+<div style="font-weight: bold; color: #2a5caa; margin-top: -0.7em; margin-bottom: 1em;">
+  <a href="#Item 7676-anchor"> [Item 7676] </a>
+</div>
+
+
+</div>
+
+
+
+<!-- Body -->
+
+
+<div class = "anchor">
+
+<div id="Question 8122-anchor">
+  <strong>Question ID</strong>: Question 8122
+</div>
+
+**Way the question was delivered:** Free Response
+
+**Type of data:** character
+
+</div> <div class = "anchor">
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('Question 8122');
+           let arrow = document.getElementById('Question 8122_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="Question 8122_arrow">▼</span>
+</button>
+
+<div id="Question 8122" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Missingness
+
+**Missingness Descriptives**
+
+Answered / Delivered = 797 / 1041
+
+Missing = 244
+Min = 0, Max = 11, Mean = 1.85, SD = 2.52
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.07 
+
+
+#### Screenshot
+
+
+
+</div>
+
+
+</div> 
+### Block: Item 7677 
+### Block: Item 7615 
+### Block: Item 7636 
+### Block: Item 7635 
+### Block: Item 7613 
+### Block: Item 7637 
+### Block: Item 7630 
+### Block: Item 7647 
+### Block: Item 7648 
+### Block: Item 7657 
+### Block: Item 7665 
+### Block: Item 7675 
+### Block: Item 7673
+
+
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c

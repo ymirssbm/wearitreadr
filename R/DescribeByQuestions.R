@@ -15,7 +15,6 @@
 
 describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
 
-
   # Grab sample size (Probably need something to deal with weird ID names, fix later)
   n <- length(unique(thisData$Participant.ID))
 
@@ -48,79 +47,107 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
 
     items <- unique(surveyBlock$Item.ID)
 
+    # Make index for tracking what has been initialized
+    index <- c()
+
     # For each item surveyBlock
     for (item in items) {
       itemBlock <- surveyBlock[(surveyBlock$Item.ID == item),]
-      #browser()
 
-      # If block, knit block rmd
-      if (nrow(itemBlock) == 1 && itemBlock$Item.Type == "Block") {
-
-        # Initalize chunk label for block
-        chunk_label <- paste(itemBlock$Question.Type.Display.Name, itemBlock$Question.ID, item)
-        chunk_label <- gsub(" ", "-", chunk_label)
-        # Fail safe to clean any special characters that sneak in
-        chunk_label <- gsub("[^A-Za-z0-9\\-]", "", chunk_label)
-
-        # Knit expand block rmd
-        out2 <- paste(
-          out2,
-          knit_expand(
-            file = paste0("DataTypes/Block.Rmd"),
-            question_text = itemBlock$Question.Text,
-            item_id = itemBlock$Item.ID,
-            question_type = itemBlock$Question.Type.Display.Name,
-            result_type = itemBlock$Result.Type,
-            question_id = itemBlock$Question.ID,
-            chunk_label = chunk_label,
-            itemBlock = itemBlock,
-            n = n)
-        )
+      if (item %in% index) {
+        next
       }
 
-      # If Question, knit respective question rmd file
-      if(nrow(itemBlock) == 1 && itemBlock$Item.Type == "Question") {
-        attach(itemBlock)
-        question_type <- itemBlock$Question.Type.Display.Name
-        question_type_no_space <- gsub(" ", "", question_type)
+      # Positional index of item in items
+      loopNum <- which(items == item)
+      # Record that we have looped this item
+      index[loopNum] <- item
 
-        # Grab chunk labels
-        chunk_label <- paste(itemBlock$Question.Type.Display.Name, itemBlock$Question.ID, item)
-        chunk_label <- gsub(" ", "-", chunk_label)
-        # Fail safe to clean any special characters that sneak in
-        chunk_label <- gsub("[^A-Za-z0-9\\-]", "", chunk_label)
+      # This just contains the child if no parent
+      parentChildBlock <- itemBlock
 
-        # Knit Queston Page
-        out2 <- paste(
-          out2,
-          knit_expand(
-            file = paste0("DataTypes/QuestionPage.Rmd"),
-            question_text = itemBlock$Question.Text,
-            item_id = itemBlock$Item.ID,
-            question_type = itemBlock$Question.Type.Display.Name,
-            result_type = itemBlock$Result.Type,
-            question_id = itemBlock$Question.ID,
-            chunk_label = chunk_label,
-            itemBlock = itemBlock
+      # If item is a child and parent hasnt been knitted, knit it then knit child
+      if (itemBlock$childTrue == TRUE & !(itemBlock$Parent %in% index)) {
+        parentBlock <- surveyBlock[(surveyBlock$Item.ID == itemBlock$Parent),]
+        parentChildBlock <- rbind(parentBlock, itemBlock)
+
+        # Mark parent as processed
+        index[which(items == parentBlock$Item.ID)] <- parentBlock$Item.ID
+
+      }
+
+      for (i in 1:nrow(parentChildBlock)) {
+        itemBlock <- parentChildBlock[i,]
+
+        # If block, knit block rmd
+        if (nrow(itemBlock) == 1 && itemBlock$Item.Type == "Block") {
+
+          # Initalize chunk label for block
+          chunk_label <- paste(itemBlock$Question.Type.Display.Name, itemBlock$Question.ID, item)
+          chunk_label <- gsub(" ", "-", chunk_label)
+          # Fail safe to clean any special characters that sneak in
+          chunk_label <- gsub("[^A-Za-z0-9\\-]", "", chunk_label)
+
+          # Knit expand block rmd
+          out2 <- paste(
+            out2,
+            knit_expand(
+              file = paste0("DataTypes/Block.Rmd"),
+              question_text = itemBlock$Question.Text,
+              item_id = itemBlock$Item.ID,
+              question_type = itemBlock$Question.Type.Display.Name,
+              result_type = itemBlock$Result.Type,
+              question_id = itemBlock$Question.ID,
+              chunk_label = chunk_label,
+              itemBlock = itemBlock,
+              n = n)
           )
-        )
+        }
 
-        # Knit Data type
-        out2 <- paste(
-          out2,
-          knit_expand(
-            file = paste0("DataTypes/", question_type_no_space, ".Rmd"),
-            question_text = itemBlock$Question.Text,
-            item_id = itemBlock$Item.ID,
-            question_type = itemBlock$Question.Type.Display.Name,
-            result_type = itemBlock$Result.Type,
-            question_id = itemBlock$Question.ID,
-            chunk_label = chunk_label,
-            itemBlock = itemBlock,
-            n = n
+        # If Question, knit respective question rmd file
+        if(nrow(itemBlock) == 1 && itemBlock$Item.Type == "Question") {
+          attach(itemBlock)
+          question_type <- itemBlock$Question.Type.Display.Name
+          question_type_no_space <- gsub(" ", "", question_type)
+
+          # Grab chunk labels
+          chunk_label <- paste(itemBlock$Question.Type.Display.Name, itemBlock$Question.ID, item)
+          chunk_label <- gsub(" ", "-", chunk_label)
+          # Fail safe to clean any special characters that sneak in
+          chunk_label <- gsub("[^A-Za-z0-9\\-]", "", chunk_label)
+
+          # Knit Queston Page
+          out2 <- paste(
+            out2,
+            knit_expand(
+              file = paste0("DataTypes/QuestionPage.Rmd"),
+              question_text = itemBlock$Question.Text,
+              item_id = itemBlock$Item.ID,
+              question_type = itemBlock$Question.Type.Display.Name,
+              result_type = itemBlock$Result.Type,
+              question_id = itemBlock$Question.ID,
+              chunk_label = chunk_label,
+              itemBlock = itemBlock
+            )
           )
-        )
-        detach(itemBlock)
+
+          # Knit Data type
+          out2 <- paste(
+            out2,
+            knit_expand(
+              file = paste0("DataTypes/", question_type_no_space, ".Rmd"),
+              question_text = itemBlock$Question.Text,
+              item_id = itemBlock$Item.ID,
+              question_type = itemBlock$Question.Type.Display.Name,
+              result_type = itemBlock$Result.Type,
+              question_id = itemBlock$Question.ID,
+              chunk_label = chunk_label,
+              itemBlock = itemBlock,
+              n = n
+            )
+          )
+          detach(itemBlock)
+        }
       }
     }
   }
