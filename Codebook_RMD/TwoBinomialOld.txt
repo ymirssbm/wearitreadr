@@ -1,0 +1,14 @@
+
+model {
+# Observed Counts
+boys ~ dbin(pB100, n1)
+girls ~ dbin(pG100,n2)
+
+# Prior on Rates
+pB100 ~ dbeta(1,1)
+pG100 ~ dbeta(1,1)
+
+# Difference Between Rates
+Diff <-  pG100 - pB100
+}
+
