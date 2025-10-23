@@ -1,7 +1,7 @@
 ---
-title: "This is a temp default title, please set"
-author: "This is a temp default author list, please set"
-date: "Codebook Generated 2025-10-22"
+title: "Recovery Community Center and Recovery General Combined Codebook"
+author: "Ethan O. Kile, Timothy R. Brick"
+date: "Codebook Generated 2025-10-13"
 output: 
   html_document:
     keep_md: true
@@ -37,11 +37,11 @@ params:
 
 ## Name of study
 
-This is a temp default title, please set
+Recovery Community Center and Recovery General Combined Codebook
 
 ## Authors
 
-This is a temp default author list, please set
+Ethan O. Kile, Timothy R. Brick
 
 ## Desired graphic
 
@@ -49,7 +49,7 @@ This is a temp default author list, please set
 
 ## Funding source
 
-This is a temp default funding source, please set
+
 
 ------------------------------------------------------------------------
 
@@ -57,7 +57,7 @@ This is a temp default funding source, please set
 
 ------------------------------------------------------------------------
 
-This is a temp default abstract, please set
+
 
 ------------------------------------------------------------------------
 
@@ -65,7 +65,7 @@ This is a temp default abstract, please set
 
 ------------------------------------------------------------------------
 
-This is a temp default summary, please set
+
 
 ------------------------------------------------------------------------
 
@@ -187,7 +187,7 @@ Click to view visuals <span id="Question 8176_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8176-Item-7605-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8176-Item-7605-1.png)<!-- -->
 
 
 #### Missingness
@@ -327,7 +327,7 @@ Click to view visuals <span id="Question 8066_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8066-Item-7606-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8066-Item-7606-1.png)<!-- -->
 
 
 #### Missingness
@@ -455,7 +455,7 @@ Click to view visuals <span id="Question 8177_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8177-Item-7607-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8177-Item-7607-1.png)<!-- -->
 
 
 #### Missingness
@@ -595,7 +595,7 @@ Click to view visuals <span id="Question 8178_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8178-Item-7608-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8178-Item-7608-1.png)<!-- -->
 
 
 #### Missingness
@@ -729,7 +729,7 @@ Click to view visuals <span id="Question 8069_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8069-Item-7609-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Choice-Question-8069-Item-7609-1.png)<!-- -->
 
 
 #### Missingness
@@ -881,7 +881,7 @@ Click to view visuals <span id="Question 8070_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8070-Item-7610-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8070-Item-7610-1.png)<!-- -->
 
 
 #### Missingness
@@ -1116,7 +1116,7 @@ Click to view visuals <span id="Question 8071_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8071-Item-7611-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8071-Item-7611-1.png)<!-- -->
 
 
 #### Missingness
@@ -1234,7 +1234,7 @@ Click to view visuals <span id="Question 8073_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8073-Item-7612-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8073-Item-7612-1.png)<!-- -->
 
 
 #### Missingness
@@ -1315,7 +1315,7 @@ Click to view visuals <span id="Question 8074_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8074-Item-7614-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8074-Item-7614-1.png)<!-- -->
 
 
 #### Missingness
@@ -1418,7 +1418,7 @@ Click to view visuals <span id="Question 8075_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8075-Item-7616-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Choice-Question-8075-Item-7616-1.png)<!-- -->
 
 
 #### Missingness
@@ -1552,7 +1552,7 @@ Click to view visuals <span id="Question 8076_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8076-Item-7617-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Choice-Question-8076-Item-7617-1.png)<!-- -->
 
 
 #### Missingness
@@ -1736,7 +1736,7 @@ Click to view visuals <span id="Question 8077_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8077-Item-7618-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8077-Item-7618-1.png)<!-- -->
 
 
 #### Missingness
@@ -1964,7 +1964,7 @@ Click to view visuals <span id="Question 8079_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8079-Item-7620-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8079-Item-7620-1.png)<!-- -->
 
 
 #### Missingness
@@ -2082,7 +2082,7 @@ Click to view visuals <span id="Question 8081_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8081-Item-7623-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8081-Item-7623-1.png)<!-- -->
 
 
 #### Missingness
@@ -2163,7 +2163,7 @@ Click to view visuals <span id="Question 8082_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8082-Item-7624-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8082-Item-7624-1.png)<!-- -->
 
 
 #### Missingness
@@ -2342,7 +2342,7 @@ Click to view visuals <span id="Question 8084_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8084-Item-7625-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8084-Item-7625-1.png)<!-- -->
 
 
 #### Missingness
@@ -2577,7 +2577,7 @@ Click to view visuals <span id="Question 8180_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8180-Item-7628-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8180-Item-7628-1.png)<!-- -->
 
 
 #### Missingness
@@ -2711,7 +2711,7 @@ Click to view visuals <span id="Question 8087_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8087-Item-7629-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8087-Item-7629-1.png)<!-- -->
 
 
 #### Missingness
@@ -2829,7 +2829,7 @@ Click to view visuals <span id="Question 8089_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8089-Item-7632-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8089-Item-7632-1.png)<!-- -->
 
 
 #### Missingness
@@ -2910,7 +2910,7 @@ Click to view visuals <span id="Question 8090_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8090-Item-7633-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8090-Item-7633-1.png)<!-- -->
 
 
 #### Missingness
@@ -3055,7 +3055,7 @@ Click to view visuals <span id="Question 8181_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8181-Item-7639-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8181-Item-7639-1.png)<!-- -->
 
 
 #### Missingness
@@ -3177,7 +3177,7 @@ Click to view visuals <span id="Question 8092_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8092-Item-7640-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Choice-Question-8092-Item-7640-1.png)<!-- -->
 
 
 #### Missingness
@@ -3281,7 +3281,7 @@ Click to view visuals <span id="Question 8093_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8093-Item-7641-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Choice-Question-8093-Item-7641-1.png)<!-- -->
 
 
 #### Missingness
@@ -3363,7 +3363,7 @@ Click to view visuals <span id="Question 8094_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8094-Item-7642-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8094-Item-7642-1.png)<!-- -->
 
 
 #### Missingness
@@ -3444,7 +3444,7 @@ Click to view visuals <span id="Question 8095_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8095-Item-7643-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8095-Item-7643-1.png)<!-- -->
 
 
 #### Missingness
@@ -3525,7 +3525,7 @@ Click to view visuals <span id="Question 8096_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8096-Item-7644-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8096-Item-7644-1.png)<!-- -->
 
 
 #### Missingness
@@ -3606,7 +3606,7 @@ Click to view visuals <span id="Question 8097_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8097-Item-7645-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8097-Item-7645-1.png)<!-- -->
 
 
 #### Missingness
@@ -3733,7 +3733,7 @@ Click to view visuals <span id="Question 8098_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8098-Item-7646-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Choice-Question-8098-Item-7646-1.png)<!-- -->
 
 
 #### Missingness
@@ -3887,7 +3887,7 @@ Click to view visuals <span id="Question 8101_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8101-Item-7650-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8101-Item-7650-1.png)<!-- -->
 
 
 #### Missingness
@@ -3968,7 +3968,7 @@ Click to view visuals <span id="Question 8102_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8102-Item-7651-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8102-Item-7651-1.png)<!-- -->
 
 
 #### Missingness
@@ -4085,7 +4085,7 @@ Click to view visuals <span id="Question 8104_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8104-Item-7654-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8104-Item-7654-1.png)<!-- -->
 
 
 #### Missingness
@@ -4166,7 +4166,7 @@ Click to view visuals <span id="Question 8105_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8105-Item-7655-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8105-Item-7655-1.png)<!-- -->
 
 
 #### Missingness
@@ -4224,17 +4224,6 @@ Missingness Intraclass Correlation (ICC) = 1.64
 
 
 
-```
-## The following object is masked from thisVar (pos = 5):
-## 
-##     49993
-```
-
-```
-## The following object is masked from thisVar (pos = 7):
-## 
-##     49993
-```
 
 
 </div>
@@ -4288,7 +4277,7 @@ Click to view visuals <span id="multiplesliderQuestion-810649993_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810649993_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810649993_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -4360,7 +4349,7 @@ Click to view visuals <span id="multiplesliderQuestion-810649987_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810649987_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810649987_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -4432,7 +4421,7 @@ Click to view visuals <span id="multiplesliderQuestion-810649989_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810649989_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810649989_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -4504,7 +4493,7 @@ Click to view visuals <span id="multiplesliderQuestion-810649991_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810649991_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810649991_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -4576,7 +4565,7 @@ Click to view visuals <span id="multiplesliderQuestion-810649995_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810649995_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810649995_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -4648,7 +4637,7 @@ Click to view visuals <span id="multiplesliderQuestion-810649997_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810649997_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810649997_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -4720,7 +4709,7 @@ Click to view visuals <span id="multiplesliderQuestion-810649999_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810649999_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810649999_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -4792,7 +4781,7 @@ Click to view visuals <span id="multiplesliderQuestion-810650001_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810650001_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810650001_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -4941,7 +4930,7 @@ Click to view visuals <span id="multiplesliderQuestion-810850004_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810850004_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810850004_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5013,7 +5002,7 @@ Click to view visuals <span id="multiplesliderQuestion-810850006_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810850006_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810850006_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5085,7 +5074,7 @@ Click to view visuals <span id="multiplesliderQuestion-810850008_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810850008_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810850008_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5157,7 +5146,7 @@ Click to view visuals <span id="multiplesliderQuestion-810850010_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810850010_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810850010_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5270,7 +5259,7 @@ Click to view visuals <span id="multiplesliderQuestion-810950012_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810950012_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810950012_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5342,7 +5331,7 @@ Click to view visuals <span id="multiplesliderQuestion-810950014_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810950014_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810950014_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5414,7 +5403,7 @@ Click to view visuals <span id="multiplesliderQuestion-810950016_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810950016_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810950016_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5486,7 +5475,7 @@ Click to view visuals <span id="multiplesliderQuestion-810950018_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810950018_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810950018_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5558,7 +5547,7 @@ Click to view visuals <span id="multiplesliderQuestion-810950020_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810950020_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810950020_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5630,7 +5619,7 @@ Click to view visuals <span id="multiplesliderQuestion-810950022_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-810950022_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-810950022_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5743,7 +5732,7 @@ Click to view visuals <span id="multiplesliderQuestion-811050024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-811050024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-811050024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5815,7 +5804,7 @@ Click to view visuals <span id="multiplesliderQuestion-811050026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-811050026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-811050026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5887,7 +5876,7 @@ Click to view visuals <span id="multiplesliderQuestion-811050028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-811050028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-811050028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -5959,7 +5948,7 @@ Click to view visuals <span id="multiplesliderQuestion-811050030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-811050030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-811050030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -6078,7 +6067,7 @@ Click to view visuals <span id="Question 8112_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8112-Item-7663-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8112-Item-7663-1.png)<!-- -->
 
 
 #### Missingness
@@ -6159,7 +6148,7 @@ Click to view visuals <span id="Question 8113_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8113-Item-7664-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8113-Item-7664-1.png)<!-- -->
 
 
 #### Missingness
@@ -6262,7 +6251,7 @@ Click to view visuals <span id="Question 8183_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Choice-Question-8183-Item-7690-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Choice-Question-8183-Item-7690-1.png)<!-- -->
 
 
 #### Missingness
@@ -6408,7 +6397,7 @@ Click to view visuals <span id="Question 8648_arrow">▼</span>
 
 #### Barplot
 
-![](Codebook_files/figure-html/barplot-Multiple-Select-Question-8648-Item-7667-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-8648-Item-7667-1.png)<!-- -->
 
 
 #### Missingness
@@ -6490,7 +6479,7 @@ Click to view visuals <span id="Question 8117_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8117-Item-7669-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8117-Item-7669-1.png)<!-- -->
 
 
 #### Missingness
@@ -6571,7 +6560,7 @@ Click to view visuals <span id="Question 8118_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8118-Item-7670-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8118-Item-7670-1.png)<!-- -->
 
 
 #### Missingness
@@ -6652,7 +6641,7 @@ Click to view visuals <span id="Question 8119_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8119-Item-7671-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8119-Item-7671-1.png)<!-- -->
 
 
 #### Missingness
@@ -6733,7 +6722,7 @@ Click to view visuals <span id="Question 8120_arrow">▼</span>
 
 #### Histogram
 
-![](Codebook_files/figure-html/histogram-Slider-Question-8120-Item-7672-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/histogram-Slider-Question-8120-Item-7672-1.png)<!-- -->
 
 
 #### Missingness
@@ -7604,7 +7593,7 @@ Click to view visuals <span id="multiplesliderQuestion-598250024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-598250024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598250024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -7676,7 +7665,7 @@ Click to view visuals <span id="multiplesliderQuestion-598250026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-598250026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598250026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -7748,7 +7737,7 @@ Click to view visuals <span id="multiplesliderQuestion-598250028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-598250028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598250028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -7820,7 +7809,7 @@ Click to view visuals <span id="multiplesliderQuestion-598250030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-598250030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598250030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -7933,7 +7922,7 @@ Click to view visuals <span id="multiplesliderQuestion-602350024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-602350024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602350024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -8005,7 +7994,7 @@ Click to view visuals <span id="multiplesliderQuestion-602350026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-602350026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602350026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -8077,7 +8066,7 @@ Click to view visuals <span id="multiplesliderQuestion-602350028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-602350028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602350028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -8149,7 +8138,7 @@ Click to view visuals <span id="multiplesliderQuestion-602350030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-602350030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602350030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9456,7 +9445,7 @@ Click to view visuals <span id="multiplesliderQuestion-600150024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600150024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600150024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9528,7 +9517,7 @@ Click to view visuals <span id="multiplesliderQuestion-600150026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600150026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600150026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9600,7 +9589,7 @@ Click to view visuals <span id="multiplesliderQuestion-600150028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600150028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600150028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9672,7 +9661,7 @@ Click to view visuals <span id="multiplesliderQuestion-600150030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600150030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600150030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9785,7 +9774,7 @@ Click to view visuals <span id="multiplesliderQuestion-600450024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600450024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600450024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9857,7 +9846,7 @@ Click to view visuals <span id="multiplesliderQuestion-600450026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600450026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600450026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -9929,7 +9918,7 @@ Click to view visuals <span id="multiplesliderQuestion-600450028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600450028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600450028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10001,7 +9990,7 @@ Click to view visuals <span id="multiplesliderQuestion-600450030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600450030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600450030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10114,7 +10103,7 @@ Click to view visuals <span id="multiplesliderQuestion-603150024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-603150024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603150024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10186,7 +10175,7 @@ Click to view visuals <span id="multiplesliderQuestion-603150026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-603150026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603150026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10258,7 +10247,7 @@ Click to view visuals <span id="multiplesliderQuestion-603150028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-603150028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603150028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10330,7 +10319,7 @@ Click to view visuals <span id="multiplesliderQuestion-603150030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-603150030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603150030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10479,7 +10468,7 @@ Click to view visuals <span id="multiplesliderQuestion-600750024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600750024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600750024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10551,7 +10540,7 @@ Click to view visuals <span id="multiplesliderQuestion-600750026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600750026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600750026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10623,7 +10612,7 @@ Click to view visuals <span id="multiplesliderQuestion-600750028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600750028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600750028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10695,7 +10684,7 @@ Click to view visuals <span id="multiplesliderQuestion-600750030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600750030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600750030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10808,7 +10797,7 @@ Click to view visuals <span id="multiplesliderQuestion-600850024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600850024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600850024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10880,7 +10869,7 @@ Click to view visuals <span id="multiplesliderQuestion-600850026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600850026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600850026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -10952,7 +10941,7 @@ Click to view visuals <span id="multiplesliderQuestion-600850028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600850028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600850028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11024,7 +11013,7 @@ Click to view visuals <span id="multiplesliderQuestion-600850030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600850030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600850030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11137,7 +11126,7 @@ Click to view visuals <span id="multiplesliderQuestion-600950024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600950024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600950024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11209,7 +11198,7 @@ Click to view visuals <span id="multiplesliderQuestion-600950026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600950026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600950026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11281,7 +11270,7 @@ Click to view visuals <span id="multiplesliderQuestion-600950028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600950028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600950028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11353,7 +11342,7 @@ Click to view visuals <span id="multiplesliderQuestion-600950030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-600950030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600950030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11502,7 +11491,7 @@ Click to view visuals <span id="multiplesliderQuestion-601150024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-601150024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601150024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11574,7 +11563,7 @@ Click to view visuals <span id="multiplesliderQuestion-601150026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-601150026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601150026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11646,7 +11635,7 @@ Click to view visuals <span id="multiplesliderQuestion-601150028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-601150028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601150028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11718,7 +11707,7 @@ Click to view visuals <span id="multiplesliderQuestion-601150030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-601150030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601150030_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11831,7 +11820,7 @@ Click to view visuals <span id="multiplesliderQuestion-601250024_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-601250024_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601250024_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11903,7 +11892,7 @@ Click to view visuals <span id="multiplesliderQuestion-601250026_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-601250026_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601250026_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -11975,7 +11964,7 @@ Click to view visuals <span id="multiplesliderQuestion-601250028_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-601250028_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601250028_histogram-1.png)<!-- -->
 
 
 #### Missingness
@@ -12047,7 +12036,7 @@ Click to view visuals <span id="multiplesliderQuestion-601250030_arrow">▼</spa
 
 
 
-![](Codebook_files/figure-html/multiplesliderQuestion-601250030_histogram-1.png)<!-- -->
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601250030_histogram-1.png)<!-- -->
 
 
 #### Missingness
