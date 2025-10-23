@@ -4,7 +4,8 @@ author: "`r params$authors`"
 date: "Codebook Generated `r Sys.Date()`"
 output: 
   html_document:
-    keep_md: true
+    self_contained: true
+    keep_md: false
     toc: true
     toc_depth: 5
     css: styles.css
