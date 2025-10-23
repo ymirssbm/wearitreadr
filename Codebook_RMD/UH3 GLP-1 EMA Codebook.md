@@ -1,7 +1,7 @@
 ---
 title: "UH3 GLP-1 Codebook"
 author: "Ethan O. Kile, Timothy R. Brick"
-date: "Codebook Generated 2025-09-30"
+date: "Codebook Generated 2025-10-03"
 output: 
   html_document:
     keep_md: true
@@ -276,7 +276,8 @@ Missingness Intraclass Correlation (ICC) = -2.59
 
 </div>
 
-</div> <!-- Header section -->
+</div> 
+### Block: Item 112 <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -438,7 +439,8 @@ Missingness Intraclass Correlation (ICC) = -1.29
 
 </div>
 
-</div> <!-- Header section -->
+</div> 
+### Block: Item 113 <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -520,8 +522,6 @@ Missingness Intraclass Correlation (ICC) = NaN
 </div>
 
 </div> 
-### Block: Item 112 
-### Block: Item 113 
 ## Daily Survey 1 ID 10 <!-- Header section -->
 
 <div class = "header-shading">
@@ -2567,7 +2567,8 @@ Missingness Intraclass Correlation (ICC) = 1.2
 
 </div>
 
-</div> <!-- Header section -->
+</div> 
+### Block: Item 79 <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -2707,7 +2708,8 @@ Missingness Intraclass Correlation (ICC) = 1.23
 </div>
 
 
-</div> <!-- Header section -->
+</div> 
+### Block: Item 77 <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -3378,7 +3380,8 @@ Missingness Intraclass Correlation (ICC) = NaN
 
 
 
-</div> <!-- Header section -->
+</div> 
+### Block: Item 81 <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -4108,9 +4111,6 @@ Missingness Intraclass Correlation (ICC) = 1.2
 </div>
 
 </div> 
-### Block: Item 81 
-### Block: Item 79 
-### Block: Item 77 
 ## Daily Survey 2 ID 11 <!-- Header section -->
 
 <div class = "header-shading">
@@ -4183,7 +4183,8 @@ Missingness Intraclass Correlation (ICC) = 1.2
 
 
 
-</div> <!-- Header section -->
+</div> 
+### Block: Item 84 <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -6250,11 +6251,6 @@ Missingness Intraclass Correlation (ICC) = 1.18
 
 
 
-```
-## The following object is masked from thisVar (pos = 4):
-## 
-##     1088
-```
 
 
 </div>
@@ -6589,7 +6585,8 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 </div>
 
 
- <!-- Header section -->
+ 
+### Block: Item 93 <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -6729,7 +6726,8 @@ Missingness Intraclass Correlation (ICC) = NaN
 </div>
 
 
-</div> <!-- Header section -->
+</div> 
+### Block: Item 77 <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -7960,7 +7958,8 @@ Missingness Intraclass Correlation (ICC) = 1.2
 </div>
 
 
-</div> <!-- Header section -->
+</div> 
+### Block: Item 103 <!-- Header section -->
 
 <div class = "header-shading">
 
@@ -8159,10 +8158,6 @@ Missingness Intraclass Correlation (ICC) = 1.36
 
 
 </div> 
-### Block: Item 84 
-### Block: Item 93 
-### Block: Item 77 
-### Block: Item 103 
 ## Self-elect Survey ID 12 <!-- Header section -->
 
 <div class = "header-shading">
@@ -13620,11 +13615,6 @@ This Item appears in these surveys
 
 
 
-```
-## The following object is masked from thisVar (pos = 4):
-## 
-##     1088
-```
 
 
 </div>
