@@ -1,10 +1,16 @@
 ---
 title: "Recovery Community Center and Recovery General Combined Codebook"
 author: "Ethan O. Kile, Timothy R. Brick"
+<<<<<<< HEAD
 date: "Codebook Generated 2025-10-14"
 output: 
   html_document:
     self_contained: true
+=======
+date: "Codebook Generated 2025-10-13"
+output: 
+  html_document:
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
     keep_md: true
     toc: true
     toc_depth: 5
@@ -77,8 +83,12 @@ Ethan O. Kile, Timothy R. Brick
 
 
  
+<<<<<<< HEAD
 ## Daily Diary 
 ### Block: Item 7677 <!-- Header section -->
+=======
+## Daily Diary ID 470 <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -196,6 +206,7 @@ Click to view visuals <span id="Question 8176_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2811 / 2862
 
 Missing = 51
@@ -203,6 +214,15 @@ Min = 0, Max = 5, Mean = 0.1, SD = 0.53
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.07 
+=======
+Answered / Delivered = 17537 / 17646
+
+Missing = 109
+Min = 0, Max = 5, Mean = 0.1, SD = 0.53
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.02 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -278,50 +298,88 @@ Click to view visuals <span id="Question 8066_arrow">▼</span>
   <tr>
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> Certified Recovery Coach/specialist </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 21 </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 19 </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <td style="text-align:left;"> 2.8% </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 2 </td>
    <td style="text-align:left;"> Non-recovery friends and family </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 173 </td>
    <td style="text-align:left;"> 22.7% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 163 </td>
+   <td style="text-align:left;"> 24.4% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
   <tr>
    <td style="text-align:left;"> 3 </td>
    <td style="text-align:left;"> Recovering friends and family </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 207 </td>
    <td style="text-align:left;"> 27.1% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 179 </td>
+   <td style="text-align:left;"> 26.8% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
   <tr>
    <td style="text-align:left;"> 4 </td>
    <td style="text-align:left;"> My sponsor </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 60 </td>
    <td style="text-align:left;"> 7.9% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 50 </td>
+   <td style="text-align:left;"> 7.5% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
   <tr>
    <td style="text-align:left;"> 5 </td>
    <td style="text-align:left;"> Therapist/counselor </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 37 </td>
    <td style="text-align:left;"> 4.8% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 30 </td>
+   <td style="text-align:left;"> 4.5% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
   <tr>
    <td style="text-align:left;"> 6 </td>
    <td style="text-align:left;"> Community Resource – recovery center, mutual aid meeting, drug courts, educational setting, recovery housing,  treatment center, etc. </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 98 </td>
    <td style="text-align:left;"> 12.8% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 79 </td>
+   <td style="text-align:left;"> 11.8% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
   <tr>
    <td style="text-align:left;"> 7 </td>
    <td style="text-align:left;"> Cultural/Spiritual/Faith-Based Institution </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 37 </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 32 </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <td style="text-align:left;"> 4.8% </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 8 </td>
    <td style="text-align:left;"> Another source of support </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 130 </td>
    <td style="text-align:left;"> 17% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 115 </td>
+   <td style="text-align:left;"> 17.2% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
 </tbody>
 </table>
@@ -336,6 +394,7 @@ Click to view visuals <span id="Question 8066_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2242 / 2281
 
 Missing = 39
@@ -343,6 +402,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.1
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -1.3 
+=======
+Answered / Delivered = 16910 / 17007
+
+Missing = 97
+Min = 0, Max = 1, Mean = 0.01, SD = 0.1
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 2.36 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -464,6 +532,7 @@ Click to view visuals <span id="Question 8177_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2816 / 2856
 
 Missing = 40
@@ -471,6 +540,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -2280.44 
+=======
+Answered / Delivered = 17542 / 17640
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.64 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -604,6 +682,7 @@ Click to view visuals <span id="Question 8178_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2406 / 2445
 
 Missing = 39
@@ -611,6 +690,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -0.97 
+=======
+Answered / Delivered = 17132 / 17229
+
+Missing = 97
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 3.37 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -738,6 +826,7 @@ Click to view visuals <span id="Question 8069_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2819 / 2859
 
 Missing = 40
@@ -745,6 +834,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1559.92 
+=======
+Answered / Delivered = 17545 / 17643
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.64 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -754,8 +852,12 @@ Missingness Intraclass Correlation (ICC) = 1559.92
 </div>
 
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7615 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -891,9 +993,15 @@ Click to view visuals <span id="Question 8070_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1948 / 1986
 
 Missing = 38
+=======
+Answered / Delivered = 16674 / 16770
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -963,6 +1071,7 @@ Click to view visuals <span id="Question 8179_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1877 / 2537
 
 Missing = 660
@@ -970,6 +1079,15 @@ Min = 0, Max = 22, Mean = 6.62, SD = 5.54
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.02 
+=======
+Answered / Delivered = 16526 / 16700
+
+Missing = 174
+Min = 0, Max = 9, Mean = 1.9, SD = 2.35
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -979,8 +1097,12 @@ Missingness Intraclass Correlation (ICC) = 1.02
 </div>
 
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7613 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -1127,9 +1249,15 @@ Click to view visuals <span id="Question 8071_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1844 / 1882
 
 Missing = 38
+=======
+Answered / Delivered = 16570 / 16666
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -1245,6 +1373,7 @@ Click to view visuals <span id="Question 8073_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1947 / 1986
 
 Missing = 39
@@ -1252,6 +1381,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -2.39 
+=======
+Answered / Delivered = 16673 / 16770
+
+Missing = 97
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.68 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -1326,9 +1464,15 @@ Click to view visuals <span id="Question 8074_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1948 / 1986
 
 Missing = 38
+=======
+Answered / Delivered = 16674 / 16770
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -1429,6 +1573,7 @@ Click to view visuals <span id="Question 8075_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2817 / 2858
 
 Missing = 41
@@ -1436,6 +1581,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 2.91 
+=======
+Answered / Delivered = 17543 / 17642
+
+Missing = 99
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.34 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -1445,8 +1599,12 @@ Missingness Intraclass Correlation (ICC) = 2.91
 </div>
 
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7636 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -1564,9 +1722,15 @@ Click to view visuals <span id="Question 8076_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1807 / 1845
 
 Missing = 38
+=======
+Answered / Delivered = 16533 / 16629
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -1580,8 +1744,12 @@ Missingness Intraclass Correlation (ICC) = 0
 </div>
 
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7637 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -1749,9 +1917,15 @@ Click to view visuals <span id="Question 8077_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1805 / 1843
 
 Missing = 38
+=======
+Answered / Delivered = 16531 / 16627
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -1821,6 +1995,7 @@ Click to view visuals <span id="Question 8078_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1769 / 1807
 
 Missing = 38
@@ -1828,6 +2003,15 @@ Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = NA 
+=======
+Answered / Delivered = 16496 / 16625
+
+Missing = 129
+Min = 1, Max = 10, Mean = 4.71, SD = 4.39
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -1977,9 +2161,15 @@ Click to view visuals <span id="Question 8079_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1776 / 1843
 
 Missing = 67
+=======
+Answered / Delivered = 16502 / 16627
+
+Missing = 125
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 10, Mean = 3.22, SD = 4.18
 (Descriptives are rounded to 2 decimals)
 
@@ -2095,9 +2285,15 @@ Click to view visuals <span id="Question 8081_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1805 / 1843
 
 Missing = 38
+=======
+Answered / Delivered = 16531 / 16627
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -2176,9 +2372,15 @@ Click to view visuals <span id="Question 8082_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1805 / 1843
 
 Missing = 38
+=======
+Answered / Delivered = 16531 / 16627
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -2219,8 +2421,12 @@ Missingness Intraclass Correlation (ICC) = 0
 
 **Type of data:** NA
 
+<<<<<<< HEAD
 </div>  
 ### Block: Item 7635 <!-- Header section -->
+=======
+</div>  <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -2356,6 +2562,7 @@ Click to view visuals <span id="Question 8084_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2815 / 2855
 
 Missing = 40
@@ -2363,6 +2570,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -1251.74 
+=======
+Answered / Delivered = 17541 / 17639
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.64 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -2428,6 +2644,7 @@ Click to view visuals <span id="Question 8085_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1769 / 1807
 
 Missing = 38
@@ -2435,6 +2652,15 @@ Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = NA 
+=======
+Answered / Delivered = 16571 / 17178
+
+Missing = 607
+Min = 0, Max = 12, Mean = 5.74, SD = 4.13
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -2444,8 +2670,12 @@ Missingness Intraclass Correlation (ICC) = NA
 </div>
 
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7630 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -2592,9 +2822,15 @@ Click to view visuals <span id="Question 8180_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1978 / 2016
 
 Missing = 38
+=======
+Answered / Delivered = 16704 / 16800
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -2726,9 +2962,15 @@ Click to view visuals <span id="Question 8087_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1981 / 2019
 
 Missing = 38
+=======
+Answered / Delivered = 16707 / 16803
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -2844,6 +3086,7 @@ Click to view visuals <span id="Question 8089_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2814 / 2855
 
 Missing = 41
@@ -2851,6 +3094,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 2.92 
+=======
+Answered / Delivered = 17540 / 17639
+
+Missing = 99
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.34 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -2925,6 +3177,7 @@ Click to view visuals <span id="Question 8090_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2814 / 2854
 
 Missing = 40
@@ -2932,6 +3185,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -862.43 
+=======
+Answered / Delivered = 17540 / 17638
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.01, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.64 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -3070,6 +3332,7 @@ Click to view visuals <span id="Question 8181_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2806 / 2850
 
 Missing = 44
@@ -3077,6 +3340,15 @@ Min = 0, Max = 2, Mean = 0.05, SD = 0.24
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.38 
+=======
+Answered / Delivered = 17532 / 17634
+
+Missing = 102
+Min = 0, Max = 2, Mean = 0.05, SD = 0.24
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.11 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -3152,32 +3424,56 @@ Click to view visuals <span id="Question 8092_arrow">▼</span>
   <tr>
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> Extremely Difficult </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 21 </td>
    <td style="text-align:left;"> 1% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 17 </td>
+   <td style="text-align:left;"> 0.9% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
   <tr>
    <td style="text-align:left;"> 2 </td>
    <td style="text-align:left;"> Very difficult </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 35 </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 33 </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <td style="text-align:left;"> 1.7% </td>
   </tr>
   <tr>
    <td style="text-align:left;"> 3 </td>
    <td style="text-align:left;"> Moderately Difficult </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 107 </td>
    <td style="text-align:left;"> 5.2% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 94 </td>
+   <td style="text-align:left;"> 4.9% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
   <tr>
    <td style="text-align:left;"> 4 </td>
    <td style="text-align:left;"> Slightly Difficult </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 194 </td>
    <td style="text-align:left;"> 9.5% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 175 </td>
+   <td style="text-align:left;"> 9.2% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
   <tr>
    <td style="text-align:left;"> 5 </td>
    <td style="text-align:left;"> Not at all Difficult </td>
+<<<<<<< HEAD
    <td style="text-align:left;color: darkgreen !important;"> N = 1684 </td>
    <td style="text-align:left;"> 82.5% </td>
+=======
+   <td style="text-align:left;color: darkgreen !important;"> N = 1589 </td>
+   <td style="text-align:left;"> 83.3% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
 </tbody>
 </table>
@@ -3192,6 +3488,7 @@ Click to view visuals <span id="Question 8092_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 3810 / 3851
 
 Missing = 41
@@ -3199,6 +3496,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 9.89 
+=======
+Answered / Delivered = 18403 / 18502
+
+Missing = 99
+Min = 0, Max = 1, Mean = 0.01, SD = 0.11
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.81 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -3296,6 +3602,7 @@ Click to view visuals <span id="Question 8093_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 3675 / 3715
 
 Missing = 40
@@ -3303,6 +3610,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -2.79 
+=======
+Answered / Delivered = 18401 / 18499
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 2.95 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -3312,8 +3628,12 @@ Missingness Intraclass Correlation (ICC) = -2.79
 </div>
 
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7647 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -3379,6 +3699,7 @@ Click to view visuals <span id="Question 8094_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2637 / 2679
 
 Missing = 42
@@ -3386,6 +3707,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 3.56 
+=======
+Answered / Delivered = 17363 / 17463
+
+Missing = 100
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.35 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -3460,6 +3790,7 @@ Click to view visuals <span id="Question 8095_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2637 / 2679
 
 Missing = 42
@@ -3467,6 +3798,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 3.56 
+=======
+Answered / Delivered = 17363 / 17463
+
+Missing = 100
+Min = 0, Max = 1, Mean = 0.02, SD = 0.15
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.35 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -3541,6 +3881,7 @@ Click to view visuals <span id="Question 8096_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2639 / 2679
 
 Missing = 40
@@ -3548,6 +3889,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -3.68 
+=======
+Answered / Delivered = 17365 / 17463
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.01, SD = 0.11
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.88 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -3622,6 +3972,7 @@ Click to view visuals <span id="Question 8097_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2639 / 2679
 
 Missing = 40
@@ -3629,6 +3980,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -3.68 
+=======
+Answered / Delivered = 17365 / 17463
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.01, SD = 0.11
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.88 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -3637,8 +3997,12 @@ Missingness Intraclass Correlation (ICC) = -3.68
 
 </div>
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7648 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -3750,6 +4114,7 @@ Click to view visuals <span id="Question 8098_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2803 / 2842
 
 Missing = 39
@@ -3757,6 +4122,15 @@ Min = 0, Max = 1, Mean = 0, SD = 0.07
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -0.53 
+=======
+Answered / Delivered = 17529 / 17626
+
+Missing = 97
+Min = 0, Max = 1, Mean = 0, SD = 0.07
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = -7.38 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -3802,8 +4176,12 @@ Missingness Intraclass Correlation (ICC) = -0.53
 
 
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7657 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -3875,7 +4253,11 @@ Missingness Intraclass Correlation (ICC) = -0.53
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, Max = 100, Mean = 11.91, SD = 20.58 
+=======
+Min = 0, Max = 100, Mean = 11.73, SD = 20.44 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -3905,6 +4287,7 @@ Click to view visuals <span id="Question 8101_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 3910 / 3949
 
 Missing = 39
@@ -3912,6 +4295,15 @@ Min = 0, Max = 1, Mean = 0, SD = 0.06
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -0.56 
+=======
+Answered / Delivered = 18503 / 18600
+
+Missing = 97
+Min = 0, Max = 1, Mean = 0, SD = 0.06
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = -2.16 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -3956,7 +4348,11 @@ Missingness Intraclass Correlation (ICC) = -0.56
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, Max = 100, Mean = 11.42, SD = 20.09 
+=======
+Min = 0, Max = 100, Mean = 11.19, SD = 19.91 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -3986,6 +4382,7 @@ Click to view visuals <span id="Question 8102_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 3904 / 3947
 
 Missing = 43
@@ -3993,6 +4390,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.14
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 2.32 
+=======
+Answered / Delivered = 18498 / 18598
+
+Missing = 100
+Min = 0, Max = 1, Mean = 0.02, SD = 0.13
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.47 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -4103,6 +4509,7 @@ Click to view visuals <span id="Question 8104_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2813 / 2853
 
 Missing = 40
@@ -4110,6 +4517,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -657.71 
+=======
+Answered / Delivered = 17539 / 17637
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.64 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -4184,6 +4600,7 @@ Click to view visuals <span id="Question 8105_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2813 / 2853
 
 Missing = 40
@@ -4191,6 +4608,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -657.71 
+=======
+Answered / Delivered = 17539 / 17637
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.64 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -4852,8 +5278,12 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7665 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -6086,6 +6516,7 @@ Click to view visuals <span id="Question 8112_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2812 / 2851
 
 Missing = 39
@@ -6093,6 +6524,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.09
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -1.36 
+=======
+Answered / Delivered = 17538 / 17635
+
+Missing = 97
+Min = 0, Max = 1, Mean = 0.01, SD = 0.09
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 3.19 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -6167,6 +6607,7 @@ Click to view visuals <span id="Question 8113_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2811 / 2851
 
 Missing = 40
@@ -6174,6 +6615,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -445.83 
+=======
+Answered / Delivered = 17537 / 17635
+
+Missing = 98
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.64 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -6182,8 +6632,12 @@ Missingness Intraclass Correlation (ICC) = -445.83
 
 </div>
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7675 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -6271,9 +6725,15 @@ Click to view visuals <span id="Question 8183_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2328 / 2366
 
 Missing = 38
+=======
+Answered / Delivered = 17054 / 17150
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -6287,8 +6747,12 @@ Missingness Intraclass Correlation (ICC) = 0
 </div>
 
 
+<<<<<<< HEAD
 </div> 
 ### Block: Item 7673 <!-- Header section -->
+=======
+</div> <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -6418,9 +6882,15 @@ Click to view visuals <span id="Question 8648_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2248 / 2286
 
 Missing = 38
+=======
+Answered / Delivered = 16974 / 17070
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -6500,9 +6970,15 @@ Click to view visuals <span id="Question 8117_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2253 / 2291
 
 Missing = 38
+=======
+Answered / Delivered = 16979 / 17075
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
@@ -6581,6 +7057,7 @@ Click to view visuals <span id="Question 8118_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2252 / 2291
 
 Missing = 39
@@ -6588,6 +7065,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -4.48 
+=======
+Answered / Delivered = 16978 / 17075
+
+Missing = 97
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.66 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -6662,6 +7148,7 @@ Click to view visuals <span id="Question 8119_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2252 / 2291
 
 Missing = 39
@@ -6669,6 +7156,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -4.48 
+=======
+Answered / Delivered = 16978 / 17075
+
+Missing = 97
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.66 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -6743,6 +7239,7 @@ Click to view visuals <span id="Question 8120_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2252 / 2291
 
 Missing = 39
@@ -6750,6 +7247,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.12
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -4.48 
+=======
+Answered / Delivered = 16978 / 17075
+
+Missing = 97
+Min = 0, Max = 1, Mean = 0.02, SD = 0.12
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1.66 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -6842,6 +7348,7 @@ Click to view visuals <span id="Question 8122_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2566 / 2848
 
 Missing = 282
@@ -6849,6 +7356,15 @@ Min = 0, Max = 11, Mean = 1.85, SD = 2.52
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.02 
+=======
+Answered / Delivered = 17292 / 17632
+
+Missing = 340
+Min = 0, Max = 11, Mean = 1.85, SD = 2.52
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = 1 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -6858,7 +7374,25 @@ Missingness Intraclass Correlation (ICC) = 1.02
 </div>
 
 
+<<<<<<< HEAD
 </div> <!-- Header section -->
+=======
+</div> 
+### Block: Item 7677 
+### Block: Item 7615 
+### Block: Item 7636 
+### Block: Item 7635 
+### Block: Item 7613 
+### Block: Item 7637 
+### Block: Item 7630 
+### Block: Item 7647 
+### Block: Item 7648 
+### Block: Item 7657 
+### Block: Item 7665 
+### Block: Item 7675 
+### Block: Item 7673 
+## Daily Diary ID 365 <!-- Header section -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 <div class = "header-shading">
 
@@ -6909,12 +7443,19 @@ Click to view visuals <span id="Question 5976_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Frequency Table
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Value </th>
+=======
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Value </th>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <th style="text-align:left;"> Label </th>
    <th style="text-align:left;"> Counts </th>
    <th style="text-align:left;"> Percentages </th>
@@ -6922,6 +7463,7 @@ Click to view visuals <span id="Question 5976_arrow">▼</span>
  </thead>
 <tbody>
   <tr>
+<<<<<<< HEAD
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> Watched TV / looked at social media </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 505 </td>
@@ -6992,20 +7534,97 @@ Click to view visuals <span id="Question 5976_arrow">▼</span>
    <td style="text-align:left;"> Other activity </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 231 </td>
    <td style="text-align:left;"> 9.1% </td>
+=======
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;"> Watched TV / looked at social media </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:left;"> Read off line </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:left;"> Read on line </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:left;"> Other activity </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:left;"> Played video games </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> Walked </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> Shopped or did errands </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:left;"> Worked at job </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> Helped family </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:left;"> Household chores </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:left;"> Provided child care </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:left;"> Physical activity </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
 </tbody>
 </table>
 
 
+<<<<<<< HEAD
 #### Barplot
 
 ![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-5976-Item-5734-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2649 / 2689
 
 Missing = 40
@@ -7013,6 +7632,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.13
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 10.75 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -7073,12 +7701,19 @@ Click to view visuals <span id="Question 5978_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Frequency Table
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Value </th>
+=======
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Value </th>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <th style="text-align:left;"> Label </th>
    <th style="text-align:left;"> Counts </th>
    <th style="text-align:left;"> Percentages </th>
@@ -7086,6 +7721,7 @@ Click to view visuals <span id="Question 5978_arrow">▼</span>
  </thead>
 <tbody>
   <tr>
+<<<<<<< HEAD
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> Recovery Community Center (RCC) </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 267 </td>
@@ -7138,20 +7774,79 @@ Click to view visuals <span id="Question 5978_arrow">▼</span>
    <td style="text-align:left;"> Other place </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 150 </td>
    <td style="text-align:left;"> 8.1% </td>
+=======
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;"> Recovery Community Center (RCC) </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:left;"> Home </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> Friend's house/apartment </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> Outdoor public place (park, yard) </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:left;"> At your job </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> At a store/shopping </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:left;"> Restaurant </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:left;"> Bar </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:left;"> Other place </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
 </tbody>
 </table>
 
 
+<<<<<<< HEAD
 #### Barplot
 
 ![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-5978-Item-5736-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2645 / 2686
 
 Missing = 41
@@ -7159,6 +7854,15 @@ Min = 0, Max = 1, Mean = 0.03, SD = 0.16
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 2.6 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -7219,12 +7923,19 @@ Click to view visuals <span id="Question 5979_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Frequency Table
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Value </th>
+=======
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Value </th>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <th style="text-align:left;"> Label </th>
    <th style="text-align:left;"> Counts </th>
    <th style="text-align:left;"> Percentages </th>
@@ -7232,6 +7943,7 @@ Click to view visuals <span id="Question 5979_arrow">▼</span>
  </thead>
 <tbody>
   <tr>
+<<<<<<< HEAD
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> Less than five minutes </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 5 </td>
@@ -7266,20 +7978,61 @@ Click to view visuals <span id="Question 5979_arrow">▼</span>
    <td style="text-align:left;"> More than 4 hours </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 25 </td>
    <td style="text-align:left;"> 9.5% </td>
+=======
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;"> Less than five minutes </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:left;"> 5 - 30 minutes </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> 30 - 60 minutes </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> 1 - 2 hours </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:left;"> 2 - 4 hours </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> More than 4 hours </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
 </tbody>
 </table>
 
 
+<<<<<<< HEAD
 #### Barplot
 
 ![](rccRgCodebook_files/figure-html/barplot-Multiple-Choice-Question-5979-Item-5737-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2031 / 2069
 
 Missing = 38
@@ -7287,6 +8040,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -7347,12 +8109,19 @@ Click to view visuals <span id="Question 6022_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Frequency Table
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Value </th>
+=======
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Value </th>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <th style="text-align:left;"> Label </th>
    <th style="text-align:left;"> Counts </th>
    <th style="text-align:left;"> Percentages </th>
@@ -7360,6 +8129,7 @@ Click to view visuals <span id="Question 6022_arrow">▼</span>
  </thead>
 <tbody>
   <tr>
+<<<<<<< HEAD
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> Attended a recovery support group meeting (e.g., 12 step or ANY other group meeting) </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 147 </td>
@@ -7418,20 +8188,85 @@ Click to view visuals <span id="Question 6022_arrow">▼</span>
    <td style="text-align:left;"> Other </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 28 </td>
    <td style="text-align:left;"> 4.8% </td>
+=======
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;"> Attended a recovery support group meeting (e.g., 12 step or ANY other group meeting) </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:left;"> Other </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:left;"> Volunteered </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> Just hung out / social activities </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> Connected to the recovery community </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:left;"> Used computer or WiFi </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> Received recovery coaching </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:left;"> Tried to help or be there for others </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:left;"> Got advice for financial, legal, housing, education, psychological, or medical issues </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:left;"> Took part in a health / exercise / meditation / self-care class </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
 </tbody>
 </table>
 
 
+<<<<<<< HEAD
 #### Barplot
 
 ![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-6022-Item-5738-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2024 / 2062
 
 Missing = 38
@@ -7439,6 +8274,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -7504,6 +8348,7 @@ Click to view visuals <span id="Question 5981_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2113 / 2153
 
 Missing = 40
@@ -7511,6 +8356,15 @@ Min = 0, Max = 1, Mean = 0.02, SD = 0.15
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 7.01 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -7562,7 +8416,11 @@ Missingness Intraclass Correlation (ICC) = 7.01
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### How helpful to your recovery was being at the RCC?
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -7575,7 +8433,11 @@ Missingness Intraclass Correlation (ICC) = 7.01
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 21, max = 100, mean = 85.58, std = 16.74
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -7586,6 +8448,7 @@ Min = 21, max = 100, mean = 85.58, std = 16.74
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-598238503');
            let arrow = document.getElementById('multiplesliderQuestion-598238503_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -7595,6 +8458,17 @@ Click to view visuals <span id="multiplesliderQuestion-598238503_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-598238503" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-598250024');
+           let arrow = document.getElementById('multiplesliderQuestion-598250024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-598250024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-598250024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -7609,6 +8483,7 @@ Click to view visuals <span id="multiplesliderQuestion-598238503_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598238503_histogram-1.png)<!-- -->
 
 
@@ -7826,6 +8701,9 @@ Click to view visuals <span id="multiplesliderQuestion-598238509_arrow">▼</spa
 
 
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598238509_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598250024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -7863,7 +8741,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 9, max = 100, mean = 88.61, std = 15.82
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -7874,6 +8756,7 @@ Min = 9, max = 100, mean = 88.61, std = 15.82
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-598238791');
            let arrow = document.getElementById('multiplesliderQuestion-598238791_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -7883,6 +8766,17 @@ Click to view visuals <span id="multiplesliderQuestion-598238791_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-598238791" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-598250026');
+           let arrow = document.getElementById('multiplesliderQuestion-598250026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-598250026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-598250026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -7897,7 +8791,11 @@ Click to view visuals <span id="multiplesliderQuestion-598238791_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598238791_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598250026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -7935,7 +8833,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 18, max = 100, mean = 87.53, std = 16.53
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -7946,6 +8848,7 @@ Min = 18, max = 100, mean = 87.53, std = 16.53
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-598238793');
            let arrow = document.getElementById('multiplesliderQuestion-598238793_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -7955,6 +8858,17 @@ Click to view visuals <span id="multiplesliderQuestion-598238793_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-598238793" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-598250028');
+           let arrow = document.getElementById('multiplesliderQuestion-598250028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-598250028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-598250028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -7969,7 +8883,11 @@ Click to view visuals <span id="multiplesliderQuestion-598238793_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598238793_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598250028_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -8007,7 +8925,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 18, max = 100, mean = 86.35, std = 17.35
+=======
+Min = 0, max = 100, mean = 73.79, std = 24.3
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -8018,6 +8940,7 @@ Min = 18, max = 100, mean = 86.35, std = 17.35
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-598238795');
            let arrow = document.getElementById('multiplesliderQuestion-598238795_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -8027,6 +8950,17 @@ Click to view visuals <span id="multiplesliderQuestion-598238795_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-598238795" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-598250030');
+           let arrow = document.getElementById('multiplesliderQuestion-598250030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-598250030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-598250030" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -8041,7 +8975,11 @@ Click to view visuals <span id="multiplesliderQuestion-598238795_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598238795_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-598250030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -8120,7 +9058,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 21, max = 100, mean = 85.58, std = 16.74
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -8131,6 +9073,7 @@ Min = 21, max = 100, mean = 85.58, std = 16.74
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-602338503');
            let arrow = document.getElementById('multiplesliderQuestion-602338503_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -8140,6 +9083,17 @@ Click to view visuals <span id="multiplesliderQuestion-602338503_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-602338503" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-602350024');
+           let arrow = document.getElementById('multiplesliderQuestion-602350024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-602350024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-602350024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -8154,7 +9108,11 @@ Click to view visuals <span id="multiplesliderQuestion-602338503_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602338503_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602350024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -8192,7 +9150,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 12, max = 100, mean = 85.12, std = 18.68
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -8203,6 +9165,7 @@ Min = 12, max = 100, mean = 85.12, std = 18.68
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-602338505');
            let arrow = document.getElementById('multiplesliderQuestion-602338505_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -8212,6 +9175,17 @@ Click to view visuals <span id="multiplesliderQuestion-602338505_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-602338505" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-602350026');
+           let arrow = document.getElementById('multiplesliderQuestion-602350026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-602350026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-602350026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -8226,7 +9200,11 @@ Click to view visuals <span id="multiplesliderQuestion-602338505_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602338505_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602350026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -8264,7 +9242,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 15, max = 100, mean = 87.5, std = 17.03
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -8275,6 +9257,7 @@ Min = 15, max = 100, mean = 87.5, std = 17.03
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-602338507');
            let arrow = document.getElementById('multiplesliderQuestion-602338507_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -8284,6 +9267,17 @@ Click to view visuals <span id="multiplesliderQuestion-602338507_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-602338507" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-602350028');
+           let arrow = document.getElementById('multiplesliderQuestion-602350028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-602350028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-602350028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -8298,7 +9292,11 @@ Click to view visuals <span id="multiplesliderQuestion-602338507_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602338507_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602350028_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -8336,7 +9334,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 15, max = 100, mean = 86.42, std = 18.32
+=======
+Min = 0, max = 100, mean = 73.79, std = 24.3
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -8347,6 +9349,7 @@ Min = 15, max = 100, mean = 86.42, std = 18.32
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-602338509');
            let arrow = document.getElementById('multiplesliderQuestion-602338509_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -8356,6 +9359,17 @@ Click to view visuals <span id="multiplesliderQuestion-602338509_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-602338509" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-602350030');
+           let arrow = document.getElementById('multiplesliderQuestion-602350030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-602350030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-602350030" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -8370,6 +9384,7 @@ Click to view visuals <span id="multiplesliderQuestion-602338509_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602338509_histogram-1.png)<!-- -->
 
 
@@ -8587,6 +9602,9 @@ Click to view visuals <span id="multiplesliderQuestion-602338795_arrow">▼</spa
 
 
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602338795_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-602350030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -8661,12 +9679,19 @@ Click to view visuals <span id="Question 6074_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Frequency Table
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Value </th>
+=======
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Value </th>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <th style="text-align:left;"> Label </th>
    <th style="text-align:left;"> Counts </th>
    <th style="text-align:left;"> Percentages </th>
@@ -8674,6 +9699,7 @@ Click to view visuals <span id="Question 6074_arrow">▼</span>
  </thead>
 <tbody>
   <tr>
+<<<<<<< HEAD
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> Attended a recovery support group meeting (e.g., 12 step or ANY other group meeting) </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 177 </td>
@@ -8732,20 +9758,85 @@ Click to view visuals <span id="Question 6074_arrow">▼</span>
    <td style="text-align:left;"> Other </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 89 </td>
    <td style="text-align:left;"> 8.1% </td>
+=======
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;"> Attended a recovery support group meeting (e.g., 12 step or ANY other group meeting) </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:left;"> Other </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:left;"> Volunteered </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> Just hung out / social activities </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> Connected to the recovery community </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:left;"> Used computer or WiFi </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> Received recovery coaching </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:left;"> Tried to help or be there for others </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:left;"> Got advice for financial, legal, housing, education, psychological, or medical issues </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:left;"> Took part in a health / exercise / meditation / self-care class </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
 </tbody>
 </table>
 
 
+<<<<<<< HEAD
 #### Barplot
 
 ![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-6074-Item-5742-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2360 / 2402
 
 Missing = 42
@@ -8753,6 +9844,15 @@ Min = 0, Max = 2, Mean = 0.04, SD = 0.25
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.41 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -8818,9 +9918,15 @@ Click to view visuals <span id="Question 5985_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1769 / 1807
 
 Missing = 38
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 
@@ -8885,12 +9991,19 @@ Click to view visuals <span id="Question 5987_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Frequency Table
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Value </th>
+=======
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Value </th>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <th style="text-align:left;"> Label </th>
    <th style="text-align:left;"> Counts </th>
    <th style="text-align:left;"> Percentages </th>
@@ -8898,6 +10011,7 @@ Click to view visuals <span id="Question 5987_arrow">▼</span>
  </thead>
 <tbody>
   <tr>
+<<<<<<< HEAD
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> I did not attend any recovery meetings today </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 455 </td>
@@ -8962,20 +10076,91 @@ Click to view visuals <span id="Question 5987_arrow">▼</span>
    <td style="text-align:left;"> Other </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 78 </td>
    <td style="text-align:left;"> 7.7% </td>
+=======
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;"> I did not attend any recovery meetings today </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:left;"> Grief support </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:left;"> Other </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:left;"> "All Recovery" </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> Dual Recovery Anonymous </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> Recovery Life </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:left;"> SMART Recovery </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> Gambler's Anonymous </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:left;"> AA/NA </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:left;"> MAT/MAR Meeting </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:left;"> Mindfulness-based recovery </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
 </tbody>
 </table>
 
 
+<<<<<<< HEAD
 #### Barplot
 
 ![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-5987-Item-5748-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2728 / 2771
 
 Missing = 43
@@ -8983,6 +10168,15 @@ Min = 0, Max = 2, Mean = 0.04, SD = 0.24
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.38 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -9043,12 +10237,19 @@ Click to view visuals <span id="Question 6024_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Frequency Table
 
 <table class="table" style="color: black; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> Value </th>
+=======
+<table class="table" style="color: black; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Value </th>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
    <th style="text-align:left;"> Label </th>
    <th style="text-align:left;"> Counts </th>
    <th style="text-align:left;"> Percentages </th>
@@ -9056,6 +10257,7 @@ Click to view visuals <span id="Question 6024_arrow">▼</span>
  </thead>
 <tbody>
   <tr>
+<<<<<<< HEAD
    <td style="text-align:left;"> 1 </td>
    <td style="text-align:left;"> RCC </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 145 </td>
@@ -9096,20 +10298,67 @@ Click to view visuals <span id="Question 6024_arrow">▼</span>
    <td style="text-align:left;"> Other </td>
    <td style="text-align:left;color: darkgreen !important;"> N = 48 </td>
    <td style="text-align:left;"> 10% </td>
+=======
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;"> RCC </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:left;"> Church / religious institution </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:left;"> Other government building </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:left;"> Clubhouse </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:left;"> Community center </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:left;"> Online </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:left;"> Other </td>
+   <td style="text-align:left;color: darkgreen !important;"> N = 0 </td>
+   <td style="text-align:left;"> 0% </td>
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
   </tr>
 </tbody>
 </table>
 
 
+<<<<<<< HEAD
 #### Barplot
 
 ![](rccRgCodebook_files/figure-html/barplot-Multiple-Select-Question-6024-Item-5784-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2198 / 2236
 
 Missing = 38
@@ -9117,6 +10366,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -9182,6 +10440,7 @@ Click to view visuals <span id="Question 6025_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1817 / 1855
 
 Missing = 38
@@ -9189,6 +10448,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -9234,7 +10502,11 @@ Missingness Intraclass Correlation (ICC) = 0
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 13, Max = 100, Mean = 88.71, SD = 15.33 
+=======
+Min = NA, Max = NA, Mean = NA, SD = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9255,15 +10527,20 @@ Click to view visuals <span id="Question 6076_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Histogram
 
 ![](rccRgCodebook_files/figure-html/histogram-Slider-Question-6076-Item-5750-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2190 / 2229
 
 Missing = 39
@@ -9271,6 +10548,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -2.01 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9315,7 +10601,11 @@ Missingness Intraclass Correlation (ICC) = -2.01
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 18, Max = 100, Mean = 88.4, SD = 15.6 
+=======
+Min = NA, Max = NA, Mean = NA, SD = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9336,15 +10626,20 @@ Click to view visuals <span id="Question 6077_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Histogram
 
 ![](rccRgCodebook_files/figure-html/histogram-Slider-Question-6077-Item-5751-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2190 / 2229
 
 Missing = 39
@@ -9352,6 +10647,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -2.01 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9396,7 +10700,11 @@ Missingness Intraclass Correlation (ICC) = -2.01
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, Max = 100, Mean = 85.77, SD = 19.48 
+=======
+Min = NA, Max = NA, Mean = NA, SD = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9417,15 +10725,20 @@ Click to view visuals <span id="Question 6078_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Histogram
 
 ![](rccRgCodebook_files/figure-html/histogram-Slider-Question-6078-Item-5752-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2190 / 2229
 
 Missing = 39
@@ -9433,6 +10746,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -2.01 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9477,7 +10799,11 @@ Missingness Intraclass Correlation (ICC) = -2.01
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 13, Max = 100, Mean = 85.16, SD = 19.67 
+=======
+Min = NA, Max = NA, Mean = NA, SD = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9498,15 +10824,20 @@ Click to view visuals <span id="Question 6079_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Histogram
 
 ![](rccRgCodebook_files/figure-html/histogram-Slider-Question-6079-Item-5753-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2190 / 2229
 
 Missing = 39
@@ -9514,6 +10845,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -2.01 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9558,7 +10898,11 @@ Missingness Intraclass Correlation (ICC) = -2.01
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, Max = 100, Mean = 64.9, SD = 30.3 
+=======
+Min = NA, Max = NA, Mean = NA, SD = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9579,15 +10923,20 @@ Click to view visuals <span id="Question 6080_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Histogram
 
 ![](rccRgCodebook_files/figure-html/histogram-Slider-Question-6080-Item-5754-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2186 / 2228
 
 Missing = 42
@@ -9595,6 +10944,15 @@ Min = 0, Max = 1, Mean = 0.05, SD = 0.21
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.8 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9639,7 +10997,11 @@ Missingness Intraclass Correlation (ICC) = 1.8
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 8, Max = 100, Mean = 86.73, SD = 17.36 
+=======
+Min = NA, Max = NA, Mean = NA, SD = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9660,15 +11022,20 @@ Click to view visuals <span id="Question 6081_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
+<<<<<<< HEAD
 #### Histogram
 
 ![](rccRgCodebook_files/figure-html/histogram-Slider-Question-6081-Item-5755-1.png)<!-- -->
+=======
+
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2190 / 2229
 
 Missing = 39
@@ -9676,6 +11043,15 @@ Min = 0, Max = 1, Mean = 0.01, SD = 0.11
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = -2.01 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9740,6 +11116,7 @@ Click to view visuals <span id="Question 6040_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1818 / 1856
 
 Missing = 38
@@ -9747,6 +11124,15 @@ Min = 0, Max = 0, Mean = 0, SD = 0
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 0 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -9870,7 +11256,11 @@ Missingness Intraclass Correlation (ICC) = 0
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### HAPPY?
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -9883,7 +11273,11 @@ Missingness Intraclass Correlation (ICC) = 0
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 71.16, std = 25.48
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9894,6 +11288,7 @@ Min = 0, max = 100, mean = 71.16, std = 25.48
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600138593');
            let arrow = document.getElementById('multiplesliderQuestion-600138593_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -9903,6 +11298,17 @@ Click to view visuals <span id="multiplesliderQuestion-600138593_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600138593" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600150024');
+           let arrow = document.getElementById('multiplesliderQuestion-600150024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600150024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600150024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -9917,7 +11323,11 @@ Click to view visuals <span id="multiplesliderQuestion-600138593_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600138593_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600150024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -9942,7 +11352,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### JOYFUL?
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -9955,7 +11369,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 67.81, std = 28.15
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -9966,6 +11384,7 @@ Min = 0, max = 100, mean = 67.81, std = 28.15
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600138595');
            let arrow = document.getElementById('multiplesliderQuestion-600138595_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -9975,6 +11394,17 @@ Click to view visuals <span id="multiplesliderQuestion-600138595_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600138595" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600150026');
+           let arrow = document.getElementById('multiplesliderQuestion-600150026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600150026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600150026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -9989,7 +11419,11 @@ Click to view visuals <span id="multiplesliderQuestion-600138595_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600138595_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600150026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -10014,7 +11448,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ANXIOUS?
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -10027,7 +11465,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 36.76, std = 32.07
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -10038,6 +11480,7 @@ Min = 0, max = 100, mean = 36.76, std = 32.07
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600138597');
            let arrow = document.getElementById('multiplesliderQuestion-600138597_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10047,6 +11490,17 @@ Click to view visuals <span id="multiplesliderQuestion-600138597_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600138597" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600150028');
+           let arrow = document.getElementById('multiplesliderQuestion-600150028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600150028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600150028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -10061,7 +11515,11 @@ Click to view visuals <span id="multiplesliderQuestion-600138597_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600138597_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600150028_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -10086,7 +11544,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ANGRY?
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -10099,7 +11561,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 19.72, std = 25.01
+=======
+Min = 0, max = 100, mean = 73.79, std = 24.3
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -10110,6 +11576,7 @@ Min = 0, max = 100, mean = 19.72, std = 25.01
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600138581');
            let arrow = document.getElementById('multiplesliderQuestion-600138581_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10119,6 +11586,17 @@ Click to view visuals <span id="multiplesliderQuestion-600138581_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600138581" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600150030');
+           let arrow = document.getElementById('multiplesliderQuestion-600150030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600150030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600150030" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -10133,6 +11611,7 @@ Click to view visuals <span id="multiplesliderQuestion-600138581_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600138581_histogram-1.png)<!-- -->
 
 
@@ -10494,6 +11973,9 @@ Click to view visuals <span id="multiplesliderQuestion-600138591_arrow">▼</spa
 
 
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600138591_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600150030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -10559,7 +12041,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...was interested in my activities
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -10572,7 +12058,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 76.53, std = 24.74
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -10583,6 +12073,7 @@ Min = 0, max = 100, mean = 76.53, std = 24.74
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600438610');
            let arrow = document.getElementById('multiplesliderQuestion-600438610_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10592,6 +12083,17 @@ Click to view visuals <span id="multiplesliderQuestion-600438610_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600438610" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600450024');
+           let arrow = document.getElementById('multiplesliderQuestion-600450024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600450024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600450024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -10606,7 +12108,11 @@ Click to view visuals <span id="multiplesliderQuestion-600438610_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600438610_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600450024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -10631,7 +12137,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...handled my responsibilities
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -10644,7 +12154,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 82.6, std = 20.96
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -10655,6 +12169,7 @@ Min = 0, max = 100, mean = 82.6, std = 20.96
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600438612');
            let arrow = document.getElementById('multiplesliderQuestion-600438612_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10664,6 +12179,17 @@ Click to view visuals <span id="multiplesliderQuestion-600438612_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600438612" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600450026');
+           let arrow = document.getElementById('multiplesliderQuestion-600450026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600450026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600450026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -10678,7 +12204,11 @@ Click to view visuals <span id="multiplesliderQuestion-600438612_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600438612_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600450026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -10703,7 +12233,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...was competent
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -10716,7 +12250,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 83.39, std = 19.61
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -10727,6 +12265,7 @@ Min = 0, max = 100, mean = 83.39, std = 19.61
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600438614');
            let arrow = document.getElementById('multiplesliderQuestion-600438614_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10736,6 +12275,17 @@ Click to view visuals <span id="multiplesliderQuestion-600438614_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600438614" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600450028');
+           let arrow = document.getElementById('multiplesliderQuestion-600450028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600450028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600450028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -10750,7 +12300,11 @@ Click to view visuals <span id="multiplesliderQuestion-600438614_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600438614_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600450028_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -10775,7 +12329,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...felt a sense of accomplishment
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -10788,7 +12346,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 79.35, std = 23.15
+=======
+Min = 0, max = 100, mean = 73.79, std = 24.3
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -10799,6 +12361,7 @@ Min = 0, max = 100, mean = 79.35, std = 23.15
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600438616');
            let arrow = document.getElementById('multiplesliderQuestion-600438616_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10808,6 +12371,17 @@ Click to view visuals <span id="multiplesliderQuestion-600438616_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600438616" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600450030');
+           let arrow = document.getElementById('multiplesliderQuestion-600450030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600450030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600450030" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -10822,7 +12396,11 @@ Click to view visuals <span id="multiplesliderQuestion-600438616_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600438616_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600450030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -10888,7 +12466,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...I missed my old drug using / drinking social group
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -10901,7 +12483,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 18.89, std = 29.12
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -10912,6 +12498,7 @@ Min = 0, max = 100, mean = 18.89, std = 29.12
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-603138944');
            let arrow = document.getElementById('multiplesliderQuestion-603138944_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10921,6 +12508,17 @@ Click to view visuals <span id="multiplesliderQuestion-603138944_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-603138944" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-603150024');
+           let arrow = document.getElementById('multiplesliderQuestion-603150024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-603150024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-603150024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -10935,7 +12533,11 @@ Click to view visuals <span id="multiplesliderQuestion-603138944_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603138944_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603150024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -10960,7 +12562,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...I was committed to my recovery
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -10973,7 +12579,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 83, std = 21.95
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -10984,6 +12594,7 @@ Min = 0, max = 100, mean = 83, std = 21.95
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-603138928');
            let arrow = document.getElementById('multiplesliderQuestion-603138928_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -10993,6 +12604,17 @@ Click to view visuals <span id="multiplesliderQuestion-603138928_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-603138928" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-603150026');
+           let arrow = document.getElementById('multiplesliderQuestion-603150026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-603150026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-603150026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11007,7 +12629,11 @@ Click to view visuals <span id="multiplesliderQuestion-603138928_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603138928_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603150026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -11032,7 +12658,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...I worked hard on my recovery
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -11045,7 +12675,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 75.03, std = 25.53
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -11056,6 +12690,7 @@ Min = 0, max = 100, mean = 75.03, std = 25.53
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-603138930');
            let arrow = document.getElementById('multiplesliderQuestion-603138930_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11065,6 +12700,17 @@ Click to view visuals <span id="multiplesliderQuestion-603138930_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-603138930" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-603150028');
+           let arrow = document.getElementById('multiplesliderQuestion-603150028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-603150028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-603150028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11079,7 +12725,11 @@ Click to view visuals <span id="multiplesliderQuestion-603138930_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603138930_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603150028_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -11104,7 +12754,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...I kept my recovery central to my day
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -11117,7 +12771,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 77.46, std = 24.39
+=======
+Min = 0, max = 100, mean = 73.79, std = 24.3
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -11128,6 +12786,7 @@ Min = 0, max = 100, mean = 77.46, std = 24.39
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-603138932');
            let arrow = document.getElementById('multiplesliderQuestion-603138932_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11137,6 +12796,17 @@ Click to view visuals <span id="multiplesliderQuestion-603138932_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-603138932" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-603150030');
+           let arrow = document.getElementById('multiplesliderQuestion-603150030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-603150030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-603150030" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11151,6 +12821,7 @@ Click to view visuals <span id="multiplesliderQuestion-603138932_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603138932_histogram-1.png)<!-- -->
 
 
@@ -11512,6 +13183,9 @@ Click to view visuals <span id="multiplesliderQuestion-603138942_arrow">▼</spa
 
 
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603138942_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-603150030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -11613,7 +13287,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...CONNECTED to my family
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -11626,7 +13304,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 74.41, std = 29.3
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -11637,6 +13319,7 @@ Min = 0, max = 100, mean = 74.41, std = 29.3
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600738641');
            let arrow = document.getElementById('multiplesliderQuestion-600738641_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11646,6 +13329,17 @@ Click to view visuals <span id="multiplesliderQuestion-600738641_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600738641" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600750024');
+           let arrow = document.getElementById('multiplesliderQuestion-600750024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600750024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600750024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11660,7 +13354,11 @@ Click to view visuals <span id="multiplesliderQuestion-600738641_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600738641_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600750024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -11685,7 +13383,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...LOVING toward my family
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -11698,7 +13400,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 80.26, std = 26.4
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -11709,6 +13415,7 @@ Min = 0, max = 100, mean = 80.26, std = 26.4
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600738643');
            let arrow = document.getElementById('multiplesliderQuestion-600738643_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11718,6 +13425,17 @@ Click to view visuals <span id="multiplesliderQuestion-600738643_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600738643" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600750026');
+           let arrow = document.getElementById('multiplesliderQuestion-600750026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600750026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600750026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11732,7 +13450,11 @@ Click to view visuals <span id="multiplesliderQuestion-600738643_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600738643_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600750026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -11757,7 +13479,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...CLOSE to my family
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -11770,7 +13496,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 73.49, std = 29.54
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -11781,6 +13511,7 @@ Min = 0, max = 100, mean = 73.49, std = 29.54
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600738637');
            let arrow = document.getElementById('multiplesliderQuestion-600738637_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11790,6 +13521,17 @@ Click to view visuals <span id="multiplesliderQuestion-600738637_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600738637" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600750028');
+           let arrow = document.getElementById('multiplesliderQuestion-600750028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600750028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600750028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11804,7 +13546,11 @@ Click to view visuals <span id="multiplesliderQuestion-600738637_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600738637_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600750028_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -11829,7 +13575,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...WARMTH toward my family
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -11842,7 +13592,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 76.15, std = 28.36
+=======
+Min = 0, max = 100, mean = 73.79, std = 24.3
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -11853,6 +13607,7 @@ Min = 0, max = 100, mean = 76.15, std = 28.36
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600738639');
            let arrow = document.getElementById('multiplesliderQuestion-600738639_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11862,6 +13617,17 @@ Click to view visuals <span id="multiplesliderQuestion-600738639_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600738639" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600750030');
+           let arrow = document.getElementById('multiplesliderQuestion-600750030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600750030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600750030" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11876,7 +13642,11 @@ Click to view visuals <span id="multiplesliderQuestion-600738639_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600738639_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600750030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -11942,7 +13712,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...support for my recovery
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -11955,7 +13729,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 74.26, std = 28.73
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -11966,6 +13744,7 @@ Min = 0, max = 100, mean = 74.26, std = 28.73
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600838645');
            let arrow = document.getElementById('multiplesliderQuestion-600838645_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -11975,6 +13754,17 @@ Click to view visuals <span id="multiplesliderQuestion-600838645_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600838645" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600850024');
+           let arrow = document.getElementById('multiplesliderQuestion-600850024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600850024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600850024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -11989,7 +13779,11 @@ Click to view visuals <span id="multiplesliderQuestion-600838645_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600838645_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600850024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -12014,7 +13808,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...respect for my recovery
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -12027,7 +13825,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 75.57, std = 28.61
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -12038,6 +13840,7 @@ Min = 0, max = 100, mean = 75.57, std = 28.61
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600838647');
            let arrow = document.getElementById('multiplesliderQuestion-600838647_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -12047,6 +13850,17 @@ Click to view visuals <span id="multiplesliderQuestion-600838647_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600838647" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600850026');
+           let arrow = document.getElementById('multiplesliderQuestion-600850026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600850026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600850026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -12061,7 +13875,11 @@ Click to view visuals <span id="multiplesliderQuestion-600838647_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600838647_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600850026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -12086,7 +13904,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...understanding about my recovery
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -12099,7 +13921,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 74.36, std = 28.42
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -12110,6 +13936,7 @@ Min = 0, max = 100, mean = 74.36, std = 28.42
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600838649');
            let arrow = document.getElementById('multiplesliderQuestion-600838649_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -12119,6 +13946,17 @@ Click to view visuals <span id="multiplesliderQuestion-600838649_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600838649" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600850028');
+           let arrow = document.getElementById('multiplesliderQuestion-600850028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600850028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600850028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -12133,7 +13971,83 @@ Click to view visuals <span id="multiplesliderQuestion-600838649_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600838649_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600850028_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### 
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 73.79, std = 24.3
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-600850030');
+           let arrow = document.getElementById('multiplesliderQuestion-600850030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600850030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600850030" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600850030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -12199,7 +14113,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...support for my recovery
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -12212,7 +14130,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 82.68, std = 21.07
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -12223,6 +14145,7 @@ Min = 0, max = 100, mean = 82.68, std = 21.07
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600938651');
            let arrow = document.getElementById('multiplesliderQuestion-600938651_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -12232,6 +14155,17 @@ Click to view visuals <span id="multiplesliderQuestion-600938651_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600938651" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600950024');
+           let arrow = document.getElementById('multiplesliderQuestion-600950024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600950024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600950024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -12246,6 +14180,7 @@ Click to view visuals <span id="multiplesliderQuestion-600938651_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600938651_histogram-1.png)<!-- -->
 
 
@@ -12391,6 +14326,9 @@ Click to view visuals <span id="multiplesliderQuestion-600938655_arrow">▼</spa
 
 
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600938655_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600950024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -12428,7 +14366,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 33, max = 100, mean = 81.21, std = 18.32
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -12439,6 +14381,7 @@ Min = 33, max = 100, mean = 81.21, std = 18.32
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600940197');
            let arrow = document.getElementById('multiplesliderQuestion-600940197_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -12448,6 +14391,17 @@ Click to view visuals <span id="multiplesliderQuestion-600940197_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600940197" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600950026');
+           let arrow = document.getElementById('multiplesliderQuestion-600950026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600950026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600950026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -12462,7 +14416,11 @@ Click to view visuals <span id="multiplesliderQuestion-600940197_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600940197_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600950026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -12500,7 +14458,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 24, max = 100, mean = 80.08, std = 19.35
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -12511,6 +14473,7 @@ Min = 24, max = 100, mean = 80.08, std = 19.35
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-600940199');
            let arrow = document.getElementById('multiplesliderQuestion-600940199_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -12520,6 +14483,17 @@ Click to view visuals <span id="multiplesliderQuestion-600940199_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-600940199" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-600950028');
+           let arrow = document.getElementById('multiplesliderQuestion-600950028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600950028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600950028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -12534,7 +14508,83 @@ Click to view visuals <span id="multiplesliderQuestion-600940199_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600940199_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600950028_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### 
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 73.79, std = 24.3
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-600950030');
+           let arrow = document.getElementById('multiplesliderQuestion-600950030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-600950030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-600950030" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-600950030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -12636,7 +14686,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### ...a STRESSFUL day
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -12649,7 +14703,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 31.85, std = 29.48
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -12660,6 +14718,7 @@ Min = 0, max = 100, mean = 31.85, std = 29.48
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601138658');
            let arrow = document.getElementById('multiplesliderQuestion-601138658_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -12669,6 +14728,17 @@ Click to view visuals <span id="multiplesliderQuestion-601138658_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601138658" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-601150024');
+           let arrow = document.getElementById('multiplesliderQuestion-601150024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-601150024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-601150024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -12683,6 +14753,7 @@ Click to view visuals <span id="multiplesliderQuestion-601138658_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601138658_histogram-1.png)<!-- -->
 
 
@@ -12900,6 +14971,9 @@ Click to view visuals <span id="multiplesliderQuestion-601138664_arrow">▼</spa
 
 
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601138664_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601150024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -12937,7 +15011,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 94, mean = 31.17, std = 24.37
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -12948,6 +15026,7 @@ Min = 0, max = 94, mean = 31.17, std = 24.37
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601140202');
            let arrow = document.getElementById('multiplesliderQuestion-601140202_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -12957,6 +15036,17 @@ Click to view visuals <span id="multiplesliderQuestion-601140202_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601140202" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-601150026');
+           let arrow = document.getElementById('multiplesliderQuestion-601150026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-601150026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-601150026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -12971,7 +15061,11 @@ Click to view visuals <span id="multiplesliderQuestion-601140202_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601140202_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601150026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -13009,7 +15103,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 75.38, std = 22.74
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -13020,6 +15118,7 @@ Min = 0, max = 100, mean = 75.38, std = 22.74
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601140204');
            let arrow = document.getElementById('multiplesliderQuestion-601140204_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -13029,6 +15128,17 @@ Click to view visuals <span id="multiplesliderQuestion-601140204_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601140204" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-601150028');
+           let arrow = document.getElementById('multiplesliderQuestion-601150028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-601150028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-601150028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -13043,7 +15153,83 @@ Click to view visuals <span id="multiplesliderQuestion-601140204_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601140204_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601150028_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### 
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 73.79, std = 24.3
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-601150030');
+           let arrow = document.getElementById('multiplesliderQuestion-601150030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-601150030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-601150030" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601150030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -13109,7 +15295,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
  <div class = "header-shading">
 
+<<<<<<< HEAD
 #### maintain MY RECOVERY tomorrow
+=======
+#### 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 </div>
 
@@ -13122,7 +15312,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 24.55, std = 33.23
+=======
+Min = 0, max = 100, mean = 37.12, std = 29.47
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -13133,6 +15327,7 @@ Min = 0, max = 100, mean = 24.55, std = 33.23
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601238666');
            let arrow = document.getElementById('multiplesliderQuestion-601238666_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -13142,6 +15337,17 @@ Click to view visuals <span id="multiplesliderQuestion-601238666_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601238666" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-601250024');
+           let arrow = document.getElementById('multiplesliderQuestion-601250024_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-601250024_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-601250024" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -13156,6 +15362,7 @@ Click to view visuals <span id="multiplesliderQuestion-601238666_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601238666_histogram-1.png)<!-- -->
 
 
@@ -13229,6 +15436,9 @@ Click to view visuals <span id="multiplesliderQuestion-601238668_arrow">▼</spa
 
 
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601238668_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601250024_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -13266,7 +15476,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 27.47, std = 31.84
+=======
+Min = 0, max = 100, mean = 75.53, std = 22.61
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -13277,6 +15491,7 @@ Min = 0, max = 100, mean = 27.47, std = 31.84
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601240206');
            let arrow = document.getElementById('multiplesliderQuestion-601240206_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -13286,6 +15501,17 @@ Click to view visuals <span id="multiplesliderQuestion-601240206_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601240206" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-601250026');
+           let arrow = document.getElementById('multiplesliderQuestion-601250026_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-601250026_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-601250026" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -13300,7 +15526,11 @@ Click to view visuals <span id="multiplesliderQuestion-601240206_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601240206_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601250026_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -13338,7 +15568,11 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 **Descriptives**
+<<<<<<< HEAD
 Min = 0, max = 100, mean = 36.87, std = 34.19
+=======
+Min = 0, max = 100, mean = 47.83, std = 32.22
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 
@@ -13349,6 +15583,7 @@ Min = 0, max = 100, mean = 36.87, std = 34.19
 
 
 <button 
+<<<<<<< HEAD
   onclick="let e = document.getElementById('multiplesliderQuestion-601240208');
            let arrow = document.getElementById('multiplesliderQuestion-601240208_arrow');
            e.style.display = e.style.display === 'none' ? 'block' : 'none';
@@ -13358,6 +15593,17 @@ Click to view visuals <span id="multiplesliderQuestion-601240208_arrow">▼</spa
 </button>
 
 <div id="multiplesliderQuestion-601240208" style="display: none;">
+=======
+  onclick="let e = document.getElementById('multiplesliderQuestion-601250028');
+           let arrow = document.getElementById('multiplesliderQuestion-601250028_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-601250028_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-601250028" style="display: none;">
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 <!-- TOC-IGNORE-BEGIN -->
@@ -13372,7 +15618,83 @@ Click to view visuals <span id="multiplesliderQuestion-601240208_arrow">▼</spa
 
 
 
+<<<<<<< HEAD
 ![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601240208_histogram-1.png)<!-- -->
+=======
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601250028_histogram-1.png)<!-- -->
+
+
+#### Missingness
+
+
+
+**Missingness Descriptives**
+
+Missing descriptives for Multiple Slider questions have not been implemented yet
+
+
+</details>
+
+
+
+#### Screenshot
+
+
+</div>
+
+</div>
+
+ <div class = "header-shading">
+
+#### 
+
+</div>
+
+
+<div class = "anchor">
+
+
+
+
+
+
+**Descriptives**
+Min = 0, max = 100, mean = 73.79, std = 24.3
+
+
+
+
+
+
+
+
+
+<button 
+  onclick="let e = document.getElementById('multiplesliderQuestion-601250030');
+           let arrow = document.getElementById('multiplesliderQuestion-601250030_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="multiplesliderQuestion-601250030_arrow">▼</span>
+</button>
+
+<div id="multiplesliderQuestion-601250030" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+#### Histogram
+
+
+
+
+
+
+![](rccRgCodebook_files/figure-html/multiplesliderQuestion-601250030_histogram-1.png)<!-- -->
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Missingness
@@ -13452,6 +15774,7 @@ Click to view visuals <span id="Question 6032_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 2562 / 2623
 
 Missing = 61
@@ -13459,6 +15782,15 @@ Min = 0, Max = 8, Mean = 0.22, SD = 1.06
 (Descriptives are rounded to 2 decimals)
 
 Missingness Intraclass Correlation (ICC) = 1.02 
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+Min = NA, Max = NA, Mean = NA, SD = NA
+(Descriptives are rounded to 2 decimals)
+
+Missingness Intraclass Correlation (ICC) = NA 
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 
 
 #### Screenshot
@@ -13524,9 +15856,15 @@ Click to view visuals <span id="Question 6039_arrow">▼</span>
 
 **Missingness Descriptives**
 
+<<<<<<< HEAD
 Answered / Delivered = 1769 / 1807
 
 Missing = 38
+=======
+Answered / Delivered = 16495 / 16591
+
+Missing = 96
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689
 Min = NA, Max = NA, Mean = NA, SD = NA
 (Descriptives are rounded to 2 decimals)
 

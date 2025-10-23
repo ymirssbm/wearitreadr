@@ -36,13 +36,14 @@ generateCodebook <- function(title = "This is a temp default title, please set",
                               funding = "This is a temp default funding source, please set",
                               abstract = "This is a temp default abstract, please set",
                               summary = "This is a temp default summary, please set",
-                              thisData = read.csv("processedData/surveyCombined.csv"),
-                              blockMap = read.csv("processedData/questionMap.csv"),
-                              responseKey = read.csv("processedData/responseMap.csv"),
+                              thisData = read.csv("Codebook_RMD/processedData/surveyCombined.csv"),
+                              blockMap = read.csv("Codebook_RMD/processedData/questionMap.csv"),
+                              responseKey = read.csv("Codebook_RMD/processedData/responseMap.csv"),
                               include_practice_items = FALSE,
                               include_html = FALSE,
                               print_blockmap_missing = FALSE,
                               generate_item_description = TRUE,
+                              shiny = FALSE,
                               # Name of the file to be created
                               output_file = "Codebook.html") {
 
@@ -134,7 +135,17 @@ generateCodebook <- function(title = "This is a temp default title, please set",
 
       # Prompt user how to continue
       cat("Rows with NA values for 'Question.Type.Display.Name' detected in block map (set 'print_blockmap_missing = TRUE' to see problem rows).\n")
-      response <- readline(prompt = "NA item type rows will be dropped. Do you want to continue knitting? (y/n): ")
+
+      if (shiny == FALSE) {
+        response <- readline(prompt = "NA item type rows will be dropped. Do you want to continue knitting? (y/n): ")
+      }
+
+      # If using shiny, default to Yes
+      if (shiny == TRUE) {
+        response <- "y"
+        generate_item_description <- FALSE
+      }
+
 
       # If yes, continue knit call
       if (tolower(response) == "y") {
@@ -181,7 +192,7 @@ generateCodebook <- function(title = "This is a temp default title, please set",
     # Clean out spaces
     data_type_no_space <- gsub(" ", "", data_type)
     # Check for rmd files
-    if (!file.exists(paste0("DataTypes/", data_type_no_space, ".Rmd"))) {
+    if (!file.exists(paste0("Codebook_RMD/DataTypes/", data_type_no_space, ".Rmd"))) {
       # If does not exists add to vector
       unsupported_data_types <- c(unsupported_data_types, data_type)
     }
@@ -197,8 +208,16 @@ generateCodebook <- function(title = "This is a temp default title, please set",
 
     repeat {
 
+
       # Prompt user how to continue
-      response <- readline(prompt = "Questions with unsupported data types will be dropped. Do you want to continue knitting? (y/n): ")
+      if (shiny == FALSE) {
+        response <- readline(prompt = "Questions with unsupported data types will be dropped. Do you want to continue knitting? (y/n): ")
+      }
+
+      # If using shiny, default to Yes
+      if (shiny == TRUE) {
+        response <- "y"
+      }
 
       # If yes, continue knit call
       if (tolower(response) == "y") {
@@ -215,16 +234,19 @@ generateCodebook <- function(title = "This is a temp default title, please set",
       }
     }
   }
+
+  wd <- getwd()
+  cat(wd)
   # Drop unsupported data types
   cat("Dropping unsupported data types ... \n")
   blockMap <- blockMap[!(blockMap$Question.Type.Display.Name %in% unsupported_data_types), ]
 
   # Render codebook
   # Save temp workspace
-  save.image(file = "temp_workspace.RData")
+  save.image(file = "Codebook_RMD/temp_workspace.RData")
   # Render codebook
   rmarkdown::render(
-    input = "Highest-level-template.Rmd",
+    input = "Codebook_RMD/Highest-level-template.Rmd",
     output_file = output_file,
     params = list(
       title = title,
@@ -232,6 +254,6 @@ generateCodebook <- function(title = "This is a temp default title, please set",
     )
   )
   # Remove temp workspace
-  file.remove("temp_workspace.RData")
+  file.remove("Codebook_RMD/temp_workspace.RData")
 
 }
