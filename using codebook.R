@@ -28,6 +28,70 @@ generateCodebook(
   output_file = "UH3 GLP-1 EMA Codebook")
 
 
+<<<<<<< HEAD
+# RCC RG combined
+
+thisData = read.csv("rccRgData/surveyCombined.csv")
+blockMap = read.csv("rccRgData/questionMap.csv")
+responseKey = read.csv("rccRgData/responseMap.csv")
+
+rccthisData = read.csv("rccRgData/rccsurveyCombined.csv")
+rccblockMap = read.csv("rccRgData/rccquestionMap.csv")
+rccresponseKey = read.csv("rccRgData/rccresponseMap.csv")
+
+
+df <- merge(blockMap, rccblockMap, by = "Question.Text")
+
+
+# Find new block map questions
+new_questions <- rccblockMap[!rccblockMap$Question.Text %in% blockMap$Question.Text, ]
+
+# Bind them together
+mergedMap <- rbind(blockMap, new_questions)
+
+
+# Grab new question ids to bind response key
+question_ids <- new_questions$Question.ID
+
+new_question_map <- rccresponseKey[rccresponseKey$question %in% question_ids,]
+
+responseKey <- rbind(responseKey, new_question_map)
+
+# Merge data
+# Step 1: Create lookup table from thisData with unique Question.Text and IDs
+lookup_ids <- thisData %>%
+  select(Question.Text, Question.ID, Item) %>%
+  distinct(Question.Text, .keep_all = TRUE)
+
+# Step 2: Update rccthisData's Question.ID and Item based on Question.Text
+rccthisData <- rccthisData %>%
+  select(-Question.ID, -Item) %>%       # Remove old columns
+  left_join(lookup_ids, by = "Question.Text")  # Bring in correct IDs
+
+rccthisData <- rccthisData %>% select(-"External.ID3")
+
+col_order <- colnames(thisData)
+rccthisData <- rccthisData[, col_order]
+
+df <- rbind(thisData, rccthisData)
+
+# Write each data frame in 'data' to a CSV file named after its name
+write.csv(mergedMap, "processedData/questionMap.csv", row.names = FALSE)
+write.csv(responseKey, "processedData/responseMap.csv", row.names = FALSE)
+#write.csv(data$surveyData, "processedData/surveyData.csv", row.names = FALSE)
+write.csv(df, "processedData/surveyCombined.csv", row.names = FALSE)
+
+
+# GLP-1 Codebook
+generateCodebook(
+  title = "Recovery Community Center and Recovery General Combined Codebook",
+  authors = "Ethan O. Kile, Timothy R. Brick",
+  funding = "",
+  abstract = "",
+  summary = "",
+  generate_item_description = FALSE,
+  output_file = "rccRgCodebook")
+=======
 # RG codebook
 generateCodebook(generate_item_description = FALSE,
                  title = "Recovery General Project Daily Diary Codebook",
@@ -37,6 +101,7 @@ generateCodebook(generate_item_description = FALSE,
                  summary = "",
                  output_file = "Recovery General Daily Diary Codebook")
 
+<<<<<<< HEAD
 
 
 
@@ -149,3 +214,6 @@ generateCodebook(
   summary = "",
   generate_item_description = FALSE,
   output_file = "rccRgCodebook")
+=======
+>>>>>>> 49566bd69ddb3ebd8d02aff224cc644d91d95e6c
+>>>>>>> 1949dbc837dbabef446cd5a556d9281b57b34689

@@ -964,3 +964,17 @@ cogdata_unnest <- function(.data) {
     select(-Cog.Test.Result)
   return(unnested)
 }
+
+
+
+
+
+# Save data from getStudyData to a csv in processedData
+
+saveData <- function(data) {
+  write.csv(data$questionMap, "Codebook_RMD/processedData/questionMap.csv", row.names = FALSE)
+  write.csv(data$responseMap, "Codebook_RMD/processedData/responseMap.csv", row.names = FALSE)
+  write.csv(data$surveyData, "Codebook_RMD/processedData/surveyData.csv", row.names = FALSE)
+  write.csv(data$surveyCombined, "Codebook_RMD/processedData/surveyCombined.csv", row.names = FALSE)
+
+}
