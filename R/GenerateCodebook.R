@@ -43,7 +43,9 @@ generateCodebook <- function(title = "This is a temp default title, please set",
                               include_html = FALSE,
                               print_blockmap_missing = FALSE,
                               generate_item_description = TRUE,
+                              # Using shiny or not
                               shiny = FALSE,
+                              codebookChunkDisplayOptions,
                               # Name of the file to be created
                               output_file = "Codebook.html") {
 
@@ -181,6 +183,18 @@ generateCodebook <- function(title = "This is a temp default title, please set",
   }
 
   # Unsupported data types
+
+  # Shiny Data Type selection
+    # Grab all data types
+    dataTypes <- list.files(path = "Codebook_RMD/DataTypes")
+    dataTypes <- sub("\\.Rmd$", "", dataTypes)
+    # Grab user selected datatypes
+    selectedDataTypes <- dataTypes[tolower(dataTypes) %in% codebookChunkDisplayOptions]
+
+    # Keep only user selected
+    blockMap <- blockMap[(gsub(" ", "", blockMap$Question.Type.Display.Name) %in% selectedDataTypes), ]
+
+
   # Check unique data types
   data_types <- unique(blockMap$Question.Type.Display.Name)
 
@@ -250,7 +264,15 @@ generateCodebook <- function(title = "This is a temp default title, please set",
     output_file = output_file,
     params = list(
       title = title,
-      authors = authors
+      authors = authors,
+      # Display codechunk options (default in app and yaml is true for all)
+      titlePage = "title page" %in% codebookChunkDisplayOptions,
+      nameOfStudy = "name of study" %in% codebookChunkDisplayOptions,
+      displayAuthors = "authors" %in% codebookChunkDisplayOptions,
+      desiredGraphic = "desired graphic" %in% codebookChunkDisplayOptions,
+      funding = "funding" %in% codebookChunkDisplayOptions,
+      abstract = "abstract" %in% codebookChunkDisplayOptions,
+      effectiveSummary = "effective summary" %in% codebookChunkDisplayOptions
     )
   )
   # Remove temp workspace

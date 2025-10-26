@@ -41,6 +41,7 @@ wearIT_authorize <- function(study_ID = "1045",
                              fmt_date = "%YYYY-mm-dd",
                              key_name = "WearIT-API-key",
                              backup_key_file = "~/.auth/.wearit",
+                             apiToken,
                              skip_keyring = TRUE,
                              ...) {
 
@@ -87,9 +88,11 @@ wearIT_authorize <- function(study_ID = "1045",
     got_key <- TRUE
   }
 
-  if(is.null(auth)) { # File failed, too.
-    auth <- readline(prompt="Please enter your Wear-IT API authentication key:")
-  }
+
+  auth <- apiToken
+  #if(is.null(auth)) { # File failed, too.
+  #  auth <- readline(prompt="Please enter your Wear-IT API authentication key:")
+  #}
 
   # TODO: Authentication check before setting key.
   if(!skip_keyring & !got_key) {
@@ -101,6 +104,7 @@ wearIT_authorize <- function(study_ID = "1045",
              error=\(x) {print("Error setting key."); print(x)})
   }
   authkey <- paste0("?api_token=", auth)
+
   dataURL <- paste(base_URL, "getData", study_ID, sep="/")
 
   nextURL <- dataURL
@@ -796,10 +800,10 @@ processSubQuestions <- function(thisCol, keyInfo, qName, subRequest=NA, verbose=
 
 
 
-getStudyData <- function(study_ID = "1045", backup_key_file = "~/.auth/.wearit",
+getStudyDataShiny <- function(study_ID = "1045", backup_key_file = "~/.auth/.wearit", apiToken = apiToken,
                          base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api", ...) { # Removed a / at end of url ~ Ethan
 
-  creds <- wearIT_authorize(study_ID = study_ID, backup_key_file = backup_key_file, base_URL = base_URL)
+  creds <- wearIT_authorize(study_ID = study_ID, apiToken = apiToken, backup_key_file = backup_key_file, base_URL = base_URL)
   requestResults <- makeAllRequests(creds)
   studyData <- parseStudyJSON(requestResults, simpleMeta = TRUE)
 
@@ -837,10 +841,10 @@ processBlockMap <- function(json_blockmap, old_block_map=data.frame()) {
              Item=gsub("[_]", " ", Item),
              Column = gsub("[_ ]", ".", Column))
   output <- pivot_wider(
-      awkTall,
-      names_from = "Column",
-      values_from = "Value",
-      values_fn = list(Value = function(x) x[[1]])  # Just take the first value temp defualt ~ Ethan
+    awkTall,
+    names_from = "Column",
+    values_from = "Value",
+    values_fn = list(Value = function(x) x[[1]])  # Just take the first value temp defualt ~ Ethan
   )
   output$Question.Type <- as.integer(output$Question.Type)
   output <- left_join(output, WearIT.blockTypes, by = join_by(Question.Type))
@@ -962,4 +966,18 @@ cogdata_unnest <- function(.data) {
     arrange(Survey.Date.Completed) %>%
     select(-Cog.Test.Result)
   return(unnested)
+}
+
+
+
+
+
+# Save data from getStudyData to a csv in processedData
+
+saveData <- function(data) {
+  write.csv(data$questionMap, "Codebook_RMD/processedData/questionMap.csv", row.names = FALSE)
+  write.csv(data$responseMap, "Codebook_RMD/processedData/responseMap.csv", row.names = FALSE)
+  write.csv(data$surveyData, "Codebook_RMD/processedData/surveyData.csv", row.names = FALSE)
+  write.csv(data$surveyCombined, "Codebook_RMD/processedData/surveyCombined.csv", row.names = FALSE)
+
 }
