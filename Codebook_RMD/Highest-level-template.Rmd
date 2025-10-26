@@ -22,6 +22,16 @@ knitr:
 params:
   title: "Default Title"
   authors: "Default Author"
+  # Display codechunk options (default is true for all)
+  titlePage: true
+  nameOfStudy: true
+  # This is the only one given a non matching name since its too close to other yaml arg
+  displayAuthors: true
+  desiredGraphic: true
+  funding: true
+  abstract: true
+  effectiveSummary: true
+  
 ---
 
 ```{r Highest-Level-Template-Chunk, include = FALSE}
