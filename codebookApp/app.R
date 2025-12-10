@@ -1,4 +1,4 @@
-# .rs.restartR()
+ .rs.restartR()
 library(shiny)
 library(shinyTree)
 library(shinyFiles)

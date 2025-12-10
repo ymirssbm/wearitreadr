@@ -1,0 +1,10 @@
+#library(jsonlite)
+#json_data <- fromJSON("llama.json", simplifyDataFrame = FALSE)
+#jsonJson <- fromJSON("json.json", simplifyDataFrame = FALSE)
+
+#json_data <- fromJSON("jsonShort.json", simplifyDataFrame = FALSE)
+#wearit <- fromJSON('json.json')
+#browser()
+#studyData <- parseStudyJSON(json_data, simpleMeta = TRUE)
+browser()
+generateCodebook(generate_item_description = FALSE, shiny = FALSE)

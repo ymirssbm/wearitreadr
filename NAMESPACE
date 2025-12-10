@@ -2,8 +2,8 @@
 
 export(checkDataExists)
 export(checkSkipLogic)
-export(cogdata_unnest)
-export(cogdata_validation)
+#export(cogdata_unnest)
+#export(cogdata_validation)
 export(describeByItem)
 export(describeByQuestion)
 export(describeMissingness)
