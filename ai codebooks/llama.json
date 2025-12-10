@@ -1,0 +1,194 @@
+[
+  {
+    "data": [
+      {
+        "Survey ID": [366],
+        "Survey Name": ["Daily Diary"],
+        "Participant ID": ["example-participant-1"],
+        "External ID": [],
+        "Session ID": {},
+        "Alert Times": {},
+        "Survey Start": {},
+        "Survey Date Completed": ["2022-06-02 17:00:43"],
+        "Survey Date Submitted": ["2022-06-02 17:00:43"],
+        "Timezone": {},
+        "Offset": {},
+        "Network Type": {},
+        "App Version": {},
+        "OS": [],
+        "Model": [],
+        "User Responses": [
+          {
+            "User Response": ["0,0"],
+            "Short Descriptor": {},
+            "Question": ["Question 6001"],
+            "Item": ["Item 5798"],
+            "Cog Test Result": {}
+          },
+          {
+            "User Response": ["5"],
+            "Short Descriptor": {},
+            "Question": ["Question 5999"],
+            "Item": ["Item 5750"],
+            "Cog Test Result": {}
+          }
+        ],
+        "UCS ID": [27846]
+      },
+      {
+        "Survey ID": [366],
+        "Survey Name": ["Daily Diary"],
+        "Participant ID": ["example-participant-2"],
+        "External ID": [],
+        "Session ID": {},
+        "Alert Times": {},
+        "Survey Start": {},
+        "Survey Date Completed": ["2022-06-02 17:00:43"],
+        "Survey Date Submitted": ["2022-06-02 17:00:43"],
+        "Timezone": {},
+        "Offset": {},
+        "Network Type": {},
+        "App Version": {},
+        "OS": [],
+        "Model": [],
+        "User Responses": [
+          {
+            "User Response": ["3,4"],
+            "Short Descriptor": {},
+            "Question": ["Question 6010"],
+            "Item": ["Item 5809"],
+            "Cog Test Result": {}
+          },
+          {
+            "User Response": ["2"],
+            "Short Descriptor": {},
+            "Question": ["Question 6002"],
+            "Item": ["Item 5765"],
+            "Cog Test Result": {}
+          }
+        ],
+        "UCS ID": [27847]
+      }
+    ],
+    "Current Survey Questions": {
+      "Daily Diary ID 366": [
+        ["Question 5999"]
+      ]
+    },
+    "Survey Response Key": {
+      "Daily Diary ID 366": {
+        "Question 6001": {
+          "Response Key": [
+            {
+              "0": ["Did not experience any of these emotions today"]
+            },
+            {
+              "1": ["Felt irritable or angry today"]
+            },
+            {
+              "2": ["Felt sad, empty, hopeless or helpless today"]
+            },
+            {
+              "3": ["Felt anxious or nervous today"]
+            },
+            {
+              "4": ["Felt scared or afraid today"]
+            },
+            {
+              "5": ["Other (please describe below)"]
+            }
+          ]
+        },
+        "Question 5999": {
+          "Response Key": [
+            {
+              "0": ["Did not experience any cravings today"]
+            },
+            {
+              "1": ["Experienced mild cravings today"]
+            },
+            {
+              "2": ["Experienced moderate cravings today"]
+            },
+            {
+              "3": ["Experienced strong cravings today"]
+            },
+            {
+              "4": ["Experienced overwhelming cravings today"]
+            },
+            {
+              "5": ["Other (please describe below)"]
+            }
+          ]
+        },
+        "Question 6002": {
+          "Response Key": [
+            {
+              "0": ["Did not engage in any substance use today"]
+            },
+            {
+              "1": ["Engaged in substance use to cope with negative emotions today"]
+            },
+            {
+              "2": ["Engaged in substance use for recreational purposes today"]
+            },
+            {
+              "3": ["Other (please describe below)"]
+            }
+          ]
+        },
+        "Question 6010": {
+          "Response Key": [
+            {
+              "0": ["Did not engage in any substance use today"]
+            },
+            {
+              "1": ["Engaged in substance use to cope with negative emotions today"]
+            },
+            {
+              "2": ["Engaged in substance use for recreational purposes today"]
+            },
+            {
+              "3": ["Other (please describe below)"]
+            }
+          ]
+        }
+      }
+    },
+    "Block IDs Map": {
+      "One Question Survey: Group 1046 ID 365": [],
+      "Daily Diary ID 366": {
+        "Item 5799": {
+          "Question ID": ["Question 6001"],
+          "Question Text": ["How would you rate the level of negative emotions (e.g. anger, sadness, anxiety) you experienced today?"],
+          "Question Type": [6],
+          "Conditional Child Item ID": {},
+          "Conditional Fail Item ID": {},
+          "Conditional Master Item ID": {},
+          "Conditional Threshold": {},
+          "Conditional Type": {}
+        },
+        "Item 5750": {
+          "Question ID": ["Question 5999"],
+          "Question Text": ["How would you rate the level of cravings you experienced today?"],
+          "Question Type": [6],
+          "Conditional Child Item ID": {},
+          "Conditional Fail Item ID": {},
+          "Conditional Master Item ID": {},
+          "Conditional Threshold": {},
+          "Conditional Type": {}
+        },
+        "Item 5765": {
+          "Question ID": ["Question 6002"],
+          "Question Text": ["How did you use (or not use) substances today?"],
+          "Question Type": [6],
+          "Conditional Child Item ID": {},
+          "Conditional Fail Item ID": {},
+          "Conditional Master Item ID": {},
+          "Conditional Threshold": {},
+          "Conditional Type": {}
+        }
+      }
+    }
+  }
+]

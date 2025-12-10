@@ -49,6 +49,21 @@ generateCodebook <- function(title = "This is a temp default title, please set",
                               # Name of the file to be created
                               output_file = "Codebook.html") {
 
+  if (shiny == FALSE) {
+    codebookChunkDisplayOptions <- c(
+      "title page",
+      "name of study",
+      "authors",
+      "desired graphic",
+      "funding",
+      "abstract",
+      "effective summary",
+      "informationalfullscreen"
+    )
+
+  }
+
+
   # This is a temp default that should be filed into the processing step, this is to clean fambes data specifically
   thisData[] <- lapply(thisData, function(x) {
     if (is.character(x)) x[tolower(x) == "n/a"] <- NA
