@@ -1,10 +1,12 @@
- .rs.restartR()
 library(shiny)
 library(shinyTree)
 library(shinyFiles)
 rm(list = ls())
-devtools::load_all()
-shiny::addResourcePath("codebook", "Codebook_RMD")
+devtools::load_all(recompile = FALSE)
+devtools::document()
+
+addResourcePath("codebook", "Codebook_RMD")
+
 
 ui <- navbarPage("Navigation",
 
@@ -68,7 +70,7 @@ server <- function(input, output) {
   observeEvent(input$pullDataButton, {
     print(getwd())
     showNotification("Pulling Data...", type = "message")
-    data <- getStudyDataShiny(study_ID = input$studyID, apiToken = input$apiToken)
+    data <- getStudyData(study_ID = input$studyID, apiToken = input$apiToken, shiny = TRUE)
     showNotification("Writing Data to processedData folder...", type = "message")
     saveData(data)
     showNotification("Finished!", type = "message")
@@ -155,7 +157,7 @@ server <- function(input, output) {
 
   # Render Codebook if it exists on launch
 
-  if (file.exists("Codebook_RMD/codebook.html")) {
+  if (file.exists("Codebook_RMD/Codebook.html")) {
   output$codebook <- renderUI({
     tags$iframe(
       src = "codebook/Codebook.html",

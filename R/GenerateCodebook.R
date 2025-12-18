@@ -18,34 +18,21 @@
 #' @export
 
 
-# Ensure directory is set (temp default)
-#setwd(dirname(normalizePath(sys.frame(1)$ofile)))
-
-
-# Load function defaults
-#defaults <- as.list(formals(generate_codebook))
-#list2env(defaults, envir = .GlobalEnv)
-#rm(defaults)
-#thisData = read.csv("processedData/surveyCombined.csv")
-#blockMap = read.csv("processedData/questionMap.csv")
-#responseKey = read.csv("processedData/responseMap.csv")
-
-
 generateCodebook <- function(title = "This is a temp default title, please set",
                               authors = "This is a temp default author list, please set",
                               funding = "This is a temp default funding source, please set",
                               abstract = "This is a temp default abstract, please set",
                               summary = "This is a temp default summary, please set",
-                              thisData = read.csv("Codebook_RMD/processedData/surveyCombined.csv"),
-                              blockMap = read.csv("Codebook_RMD/processedData/questionMap.csv"),
-                              responseKey = read.csv("Codebook_RMD/processedData/responseMap.csv"),
+                              thisData = read.csv("Codebook_RMD/Data/Data.csv"),
+                              blockMap = read.csv("Codebook_RMD/Data/blockMap.csv"),
+                              responseKey = read.csv("Codebook_RMD/Data/responseKey.csv"),
                               include_practice_items = FALSE,
                               include_html = FALSE,
                               print_blockmap_missing = FALSE,
-                              generate_item_description = TRUE,
+                              generate_item_description = FALSE,
                               # Using shiny or not
                               shiny = FALSE,
-                              codebookChunkDisplayOptions,
+                              codebookChunkDisplayOptions = "",
                               # Name of the file to be created
                               output_file = "Codebook.html") {
 
@@ -57,8 +44,7 @@ generateCodebook <- function(title = "This is a temp default title, please set",
       "desired graphic",
       "funding",
       "abstract",
-      "effective summary",
-      "informationalfullscreen"
+      "effective summary"
     )
 
   }
@@ -204,7 +190,12 @@ generateCodebook <- function(title = "This is a temp default title, please set",
     dataTypes <- list.files(path = "Codebook_RMD/DataTypes")
     dataTypes <- sub("\\.Rmd$", "", dataTypes)
     # Grab user selected datatypes
+    # If using app, get user selected, otherwise, use all available in DataTypes folder
+    if (shiny == TRUE) {
     selectedDataTypes <- dataTypes[tolower(dataTypes) %in% codebookChunkDisplayOptions]
+    } else {
+      selectedDataTypes <- dataTypes
+    }
 
     # Keep only user selected
     blockMap <- blockMap[(gsub(" ", "", blockMap$Question.Type.Display.Name) %in% selectedDataTypes), ]
