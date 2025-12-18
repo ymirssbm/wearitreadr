@@ -4,7 +4,9 @@
 .Ruserdata
 .DS_Store
 
-codebookApp/Codebook_RMD/Data/*
+codebookApp/Codebook_RMD/Data/blockMap.csv
+codebookApp/Codebook_RMD/Data/responseKey.csv
+codebookApp/Codebook_RMD/Data/Data.csv
 !codebookApp/Codebook_RMD/Data/.gitkeep
 codebookApp/Codebook_RMD/figure/*
 codebookApp/Codebook_RMD/codebook.html
