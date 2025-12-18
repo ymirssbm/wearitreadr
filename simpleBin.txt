@@ -1,5 +1,0 @@
-
-model {
-theta ~ dbeta(1,1) # beta (uniform) prior distribution
-Y ~ dbin(theta, N)  #sampling distribution
-}
