@@ -1,0 +1,51 @@
+---
+title: "`r params$title`"
+author: "`r params$authors`"
+date: "Codebook Generated `r Sys.Date()`"
+output: 
+  html_document:
+    self_contained: true
+    keep_md: false
+    toc: true
+    toc_depth: 5
+    css: styles.css
+    includes:
+      before_body: 
+        - content-wrapper-start.html
+        - logo.html
+      after_body: 
+        - content-wrapper-end.html
+knitr:
+  opts_chunk:
+    message: false
+    warning: false
+params:
+  title: "Default Title"
+  authors: "Default Author"
+  # Display codechunk options (default is true for all)
+  titlePage: true
+  nameOfStudy: true
+  # This is the only one given a non matching name since its too close to other yaml arg
+  displayAuthors: true
+  desiredGraphic: true
+  funding: true
+  abstract: true
+  effectiveSummary: true
+  
+---
+
+```{r Highest-Level-Template-Chunk, include = FALSE}
+
+load("temp_workspace.RData")
+
+library(knitr)
+out <- knit_expand("Codebook.Rmd")
+
+```
+
+<!-- Top of page button -->
+<a href="#" id="backToTopBtn" title="Go to top">↑</a>
+
+
+`r knit(text=out)`
+

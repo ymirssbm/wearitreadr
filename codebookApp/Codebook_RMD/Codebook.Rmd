@@ -1,0 +1,105 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r titlePage, eval = params$titlePage, echo = FALSE, results = 'asis'}
+
+cat("
+------------------------------------------------------------------------
+
+# **Title Page**
+
+------------------------------------------------------------------------
+
+
+")
+
+
+```
+
+
+```{r name-of-study, eval = params$nameOfStudy, echo = FALSE, results = 'asis'}
+
+cat("## Name of study \n\n{{title}}\n\n")
+
+```
+
+```{r display-authors, eval = params$displayAuthors, echo = FALSE, results = 'asis'}
+
+cat("## Authors \n\n{{authors}}\n\n")
+
+```
+
+
+```{r desired-graphic, eval = params$desiredGraphic, echo = FALSE, results = 'asis'}
+
+cat("\n\n## Desired graphic\n\n")
+
+knitr::include_graphics("images/rts.png")
+```
+
+
+```{r funding, eval = params$funding, echo = FALSE, results = 'asis'}
+
+cat("## Funding source \n\n{{funding}}\n\n")
+
+```
+
+
+```{r abstract, eval = params$abstract, echo = FALSE, results = 'asis'}
+
+cat("
+------------------------------------------------------------------------
+
+# **Abstract Page**
+
+------------------------------------------------------------------------
+
+{{abstract}}
+")
+
+
+```
+
+
+
+```{r effective-summary, eval = params$effectiveSummary, echo = FALSE, results = 'asis'}
+
+cat("
+------------------------------------------------------------------------
+
+# **Effective Summary**
+
+------------------------------------------------------------------------
+
+{{summary}}
+")
+
+
+```
+
+
+------------------------------------------------------------------------
+
+# **Variable List**
+
+------------------------------------------------------------------------
+
+```{r Codebook-Chunk, include = FALSE}
+
+out2 <- ""
+
+# Describe by Question
+out2 <- describeByQuestion(out2, thisData, blockMap, responseKey)
+
+# Describe by item
+if (generate_item_description == TRUE) {
+  out2 <- describeByItem(out2, thisData, blockMap, responseKey)
+}  
+
+```
+
+`r knit(text=out2)`
+

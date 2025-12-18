@@ -1,0 +1,96 @@
+<div class = "anchor">
+
+
+```{r skip-logic-{{chunk_label}}, echo = FALSE, results = 'asis'}
+displaySkipLogic(id = "{{question_id}}", blockMap = blockMap)
+```
+
+
+
+```{r, echo = FALSE, results = 'hide'}
+
+# Make sure data exists
+if (any(thisData$Question.ID == "{{question_id}}") &&
+    any(!is.na(thisData$User.Response[thisData$Question.ID == "{{question_id}}"]))) {
+
+
+  # String split and unlist on current question id
+  raw_data <- unlist(strsplit(thisData$User.Response[thisData$Question.ID == "{{question_id}}"], ","))
+  
+  
+  # Split on colon now keeping the question identifier and user response together
+  temp_df <- as.data.frame(do.call(rbind, strsplit(raw_data, split = ":")))
+  
+   # Convert to numeric
+  temp_df$V2 <- as.numeric(temp_df$V2)
+  
+  # Remove missingness from data frame so that it doesn't try to group by NA values
+  no_missing_df <- temp_df[complete.cases(temp_df), ]
+  
+  library(tidyr)
+  library(dplyr)
+  
+  # Add a row ID to preserve position within each group
+  no_missing_df <- no_missing_df %>%
+    group_by(V1) %>%
+    mutate(row_id = row_number()) %>%
+    ungroup()
+  
+  # Pivot to wide format
+  wide_df <- no_missing_df %>%
+    pivot_wider(names_from = V1, values_from = V2) %>%
+    select(-row_id)
+
+}
+
+
+library(knitr)
+
+out3 <- ""
+
+# Make sure data exists
+if (exists("wide_df")) {
+ 
+  
+  for (col in 1:ncol(wide_df)) {
+  
+    # Grab current variable
+    thisVar <- wide_df[,col]
+    
+    varname <- names(thisVar)
+  
+    chunk_label <- paste0("multiple_slider_", "{{question_id}}_", varname)
+    chunk_label <- gsub(" ", "-", chunk_label)
+    # Fail safe to clean any special characters that sneak in
+    chunk_label <- gsub("[^A-Za-z0-9\\-]", "", chunk_label)  
+    
+    attach(thisVar)
+  
+    
+    # Grab question text
+    question_text = responseKey$definition[responseKey$Question.ID == "{{question_id}}" & responseKey$value == names(thisVar)]
+    
+  
+    out3 <- paste(
+      out3,
+      knit_expand(
+        file = "DataTypes/MultipleSlider_B.Rmd",
+        question_text = question_text,
+        chunk_label = chunk_label,
+        thisVar = thisVar,
+        item_id = chunk_label
+  
+      )
+    )
+   detach(thisVar)
+  
+  }
+
+}
+```
+
+
+</div>
+
+`r knit(text=out3)`
+

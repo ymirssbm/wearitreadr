@@ -10,13 +10,15 @@ generateCodebook(
   funding = "This is a temp default funding source, please set",
   abstract = "This is a temp default abstract, please set",
   summary = "This is a temp default summary, please set",
-  thisData = read.csv("processedData/surveyCombined.csv"),
-  blockMap = read.csv("processedData/questionMap.csv"),
-  responseKey = read.csv("processedData/responseMap.csv"),
+  thisData = read.csv("Codebook_RMD/Data/Data.csv"),
+  blockMap = read.csv("Codebook_RMD/Data/blockMap.csv"),
+  responseKey = read.csv("Codebook_RMD/Data/responseKey.csv"),
   include_practice_items = FALSE,
   include_html = FALSE,
   print_blockmap_missing = FALSE,
-  generate_item_description = TRUE,
+  generate_item_description = FALSE,
+  shiny = FALSE,
+  codebookChunkDisplayOptions = "",
   output_file = "Codebook.html"
 )
 }

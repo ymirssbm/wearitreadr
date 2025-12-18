@@ -1,0 +1,12 @@
+<div class = "anchor">
+
+
+
+```{r skip-logic-{{chunk_label}}, echo = FALSE, results = 'asis'}
+displaySkipLogic(id = "{{question_id}}", blockMap = blockMap_item)
+
+```
+
+
+
+</div>
