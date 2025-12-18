@@ -21,6 +21,8 @@ ui <- navbarPage("Navigation",
                           p("This is where you can pull data down from Wear-IT. Just supply the study ID number of the study you want to pull data from and then click the button"),
                           numericInput(inputId = "studyID", label = "Insert Study ID", value = 0),
                           textInput(inputId = "apiToken", label = "Insert Api Token"),
+                          textAreaInput(inputId = "base_URL", label = "WearIT URL", resize = "horizontal",
+                                    value = "https://wearables.vmhost.psu.edu/wearables-survey/api"),
                           actionButton(inputId = "pullDataButton", label = "Pull Data from Wear-IT")),
 
 
@@ -70,7 +72,8 @@ server <- function(input, output) {
   observeEvent(input$pullDataButton, {
     print(getwd())
     showNotification("Pulling Data...", type = "message")
-    data <- getStudyData(study_ID = input$studyID, apiToken = input$apiToken, shiny = TRUE)
+    data <- getStudyData(study_ID = input$studyID, apiToken = input$apiToken, shiny = TRUE,
+                         base_URL = input$base_URL)
     showNotification("Writing Data to processedData folder...", type = "message")
     saveData(data)
     showNotification("Finished!", type = "message")
