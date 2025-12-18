@@ -5,9 +5,10 @@
 .DS_Store
 
 
-Codebook_RMD/processedData/blockMap.csv
-Codebook_RMD/processedData/responseKey.csv
-Codebook_RMD/processedData/Data.csv
+Codebook_RMD/Data/blockMap.csv
+Codebook_RMD/Data/responseKey.csv
+Codebook_RMD/Data/Data.csv
+Codebook_RMD/Data
 
 # R Markdown generated folders that create long paths
 *_files/
