@@ -4,13 +4,12 @@
 .Ruserdata
 .DS_Store
 
-
-Codebook_RMD/Data/blockMap.csv
-Codebook_RMD/Data/responseKey.csv
-Codebook_RMD/Data/Data.csv
-Codebook_RMD/Data
-Codebook_RMD/figure
-Codebook_RMD/codebook.html
+codebookApp/Codebook_RMD/Data/blockMap.csv
+codebookApp/Codebook_RMD/Data/responseKey.csv
+codebookApp/Codebook_RMD/Data/Data.csv
+codebookApp/Codebook_RMD/Data/*
+codebookApp/Codebook_RMD/figure/*
+codebookApp/Codebook_RMD/codebook.html
 
 # R Markdown generated folders that create long paths
 *_files/
