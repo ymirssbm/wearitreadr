@@ -9,6 +9,30 @@ addResourcePath("codebook", "Codebook_RMD")
 
 
 ui <- navbarPage("Navigation",
+                 #theme = shinythemes::shinytheme("flatly"), # optional base theme
+                 tags$head(
+                   includeCSS("www/shiny.css")
+                 ),
+
+
+
+                 # This is just a force it not to make a card behind the data dictionary viewer
+                 # Definitely a better way but this is temp default
+                 tags$script(HTML("
+                    $(document).on('shiny:connected', function() {
+                      // Find the tab with text 'Data Dictionary Viewer'
+                      var ddvTab = $('a:contains(\"Data Dictionary Viewer\")').attr('href');
+                      // Remove the default tab-pane styles when it is shown
+                      $(ddvTab).css({
+                        'background-color': 'transparent',
+                        'margin': '0',
+                        'padding': '0',
+                        'border-radius': '0',
+                        'box-shadow': 'none'
+                      });
+                    });
+                  ")),
+
 
                  # Home informational page
                  tabPanel("Home",
@@ -26,39 +50,66 @@ ui <- navbarPage("Navigation",
                           actionButton(inputId = "pullDataButton", label = "Pull Data from Wear-IT")),
 
 
-                 # Codebook generator page
-                 tabPanel("Codebook Generator",
+                 # Codebooks
+                 navbarMenu(
+                   "Codebook",
 
-                          # Codebook display options
-                          p("Select what you want included in your codebook"),
-                          shinyTree("codebookOptions", checkbox = TRUE, themeIcons = FALSE, theme = "proton"),
+                   # Codebook generator page
+                   tabPanel("Codebook Generator",
 
-                          # Text Input Buttons
-                          textAreaInput("title", "Title",
-                                        value = "",
-                                        rows = 1, resize = "horizontal"),
-                          textAreaInput("authors", "Authors",
-                                        value = "",
-                                        rows = 1, resize = "horizontal"),
-                          textAreaInput("funding", "Funding",
-                                        value = "",
-                                        rows = 3, resize = "vertical"),
-                          textAreaInput("abstract", "Abstract",
-                                        value = "",
-                                        rows = 5, resize = "vertical"),
-                          textAreaInput("summary", "Summary",
-                                        value = "",
-                                        rows = 5, resize = "vertical"),
+                            # Codebook display options
+                            p("Select what you want included in your codebook"),
+                            shinyTree("codebookOptions", checkbox = TRUE, themeIcons = FALSE, theme = "proton"),
 
-
-                          # Generate Codebook Button
-                          p("Press the button to generate a codebook from the data you pulled down"),
-                          actionButton(inputId = "generateCodebook", label = "Generate Codebook")),
+                            # Text Input Buttons
+                            textAreaInput("title", "Title",
+                                          value = "",
+                                          rows = 1, resize = "horizontal"),
+                            textAreaInput("authors", "Authors",
+                                          value = "",
+                                          rows = 1, resize = "horizontal"),
+                            textAreaInput("funding", "Funding",
+                                          value = "",
+                                          rows = 3, resize = "vertical"),
+                            textAreaInput("abstract", "Abstract",
+                                          value = "",
+                                          rows = 5, resize = "vertical"),
+                            textAreaInput("summary", "Summary",
+                                          value = "",
+                                          rows = 5, resize = "vertical"),
 
 
-                 # Codebook viewer page
-                 tabPanel("Codebook",
-                          uiOutput("codebook"))
+                            # Generate Codebook Button
+                            p("Press the button to generate a codebook from the data you pulled down"),
+                            actionButton(inputId = "generateCodebook", label = "Generate Codebook")),
+
+
+                   # Codebook viewer page
+                   tabPanel("Codebook Viewer",
+                            uiOutput("codebook")),
+                 ),
+
+
+                 # Data Dictionary
+                 navbarMenu(
+                   "Data Dictionary",
+
+                   # Generator page
+                   tabPanel("Data Dictionary Generator",
+
+                            # Generate Data Dictionary Button
+                            p("Press the button to generate a data dictionary from the data you pulled down"),
+                            actionButton(inputId = "generateDataDictionary", label = "Generate Data Dictionary")),
+
+                   # Viewer Page
+                   tabPanel(
+                     "Data Dictionary Viewer",
+                     div(class = "no-tab-style",
+                         uiOutput("dataDictionary"))
+                    )
+                 )
+
+
 )
 
 server <- function(input, output) {
@@ -80,7 +131,7 @@ server <- function(input, output) {
 
 
   #-----------------------
-  # Generate Codebook Page
+  # Codebook
   # ----------------------
 
   # Grab Data types
@@ -158,7 +209,6 @@ server <- function(input, output) {
   })
 
   # Render Codebook if it exists on launch
-
   if (file.exists("Codebook_RMD/Codebook.html")) {
   output$codebook <- renderUI({
     tags$iframe(
@@ -173,6 +223,47 @@ server <- function(input, output) {
   } else {
     showNotification("No Codebook has been generated. Press 'Generate Codebook' to generate one.", type = "message")
   }
+
+
+
+  #---------------------------------------------
+  # Data Dictionary (mirrors flow of codebook)
+  # --------------------------------------------
+
+  # Generate Data Dictionary button
+  observeEvent(input$generateDataDictionary, {
+
+    # Run data dictionary generator function
+    # Try catch if successful...
+    tryCatch({
+      showNotification("Generating data dictionary...", type = "message")
+      generateDataDictionary(shiny = TRUE)
+      showNotification("data dictionary Generation Complete!", type = "message")
+
+      # Display knitted html to render in the app
+      output$dataDictionary <- renderTable({
+        read.csv("Codebook_RMD/DataDictionary.csv")
+      })
+
+      # If error
+    }, error = function(e) {
+      # Display error msg
+      showNotification(paste("Error generating data dictionary:", e$message), type = "error")
+      cat("Error in generateDataDictionary():\n")
+      print(e)
+    }
+    )
+  })
+
+
+  # Render Data Dictionary if it exists on launch
+  if (file.exists("Codebook_RMD/DataDictionary.csv")) {
+    output$dataDictionary <- renderTable({
+      read.csv("Codebook_RMD/DataDictionary.csv")
+    })
+  }
+
+
 
 
 }
