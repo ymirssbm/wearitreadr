@@ -72,10 +72,9 @@ server <- function(input, output) {
   observeEvent(input$pullDataButton, {
     print(getwd())
     showNotification("Pulling Data...", type = "message")
-    data <- getStudyData(study_ID = input$studyID, apiToken = input$apiToken, shiny = TRUE,
+    saveData(study_ID = input$studyID, apiToken = input$apiToken, shiny = TRUE,
                          base_URL = input$base_URL)
     showNotification("Writing Data to processedData folder...", type = "message")
-    saveData(data)
     showNotification("Finished!", type = "message")
   })
 
