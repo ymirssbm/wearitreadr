@@ -1,4 +1,4 @@
-#library(jsonlite)
+library(jsonlite)
 #json_data <- fromJSON("llama.json", simplifyDataFrame = FALSE)
 #jsonJson <- fromJSON("json.json", simplifyDataFrame = FALSE)
 
