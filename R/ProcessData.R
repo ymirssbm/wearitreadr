@@ -791,27 +791,26 @@ processSubQuestions <- function(thisCol, keyInfo, qName, subRequest=NA, verbose=
   return(newCols)
 }
 
-# getStudyData
-#
-#   Pulls down all the study JSON in raw format.  Mostly, this function just
-#   makes repeated requests and concatenates the JSON data
-#
-#
-# @param [String] study_ID A file containing just the study ID number # I CHANGED THIS FROM studyID to study_ID ~ ethan
-# @param [String] keyFile A file containing just the app key
-# @param [String] baseURL Base URL, in case you have a variant server
-#
-# @return A list containing the auth string and data URL.
+#' getStudyData
+#'
+#'   Pulls down all the study JSON in raw format.  Mostly, this function just
+#'   makes repeated requests and concatenates the JSON data
+#'
+#'
+#' @param [String] study_ID A file containing just the study ID number # I CHANGED THIS FROM studyID to study_ID ~ ethan
+#' @param [String] keyFile A file containing just the app key
+#' @param [String] baseURL Base URL, in case you have a variant server
+#' @param save Boolean indicating whether to save the data to data folder in codebook rmd
+#' @return A list containing the auth string and data URL.
 
 
 
 getStudyData <- function(study_ID = "1045", backup_key_file = "~/.auth/.wearit", shiny = FALSE, apiToken = "",
-                         base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api", ...) { # Removed a / at end of url ~ Ethan
+                         base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api", ...) {
 
   creds <- wearIT_authorize(study_ID = study_ID, apiToken = apiToken, shiny = shiny, backup_key_file = backup_key_file, base_URL = base_URL)
   requestResults <- makeAllRequests(creds)
   studyData <- parseStudyJSON(requestResults, simpleMeta = TRUE)
-
 }
 
 
@@ -977,12 +976,30 @@ cogdata_unnest <- function(.data) {
 
 
 
-# Save data from getStudyData to a csv in Data
+#' saveData
+#'
+#'   This is a wrapper on getStudyData that saves it to the data folder
+#'
+#'
+#' @param shiny Boolean indicating whether the user is in the shiny app or not
+#' @return Saves data to data folder in codebook rmd
 
-saveData <- function(data) {
-  write.csv(data$questionMap, "Codebook_RMD/Data/blockMap.csv", row.names = FALSE)
-  write.csv(data$responseMap, "Codebook_RMD/Data/responseKey.csv", row.names = FALSE)
-  #write.csv(data$surveyData, "Codebook_RMD/Data/surveyData.csv", row.names = FALSE)
-  write.csv(data$surveyCombined, "Codebook_RMD/Data/Data.csv", row.names = FALSE)
 
+saveData <- function(data, shiny = FALSE, ...) {
+
+  data <- getStudyData(shiny = shiny, ...)
+
+  if (shiny == TRUE) {
+    write.csv(data$questionMap, "Codebook_RMD/Data/blockMap.csv", row.names = FALSE)
+    write.csv(data$responseMap, "Codebook_RMD/Data/responseKey.csv", row.names = FALSE)
+    #write.csv(data$surveyData, "Codebook_RMD/Data/surveyData.csv", row.names = FALSE)
+    write.csv(data$surveyCombined, "Codebook_RMD/Data/Data.csv", row.names = FALSE)
+  }
+
+  if (shiny == FALSE) {
+    write.csv(data$questionMap, "codebookApp/Codebook_RMD/Data/blockMap.csv", row.names = FALSE)
+    write.csv(data$responseMap, "codebookApp/Codebook_RMD/Data/responseKey.csv", row.names = FALSE)
+    #write.csv(data$surveyData, "Codebook_RMD/Data/surveyData.csv", row.names = FALSE)
+    write.csv(data$surveyCombined, "codebookApp/Codebook_RMD/Data/Data.csv", row.names = FALSE)
+  }
 }
