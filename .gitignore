@@ -15,4 +15,4 @@ codebookApp/Codebook_RMD/codebook.html
 # R Markdown generated folders that create long paths
 *_files/
 *_cache/
-
+*.RData
