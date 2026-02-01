@@ -10,7 +10,7 @@ codebookApp/Codebook_RMD/Data/Data.csv
 !codebookApp/Codebook_RMD/Data/.gitkeep
 codebookApp/Codebook_RMD/figure/*
 codebookApp/Codebook_RMD/codebook.html
-
+codebookApp/Codebook_RMD/dataDictionary.csv
 
 # R Markdown generated folders that create long paths
 *_files/
