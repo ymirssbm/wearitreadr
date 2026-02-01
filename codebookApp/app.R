@@ -1,6 +1,7 @@
 library(shiny)
 library(shinyTree)
 library(shinyFiles)
+require(visNetwork)
 rm(list = ls())
 devtools::load_all(recompile = FALSE)
 devtools::document()
@@ -107,10 +108,20 @@ ui <- navbarPage("Navigation",
                      div(class = "no-tab-style",
                          uiOutput("dataDictionary"))
                     )
+                 ),
+
+                 # Flowchart page
+                 tabPanel(
+                   "Flowchart",
+                   fluidPage(
+                     uiOutput("surveySelecter"),
+                     actionButton(inputId = "generateFlowChart", label = "Generate Flow Chart"),
+                     visNetworkOutput("surveyTree"))
                  )
 
 
 )
+
 
 server <- function(input, output) {
 
@@ -263,6 +274,31 @@ server <- function(input, output) {
     })
   }
 
+  #---------------------------------------------
+  # Flowchart builder
+  # --------------------------------------------
+
+  output$surveySelecter <- renderUI({
+
+    if (file.exists("Codebook_RMD/Data/blockMap.csv")) {
+      blockMap <- read.csv("Codebook_RMD/Data/blockMap.csv")
+    }
+
+    selectInput(
+      inputId = "survey",
+      label = "Select survey to generate flowchart for",
+      choices = unique(blockMap$Survey.LongName[!is.na(blockMap$Survey.LongName)])
+    )
+
+  })
+
+  observeEvent(input$generateFlowChart, {
+
+    blockMap <- parseBySurvey(survey = input$survey, shiny = TRUE)
+    output$surveyTree <- renderVisNetwork({
+      generateSurveyTree(blockMap = blockMap, shiny = TRUE)
+    })
+  })
 
 
 
