@@ -116,7 +116,11 @@ ui <- navbarPage("Navigation",
                    fluidPage(
                      uiOutput("surveySelecter"),
                      actionButton(inputId = "generateFlowChart", label = "Generate Flow Chart"),
-                     visNetworkOutput("surveyTree"))
+                     checkboxInput(inputId = "showItemID", label = "Hide Item ID's", value = FALSE),
+                     visNetworkOutput("surveyTree"),
+                     hr(),
+                     h4("Node Information"),
+                     verbatimTextOutput("nodeInfo"))
                  )
 
 
@@ -135,7 +139,7 @@ server <- function(input, output) {
     print(getwd())
     showNotification("Pulling Data...", type = "message")
     saveData(study_ID = input$studyID, apiToken = input$apiToken, shiny = TRUE,
-                         base_URL = input$base_URL)
+                         base_URL = input$base_URL, pull = TRUE)
     showNotification("Writing Data to processedData folder...", type = "message")
     showNotification("Finished!", type = "message")
   })
@@ -293,14 +297,39 @@ server <- function(input, output) {
   })
 
   observeEvent(input$generateFlowChart, {
+    blockMapParsed <- parseBySurvey(survey = input$survey, shiny = TRUE)
 
-    blockMap <- parseBySurvey(survey = input$survey, shiny = TRUE)
     output$surveyTree <- renderVisNetwork({
-      generateSurveyTree(blockMap = blockMap, shiny = TRUE)
+      network <- generateSurveyTree(blockMap = blockMapParsed, shiny = TRUE)
+      network %>%
+        visEvents(click = "function(nodes) {
+        Shiny.onInputChange('current_node_id', nodes.nodes[0]);
+      }")
+    })
+
+    # Display node info at bottom
+    output$nodeInfo <- renderText({
+      if (is.null(input$current_node_id)) {
+        "Click a node to see details"
+      } else {
+        node_data <- blockMapParsed[blockMapParsed$Item.ID == input$current_node_id, ]
+        paste0("Node: ", node_data$Item.ID, "\n",
+               "Question: ", node_data$Question.Text)
+      }
     })
   })
 
-
+  observeEvent(input$showItemID, {
+    if (input$showItemID) {
+      # HIDE all labels (checkbox is checked)
+      visNetworkProxy("surveyTree") %>%
+        visNodes(font = list(size = 0))
+    } else {
+      # SHOW all labels (checkbox is unchecked)
+      visNetworkProxy("surveyTree") %>%
+        visNodes(font = list(size = 14))
+    }
+  }, ignoreInit = TRUE)
 
 }
 

@@ -4,7 +4,12 @@
 \alias{generateSurveyTree}
 \title{Generate Survey Tree}
 \usage{
-generateSurveyTree(shiny = FALSE, blockMap = blockMapParsed)
+generateSurveyTree(shiny = FALSE, blockMapParsed)
+}
+\arguments{
+\item{shiny}{boolean indicating whether using shiny app}
+
+\item{blockMap}{Blockmap containing data for a single survey}
 }
 \value{
 survey tree
