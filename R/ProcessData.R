@@ -973,33 +973,3 @@ cogdata_unnest <- function(.data) {
 }
 
 
-
-
-
-#' saveData
-#'
-#'   This is a wrapper on getStudyData that saves it to the data folder
-#'
-#'
-#' @param shiny Boolean indicating whether the user is in the shiny app or not
-#' @return Saves data to data folder in codebook rmd
-
-
-saveData <- function(data, shiny = FALSE, ...) {
-
-  data <- getStudyData(shiny = shiny, ...)
-
-  if (shiny == TRUE) {
-    write.csv(data$questionMap, "Codebook_RMD/Data/blockMap.csv", row.names = FALSE)
-    write.csv(data$responseMap, "Codebook_RMD/Data/responseKey.csv", row.names = FALSE)
-    #write.csv(data$surveyData, "Codebook_RMD/Data/surveyData.csv", row.names = FALSE)
-    write.csv(data$surveyCombined, "Codebook_RMD/Data/Data.csv", row.names = FALSE)
-  }
-
-  if (shiny == FALSE) {
-    write.csv(data$questionMap, "codebookApp/Codebook_RMD/Data/blockMap.csv", row.names = FALSE)
-    write.csv(data$responseMap, "codebookApp/Codebook_RMD/Data/responseKey.csv", row.names = FALSE)
-    #write.csv(data$surveyData, "Codebook_RMD/Data/surveyData.csv", row.names = FALSE)
-    write.csv(data$surveyCombined, "codebookApp/Codebook_RMD/Data/Data.csv", row.names = FALSE)
-  }
-}
