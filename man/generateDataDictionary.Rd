@@ -5,7 +5,9 @@
 \title{Generate Data Dictionary}
 \usage{
 generateDataDictionary(
-  data = read.csv("Codebook_RMD/Data/blockMap.csv"),
+  blockMap = read.csv("Codebook_RMD/Data/blockMap.csv"),
+  responseMap = read.csv("Codebook_RMD/Data/blockMap.csv"),
+  ...,
   shiny = FALSE
 )
 }
