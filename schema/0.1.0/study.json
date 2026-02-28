@@ -1,0 +1,32 @@
+{
+  "$schema": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0",
+  "$id": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/study.json",
+  "title": "Wear-IT Study Specification",
+  "version": "0.1.0",
+  "description": "This specification contains all the needed information to both run a study using the Wear-IT framework. This includes all the needed information to make reproducible and replicable codebooks for complex designs."
+  "type": "object",
+  "examples": [
+    {
+      "studyLongName": "Recovery Community Center Project",
+      "studyID": 1045
+    }
+  ],
+  "properties": {
+    "studyLongName": {
+      "description": "Human readable long name for a study",
+      "type": "string"
+    },
+    "studyShortName": {
+      "description": "Human readable short name for a study",
+      "type": "string"
+    },
+    "studyID": {
+      "description": "Study numeric identifier",
+      "type": "integer"
+    },
+    "burst": {
+      "$ref": "https://github.com/ymirssbm/wearitreadr/schema/burst.json"
+    }
+  },
+  "required": ["studyID"]
+}
