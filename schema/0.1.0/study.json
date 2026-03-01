@@ -26,6 +26,15 @@
     },
     "burst": {
       "$ref": "https://github.com/ymirssbm/wearitreadr/schema/burst.json"
+    },
+    "data": {
+      "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/data.json"
+    },
+    "responseKey": {
+      "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/responseKey.json"
+    },
+    "responseKey": {
+      "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/blockMap.json"
     }
   },
   "required": ["studyID"]
