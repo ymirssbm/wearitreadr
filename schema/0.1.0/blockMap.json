@@ -1,0 +1,7 @@
+{
+  "$schema": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0",
+  "$id": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/blockMap.json",
+  "title": "Wear-IT Block Map",
+  "version": "0.1.0",
+  "description": "This contains the blockMap for a given study"
+}
