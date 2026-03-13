@@ -12,6 +12,10 @@ Most straightforward way to run is to use the 'using codebook.r' script and run 
 
 ## Known Issues / To do list
 
+- App crashes on wrong input at data pull, 
+- Should be able to select not to have Funding Authors and Title
+- Need to be able to specify file name
+
 - Implement screenshots
 - Missingness codes
 - Survey beeps
