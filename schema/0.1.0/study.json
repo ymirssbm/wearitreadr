@@ -1,9 +1,9 @@
 {
-  "$schema": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/study.json",
   "title": "Wear-IT Study Specification",
   "version": "0.1.0",
-  "description": "This specification contains all the needed information to both run a study using the Wear-IT framework. This includes all the needed information to make reproducible and replicable codebooks for complex designs."
+  "description": "This specification contains all the needed information to both run a study using the Wear-IT framework. This includes all the needed information to make reproducible and replicable codebooks for complex designs.",
   "type": "object",
   "examples": [
     {
@@ -25,15 +25,177 @@
       "type": "integer"
     },
     "burst": {
-      "$ref": "https://github.com/ymirssbm/wearitreadr/schema/burst.json"
+      "$anchor": "burst",
+      "title": "Burst Specification",
+      "description": "Contains all the information to specify burst design",
+      "type": "object",
+      "examples": [
+        {
+          "burstID": 1
+        }
+      ],
+      "properties": {
+        "burstID": {
+          "description": "Burst numeric identifier",
+          "type": "integer"
+        },
+        "survey": {
+          "$anchor": "survey",
+          "title": "Survey Specification",
+          "description": "Contains all the information needed to specify survey design",
+          "type": "object",
+          "examples": [
+            {
+              "surveyLongName": "Daily Diary",
+              "surveyID": 6205
+            }
+          ],
+          "properties": {
+            "surveyLongName": {
+              "description": "Human readable survey long name",
+              "type": "string"
+            },
+            "surveyShortName": {
+              "description": "Human readable survey short name",
+              "type": "string"
+            },
+            "surveyID": {
+              "description": "Survey numeric identifier",
+              "type": "integer"
+            },
+            "block": {
+              "$ref": "#block"
+            },
+            "question": {
+              "$anchor": "question",
+              "title": "Question Specification",
+              "description": "Contains all the information needed to specify a question or variable in a survey, observation, or passive data collection context.",
+              "type": "object",
+              "properties": {
+
+                "Question.ID": {
+                  "description": "Name of the variable as it appears in the dataset",
+                  "type": "string"
+                },
+                "Question.Long.Name": {
+                  "description": "Human readable name for the variable",
+                  "type": "string"
+                },
+                "Question.Text": {
+                  "description": "Exact text of the question as presented to the participant. Only applicable for survey questions.",
+                  "type": "string"
+                },
+                "Question.Description": {
+                  "description": "Description of the variable in layman's terms. If layman's terms are not possible, provide a citation to a longer explanation.",
+                  "type": "string"
+                },   
+                "Question.Type.Display.Name": {
+                  "description": "How the data was obtained (e.g. sensing, survey, observation, circling on page, digital slider).",
+                  "type": "string"
+                },
+                "collectionContext": {
+                  "description": "For whom and when is this data collected, including any skip logic or triggering conditions.",
+                  "type": "string"
+                },
+                "Parent": {
+                  "description": "Item ID of the parent item. NOTE: This is different then the conditional master which points to the item which if successful, delivers the current. Parent may point to a block many questions up",
+                  "type": "string"
+                },
+                "Conditional.Child.Item.ID": {
+                  "description": "Contains the Item ID for the successful child of the current question. If the current question is successful, deliver the child item.",
+                  "type": "string"
+                },
+                "Conditional.Fail.Item.ID": {
+                  "description": "Contains the Item ID for the fail child of the current question. If the current question is failed, deliver the fail item.",
+                  "type": "string"
+                },                
+                "Conditional.Master.Item.ID": {
+                  "description": "Contains the Item ID for the parent of the current question if the current question is a conditional child or fail.",
+                  "type": "string"
+                },
+                "Conditional.Threshold": {
+                  "description": "threshold is the preset value being compared to the user response. The value can be either a true value (the user slid the slider and it stopped on 51) or it might point to a response relative to the order of responses (i.e. There is a multiple choice question, it has 5 responses, they chose response #3, it can be any value)",
+                  "type": "string"
+                },                
+                "Conditional.Type": {
+                  "description": "conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
+                  "type": "string"
+                },                
+                "Result.Type": {
+                  "description": "The type of data captured by this variable.",
+                  "type": "string",
+                  "enum": ["numeric", "categorical", "continuous", "ordinal", "binary", "text", "other"]
+                },
+                "possibleValues": {
+                  "description": "Possible values or ranges of the variable, including item codes (e.g. 1 = strongly disagree) or ranges (e.g. 0-10).",
+                  "type": "string"
+                },
+
+                Should this be its own spec or what
+                "questionScreenshot": {
+                  "description": "URL or path to a screenshot of the question as presented to the participant.",
+                  "type": "string"
+                },
+
+                Should we have this be Item only?
+                "measurementCitation": {
+                  "description": "Citation for the measurement instrument or scale used.",
+                  "type": "string"
+                },
+
+
+
+                "measurementInterval": {
+                  "description": "Distance or frequency between measurements (e.g. 1 day, 1 hour). If complex, describe in skipLogic.",
+                  "type": "string"
+                },
+
+
+                Do we want things like missingness and skip logic to be there own self contained object
+                "missingness": {
+                  "description": "Information about missingness for this variable.",
+                  "type": "object",
+                  "properties": {
+                    "missingnessTypes": {
+                      "description": "Types of missingness present in the data.",
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": ["refused", "dont_know", "not_applicable", "not_ascertained"]
+                      }
+                    },
+                    "missingness codes": {
+                      "description": "Codes used in the dataset to represent missing values (e.g. 99999, -1, -5, -7, NA).",
+                      "type": "string"
+                      }
+                    },
+                    "item": {
+                      "$anchor": "item",
+                      "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/item.json"
+                    }
+                  }
+                }
+              },
+              "required": ["variableName"]
+            }
+          },
+          "required": ["surveyLongName", "surveyID"]
+        }
+      },
+      "required": ["burstID"]
     },
     "data": {
+      "$anchor": "data",
       "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/data.json"
     },
     "responseKey": {
+      "$anchor": "responseKey",
       "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/responseKey.json"
     },
-    "responseKey": {
+
+    # Should we also have this seperate embedding so have the info twice, 
+    "blockMap": {
+      "$anchor": "blockMap",
       "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/blockMap.json"
     }
   },
