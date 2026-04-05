@@ -1,8 +1,4 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/item.json",
-  "title": "Wear-IT Item Specification",
-  "version": "0.1.0",
   "description": "This specification contains all the needed information to describe a single item or scale used within the Wear-IT framework, including its conceptual, psychometric, and delivery properties.",
   "type": "object",
   "examples": [
@@ -16,33 +12,31 @@
     }
   ],
   "properties": {
-
-    "itemText": {
+    "Item.Text": {
       "description": "Exact text of the item as presented.",
       "type": "string"
     },
-    "conceptualization": {
+    "Conceptualization": {
       "description": "What construct or concept does this item measure or represent?",
       "type": "string"
     },
-    "typicalModelingUse": {
-      "description": "Usual modeling characteristics or how this item is typically used in analysis (e.g. predictor, outcome, mediator, covariate).",
+    "Modeling.Characteristics": {
+      "description": "Usual modeling characteristics or how this item is typically used in analysis (e.g. predictor, outcome, mediator, covariate). For example, reaction time is often log transformed.",
       "type": "string"
     },
-
-    "isValidated": {
+    "Validated": {
       "description": "Whether this item is part of a statistically validated measure.",
       "type": "boolean"
     },
-    "scaleName": {
+    "Scale.Name": {
       "description": "Name of the scale this item belongs to.",
       "type": "string"
     },
-    "parentScale": {
+    "Parent.Scale": {
       "description": "Name of the parent scale if this item belongs to a subscale.",
       "type": "string"
     },
-    "subScale": {
+    "Sub.Scale": {
       "description": "Name of the subscale this item belongs to, if applicable.",
       "type": "string"
     },
@@ -51,80 +45,66 @@
       "type": "string",
       "enum": ["scale", "item"]
     },
-    "typeOfScale": {
+    "Scale.Type": {
       "description": "The type of scale this item uses (e.g. Likert, VAS, semantic differential, binary, forced choice).",
       "type": "string"
     },
-    "scoring": {
+    "Scoring": {
       "description": "How this item or scale is scored, including any summing, averaging, or weighting rules.",
       "type": "string"
     },
-
-    "isReverseCoded": {
+    "Reverse.Coded": {
       "description": "Whether this item is reverse coded or otherwise transformed before use.",
       "type": "boolean"
     },
-    "transformation": {
-      "description": "Description of any transformation applied to this item beyond simple reverse coding.",
+    "Transformation": {
+      "description": "Description of any transformation applied to this item beyond simple reverse coding. This could also include transformation needed for this item (ie. log-transform reaction time).",
       "type": "string"
     },
-    "containsIdentifyingInfo": {
+    "Identifying.Info": {
       "description": "Whether this item potentially contains personally identifying information.",
       "type": "boolean"
     },
-
-    "dataType": {
+    "Data.Type": {
       "description": "Type of data this item produces.",
       "type": "string",
       "enum": ["numeric", "categorical", "continuous", "ordinal", "binary", "text", "other"]
     },
-    "timeStem": {
-      "description": "The time reference embedded in the item (e.g. 'in the past week', 'right now', 'today').",
+    "Time.Stem": {
+      "description": "The time reference embedded in the item (e.g. 'in the past week', 'right now', 'today'). This should be the time stem in the cited paper, but can be swapped out to any timestem.",
       "type": "string"
     },
-    "topLevelQuestion": {
-      "description": "The top-level or parent question this item falls under, if it is a sub-item.",
+    "Top.Level.Question": {
+      "description": "The top-level or parent question this item falls under, if it is a sub-item (i.e. Indicate to what extent you...).",
       "type": "string"
     },
-
-    "anchorsNumeric": {
-      "description": "Numeric mapping of response anchors (e.g. 1 = strongly disagree, 5 = strongly agree).",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "value": { "type": "number" },
-          "label": { "type": "string" }
-        },
-        "required": ["value", "label"]
-      }
+    "Values": {
+      "description": "Numeric mapping of response anchors (e.g. 1-5).",
+      "type": "string"
     },
-    "anchorsNominal": {
-      "description": "Nominal or text-based response options or categories (e.g. yes/no, never/sometimes/always).",
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "Definition": {
+      "description": "Nominal or text-based response options or categories (very slightly or not at all, a little, moderately, quite a bit, extremely).",
+      "type": "string"
     },
-
-    "deliveryMechanism": {
+    "Delivery.Mechanism": {
       "description": "How the item is delivered to the participant (e.g. mobile app, paper, wearable, passive sensor, interviewer).",
       "type": "string"
     },
-    "deliveryFrequency": {
+    "Delivery.Frequency": {
       "description": "How frequently this item is delivered (e.g. once daily, every 4 hours, event-contingent).",
       "type": "string"
     },
-
-    "citation": {
-      "description": "Citation for the item or scale source.",
+    "Article.Title": {
+      "description": "Title of article"
+    },
+    "Citation": {
+      "description": "DOI citation for the item or scale source, or APA formatted citation.",
       "type": "string"
     },
     "notes": {
       "description": "Any additional notes about this item.",
       "type": "string"
     }
-
   },
   "required": ["itemText"]
 }
