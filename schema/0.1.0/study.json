@@ -1,3 +1,5 @@
+Things that need to be clarified.
+- Overall Structure, specifically as to where we want data, blockMap (seperate or just embededd), and where do we want responseKey (Seperate or embedded)
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/study.json",
@@ -7,22 +9,29 @@
   "type": "object",
   "examples": [
     {
-      "studyLongName": "Recovery Community Center Project",
+      "Study.Name": "Recovery Community Center Project",
+      "authors": "Jane Smith, John Doe, Emily R. Johnson",
+      "funding": "NIH Grant R01DA012345; NSF Award 9876543",
+      "abstract": "This study examined daily stress and recovery patterns among adults attending a recovery community center. Participants completed ecological momentary assessments four times daily over 14 days across two bursts.",
       "studyID": 1045
     }
   ],
   "properties": {
-    "studyLongName": {
+    "Study.Name": {
       "description": "Human readable long name for a study",
       "type": "string"
     },
-    "studyShortName": {
-      "description": "Human readable short name for a study",
+    "authors": {
+      "description": "String of all people to be credited for this study. This will appear in the authors section of a generated codebook.",
       "type": "string"
     },
-    "studyID": {
-      "description": "Study numeric identifier",
-      "type": "integer"
+    "funding": {
+      "description": "String containing relevant funding info for the study",
+      "type": "string"
+    },
+    "abstract": {
+      "description": "String containing qualitative description of the study. This could include main study objectives, relevant findings, study population etc.",
+      "type": "string"
     },
     "burst": {
       "$anchor": "burst",
@@ -31,7 +40,13 @@
       "type": "object",
       "examples": [
         {
-          "burstID": 1
+          "burstID": 1,
+          "survey": {
+            "Survey.LongName": "Morning Daily Diary",
+            "Survey.ShortName": "MDD",
+            "Survey.Timing": 4,
+            "surveyID": 6205
+          }
         }
       ],
       "properties": {
@@ -46,21 +61,23 @@
           "type": "object",
           "examples": [
             {
-              "surveyLongName": "Daily Diary",
+              "Survey.LongName": "Morning Daily Diary",
+              "Survey.ShortName": "MDD",
+              "Survey.Timing": 4,
               "surveyID": 6205
             }
           ],
           "properties": {
-            "surveyLongName": {
+            "Survey.LongName": {
               "description": "Human readable survey long name",
               "type": "string"
             },
-            "surveyShortName": {
+            "Survey.ShortName": {
               "description": "Human readable survey short name",
               "type": "string"
             },
-            "surveyID": {
-              "description": "Survey numeric identifier",
+            "Survey.Timing": {
+              "description": "Timing of the survey (once a day, every hour, upon triggering...).",
               "type": "integer"
             },
             "block": {
@@ -71,8 +88,26 @@
               "title": "Question Specification",
               "description": "Contains all the information needed to specify a question or variable in a survey, observation, or passive data collection context.",
               "type": "object",
+              "examples": [
+                {
+                  "Question.ID": "stress_q1",
+                  "Question.Long.Name": "Perceived Stress Item 1",
+                  "Question.Text": "How stressed have you felt in the past hour?",
+                  "Question.Description": "A self-report measure of perceived stress on a scale from 0 (not at all) to 100 (extremely).",
+                  "Question.Type.Display.Name": "digital slider",
+                  "Unique.Timing": "Delivered once per day at 9:00 AM regardless of survey schedule",
+                  "Parent": "block_001",
+                  "Conditional.Child.Item.ID": "question_stress_followup",
+                  "Conditional.Fail.Item.ID": "question_skip_to_mood",
+                  "Conditional.Master.Item.ID": "question_stress_q1",
+                  "Conditional.Threshold": "50",
+                  "Conditional.Type": "2",
+                  "Data.Type": "continuous",
+                  "Measurement.Interval": "4 hours",
+                  "Item.ID": "item_pss_01"
+                }
+              ],
               "properties": {
-
                 "Question.ID": {
                   "description": "Name of the variable as it appears in the dataset",
                   "type": "string"
@@ -88,13 +123,13 @@
                 "Question.Description": {
                   "description": "Description of the variable in layman's terms. If layman's terms are not possible, provide a citation to a longer explanation.",
                   "type": "string"
-                },   
+                },
                 "Question.Type.Display.Name": {
                   "description": "How the data was obtained (e.g. sensing, survey, observation, circling on page, digital slider).",
                   "type": "string"
                 },
-                "collectionContext": {
-                  "description": "For whom and when is this data collected, including any skip logic or triggering conditions.",
+                "Unique.Timing": {
+                  "description": "Description of question timing if it is not shared with the survey.",
                   "type": "string"
                 },
                 "Parent": {
@@ -108,7 +143,7 @@
                 "Conditional.Fail.Item.ID": {
                   "description": "Contains the Item ID for the fail child of the current question. If the current question is failed, deliver the fail item.",
                   "type": "string"
-                },                
+                },
                 "Conditional.Master.Item.ID": {
                   "description": "Contains the Item ID for the parent of the current question if the current question is a conditional child or fail.",
                   "type": "string"
@@ -116,73 +151,54 @@
                 "Conditional.Threshold": {
                   "description": "threshold is the preset value being compared to the user response. The value can be either a true value (the user slid the slider and it stopped on 51) or it might point to a response relative to the order of responses (i.e. There is a multiple choice question, it has 5 responses, they chose response #3, it can be any value)",
                   "type": "string"
-                },                
+                },
                 "Conditional.Type": {
-                  "description": "conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
+                  "description": "conditional type is the comparator. It can take on a value from 1-6 which corresponds with... (in order: =, <=, >=, <, >, !=)",
                   "type": "string"
-                },                
-                "Result.Type": {
-                  "description": "The type of data captured by this variable.",
+                },
+                "Data.Type": {
+                  "description": "The type of data captured by this variable. Oldname: Result.Type",
                   "type": "string",
                   "enum": ["numeric", "categorical", "continuous", "ordinal", "binary", "text", "other"]
                 },
-                "possibleValues": {
-                  "description": "Possible values or ranges of the variable, including item codes (e.g. 1 = strongly disagree) or ranges (e.g. 0-10).",
+                "Measurement.Interval": {
+                  "description": "Distance or frequency between measurements (e.g. 1 day, 1 hour).",
                   "type": "string"
                 },
-
-                Should this be its own spec or what
-                "questionScreenshot": {
-                  "description": "URL or path to a screenshot of the question as presented to the participant.",
+                "Item.ID": {
+                  "description": "Item ID for this question",
                   "type": "string"
-                },
-
-                Should we have this be Item only?
-                "measurementCitation": {
-                  "description": "Citation for the measurement instrument or scale used.",
-                  "type": "string"
-                },
-
-
-
-                "measurementInterval": {
-                  "description": "Distance or frequency between measurements (e.g. 1 day, 1 hour). If complex, describe in skipLogic.",
-                  "type": "string"
-                },
-
-
-                Do we want things like missingness and skip logic to be there own self contained object
-                "missingness": {
-                  "description": "Information about missingness for this variable.",
-                  "type": "object",
-                  "properties": {
-                    "missingnessTypes": {
-                      "description": "Types of missingness present in the data.",
-                      "type": "array",
-                      "items": {
-                        "type": "string",
-                        "enum": ["refused", "dont_know", "not_applicable", "not_ascertained"]
-                      }
-                    },
-                    "missingness codes": {
-                      "description": "Codes used in the dataset to represent missing values (e.g. 99999, -1, -5, -7, NA).",
-                      "type": "string"
-                      }
-                    },
-                    "item": {
-                      "$anchor": "item",
-                      "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/item.json"
-                    }
-                  }
                 }
               },
-              "required": ["variableName"]
+              "required": [
+                "Question.ID",
+                "Question.Long.Name",
+                "Question.Text",
+                "Question.Description",
+                "Question.Type.Display.Name",
+                "Unique.Timing",
+                "Parent",
+                "Conditional.Child.Item.ID",
+                "Conditional.Fail.Item.ID",
+                "Conditional.Master.Item.ID",
+                "Conditional.Threshold",
+                "Conditional.Type",
+                "Data.Type",
+                "Measurement.Interval",
+                "Item.ID"
+              ]
             }
           },
-          "required": ["surveyLongName", "surveyID"]
+          "required": [
+            "Survey.LongName",
+            "Survey.ShortName",
+            "Survey.Timing",
+            "block",
+            "question"
+          ]
         }
       },
-      "required": ["burstID"]
+      "required": ["burstID", "survey"]
     },
     "data": {
       "$anchor": "data",
@@ -190,14 +206,215 @@
     },
     "responseKey": {
       "$anchor": "responseKey",
-      "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/responseKey.json"
+      "title": "Response Key Specification",
+      "description": "Contains all the information needed to map response values to their definitions for a given survey question.",
+      "type": "object",
+      "examples": [
+        {
+          "survey": "MDD",
+          "question": "stress_q1",
+          "type": "Likert",
+          "value": "3",
+          "definition": "Fairly Often"
+        }
+      ],
+      "properties": {
+        "survey": {
+          "description": "Short name of the survey this response key belongs to.",
+          "type": "string"
+        },
+        "question": {
+          "description": "Question ID this response key belongs to.",
+          "type": "string"
+        },
+        "type": {
+          "description": "The type of response scale used (e.g. Likert, VAS, binary, forced choice).",
+          "type": "string"
+        },
+        "value": {
+          "description": "The numeric or coded value of the response as it appears in the dataset.",
+          "type": "string"
+        },
+        "definition": {
+          "description": "The human readable label or meaning corresponding to the response value.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "survey",
+        "question",
+        "type",
+        "value",
+        "definition"
+      ]
     },
-
-    # Should we also have this seperate embedding so have the info twice, 
+    "itemMap": {
+      "title": "Item Map Repo",
+      "description": "This specification contains all the needed information to describe a single item or scale used within the Wear-IT framework, including its conceptual, psychometric, and delivery properties.",
+      "type": "object",
+      "examples": [
+        {
+          "Item.Text": "How stressed did you feel today?",
+          "Conceptualization": "Perceived psychological stress",
+          "Modeling.Characteristics": "Typically used as an outcome variable; no transformation required",
+          "Validated": true,
+          "Scale.Name": "Perceived Stress Scale",
+          "Parent.Scale": "Perceived Stress Scale",
+          "Sub.Scale": "Perceived Helplessness",
+          "scaleOrItem": "item",
+          "Scale.Type": "Likert",
+          "Scoring": "sum score",
+          "Reverse.Coded": false,
+          "Transformation": "None",
+          "Identifying.Info": false,
+          "Data.Type": "ordinal",
+          "Time.Stem": "in the last month",
+          "Top.Level.Question": "Indicate to what extent you...",
+          "Values": "0-4",
+          "Definition": "Never, Almost Never, Sometimes, Fairly Often, Very Often",
+          "Delivery.Mechanism": "mobile app",
+          "Delivery.Frequency": "once daily",
+          "Article.Title": "A global measure of perceived stress",
+          "Citation": "Cohen, S., Kamarck, T., & Mermelstein, R. (1983). https://doi.org/10.2307/2136404",
+          "notes": "Standard PSS-10 item; time stem adapted from original"
+        }
+      ],
+      "properties": {
+        "Item.Text": {
+          "description": "Exact text of the item as presented.",
+          "type": "string"
+        },
+        "Conceptualization": {
+          "description": "What construct or concept does this item measure or represent?",
+          "type": "string"
+        },
+        "Modeling.Characteristics": {
+          "description": "Usual modeling characteristics or how this item is typically used in analysis (e.g. predictor, outcome, mediator, covariate). For example, reaction time is often log transformed.",
+          "type": "string"
+        },
+        "Validated": {
+          "description": "Whether this item is part of a statistically validated measure.",
+          "type": "boolean"
+        },
+        "Scale.Name": {
+          "description": "Name of the scale this item belongs to.",
+          "type": "string"
+        },
+        "Parent.Scale": {
+          "description": "Name of the parent scale if this item belongs to a subscale.",
+          "type": "string"
+        },
+        "Sub.Scale": {
+          "description": "Name of the subscale this item belongs to, if applicable.",
+          "type": "string"
+        },
+        "scaleOrItem": {
+          "description": "Whether this entry represents a full scale or a single item.",
+          "type": "string",
+          "enum": ["scale", "item"]
+        },
+        "Scale.Type": {
+          "description": "The type of scale this item uses (e.g. Likert, VAS, semantic differential, binary, forced choice).",
+          "type": "string"
+        },
+        "Scoring": {
+          "description": "How this item or scale is scored, including any summing, averaging, or weighting rules (e.g. sum score, factor scores, weighted sum scores).",
+          "type": "string"
+        },
+        "Reverse.Coded": {
+          "description": "Whether this item is reverse coded or otherwise transformed before use.",
+          "type": "boolean"
+        },
+        "Transformation": {
+          "description": "Description of any transformation applied to this item beyond simple reverse coding. This could also include transformation needed for this item (ie. log-transform reaction time).",
+          "type": "string"
+        },
+        "Identifying.Info": {
+          "description": "Whether this item potentially contains personally identifying information.",
+          "type": "boolean"
+        },
+        "Data.Type": {
+          "description": "Type of data this item produces.",
+          "type": "string",
+          "enum": ["numeric", "categorical", "continuous", "ordinal", "binary", "text", "other"]
+        },
+        "Time.Stem": {
+          "description": "The time reference embedded in the item (e.g. 'in the past week', 'right now', 'today'). This should be the time stem in the cited paper, but can be swapped out to any timestem.",
+          "type": "string"
+        },
+        "Top.Level.Question": {
+          "description": "The top-level or parent question this item falls under, if it is a sub-item (i.e. Indicate to what extent you...).",
+          "type": "string"
+        },
+        "Values": {
+          "description": "Numeric mapping of response anchors (e.g. 1-5).",
+          "type": "string"
+        },
+        "Definition": {
+          "description": "Nominal or text-based response options or categories (very slightly or not at all, a little, moderately, quite a bit, extremely).",
+          "type": "string"
+        },
+        "Delivery.Mechanism": {
+          "description": "How the item is delivered to the participant (e.g. mobile app, paper, wearable, passive sensor, interviewer).",
+          "type": "string"
+        },
+        "Delivery.Frequency": {
+          "description": "How frequently this item is delivered (e.g. once daily, every 4 hours, event-contingent).",
+          "type": "string"
+        },
+        "Article.Title": {
+          "description": "Title of article",
+          "type": "string"
+        },
+        "Citation": {
+          "description": "DOI citation for the item or scale source, or APA formatted citation.",
+          "type": "string"
+        },
+        "notes": {
+          "description": "Any additional notes about this item.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "Item.Text",
+        "Conceptualization",
+        "Modeling.Characteristics",
+        "Validated",
+        "Scale.Name",
+        "Parent.Scale",
+        "Sub.Scale",
+        "scaleOrItem",
+        "Scale.Type",
+        "Scoring",
+        "Reverse.Coded",
+        "Transformation",
+        "Identifying.Info",
+        "Data.Type",
+        "Time.Stem",
+        "Top.Level.Question",
+        "Values",
+        "Definition",
+        "Delivery.Mechanism",
+        "Delivery.Frequency",
+        "Article.Title",
+        "Citation",
+        "notes"
+      ]
+    },
     "blockMap": {
       "$anchor": "blockMap",
       "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/blockMap.json"
     }
   },
-  "required": ["studyID"]
+  "required": [
+    "Study.Name",
+    "authors",
+    "funding",
+    "abstract",
+    "burst",
+    "data",
+    "responseKey",
+    "itemMap",
+    "blockMap"
+  ]
 }
