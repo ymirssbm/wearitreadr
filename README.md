@@ -15,7 +15,8 @@ Most straightforward way to run is to use the 'using codebook.r' script and run 
 - App crashes on wrong input at data pull, 
 - Should be able to select not to have Funding Authors and Title
 - Need to be able to specify file name
-
+- List of devices used
+- Period of data collection
 - Implement screenshots
 - Missingness codes
 - Survey beeps
