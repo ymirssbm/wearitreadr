@@ -10,8 +10,7 @@
       "Study.Name": "Recovery Community Center Project",
       "authors": "Jane Smith, John Doe, Emily R. Johnson",
       "funding": "NIH Grant R01DA012345; NSF Award 9876543",
-      "abstract": "This study examined daily stress and recovery patterns among adults attending a recovery community center. Participants completed ecological momentary assessments four times daily over 14 days across two bursts.",
-      "studyID": 1045
+      "abstract": "This study examined daily stress and recovery patterns among adults attending a recovery community center. Participants completed ecological momentary assessments four times daily over 14 days across two bursts."
     }
   ],
   "properties": {
@@ -42,8 +41,7 @@
           "survey": {
             "Survey.LongName": "Morning Daily Diary",
             "Survey.ShortName": "MDD",
-            "Survey.Timing": 4,
-            "surveyID": 6205
+            "Survey.Timing": 4
           }
         }
       ],
@@ -61,8 +59,7 @@
             {
               "Survey.LongName": "Morning Daily Diary",
               "Survey.ShortName": "MDD",
-              "Survey.Timing": 4,
-              "surveyID": 6205
+              "Survey.Timing": 4
             }
           ],
           "properties": {
@@ -100,7 +97,7 @@
                   "Conditional.Master.Item.ID": "question_stress_q1",
                   "Conditional.Threshold": "50",
                   "Conditional.Type": "2",
-                  "Data.Type": "continuous",
+                  "Data.Type": "numeric",
                   "Measurement.Interval": "4 hours",
                   "Item.ID": "item_pss_01"
                 }
@@ -147,13 +144,13 @@
                   "type": "string"
                 },
                 "Conditional.Threshold": {
-                  "description": "threshold is the preset value being compared to the user response. The value can be either a true value (the user slid the slider and it stopped on 51) or it might point to a response relative to the order of responses (i.e. There is a multiple choice question, it has 5 responses, they chose response #3, it can be any value)",
+                  "description": "Threshold is the preset value being compared to the user response. The value can be either a true value (the user slid the slider and it stopped on 51) or it might point to a response relative to the order of responses (i.e. There is a multiple choice question, it has 5 responses, they chose response #3, it can be any value)",
                   "type": "string"
                 },
                 "Conditional.Type": {
-                  "description": "conditional type is the comparator. It can take on a value from 1-6 which corresponds with... (in order: =, <=, >=, <, >, !=)",
+                  "description": "Conditional type is the comparator. It can take on a value from 1-6 which corresponds with... (in order: =, <=, >=, <, >, !=)",
                   "type": "string",
-                  "enum": [1, 2, 3, 4, 5, 6, null]
+                  "enum": ["1", "2", "3", "4", "5", "6", null]
                 },
                 "Data.Type": {
                   "description": "The type of data captured by this variable. Oldname: Result.Type",
@@ -206,112 +203,107 @@
       "type": "object",
       "examples": [
         {
-          "Survey.ID": 6205,
-          "Survey.Name": "Morning Daily Diary",
           "Participant.ID": "P001",
-          "Session.ID": 101,
-          "Alert.Times": "2023-03-01T09:00:00Z",
-          "Survey.Start": "2023-03-01T09:02:00Z",
-          "Survey.Date.Completed": "2023-03-01T09:10:00Z",
-          "Survey.Date.Submitted": "2023-03-01T09:10:45Z",
-          "Timezone": "America/New_York",
-          "Offset": -5,
-          "Network.Type": "WiFi",
-          "App.Version": "2.4.1",
-          "OS": "iOS",
-          "Model": "iPhone 13",
-          "Burst": 1,
-          "UCS.ID": 88,
+          "Timing.Info": {
+            "Session.ID": 101,
+            "Alert.Times": "2023-03-01T09:00:00Z",
+            "Survey.Start": "2023-03-01T09:02:00Z",
+            "Survey.Date.Completed": "2023-03-01T09:10:00Z",
+            "Survey.Date.Submitted": "2023-03-01T09:10:45Z",
+            "Timezone": "America/New_York",
+            "Offset": -5
+          },
+          "Device.Info": {
+            "Network.Type": "Wifi",
+            "App.Version": "3.1.0",
+            "OS": "iOS",
+            "Model": "iPhone 13"
+          },
           "User.Response": "3",
           "Question.ID": "stress_q1",
-          "Item": "item_pss_01",
-          "Short.Descriptor": "Stress Item 1",
-          "External.ID": "EXT-00123",
-          "Cog.Test.Result": null,
-          "Survey": "MDD",
-          "Block": null,
-          "Sub.block": null,
-          "Question.Text": "How stressed have you felt in the past hour?",
-          "Question.Type": 2,
-          "Conditional.Child.Item.ID": null,
-          "Conditional.Fail.Item.ID": null,
-          "Conditional.Threshold": null,
-          "Conditional.Type": null,
-          "Conditional.Master.Item.ID": null,
-          "Question.Type.Display.Name": "digital slider",
-          "Result.Type": "continuous",
-          "Multiple.Question.Type": null
+          "External.ID": "EXT-00123"
         }
       ],
       "properties": {
-        "Survey.ID": {
-          "description": "Numeric identifier for the survey.",
-          "type": "number"
-        },
-        "Survey.Name": {
-          "description": "Human readable name of the survey.",
-          "type": "string"
-        },
         "Participant.ID": {
           "description": "Unique identifier for the participant.",
           "type": "string"
         },
-        "Session.ID": {
-          "description": "Numeric identifier for the survey session.",
-          "type": "number"
+        "Timing.Info": {
+          "description": "Contains all the information related to a unique delivery of a question.",
+          "type": "object",
+          "properties": {
+            "Session.ID": {
+              "description": "Numeric identifier for the survey session.",
+              "type": "number"
+            },
+            "Alert.Times": {
+              "description": "Datetime the participant was alerted to take the survey.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "Survey.Start": {
+              "description": "Datetime the participant began the survey.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "Survey.Date.Completed": {
+              "description": "Datetime the participant completed the survey.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "Survey.Date.Submitted": {
+              "description": "Datetime the survey was submitted to the server.",
+              "type": "string",
+              "format": "date-time"
+            },
+            "Timezone": {
+              "description": "Timezone of the device at the time of survey completion.",
+              "type": "string"
+            },
+            "Offset": {
+              "description": "UTC offset in hours for the participant's timezone at time of survey.",
+              "type": "number"
+            }
+          },
+          "required": [
+            "Session.ID",
+            "Alert.Times",
+            "Survey.Start",
+            "Survey.Date.Completed",
+            "Survey.Date.Submitted",
+            "Timezone",
+            "Offset"
+          ]
         },
-        "Alert.Times": {
-          "description": "Datetime the participant was alerted to take the survey.",
-          "type": "string",
-          "format": "date-time"
-        },
-        "Survey.Start": {
-          "description": "Datetime the participant began the survey.",
-          "type": "string",
-          "format": "date-time"
-        },
-        "Survey.Date.Completed": {
-          "description": "Datetime the participant completed the survey.",
-          "type": "string",
-          "format": "date-time"
-        },
-        "Survey.Date.Submitted": {
-          "description": "Datetime the survey was submitted to the server.",
-          "type": "string",
-          "format": "date-time"
-        },
-        "Timezone": {
-          "description": "Timezone of the device at the time of survey completion.",
-          "type": "string"
-        },
-        "Offset": {
-          "description": "UTC offset in hours for the participant's timezone at time of survey.",
-          "type": "number"
-        },
-        "Network.Type": {
-          "description": "Type of network connection at time of submission (e.g. WiFi, cellular).",
-          "type": "string",
-          "enum": ["Cellular", "Wifi"]
-        },
-        "App.Version": {
-          "description": "Version of the Wear-IT app used to deliver the survey.",
-          "type": "string"
-        },
-        "OS": {
-          "description": "Operating system of the participant's device (e.g. iOS, Android).",
-          "type": "string"
-        },
-        "Model": {
-          "description": "Device model used by the participant.",
-          "type": "string"
-        },
-        "Burst": {
-          "description": "Burst number this survey session belongs to.",
-          "type": "number"
-        },
-        "UCS.ID": {
-          "description": "Unique identifier for the use case schedule entry.",
-          "type": "number"
+        "Device.Info": {
+          "description": "Contains all the device information for a unique delivery of a question.",
+          "type": "object",
+          "properties": {
+            "Network.Type": {
+              "description": "Type of network connection at time of submission.",
+              "type": "string",
+              "enum": ["Cellular", "Wifi"]
+            },
+            "App.Version": {
+              "description": "Version of the Wear-IT app used to deliver the survey.",
+              "type": "string"
+            },
+            "OS": {
+              "description": "Operating system of the participant's device (e.g. iOS, Android).",
+              "type": "string"
+            },
+            "Model": {
+              "description": "Device model used by the participant.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "Network.Type",
+            "App.Version",
+            "OS",
+            "Model"
+          ]
         },
         "User.Response": {
           "description": "The raw response provided by the participant for this question.",
@@ -321,113 +313,18 @@
           "description": "Name of the variable as it appears in the dataset. Matches Question.ID in the question specification.",
           "type": "string"
         },
-        "Item": {
-          "description": "Item ID for this question. Matches Item.ID in the question specification.",
-          "type": "string"
-        },
-        "Short.Descriptor": {
-          "description": "Brief human readable label for the question or variable.",
-          "type": "string"
-        },
         "External.ID": {
           "description": "External identifier for linking this record to outside systems or datasets.",
           "type": "string"
-        },
-        "Cog.Test.Result": {
-          "description": "Result of a cognitive test if applicable. Null if not a cognitive test item.",
-          "type": ["boolean", "null"]
-        },
-        "Survey": {
-          "description": "Short name of the survey. Matches Survey.ShortName in the survey specification.",
-          "type": "string"
-        },
-        "Block": {
-          "description": "Block identifier this question belongs to, if applicable.",
-          "type": ["boolean", "null"]
-        },
-        "Sub.block": {
-          "description": "Sub-block identifier this question belongs to, if applicable.",
-          "type": ["boolean", "null"]
-        },
-        "Question.Text": {
-          "description": "Exact text of the question as presented to the participant.",
-          "type": "string"
-        },
-        "Question.Type": {
-          "description": "Numeric code representing the question type.",
-          "type": "number"
-        },
-        "Conditional.Child.Item.ID": {
-          "description": "Item ID of the child item delivered if this question's condition is met. Null if not conditional.",
-          "type": ["number", "null"]
-        },
-        "Conditional.Fail.Item.ID": {
-          "description": "Item ID of the item delivered if this question's condition fails. Null if not conditional.",
-          "type": ["number", "null"]
-        },
-        "Conditional.Threshold": {
-          "description": "Threshold value used in the conditional logic comparison. Null if not conditional.",
-          "type": ["number", "null"]
-        },
-        "Conditional.Type": {
-          "description": "Numeric comparator code for conditional logic (1=, 2<=, 3>=, 4<, 5>, 6!=). Null if not conditional.",
-          "type": ["number", "null"]
-        },
-        "Conditional.Master.Item.ID": {
-          "description": "Item ID of the parent conditional item that triggered delivery of this item. Null if not a conditional child.",
-          "type": ["number", "null"]
-        },
-        "Question.Type.Display.Name": {
-          "description": "Human readable name for how the question was displayed (e.g. digital slider, multiple choice).",
-          "type": "string",
-          "enum": [1, 2, 3, 4, 5, 6, null]
-        },
-        "Data.Type": {
-          "description": "The type of data captured by this variable. Oldname: Result.Type",
-          "type": "string",
-          "enum": ["integer", "character", "numeric", null]
-        },
-        "Multiple.Question.Type": {
-          "description": "Type designation for multiple-choice questions, if applicable. Null otherwise.",
-          "type": ["boolean", "null"]
         }
       },
       "required": [
-        "Survey.ID",
-        "Survey.Name",
         "Participant.ID",
-        "Session.ID",
-        "Alert.Times",
-        "Survey.Start",
-        "Survey.Date.Completed",
-        "Survey.Date.Submitted",
-        "Timezone",
-        "Offset",
-        "Network.Type",
-        "App.Version",
-        "OS",
-        "Model",
-        "Burst",
-        "UCS.ID",
+        "Timing.Info",
+        "Device.Info",
         "User.Response",
         "Question.ID",
-        "Item",
-        "Short.Descriptor",
-        "External.ID",
-        "Cog.Test.Result",
-        "Survey",
-        "Block",
-        "Sub.block",
-        "Question.Text",
-        "Question.Type",
-        "Conditional.Child.Item.ID",
-        "Conditional.Fail.Item.ID",
-        "Conditional.Threshold",
-        "Conditional.Type",
-        "Conditional.Master.Item.ID",
-        "Question.Type.Display.Name",
-        "Result.Type",
-        "Multiple.Question.Type"
+        "External.ID"
       ]
     },
     "responseKey": {
