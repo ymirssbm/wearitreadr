@@ -59,7 +59,7 @@
             {
               "Survey.LongName": "Morning Daily Diary",
               "Survey.ShortName": "MDD",
-              "Survey.Timing": 4
+              "Survey.Timing": "put in example"
             }
           ],
           "properties": {
@@ -71,10 +71,15 @@
               "description": "Human readable survey short name",
               "type": "string"
             },
+            This needs an end point
+            scheduled, random, triggered, etc
+
+            Look at calendar app structure
             "Survey.Timing": {
               "description": "Timing of the survey (once a day, every hour, upon triggering...).",
-              "type": "integer"
+              "type": "string"
             },
+            put this in question
             "block": {
               "$ref": "#block"
             },
@@ -123,6 +128,7 @@
                   "description": "How the data was obtained (e.g. sensing, survey, observation, circling on page, digital slider).",
                   "type": "string"
                 },
+                get rid of this
                 "Unique.Timing": {
                   "description": "Description of question timing if it is not shared with the survey.",
                   "type": "string"
@@ -131,6 +137,9 @@
                   "description": "Item ID of the parent item. NOTE: This is different then the conditional master which points to the item which if successful, delivers the current. Parent may point to a block many questions up",
                   "type": "string"
                 },
+                Put these into a object
+
+                Consider case of multiple selct where mulitple choices point outwards to multiple outcomes
                 "Conditional.Child.Item.ID": {
                   "description": "Contains the Item ID for the successful child of the current question. If the current question is successful, deliver the child item.",
                   "type": "string"
@@ -157,6 +166,7 @@
                   "type": "string",
                   "enum": ["integer", "character", "numeric", null]
                 },
+                Remove this because it inherents from the survey
                 "Measurement.Interval": {
                   "description": "Distance or frequency between measurements (e.g. 1 day, 1 hour).",
                   "type": "string"
@@ -196,6 +206,7 @@
       },
       "required": ["burstID", "survey"]
     },
+    move to cols
     "data": {
       "$anchor": "data",
       "title": "Data Specification",
@@ -225,8 +236,8 @@
         }
       ],
       "properties": {
-        "Participant.ID": {
-          "description": "Unique identifier for the participant.",
+        "Device.ID": {
+          "description": "Unique identifier for the participant or device.",
           "type": "string"
         },
         "Timing.Info": {
@@ -237,6 +248,7 @@
               "description": "Numeric identifier for the survey session.",
               "type": "number"
             },
+            make list because can alert multiple times
             "Alert.Times": {
               "description": "Datetime the participant was alerted to take the survey.",
               "type": "string",
@@ -257,6 +269,7 @@
               "type": "string",
               "format": "date-time"
             },
+            remove and encode all in 1 thing like iso 8601
             "Timezone": {
               "description": "Timezone of the device at the time of survey completion.",
               "type": "string"
@@ -313,7 +326,7 @@
           "description": "Name of the variable as it appears in the dataset. Matches Question.ID in the question specification.",
           "type": "string"
         },
-        "External.ID": {
+        "User.ID": {
           "description": "External identifier for linking this record to outside systems or datasets.",
           "type": "string"
         }
@@ -327,6 +340,10 @@
         "External.ID"
       ]
     },
+
+    Nest this in question, value and response is dictionary
+    define compounding structure
+    free response seperated by enters as opposed to ,
     "responseKey": {
       "$anchor": "responseKey",
       "title": "Response Key Specification",
