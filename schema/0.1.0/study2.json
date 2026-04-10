@@ -37,19 +37,20 @@
       "type": "object",
       "examples": [
         {
-          "burstID": 1,
-          "survey": {
-            "Survey.LongName": "Morning Daily Diary",
-            "Survey.ShortName": "MDD",
-            "Survey.Timing": 4
-          }
+          "burstID": 1
         }
       ],
       "properties": {
         "burstID": {
-          "description": "Burst numeric identifier",
+          "description": "Burst ordered numeric identifier",
           "type": "integer"
         },
+        "Timing.Type": {
+          "description": "Type of timing. Discrete means equal time distance, random, is drawing a random sample from a time period, triggered is based on set rules more in depth than just random in a time period, and continous is uneven time intervals.",
+          "type": "string",
+          "enum": ["Discrete","Random","Triggered","Continous"]
+        },
+
         "survey": {
           "$anchor": "survey",
           "title": "Survey Specification",
@@ -71,17 +72,77 @@
               "description": "Human readable survey short name",
               "type": "string"
             },
-            This needs an end point
-            scheduled, random, triggered, etc
-
-            Look at calendar app structure
-            "Survey.Timing": {
-              "description": "Timing of the survey (once a day, every hour, upon triggering...).",
-              "type": "string"
-            },
-            put this in question
-            "block": {
-              "$ref": "#block"
+            "Scheduling.Info": {
+              "description": "contains all the timing and window info for a survey",
+              "type": "object",
+              "properties": {
+                "$defs": {
+                  "Timing.Info": {
+                    "description": "Contains all the timing information. This could be the timing of surveys, or the timing of windows.",
+                    "type": "object",
+                    "properties": {
+                      "offset": {
+                        "description": "Distance between each survey at this level",
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "value": { "type": "number" },
+                            "unit": {"type": "string","enum": ["seconds","minutes","hours","days","weeks","months","years","decades"]
+                            }
+                          },
+                          "required": ["value", "unit"]
+                        }
+                      },
+                      "children": {
+                        "description": "Nested timing levels (recursive schedule definition).",
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/$defs/Timing.Info"
+                        }
+                      }
+                    }
+                  }
+                },
+                "$ref": "#/$defs/Timing.Info"
+              },
+              "Window.Info": {
+                "window.length": {
+                  "description": "Describes the length of a window. Note, this can be 0 meaning, the survey is delivered exactly at the timing.",
+                  "type": "array",
+                  "items": {
+                    "type": "objects",
+                    "properties": {
+                      "value": { "type": "number" },
+                      "unit": {"type": "string", "enum": ["seconds","minutes","hours","days","weeks","months","years","decades"]
+                      }
+                    }
+                  }
+                },
+                "random": {
+                  "description": "Whether the delivery of a survey is just a random sample within the specified window",
+                  "type": "boolean"
+                },
+                "Trigger.Info": {
+                  "description": "Contains the trigger logic if it exists for a given window.",
+                  "type": "object",
+                  "properties": {
+                    "Conditional.Source": {
+                      "description": "Source of measurement to trigger conditional (heart rate sensor)",
+                      "type": "string"
+                    },
+                    "Conditional.Threshold": {
+                      "description": "Threshold is the preset value being compared to the user response. The value can be either a true value (the user slid the slider and it stopped on 51) or it might point to a response relative to the order of responses (i.e. There is a multiple choice question, it has 5 responses, they chose response #3, it can be any value)",
+                      "type": "string"
+                    },
+                    "Conditional.Type": {
+                      "description": "Conditional type is the comparator. It can take on a value from 1-6 which corresponds with... (in order: =, <=, >=, <, >, !=)",
+                      "type": "string",
+                      "enum": ["1", "2", "3", "4", "5", "6", null]
+                    }
+                  }
+                }
+              } 
             },
             "question": {
               "$anchor": "question",
@@ -128,48 +189,70 @@
                   "description": "How the data was obtained (e.g. sensing, survey, observation, circling on page, digital slider).",
                   "type": "string"
                 },
-                get rid of this
-                "Unique.Timing": {
-                  "description": "Description of question timing if it is not shared with the survey.",
-                  "type": "string"
+                "responseKey": {
+                  "type": "array",
+                  "description": "List of response value-definition pairs.",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "string",
+                        "description": "Coded response value."
+                      },
+                      "definition": {
+                        "type": "string",
+                        "description": "Human-readable label for the response value."
+                      }
+                    },
+                    "required": ["value", "definition"]
+                  }
+                },
+                "Type": {
+                  "description": "Block or question.",
+                  "type": "string",
+                  "enum": ["Block","Question",null]
                 },
                 "Parent": {
                   "description": "Item ID of the parent item. NOTE: This is different then the conditional master which points to the item which if successful, delivers the current. Parent may point to a block many questions up",
                   "type": "string"
                 },
-                Put these into a object
-
-                Consider case of multiple selct where mulitple choices point outwards to multiple outcomes
-                "Conditional.Child.Item.ID": {
-                  "description": "Contains the Item ID for the successful child of the current question. If the current question is successful, deliver the child item.",
-                  "type": "string"
-                },
-                "Conditional.Fail.Item.ID": {
-                  "description": "Contains the Item ID for the fail child of the current question. If the current question is failed, deliver the fail item.",
-                  "type": "string"
-                },
-                "Conditional.Master.Item.ID": {
-                  "description": "Contains the Item ID for the parent of the current question if the current question is a conditional child or fail.",
-                  "type": "string"
-                },
-                "Conditional.Threshold": {
-                  "description": "Threshold is the preset value being compared to the user response. The value can be either a true value (the user slid the slider and it stopped on 51) or it might point to a response relative to the order of responses (i.e. There is a multiple choice question, it has 5 responses, they chose response #3, it can be any value)",
-                  "type": "string"
-                },
-                "Conditional.Type": {
-                  "description": "Conditional type is the comparator. It can take on a value from 1-6 which corresponds with... (in order: =, <=, >=, <, >, !=)",
-                  "type": "string",
-                  "enum": ["1", "2", "3", "4", "5", "6", null]
+                "Conditional.Info": {
+                  "description": "contains all the conditional info for a question",
+                  "type": "object",
+                  "properties": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Conditional.Child.Item.ID": {
+                          "description": "Contains the Item ID for the successful child of the current question. If the current question is successful, deliver the child item.",
+                          "type": "string"
+                        },
+                        "Conditional.Threshold": {
+                          "description": "Threshold is the preset value being compared to the user response. The value can be either a true value (the user slid the slider and it stopped on 51) or it might point to a response relative to the order of responses (i.e. There is a multiple choice question, it has 5 responses, they chose response #3, it can be any value)",
+                          "type": "string"
+                        },
+                        "Conditional.Type": {
+                          "description": "Conditional type is the comparator. It can take on a value from 1-6 which corresponds with... (in order: =, <=, >=, <, >, !=)",
+                          "type": "string",
+                          "enum": ["1", "2", "3", "4", "5", "6", null]
+                          }
+                      },
+                      "Conditional.Fail.Item.ID": {
+                        "description": "Contains the Item ID for the fail child of the current question. If the current question is failed, deliver the fail item.",
+                        "type": "string"
+                      },
+                      "Conditional.Master.Item.ID": {
+                        "description": "Contains the Item ID for the parent of the current question if the current question is a conditional child or fail.",
+                        "type": "string"
+                      }
+                    }
+                  }
                 },
                 "Data.Type": {
                   "description": "The type of data captured by this variable. Oldname: Result.Type",
                   "type": "string",
                   "enum": ["integer", "character", "numeric", null]
-                },
-                Remove this because it inherents from the survey
-                "Measurement.Interval": {
-                  "description": "Distance or frequency between measurements (e.g. 1 day, 1 hour).",
-                  "type": "string"
                 },
                 "Item.ID": {
                   "description": "Item ID for this question",
@@ -206,186 +289,107 @@
       },
       "required": ["burstID", "survey"]
     },
-    move to cols
     "data": {
       "$anchor": "data",
-      "title": "Data Specification",
-      "description": "Contains all the column-level metadata for the raw dataset produced by the Wear-IT framework.",
+      "title": "Data Specification (Column Vector Format)",
+      "description": "All fields are stored as column vectors (arrays), where each position corresponds to a participant/record in the dataset.",
       "type": "object",
-      "examples": [
-        {
-          "Participant.ID": "P001",
-          "Timing.Info": {
-            "Session.ID": 101,
-            "Alert.Times": "2023-03-01T09:00:00Z",
-            "Survey.Start": "2023-03-01T09:02:00Z",
-            "Survey.Date.Completed": "2023-03-01T09:10:00Z",
-            "Survey.Date.Submitted": "2023-03-01T09:10:45Z",
-            "Timezone": "America/New_York",
-            "Offset": -5
-          },
-          "Device.Info": {
-            "Network.Type": "Wifi",
-            "App.Version": "3.1.0",
-            "OS": "iOS",
-            "Model": "iPhone 13"
-          },
-          "User.Response": "3",
-          "Question.ID": "stress_q1",
-          "External.ID": "EXT-00123"
-        }
-      ],
       "properties": {
-        "Device.ID": {
-          "description": "Unique identifier for the participant or device.",
-          "type": "string"
+        "Participant.ID": {
+          "type": "array",
+          "items": { "type": "string" }
         },
-        "Timing.Info": {
-          "description": "Contains all the information related to a unique delivery of a question.",
-          "type": "object",
-          "properties": {
-            "Session.ID": {
-              "description": "Numeric identifier for the survey session.",
-              "type": "number"
-            },
-            make list because can alert multiple times
-            "Alert.Times": {
-              "description": "Datetime the participant was alerted to take the survey.",
+        "Session.ID": {
+          "type": "array",
+          "items": { "type": "number" }
+        },
+        "Alert.Times": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
               "type": "string",
               "format": "date-time"
-            },
-            "Survey.Start": {
-              "description": "Datetime the participant began the survey.",
-              "type": "string",
-              "format": "date-time"
-            },
-            "Survey.Date.Completed": {
-              "description": "Datetime the participant completed the survey.",
-              "type": "string",
-              "format": "date-time"
-            },
-            "Survey.Date.Submitted": {
-              "description": "Datetime the survey was submitted to the server.",
-              "type": "string",
-              "format": "date-time"
-            },
-            remove and encode all in 1 thing like iso 8601
-            "Timezone": {
-              "description": "Timezone of the device at the time of survey completion.",
-              "type": "string"
-            },
-            "Offset": {
-              "description": "UTC offset in hours for the participant's timezone at time of survey.",
-              "type": "number"
             }
           },
-          "required": [
-            "Session.ID",
-            "Alert.Times",
-            "Survey.Start",
-            "Survey.Date.Completed",
-            "Survey.Date.Submitted",
-            "Timezone",
-            "Offset"
-          ]
+          "description": "Each entry is a participant-level array of alert times."
         },
-        "Device.Info": {
-          "description": "Contains all the device information for a unique delivery of a question.",
-          "type": "object",
-          "properties": {
-            "Network.Type": {
-              "description": "Type of network connection at time of submission.",
-              "type": "string",
-              "enum": ["Cellular", "Wifi"]
-            },
-            "App.Version": {
-              "description": "Version of the Wear-IT app used to deliver the survey.",
-              "type": "string"
-            },
-            "OS": {
-              "description": "Operating system of the participant's device (e.g. iOS, Android).",
-              "type": "string"
-            },
-            "Model": {
-              "description": "Device model used by the participant.",
-              "type": "string"
-            }
-          },
-          "required": [
-            "Network.Type",
-            "App.Version",
-            "OS",
-            "Model"
-          ]
+        "Survey.Start": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "Survey.Date.Completed": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "Survey.Date.Submitted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "Timezone": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "Offset": {
+          "type": "array",
+          "items": { "type": "number" }
+        },
+        "Network.Type": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["Cellular", "Wifi"]
+          }
+        },
+        "App.Version": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "OS": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "Model": {
+          "type": "array",
+          "items": { "type": "string" }
         },
         "User.Response": {
-          "description": "The raw response provided by the participant for this question.",
-          "type": "string"
+          "type": "array",
+          "items": { "type": "string" }
         },
         "Question.ID": {
-          "description": "Name of the variable as it appears in the dataset. Matches Question.ID in the question specification.",
-          "type": "string"
+          "type": "array",
+          "items": { "type": "string" }
         },
-        "User.ID": {
-          "description": "External identifier for linking this record to outside systems or datasets.",
-          "type": "string"
+        "External.ID": {
+          "type": "array",
+          "items": { "type": "string" }
         }
       },
       "required": [
         "Participant.ID",
-        "Timing.Info",
-        "Device.Info",
+        "Session.ID",
+        "Survey.Start",
+        "Survey.Date.Completed",
+        "Survey.Date.Submitted",
+        "Timezone",
+        "Offset",
+        "Network.Type",
+        "App.Version",
+        "OS",
+        "Model",
         "User.Response",
         "Question.ID",
         "External.ID"
-      ]
-    },
-
-    Nest this in question, value and response is dictionary
-    define compounding structure
-    free response seperated by enters as opposed to ,
-    "responseKey": {
-      "$anchor": "responseKey",
-      "title": "Response Key Specification",
-      "description": "Contains all the information needed to map response values to their definitions for a given survey question.",
-      "type": "object",
-      "examples": [
-        {
-          "survey": "MDD",
-          "question": "stress_q1",
-          "type": "Likert",
-          "value": "3",
-          "definition": "Fairly Often"
-        }
-      ],
-      "properties": {
-        "survey": {
-          "description": "Short name of the survey this response key belongs to.",
-          "type": "string"
-        },
-        "question": {
-          "description": "Question ID this response key belongs to.",
-          "type": "string"
-        },
-        "type": {
-          "description": "The type of response scale used (e.g. Likert, VAS, binary, forced choice).",
-          "type": "string"
-        },
-        "value": {
-          "description": "The numeric or coded value of the response as it appears in the dataset.",
-          "type": "string"
-        },
-        "definition": {
-          "description": "The human readable label or meaning corresponding to the response value.",
-          "type": "string"
-        }
-      },
-      "required": [
-        "survey",
-        "question",
-        "type",
-        "value",
-        "definition"
       ]
     },
     "itemMap": {
