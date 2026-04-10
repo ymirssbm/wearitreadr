@@ -1,7 +1,0 @@
-{
-  "$schema": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0",
-  "$id": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/responseKey.json",
-  "title": "Wear-IT Response Key",
-  "version": "0.1.0",
-  "description": "This contains the response key for a given study"
-}
