@@ -1,7 +1,0 @@
-{
-  "$schema": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0",
-  "$id": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/data.json",
-  "title": "Wear-IT Data",
-  "version": "0.1.0",
-  "description": "This contains all the data for a given study"
-}
