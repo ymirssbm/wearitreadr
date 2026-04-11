@@ -1,194 +1,177 @@
 #' Generate Survey Tree
 #'
-#' This generates a Survey Tree for a study's WearIT data using DiagrammeR/Mermaid
+#' This generates a Survey Tree for a studies WearIT data
 #'
-#' @param blockMapParsed Blockmap containing data for a single survey
+#' @param blockMap Blockmap containing data for a single survey
 #' @param shiny boolean indicating whether using shiny app
-#' @param showLabels boolean indicating whether to show node labels
-#' @return survey tree rendered as a Mermaid flowchart
+#' @return Mermaid flowchart
 #' @import DiagrammeR
 #' @importFrom utils read.csv
 #' @export
-generateSurveyTree <- function(shiny = FALSE, blockMapParsed, showLabels = TRUE) {
+
+
+# Logic structure
+
+# If block, draw block and draw down (this works because the blocks are sorted and placed at the top of their sections)
+
+# If question, do these 3 checks
+
+# 1.) If its neither a parent nor a child, draw to the next row
+# 2.) If its a parent AT all, regardless of child status, draw to only the conditional (mark its a parent so I can draw conditional step)
+# 3.) If its a child but not a parent, go to next row that is not a child
+# NOTE child status refers to, whether it is a child of a ITEM not a BLOCK
+
+
+generateSurveyTree <- function(shiny = FALSE, blockMapParsed) {
+
+  #blockMap <- blockMap[blockMap$Survey == "CSAR Daily Diary ID 35" & !is.na(blockMap$Survey),]
   blockMap <- blockMapParsed
 
-  # Initialize node levels to track position of nodes
-  nodeLevels <- setNames(rep(NA, nrow(blockMap)), blockMap$Item.ID)
-  currentLevel <- 0
+  # File the blocks into the right position of the blockmap
+  # Separate blocks from questions
+  blocks <- blockMap[blockMap$Item.Type == "Block", ]
+  questions <- blockMap[blockMap$Item.Type != "Block", ]
 
-  # Create boolean col for child status
-  blockMap$childTrue <- substring(blockMap$Item.ID, 6) %in% blockMap$Conditional.Child.Item.ID
+  # For each block, find where it belongs and insert it
+  result <- data.frame()
 
-  # --- Build edge list by walking the blockmap ---
-  edges <- data.frame(from = character(), to = character(), label = character(), stringsAsFactors = FALSE)
+  i <- 1
+  while (i <= nrow(questions)) {
+    current_row <- questions[i, ]
 
+    # Check if any block is the parent of this row
+    matching_block <- blocks[blocks$Item.ID == current_row$Parent, ]
+
+    if (nrow(matching_block) > 0) {
+      # Check we haven't already inserted this block
+      if (!matching_block$Item.ID %in% result$Item.ID) {
+        result <- rbind(result, matching_block)
+      }
+    }
+
+    result <- rbind(result, current_row)
+    i <- i + 1
+  }
+
+  blockMap <- result
+
+  blockMap$childTrue  <- NA
+  blockMap$parentTrue <- NA
+
+  # Create boolean cols for child status (questions only)
   for (i in 1:nrow(blockMap)) {
-    if (blockMap$childTrue[i]) next
-
-    item <- blockMap[i, ]
-
-    # Assign level to this node if not yet set
-    if (is.na(nodeLevels[item$Item.ID])) {
-      nodeLevels[item$Item.ID] <- currentLevel
-      currentLevel <- currentLevel + 1
-    }
-
-    has_child   <- !is.na(item$Conditional.Child.Item.ID)
-    has_fail    <- !is.na(item$Conditional.Fail.Item.ID)
-    is_decision <- has_child | has_fail
-
-    # Sequential edge to next non-child item — only for non-decision nodes
-    if (i < nrow(blockMap) && !is_decision) {
-      lowerRows <- blockMap[(i + 1):nrow(blockMap), , drop = FALSE]
-      lowerRows <- lowerRows[!is.na(lowerRows$childTrue) & lowerRows$childTrue == FALSE, , drop = FALSE]
-      if (nrow(lowerRows) > 0 && !is.na(lowerRows$Item.ID[1])) {
-        edges <- rbind(edges, data.frame(
-          from  = item$Item.ID,
-          to    = lowerRows$Item.ID[1],
-          label = "",
-          stringsAsFactors = FALSE
-        ))
-      }
-    }
-
-    if (is_decision) {
-      parentLevel <- nodeLevels[item$Item.ID]
-
-      # Yes branch
-      if (has_child) {
-        childID <- paste0("Item ", item$Conditional.Child.Item.ID)
-        edges <- rbind(edges, data.frame(from = item$Item.ID, to = childID, label = "Yes", stringsAsFactors = FALSE))
-        if (is.na(nodeLevels[childID])) nodeLevels[childID] <- parentLevel + 0.5
-      }
-
-      # No branch
-      if (has_fail) {
-        failID <- paste0("Item ", item$Conditional.Fail.Item.ID)
-        edges <- rbind(edges, data.frame(from = item$Item.ID, to = failID, label = "No", stringsAsFactors = FALSE))
-        if (is.na(nodeLevels[failID])) nodeLevels[failID] <- parentLevel + 0.5
-      }
-
-      # Walk the conditional chain
-      if (has_child) {
-        child <- blockMap[blockMap$Item.ID == paste0("Item ", item$Conditional.Child.Item.ID), , drop = FALSE]
-
-        while (nrow(child) > 0 &&
-               (!is.na(child$Conditional.Child.Item.ID) | !is.na(child$Conditional.Fail.Item.ID))) {
-
-          childParentLevel <- nodeLevels[child$Item.ID]
-
-          if (!is.na(child$Conditional.Child.Item.ID)) {
-            nestedChildID <- paste0("Item ", child$Conditional.Child.Item.ID)
-            edges <- rbind(edges, data.frame(from = child$Item.ID, to = nestedChildID, label = "Yes", stringsAsFactors = FALSE))
-            if (is.na(nodeLevels[nestedChildID])) nodeLevels[nestedChildID] <- childParentLevel + 0.5
-          }
-
-          if (!is.na(child$Conditional.Fail.Item.ID)) {
-            nestedFailID <- paste0("Item ", child$Conditional.Fail.Item.ID)
-            edges <- rbind(edges, data.frame(from = child$Item.ID, to = nestedFailID, label = "No", stringsAsFactors = FALSE))
-            if (is.na(nodeLevels[nestedFailID])) nodeLevels[nestedFailID] <- childParentLevel + 0.5
-          }
-
-          if (!is.na(child$Conditional.Child.Item.ID)) {
-            child <- blockMap[blockMap$Item.ID == paste0("Item ", child$Conditional.Child.Item.ID), , drop = FALSE]
-          } else {
-            break
-          }
-        }
-      }
-
-      # After the conditional chain resolves, draw edge from decision node
-      # to the next non-child item in the main sequence
-      if (i < nrow(blockMap)) {
-        lowerRows <- blockMap[(i + 1):nrow(blockMap), , drop = FALSE]
-        lowerRows <- lowerRows[!is.na(lowerRows$childTrue) & lowerRows$childTrue == FALSE, , drop = FALSE]
-        if (nrow(lowerRows) > 0 && !is.na(lowerRows$Item.ID[1])) {
-          nextMainID <- lowerRows$Item.ID[1]
-          # Only draw if not already a Yes/No target
-          already_targeted <- nextMainID %in% c(
-            if (has_child) paste0("Item ", item$Conditional.Child.Item.ID) else character(0),
-            if (has_fail)  paste0("Item ", item$Conditional.Fail.Item.ID)  else character(0)
-          )
-          if (!already_targeted) {
-            edges <- rbind(edges, data.frame(
-              from  = item$Item.ID,
-              to    = nextMainID,
-              label = "Continue",
-              stringsAsFactors = FALSE
-            ))
-          }
-        }
+    if (blockMap$Item.Type[i] == "Block") {
+      blockMap$childTrue[i] <- FALSE
+    } else {
+      if (substring(blockMap$Item.ID[i], 6) %in% blockMap$Conditional.Child.Item.ID) {
+        blockMap$childTrue[i] <- TRUE
+      } else {
+        blockMap$childTrue[i] <- FALSE
       }
     }
   }
 
-  edges <- unique(edges)
-  edges <- edges[!is.na(edges$to), ]
-
-  # --- Helpers ---
-  sanitize_id <- function(x) gsub("[^A-Za-z0-9_]", "_", trimws(x))
-
-  # Determine which Item IDs are decision nodes
-  decision_ids <- blockMap$Item.ID[
-    !is.na(blockMap$Conditional.Child.Item.ID) | !is.na(blockMap$Conditional.Fail.Item.ID)
-  ]
-
-  # First and last non-child items are terminals
-  non_child_ids <- blockMap$Item.ID[!blockMap$childTrue]
-  start_id <- non_child_ids[1]
-  end_id   <- non_child_ids[length(non_child_ids)]
-
-  # --- Build Mermaid node definitions ---
-  # Shape key:
-  #   Terminal (start/end) : ([label])  — stadium / rounded pill
-  #   Decision             : {label}    — diamond
-  #   Conditional child    : [/label/]  — parallelogram
-  #   Standard process     : [label]    — rectangle
-  node_lines <- vapply(seq_len(nrow(blockMap)), function(i) {
-    raw_id <- blockMap$Item.ID[i]
-    id     <- sanitize_id(raw_id)
-    label  <- if (showLabels) raw_id else " "
-
-    is_terminal   <- raw_id %in% c(start_id, end_id)
-    is_decision   <- raw_id %in% decision_ids
-    is_cond_child <- blockMap$childTrue[i]
-
-    if (is_terminal) {
-      sprintf('  %s(["%s"])', id, label)
-    } else if (is_decision) {
-      sprintf('  %s{"%s"}', id, label)
-    } else if (is_cond_child) {
-      sprintf('  %s[/"%s"/]', id, label)
+  # Create boolean cols for parent status (questions only)
+  for (i in 1:nrow(blockMap)) {
+    if (blockMap$Item.Type[i] == "Block") {
+      blockMap$parentTrue[i] <- FALSE
     } else {
-      sprintf('  %s["%s"]', id, label)
+      if (!is.na(blockMap$Conditional.Child.Item.ID[i]) &&
+          !is.na(blockMap$Conditional.Fail.Item.ID[i])) {
+        blockMap$parentTrue[i] <- TRUE
+      } else {
+        blockMap$parentTrue[i] <- FALSE
+      }
     }
-  }, character(1))
+  }
 
-  # --- Build Mermaid edge definitions ---
-  edge_lines <- vapply(seq_len(nrow(edges)), function(i) {
-    from <- sanitize_id(edges$from[i])
-    to   <- sanitize_id(edges$to[i])
-    lbl  <- edges$label[i]
-    if (nzchar(lbl)) {
-      sprintf("  %s -->|%s| %s", from, lbl, to)
-    } else {
-      sprintf("  %s --> %s", from, to)
-    }
-  }, character(1))
-
-  # --- Assemble Mermaid diagram string ---
-  mermaid_code <- paste(
-    c(
-      "graph LR",
-      node_lines,
-      edge_lines
-    ),
-    collapse = "\n"
+  # Initialize df to store flowchart info
+  flowchart <- data.frame(
+    from = character(),
+    to = character(),
+    to2 = character(),
+    parent = logical()
   )
 
+
+
+  # Logic structure
+
+  # If block, draw block and draw down (this works because the blocks are sorted and placed at the top of their sections)
+
+  # If question, do these 3 checks
+
+  # 1.) If its neither a parent nor a child, draw to the next row
+  # 2.) If its a parent AT all, regardless of child status, draw to only the conditional (mark its a parent so I can draw conditional step)
+  # 3.) If its a child but not a parent, go to next row that is not a child
+  # NOTE child status refers to, whether it is a child of a ITEM not a BLOCK
+
+  for (i in 1:nrow(blockMap)) {
+    # 1.)
+    if (blockMap$parentTrue[i] == FALSE && blockMap$childTrue[i] == FALSE) {
+      flowchart <- rbind(flowchart, data.frame(from = blockMap$Item.ID[i],
+                                               to = blockMap$Item.ID[i+1],
+                                               to2 = NA,
+                                               parent = FALSE))
+    }
+    # 2.)
+    if (blockMap$parentTrue[i] == TRUE) {
+      flowchart <- rbind(flowchart, data.frame(from = blockMap$Item.ID[i],
+                                               to = paste0("Item ", blockMap$Conditional.Child.Item.ID[i]),
+                                               to2 = paste0("Item ", blockMap$Conditional.Fail.Item.ID[i]),
+                                               parent = TRUE))
+    }
+    # 3.)
+    if (blockMap$childTrue[i] == TRUE && blockMap$parentTrue[i] == FALSE) {
+      # Pull down just the current item onwards
+      temp <- blockMap[i:nrow(blockMap),]
+      flowchart <- rbind(flowchart, data.frame(from = blockMap$Item.ID[i],
+                                               to = temp[which(temp$childTrue == FALSE, arr.ind = TRUE)[1],]$Item.ID,
+                                               to2 = NA,
+                                               parent = FALSE))
+    }
+  }
+
+  # NOTE here, "to2" is a little silly, but it makes sense and sets up later
+
+  # I think I can just do this, this basically just gets rid of drawing a path to nowhere when the survey is done
+  flowchart <- flowchart[!is.na(flowchart$to), ]
+
+  # Build mermaid syntax
+  flowchart_syntax <- "graph LR"
+
+  for (i in 1:nrow(flowchart)) {
+    current <- flowchart[i,]
+    # If parent draw decision node, else just regular path
+    if (current$parent) {
+
+      lines <- c(
+        # Draw to decision
+        paste0(gsub(" ", "_",current$from),"[",current$from,"] --> ", "decision",i,"{ }"),
+        # Draw from decision node
+        paste0("decision",i,"{ } --> ", gsub(" ", "_", current$to),"[",current$to,"]"),
+        paste0("decision",i,"{ } --> ", gsub(" ", "_", current$to2),"[",current$to2,"]")
+      )
+
+      flowchart_syntax <- paste(
+        c(flowchart_syntax, lines),
+        collapse = "\n"
+      )
+    } else {
+      lines <- c(paste0(gsub(" ", "_",current$from),"[",current$from,"] --> ", gsub(" ", "_", current$to), "[",current$to,"]"))
+      flowchart_syntax <- paste(
+        c(flowchart_syntax, lines),
+        collapse = "\n"
+      )
+    }
+  }
+
+  # Draw flowchart
   if (shiny) {
-    return(mermaid_code)
+    return(flowchart_syntax)
   } else {
-    DiagrammeR::mermaid(mermaid_code)
+    mermaid(flowchart_syntax)
   }
 }
+
+

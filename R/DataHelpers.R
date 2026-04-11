@@ -20,12 +20,12 @@ parseBySurvey <- function(shiny = FALSE, survey, all = FALSE) {
 
   # Parse by survey
   if (all == TRUE) {
-    surveys <- unique(blockMap$Survey.LongName)
+    surveys <- unique(blockMap$Survey)
     for (survey in surveys) {
       next
     }
   } else {
-    blockMapParsed <- blockMap[blockMap$Survey.LongName == survey & !is.na(blockMap$Survey.LongName),]
+    blockMapParsed <- blockMap[blockMap$Survey == survey & !is.na(blockMap$Survey),]
   }
 
   return(blockMapParsed)
