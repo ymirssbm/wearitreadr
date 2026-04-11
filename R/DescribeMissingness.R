@@ -10,7 +10,7 @@
 #' @importFrom rmarkdown render
 #' @importFrom dplyr filter group_by ungroup
 #' @importFrom utils read.csv
-#' @importFrom stats sd mean
+#' @importFrom stats sd
 
 
 

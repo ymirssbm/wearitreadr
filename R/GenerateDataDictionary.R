@@ -3,7 +3,7 @@
 #' This generates a data dictionary for a studies WearIT data
 #'
 #' @return datadictionary.csv file in Codebook_RMD folder
-#' @import dplyr arrange
+#' @importFrom dplyr arrange
 #' @export
 
 
