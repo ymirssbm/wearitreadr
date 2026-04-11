@@ -19,7 +19,7 @@ ui <- navbarPage("Navigation",
                          'background-color': 'transparent',
                          'margin': '0',
                          'padding': '0',
-                         'border-radius': '0',
+                           'border-radius': '0',
                          'box-shadow': 'none'
                        });
                      });
@@ -190,7 +190,7 @@ server <- function(input, output, session) {
       selectInput(
         inputId = "survey",
         label = "Select survey to generate flowchart for",
-        choices = unique(blockMap$Survey.LongName[!is.na(blockMap$Survey.LongName)])
+        choices = unique(blockMap$Survey[!is.na(blockMap$Survey)])
       )
     }
   })
@@ -230,16 +230,14 @@ server <- function(input, output, session) {
   observeEvent(input$generateFlowChart, {
     req(input$survey)
     blockMapParsed(parseBySurvey(survey = input$survey, shiny = TRUE))
-    mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(), shiny = TRUE,
-                                       showLabels = !input$showItemID)
+    mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(), shiny = TRUE)
     output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code) })
     output$nodeInfo <- renderText({ "Click a node to see details (not available in Mermaid renderer)" })
   })
 
   observeEvent(input$showItemID, {
     req(blockMapParsed())
-    mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(), shiny = TRUE,
-                                       showLabels = !input$showItemID)
+    mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(), shiny = TRUE)
     output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code) })
   }, ignoreInit = TRUE)
 
