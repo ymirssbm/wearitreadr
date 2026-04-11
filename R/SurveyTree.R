@@ -71,6 +71,9 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed) {
     }
   }
 
+  # NOTE something is only a child, if its a child conditional, fails are not children.
+  # Additionally, blocks are FALSE on both parent and child. So these refer to QUESTIONS not BLOCKS
+
   # Create boolean cols for parent status (questions only)
   for (i in 1:nrow(blockMap)) {
     if (blockMap$Item.Type[i] == "Block") {
