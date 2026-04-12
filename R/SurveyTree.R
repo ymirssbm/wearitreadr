@@ -22,7 +22,7 @@
 # NOTE child status refers to, whether it is a child of a ITEM not a BLOCK
 
 
-generateSurveyTree <- function(shiny = FALSE, blockMapParsed) {
+generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
 
   #blockMap <- blockMap[blockMap$Survey == "CSAR Daily Diary ID 35" & !is.na(blockMap$Survey),]
   blockMap <- blockMapParsed
@@ -140,8 +140,58 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed) {
   # I think I can just do this, this basically just gets rid of drawing a path to nowhere when the survey is done
   flowchart <- flowchart[!is.na(flowchart$to), ]
 
+  backup <- flowchart
+
+  # Some blockmap prep
+  # Remove anything that isnt text
+  blockMap$Question.Text <- gsub("[^a-zA-Z ]", "", blockMap$Question.Text)
+  # If its a block, set Question.Text to "Block"
+  blockMap$Question.Text <- ifelse(is.na(blockMap$Question.Text), "Block", blockMap$Question.Text)
+
+  # Change conditional type to the corresponding character rather then numeric
+  type_map <- c("=", "<=", ">=", "<", ">", "!=")
+  blockMap$Conditional.Type <- type_map[blockMap$Conditional.Type]
+
+  # Map Conditional.Threshold to its corresponding definition in response key. If its a slider or multi slider keep as is
+  blockMap$Conditional.Threshold <- mapply(function(threshold, question_id) {
+    match_row <- responseKey[
+      responseKey$question == question_id &
+        responseKey$value == threshold,
+    ]
+
+    if (nrow(match_row) > 0 && !match_row$type[1] %in% c("Slider", "Multi Slider")) {
+      match_row$definition[1]
+    } else {
+      threshold
+    }
+  }, blockMap$Conditional.Threshold, blockMap$Question.ID)
+
+  # Clean so its only text
+  blockMap$Conditional.Threshold <- gsub("[^a-zA-Z ]", "", blockMap$Conditional.Threshold)
+
+  wrap_text <- function(text, width = 20) {
+    words <- strsplit(text, " ")[[1]]
+    lines <- character()
+    current_line <- ""
+
+    for (word in words) {
+      if (nchar(paste(current_line, word)) <= width) {
+        current_line <- trimws(paste(current_line, word))
+      } else {
+        lines <- c(lines, current_line)
+        current_line <- word
+      }
+    }
+    lines <- c(lines, current_line)
+    paste(lines, collapse = "<br/>")
+  }
+
+  blockMap$Conditional.Threshold <- sapply(blockMap$Conditional.Threshold, wrap_text, width = 20)
+
+
+
   # Build mermaid syntax
-  flowchart_syntax <- "graph LR"
+  flowchart_syntax <- "graph TD"
 
   for (i in 1:nrow(flowchart)) {
     current <- flowchart[i,]
@@ -150,10 +200,10 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed) {
 
       lines <- c(
         # Draw to decision
-        paste0(gsub(" ", "_",current$from),"[",current$from,"] --> ", "decision",i,"{ }"),
+        paste0(gsub(" ", "_",current$from),"[",blockMap$Question.Text[blockMap$Item.ID == current$from],"] --> ", "decision",i,"{", blockMap$Conditional.Type[blockMap$Item.ID == current$from], " ", blockMap$Conditional.Threshold[blockMap$Item.ID == current$from], "}"),
         # Draw from decision node
-        paste0("decision",i,"{ } --> ", gsub(" ", "_", current$to),"[",current$to,"]"),
-        paste0("decision",i,"{ } --> ", gsub(" ", "_", current$to2),"[",current$to2,"]")
+        paste0("decision",i,"{", blockMap$Conditional.Type[blockMap$Item.ID == current$from], " ", blockMap$Conditional.Threshold[blockMap$Item.ID == current$from], "} -->|Yes| ", gsub(" ", "_", current$to),"[", blockMap$Question.Text[blockMap$Item.ID == current$to],"]"),
+        paste0("decision",i,"{", blockMap$Conditional.Type[blockMap$Item.ID == current$from], " ", blockMap$Conditional.Threshold[blockMap$Item.ID == current$from], "} -->|No| ", gsub(" ", "_", current$to2),"[",blockMap$Question.Text[blockMap$Item.ID == current$to2],"]")
       )
 
       flowchart_syntax <- paste(
@@ -161,7 +211,7 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed) {
         collapse = "\n"
       )
     } else {
-      lines <- c(paste0(gsub(" ", "_",current$from),"[",current$from,"] --> ", gsub(" ", "_", current$to), "[",current$to,"]"))
+      lines <- c(paste0(gsub(" ", "_",current$from),"[",blockMap$Question.Text[blockMap$Item.ID == current$from],"] --> ", gsub(" ", "_", current$to), "[",blockMap$Question.Text[blockMap$Item.ID == current$to],"]"))
       flowchart_syntax <- paste(
         c(flowchart_syntax, lines),
         collapse = "\n"
