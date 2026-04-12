@@ -4,7 +4,7 @@
 \alias{generateSurveyTree}
 \title{Generate Survey Tree}
 \usage{
-generateSurveyTree(shiny = FALSE, blockMapParsed)
+generateSurveyTree(shiny = FALSE, blockMapParsed, responseKey)
 }
 \arguments{
 \item{shiny}{boolean indicating whether using shiny app}

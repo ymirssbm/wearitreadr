@@ -6,9 +6,7 @@ library(jsonlite)
 rm(list = ls())
 devtools::load_all(recompile = FALSE)
 devtools::document()
-
 addResourcePath("codebook", "Codebook_RMD")
-
 ui <- navbarPage("Navigation",
                  header = tagList(
                    tags$head(includeCSS("www/shiny.css")),
@@ -19,18 +17,16 @@ ui <- navbarPage("Navigation",
                          'background-color': 'transparent',
                          'margin': '0',
                          'padding': '0',
-                           'border-radius': '0',
+                         'border-radius': '0',
                          'box-shadow': 'none'
                        });
                      });
                    "))
                  ),
-
                  # Home
                  tabPanel("Home",
                           h1("Purpose of this tool"),
                           p("This is a human accessible tool to help pull data and generate codebooks for Wear-IT users")),
-
                  # Pull data
                  tabPanel("Data pull",
                           p("This is where you can pull data down from Wear-IT. Just supply the study ID number of the study you want to pull data from and then click the button"),
@@ -39,7 +35,6 @@ ui <- navbarPage("Navigation",
                           textAreaInput(inputId = "base_URL", label = "WearIT URL", resize = "horizontal",
                                         value = "https://wearables.vmhost.psu.edu/wearables-survey/api"),
                           actionButton(inputId = "pullDataButton", label = "Pull Data from Wear-IT")),
-
                  # Codebooks
                  navbarMenu(
                    "Codebook",
@@ -56,7 +51,6 @@ ui <- navbarPage("Navigation",
                    tabPanel("Codebook Viewer",
                             uiOutput("codebook"))
                  ),
-
                  # Data Dictionary
                  navbarMenu(
                    "Data Dictionary",
@@ -67,14 +61,12 @@ ui <- navbarPage("Navigation",
                             div(class = "no-tab-style",
                                 uiOutput("dataDictionary")))
                  ),
-
                  # Flowchart
                  tabPanel(
                    "Flowchart",
                    fluidPage(
                      uiOutput("surveySelecter"),
                      actionButton(inputId = "generateFlowChart", label = "Generate Flow Chart"),
-                     checkboxInput(inputId = "showItemID", label = "Hide Item IDs", value = FALSE),
                      uiOutput("surveyTree"),
                      hr(),
                      h4("Node Information"),
@@ -82,9 +74,7 @@ ui <- navbarPage("Navigation",
                    )
                  )
 )
-
 server <- function(input, output, session) {
-
   #--------------------
   # Pull Data Page
   #--------------------
@@ -95,13 +85,11 @@ server <- function(input, output, session) {
     showNotification("Writing Data to processedData folder...", type = "message")
     showNotification("Finished!", type = "message")
   })
-
   #-----------------------
   # Codebook
   #-----------------------
   dataTypes <- list.files(path = "Codebook_RMD/DataTypes")
   dataTypes <- sub("\\.Rmd$", "", dataTypes)
-
   output$codebookOptions <- renderTree({
     list(
       "Title Page" = structure(list(
@@ -122,7 +110,6 @@ server <- function(input, output, session) {
       ))
     )
   })
-
   observeEvent(input$generateCodebook, {
     codebookOptions <- tolower(get_selected(input$codebookOptions, format = "names"))
     tryCatch({
@@ -144,7 +131,6 @@ server <- function(input, output, session) {
       print(e)
     })
   })
-
   if (file.exists("Codebook_RMD/Codebook.html")) {
     output$codebook <- renderUI({
       tags$iframe(src = "codebook/Codebook.html", width = "100%", height = "800px",
@@ -153,7 +139,6 @@ server <- function(input, output, session) {
   } else {
     showNotification("No Codebook has been generated. Press 'Generate Codebook' to generate one.", type = "message")
   }
-
   #---------------------------------------------
   # Data Dictionary
   #---------------------------------------------
@@ -170,18 +155,14 @@ server <- function(input, output, session) {
       print(e)
     })
   })
-
   if (file.exists("Codebook_RMD/DataDictionary.csv")) {
     output$dataDictionary <- renderTable({
       read.csv("Codebook_RMD/DataDictionary.csv")
     })
   }
-
   #---------------------------------------------
   # Flowchart
   #---------------------------------------------
-
-  # Reactive to store parsed blockmap so it's not re-parsed on every toggle
   blockMapParsed <- reactiveVal(NULL)
 
   output$surveySelecter <- renderUI({
@@ -194,7 +175,6 @@ server <- function(input, output, session) {
       )
     }
   })
-
   # Helper to build the renderUI tagList for the diagram
   renderMermaidUI <- function(mermaid_code) {
     tagList(
@@ -210,12 +190,9 @@ server <- function(input, output, session) {
       tags$script(HTML(sprintf("
       (function() {
         mermaid.initialize({ startOnLoad: false, theme: 'default' });
-
         var diagram = %s;
-
         mermaid.render('mermaid-svg', diagram).then(function(result) {
           document.getElementById('mermaid-container').innerHTML = result.svg;
-
           setTimeout(function() {
             var el = document.getElementById('mermaid-container');
             var pz = Panzoom(el, { maxScale: 10, minScale: 0.1 });
@@ -226,21 +203,15 @@ server <- function(input, output, session) {
     ", jsonlite::toJSON(mermaid_code, auto_unbox = TRUE))))
     )
   }
-
   observeEvent(input$generateFlowChart, {
     req(input$survey)
+    responseKey <- read.csv("Codebook_RMD/Data/responseKey.csv")
     blockMapParsed(parseBySurvey(survey = input$survey, shiny = TRUE))
-    mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(), shiny = TRUE)
+    mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(),
+                                       responseKey = responseKey,
+                                       shiny = TRUE)
     output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code) })
     output$nodeInfo <- renderText({ "Click a node to see details (not available in Mermaid renderer)" })
   })
-
-  observeEvent(input$showItemID, {
-    req(blockMapParsed())
-    mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(), shiny = TRUE)
-    output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code) })
-  }, ignoreInit = TRUE)
-
 }
-
 shinyApp(ui = ui, server = server)
