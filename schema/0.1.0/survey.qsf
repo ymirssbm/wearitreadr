@@ -1,0 +1,321 @@
+{
+  "SurveyEntry": {
+    "SurveyID": "SV_example123",
+    "SurveyName": "Wear-IT Example Daily Diary",
+    "SurveyDescription": null,
+    "SurveyOwnerID": "UR_example",
+    "SurveyBrandID": "psu",
+    "DivisionID": null,
+    "SurveyLanguage": "EN",
+    "SurveyActiveResponseSet": "RS_example",
+    "SurveyStatus": "Inactive",
+    "SurveyStartDate": "0000-00-00 00:00:00",
+    "SurveyExpirationDate": "0000-00-00 00:00:00",
+    "SurveyCreationDate": "2024-01-01 00:00:00",
+    "CreatorID": "UR_example",
+    "LastModified": "2024-01-01 00:00:00",
+    "LastAccessed": "0000-00-00 00:00:00",
+    "LastActivated": "0000-00-00 00:00:00",
+    "Deleted": null
+  },
+  "SurveyElements": [
+    {
+      "SurveyID": "SV_example123",
+      "Element": "BL",
+      "PrimaryAttribute": "Survey Blocks",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": [
+        {
+          "Type": "Default",
+          "Description": "Morning Block",
+          "ID": "BL_morning",
+          "BlockElements": [
+            { "Type": "Question", "QuestionID": "QID1" },
+            { "Type": "Question", "QuestionID": "QID2" },
+            { "Type": "Question", "QuestionID": "QID3" },
+            { "Type": "Question", "QuestionID": "QID4" }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        },
+        {
+          "Type": "Default",
+          "Description": "CSAR Block",
+          "ID": "BL_csar",
+          "BlockElements": [
+            { "Type": "Question", "QuestionID": "QID5" },
+            { "Type": "Question", "QuestionID": "QID6" }
+          ],
+          "Options": {
+            "BlockLocking": "false",
+            "RandomizeQuestions": "false",
+            "BlockVisibility": "Expanded"
+          }
+        }
+      ]
+    },
+    {
+      "SurveyID": "SV_example123",
+      "Element": "FL",
+      "PrimaryAttribute": "Survey Flow",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "Type": "Root",
+        "FlowID": "FL_1",
+        "Flow": [
+          {
+            "Type": "Block",
+            "ID": "BL_morning",
+            "FlowID": "FL_2"
+          },
+          {
+            "Type": "Block",
+            "ID": "BL_csar",
+            "FlowID": "FL_3"
+          },
+          {
+            "Type": "EndSurvey",
+            "FlowID": "FL_4"
+          }
+        ],
+        "Properties": {
+          "Count": 4
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_example123",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID1",
+      "SecondaryAttribute": "How stressed did you feel today?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How stressed did you feel today?",
+        "QuestionID": "QID1",
+        "QuestionType": "Slider",
+        "Selector": "HSLIDER",
+        "Configuration": {
+          "CSSliderMin": 0,
+          "CSSliderMax": 100,
+          "GridLines": 10,
+          "NumDecimals": "0",
+          "ShowValue": true
+        },
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "DisplayLogic": {}
+      }
+    },
+    {
+      "SurveyID": "SV_example123",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID2",
+      "SecondaryAttribute": "What did you do today?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "What did you do today?",
+        "QuestionID": "QID2",
+        "QuestionType": "MC",
+        "Selector": "MAVR",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": { "Display": "Work" },
+          "2": { "Display": "Exercise" },
+          "3": { "Display": "Socializing" },
+          "4": { "Display": "Rest" },
+          "5": { "Display": "Other" }
+        },
+        "ChoiceOrder": ["1","2","3","4","5"],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "DisplayLogic": {}
+      }
+    },
+    {
+      "SurveyID": "SV_example123",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID3",
+      "SecondaryAttribute": "Please describe the other activity:",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Please describe the other activity:",
+        "QuestionID": "QID3",
+        "QuestionType": "TE",
+        "Selector": "SL",
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "DisplayLogic": {
+          "0": {
+            "0": {
+              "LogicType": "Question",
+              "QuestionID": "QID2",
+              "QuestionIsInLoop": "no",
+              "ChoiceLocator": "q://QID2/SelectableChoice/5",
+              "Operator": "Selected",
+              "QuestionIDFromLocator": "QID2",
+              "LeftOperand": "q://QID2/SelectableChoice/5",
+              "Value": "5",
+              "Type": "Expression",
+              "Description": "If What did you do today? Is Selected Other"
+            },
+            "Type": "If",
+            "Description": "If What did you do today? Is Selected Other"
+          },
+          "Type": "BooleanExpression",
+          "inPage": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_example123",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID4",
+      "SecondaryAttribute": "How would you rate your mood today?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How would you rate your mood today?",
+        "QuestionID": "QID4",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": { "Display": "Very bad" },
+          "2": { "Display": "Bad" },
+          "3": { "Display": "Neutral" },
+          "4": { "Display": "Good" },
+          "5": { "Display": "Very good" }
+        },
+        "ChoiceOrder": ["1","2","3","4","5"],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "DisplayLogic": {}
+      }
+    },
+    {
+      "SurveyID": "SV_example123",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID5",
+      "SecondaryAttribute": "Did you visit the CSAR today?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "Did you visit the CSAR today?",
+        "QuestionID": "QID5",
+        "QuestionType": "MC",
+        "Selector": "SAVR",
+        "SubSelector": "TX",
+        "Choices": {
+          "1": { "Display": "Yes" },
+          "2": { "Display": "No" }
+        },
+        "ChoiceOrder": ["1","2"],
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "ON",
+            "ForceResponseType": "ON",
+            "Type": "None"
+          }
+        },
+        "DisplayLogic": {}
+      }
+    },
+    {
+      "SurveyID": "SV_example123",
+      "Element": "SQ",
+      "PrimaryAttribute": "QID6",
+      "SecondaryAttribute": "How long did you spend at the CSAR?",
+      "TertiaryAttribute": null,
+      "Payload": {
+        "QuestionText": "How long did you spend at the CSAR today? (in minutes)",
+        "QuestionID": "QID6",
+        "QuestionType": "Slider",
+        "Selector": "HSLIDER",
+        "Configuration": {
+          "CSSliderMin": 0,
+          "CSSliderMax": 480,
+          "GridLines": 60,
+          "NumDecimals": "0",
+          "ShowValue": true
+        },
+        "Validation": {
+          "Settings": {
+            "ForceResponse": "OFF",
+            "Type": "None"
+          }
+        },
+        "DisplayLogic": {
+          "0": {
+            "0": {
+              "LogicType": "Question",
+              "QuestionID": "QID5",
+              "QuestionIsInLoop": "no",
+              "ChoiceLocator": "q://QID5/SelectableChoice/1",
+              "Operator": "Selected",
+              "QuestionIDFromLocator": "QID5",
+              "LeftOperand": "q://QID5/SelectableChoice/1",
+              "Value": "1",
+              "Type": "Expression",
+              "Description": "If Did you visit the CSAR today? Is Selected Yes"
+            },
+            "Type": "If",
+            "Description": "If Did you visit the CSAR today? Is Selected Yes"
+          },
+          "Type": "BooleanExpression",
+          "inPage": false
+        }
+      }
+    },
+    {
+      "SurveyID": "SV_example123",
+      "Element": "SO",
+      "PrimaryAttribute": "Survey Options",
+      "SecondaryAttribute": null,
+      "TertiaryAttribute": null,
+      "Payload": {
+        "BackButton": "false",
+        "SaveAndContinue": "true",
+        "SurveyProtection": "PublicSurvey",
+        "BallotBoxStuffingPrevention": "false",
+        "NoIndex": "Yes",
+        "SecureResponseFiles": "true",
+        "SurveyExpiration": "None",
+        "SurveyTermination": "DefaultMessage",
+        "Header": "",
+        "Footer": "",
+        "ProgressBarDisplay": "None",
+        "PartialData": "+1 week",
+        "ValidationMessage": "",
+        "PreviousButton": "",
+        "NextButton": "",
+        "SurveyTitle": "Wear-IT Example Daily Diary",
+        "SkinLibrary": "psu",
+        "SkinType": "MQ",
+        "Skin": "risen",
+        "NewScoring": 1
+      }
+    }
+  ]
+}

@@ -73,76 +73,79 @@
               "type": "string"
             },
             "Scheduling.Info": {
-              "description": "contains all the timing and window info for a survey",
+              "description": "Contains all the timing and window info for a survey",
               "type": "object",
               "properties": {
-                "$defs": {
-                  "Timing.Info": {
-                    "description": "Contains all the timing information. This could be the timing of surveys, or the timing of windows.",
-                    "type": "object",
-                    "properties": {
-                      "offset": {
-                        "description": "Distance between each survey at this level",
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "value": { "type": "number" },
-                            "unit": {"type": "string","enum": ["seconds","minutes","hours","days","weeks","months","years","decades"]
-                            }
-                          },
-                          "required": ["value", "unit"]
-                        }
-                      },
-                      "children": {
-                        "description": "Nested timing levels (recursive schedule definition).",
-                        "type": "array",
-                        "items": {
-                          "$ref": "#/$defs/Timing.Info"
-                        }
-                      }
-                    }
-                  }
-                },
-                "$ref": "#/$defs/Timing.Info"
-              },
-              "Window.Info": {
-                "window.length": {
-                  "description": "Describes the length of a window. Note, this can be 0 meaning, the survey is delivered exactly at the timing.",
-                  "type": "array",
-                  "items": {
-                    "type": "objects",
-                    "properties": {
-                      "value": { "type": "number" },
-                      "unit": {"type": "string", "enum": ["seconds","minutes","hours","days","weeks","months","years","decades"]
-                      }
-                    }
-                  }
-                },
-                "random": {
-                  "description": "Whether the delivery of a survey is just a random sample within the specified window",
-                  "type": "boolean"
-                },
-                "Trigger.Info": {
-                  "description": "Contains the trigger logic if it exists for a given window.",
+                "Timing.Info": {
+                  "description": "Contains all the timing information.",
                   "type": "object",
                   "properties": {
-                    "Conditional.Source": {
-                      "description": "Source of measurement to trigger conditional (heart rate sensor)",
-                      "type": "string"
+                    "offset": {
+                      "description": "Distance between each survey at this level",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "value": { "type": "number" },
+                          "unit": {
+                            "type": "string",
+                            "enum": ["seconds","minutes","hours","days","weeks","months","years","decades"]
+                          }
+                        },
+                        "required": ["value", "unit"]
+                      }
                     },
-                    "Conditional.Threshold": {
-                      "description": "Threshold is the preset value being compared to the user response. The value can be either a true value (the user slid the slider and it stopped on 51) or it might point to a response relative to the order of responses (i.e. There is a multiple choice question, it has 5 responses, they chose response #3, it can be any value)",
-                      "type": "string"
+                    "children": {
+                      "description": "Nested timing levels (recursive schedule definition).",
+                      "type": "array",
+                      "items": { "type": "object" }
+                    }
+                  }
+                },
+                "Window.Info": {
+                  "description": "Contains all the window info for a survey",
+                  "type": "object",
+                  "properties": {
+                    "window.length": {
+                      "description": "Describes the length of a window.",
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "value": { "type": "number" },
+                          "unit": {
+                            "type": "string",
+                            "enum": ["seconds","minutes","hours","days","weeks","months","years","decades"]
+                          }
+                        }
+                      }
                     },
-                    "Conditional.Type": {
-                      "description": "Conditional type is the comparator. It can take on a value from 1-6 which corresponds with... (in order: =, <=, >=, <, >, !=)",
-                      "type": "string",
-                      "enum": ["1", "2", "3", "4", "5", "6", null]
+                    "random": {
+                      "description": "Whether the delivery of a survey is a random sample within the window",
+                      "type": "boolean"
+                    },
+                    "Trigger.Info": {
+                      "description": "Contains the trigger logic if it exists for a given window.",
+                      "type": "object",
+                      "properties": {
+                        "Conditional.Source": {
+                          "description": "Source of measurement to trigger conditional",
+                          "type": "string"
+                        },
+                        "Conditional.Threshold": {
+                          "description": "Threshold is the preset value being compared to the user response.",
+                          "type": "string"
+                        },
+                        "Conditional.Type": {
+                          "description": "Conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
+                          "type": "string",
+                          "enum": ["1","2","3","4","5","6"]
+                        }
+                      }
                     }
                   }
                 }
-              } 
+              }
             },
             "question": {
               "$anchor": "question",
@@ -217,35 +220,29 @@
                   "type": "string"
                 },
                 "Conditional.Info": {
-                  "description": "contains all the conditional info for a question",
+                  "description": "Contains all the conditional info for a question",
                   "type": "object",
                   "properties": {
-                    "type": "array",
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "Conditional.Child.Item.ID": {
-                          "description": "Contains the Item ID for the successful child of the current question. If the current question is successful, deliver the child item.",
-                          "type": "string"
-                        },
-                        "Conditional.Threshold": {
-                          "description": "Threshold is the preset value being compared to the user response. The value can be either a true value (the user slid the slider and it stopped on 51) or it might point to a response relative to the order of responses (i.e. There is a multiple choice question, it has 5 responses, they chose response #3, it can be any value)",
-                          "type": "string"
-                        },
-                        "Conditional.Type": {
-                          "description": "Conditional type is the comparator. It can take on a value from 1-6 which corresponds with... (in order: =, <=, >=, <, >, !=)",
-                          "type": "string",
-                          "enum": ["1", "2", "3", "4", "5", "6", null]
-                          }
-                      },
-                      "Conditional.Fail.Item.ID": {
-                        "description": "Contains the Item ID for the fail child of the current question. If the current question is failed, deliver the fail item.",
-                        "type": "string"
-                      },
-                      "Conditional.Master.Item.ID": {
-                        "description": "Contains the Item ID for the parent of the current question if the current question is a conditional child or fail.",
-                        "type": "string"
-                      }
+                    "Conditional.Child.Item.ID": {
+                      "description": "Item ID for the successful child of the current question.",
+                      "type": "string"
+                    },
+                    "Conditional.Fail.Item.ID": {
+                      "description": "Item ID for the fail child of the current question.",
+                      "type": "string"
+                    },
+                    "Conditional.Master.Item.ID": {
+                      "description": "Item ID for the parent of the current question.",
+                      "type": "string"
+                    },
+                    "Conditional.Threshold": {
+                      "description": "Threshold is the preset value being compared to the user response.",
+                      "type": "string"
+                    },
+                    "Conditional.Type": {
+                      "description": "Conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
+                      "type": "string",
+                      "enum": ["1","2","3","4","5","6"]
                     }
                   }
                 },
@@ -260,29 +257,18 @@
                 }
               },
               "required": [
-                "Question.ID",
-                "Question.Long.Name",
+                "Item.ID",
+                "Item.Type",
                 "Question.Text",
-                "Question.Description",
+                "Question.ID",
                 "Question.Type.Display.Name",
-                "Unique.Timing",
-                "Parent",
-                "Conditional.Child.Item.ID",
-                "Conditional.Fail.Item.ID",
-                "Conditional.Master.Item.ID",
-                "Conditional.Threshold",
-                "Conditional.Type",
                 "Data.Type",
-                "Measurement.Interval",
-                "Item.ID"
+                "Parent"
               ]
             }
           },
           "required": [
             "Survey.LongName",
-            "Survey.ShortName",
-            "Survey.Timing",
-            "block",
             "question"
           ]
         }
@@ -378,18 +364,9 @@
       "required": [
         "Participant.ID",
         "Session.ID",
-        "Survey.Start",
         "Survey.Date.Completed",
-        "Survey.Date.Submitted",
-        "Timezone",
-        "Offset",
-        "Network.Type",
-        "App.Version",
-        "OS",
-        "Model",
         "User.Response",
-        "Question.ID",
-        "External.ID"
+        "Question.ID"
       ]
     },
     "itemMap": {
@@ -521,44 +498,18 @@
       },
       "required": [
         "Item.Text",
-        "Conceptualization",
-        "Modeling.Characteristics",
-        "Validated",
-        "Scale.Name",
-        "Parent.Scale",
-        "Sub.Scale",
-        "scaleOrItem",
-        "Scale.Type",
-        "Scoring",
-        "Reverse.Coded",
-        "Transformation",
-        "Identifying.Info",
         "Data.Type",
-        "Time.Stem",
-        "Top.Level.Question",
         "Values",
-        "Definition",
-        "Delivery.Mechanism",
-        "Delivery.Frequency",
-        "Article.Title",
-        "Citation",
-        "notes"
+        "Definition"
       ]
     },
     "blockMap": {
-      "$anchor": "blockMap",
-      "$ref": "https://github.com/ymirssbm/wearitreadr/schema/0.1.0/blockMap.json"
+      "$anchor": "blockMap"
     }
   },
   "required": [
     "Study.Name",
-    "authors",
-    "funding",
-    "abstract",
     "burst",
-    "data",
-    "responseKey",
-    "itemMap",
     "blockMap"
   ]
 }
