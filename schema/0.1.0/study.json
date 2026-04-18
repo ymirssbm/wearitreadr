@@ -151,120 +151,165 @@
               "$anchor": "question",
               "title": "Question Specification",
               "description": "Contains all the information needed to specify a question or variable in a survey, observation, or passive data collection context.",
-              "type": "object",
+              "type": "array",
               "examples": [
-                {
-                  "Question.ID": "stress_q1",
-                  "Question.Long.Name": "Perceived Stress Item 1",
-                  "Question.Text": "How stressed have you felt in the past hour?",
-                  "Question.Description": "A self-report measure of perceived stress on a scale from 0 (not at all) to 100 (extremely).",
-                  "Question.Type.Display.Name": "digital slider",
-                  "Unique.Timing": "Delivered once per day at 9:00 AM regardless of survey schedule",
-                  "Parent": "block_001",
-                  "Conditional.Child.Item.ID": "question_stress_followup",
-                  "Conditional.Fail.Item.ID": "question_skip_to_mood",
-                  "Conditional.Master.Item.ID": "question_stress_q1",
-                  "Conditional.Threshold": "50",
-                  "Conditional.Type": "2",
-                  "Data.Type": "numeric",
-                  "Measurement.Interval": "4 hours",
-                  "Item.ID": "item_pss_01"
-                }
+                [
+                  {
+                    "Question.ID": "stress_q1",
+                    "Question.Long.Name": "Perceived Stress Item 1",
+                    "Question.Text": "How stressed have you felt in the past hour?",
+                    "Question.Description": "A self-report measure of perceived stress on a scale from 0 (not at all) to 100 (extremely).",
+                    "Question.Type.Display.Name": "Slider",
+                    "Parent": "block_001",
+                    "Conditional.Info": {
+                      "Conditional.Child.Item.ID": "question_stress_followup",
+                      "Conditional.Fail.Item.ID": "question_skip_to_mood",
+                      "Conditional.Master.Item.ID": "question_stress_q1",
+                      "Conditional.Threshold": "50",
+                      "Conditional.Type": "2"
+                    },
+                    "Data.Type": "numeric",
+                    "Item.ID": "item_pss_01",
+                    "Item.Type": "Question",
+                    "responseKey": [
+                      {"value": "0", "definition": "Not at all"},
+                      {"value": "50", "definition": "Moderate"},
+                      {"value": "100", "definition": "Extremely"}
+                    ]
+                  }
+                ]
               ],
-              "properties": {
-                "Question.ID": {
-                  "description": "Name of the variable as it appears in the dataset",
-                  "type": "string"
-                },
-                "Question.Long.Name": {
-                  "description": "Human readable name for the variable",
-                  "type": "string"
-                },
-                "Question.Text": {
-                  "description": "Exact text of the question as presented to the participant. Only applicable for survey questions.",
-                  "type": "string"
-                },
-                "Question.Description": {
-                  "description": "Description of the variable in layman's terms. If layman's terms are not possible, provide a citation to a longer explanation.",
-                  "type": "string"
-                },
-                "Question.Type.Display.Name": {
-                  "description": "How the data was obtained (e.g. sensing, survey, observation, circling on page, digital slider).",
-                  "type": "string"
-                },
-                "responseKey": {
-                  "type": "array",
-                  "description": "List of response value-definition pairs.",
-                  "items": {
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Question.ID": {
+                    "description": "Name of the variable as it appears in the dataset",
+                    "type": "string"
+                  },
+                  "Question.Long.Name": {
+                    "description": "Human readable name for the variable",
+                    "type": "string"
+                  },
+                  "Question.Text": {
+                    "description": "Exact text of the question as presented to the participant. Only applicable for survey questions.",
+                    "type": "string"
+                  },
+                  "Question.Description": {
+                    "description": "Description of the variable in layman's terms. If layman's terms are not possible, provide a citation to a longer explanation.",
+                    "type": "string"
+                  },
+                  "Question.Type.Display.Name": {
+                    "description": "How the data was obtained. Must match one of the supported Wear-IT display types.",
+                    "type": "string",
+                    "enum": [
+                      "FreeResponse",
+                      "InformationalFullscreen",
+                      "MultipleChoice",
+                      "MultipleSelect",
+                      "MultipleSlider",
+                      "Slider",
+                      "TimePicker"
+                    ],
+                    "descriptions": {
+                      "FreeResponse": "Open-ended free text response from the participant.",
+                      "InformationalFullscreen": "Displays information to the participant only — no user response is collected.",
+                      "MultipleChoice": "Participant selects exactly one option from a list of choices.",
+                      "MultipleSelect": "Participant selects one or more options from a list of choices.",
+                      "MultipleSlider": "Multiple visual analog scales presented together, one per construct.",
+                      "Slider": "A single visual analog scale — participant drags to a position between two anchors.",
+                      "TimePicker": "A time-based analog of the slider — participant selects a time value rather than a numeric one."
+                    }
+                  },
+                  "responseKey": {
+                    "type": "array",
+                    "description": "List of response value-definition pairs.",
+                    "examples": [
+                      [
+                        {"value": "1", "definition": "Less than five minutes (just stopped in)"},
+                        {"value": "2", "definition": "5 - 30 minutes"},
+                        {"value": "3", "definition": "30 - 60 minutes"},
+                        {"value": "4", "definition": "1 - 2 hours"},
+                        {"value": "5", "definition": "2 - 4 hours"},
+                        {"value": "6", "definition": "More than 4 hours"}
+                      ],
+                      [
+                        {"value": "0", "definition": "Not at all"},
+                        {"value": "50", "definition": "Moderate"},
+                        {"value": "100", "definition": "Very"}
+                      ]
+                    ],
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "value": {
+                          "type": "string",
+                          "description": "Coded response value."
+                        },
+                        "definition": {
+                          "type": "string",
+                          "description": "Human-readable label for the response value."
+                        }
+                      },
+                      "required": ["value", "definition"]
+                    }
+                  },
+                  "Item.Type": {
+                    "description": "Block or question.",
+                    "type": "string",
+                    "enum": ["Block", "Question", null]
+                  },
+                  "Parent": {
+                    "description": "Item ID of the parent item. NOTE: This is different than the conditional master which points to the item which if successful, delivers the current. Parent may point to a block many questions up.",
+                    "type": "string"
+                  },
+                  "Conditional.Info": {
+                    "description": "Contains all the conditional info for a question",
                     "type": "object",
                     "properties": {
-                      "value": {
-                        "type": "string",
-                        "description": "Coded response value."
+                      "Conditional.Child.Item.ID": {
+                        "description": "Item ID for the successful child of the current question.",
+                        "type": ["string", "null"]
                       },
-                      "definition": {
-                        "type": "string",
-                        "description": "Human-readable label for the response value."
+                      "Conditional.Fail.Item.ID": {
+                        "description": "Item ID for the fail child of the current question.",
+                        "type": ["string", "null"]
+                      },
+                      "Conditional.Master.Item.ID": {
+                        "description": "Item ID for the parent of the current question.",
+                        "type": ["string", "null"]
+                      },
+                      "Conditional.Threshold": {
+                        "description": "Threshold is the preset value being compared to the user response.",
+                        "type": ["string", "null"]
+                      },
+                      "Conditional.Type": {
+                        "description": "Conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
+                        "type": ["string", "null"],
+                        "enum": ["1", "2", "3", "4", "5", "6", null]
                       }
-                    },
-                    "required": ["value", "definition"]
-                  }
-                },
-                "Type": {
-                  "description": "Block or question.",
-                  "type": "string",
-                  "enum": ["Block","Question",null]
-                },
-                "Parent": {
-                  "description": "Item ID of the parent item. NOTE: This is different then the conditional master which points to the item which if successful, delivers the current. Parent may point to a block many questions up",
-                  "type": "string"
-                },
-                "Conditional.Info": {
-                  "description": "Contains all the conditional info for a question",
-                  "type": "object",
-                  "properties": {
-                    "Conditional.Child.Item.ID": {
-                      "description": "Item ID for the successful child of the current question.",
-                      "type": "string"
-                    },
-                    "Conditional.Fail.Item.ID": {
-                      "description": "Item ID for the fail child of the current question.",
-                      "type": "string"
-                    },
-                    "Conditional.Master.Item.ID": {
-                      "description": "Item ID for the parent of the current question.",
-                      "type": "string"
-                    },
-                    "Conditional.Threshold": {
-                      "description": "Threshold is the preset value being compared to the user response.",
-                      "type": "string"
-                    },
-                    "Conditional.Type": {
-                      "description": "Conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
-                      "type": "string",
-                      "enum": ["1","2","3","4","5","6"]
                     }
+                  },
+                  "Data.Type": {
+                    "description": "The type of data captured by this variable. Oldname: Result.Type",
+                    "type": "string",
+                    "enum": ["integer", "character", "numeric", null]
+                  },
+                  "Item.ID": {
+                    "description": "Item ID for this question",
+                    "type": "string"
                   }
                 },
-                "Data.Type": {
-                  "description": "The type of data captured by this variable. Oldname: Result.Type",
-                  "type": "string",
-                  "enum": ["integer", "character", "numeric", null]
-                },
-                "Item.ID": {
-                  "description": "Item ID for this question",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "Item.ID",
-                "Item.Type",
-                "Question.Text",
-                "Question.ID",
-                "Question.Type.Display.Name",
-                "Data.Type",
-                "Parent"
-              ]
+                "required": [
+                  "Item.ID",
+                  "Item.Type",
+                  "Question.Text",
+                  "Question.ID",
+                  "Question.Type.Display.Name",
+                  "Data.Type",
+                  "Parent",
+                  "responseKey"
+                ]
+              }
             }
           },
           "required": [

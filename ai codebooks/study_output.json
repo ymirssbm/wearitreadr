@@ -1,0 +1,236 @@
+{
+  "Study.Name": "Longitudinal Craving and Negative Affect Study",
+  "authors": "Dr. Sarah Chen, Dr. Michael Rodriguez",
+  "funding": "NIH Grant R01DA045678",
+  "abstract": "This study examines the temporal dynamics of craving and negative affect over a 10-day period in a single participant, assessing daily fluctuations and covariation between these constructs using ecological momentary assessment.",
+  "burst": {
+    "burstID": 1,
+    "Timing.Type": "Discrete",
+    "survey": {
+      "Survey.LongName": "Daily Craving and Affect Assessment",
+      "Survey.ShortName": "DCAA",
+      "Scheduling.Info": {
+        "Timing.Info": {
+          "offset": [
+            {
+              "value": 1,
+              "unit": "days"
+            }
+          ],
+          "children": []
+        },
+        "Window.Info": {
+          "window.length": [
+            {
+              "value": 4,
+              "unit": "hours"
+            }
+          ],
+          "random": false,
+          "Trigger.Info": {}
+        }
+      },
+      "question": [
+        {
+          "Item.ID": "item_craving_01",
+          "Item.Type": "Question",
+          "Question.ID": "craving",
+          "Question.Long.Name": "Craving Intensity",
+          "Question.Text": "How intense is your craving right now?",
+          "Question.Description": "Self-reported intensity of substance craving on a visual analog scale",
+          "Question.Type.Display.Name": "Slider",
+          "Data.Type": "numeric",
+          "Parent": "block_daily",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "No craving at all"
+            },
+            {
+              "value": "50",
+              "definition": "Moderate craving"
+            },
+            {
+              "value": "100",
+              "definition": "Extreme craving"
+            }
+          ],
+          "Conditional.Info": {
+            "Conditional.Child.Item.ID": null,
+            "Conditional.Fail.Item.ID": null,
+            "Conditional.Master.Item.ID": null,
+            "Conditional.Threshold": null,
+            "Conditional.Type": null
+          }
+        },
+        {
+          "Item.ID": "item_affect_01",
+          "Item.Type": "Question",
+          "Question.ID": "neg_affect",
+          "Question.Long.Name": "Negative Affect",
+          "Question.Text": "How much negative emotion are you experiencing right now?",
+          "Question.Description": "Self-reported negative affective state including feelings of distress, irritability, and dysphoria",
+          "Question.Type.Display.Name": "Slider",
+          "Data.Type": "numeric",
+          "Parent": "block_daily",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "No negative affect"
+            },
+            {
+              "value": "50",
+              "definition": "Moderate negative affect"
+            },
+            {
+              "value": "100",
+              "definition": "Extreme negative affect"
+            }
+          ],
+          "Conditional.Info": {
+            "Conditional.Child.Item.ID": null,
+            "Conditional.Fail.Item.ID": null,
+            "Conditional.Master.Item.ID": null,
+            "Conditional.Threshold": null,
+            "Conditional.Type": null
+          }
+        }
+      ]
+    }
+  },
+  "data": {
+    "Participant.ID": [
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001",
+      "P001"
+    ],
+    "Session.ID": [
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5,
+      5,
+      6,
+      6,
+      7,
+      7,
+      8,
+      8,
+      9,
+      9,
+      10,
+      10
+    ],
+    "Survey.Date.Completed": [
+      "2024-01-01T10:00:00Z",
+      "2024-01-01T10:02:00Z",
+      "2024-01-02T10:00:00Z",
+      "2024-01-02T10:03:00Z",
+      "2024-01-03T10:00:00Z",
+      "2024-01-03T10:01:00Z",
+      "2024-01-04T10:00:00Z",
+      "2024-01-04T10:04:00Z",
+      "2024-01-05T10:00:00Z",
+      "2024-01-05T10:02:00Z",
+      "2024-01-06T10:00:00Z",
+      "2024-01-06T10:03:00Z",
+      "2024-01-07T10:00:00Z",
+      "2024-01-07T10:01:00Z",
+      "2024-01-08T10:00:00Z",
+      "2024-01-08T10:02:00Z",
+      "2024-01-09T10:00:00Z",
+      "2024-01-09T10:03:00Z",
+      "2024-01-10T10:00:00Z",
+      "2024-01-10T10:02:00Z"
+    ],
+    "User.Response": [
+      "45",
+      "40",
+      "60",
+      "55",
+      "35",
+      "30",
+      "70",
+      "65",
+      "50",
+      "45",
+      "80",
+      "75",
+      "40",
+      "35",
+      "55",
+      "50",
+      "65",
+      "60",
+      "75",
+      "70"
+    ],
+    "Question.ID": [
+      "craving",
+      "neg_affect",
+      "craving",
+      "neg_affect",
+      "craving",
+      "neg_affect",
+      "craving",
+      "neg_affect",
+      "craving",
+      "neg_affect",
+      "craving",
+      "neg_affect",
+      "craving",
+      "neg_affect",
+      "craving",
+      "neg_affect",
+      "craving",
+      "neg_affect",
+      "craving",
+      "neg_affect"
+    ]
+  },
+  "itemMap": {
+    "Item.Text": "How intense is your craving right now?",
+    "Conceptualization": "Substance craving intensity",
+    "Modeling.Characteristics": "Outcome variable; typically analyzed as continuous",
+    "Validated": false,
+    "Scale.Name": "Single Item Craving Scale",
+    "scaleOrItem": "item",
+    "Scale.Type": "VAS",
+    "Scoring": "0-100 point scale",
+    "Reverse.Coded": false,
+    "Transformation": "None",
+    "Identifying.Info": false,
+    "Data.Type": "numeric",
+    "Time.Stem": "right now",
+    "Values": "0-100",
+    "Definition": "Visual analog scale from 0 (No craving at all) to 100 (Extreme craving)",
+    "Delivery.Mechanism": "mobile app",
+    "Delivery.Frequency": "once daily",
+    "Article.Title": "Daily monitoring of craving and affect",
+    "Citation": "Chen, S. & Rodriguez, M. (2024). Longitudinal craving assessment.",
+    "notes": "Synthetic data for demonstration"
+  },
+  "blockMap": {}
+}
