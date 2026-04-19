@@ -4,27 +4,21 @@ This is a codebook generator r package that can interface with WearIT's api. The
 
 ## How to run
 
-Most straightforward way to run is to use the 'using codebook.r' script and run it. It will use data saved to the Codebook_RMD/processedData folder. Run get study data with the approprate study ID and save the resulting dataframes into processedData as a csv to generate on different studies data.
+Simplest way is to load the app.R file in the codebookApp folder
 
 ## Urgent TDL
 
-- Fix multiple slider generation
 
 ## Known Issues / To do list
 
-- App crashes on wrong input at data pull, 
-- Should be able to select not to have Funding Authors and Title
+- Fix multiple slider generation
 - Need to be able to specify file name
-- List of devices used
-- Period of data collection
 - Implement screenshots
 - Missingness codes
 - Survey beeps
-- Graphical representation of study decision tree
 - Figure out how to fix TOC when the first item in a survey is not a block
 - Citations for scales
 - Scale metadata
-- Create data dictionary data generation tool
 - Create data manual generation tool
 - Decide on name for the project
 
