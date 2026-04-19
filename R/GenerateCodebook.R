@@ -44,7 +44,8 @@ generateCodebook <- function(title = "This is a temp default title, please set",
       "desired graphic",
       "funding",
       "abstract",
-      "effective summary"
+      "effective summary",
+      "study metadata"
     )
 
   }
@@ -278,7 +279,8 @@ generateCodebook <- function(title = "This is a temp default title, please set",
       desiredGraphic = "desired graphic" %in% codebookChunkDisplayOptions,
       funding = "funding" %in% codebookChunkDisplayOptions,
       abstract = "abstract" %in% codebookChunkDisplayOptions,
-      effectiveSummary = "effective summary" %in% codebookChunkDisplayOptions
+      effectiveSummary = "effective summary" %in% codebookChunkDisplayOptions,
+      displayMeta = "study metadata" %in% codebookChunkDisplayOptions
     )
   )
   # Remove temp workspace
