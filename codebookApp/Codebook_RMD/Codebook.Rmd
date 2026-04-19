@@ -34,10 +34,14 @@ cat("## Authors \n\n{{authors}}\n\n")
 
 ```
 
+```{r display-meta, eval = params$displayMeta, echo = FALSE, results = 'asis'}
+displayStudyMetaData()
+```
+
 
 ```{r desired-graphic, eval = params$desiredGraphic, echo = FALSE, results = 'asis'}
 
-cat("\n\n## Desired graphic\n\n")
+#cat("\n\n## Desired graphic\n\n")
 
 knitr::include_graphics("images/rts.png")
 ```
