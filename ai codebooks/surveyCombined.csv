@@ -1,0 +1,5 @@
+"Survey.ID","Survey.Name","Participant.ID","Survey.Date.Completed","Survey.Date.Submitted","UCS.ID","User.Response","Question.ID","Item","Short.Descriptor","Cog.Test.Result"
+"366","Daily Diary","example-participant-1","2022-06-02 17:00:43","2022-06-02 17:00:43","27846","0,0","Question 6001","Item 5798","Item 5798",NA
+"366","Daily Diary","example-participant-1","2022-06-02 17:00:43","2022-06-02 17:00:43","27846","5","Question 5999","Item 5750","Item 5750",NA
+"366","Daily Diary","example-participant-2","2022-06-02 17:00:43","2022-06-02 17:00:43","27847","3,4","Question 6010","Item 5809","Item 5809",NA
+"366","Daily Diary","example-participant-2","2022-06-02 17:00:43","2022-06-02 17:00:43","27847","2","Question 6002","Item 5765","Item 5765",NA

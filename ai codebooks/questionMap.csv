@@ -1,0 +1,4 @@
+"Survey.LongName","Group","Survey.QID","Question.ID","Survey","Item.ID","Item.Type","Parent","Question.Text","Question.Type","QID","Question.Type.Display.Name","Result.Type","Multiple.Question.Type"
+"Daily Diary","","366","Question 5999","Daily Diary ID 366","Item 5750","Question","Daily Diary ID 366","How would you rate the level of cravings you experienced today?",6,"Q_5999","Informational Fullscreen",NA,FALSE
+NA,NA,NA,"Question 6001","Daily Diary ID 366","Item 5799","Question","Daily Diary ID 366","How would you rate the level of negative emotions (e.g. anger, sadness, anxiety) you experienced today?",6,"Q_6001","Informational Fullscreen",NA,FALSE
+NA,NA,NA,"Question 6002","Daily Diary ID 366","Item 5765","Question","Daily Diary ID 366","How did you use (or not use) substances today?",6,"Q_6002","Informational Fullscreen",NA,FALSE
