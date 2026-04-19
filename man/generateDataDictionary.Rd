@@ -6,7 +6,7 @@
 \usage{
 generateDataDictionary(
   blockMap = read.csv("Codebook_RMD/Data/blockMap.csv"),
-  responseMap = read.csv("Codebook_RMD/Data/blockMap.csv"),
+  responseKey = read.csv("Codebook_RMD/Data/responseKey.csv"),
   ...,
   shiny = FALSE
 )
