@@ -197,10 +197,12 @@ makeAllRequests <- function(creds, argList=list(),
       }
     }
     requestStash[[requestIdx]] <- makeOneRequest(nextURL, endpointInfo, argList)
+    jsonOutput[[requestIdx]] <- requestStash[[requestIdx]]$json
+
     if(is.null(requestStash[[requestIdx]]$json$links$`next`)) {
       break;
     }
-    jsonOutput[[requestIdx]] <- requestStash[[requestIdx]]$json
+
     nextURL <- jsonOutput[[requestIdx]]$links$`next`
     requestIdx <- requestIdx + 1
   }
