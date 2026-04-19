@@ -1,3 +1,0 @@
-"","Survey.LongName","Question.ID","Question.Text","Question.Type.Display.Name","Result.Type","Missingness.Codes","Response.Range","Response.Text"
-"1","Daily Craving and Affect Assessment","craving","How intense is your craving right now?","Slider","numeric",NA,"Inf - -Inf",""
-"2","Daily Craving and Affect Assessment","neg_affect","How much negative emotion are you experiencing right now?","Slider","numeric",NA,"Inf - -Inf",""
