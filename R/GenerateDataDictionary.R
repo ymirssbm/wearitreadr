@@ -8,7 +8,7 @@
 
 
 generateDataDictionary <- function(blockMap = read.csv("Codebook_RMD/Data/blockMap.csv"),
-                                   responseMap = read.csv("Codebook_RMD/Data/blockMap.csv"),
+                                   responseKey = read.csv("Codebook_RMD/Data/responseKey.csv"),
                                    ..., shiny = FALSE) {
 
 
@@ -37,13 +37,13 @@ generateDataDictionary <- function(blockMap = read.csv("Codebook_RMD/Data/blockM
 
   blockMap <- cbind(blockMap, Missingness.Codes, Response.Range, Response.Text)
   blockMap <- blockMap[, c("Survey.LongName", "Question.ID", "Question.Text", "Question.Type.Display.Name", "Result.Type", "Missingness.Codes", "Response.Range", "Response.Text")]
-
+  blockMap <- blockMap[rowSums(is.na(blockMap)) != ncol(blockMap), ]
 
   if (shiny == TRUE) {
-    write.csv(blockMap, "Codebook_RMD/DataDictionary.csv")
+    write.csv(blockMap, "Codebook_RMD/DataDictionary.csv", row.names = FALSE)
   }
 
   if (shiny == FALSE) {
-    write.csv(blockMap, "DataDictionary.csv")
+    write.csv(blockMap, "DataDictionary.csv", row.names = FALSE)
   }
 }
