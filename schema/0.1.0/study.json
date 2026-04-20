@@ -202,22 +202,22 @@
                     "description": "How the data was obtained. Must match one of the supported Wear-IT display types.",
                     "type": "string",
                     "enum": [
-                      "FreeResponse",
-                      "InformationalFullscreen",
-                      "MultipleChoice",
-                      "MultipleSelect",
-                      "MultipleSlider",
+                      "Free Response",
+                      "Informational Fullscreen",
+                      "Multiple Choice",
+                      "Multiple Select",
+                      "Multiple Slider",
                       "Slider",
-                      "TimePicker"
+                      "Time Picker"
                     ],
                     "descriptions": {
-                      "FreeResponse": "Open-ended free text response from the participant.",
-                      "InformationalFullscreen": "Displays information to the participant only — no user response is collected.",
-                      "MultipleChoice": "Participant selects exactly one option from a list of choices.",
-                      "MultipleSelect": "Participant selects one or more options from a list of choices.",
-                      "MultipleSlider": "Multiple visual analog scales presented together, one per construct.",
+                      "Free Response": "Open-ended free text response from the participant.",
+                      "Informational Fullscreen": "Displays information to the participant only — no user response is collected.",
+                      "Multiple Choice": "Participant selects exactly one option from a list of choices.",
+                      "Multiple Select": "Participant selects one or more options from a list of choices.",
+                      "Multiple Slider": "Multiple visual analog scales presented together, one per construct.",
                       "Slider": "A single visual analog scale — participant drags to a position between two anchors.",
-                      "TimePicker": "A time-based analog of the slider — participant selects a time value rather than a numeric one."
+                      "Time Picker": "A time-based analog of the slider — participant selects a time value rather than a numeric one."
                     }
                   },
                   "responseKey": {
