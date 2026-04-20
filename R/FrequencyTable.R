@@ -13,6 +13,7 @@
 
 frequencyTable <- function(id, thisData, responseKey){
 
+  #browser()
   # Check for data
   dataExists <- checkDataExists(id, thisData)
 

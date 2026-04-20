@@ -28,6 +28,13 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
   # Grab list of surveys
   surveys <- unique(na.omit(blockMap$Survey))
 
+  # Fall back on long name if surveys is empty
+  if (is.null(surveys) || length(surveys) == 0) {
+    blockMap$Survey <- blockMap$Survey.LongName
+    surveys <- unique(na.omit(blockMap$Survey))
+  }
+
+  #browser()
   # For each survey
   for (survey in surveys) {
 
