@@ -96,7 +96,7 @@ cat("
 ```{r Codebook-Chunk, include = FALSE}
 
 out2 <- ""
-
+#browser()
 # Describe by Question
 out2 <- describeByQuestion(out2, thisData, blockMap, responseKey)
 
