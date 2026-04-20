@@ -55,6 +55,20 @@ qualtrics_to_wearit <- function(survey_id,
     unname(mapping[op])
   }
 
+  # Map Qualtrics question types to Wear-IT display types
+  map_question_type <- function(q_type) {
+    switch(q_type,
+           "MC"     = "Multiple Choice",
+           "TE"     = "Free Response",
+           "Slider" = "Slider",
+           "Matrix" = "Multiple Slider",
+           "CS"     = "Multiple Select",
+           "DB"     = "Informational Fullscreen",
+           "TP"     = "Time Picker",
+           NULL
+    )
+  }
+
   # Sanitize text for use in spec
   sanitize <- function(text) {
     if (is.null(text) || is.na(text)) return(NULL)
@@ -65,8 +79,8 @@ qualtrics_to_wearit <- function(survey_id,
   # Extract display logic from a question
   extract_logic <- function(q) {
     logic <- list(
-      Conditional.Type      = NULL,
-      Conditional.Threshold = NULL,
+      Conditional.Type           = NULL,
+      Conditional.Threshold      = NULL,
       Conditional.Child.Item.ID  = NULL,
       Conditional.Fail.Item.ID   = NULL,
       Conditional.Master.Item.ID = NULL
@@ -76,9 +90,9 @@ qualtrics_to_wearit <- function(survey_id,
       dl <- q$DisplayLogic
       if (!is.null(dl$`0`$`0`)) {
         cond <- dl$`0`$`0`
-        logic$Conditional.Type      <- map_operator(cond$Operator)
-        logic$Conditional.Threshold <- as.character(cond$Value)
-        logic$Conditional.Master.Item.ID <- cond$QuestionID
+        logic$Conditional.Type             <- map_operator(cond$Operator)
+        logic$Conditional.Threshold        <- as.character(cond$Value)
+        logic$Conditional.Master.Item.ID   <- cond$QuestionID
       }
     }
     logic
@@ -136,8 +150,9 @@ qualtrics_to_wearit <- function(survey_id,
       # Extract display logic
       logic <- extract_logic(q)
 
-      # Extract response key using correct field names
-      response_key <- NULL
+      # Extract response key
+      response_key <- list()  # default to empty array
+
       if (!is.null(q$choices)) {
         response_key <- lapply(names(q$choices), function(choice_id) {
           list(
@@ -147,11 +162,12 @@ qualtrics_to_wearit <- function(survey_id,
         })
       }
 
-      # Question type
-      q_type <- q$questionType$type %||% "Unknown"
+      # Map question type to Wear-IT display type
+      q_type_raw    <- q$questionType$type %||% "Unknown"
+      q_type_mapped <- map_question_type(q_type_raw) %||% q_type_raw
 
       # Data type mapping
-      data_type <- switch(q_type,
+      data_type <- switch(q_type_raw,
                           "Slider" = "numeric",
                           "TE"     = "character",
                           "MC"     = "integer",
@@ -165,15 +181,15 @@ qualtrics_to_wearit <- function(survey_id,
         Parent                     = block_item_id,
         Question.ID                = qid,
         Question.Text              = sanitize(q$questionText),
-        Question.Type.Display.Name = q_type,
+        Question.Type.Display.Name = q_type_mapped,
         Data.Type                  = data_type,
         responseKey                = response_key,
         Conditional.Info           = list(
-          Conditional.Type               = logic$Conditional.Type,
-          Conditional.Threshold          = logic$Conditional.Threshold,
-          Conditional.Child.Item.ID      = logic$Conditional.Child.Item.ID,
-          Conditional.Fail.Item.ID       = logic$Conditional.Fail.Item.ID,
-          Conditional.Master.Item.ID     = logic$Conditional.Master.Item.ID
+          Conditional.Type           = logic$Conditional.Type,
+          Conditional.Threshold      = logic$Conditional.Threshold,
+          Conditional.Child.Item.ID  = logic$Conditional.Child.Item.ID,
+          Conditional.Fail.Item.ID   = logic$Conditional.Fail.Item.ID,
+          Conditional.Master.Item.ID = logic$Conditional.Master.Item.ID
         )
       )
     }
@@ -183,6 +199,7 @@ qualtrics_to_wearit <- function(survey_id,
   # Step 4: Assemble spec
   #---------------------------
   message("Assembling study spec...")
+
   # Get just question entries, not block entries
   questions_only <- Filter(function(x) x$Item.Type == "Question", all_questions)
 
@@ -196,7 +213,7 @@ qualtrics_to_wearit <- function(survey_id,
       survey  = list(
         Survey.LongName  = sanitize(survey$name),
         Survey.ShortName = "",
-        question         = questions_only[[1]]  # first actual question
+        question         = questions_only  # full array, not just first element
       )
     ),
     blockMap = list()
@@ -205,35 +222,51 @@ qualtrics_to_wearit <- function(survey_id,
   #---------------------------
   # Step 5: Validate
   #---------------------------
+  library(jsonlite)
+
+  # Load schema as a parsed object
+  schema_obj <- read_json(schema_path)
+
+  # Your spec JSON
+  spec_json <- toJSON(
+    study_spec,
+    auto_unbox = TRUE,
+    null = "null",
+    pretty = TRUE
+  )
+
+  schema_json <- toJSON(
+    schema_obj,
+    auto_unbox = TRUE,
+    null = "null",
+    pretty = TRUE
+  )
+
+
   message("Validating against Wear-IT schema...")
 
-  schema     <- paste(readLines(schema_path), collapse = "\n")
-  spec_json  <- toJSON(study_spec, auto_unbox = TRUE, null = "null", pretty = TRUE)
 
-  validation <- json_validate(
-    spec_json,
-    schema,
-    verbose = TRUE,
-    greedy  = TRUE,
-    engine  = "ajv"
+  validation <- jsonvalidate::json_validate(
+    json = spec_json,
+    schema = schema_json,
+    engine = "ajv",
+    verbose = TRUE
   )
 
   if (!validation) {
     errors <- attr(validation, "errors")
-    warning("Schema validation failed with the following errors:")
+    message("Schema validation failed with the following errors:")
     print(errors)
-  } else {
-    message("Validation passed.")
   }
 
   #---------------------------
   # Step 6: Return
   #---------------------------
   list(
-    spec       = study_spec,
-    spec_json  = spec_json,
-    valid      = as.logical(validation),
-    errors     = if (!validation) attr(validation, "errors") else NULL
+    spec      = study_spec,
+    spec_json = spec_json,
+    valid     = as.logical(validation),
+    errors    = if (!validation) attr(validation, "errors") else NULL
   )
 }
 
@@ -241,12 +274,10 @@ qualtrics_to_wearit <- function(survey_id,
 `%||%` <- function(a, b) if (!is.null(a)) a else b
 
 
-
-
 result <- qualtrics_to_wearit(
-  survey_id   = "SV_3JVDH61TNOr2pJI",    # from Qualtrics URL or survey settings
-  api_key     = "",   # Account Settings > Qualtrics IDs > API Token
-  data_center = "yul1",             # Account Settings > Qualtrics IDs > Datacenter ID
+  survey_id   = "SV_3JVDH61TNOr2pJI",
+  api_key     = api_key,
+  data_center = "yul1",
   schema_path = "study.json",
   study_meta  = list(
     Study.Name = "My Study",
@@ -256,14 +287,19 @@ result <- qualtrics_to_wearit(
   )
 )
 
+
+cat("Valid:", result$valid, "\n")
+cat("Errors:\n")
+print(result$errors)
+
 # Check if it validated
 result$valid
 
 # See any validation errors
-result$errors
+#result$errors
 
 # View the spec as a list
-result$spec
+#result$spec
 
 # Save the JSON to a file
 write(result$spec_json, "my_study_spec.json")

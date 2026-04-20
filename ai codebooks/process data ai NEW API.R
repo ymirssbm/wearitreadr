@@ -15,50 +15,95 @@ parse_wearit_json <- function(filepath) {
   # 1. DATA tibble
   # ════════════════════════════════════════════════════════════════════════
   d <- raw$data
-  n <- max(sapply(d[!sapply(d, is.null)], length))
 
-  pad <- function(x, n, default = NA) {
-    if (is.null(x) || length(x) == 0) rep(default, n) else unlist(x)
+  # If no data, return empty tibble with correct columns
+  if (is.null(d)) {
+
+    Data <- tibble(
+      Survey.ID                  = numeric(),
+      Survey.Name                = character(),
+      Participant.ID             = character(),
+      Session.ID                 = numeric(),
+      Alert.Times                = as_datetime(character()),
+      Survey.Start               = as_datetime(character()),
+      Survey.Date.Completed      = as_datetime(character()),
+      Survey.Date.Submitted      = as_datetime(character()),
+      Timezone                   = character(),
+      Offset                     = numeric(),
+      Network.Type               = character(),
+      App.Version                = character(),
+      OS                         = character(),
+      Model                      = character(),
+      Burst                      = numeric(),
+      UCS.ID                     = numeric(),
+      User.Response              = character(),
+      Question.ID                = character(),
+      Item                       = character(),
+      Short.Descriptor           = character(),
+      External.ID                = character(),
+      Cog.Test.Result            = logical(),
+      Survey                     = character(),
+      Block                      = logical(),
+      Sub.block                  = logical(),
+      Question.Text              = character(),
+      Question.Type              = numeric(),
+      Conditional.Child.Item.ID  = numeric(),
+      Conditional.Fail.Item.ID   = numeric(),
+      Conditional.Threshold      = numeric(),
+      Conditional.Type           = numeric(),
+      Conditional.Master.Item.ID = numeric(),
+      Question.Type.Display.Name = character(),
+      Result.Type                = character(),
+      Multiple.Question.Type     = logical()
+    )
+
+  } else {
+
+    # your existing logic
+    n <- max(sapply(d[!sapply(d, is.null)], length))
+
+    pad <- function(x, n, default = NA) {
+      if (is.null(x) || length(x) == 0) rep(default, n) else unlist(x)
+    }
+
+    Data <- tibble(
+      Survey.ID                  = pad(d$Survey.ID,                  n, NA_real_),
+      Survey.Name                = pad(d$Survey.Name,                n, NA_character_),
+      Participant.ID             = pad(d$Participant.ID,             n, NA_character_),
+      Session.ID                 = pad(d$Session.ID,                 n, NA_real_),
+      Alert.Times                = as_datetime(pad(d$Alert.Times,    n, NA_character_)),
+      Survey.Start               = as_datetime(pad(d$Survey.Start,   n, NA_character_)),
+      Survey.Date.Completed      = as_datetime(pad(d$Survey.Date.Completed,  n, NA_character_)),
+      Survey.Date.Submitted      = as_datetime(pad(d$Survey.Date.Submitted,  n, NA_character_)),
+      Timezone                   = pad(d$Timezone,                   n, NA_character_),
+      Offset                     = pad(d$Offset,                     n, NA_real_),
+      Network.Type               = pad(d$Network.Type,               n, NA_character_),
+      App.Version                = pad(d$App.Version,                n, NA_character_),
+      OS                         = pad(d$OS,                         n, NA_character_),
+      Model                      = pad(d$Model,                      n, NA_character_),
+      Burst                      = pad(d$Burst,                      n, NA_real_),
+      UCS.ID                     = pad(d$UCS.ID,                     n, NA_real_),
+      User.Response              = pad(d$User.Response,              n, NA_character_),
+      Question.ID                = pad(d$Question.ID,                n, NA_character_),
+      Item                       = pad(d$Item,                       n, NA_character_),
+      Short.Descriptor           = pad(d$Short.Descriptor,           n, NA_character_),
+      External.ID                = pad(d$External.ID,                n, NA_character_),
+      Cog.Test.Result            = pad(d$Cog.Test.Result,            n, NA),
+      Survey                     = pad(d$Survey,                     n, NA_character_),
+      Block                      = pad(d$Block,                      n, NA),
+      Sub.block                  = pad(d$Sub.block,                  n, NA),
+      Question.Text              = pad(d$Question.Text,              n, NA_character_),
+      Question.Type              = pad(d$Question.Type,              n, NA_real_),
+      Conditional.Child.Item.ID  = pad(d$Conditional.Child.Item.ID,  n, NA_real_),
+      Conditional.Fail.Item.ID   = pad(d$Conditional.Fail.Item.ID,   n, NA_real_),
+      Conditional.Threshold      = pad(d$Conditional.Threshold,      n, NA_real_),
+      Conditional.Type           = pad(d$Conditional.Type,           n, NA_real_),
+      Conditional.Master.Item.ID = pad(d$Conditional.Master.Item.ID, n, NA_real_),
+      Question.Type.Display.Name = pad(d$Question.Type.Display.Name, n, NA_character_),
+      Result.Type                = pad(d$Result.Type,                n, NA_character_),
+      Multiple.Question.Type     = pad(d$Multiple.Question.Type,     n, NA)
+    )
   }
-
-  Data <- tibble(
-    Survey.ID                  = pad(d$Survey.ID,                  n, NA_real_),
-    Survey.Name                = pad(d$Survey.Name,                n, NA_character_),
-    Participant.ID             = pad(d$Participant.ID,             n, NA_character_),
-    Session.ID                 = pad(d$Session.ID,                 n, NA_real_),
-    Alert.Times                = as_datetime(pad(d$Alert.Times,    n, NA_character_)),
-    Survey.Start               = as_datetime(pad(d$Survey.Start,   n, NA_character_)),
-    Survey.Date.Completed      = as_datetime(pad(d$Survey.Date.Completed,  n, NA_character_)),
-    Survey.Date.Submitted      = as_datetime(pad(d$Survey.Date.Submitted,  n, NA_character_)),
-    Timezone                   = pad(d$Timezone,                   n, NA_character_),
-    Offset                     = pad(d$Offset,                     n, NA_real_),
-    Network.Type               = pad(d$Network.Type,               n, NA_character_),
-    App.Version                = pad(d$App.Version,                n, NA_character_),
-    OS                         = pad(d$OS,                         n, NA_character_),
-    Model                      = pad(d$Model,                      n, NA_character_),
-    Burst                      = pad(d$Burst,                      n, NA_real_),
-    UCS.ID                     = pad(d$UCS.ID,                     n, NA_real_),
-    User.Response              = pad(d$User.Response,              n, NA_character_),
-    Question.ID                = pad(d$Question.ID,                n, NA_character_),
-    Item                       = pad(d$Item,                       n, NA_character_),
-    Short.Descriptor           = pad(d$Short.Descriptor,           n, NA_character_),
-    External.ID                = pad(d$External.ID,                n, NA_character_),
-    Cog.Test.Result            = pad(d$Cog.Test.Result,            n, NA),
-    Survey                     = pad(d$Survey,                     n, NA_character_),
-    Block                      = pad(d$Block,                      n, NA),
-    Sub.block                  = pad(d$Sub.block,                  n, NA),
-    Question.Text              = pad(d$Question.Text,              n, NA_character_),
-    Question.Type              = pad(d$Question.Type,              n, NA_real_),
-    Conditional.Child.Item.ID  = pad(d$Conditional.Child.Item.ID,  n, NA_real_),
-    Conditional.Fail.Item.ID   = pad(d$Conditional.Fail.Item.ID,   n, NA_real_),
-    Conditional.Threshold      = pad(d$Conditional.Threshold,      n, NA_real_),
-    Conditional.Type           = pad(d$Conditional.Type,           n, NA_real_),
-    Conditional.Master.Item.ID = pad(d$Conditional.Master.Item.ID, n, NA_real_),
-    Question.Type.Display.Name = pad(d$Question.Type.Display.Name, n, NA_character_),
-    Result.Type                = pad(d$Result.Type,                n, NA_character_),
-    Multiple.Question.Type     = pad(d$Multiple.Question.Type,     n, NA)
-  )
-
   # ════════════════════════════════════════════════════════════════════════
   # 2. BLOCKMAP tibble  — question is now an array, iterate over each
   # ════════════════════════════════════════════════════════════════════════
@@ -101,7 +146,7 @@ parse_wearit_json <- function(filepath) {
         mutate(
           survey   = safe_get(sur, "Survey.ShortName",           NA_character_),
           question = safe_get(q,   "Question.ID",                NA_character_),
-          type     = safe_get(q,   "Question.Type.Display.Name", NA_character_),
+          type     = "Response",
           value    = as.numeric(value)
         ) %>%
         select(survey, question, type, value, definition)
@@ -117,12 +162,19 @@ parse_wearit_json <- function(filepath) {
       definition = character()
     )
   }
+  # Grab list of surveys
+  surveys <- unique(na.omit(blockMap$Survey))
+
+  # Fall back on long name if surveys is empty
+  if (is.null(surveys) || length(surveys) == 0 || surveys == "") {
+    blockMap$Survey <- blockMap$Survey.LongName
+  }
 
   list(Data = Data, blockMap = blockMap, responseKey = responseKey)
 }
 
 # ── Usage ─────────────────────────────────────────────────────────────────
-result      <- parse_wearit_json("study_output.json")
+result      <- parse_wearit_json("my_study_spec.json")
 Data        <- result$Data
 blockMap    <- result$blockMap
 responseKey <- result$responseKey
