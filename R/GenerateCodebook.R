@@ -45,11 +45,19 @@ generateCodebook <- function(title = "This is a temp default title, please set",
       "funding",
       "abstract",
       "effective summary",
-      "study metadata"
+      "study metadata",
+      "historgrams",
+      "missingness page",
+      "descriptives"
     )
 
   }
 
+  # Remove all data if user selected
+  if("exclude data" %in% codebookChunkDisplayOptions) {
+    thisData <- thisData[0,]
+    write.csv(thisData, "Codebook_RMD/Data/Data.csv", row.names = TRUE)
+  }
 
   # This is a temp default that should be filed into the processing step, this is to clean fambes data specifically
   thisData[] <- lapply(thisData, function(x) {
@@ -68,6 +76,8 @@ generateCodebook <- function(title = "This is a temp default title, please set",
 
   newCols <- c("parentTrue", "childTrue")
   blockMap[,newCols] <- NA
+
+
 
 
   # Create boolean cols for parent and child status
@@ -280,7 +290,10 @@ generateCodebook <- function(title = "This is a temp default title, please set",
       funding = "funding" %in% codebookChunkDisplayOptions,
       abstract = "abstract" %in% codebookChunkDisplayOptions,
       effectiveSummary = "effective summary" %in% codebookChunkDisplayOptions,
-      displayMeta = "study metadata" %in% codebookChunkDisplayOptions
+      displayMeta = "study metadata" %in% codebookChunkDisplayOptions,
+      histogram = "histograms" %in% codebookChunkDisplayOptions,
+      missingnessPage = "missingness page" %in% codebookChunkDisplayOptions,
+      descriptives = "descriptives" %in% codebookChunkDisplayOptions
     )
   )
   # Remove temp workspace

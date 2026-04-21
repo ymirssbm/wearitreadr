@@ -32,6 +32,9 @@ params:
   abstract: true
   effectiveSummary: true
   displayMeta: true
+  histogram: true
+  missingnessPage: true
+  descriptives: true
   
 ---
 

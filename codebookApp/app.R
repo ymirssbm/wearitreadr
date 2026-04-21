@@ -38,7 +38,7 @@ local({
                    tabPanel("Data pull",
                             p("This is where you can pull data down from Wear-IT. Just supply the study ID number of the study you want to pull data from and then click the button"),
                             textInput(inputId = "studyID", label = "Insert Study ID"),
-                            textInput(inputId = "apiToken", label = "Insert Api Token"),
+                            passwordInput(inputId = "apiToken", label = "Insert Api Token"),
                             selectInput(inputId = "keyringToken",
                                         label = "Or select saved key",
                                         choices = keyring::key_list()),
@@ -109,7 +109,7 @@ local({
     #-----------------------
     # Hard coding in options
     dataTypes <- c("FreeResponse", "InformationalFullscreen", "MultipleChoice",
-                   "MultipleSelect", "MultipleSlider", "Slider", "TimePicker", "Block", "EndBlock")
+                   "MultipleSelect", "MultipleSlider", "Slider", "TimePicker", "TimeScaleSlider", "Block", "EndBlock")
     output$codebookOptions <- renderTree({
       list(
         "Title Page" = structure(list(
@@ -125,10 +125,11 @@ local({
           setNames(as.list(rep("", length(dataTypes))), dataTypes)
         ),
         "Variable Pages" = structure(list(
-          "Histograms",
-          "Missingness Page",
-          "Descriptives"
-        ))
+          "Histograms" = "",
+          "Missingness Page" = "",
+          "Descriptives" = ""
+        )),
+        "Exclude Data" = ""
       )
     })
     observeEvent(input$generateCodebook, {
