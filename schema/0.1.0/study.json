@@ -32,293 +32,278 @@
     },
     "burst": {
       "$anchor": "burst",
-      "title": "Burst Specification",
-      "description": "Contains all the information to specify burst design",
-      "type": "object",
-      "examples": [
-        {
-          "burstID": 1
-        }
-      ],
-      "properties": {
-        "burstID": {
-          "description": "Burst ordered numeric identifier",
-          "type": "integer"
-        },
-        "Timing.Type": {
-          "description": "Type of timing. Discrete means equal time distance, random, is drawing a random sample from a time period, triggered is based on set rules more in depth than just random in a time period, and continous is uneven time intervals.",
-          "type": "string",
-          "enum": ["Discrete","Random","Triggered","Continous"]
-        },
-
-        "survey": {
-          "$anchor": "survey",
-          "title": "Survey Specification",
-          "description": "Contains all the information needed to specify survey design",
-          "type": "object",
-          "examples": [
-            {
-              "Survey.LongName": "Morning Daily Diary",
-              "Survey.ShortName": "MDD",
-              "Survey.Timing": "put in example"
-            }
-          ],
-          "properties": {
-            "Survey.LongName": {
-              "description": "Human readable survey long name",
-              "type": "string"
-            },
-            "Survey.ShortName": {
-              "description": "Human readable survey short name",
-              "type": "string"
-            },
-            "Scheduling.Info": {
-              "description": "Contains all the timing and window info for a survey",
+      "title": "Burst Specifications",
+      "description": "Array of burst specifications. Each burst represents a distinct data collection period. May be empty if no bursts have been defined yet.",
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "properties": {
+          "burstID": {
+            "description": "Burst ordered numeric identifier",
+            "type": "integer"
+          },
+          "Timing.Type": {
+            "description": "Type of timing. Discrete means equal time distance, random is drawing a random sample from a time period, triggered is based on set rules more in depth than just random in a time period, and continuous is uneven time intervals.",
+            "type": "string",
+            "enum": ["Discrete", "Random", "Triggered", "Continous"]
+          },
+          "survey": {
+            "$anchor": "survey",
+            "title": "Survey Specifications",
+            "description": "Array of survey specifications within this burst. Each survey represents a distinct instrument delivered to participants. May be empty if no surveys have been defined yet.",
+            "type": "array",
+            "minItems": 0,
+            "items": {
               "type": "object",
               "properties": {
-                "Timing.Info": {
-                  "description": "Contains all the timing information.",
+                "Survey.LongName": {
+                  "description": "Human readable survey long name",
+                  "type": "string"
+                },
+                "Survey.ShortName": {
+                  "description": "Human readable survey short name",
+                  "type": "string"
+                },
+                "Scheduling.Info": {
+                  "description": "Contains all the timing and window info for a survey",
                   "type": "object",
                   "properties": {
-                    "offset": {
-                      "description": "Distance between each survey at this level",
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "value": { "type": "number" },
-                          "unit": {
-                            "type": "string",
-                            "enum": ["seconds","minutes","hours","days","weeks","months","years","decades"]
+                    "Timing.Info": {
+                      "description": "Contains all the timing information.",
+                      "type": "object",
+                      "properties": {
+                        "offset": {
+                          "description": "Distance between each survey at this level",
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "value": { "type": "number" },
+                              "unit": {
+                                "type": "string",
+                                "enum": ["seconds", "minutes", "hours", "days", "weeks", "months", "years", "decades"]
+                              }
+                            },
+                            "required": ["value", "unit"]
                           }
                         },
-                        "required": ["value", "unit"]
+                        "children": {
+                          "description": "Nested timing levels (recursive schedule definition).",
+                          "type": "array",
+                          "items": { "type": "object" }
+                        }
                       }
                     },
-                    "children": {
-                      "description": "Nested timing levels (recursive schedule definition).",
-                      "type": "array",
-                      "items": { "type": "object" }
+                    "Window.Info": {
+                      "description": "Contains all the window info for a survey",
+                      "type": "object",
+                      "properties": {
+                        "window.length": {
+                          "description": "Describes the length of a window.",
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "value": { "type": "number" },
+                              "unit": {
+                                "type": "string",
+                                "enum": ["seconds", "minutes", "hours", "days", "weeks", "months", "years", "decades"]
+                              }
+                            }
+                          }
+                        },
+                        "random": {
+                          "description": "Whether the delivery of a survey is a random sample within the window",
+                          "type": "boolean"
+                        },
+                        "Trigger.Info": {
+                          "description": "Contains the trigger logic if it exists for a given window.",
+                          "type": "object",
+                          "properties": {
+                            "Conditional.Source": {
+                              "description": "Source of measurement to trigger conditional",
+                              "type": "string"
+                            },
+                            "Conditional.Threshold": {
+                              "description": "Threshold is the preset value being compared to the user response.",
+                              "type": "string"
+                            },
+                            "Conditional.Type": {
+                              "description": "Conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
+                              "type": "string",
+                              "enum": ["1", "2", "3", "4", "5", "6"]
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 },
-                "Window.Info": {
-                  "description": "Contains all the window info for a survey",
-                  "type": "object",
-                  "properties": {
-                    "window.length": {
-                      "description": "Describes the length of a window.",
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "properties": {
-                          "value": { "type": "number" },
-                          "unit": {
-                            "type": "string",
-                            "enum": ["seconds","minutes","hours","days","weeks","months","years","decades"]
-                          }
-                        }
-                      }
-                    },
-                    "random": {
-                      "description": "Whether the delivery of a survey is a random sample within the window",
-                      "type": "boolean"
-                    },
-                    "Trigger.Info": {
-                      "description": "Contains the trigger logic if it exists for a given window.",
-                      "type": "object",
-                      "properties": {
-                        "Conditional.Source": {
-                          "description": "Source of measurement to trigger conditional",
-                          "type": "string"
+                "question": {
+                  "$anchor": "question",
+                  "title": "Question Specification",
+                  "description": "Contains all the information needed to specify a question or variable in a survey, observation, or passive data collection context.",
+                  "type": "array",
+                  "minItems": 0,
+                  "examples": [
+                    [
+                      {
+                        "Question.ID": "stress_q1",
+                        "Question.Long.Name": "Perceived Stress Item 1",
+                        "Question.Text": "How stressed have you felt in the past hour?",
+                        "Question.Description": "A self-report measure of perceived stress on a scale from 0 (not at all) to 100 (extremely).",
+                        "Question.Type.Display.Name": "Slider",
+                        "Parent": "block_001",
+                        "Conditional.Info": {
+                          "Conditional.Child.Item.ID": "question_stress_followup",
+                          "Conditional.Fail.Item.ID": "question_skip_to_mood",
+                          "Conditional.Master.Item.ID": "question_stress_q1",
+                          "Conditional.Threshold": "50",
+                          "Conditional.Type": "2"
                         },
-                        "Conditional.Threshold": {
-                          "description": "Threshold is the preset value being compared to the user response.",
-                          "type": "string"
-                        },
-                        "Conditional.Type": {
-                          "description": "Conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
-                          "type": "string",
-                          "enum": ["1","2","3","4","5","6"]
-                        }
+                        "Data.Type": "numeric",
+                        "Item.ID": "item_pss_01",
+                        "Item.Type": "Question",
+                        "responseKey": [
+                          { "value": "0", "definition": "Not at all" },
+                          { "value": "50", "definition": "Moderate" },
+                          { "value": "100", "definition": "Extremely" }
+                        ]
                       }
-                    }
-                  }
-                }
-              }
-            },
-            "question": {
-              "$anchor": "question",
-              "title": "Question Specification",
-              "description": "Contains all the information needed to specify a question or variable in a survey, observation, or passive data collection context.",
-              "type": "array",
-              "examples": [
-                [
-                  {
-                    "Question.ID": "stress_q1",
-                    "Question.Long.Name": "Perceived Stress Item 1",
-                    "Question.Text": "How stressed have you felt in the past hour?",
-                    "Question.Description": "A self-report measure of perceived stress on a scale from 0 (not at all) to 100 (extremely).",
-                    "Question.Type.Display.Name": "Slider",
-                    "Parent": "block_001",
-                    "Conditional.Info": {
-                      "Conditional.Child.Item.ID": "question_stress_followup",
-                      "Conditional.Fail.Item.ID": "question_skip_to_mood",
-                      "Conditional.Master.Item.ID": "question_stress_q1",
-                      "Conditional.Threshold": "50",
-                      "Conditional.Type": "2"
-                    },
-                    "Data.Type": "numeric",
-                    "Item.ID": "item_pss_01",
-                    "Item.Type": "Question",
-                    "responseKey": [
-                      {"value": "0", "definition": "Not at all"},
-                      {"value": "50", "definition": "Moderate"},
-                      {"value": "100", "definition": "Extremely"}
                     ]
-                  }
-                ]
-              ],
-              "items": {
-                "type": "object",
-                "properties": {
-                  "Question.ID": {
-                    "description": "Name of the variable as it appears in the dataset",
-                    "type": "string"
-                  },
-                  "Question.Long.Name": {
-                    "description": "Human readable name for the variable",
-                    "type": "string"
-                  },
-                  "Question.Text": {
-                    "description": "Exact text of the question as presented to the participant. Only applicable for survey questions.",
-                    "type": "string"
-                  },
-                  "Question.Description": {
-                    "description": "Description of the variable in layman's terms. If layman's terms are not possible, provide a citation to a longer explanation.",
-                    "type": "string"
-                  },
-                  "Question.Type.Display.Name": {
-                    "description": "How the data was obtained. Must match one of the supported Wear-IT display types.",
-                    "type": "string",
-                    "enum": [
-                      "Free Response",
-                      "Informational Fullscreen",
-                      "Multiple Choice",
-                      "Multiple Select",
-                      "Multiple Slider",
-                      "Slider",
-                      "Time Picker"
-                    ],
-                    "descriptions": {
-                      "Free Response": "Open-ended free text response from the participant.",
-                      "Informational Fullscreen": "Displays information to the participant only — no user response is collected.",
-                      "Multiple Choice": "Participant selects exactly one option from a list of choices.",
-                      "Multiple Select": "Participant selects one or more options from a list of choices.",
-                      "Multiple Slider": "Multiple visual analog scales presented together, one per construct.",
-                      "Slider": "A single visual analog scale — participant drags to a position between two anchors.",
-                      "Time Picker": "A time-based analog of the slider — participant selects a time value rather than a numeric one."
-                    }
-                  },
-                  "responseKey": {
-                    "type": "array",
-                    "description": "List of response value-definition pairs.",
-                    "examples": [
-                      [
-                        {"value": "1", "definition": "Less than five minutes (just stopped in)"},
-                        {"value": "2", "definition": "5 - 30 minutes"},
-                        {"value": "3", "definition": "30 - 60 minutes"},
-                        {"value": "4", "definition": "1 - 2 hours"},
-                        {"value": "5", "definition": "2 - 4 hours"},
-                        {"value": "6", "definition": "More than 4 hours"}
-                      ],
-                      [
-                        {"value": "0", "definition": "Not at all"},
-                        {"value": "50", "definition": "Moderate"},
-                        {"value": "100", "definition": "Very"}
-                      ]
-                    ],
-                    "items": {
-                      "type": "object",
-                      "properties": {
-                        "value": {
-                          "type": "string",
-                          "description": "Coded response value."
-                        },
-                        "definition": {
-                          "type": "string",
-                          "description": "Human-readable label for the response value."
-                        }
-                      },
-                      "required": ["value", "definition"]
-                    }
-                  },
-                  "Item.Type": {
-                    "description": "Block or question.",
-                    "type": "string",
-                    "enum": ["Block", "Question", null]
-                  },
-                  "Parent": {
-                    "description": "Item ID of the parent item. NOTE: This is different than the conditional master which points to the item which if successful, delivers the current. Parent may point to a block many questions up.",
-                    "type": "string"
-                  },
-                  "Conditional.Info": {
-                    "description": "Contains all the conditional info for a question",
+                  ],
+                  "items": {
                     "type": "object",
                     "properties": {
-                      "Conditional.Child.Item.ID": {
-                        "description": "Item ID for the successful child of the current question.",
-                        "type": ["string", "null"]
+                      "Question.ID": {
+                        "description": "Name of the variable as it appears in the dataset",
+                        "type": "string"
                       },
-                      "Conditional.Fail.Item.ID": {
-                        "description": "Item ID for the fail child of the current question.",
-                        "type": ["string", "null"]
+                      "Question.Long.Name": {
+                        "description": "Human readable name for the variable",
+                        "type": "string"
                       },
-                      "Conditional.Master.Item.ID": {
-                        "description": "Item ID for the parent of the current question.",
-                        "type": ["string", "null"]
+                      "Question.Text": {
+                        "description": "Exact text of the question as presented to the participant. Only applicable for survey questions.",
+                        "type": "string"
                       },
-                      "Conditional.Threshold": {
-                        "description": "Threshold is the preset value being compared to the user response.",
-                        "type": ["string", "null"]
+                      "Question.Description": {
+                        "description": "Description of the variable in layman's terms. If layman's terms are not possible, provide a citation to a longer explanation.",
+                        "type": "string"
                       },
-                      "Conditional.Type": {
-                        "description": "Conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
-                        "type": ["string", "null"],
-                        "enum": ["1", "2", "3", "4", "5", "6", null]
+                      "Question.Type.Display.Name": {
+                        "description": "How the data was obtained. Must match one of the supported Wear-IT display types.",
+                        "type": "string",
+                        "enum": [
+                          "Free Response",
+                          "Informational Fullscreen",
+                          "Multiple Choice",
+                          "Multiple Select",
+                          "Multiple Slider",
+                          "Slider",
+                          "Time Picker"
+                        ]
+                      },
+                      "responseKey": {
+                        "type": "array",
+                        "description": "List of response value-definition pairs.",
+                        "minItems": 0,
+                        "examples": [
+                          [
+                            { "value": "1", "definition": "Less than five minutes (just stopped in)" },
+                            { "value": "2", "definition": "5 - 30 minutes" },
+                            { "value": "3", "definition": "30 - 60 minutes" },
+                            { "value": "4", "definition": "1 - 2 hours" },
+                            { "value": "5", "definition": "2 - 4 hours" },
+                            { "value": "6", "definition": "More than 4 hours" }
+                          ],
+                          [
+                            { "value": "0", "definition": "Not at all" },
+                            { "value": "50", "definition": "Moderate" },
+                            { "value": "100", "definition": "Very" }
+                          ]
+                        ],
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "value": {
+                              "type": "string",
+                              "description": "Coded response value."
+                            },
+                            "definition": {
+                              "type": "string",
+                              "description": "Human-readable label for the response value."
+                            }
+                          },
+                          "required": ["value", "definition"]
+                        }
+                      },
+                      "Item.Type": {
+                        "description": "Block or question.",
+                        "type": "string",
+                        "enum": ["Block", "Question", null]
+                      },
+                      "Parent": {
+                        "description": "Item ID of the parent item. NOTE: This is different than the conditional master which points to the item which if successful, delivers the current. Parent may point to a block many questions up.",
+                        "type": "string"
+                      },
+                      "Conditional.Info": {
+                        "description": "Contains all the conditional info for a question",
+                        "type": "object",
+                        "properties": {
+                          "Conditional.Child.Item.ID": {
+                            "description": "Item ID for the successful child of the current question.",
+                            "type": ["string", "null"]
+                          },
+                          "Conditional.Fail.Item.ID": {
+                            "description": "Item ID for the fail child of the current question.",
+                            "type": ["string", "null"]
+                          },
+                          "Conditional.Master.Item.ID": {
+                            "description": "Item ID for the parent of the current question.",
+                            "type": ["string", "null"]
+                          },
+                          "Conditional.Threshold": {
+                            "description": "Threshold is the preset value being compared to the user response.",
+                            "type": ["string", "null"]
+                          },
+                          "Conditional.Type": {
+                            "description": "Conditional type is the comparator (in order: =, <=, >=, <, >, !=)",
+                            "type": ["string", "null"],
+                            "enum": ["1", "2", "3", "4", "5", "6", null]
+                          }
+                        }
+                      },
+                      "Data.Type": {
+                        "description": "The type of data captured by this variable. Oldname: Result.Type",
+                        "type": "string",
+                        "enum": ["integer", "character", "numeric", null]
+                      },
+                      "Item.ID": {
+                        "description": "Item ID for this question",
+                        "type": "string"
                       }
-                    }
-                  },
-                  "Data.Type": {
-                    "description": "The type of data captured by this variable. Oldname: Result.Type",
-                    "type": "string",
-                    "enum": ["integer", "character", "numeric", null]
-                  },
-                  "Item.ID": {
-                    "description": "Item ID for this question",
-                    "type": "string"
+                    },
+                    "required": [
+                      "Item.ID",
+                      "Question.ID",
+                      "Question.Text",
+                      "Question.Type.Display.Name",
+                      "Item.Type",
+                      "Data.Type",
+                      "Parent",
+                      "responseKey"
+                    ]
                   }
-                },
-                "required": [
-                  "Item.ID",
-                  "Item.Type",
-                  "Question.Text",
-                  "Question.ID",
-                  "Question.Type.Display.Name",
-                  "Data.Type",
-                  "Parent",
-                  "responseKey"
-                ]
-              }
+                }
+              },
+              "required": ["Survey.LongName"]
             }
-          },
-          "required": [
-            "Survey.LongName",
-            "question"
-          ]
-        }
-      },
-      "required": ["burstID", "survey"]
+          }
+        },
+        "required": ["burstID"]
+      }
     },
     "data": {
       "$anchor": "data",
@@ -492,7 +477,7 @@
           "type": "boolean"
         },
         "Transformation": {
-          "description": "Description of any transformation applied to this item beyond simple reverse coding. This could also include transformation needed for this item (ie. log-transform reaction time).",
+          "description": "Description of any transformation applied to this item beyond simple reverse coding.",
           "type": "string"
         },
         "Identifying.Info": {
@@ -505,11 +490,11 @@
           "enum": ["numeric", "categorical", "continuous", "ordinal", "binary", "text", "other"]
         },
         "Time.Stem": {
-          "description": "The time reference embedded in the item (e.g. 'in the past week', 'right now', 'today'). This should be the time stem in the cited paper, but can be swapped out to any timestem.",
+          "description": "The time reference embedded in the item (e.g. 'in the past week', 'right now', 'today').",
           "type": "string"
         },
         "Top.Level.Question": {
-          "description": "The top-level or parent question this item falls under, if it is a sub-item (i.e. Indicate to what extent you...).",
+          "description": "The top-level or parent question this item falls under, if it is a sub-item.",
           "type": "string"
         },
         "Values": {
@@ -517,7 +502,7 @@
           "type": "string"
         },
         "Definition": {
-          "description": "Nominal or text-based response options or categories (very slightly or not at all, a little, moderately, quite a bit, extremely).",
+          "description": "Nominal or text-based response options or categories.",
           "type": "string"
         },
         "Delivery.Mechanism": {
@@ -554,7 +539,6 @@
   },
   "required": [
     "Study.Name",
-    "burst",
     "blockMap"
   ]
 }

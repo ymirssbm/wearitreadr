@@ -124,11 +124,11 @@ parse_wearit_json <- function(filepath) {
       `NA`                       = NA,
       Question.Text              = safe_get(q,   "Question.Text",                NA_character_),
       Question.Type              = NA_real_,
-      Conditional.Child.Item.ID  = safe_get(ci,  "Conditional.Child.Item.ID",    NA_real_),
-      Conditional.Fail.Item.ID   = safe_get(ci,  "Conditional.Fail.Item.ID",     NA_real_),
-      Conditional.Threshold      = safe_get(ci,  "Conditional.Threshold",        NA_real_),
-      Conditional.Type           = safe_get(ci,  "Conditional.Type",             NA_real_),
-      Conditional.Master.Item.ID = safe_get(ci,  "Conditional.Master.Item.ID",   NA_real_),
+      Conditional.Child.Item.ID  = as.character(safe_get(ci, "Conditional.Child.Item.ID",  NA_character_)),
+      Conditional.Fail.Item.ID   = as.character(safe_get(ci, "Conditional.Fail.Item.ID",   NA_character_)),
+      Conditional.Threshold      = as.numeric(safe_get(ci,   "Conditional.Threshold",      NA_real_)),
+      Conditional.Type           = as.character(safe_get(ci, "Conditional.Type",            NA_character_)),
+      Conditional.Master.Item.ID = as.character(safe_get(ci, "Conditional.Master.Item.ID", NA_character_)),
       QID                        = safe_get(q,   "Question.ID",                  NA_character_),
       Question.Type.Display.Name = safe_get(q,   "Question.Type.Display.Name",   NA_character_),
       Result.Type                = safe_get(q,   "Data.Type",                    NA_character_),
@@ -183,3 +183,4 @@ responseKey <- result$responseKey
 write.csv(blockMap, "../codebookApp/Codebook_RMD/Data/blockMap.csv")
 write.csv(responseKey, "../codebookApp/Codebook_RMD/Data/responseKey.csv")
 write.csv(Data, "../codebookApp/Codebook_RMD/Data/Data.csv")
+#rm(list = ls())
