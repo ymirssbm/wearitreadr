@@ -11,6 +11,8 @@ Simplest way is to load the app.R file in the codebookApp folder
 
 ## Known Issues / To do list
 
+- Fix Exclude Data to not just overwrite the data on drive
+- Make finer granularity for codechunk display (descriptives, screenshots, etc's)
 - Fix multiple slider generation
 - Need to be able to specify file name
 - Implement screenshots
