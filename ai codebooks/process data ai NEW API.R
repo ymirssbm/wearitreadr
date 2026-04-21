@@ -174,7 +174,7 @@ parse_wearit_json <- function(filepath) {
 }
 
 # ── Usage ─────────────────────────────────────────────────────────────────
-result      <- parse_wearit_json("my_study_spec.json")
+result      <- parse_wearit_json("study_output.json")
 Data        <- result$Data
 blockMap    <- result$blockMap
 responseKey <- result$responseKey

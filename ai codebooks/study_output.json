@@ -1,14 +1,13 @@
 {
   "Study.Name": "Longitudinal Craving and Negative Affect Study",
-  "authors": "Dr. Sarah Chen, Dr. Michael Rodriguez",
-  "funding": "NIH Grant R01DA045678",
-  "abstract": "This study examines the temporal dynamics of craving and negative affect over a 10-day period in a single participant, assessing daily fluctuations and covariation between these constructs using ecological momentary assessment.",
+  "authors": "Synthetic Data Generator",
+  "abstract": "This study examines the longitudinal relationship between craving intensity and negative affect over a 10-day period using ecological momentary assessment.",
   "burst": {
     "burstID": 1,
     "Timing.Type": "Discrete",
     "survey": {
-      "Survey.LongName": "Daily Craving and Affect Assessment",
-      "Survey.ShortName": "DCAA",
+      "Survey.LongName": "Daily Craving and Affect Diary",
+      "Survey.ShortName": "DCAD",
       "Scheduling.Info": {
         "Timing.Info": {
           "offset": [
@@ -22,29 +21,28 @@
         "Window.Info": {
           "window.length": [
             {
-              "value": 4,
+              "value": 2,
               "unit": "hours"
             }
           ],
-          "random": false,
-          "Trigger.Info": {}
+          "random": false
         }
       },
       "question": [
         {
-          "Item.ID": "item_craving_01",
+          "Item.ID": "craving_q1",
           "Item.Type": "Question",
           "Question.ID": "craving",
           "Question.Long.Name": "Craving Intensity",
           "Question.Text": "How intense is your craving right now?",
-          "Question.Description": "Self-reported intensity of substance craving on a visual analog scale",
+          "Question.Description": "Self-reported intensity of substance craving on a scale from 0 (no craving) to 100 (extreme craving)",
           "Question.Type.Display.Name": "Slider",
           "Data.Type": "numeric",
           "Parent": "block_daily",
           "responseKey": [
             {
               "value": "0",
-              "definition": "No craving at all"
+              "definition": "No craving"
             },
             {
               "value": "50",
@@ -54,46 +52,32 @@
               "value": "100",
               "definition": "Extreme craving"
             }
-          ],
-          "Conditional.Info": {
-            "Conditional.Child.Item.ID": null,
-            "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null,
-            "Conditional.Threshold": null,
-            "Conditional.Type": null
-          }
+          ]
         },
         {
-          "Item.ID": "item_affect_01",
+          "Item.ID": "affect_q1",
           "Item.Type": "Question",
-          "Question.ID": "neg_affect",
+          "Question.ID": "negative_affect",
           "Question.Long.Name": "Negative Affect",
-          "Question.Text": "How much negative emotion are you experiencing right now?",
-          "Question.Description": "Self-reported negative affective state including feelings of distress, irritability, and dysphoria",
+          "Question.Text": "How would you rate your negative mood right now?",
+          "Question.Description": "Self-reported negative affect on a scale from 0 (not at all negative) to 100 (extremely negative)",
           "Question.Type.Display.Name": "Slider",
           "Data.Type": "numeric",
           "Parent": "block_daily",
           "responseKey": [
             {
               "value": "0",
-              "definition": "No negative affect"
+              "definition": "Not at all negative"
             },
             {
               "value": "50",
-              "definition": "Moderate negative affect"
+              "definition": "Moderately negative"
             },
             {
               "value": "100",
-              "definition": "Extreme negative affect"
+              "definition": "Extremely negative"
             }
-          ],
-          "Conditional.Info": {
-            "Conditional.Child.Item.ID": null,
-            "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null,
-            "Conditional.Threshold": null,
-            "Conditional.Type": null
-          }
+          ]
         }
       ]
     }
@@ -143,94 +127,337 @@
       10,
       10
     ],
+    "Alert.Times": [
+      [
+        "2024-01-01T09:00:00Z"
+      ],
+      [
+        "2024-01-01T09:00:00Z"
+      ],
+      [
+        "2024-01-02T09:00:00Z"
+      ],
+      [
+        "2024-01-02T09:00:00Z"
+      ],
+      [
+        "2024-01-03T09:00:00Z"
+      ],
+      [
+        "2024-01-03T09:00:00Z"
+      ],
+      [
+        "2024-01-04T09:00:00Z"
+      ],
+      [
+        "2024-01-04T09:00:00Z"
+      ],
+      [
+        "2024-01-05T09:00:00Z"
+      ],
+      [
+        "2024-01-05T09:00:00Z"
+      ],
+      [
+        "2024-01-06T09:00:00Z"
+      ],
+      [
+        "2024-01-06T09:00:00Z"
+      ],
+      [
+        "2024-01-07T09:00:00Z"
+      ],
+      [
+        "2024-01-07T09:00:00Z"
+      ],
+      [
+        "2024-01-08T09:00:00Z"
+      ],
+      [
+        "2024-01-08T09:00:00Z"
+      ],
+      [
+        "2024-01-09T09:00:00Z"
+      ],
+      [
+        "2024-01-09T09:00:00Z"
+      ],
+      [
+        "2024-01-10T09:00:00Z"
+      ],
+      [
+        "2024-01-10T09:00:00Z"
+      ]
+    ],
+    "Survey.Start": [
+      "2024-01-01T09:00:00Z",
+      "2024-01-01T09:00:00Z",
+      "2024-01-02T09:05:00Z",
+      "2024-01-02T09:05:00Z",
+      "2024-01-03T08:55:00Z",
+      "2024-01-03T08:55:00Z",
+      "2024-01-04T09:10:00Z",
+      "2024-01-04T09:10:00Z",
+      "2024-01-05T09:00:00Z",
+      "2024-01-05T09:00:00Z",
+      "2024-01-06T08:50:00Z",
+      "2024-01-06T08:50:00Z",
+      "2024-01-07T09:15:00Z",
+      "2024-01-07T09:15:00Z",
+      "2024-01-08T09:00:00Z",
+      "2024-01-08T09:00:00Z",
+      "2024-01-09T09:05:00Z",
+      "2024-01-09T09:05:00Z",
+      "2024-01-10T08:45:00Z",
+      "2024-01-10T08:45:00Z"
+    ],
     "Survey.Date.Completed": [
-      "2024-01-01T10:00:00Z",
-      "2024-01-01T10:02:00Z",
-      "2024-01-02T10:00:00Z",
-      "2024-01-02T10:03:00Z",
-      "2024-01-03T10:00:00Z",
-      "2024-01-03T10:01:00Z",
-      "2024-01-04T10:00:00Z",
-      "2024-01-04T10:04:00Z",
-      "2024-01-05T10:00:00Z",
-      "2024-01-05T10:02:00Z",
-      "2024-01-06T10:00:00Z",
-      "2024-01-06T10:03:00Z",
-      "2024-01-07T10:00:00Z",
-      "2024-01-07T10:01:00Z",
-      "2024-01-08T10:00:00Z",
-      "2024-01-08T10:02:00Z",
-      "2024-01-09T10:00:00Z",
-      "2024-01-09T10:03:00Z",
-      "2024-01-10T10:00:00Z",
-      "2024-01-10T10:02:00Z"
+      "2024-01-01T09:02:00Z",
+      "2024-01-01T09:02:00Z",
+      "2024-01-02T09:08:00Z",
+      "2024-01-02T09:08:00Z",
+      "2024-01-03T08:58:00Z",
+      "2024-01-03T08:58:00Z",
+      "2024-01-04T09:13:00Z",
+      "2024-01-04T09:13:00Z",
+      "2024-01-05T09:03:00Z",
+      "2024-01-05T09:03:00Z",
+      "2024-01-06T08:53:00Z",
+      "2024-01-06T08:53:00Z",
+      "2024-01-07T09:18:00Z",
+      "2024-01-07T09:18:00Z",
+      "2024-01-08T09:02:00Z",
+      "2024-01-08T09:02:00Z",
+      "2024-01-09T09:08:00Z",
+      "2024-01-09T09:08:00Z",
+      "2024-01-10T08:48:00Z",
+      "2024-01-10T08:48:00Z"
+    ],
+    "Survey.Date.Submitted": [
+      "2024-01-01T09:02:30Z",
+      "2024-01-01T09:02:30Z",
+      "2024-01-02T09:08:30Z",
+      "2024-01-02T09:08:30Z",
+      "2024-01-03T08:58:30Z",
+      "2024-01-03T08:58:30Z",
+      "2024-01-04T09:13:30Z",
+      "2024-01-04T09:13:30Z",
+      "2024-01-05T09:03:30Z",
+      "2024-01-05T09:03:30Z",
+      "2024-01-06T08:53:30Z",
+      "2024-01-06T08:53:30Z",
+      "2024-01-07T09:18:30Z",
+      "2024-01-07T09:18:30Z",
+      "2024-01-08T09:02:30Z",
+      "2024-01-08T09:02:30Z",
+      "2024-01-09T09:08:30Z",
+      "2024-01-09T09:08:30Z",
+      "2024-01-10T08:48:30Z",
+      "2024-01-10T08:48:30Z"
+    ],
+    "Timezone": [
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York",
+      "America/New_York"
+    ],
+    "Offset": [
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5,
+      -5
+    ],
+    "Network.Type": [
+      "Wifi",
+      "Wifi",
+      "Cellular",
+      "Cellular",
+      "Wifi",
+      "Wifi",
+      "Wifi",
+      "Wifi",
+      "Cellular",
+      "Cellular",
+      "Wifi",
+      "Wifi",
+      "Wifi",
+      "Wifi",
+      "Cellular",
+      "Cellular",
+      "Wifi",
+      "Wifi",
+      "Wifi",
+      "Wifi"
+    ],
+    "App.Version": [
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0",
+      "1.0.0"
+    ],
+    "OS": [
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0",
+      "iOS 17.0"
+    ],
+    "Model": [
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2",
+      "iPhone14,2"
     ],
     "User.Response": [
       "45",
-      "40",
+      "52",
       "60",
-      "55",
-      "35",
-      "30",
-      "70",
       "65",
-      "50",
+      "30",
+      "35",
+      "70",
+      "75",
+      "55",
+      "60",
+      "40",
       "45",
       "80",
-      "75",
-      "40",
-      "35",
-      "55",
+      "85",
+      "25",
+      "30",
       "50",
+      "55",
       "65",
-      "60",
-      "75",
       "70"
     ],
     "Question.ID": [
       "craving",
-      "neg_affect",
+      "negative_affect",
       "craving",
-      "neg_affect",
+      "negative_affect",
       "craving",
-      "neg_affect",
+      "negative_affect",
       "craving",
-      "neg_affect",
+      "negative_affect",
       "craving",
-      "neg_affect",
+      "negative_affect",
       "craving",
-      "neg_affect",
+      "negative_affect",
       "craving",
-      "neg_affect",
+      "negative_affect",
       "craving",
-      "neg_affect",
+      "negative_affect",
       "craving",
-      "neg_affect",
+      "negative_affect",
       "craving",
-      "neg_affect"
+      "negative_affect"
+    ],
+    "External.ID": [
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001",
+      "ext_001"
     ]
   },
-  "itemMap": {
-    "Item.Text": "How intense is your craving right now?",
-    "Conceptualization": "Substance craving intensity",
-    "Modeling.Characteristics": "Outcome variable; typically analyzed as continuous",
-    "Validated": false,
-    "Scale.Name": "Single Item Craving Scale",
-    "scaleOrItem": "item",
-    "Scale.Type": "VAS",
-    "Scoring": "0-100 point scale",
-    "Reverse.Coded": false,
-    "Transformation": "None",
-    "Identifying.Info": false,
-    "Data.Type": "numeric",
-    "Time.Stem": "right now",
-    "Values": "0-100",
-    "Definition": "Visual analog scale from 0 (No craving at all) to 100 (Extreme craving)",
-    "Delivery.Mechanism": "mobile app",
-    "Delivery.Frequency": "once daily",
-    "Article.Title": "Daily monitoring of craving and affect",
-    "Citation": "Chen, S. & Rodriguez, M. (2024). Longitudinal craving assessment.",
-    "notes": "Synthetic data for demonstration"
-  },
-  "blockMap": {}
+  "blockMap": {
+    "block_daily": {
+      "Item.ID": "block_daily",
+      "Item.Type": "Block"
+    }
+  }
 }
