@@ -241,12 +241,12 @@
                       },
                       "Item.Type": {
                         "description": "Block or question.",
-                        "type": "string",
+                        "type": ["string", "null"],
                         "enum": ["Block", "Question", null]
                       },
                       "Parent": {
                         "description": "Item ID of the parent item. NOTE: This is different than the conditional master which points to the item which if successful, delivers the current. Parent may point to a block many questions up.",
-                        "type": "string"
+                        "type": ["string", "null"]
                       },
                       "Conditional.Info": {
                         "description": "Contains all the conditional info for a question",
@@ -277,7 +277,7 @@
                       },
                       "Data.Type": {
                         "description": "The type of data captured by this variable. Oldname: Result.Type",
-                        "type": "string",
+                        "type": ["string", "null"],
                         "enum": ["integer", "character", "numeric", null]
                       },
                       "Item.ID": {

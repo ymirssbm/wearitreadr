@@ -1,0 +1,1268 @@
+{
+  "Study.Name": "Longitudinal Recovery Dynamics and Contextual Processes Study",
+  "authors": "Dr. Sarah K. Johnson, Dr. Michael Chen, Dr. Lisa Rodriguez, Dr. James Patterson",
+  "funding": "NIH National Institute on Drug Abuse Grant R01DA045678; Substance Abuse and Mental Health Services Administration Award TI123456",
+  "abstract": "This intensive longitudinal study examines the daily micro-processes of recovery from substance use disorders through ecological momentary assessment (EMA). Participants (N=300) in early recovery complete brief surveys 10 times daily for 28 days, capturing real-time fluctuations in craving, affect, stress, coping behaviors, social context, and substance use. A comprehensive baseline assessment characterizes demographic, socioeconomic, and clinical history variables. The study aims to identify dynamic, context-dependent predictors of lapse and sustained abstinence, informing the development of just-in-time adaptive interventions for substance use disorders.",
+  "burst": [
+    {
+      "burstID": 1,
+      "Timing.Type": "Triggered",
+      "survey": [
+        {
+          "Survey.LongName": "Baseline Assessment Battery",
+          "Survey.ShortName": "Baseline-T1",
+          "Scheduling.Info": {
+            "Timing.Info": {
+              "offset": [],
+              "children": []
+            },
+            "Window.Info": {
+              "window.length": [],
+              "random": false,
+              "Trigger.Info": {}
+            }
+          },
+          "question": [
+            {
+              "Item.ID": "base_age_01",
+              "Question.ID": "age",
+              "Question.Long.Name": "Participant Age",
+              "Question.Text": "What is your current age in years?",
+              "Question.Description": "Self-reported chronological age at enrollment",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": []
+            },
+            {
+              "Item.ID": "base_gender_01",
+              "Question.ID": "gender",
+              "Question.Long.Name": "Gender Identity",
+              "Question.Text": "What is your current gender identity?",
+              "Question.Description": "Self-identified gender category",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Male"
+                },
+                {
+                  "value": "2",
+                  "definition": "Female"
+                },
+                {
+                  "value": "3",
+                  "definition": "Non-binary"
+                },
+                {
+                  "value": "4",
+                  "definition": "Transgender"
+                },
+                {
+                  "value": "5",
+                  "definition": "Other"
+                },
+                {
+                  "value": "99",
+                  "definition": "Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_race_01",
+              "Question.ID": "race_ethnicity",
+              "Question.Long.Name": "Race and Ethnicity",
+              "Question.Text": "Which of the following best describes your race or ethnicity? (Select all that apply)",
+              "Question.Description": "Self-reported racial and ethnic categories",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "White/Caucasian"
+                },
+                {
+                  "value": "2",
+                  "definition": "Black/African American"
+                },
+                {
+                  "value": "3",
+                  "definition": "Hispanic/Latino"
+                },
+                {
+                  "value": "4",
+                  "definition": "Asian"
+                },
+                {
+                  "value": "5",
+                  "definition": "Native American/Alaska Native"
+                },
+                {
+                  "value": "6",
+                  "definition": "Native Hawaiian/Pacific Islander"
+                },
+                {
+                  "value": "7",
+                  "definition": "Other"
+                },
+                {
+                  "value": "99",
+                  "definition": "Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_edu_01",
+              "Question.ID": "education",
+              "Question.Long.Name": "Educational Attainment",
+              "Question.Text": "What is the highest level of education you have completed?",
+              "Question.Description": "Highest completed educational degree or credential",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Less than high school"
+                },
+                {
+                  "value": "2",
+                  "definition": "High school diploma or GED"
+                },
+                {
+                  "value": "3",
+                  "definition": "Some college"
+                },
+                {
+                  "value": "4",
+                  "definition": "Associate's degree"
+                },
+                {
+                  "value": "5",
+                  "definition": "Bachelor's degree"
+                },
+                {
+                  "value": "6",
+                  "definition": "Graduate or professional degree"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_employ_01",
+              "Question.ID": "employment_status",
+              "Question.Long.Name": "Employment Status",
+              "Question.Text": "Which of the following best describes your current employment status?",
+              "Question.Description": "Current primary employment situation",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Employed full-time"
+                },
+                {
+                  "value": "2",
+                  "definition": "Employed part-time"
+                },
+                {
+                  "value": "3",
+                  "definition": "Unemployed"
+                },
+                {
+                  "value": "4",
+                  "definition": "Student"
+                },
+                {
+                  "value": "5",
+                  "definition": "Retired"
+                },
+                {
+                  "value": "6",
+                  "definition": "Unable to work"
+                },
+                {
+                  "value": "7",
+                  "definition": "Other"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_income_01",
+              "Question.ID": "annual_income",
+              "Question.Long.Name": "Annual Household Income",
+              "Question.Text": "What is your total annual household income before taxes?",
+              "Question.Description": "Self-reported annual household income in US dollars",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Less than $10,000"
+                },
+                {
+                  "value": "2",
+                  "definition": "$10,000-$24,999"
+                },
+                {
+                  "value": "3",
+                  "definition": "$25,000-$49,999"
+                },
+                {
+                  "value": "4",
+                  "definition": "$50,000-$74,999"
+                },
+                {
+                  "value": "5",
+                  "definition": "$75,000-$99,999"
+                },
+                {
+                  "value": "6",
+                  "definition": "$100,000 or more"
+                },
+                {
+                  "value": "99",
+                  "definition": "Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_housing_01",
+              "Question.ID": "housing_status",
+              "Question.Long.Name": "Housing Stability",
+              "Question.Text": "Which best describes your current housing situation?",
+              "Question.Description": "Current residential stability and housing type",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Own home or apartment"
+                },
+                {
+                  "value": "2",
+                  "definition": "Rent home or apartment"
+                },
+                {
+                  "value": "3",
+                  "definition": "Living with family or friends"
+                },
+                {
+                  "value": "4",
+                  "definition": "Transitional housing"
+                },
+                {
+                  "value": "5",
+                  "definition": "Emergency shelter"
+                },
+                {
+                  "value": "6",
+                  "definition": "Unsheltered"
+                },
+                {
+                  "value": "7",
+                  "definition": "Other"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_substance_01",
+              "Question.ID": "primary_substance",
+              "Question.Long.Name": "Primary Substance of Concern",
+              "Question.Text": "What is your primary substance of concern for this recovery attempt?",
+              "Question.Description": "Primary substance use disorder diagnosis or primary drug of choice",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Alcohol"
+                },
+                {
+                  "value": "2",
+                  "definition": "Opioids (heroin, fentanyl, prescription painkillers)"
+                },
+                {
+                  "value": "3",
+                  "definition": "Cocaine or crack"
+                },
+                {
+                  "value": "4",
+                  "definition": "Methamphetamine"
+                },
+                {
+                  "value": "5",
+                  "definition": "Cannabis"
+                },
+                {
+                  "value": "6",
+                  "definition": "Benzodiazepines"
+                },
+                {
+                  "value": "7",
+                  "definition": "Multiple substances (no primary)"
+                },
+                {
+                  "value": "8",
+                  "definition": "Other"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_age_first_01",
+              "Question.ID": "age_first_use",
+              "Question.Long.Name": "Age of First Use",
+              "Question.Text": "How old were you when you first used your primary substance?",
+              "Question.Description": "Age at first use of primary substance",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": []
+            },
+            {
+              "Item.ID": "base_years_use_01",
+              "Question.ID": "years_regular_use",
+              "Question.Long.Name": "Duration of Regular Use",
+              "Question.Text": "For how many years did you use substances regularly (at least weekly)?",
+              "Question.Description": "Total years of regular substance use prior to current recovery attempt",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": []
+            },
+            {
+              "Item.ID": "base_treatment_01",
+              "Question.ID": "prior_treatment",
+              "Question.Long.Name": "Prior Treatment Episodes",
+              "Question.Text": "How many times have you previously received formal substance use treatment (detox, residential, outpatient)?",
+              "Question.Description": "Number of prior formal treatment episodes",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": []
+            },
+            {
+              "Item.ID": "base_mat_01",
+              "Question.ID": "medication_assisted_treatment",
+              "Question.Long.Name": "Current MAT Status",
+              "Question.Text": "Are you currently taking any medication for substance use disorder (e.g., methadone, buprenorphine, naltrexone)?",
+              "Question.Description": "Current use of medication assisted treatment",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No"
+                },
+                {
+                  "value": "1",
+                  "definition": "Yes"
+                },
+                {
+                  "value": "99",
+                  "definition": "Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_mh_01",
+              "Question.ID": "mental_health_diagnoses",
+              "Question.Long.Name": "Mental Health History",
+              "Question.Text": "Have you ever been diagnosed with any of the following mental health conditions? (Select all that apply)",
+              "Question.Description": "Lifetime mental health comorbidities",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Major depression"
+                },
+                {
+                  "value": "2",
+                  "definition": "Anxiety disorder"
+                },
+                {
+                  "value": "3",
+                  "definition": "Bipolar disorder"
+                },
+                {
+                  "value": "4",
+                  "definition": "PTSD"
+                },
+                {
+                  "value": "5",
+                  "definition": "ADHD"
+                },
+                {
+                  "value": "6",
+                  "definition": "None"
+                },
+                {
+                  "value": "7",
+                  "definition": "Other"
+                },
+                {
+                  "value": "99",
+                  "definition": "Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_family_01",
+              "Question.ID": "family_history_sud",
+              "Question.Long.Name": "Family History of SUD",
+              "Question.Text": "Do you have a first-degree relative (parent, sibling, child) with a history of substance use disorder?",
+              "Question.Description": "Family history of substance use disorders",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No"
+                },
+                {
+                  "value": "1",
+                  "definition": "Yes"
+                },
+                {
+                  "value": "99",
+                  "definition": "Unknown/Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_capital_01",
+              "Question.ID": "baseline_recovery_capital",
+              "Question.Long.Name": "Baseline Recovery Capital",
+              "Question.Text": "Overall, how would you rate your current resources and strengths for maintaining recovery (housing stability, social support, purpose, health)?",
+              "Question.Description": "Global assessment of recovery capital at baseline",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No resources or strengths"
+                },
+                {
+                  "value": "100",
+                  "definition": "Abundant resources and strengths"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_support_01",
+              "Question.ID": "perceived_social_support",
+              "Question.Long.Name": "Perceived Social Support",
+              "Question.Text": "How satisfied are you with the emotional support you receive from friends and family?",
+              "Question.Description": "Perceived adequacy of social support network",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Very dissatisfied"
+                },
+                {
+                  "value": "100",
+                  "definition": "Very satisfied"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "burstID": 2,
+      "Timing.Type": "Discrete",
+      "survey": [
+        {
+          "Survey.LongName": "Daily Recovery Experience Sampling Assessment",
+          "Survey.ShortName": "EMA-Daily",
+          "Scheduling.Info": {
+            "Timing.Info": {
+              "offset": [
+                {
+                  "value": 96,
+                  "unit": "minutes"
+                }
+              ],
+              "children": []
+            },
+            "Window.Info": {
+              "window.length": [
+                {
+                  "value": 15,
+                  "unit": "minutes"
+                }
+              ],
+              "random": true,
+              "Trigger.Info": {}
+            }
+          },
+          "question": [
+            {
+              "Item.ID": "ema_act_01",
+              "Question.ID": "current_activity",
+              "Question.Long.Name": "Current Activity",
+              "Question.Text": "What are you currently doing?",
+              "Question.Description": "Current activity or behavior",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Working or studying"
+                },
+                {
+                  "value": "2",
+                  "definition": "Relaxing or resting"
+                },
+                {
+                  "value": "3",
+                  "definition": "Socializing"
+                },
+                {
+                  "value": "4",
+                  "definition": "Exercising or physical activity"
+                },
+                {
+                  "value": "5",
+                  "definition": "Commuting or traveling"
+                },
+                {
+                  "value": "6",
+                  "definition": "Doing chores or errands"
+                },
+                {
+                  "value": "7",
+                  "definition": "Attending treatment or recovery meeting"
+                },
+                {
+                  "value": "8",
+                  "definition": "Other"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_pa_01",
+              "Question.ID": "positive_affect",
+              "Question.Long.Name": "Positive Affect",
+              "Question.Text": "How positive or good do you feel right now?",
+              "Question.Description": "Momentary positive affective state",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all positive"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely positive"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_na_01",
+              "Question.ID": "negative_affect",
+              "Question.Long.Name": "Negative Affect",
+              "Question.Text": "How negative or bad do you feel right now?",
+              "Question.Description": "Momentary negative affective state",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all negative"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely negative"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_stress_01",
+              "Question.ID": "perceived_stress",
+              "Question.Long.Name": "Perceived Stress",
+              "Question.Text": "How stressed do you feel right now?",
+              "Question.Description": "Current level of psychological stress",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all stressed"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely stressed"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_anxiety_01",
+              "Question.ID": "state_anxiety",
+              "Question.Long.Name": "State Anxiety",
+              "Question.Text": "How anxious or worried do you feel right now?",
+              "Question.Description": "Momentary anxiety level",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all anxious"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely anxious"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_crave_01",
+              "Question.ID": "substance_craving",
+              "Question.Long.Name": "Substance Craving",
+              "Question.Text": "How strong is your urge or craving to use your primary substance right now?",
+              "Question.Description": "Intensity of current substance craving",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No urge at all"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely strong urge"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_efficacy_01",
+              "Question.ID": "abstinence_self_efficacy",
+              "Question.Long.Name": "Abstinence Self-Efficacy",
+              "Question.Text": "How confident are you that you could resist using substances right now if they were available?",
+              "Question.Description": "Confidence in ability to resist substance use in current context",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all confident"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely confident"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_pain_01",
+              "Question.ID": "physical_pain",
+              "Question.Long.Name": "Physical Pain",
+              "Question.Text": "How much physical pain or discomfort are you experiencing right now?",
+              "Question.Description": "Current level of physical pain",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No pain"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extreme pain"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_fatigue_01",
+              "Question.ID": "fatigue",
+              "Question.Long.Name": "Fatigue",
+              "Question.Text": "How tired or fatigued do you feel right now?",
+              "Question.Description": "Current level of physical and mental fatigue",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all tired"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely tired"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_threat_01",
+              "Question.ID": "environmental_threat",
+              "Question.Long.Name": "Environmental Threat",
+              "Question.Text": "Are you currently in a situation where substances are available or people are using around you?",
+              "Question.Description": "Exposure to substance-related cues or using environments",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No"
+                },
+                {
+                  "value": "1",
+                  "definition": "Yes"
+                },
+                {
+                  "value": "99",
+                  "definition": "Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_cope_01",
+              "Question.ID": "coping_strategies_used",
+              "Question.Long.Name": "Coping Strategies Used",
+              "Question.Text": "Which coping strategies have you used since the last survey? (Select all that apply)",
+              "Question.Description": "Behavioral and cognitive coping strategies employed since last assessment",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Deep breathing or meditation"
+                },
+                {
+                  "value": "2",
+                  "definition": "Physical exercise"
+                },
+                {
+                  "value": "3",
+                  "definition": "Talked to supportive person"
+                },
+                {
+                  "value": "4",
+                  "definition": "Avoided triggers or left situation"
+                },
+                {
+                  "value": "5",
+                  "definition": "Prayer or spiritual practice"
+                },
+                {
+                  "value": "6",
+                  "definition": "Distraction (TV, phone, reading)"
+                },
+                {
+                  "value": "7",
+                  "definition": "Substance use"
+                },
+                {
+                  "value": "8",
+                  "definition": "None"
+                },
+                {
+                  "value": "9",
+                  "definition": "Other"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_use_01",
+              "Question.ID": "substance_use_since_last",
+              "Question.Long.Name": "Substance Use Since Last Prompt",
+              "Question.Text": "Have you used any substances since the last time we asked?",
+              "Question.Description": "Substance use occurrence since previous EMA prompt",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No"
+                },
+                {
+                  "value": "1",
+                  "definition": "Yes"
+                },
+                {
+                  "value": "99",
+                  "definition": "Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_desire_01",
+              "Question.ID": "desire_to_use",
+              "Question.Long.Name": "Desire to Use",
+              "Question.Text": "How much do you want or desire to use substances right now?",
+              "Question.Description": "Motivational desire for substance use distinct from craving",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No desire at all"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely strong desire"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Survey.LongName": "Daily Discrimination Experience Assessment",
+          "Survey.ShortName": "Discrimination-Daily",
+          "Scheduling.Info": {
+            "Timing.Info": {
+              "offset": [
+                {
+                  "value": 24,
+                  "unit": "hours"
+                }
+              ],
+              "children": []
+            },
+            "Window.Info": {
+              "window.length": [
+                {
+                  "value": 60,
+                  "unit": "minutes"
+                }
+              ],
+              "random": true,
+              "Trigger.Info": {}
+            }
+          },
+          "question": [
+            {
+              "Item.ID": "disc_freq_01",
+              "Question.ID": "daily_discrimination_frequency",
+              "Question.Long.Name": "Daily Discrimination Frequency",
+              "Question.Text": "How many times today have you experienced discrimination or unfair treatment?",
+              "Question.Description": "Frequency of perceived discrimination events during the current day",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "0 times (none)"
+                },
+                {
+                  "value": "1",
+                  "definition": "1 time"
+                },
+                {
+                  "value": "2",
+                  "definition": "2-3 times"
+                },
+                {
+                  "value": "3",
+                  "definition": "4 or more times"
+                },
+                {
+                  "value": "99",
+                  "definition": "Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "disc_type_01",
+              "Question.ID": "discrimination_types",
+              "Question.Long.Name": "Types of Discrimination Experienced",
+              "Question.Text": "What types of discrimination did you experience today? (Select all that apply)",
+              "Question.Description": "Categories of discrimination experienced based on personal characteristics",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Race or ethnicity"
+                },
+                {
+                  "value": "2",
+                  "definition": "Gender or gender identity"
+                },
+                {
+                  "value": "3",
+                  "definition": "Age"
+                },
+                {
+                  "value": "4",
+                  "definition": "Weight or physical appearance"
+                },
+                {
+                  "value": "5",
+                  "definition": "Sexual orientation"
+                },
+                {
+                  "value": "6",
+                  "definition": "Religion"
+                },
+                {
+                  "value": "7",
+                  "definition": "Socioeconomic status or income"
+                },
+                {
+                  "value": "8",
+                  "definition": "Substance use or recovery status"
+                },
+                {
+                  "value": "9",
+                  "definition": "Other"
+                },
+                {
+                  "value": "10",
+                  "definition": "Did not experience discrimination today"
+                }
+              ]
+            },
+            {
+              "Item.ID": "disc_reason_01",
+              "Question.ID": "discrimination_perceived_reason",
+              "Question.Long.Name": "Perceived Reason for Discrimination",
+              "Question.Text": "What do you think was the main reason for the discrimination you experienced today?",
+              "Question.Description": "Primary attributed cause of discriminatory treatment",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Race or ethnicity"
+                },
+                {
+                  "value": "2",
+                  "definition": "Gender or gender identity"
+                },
+                {
+                  "value": "3",
+                  "definition": "Age"
+                },
+                {
+                  "value": "4",
+                  "definition": "Weight or physical appearance"
+                },
+                {
+                  "value": "5",
+                  "definition": "Sexual orientation"
+                },
+                {
+                  "value": "6",
+                  "definition": "Religion"
+                },
+                {
+                  "value": "7",
+                  "definition": "Socioeconomic status"
+                },
+                {
+                  "value": "8",
+                  "definition": "Substance use or recovery status"
+                },
+                {
+                  "value": "9",
+                  "definition": "Other"
+                },
+                {
+                  "value": "10",
+                  "definition": "Not sure"
+                },
+                {
+                  "value": "11",
+                  "definition": "Did not experience discrimination today"
+                }
+              ]
+            },
+            {
+              "Item.ID": "disc_loc_01",
+              "Question.ID": "discrimination_location",
+              "Question.Long.Name": "Location of Discrimination",
+              "Question.Text": "Where did the discrimination occur? (Select all that apply)",
+              "Question.Description": "Physical or virtual contexts where discriminatory incidents took place",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Work or school"
+                },
+                {
+                  "value": "2",
+                  "definition": "Healthcare setting"
+                },
+                {
+                  "value": "3",
+                  "definition": "Public place"
+                },
+                {
+                  "value": "4",
+                  "definition": "Housing situation"
+                },
+                {
+                  "value": "5",
+                  "definition": "Social service agency"
+                },
+                {
+                  "value": "6",
+                  "definition": "Recovery meeting or treatment"
+                },
+                {
+                  "value": "7",
+                  "definition": "Online or social media"
+                },
+                {
+                  "value": "8",
+                  "definition": "Other"
+                },
+                {
+                  "value": "9",
+                  "definition": "Did not experience discrimination today"
+                }
+              ]
+            },
+            {
+              "Item.ID": "disc_emotion_01",
+              "Question.ID": "discrimination_emotional_impact",
+              "Question.Long.Name": "Emotional Impact of Discrimination",
+              "Question.Text": "How upset or distressed did you feel because of the discrimination you experienced today?",
+              "Question.Description": "Level of emotional distress resulting from discriminatory experiences",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all upset"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely upset"
+                }
+              ]
+            },
+            {
+              "Item.ID": "disc_recovery_01",
+              "Question.ID": "discrimination_recovery_impact",
+              "Question.Long.Name": "Impact of Discrimination on Recovery",
+              "Question.Text": "How much did the discrimination affect your recovery or desire to use substances today?",
+              "Question.Description": "Impact of discriminatory experiences on substance use recovery processes",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No negative impact on recovery"
+                },
+                {
+                  "value": "100",
+                  "definition": "Severe negative impact on recovery"
+                }
+              ]
+            },
+            {
+              "Item.ID": "disc_phys_01",
+              "Question.ID": "discrimination_physical_reaction",
+              "Question.Long.Name": "Physical Reaction to Discrimination",
+              "Question.Text": "Did you experience any physical reactions to the discrimination (e.g., racing heart, tension, headache)?",
+              "Question.Description": "Somatic stress responses to discriminatory experiences",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No"
+                },
+                {
+                  "value": "1",
+                  "definition": "Yes"
+                },
+                {
+                  "value": "99",
+                  "definition": "Prefer not to answer"
+                }
+              ]
+            },
+            {
+              "Item.ID": "disc_response_01",
+              "Question.ID": "discrimination_response",
+              "Question.Long.Name": "Response to Discrimination",
+              "Question.Text": "How did you respond to the discrimination? (Select all that apply)",
+              "Question.Description": "Behavioral and cognitive strategies used to cope with discriminatory incidents",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Ignored it or tried to let it go"
+                },
+                {
+                  "value": "2",
+                  "definition": "Confronted the person"
+                },
+                {
+                  "value": "3",
+                  "definition": "Left the situation"
+                },
+                {
+                  "value": "4",
+                  "definition": "Sought support from friend or family"
+                },
+                {
+                  "value": "5",
+                  "definition": "Reported it to authority or official"
+                },
+                {
+                  "value": "6",
+                  "definition": "Used substances to cope"
+                },
+                {
+                  "value": "7",
+                  "definition": "Other coping strategy"
+                },
+                {
+                  "value": "8",
+                  "definition": "Did not experience discrimination today"
+                }
+              ]
+            },
+            {
+              "Item.ID": "disc_support_01",
+              "Question.ID": "discrimination_social_support",
+              "Question.Long.Name": "Social Support After Discrimination",
+              "Question.Text": "Did you have someone to talk to about the discrimination experience?",
+              "Question.Description": "Availability of social support following discriminatory incidents",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Yes, supportive person available"
+                },
+                {
+                  "value": "2",
+                  "definition": "Yes but chose not to talk"
+                },
+                {
+                  "value": "3",
+                  "definition": "No one available"
+                },
+                {
+                  "value": "4",
+                  "definition": "Did not experience discrimination today"
+                }
+              ]
+            },
+            {
+              "Item.ID": "disc_overall_01",
+              "Question.ID": "discrimination_overall_impact",
+              "Question.Long.Name": "Overall Impact of Discrimination on Day",
+              "Question.Text": "Overall, how much did experiences of discrimination affect your day?",
+              "Question.Description": "Global assessment of daily impact of discriminatory experiences",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Data.Type": "integer",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Did not affect my day at all"
+                },
+                {
+                  "value": "100",
+                  "definition": "Completely ruined my day"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "data": {
+    "Participant.ID": [],
+    "Session.ID": [],
+    "Alert.Times": [],
+    "Survey.Start": [],
+    "Survey.Date.Completed": [],
+    "Survey.Date.Submitted": [],
+    "Timezone": [],
+    "Offset": [],
+    "Network.Type": [],
+    "App.Version": [],
+    "OS": [],
+    "Model": [],
+    "User.Response": [],
+    "Question.ID": [],
+    "External.ID": []
+  },
+  "blockMap": {}
+}
