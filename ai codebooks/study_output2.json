@@ -1,0 +1,1105 @@
+{
+  "Study.Name": "Longitudinal Recovery Processes and Daily Experience Study",
+  "authors": "Dr. Sarah Johnson, Dr. Michael Chen, Dr. Emily Rodriguez",
+  "funding": "NIH National Institute on Drug Abuse Grant R01DA045678",
+  "abstract": "This intensive longitudinal study examines daily recovery processes, contextual factors, and substance use patterns among adults in recovery from substance use disorders. Participants complete ecological momentary assessments 10 times daily for 30 days, plus a comprehensive baseline assessment capturing demographics, socioeconomic status, and treatment history.",
+  "burst": [
+    {
+      "burstID": 1,
+      "Timing.Type": "Random",
+      "survey": [
+        {
+          "Survey.LongName": "Daily Recovery Experience Sampling Assessment",
+          "Survey.ShortName": "EMA_Daily",
+          "Scheduling.Info": {
+            "Timing.Info": {
+              "offset": [
+                {
+                  "value": 1,
+                  "unit": "days"
+                }
+              ],
+              "children": []
+            },
+            "Window.Info": {
+              "window.length": [
+                {
+                  "value": 12,
+                  "unit": "hours"
+                }
+              ],
+              "random": true,
+              "Trigger.Info": {}
+            }
+          },
+          "question": [
+            {
+              "Item.ID": "ema_block_001",
+              "Question.ID": "ema_block_root",
+              "Question.Long.Name": "EMA Survey Block",
+              "Question.Text": "EMA Survey Block",
+              "Question.Description": "Container block for EMA questions",
+              "Question.Type.Display.Name": "Informational Fullscreen",
+              "Item.Type": "Block",
+              "Parent": "root",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": []
+            },
+            {
+              "Item.ID": "ema_craving_001",
+              "Question.ID": "craving_current",
+              "Question.Long.Name": "Current Craving Intensity",
+              "Question.Text": "Right now, how intense is your craving or urge to use your substance?",
+              "Question.Description": "Self-reported intensity of substance craving at the moment of assessment",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No craving at all"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderate craving"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely strong craving"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_happy_001",
+              "Question.ID": "mood_happy",
+              "Question.Long.Name": "Current Happiness",
+              "Question.Text": "Right now, how happy do you feel?",
+              "Question.Description": "Current level of happiness",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all happy"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderately happy"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely happy"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_content_001",
+              "Question.ID": "mood_content",
+              "Question.Long.Name": "Current Contentment",
+              "Question.Text": "Right now, how content do you feel?",
+              "Question.Description": "Current level of contentment",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all content"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderately content"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely content"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_sad_001",
+              "Question.ID": "mood_sad",
+              "Question.Long.Name": "Current Sadness",
+              "Question.Text": "Right now, how sad do you feel?",
+              "Question.Description": "Current level of sadness",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all sad"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderately sad"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely sad"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_anxious_001",
+              "Question.ID": "mood_anxious",
+              "Question.Long.Name": "Current Anxiety",
+              "Question.Text": "Right now, how anxious do you feel?",
+              "Question.Description": "Current level of anxiety",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all anxious"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderately anxious"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely anxious"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_upset_001",
+              "Question.ID": "mood_upset",
+              "Question.Long.Name": "Current Upset",
+              "Question.Text": "Right now, how upset do you feel?",
+              "Question.Description": "Current level of being upset",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all upset"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderately upset"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely upset"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_stress_001",
+              "Question.ID": "stress_level",
+              "Question.Long.Name": "Current Stress Level",
+              "Question.Text": "Right now, how stressed do you feel?",
+              "Question.Description": "Current perceived stress level",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all stressed"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderately stressed"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely stressed"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_location_001",
+              "Question.ID": "current_location",
+              "Question.Long.Name": "Current Location",
+              "Question.Text": "Where are you right now?",
+              "Question.Description": "Current physical location of participant",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Home"
+                },
+                {
+                  "value": "2",
+                  "definition": "Work"
+                },
+                {
+                  "value": "3",
+                  "definition": "Treatment center"
+                },
+                {
+                  "value": "4",
+                  "definition": "Outdoors or public space"
+                },
+                {
+                  "value": "5",
+                  "definition": "Someone else's home"
+                },
+                {
+                  "value": "6",
+                  "definition": "Other"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_social_001",
+              "Question.ID": "social_context",
+              "Question.Long.Name": "Social Context",
+              "Question.Text": "Who are you currently with? (Select all that apply)",
+              "Question.Description": "Current social environment",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Alone"
+                },
+                {
+                  "value": "2",
+                  "definition": "Family members"
+                },
+                {
+                  "value": "3",
+                  "definition": "Friends"
+                },
+                {
+                  "value": "4",
+                  "definition": "Coworkers or classmates"
+                },
+                {
+                  "value": "5",
+                  "definition": "Treatment peers or staff"
+                },
+                {
+                  "value": "6",
+                  "definition": "Strangers"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_use_001",
+              "Question.ID": "substance_use_since_last",
+              "Question.Long.Name": "Substance Use Since Last Prompt",
+              "Question.Text": "Since the last prompt, have you used any alcohol or drugs?",
+              "Question.Description": "Self-reported substance use since previous assessment",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Yes"
+                },
+                {
+                  "value": "2",
+                  "definition": "No"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_type_001",
+              "Question.ID": "substance_type_used",
+              "Question.Long.Name": "Type of Substance Used",
+              "Question.Text": "What substance(s) did you use? (Select all that apply)",
+              "Question.Description": "Type of substance used since last prompt",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": "ema_use_001",
+                "Conditional.Threshold": "1",
+                "Conditional.Type": "1"
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Alcohol"
+                },
+                {
+                  "value": "2",
+                  "definition": "Cannabis"
+                },
+                {
+                  "value": "3",
+                  "definition": "Opioids"
+                },
+                {
+                  "value": "4",
+                  "definition": "Cocaine or crack"
+                },
+                {
+                  "value": "5",
+                  "definition": "Methamphetamine"
+                },
+                {
+                  "value": "6",
+                  "definition": "Other"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_coping_001",
+              "Question.ID": "coping_strategies",
+              "Question.Long.Name": "Coping Strategies Used",
+              "Question.Text": "Since the last prompt, what strategies did you use to manage cravings or stress? (Select all that apply)",
+              "Question.Description": "Coping mechanisms utilized since last assessment",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Meditation or prayer"
+                },
+                {
+                  "value": "2",
+                  "definition": "Exercise or physical activity"
+                },
+                {
+                  "value": "3",
+                  "definition": "Talked to someone for support"
+                },
+                {
+                  "value": "4",
+                  "definition": "Distraction or entertainment"
+                },
+                {
+                  "value": "5",
+                  "definition": "Used substances"
+                },
+                {
+                  "value": "6",
+                  "definition": "None of the above"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_confidence_001",
+              "Question.ID": "recovery_confidence",
+              "Question.Long.Name": "Confidence in Recovery",
+              "Question.Text": "Right now, how confident do you feel in your ability to maintain your recovery?",
+              "Question.Description": "Current self-efficacy for recovery maintenance",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Not at all confident"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderately confident"
+                },
+                {
+                  "value": "100",
+                  "definition": "Extremely confident"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_sleep_001",
+              "Question.ID": "sleep_quality_last_night",
+              "Question.Long.Name": "Sleep Quality Last Night",
+              "Question.Text": "How well did you sleep last night?",
+              "Question.Description": "Self-rated sleep quality from previous night",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "Very poorly"
+                },
+                {
+                  "value": "50",
+                  "definition": "Okay"
+                },
+                {
+                  "value": "100",
+                  "definition": "Very well"
+                }
+              ]
+            },
+            {
+              "Item.ID": "ema_pain_001",
+              "Question.ID": "pain_level",
+              "Question.Long.Name": "Current Pain Level",
+              "Question.Text": "Right now, how much physical pain are you experiencing?",
+              "Question.Description": "Current physical pain intensity",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "ema_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No pain"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderate pain"
+                },
+                {
+                  "value": "100",
+                  "definition": "Severe pain"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Survey.LongName": "Comprehensive Baseline Assessment",
+          "Survey.ShortName": "Baseline",
+          "Scheduling.Info": {
+            "Timing.Info": {
+              "offset": [
+                {
+                  "value": 0,
+                  "unit": "days"
+                }
+              ],
+              "children": []
+            },
+            "Window.Info": {
+              "window.length": [
+                {
+                  "value": 30,
+                  "unit": "days"
+                }
+              ],
+              "random": false,
+              "Trigger.Info": {}
+            }
+          },
+          "question": [
+            {
+              "Item.ID": "base_block_001",
+              "Question.ID": "baseline_block_root",
+              "Question.Long.Name": "Baseline Survey Block",
+              "Question.Text": "Baseline Survey Block",
+              "Question.Description": "Container block for baseline questions",
+              "Question.Type.Display.Name": "Informational Fullscreen",
+              "Item.Type": "Block",
+              "Parent": "root",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": []
+            },
+            {
+              "Item.ID": "base_age_001",
+              "Question.ID": "age",
+              "Question.Long.Name": "Age",
+              "Question.Text": "What is your current age in years?",
+              "Question.Description": "Participant age in years",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "integer",
+              "responseKey": []
+            },
+            {
+              "Item.ID": "base_gender_001",
+              "Question.ID": "gender",
+              "Question.Long.Name": "Gender Identity",
+              "Question.Text": "What is your gender identity?",
+              "Question.Description": "Self-identified gender",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Male"
+                },
+                {
+                  "value": "2",
+                  "definition": "Female"
+                },
+                {
+                  "value": "3",
+                  "definition": "Non-binary"
+                },
+                {
+                  "value": "4",
+                  "definition": "Other"
+                },
+                {
+                  "value": "5",
+                  "definition": "Prefer not to say"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_race_001",
+              "Question.ID": "race_ethnicity",
+              "Question.Long.Name": "Race and Ethnicity",
+              "Question.Text": "Which categories describe you? (Select all that apply)",
+              "Question.Description": "Racial and ethnic identity",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "White"
+                },
+                {
+                  "value": "2",
+                  "definition": "Black or African American"
+                },
+                {
+                  "value": "3",
+                  "definition": "Hispanic or Latino"
+                },
+                {
+                  "value": "4",
+                  "definition": "Asian"
+                },
+                {
+                  "value": "5",
+                  "definition": "Native American or Alaska Native"
+                },
+                {
+                  "value": "6",
+                  "definition": "Other"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_edu_001",
+              "Question.ID": "education",
+              "Question.Long.Name": "Education Level",
+              "Question.Text": "What is the highest level of education you have completed?",
+              "Question.Description": "Highest educational attainment",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Less than high school"
+                },
+                {
+                  "value": "2",
+                  "definition": "High school diploma or GED"
+                },
+                {
+                  "value": "3",
+                  "definition": "Some college"
+                },
+                {
+                  "value": "4",
+                  "definition": "Bachelor's degree"
+                },
+                {
+                  "value": "5",
+                  "definition": "Graduate degree"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_employ_001",
+              "Question.ID": "employment_status",
+              "Question.Long.Name": "Employment Status",
+              "Question.Text": "What is your current employment status?",
+              "Question.Description": "Current work status",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Full-time employed"
+                },
+                {
+                  "value": "2",
+                  "definition": "Part-time employed"
+                },
+                {
+                  "value": "3",
+                  "definition": "Unemployed"
+                },
+                {
+                  "value": "4",
+                  "definition": "Disabled"
+                },
+                {
+                  "value": "5",
+                  "definition": "Retired"
+                },
+                {
+                  "value": "6",
+                  "definition": "Student"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_income_001",
+              "Question.ID": "annual_income",
+              "Question.Long.Name": "Annual Household Income",
+              "Question.Text": "What is your annual household income before taxes?",
+              "Question.Description": "Yearly household income",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Less than $10,000"
+                },
+                {
+                  "value": "2",
+                  "definition": "$10,000 - $24,999"
+                },
+                {
+                  "value": "3",
+                  "definition": "$25,000 - $49,999"
+                },
+                {
+                  "value": "4",
+                  "definition": "$50,000 - $74,999"
+                },
+                {
+                  "value": "5",
+                  "definition": "$75,000 or more"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_housing_001",
+              "Question.ID": "housing_status",
+              "Question.Long.Name": "Housing Status",
+              "Question.Text": "Which best describes your current housing situation?",
+              "Question.Description": "Current living arrangement",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Own home or apartment"
+                },
+                {
+                  "value": "2",
+                  "definition": "Rent home or apartment"
+                },
+                {
+                  "value": "3",
+                  "definition": "Stay with family or friends"
+                },
+                {
+                  "value": "4",
+                  "definition": "Transitional housing"
+                },
+                {
+                  "value": "5",
+                  "definition": "Homeless or shelter"
+                },
+                {
+                  "value": "6",
+                  "definition": "Treatment facility"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_substance_001",
+              "Question.ID": "primary_substance",
+              "Question.Long.Name": "Primary Substance of Concern",
+              "Question.Text": "What is your primary substance of concern?",
+              "Question.Description": "Main substance for which participant seeks recovery",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Alcohol"
+                },
+                {
+                  "value": "2",
+                  "definition": "Cannabis"
+                },
+                {
+                  "value": "3",
+                  "definition": "Opioids"
+                },
+                {
+                  "value": "4",
+                  "definition": "Cocaine"
+                },
+                {
+                  "value": "5",
+                  "definition": "Methamphetamine"
+                },
+                {
+                  "value": "6",
+                  "definition": "Other"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_agefirst_001",
+              "Question.ID": "age_first_use",
+              "Question.Long.Name": "Age of First Use",
+              "Question.Text": "How old were you when you first used your primary substance?",
+              "Question.Description": "Age at first substance use",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "integer",
+              "responseKey": []
+            },
+            {
+              "Item.ID": "base_treatment_001",
+              "Question.ID": "prior_treatment_episodes",
+              "Question.Long.Name": "Prior Treatment Episodes",
+              "Question.Text": "How many times have you received treatment for substance use prior to this episode?",
+              "Question.Description": "Number of previous treatment episodes",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "integer",
+              "responseKey": []
+            },
+            {
+              "Item.ID": "base_meds_001",
+              "Question.ID": "current_medications",
+              "Question.Long.Name": "Current Medications for SUD",
+              "Question.Text": "Are you currently taking any medications for substance use disorder?",
+              "Question.Description": "Current pharmacotherapy for SUD",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Yes"
+                },
+                {
+                  "value": "2",
+                  "definition": "No"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_mh_001",
+              "Question.ID": "mental_health_diagnoses",
+              "Question.Long.Name": "Mental Health Diagnoses",
+              "Question.Text": "Have you ever been diagnosed with any of the following? (Select all that apply)",
+              "Question.Description": "Co-occurring mental health conditions",
+              "Question.Type.Display.Name": "Multiple Select",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "character",
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Depression"
+                },
+                {
+                  "value": "2",
+                  "definition": "Anxiety disorder"
+                },
+                {
+                  "value": "3",
+                  "definition": "PTSD"
+                },
+                {
+                  "value": "4",
+                  "definition": "Bipolar disorder"
+                },
+                {
+                  "value": "5",
+                  "definition": "Schizophrenia"
+                },
+                {
+                  "value": "6",
+                  "definition": "None"
+                }
+              ]
+            },
+            {
+              "Item.ID": "base_support_001",
+              "Question.ID": "perceived_social_support",
+              "Question.Long.Name": "Perceived Social Support",
+              "Question.Text": "Overall, how much support do you feel you have from family and friends regarding your recovery?",
+              "Question.Description": "General perception of social support for recovery",
+              "Question.Type.Display.Name": "Slider",
+              "Item.Type": "Question",
+              "Parent": "base_block_001",
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "Data.Type": "numeric",
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No support"
+                },
+                {
+                  "value": "50",
+                  "definition": "Moderate support"
+                },
+                {
+                  "value": "100",
+                  "definition": "Very strong support"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "data": {
+    "Participant.ID": [],
+    "Session.ID": [],
+    "Alert.Times": [],
+    "Survey.Start": [],
+    "Survey.Date.Completed": [],
+    "Survey.Date.Submitted": [],
+    "Timezone": [],
+    "Offset": [],
+    "Network.Type": [],
+    "App.Version": [],
+    "OS": [],
+    "Model": [],
+    "User.Response": [],
+    "Question.ID": [],
+    "External.ID": []
+  },
+  "blockMap": {}
+}

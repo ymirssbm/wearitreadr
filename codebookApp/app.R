@@ -82,6 +82,17 @@ local({
                        actionButton(inputId = "generateFlowChart", label = "Generate Flow Chart"),
                        uiOutput("surveyTree")
                      )
+                   ),
+                   # AI Study Generator
+                   tabPanel(
+                     "AI Study Generator",
+                     p("This allows you to connect with Kimi-K2.5 to generate a study design via AI.
+                        You can then also ask to modify the study design if changes are needed.
+                       Directions: Describe the study you would like to run in as much detail as possible.
+                       Additionally, provide AI URL and API key"),
+                     textAreaInput("aiQuery", "AI Query", value = "", rows = 1, resize = "horizontal"),
+                     passwordInput(inputId = "AIApiToken", label = "Insert AI Api Token"),
+                     textInput("AI_URL", "Insert URL", value = "https://genai-fa2026-resource-1.services.ai.azure.com/api/projects/Ethan_Kile_GenAI_Project/openai/v1")
                    )
   )
 
