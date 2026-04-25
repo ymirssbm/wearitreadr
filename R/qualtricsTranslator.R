@@ -274,26 +274,26 @@ qualtrics_to_wearit <- function(survey_id,
 `%||%` <- function(a, b) if (!is.null(a)) a else b
 
 
-result <- qualtrics_to_wearit(
-  survey_id   = "SV_3JVDH61TNOr2pJI",
-  api_key     = api_key,
-  data_center = "yul1",
-  schema_path = "study.json",
-  study_meta  = list(
-    Study.Name = "My Study",
-    authors    = "Jane Smith, John Doe",
-    funding    = "NIH Grant R01DA012345",
-    abstract   = "Study abstract here"
-  )
-)
+#result <- qualtrics_to_wearit(
+#  survey_id   = "SV_3JVDH61TNOr2pJI",
+#  api_key     = api_key,
+#  data_center = "yul1",
+#  schema_path = "study.json",
+#  study_meta  = list(
+#    Study.Name = "My Study",
+#    authors    = "Jane Smith, John Doe",
+#    funding    = "NIH Grant R01DA012345",
+#    abstract   = "Study abstract here"
+#  )
+#)
 
 
-cat("Valid:", result$valid, "\n")
-cat("Errors:\n")
-print(result$errors)
+#cat("Valid:", result$valid, "\n")
+#cat("Errors:\n")
+#print(result$errors)
 
 # Check if it validated
-result$valid
+#result$valid
 
 # See any validation errors
 #result$errors
@@ -302,4 +302,4 @@ result$valid
 #result$spec
 
 # Save the JSON to a file
-write(result$spec_json, "my_study_spec.json")
+#write(result$spec_json, "my_study_spec.json")
