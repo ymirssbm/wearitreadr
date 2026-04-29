@@ -15,5 +15,5 @@ Wear-IT may request the use of the AccessibilityService API. Some studies ask th
 
 # What Design Principles Underlie Wear-IT?
 
-
+  
 # How Does Wear-IT Accomplish Its Goals?

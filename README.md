@@ -22,7 +22,9 @@ Simplest way is to load the app.R file in the codebookApp folder
 - Citations for scales
 - Scale metadata
 - Create data manual generation tool
-- Decide on name for the project
+- Decide on name for the project (doc-IT?)
+- Dispatch model for AI generator
+- For survey tree, display additional info on clicking node
 
 ## Contributers
 
