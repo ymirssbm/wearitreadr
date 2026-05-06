@@ -35,7 +35,7 @@ cat("## Authors \n\n{{authors}}\n\n")
 ```
 
 ```{r display-meta, eval = params$displayMeta, echo = FALSE, results = 'asis'}
-displayStudyMetaData()
+displayStudyMetaData(thisData)
 ```
 
 

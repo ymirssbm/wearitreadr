@@ -9,7 +9,7 @@
 
 
 
-```{r {{chunk_label}}_descriptives, echo = FALSE}
+```{r {{chunk_label}}_descriptives, eval = params$descriptives, echo = FALSE, results = 'asis'}
 #########################
 # Descriptives
 #########################
@@ -21,11 +21,21 @@ maximum_value <- round(max({{thisVar}}, na.rm = TRUE), 2)
 mean_value <- round(mean({{thisVar}}, na.rm = TRUE), 2)
 std_value <- round(sd({{thisVar}}, na.rm = TRUE), 2)
 
+  # Create descriptives message
+  msg <- paste0(
+    "**Descriptives**\n",
+    "Min = ", minimum_value, ", ",
+    "Max = ", maximum_value, ", ",
+    "Mean = ", mean_value, ", ",
+    "SD = ", std_value
+  )
+
+  # Cat msg
+  cat(msg, "\n")
+
 ```
 
 
-**Descriptives**
-Min = `r minimum_value`, max = `r maximum_value`, mean = `r mean_value`, std = `r std_value`
 
 
 
@@ -56,14 +66,16 @@ Click to view visuals <span id="{{chunk_label}}_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-#### Histogram
 
 
 
 
 
 
-```{r {{chunk_label}}_histogram, echo = FALSE}
+
+```{r {{chunk_label}}_histogram, eval = params$histogram, echo = FALSE, results = 'asis'}
+
+cat("#### Histogram\n\n")
 #################
 # This is a basic histogram for continous data
 ######################
@@ -76,22 +88,28 @@ lines(density({{thisVar}}, na.rm = TRUE), col="blue", lwd=2)
 ```
 
 
-#### Missingness
 
-```{r {{chunk_label}}_missingness, echo = FALSE}
 
+```{r {{chunk_label}}_missingness, eval = params$missingnessPage, echo = FALSE, results = 'asis'}
+cat("#### Missingness\n\n")
+
+cat("**Missingness Descriptives** \n\n
+
+Missing descriptives for Multiple Slider questions have not been implemented yet")
 ```
 
-**Missingness Descriptives**
 
-Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 </details>
 
 
 
-#### Screenshot
+```{r screenshot-{{chunk_label}}, eval = params$screenshot, echo = FALSE, results = 'asis'}
+
+cat("#### Screenshot")
+
+```
 
 
 </div>

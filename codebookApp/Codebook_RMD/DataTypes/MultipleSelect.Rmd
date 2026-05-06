@@ -1,7 +1,7 @@
 
 <div class = "anchor">
 
-```{r skip-logic-{{chunk_label}}, echo = FALSE, results = 'asis'}
+```{r skip-logic-{{chunk_label}}, eval = params$skipLogic, echo = FALSE, results = 'asis'}
 displaySkipLogic(id = "{{question_id}}", blockMap = blockMap)
 
 ```
@@ -24,26 +24,30 @@ Click to view visuals <span id="{{question_id}}_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-```{r frequency-table-{{chunk_label}}, echo = FALSE, results = 'asis'}
+```{r frequency-table-{{chunk_label}}, eval=params$frequencyTableDisplay, echo = FALSE, results = 'asis'}
 
 frequencyTable(id = "{{question_id}}", thisData = thisData, responseKey = responseKey)
 
 ```
 
 
-```{r barplot-{{chunk_label}}, echo = FALSE, results = 'asis'}
+```{r barplot-{{chunk_label}}, eval=params$barPlot, echo = FALSE, results = 'asis'}
 
 generateBarplot(id = "{{question_id}}", thisData = thisData, questionText = "{{question_text}}")
 ```
 
 
-```{r missingness-{{chunk_label}}, echo = FALSE, results = 'asis'}
+```{r missingness-{{chunk_label}}, eval=params$missingnessPage, echo = FALSE, results = 'asis'}
 describeMissingness(id = "{{question_id}}", thisData = thisData, blockMap = blockMap)
 
 ```
 
 
-#### Screenshot
+```{r screenshot-{{chunk_label}}, eval = params$screenshot, echo = FALSE, results = 'asis'}
+
+cat("#### Screenshot")
+
+```
 
 
 

@@ -11,8 +11,6 @@ Simplest way is to load the app.R file in the codebookApp folder
 
 ## Known Issues / To do list
 
-- Fix Exclude Data to not just overwrite the data on drive
-- Make finer granularity for codechunk display (descriptives, screenshots, etc's)
 - Fix multiple slider generation
 - Need to be able to specify file name
 - Implement screenshots
@@ -25,9 +23,10 @@ Simplest way is to load the app.R file in the codebookApp folder
 - Decide on name for the project (doc-IT?)
 - Dispatch model for AI generator
 - For survey tree, display additional info on clicking node
+- Figure out where the header for a slider histogram is drawn
 
 ## Contributers
 
-Ethan Kile - eok5206@psu.edu
+Ethan O. Kile - eok5206@psu.edu
 
-Timothy Brick - tbrick@psu.edu
+Timothy R. Brick - tbrick@psu.edu

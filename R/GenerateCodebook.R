@@ -56,12 +56,20 @@ generateCodebook <- function(title = "This is a temp default title, please set",
   # Remove all data if user selected
   if("exclude data" %in% codebookChunkDisplayOptions) {
     thisData <- thisData[0,]
-    write.csv(thisData, "Codebook_RMD/Data/Data.csv", row.names = TRUE)
+    #write.csv(thisData, "Codebook_RMD/Data/Data.csv", row.names = TRUE)
   }
 
   # This is a temp default that should be filed into the processing step, this is to clean fambes data specifically
   thisData[] <- lapply(thisData, function(x) {
     if (is.character(x)) x[tolower(x) == "n/a"] <- NA
+    x
+  })
+  thisData[] <- lapply(thisData, function(x) {
+    if (is.character(x)) x[tolower(x) == "NA"] <- NA
+    x
+  })
+  thisData[] <- lapply(thisData, function(x) {
+    if (is.character(x)) x[tolower(x) == "na"] <- NA
     x
   })
 
@@ -293,7 +301,13 @@ generateCodebook <- function(title = "This is a temp default title, please set",
       displayMeta = "study metadata" %in% codebookChunkDisplayOptions,
       histogram = "histograms" %in% codebookChunkDisplayOptions,
       missingnessPage = "missingness page" %in% codebookChunkDisplayOptions,
-      descriptives = "descriptives" %in% codebookChunkDisplayOptions
+      descriptives = "descriptives" %in% codebookChunkDisplayOptions,
+      barPlot = "bar plot" %in% codebookChunkDisplayOptions,
+      frequencyTableDisplay = "frequency table" %in% codebookChunkDisplayOptions,
+      typeOfData = "type of data" %in% codebookChunkDisplayOptions,
+      deliveryType = "way question was delivered" %in% codebookChunkDisplayOptions,
+      screenshot = "screenshot" %in% codebookChunkDisplayOptions,
+      skipLogic = "skip logic" %in% codebookChunkDisplayOptions
     )
   )
   # Remove temp workspace

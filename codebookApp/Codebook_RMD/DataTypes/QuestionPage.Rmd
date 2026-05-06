@@ -22,8 +22,19 @@
   <strong>Question ID</strong>: {{question_id}}
 </div>
 
-**Way the question was delivered:** {{question_type}}
+```{r deliveryType-{{chunk_label}}, eval = params$deliveryType, echo = FALSE, results = 'asis'}
 
-**Type of data:** {{result_type}}
+cat("**Way the question was delivered:** {{question_type}}")
+
+```
+
+
+```{r typeOfData-{{chunk_label}}, eval = params$typeOfData, echo = FALSE, results = 'asis'}
+
+cat("**Type of data:** {{result_type}}")
+
+```
+
+
 
 </div>

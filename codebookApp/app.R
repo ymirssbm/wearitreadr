@@ -150,7 +150,13 @@ local({
         "Variable Pages" = structure(list(
           "Histograms" = "",
           "Missingness Page" = "",
-          "Descriptives" = ""
+          "Descriptives" = "",
+          "Bar Plot" = "",
+          "Frequency Table" = "",
+          "Type of data" = "",
+          "Way question was delivered" = "",
+          "Screenshot" = "",
+          "Skip Logic" = ""
         )),
         "Exclude Data" = ""
       )

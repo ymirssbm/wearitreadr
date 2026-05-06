@@ -1,13 +1,13 @@
 <div class = "anchor">
 
 
-```{r skip-logic-{{chunk_label}}, echo = FALSE, results = 'asis'}
+```{r skip-logic-{{chunk_label}}, eval = params$skipLogic, echo = FALSE, results = 'asis'}
 displaySkipLogic(id = "{{question_id}}", blockMap = blockMap)
 ```
 
 
 
-```{r descriptives-{{chunk_label}}, echo = FALSE, results = 'asis'}
+```{r descriptives-{{chunk_label}}, eval = params$descriptives, echo = FALSE, results = 'asis'}
 sliderDescriptives(id = "{{question_id}}", thisData = thisData)
 ```
 
@@ -30,18 +30,23 @@ Click to view visuals <span id="{{question_id}}_arrow">▼</span>
 ### Descriptives {.tabset}
 
 
-```{r histogram-{{chunk_label}}, echo = FALSE, results = 'asis'}
+```{r histogram-{{chunk_label}}, eval = params$histogram, echo = FALSE, results = 'asis'}
 sliderHist(id = "{{question_id}}", thisData = thisData)
 ```
 
 
-```{r missingness-{{chunk_label}}, echo = FALSE, results = 'asis'}
+```{r missingness-{{chunk_label}}, eval = params$missingnessPage, echo = FALSE, results = 'asis'}
 describeMissingness(id = "{{question_id}}", thisData = thisData, blockMap = blockMap)
 ```
 
 
 
-#### Screenshot
+```{r screenshot-{{chunk_label}}, eval = params$screenshot, echo = FALSE, results = 'asis'}
+
+cat("#### Screenshot")
+
+```
+
 
 
 </div>

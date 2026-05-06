@@ -35,7 +35,12 @@ params:
   histogram: true
   missingnessPage: true
   descriptives: true
-  
+  barPlot: true
+  frequencyTableDisplay: true
+  typeOfData: true
+  deliveryType: true
+  screenshot: true
+  skipLogic: true
 ---
 
 ```{r Highest-Level-Template-Chunk, include = FALSE}
