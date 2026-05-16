@@ -347,9 +347,19 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
   })
 }
 
-# Launch function
+
+#' Launch WearItReadR Application
+#'
+#' Launches the interactive Shiny application for managing Wear-IT data,
+#' generating codebooks, creating data dictionaries, and visualizing surveys.
+#'
+#' @return A Shiny app object
+#' @importFrom shiny shinyApp addResourcePath
+#' @importFrom shinyTree shinyTree
+#' @importFrom dotenv load_dot_env
+#' @export
+
 wearitreadr <- function() {
-  #setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
   library(shiny)
   library(shinyTree)
   library(shinyFiles)
