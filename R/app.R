@@ -4,7 +4,8 @@ launch_app_ui <- function() {
     "Navigation",
     header = tagList(
       tags$head(
-        includeCSS("www/shiny.css"),
+        # Use the resource path instead of relative path
+        tags$link(rel = "stylesheet", type = "text/css", href = "www/shiny.css"),
         tags$script(src = "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"),
         tags$script(src = "https://cdn.jsdelivr.net/npm/@panzoom/panzoom@4/dist/panzoom.min.js"),
         tags$script(HTML("mermaid.initialize({ startOnLoad: false, theme: 'default' });"))
@@ -98,6 +99,12 @@ launch_app_ui <- function() {
 
 # Server function
 launch_app_server <- function(input, output, session) {
+
+  # Get package directory once at the start
+  pkg_dir <- system.file(package = "WearItReadR")
+  codebook_dir <- file.path(pkg_dir, "Codebook_RMD")
+  python_dir <- file.path(pkg_dir, "python")
+
   #--------------------
   # Pull Data Page
   #--------------------
@@ -174,7 +181,8 @@ launch_app_server <- function(input, output, session) {
     })
   })
 
-  if (file.exists("Codebook_RMD/Codebook.html")) {
+  # Use pkg_dir instead of hardcoded path
+  if (file.exists(file.path(codebook_dir, "Codebook.html"))) {
     output$codebook <- renderUI({
       tags$iframe(src = paste0("codebook/Codebook.html?", as.numeric(Sys.time())),
                   width = "100%", height = "800px",
@@ -193,7 +201,7 @@ launch_app_server <- function(input, output, session) {
       generateDataDictionary(shiny = TRUE)
       showNotification("Data dictionary generation complete!", type = "message")
       output$dataDictionary <- renderTable({
-        read.csv("Codebook_RMD/DataDictionary.csv")
+        read.csv(file.path(codebook_dir, "DataDictionary.csv"))
       })
     }, error = function(e) {
       showNotification(paste("Error generating data dictionary:", e$message), type = "error")
@@ -201,9 +209,9 @@ launch_app_server <- function(input, output, session) {
     })
   })
 
-  if (file.exists("Codebook_RMD/DataDictionary.csv")) {
+  if (file.exists(file.path(codebook_dir, "DataDictionary.csv"))) {
     output$dataDictionary <- renderTable({
-      read.csv("Codebook_RMD/DataDictionary.csv")
+      read.csv(file.path(codebook_dir, "DataDictionary.csv"))
     })
   }
 
@@ -213,8 +221,9 @@ launch_app_server <- function(input, output, session) {
   blockMapParsed <- reactiveVal(NULL)
 
   observe({
-    if (file.exists("Codebook_RMD/Data/blockMap.csv")) {
-      blockMap <- read.csv("Codebook_RMD/Data/blockMap.csv")
+    blockmap_path <- file.path(codebook_dir, "Data/blockMap.csv")
+    if (file.exists(blockmap_path)) {
+      blockMap <- read.csv(blockmap_path)
       choices <- unique(blockMap$Survey[!is.na(blockMap$Survey)])
       updateSelectInput(session, "survey", choices = choices)
     }
@@ -247,7 +256,7 @@ launch_app_server <- function(input, output, session) {
 
   observeEvent(input$generateFlowChart, {
     req(input$survey)
-    responseKey <- read.csv("Codebook_RMD/Data/responseKey.csv")
+    responseKey <- read.csv(file.path(codebook_dir, "Data/responseKey.csv"))
     blockMapParsed(parseBySurvey(survey = input$survey, shiny = TRUE))
     mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(),
                                        responseKey = responseKey,
@@ -280,7 +289,8 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
       showNotification("Dependencies ok...", type = "message")
       print("Dependencies ok")
 
-      source_python("python/aiStudyGenerator.py")
+      # Use python_dir
+      source_python(file.path(python_dir, "aiStudyGenerator.py"))
       showNotification("Python sourced...", type = "message")
 
       print("python sourced")
@@ -292,7 +302,7 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
       )
       print("study generated")
 
-      parseJsonSpec("Codebook_RMD/Data/study_output.json")
+      parseJsonSpec(file.path(codebook_dir, "Data/study_output.json"))
       print("json parsed")
       showNotification("Study Generated!", type = "message")
 
@@ -324,7 +334,8 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
       showNotification("Dependencies ok...", type = "message")
       print("Dependencies ok")
 
-      source_python("python/aiStudyModifier.py")
+      # Use python_dir
+      source_python(file.path(python_dir, "aiStudyModifier.py"))
       showNotification("Python sourced...", type = "message")
       print("python sourced")
 
@@ -335,7 +346,7 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
       )
       print("study generated")
 
-      parseJsonSpec("Codebook_RMD/Data/study_output.json")
+      parseJsonSpec(file.path(codebook_dir, "Data/study_output.json"))
       print("json parsed")
 
       showNotification("Study Modified!", type = "message")
