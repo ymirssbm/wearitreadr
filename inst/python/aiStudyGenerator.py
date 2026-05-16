@@ -72,7 +72,7 @@ RULES:
             break
         except (ValidationError, json.JSONDecodeError) as e:
             print(f"✗ Attempt {attempt + 1} failed: {e.message if hasattr(e, 'message') else str(e)}")
-            if (attempt == max_retries - 1:
+            if attempt == max_retries - 1:
                 raise
             messages.append({"role": "assistant", "content": response.content})
             messages.append({"role": "user", "content": f"That was invalid JSON. Error: {e.message if hasattr(e, 'message') else str(e)}. Please fix and try again, returning only valid JSON."})
