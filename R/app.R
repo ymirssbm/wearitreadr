@@ -302,7 +302,7 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
       )
       print("study generated")
 
-      parseJsonSpec(file.path(codebook_dir, "Data/study_output.json"))
+      parseJsonSpec(get_resource_path("Codebook_RMD", "Data", "study_output.json"))
       print("json parsed")
       showNotification("Study Generated!", type = "message")
 
@@ -346,7 +346,7 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
       )
       print("study generated")
 
-      parseJsonSpec(file.path(codebook_dir, "Data/study_output.json"))
+      parseJsonSpec(get_resource_path("Codebook_RMD", "Data", "study_output.json"))
       print("json parsed")
 
       showNotification("Study Modified!", type = "message")
