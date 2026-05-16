@@ -30,7 +30,7 @@ def generate_ai_study(url, api_token, query):
         If the response cannot be parsed as JSON after max_retries attempts.
     """
     
-    with open('../schema/0.1.0/study.json') as f:
+    with open('schema/0.1.0/study.json') as f:
         schema = json.load(f)
 
     #endpoint = "https://genai-fa2026-resource-1.services.ai.azure.com/api/projects/Ethan_Kile_GenAI_Project/openai/v1"

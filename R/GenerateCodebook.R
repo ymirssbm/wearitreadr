@@ -54,7 +54,7 @@ generateCodebook <- function(title = "This is a temp default title, please set",
   }
 
   # Remove all data if user selected
-  if("exclude data" %in% codebookChunkDisplayOptions) {
+  if(!"include data" %in% codebookChunkDisplayOptions) {
     thisData <- thisData[0,]
     #write.csv(thisData, "Codebook_RMD/Data/Data.csv", row.names = TRUE)
   }

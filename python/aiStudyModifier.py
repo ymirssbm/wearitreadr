@@ -30,7 +30,7 @@ def modify_ai_study(url, api_token, query):
         If the response cannot be parsed as JSON after max_retries attempts.
     """
 
-    with open('../schema/0.1.0/study.json') as f:
+    with open('schema/0.1.0/study.json') as f:
         schema = json.load(f)
 
     with open('Codebook_RMD/Data/study_output.json') as f:
