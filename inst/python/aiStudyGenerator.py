@@ -5,13 +5,7 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_openai import ChatOpenAI
 import pandas as pd
 
-def generate_ai_study(url, api_token, query):
-    schema_path = os.getenv('SCHEMA_PATH', 'schema')
-    output_path = os.getenv('OUTPUT_PATH', 'Codebook_RMD/Data')
-    
-    print(f"Python received SCHEMA_PATH: {schema_path}")
-    print(f"Python received OUTPUT_PATH: {output_path}")
-    print(f"Looking for schema at: {os.path.join(schema_path, '0.1.0', 'study.json')}")
+def generate_ai_study(url, api_token, query, schema_path='schema', output_path='Codebook_RMD/Data'):
     """
     Generates a synthetic study following wearIts JSON spec using kimi.
     
@@ -23,6 +17,10 @@ def generate_ai_study(url, api_token, query):
         User API key.
     query : str
         Description of the study to be generated in as much detail as possible.
+    schema_path : str
+        Path to schema directory.
+    output_path : str
+        Path to output directory.
     
     Output
     ------
@@ -35,9 +33,6 @@ def generate_ai_study(url, api_token, query):
     json.JSONDecodeError
         If the response cannot be parsed as JSON after max_retries attempts.
     """
-    
-    schema_path = os.getenv('SCHEMA_PATH', 'schema')
-    output_path = os.getenv('OUTPUT_PATH', 'Codebook_RMD/Data')
     
     with open(os.path.join(schema_path, '0.1.0', 'study.json')) as f:
         schema = json.load(f)
@@ -77,7 +72,7 @@ RULES:
             break
         except (ValidationError, json.JSONDecodeError) as e:
             print(f"✗ Attempt {attempt + 1} failed: {e.message if hasattr(e, 'message') else str(e)}")
-            if attempt == max_retries - 1:
+            if (attempt == max_retries - 1:
                 raise
             messages.append({"role": "assistant", "content": response.content})
             messages.append({"role": "user", "content": f"That was invalid JSON. Error: {e.message if hasattr(e, 'message') else str(e)}. Please fix and try again, returning only valid JSON."})

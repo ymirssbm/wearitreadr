@@ -5,7 +5,7 @@ from jsonschema import validate, ValidationError
 from langchain_core.messages import SystemMessage, HumanMessage
 import os
 
-def modify_ai_study(url, api_token, query):
+def modify_ai_study(url, api_token, query, schema_path='schema', output_path='Codebook_RMD/Data'):
     """
     Modifies a preexisting json following wearIts JSON spec using kimi.
     
@@ -17,6 +17,10 @@ def modify_ai_study(url, api_token, query):
         User API key.
     query : str
         Description of the modification to make in as much detail as possible.
+    schema_path : str
+        Path to schema directory.
+    output_path : str
+        Path to output directory.
     
     Output
     ------
@@ -29,8 +33,6 @@ def modify_ai_study(url, api_token, query):
     json.JSONDecodeError
         If the response cannot be parsed as JSON after max_retries attempts.
     """
-    schema_path = os.getenv('SCHEMA_PATH', 'schema')
-    output_path = os.getenv('OUTPUT_PATH', 'Codebook_RMD/Data')
     
     with open(os.path.join(schema_path, '0.1.0', 'study.json')) as f:
         schema = json.load(f)
