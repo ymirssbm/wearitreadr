@@ -3,7 +3,11 @@ from langchain_openai import ChatOpenAI
 import pandas as pd
 from jsonschema import validate, ValidationError
 from langchain_core.messages import SystemMessage, HumanMessage
+import os
 
+
+schema_path = os.getenv('SCHEMA_PATH', 'schema')
+output_path = os.getenv('OUTPUT_PATH', 'Codebook_RMD/Data')
 
 def modify_ai_study(url, api_token, query):
     """
@@ -30,13 +34,13 @@ def modify_ai_study(url, api_token, query):
         If the response cannot be parsed as JSON after max_retries attempts.
     """
 
-    with open('schema/0.1.0/study.json') as f:
+    with open(os.path.join(schema_path, '0.1.0', 'study.json')) as f:
         schema = json.load(f)
 
-    with open('Codebook_RMD/Data/study_output.json') as f:
+    with open(os.path.join(output_path, "study_output.json"), "w") as f:
         schemaToModify = json.load(f)
 
-    itemRepository = pd.read_csv('Codebook_RMD/Data/itemRepository.csv')
+    itemRepository = pd.read_csv(os.path.join(output_path, 'itemRepository.csv'))
 
     llm = ChatOpenAI(
         model="Kimi-K2.5",
@@ -84,4 +88,4 @@ RULES:
     with open("Codebook_RMD/Data/study_output.json", "w") as f:
         json.dump(data, f, indent=2)
 
-    print("Modified and saved to Codebook_RMD/Data/study_output.json")
+    print(f"Modified and saved to {os.path.join(output_path, 'study_output.json')}")

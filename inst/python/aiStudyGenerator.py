@@ -5,6 +5,9 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_openai import ChatOpenAI
 import pandas as pd
 
+schema_path = os.getenv('SCHEMA_PATH', 'schema')
+output_path = os.getenv('OUTPUT_PATH', 'Codebook_RMD/Data')
+
 def generate_ai_study(url, api_token, query):
     """
     Generates a synthetic study following wearIts JSON spec using kimi.
@@ -30,7 +33,7 @@ def generate_ai_study(url, api_token, query):
         If the response cannot be parsed as JSON after max_retries attempts.
     """
     
-    with open('schema/0.1.0/study.json') as f:
+    with open(os.path.join(schema_path, '0.1.0', 'study.json')) as f:
         schema = json.load(f)
 
     #endpoint = "https://genai-fa2026-resource-1.services.ai.azure.com/api/projects/Ethan_Kile_GenAI_Project/openai/v1"
@@ -44,7 +47,7 @@ def generate_ai_study(url, api_token, query):
         max_tokens=16000
     )
 
-    itemRepository = pd.read_csv('Codebook_RMD/Data/itemRepository.csv')
+    itemRepository = pd.read_csv(os.path.join(output_path, 'itemRepository.csv'))
 
     system_prompt = f"""You are a synthetic study generator.
 Return ONLY valid JSON, no markdown, no explanation.
@@ -80,7 +83,7 @@ RULES:
             messages.append({"role": "assistant", "content": response.content})
             messages.append({"role": "user", "content": f"That was invalid JSON. Error: {e.message if hasattr(e, 'message') else str(e)}. Please fix and try again, returning only valid JSON."})
 
-    with open("Codebook_RMD/Data/study_output.json", "w") as f:
+    with open(os.path.join(output_path, "study_output.json"), "w") as f:
         json.dump(data, f, indent=2)
 
-    print("Saved to Codebook_RMD/Data/study_output.json")
+    print(f"Saved to {os.path.join(output_path, 'study_output.json')}")
