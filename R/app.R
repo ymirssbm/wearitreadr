@@ -274,6 +274,10 @@ launch_app_server <- function(input, output, session) {
       showNotification("All requirements avail...", type = "message")
       print("Req passed")
 
+      schema_dir <- file.path(pkg_dir, "schema")
+      Sys.setenv(SCHEMA_PATH = schema_dir)
+      Sys.setenv(OUTPUT_PATH = file.path(codebook_dir, "Data"))
+
       py_run_string(
         "import importlib
 import importlib.util
@@ -281,37 +285,29 @@ packages = ['pandas', 'langchain_openai', 'jsonschema', 'langchain_core']
 missing = [p for p in packages if importlib.util.find_spec(p) is None]
 ")
       print(paste("Missing packages:", paste(py$missing, collapse = ", ")))
-
       if (length(py$missing) > 0) {
         showNotification("Installing AI dependencies, this may take a moment...", type = "message")
         py_require(py$missing)
       }
       showNotification("Dependencies ok...", type = "message")
       print("Dependencies ok")
-
-      # Use python_dir
       source_python(file.path(python_dir, "aiStudyGenerator.py"))
       showNotification("Python sourced...", type = "message")
-
       print("python sourced")
-
       generate_ai_study(
         url       = input$AI_URL,
         api_token = input$AIApiToken,
         query     = input$aiGenerationPrompt
       )
       print("study generated")
-
       parseJsonSpec(get_resource_path("Codebook_RMD", "Data", "study_output.json"))
       print("json parsed")
       showNotification("Study Generated!", type = "message")
-
     }, error = function(e) {
       showNotification(paste("Error generating AI study:", e$message), type = "error")
       print(e)
     })
   })
-
   # Modify AI Study
   observeEvent(input$modifyAIStudy, {
     tryCatch({
@@ -319,6 +315,10 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
       showNotification("All requirements available...", type = "message")
       print("req passed")
 
+      schema_dir <- file.path(pkg_dir, "schema")
+      Sys.setenv(SCHEMA_PATH = schema_dir)
+      Sys.setenv(OUTPUT_PATH = file.path(codebook_dir, "Data"))
+
       py_run_string(
         "import importlib
 import importlib.util
@@ -326,31 +326,24 @@ packages = ['pandas', 'langchain_openai', 'jsonschema', 'langchain_core']
 missing = [p for p in packages if importlib.util.find_spec(p) is None]
 ")
       print(paste("Missing packages:", paste(py$missing, collapse = ", ")))
-
       if (length(py$missing) > 0) {
         showNotification("Installing AI dependencies, this may take a moment...", type = "message")
         py_install(py$missing, pip = TRUE)
       }
       showNotification("Dependencies ok...", type = "message")
       print("Dependencies ok")
-
-      # Use python_dir
       source_python(file.path(python_dir, "aiStudyModifier.py"))
       showNotification("Python sourced...", type = "message")
       print("python sourced")
-
       modify_ai_study(
         url       = input$AI_URL,
         api_token = input$AIApiToken,
         query     = input$aiModificationPrompt
       )
       print("study generated")
-
       parseJsonSpec(get_resource_path("Codebook_RMD", "Data", "study_output.json"))
       print("json parsed")
-
       showNotification("Study Modified!", type = "message")
-
     }, error = function(e) {
       showNotification(paste("Error modifying AI study:", e$message), type = "error")
       print(e)
