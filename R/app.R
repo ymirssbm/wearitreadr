@@ -385,6 +385,12 @@ wearitreadr <- function() {
     stop("Could not find WearItReadR package installation.")
   }
 
+  # Set working directory to package directory
+  # This makes all relative paths work for all my functions
+  old_wd <- getwd()
+  on.exit(setwd(old_wd))  # Restore when done
+  setwd(pkg_dir)
+
   # Check for .env
   env_path <- file.path(pkg_dir, ".env")
   if (file.exists(env_path)) {
