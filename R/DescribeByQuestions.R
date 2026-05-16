@@ -42,7 +42,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
     out2 <- paste(
       out2,
       knit_expand(
-        file = "Survey.Rmd",
+        file = get_resource_path("Codebook_RMD", "Survey.Rmd"),
         survey_name = survey
       )
     )
@@ -99,7 +99,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
           out2 <- paste(
             out2,
             knit_expand(
-              file = paste0("DataTypes/Block.Rmd"),
+              file = get_resource_path("Codebook_RMD", "DataTypes", "Block.Rmd"),
               question_text = itemBlock$Question.Text,
               item_id = itemBlock$Item.ID,
               question_type = itemBlock$Question.Type.Display.Name,
@@ -127,7 +127,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
           out2 <- paste(
             out2,
             knit_expand(
-              file = paste0("DataTypes/QuestionPage.Rmd"),
+              file = get_resource_path("Codebook_RMD", "DataTypes", "QuestionPage.Rmd"),
               question_text = itemBlock$Question.Text,
               item_id = itemBlock$Item.ID,
               question_type = itemBlock$Question.Type.Display.Name,
@@ -142,7 +142,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
           out2 <- paste(
             out2,
             knit_expand(
-              file = paste0("DataTypes/", question_type_no_space, ".Rmd"),
+              file = get_resource_path("Codebook_RMD", "DataTypes", paste0(question_type_no_space, ".Rmd")),
               question_text = itemBlock$Question.Text,
               item_id = itemBlock$Item.ID,
               question_type = itemBlock$Question.Type.Display.Name,

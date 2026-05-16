@@ -12,10 +12,10 @@
 parseBySurvey <- function(shiny = FALSE, survey, all = FALSE) {
 
   if (shiny==FALSE) {
-    blockMap <- read.csv("codebookApp/Codebook_RMD/Data/blockMap.csv")
+    blockMap <- read.csv("Codebook_RMD/Data/blockMap.csv")
   }
   if (shiny==TRUE) {
-    blockMap <- read.csv("Codebook_RMD/Data/blockMap.csv")
+    blockMap <- read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv"))
   }
 
   # Parse by survey
@@ -56,17 +56,17 @@ saveData <- function(data, shiny = FALSE, pull = FALSE, ...) {
 
 
   if (shiny == TRUE) {
+    write.csv(data$questionMap, get_resource_path("Codebook_RMD", "Data", "blockMap.csv"), row.names = FALSE)
+    write.csv(data$responseMap, get_resource_path("Codebook_RMD", "Data", "responseKey.csv"), row.names = FALSE)
+    #write.csv(data$surveyData, get_resource_path("Codebook_RMD", "Data", "surveyData.csv"), row.names = FALSE)
+    write.csv(data$surveyCombined, get_resource_path("Codebook_RMD", "Data", "Data.csv"), row.names = FALSE)
+  }
+
+  if (shiny == FALSE) {
     write.csv(data$questionMap, "Codebook_RMD/Data/blockMap.csv", row.names = FALSE)
     write.csv(data$responseMap, "Codebook_RMD/Data/responseKey.csv", row.names = FALSE)
     #write.csv(data$surveyData, "Codebook_RMD/Data/surveyData.csv", row.names = FALSE)
     write.csv(data$surveyCombined, "Codebook_RMD/Data/Data.csv", row.names = FALSE)
-  }
-
-  if (shiny == FALSE) {
-    write.csv(data$questionMap, "codebookApp/Codebook_RMD/Data/blockMap.csv", row.names = FALSE)
-    write.csv(data$responseMap, "codebookApp/Codebook_RMD/Data/responseKey.csv", row.names = FALSE)
-    #write.csv(data$surveyData, "Codebook_RMD/Data/surveyData.csv", row.names = FALSE)
-    write.csv(data$surveyCombined, "codebookApp/Codebook_RMD/Data/Data.csv", row.names = FALSE)
   }
 }
 
@@ -81,16 +81,14 @@ saveData <- function(data, shiny = FALSE, pull = FALSE, ...) {
 
 loadSavedData <- function(shiny = FALSE) {
   if (shiny == TRUE) {
+    blockMap <<- read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv"))
+    Data <<- read.csv(get_resource_path("Codebook_RMD", "Data", "Data.csv"))
+    responseKey <<- read.csv(get_resource_path("Codebook_RMD", "Data", "responseKey.csv"))
+  }
+  if (shiny == FALSE) {
     blockMap <<- read.csv("Codebook_RMD/Data/blockMap.csv")
     Data <<- read.csv("Codebook_RMD/Data/Data.csv")
     responseKey <<- read.csv("Codebook_RMD/Data/responseKey.csv")
   }
-
-  if (shiny == FALSE) {
-    blockMap <<- read.csv("codebookApp/Codebook_RMD/Data/blockMap.csv")
-    Data <<- read.csv("codebookApp/Codebook_RMD/Data/Data.csv")
-    responseKey <<- read.csv("codebookApp/Codebook_RMD/Data/responseKey.csv")
-  }
   return(blockMap)
 }
-

@@ -224,9 +224,9 @@ parseJsonSpec <- function(filepath) {
     blockMap$Survey <- blockMap$Survey.LongName
   }
 
-  write.csv(blockMap,     "Codebook_RMD/Data/blockMap.csv")
-  write.csv(responseKey,  "Codebook_RMD/Data/responseKey.csv")
-  write.csv(Data,         "Codebook_RMD/Data/Data.csv")
+  write.csv(blockMap,     get_resource_path("Codebook_RMD", "Data", "blockMap.csv"))
+  write.csv(responseKey,  get_resource_path("Codebook_RMD", "Data", "responseKey.csv"))
+  write.csv(Data,         get_resource_path("Codebook_RMD", "Data", "Data.csv"))
   #list(Data = Data, blockMap = blockMap, responseKey = responseKey)
 
   invisible(NULL)

@@ -74,7 +74,7 @@ describeByItem <- function(out2, thisData, blockMap, responseKey) {
       out2 <- paste(
         out2,
         knit_expand(
-          file = paste0("DataTypes_Item/ItemPage.Rmd"),
+          file = get_resource_path("Codebook_RMD", "DataTypes_Item", "ItemPage.Rmd"),
           question_text = itemBlock$Question.Text,
           item_id = itemBlock$Item.ID,
           question_type = itemBlock$Question.Type.Display.Name,
@@ -90,7 +90,7 @@ describeByItem <- function(out2, thisData, blockMap, responseKey) {
       out2 <- paste(
         out2,
         knit_expand(
-          file = paste0("DataTypes_Item/", question_type_no_space, ".Rmd"),
+          file = get_resource_path("Codebook_RMD", "DataTypes_Item", paste0(question_type_no_space, ".Rmd")),
           question_text = itemBlock$Question.Text,
           item_id = itemBlock$Item.ID,
           question_type = itemBlock$Question.Type.Display.Name,

@@ -23,9 +23,9 @@ generateCodebook <- function(title = "This is a temp default title, please set",
                               funding = "This is a temp default funding source, please set",
                               abstract = "This is a temp default abstract, please set",
                               summary = "This is a temp default summary, please set",
-                              thisData = read.csv("Codebook_RMD/Data/Data.csv"),
-                              blockMap = read.csv("Codebook_RMD/Data/blockMap.csv"),
-                              responseKey = read.csv("Codebook_RMD/Data/responseKey.csv"),
+                              thisData = read.csv(get_resource_path("Codebook_RMD", "Data", "Data.csv")),
+                              blockMap = read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv")),
+                              responseKey = read.csv(get_resource_path("Codebook_RMD", "Data", "responseKey.csv")),
                               include_practice_items = FALSE,
                               include_html = FALSE,
                               print_blockmap_missing = FALSE,
@@ -206,7 +206,7 @@ generateCodebook <- function(title = "This is a temp default title, please set",
 
   # Shiny Data Type selection
     # Grab all data types
-    dataTypes <- list.files(path = "Codebook_RMD/DataTypes")
+    dataTypes <- list.files(path = get_resource_path("Codebook_RMD", "DataTypes"))
     dataTypes <- sub("\\.Rmd$", "", dataTypes)
     # Grab user selected datatypes
     # If using app, get user selected, otherwise, use all available in DataTypes folder
@@ -231,7 +231,7 @@ generateCodebook <- function(title = "This is a temp default title, please set",
     # Clean out spaces
     data_type_no_space <- gsub(" ", "", data_type)
     # Check for rmd files
-    if (!file.exists(paste0("Codebook_RMD/DataTypes/", data_type_no_space, ".Rmd"))) {
+    if (!file.exists(file.path(get_resource_path("Codebook_RMD", "DataTypes"), paste0(data_type_no_space, ".Rmd")))) {
       # If does not exists add to vector
       unsupported_data_types <- c(unsupported_data_types, data_type)
     }
@@ -282,10 +282,10 @@ generateCodebook <- function(title = "This is a temp default title, please set",
 
   # Render codebook
   # Save temp workspace
-  save.image(file = "Codebook_RMD/temp_workspace.RData")
+  save.image(file = get_resource_path("Codebook_RMD", "temp_workspace.RData"))
   # Render codebook
   rmarkdown::render(
-    input = "Codebook_RMD/Highest-level-template.Rmd",
+    input = get_resource_path("Codebook_RMD", "Highest-level-template.Rmd"),
     output_file = output_file,
     params = list(
       title = title,
@@ -311,6 +311,6 @@ generateCodebook <- function(title = "This is a temp default title, please set",
     )
   )
   # Remove temp workspace
-  file.remove("Codebook_RMD/temp_workspace.RData")
+  file.remove(get_resource_path("Codebook_RMD", "temp_workspace.RData"))
 
 }
