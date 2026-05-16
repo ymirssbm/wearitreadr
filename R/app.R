@@ -358,7 +358,6 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
 #' @importFrom shinyTree shinyTree
 #' @importFrom dotenv load_dot_env
 #' @export
-
 wearitreadr <- function() {
   library(shiny)
   library(shinyTree)
@@ -367,13 +366,23 @@ wearitreadr <- function() {
   library(jsonlite)
   library(reticulate)
   library(dotenv)
-  if (file.exists(".env")) {
-    load_dot_env(".env")
+
+  # Get the installed package directory
+  pkg_dir <- system.file(package = "WearItReadR")
+
+  if (pkg_dir == "") {
+    stop("Could not find WearItReadR package installation.")
   }
-  rm(list = ls())
-  #devtools::load_all(recompile = FALSE)
-  #devtools::document()
-  addResourcePath("codebook", "Codebook_RMD")
+
+  # Check for .env
+  env_path <- file.path(pkg_dir, ".env")
+  if (file.exists(env_path)) {
+    load_dot_env(env_path)
+  }
+
+  # Use installed package paths
+  addResourcePath("codebook", file.path(pkg_dir, "Codebook_RMD"))
+  addResourcePath("www", file.path(pkg_dir, "www"))
 
   shinyApp(ui = launch_app_ui(), server = launch_app_server)
 }
