@@ -6,6 +6,12 @@ from langchain_openai import ChatOpenAI
 import pandas as pd
 
 def generate_ai_study(url, api_token, query):
+    schema_path = os.getenv('SCHEMA_PATH', 'schema')
+    output_path = os.getenv('OUTPUT_PATH', 'Codebook_RMD/Data')
+    
+    print(f"Python received SCHEMA_PATH: {schema_path}")
+    print(f"Python received OUTPUT_PATH: {output_path}")
+    print(f"Looking for schema at: {os.path.join(schema_path, '0.1.0', 'study.json')}")
     """
     Generates a synthetic study following wearIts JSON spec using kimi.
     

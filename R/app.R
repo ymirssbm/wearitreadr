@@ -272,11 +272,21 @@ launch_app_server <- function(input, output, session) {
     tryCatch({
       req(input$AI_URL, input$AIApiToken, input$aiGenerationPrompt)
       showNotification("All requirements avail...", type = "message")
-      print("Req passed")
 
       schema_dir <- file.path(pkg_dir, "schema")
+      output_dir <- file.path(codebook_dir, "Data")
+
       Sys.setenv(SCHEMA_PATH = schema_dir)
-      Sys.setenv(OUTPUT_PATH = file.path(codebook_dir, "Data"))
+      Sys.setenv(OUTPUT_PATH = output_dir)
+
+      # Debug: verify paths
+      cat("Package dir:", pkg_dir, "\n")
+      cat("Schema dir:", schema_dir, "\n")
+      cat("Schema file exists:", file.exists(file.path(schema_dir, "0.1.0", "study.json")), "\n")
+      cat("SCHEMA_PATH env:", Sys.getenv("SCHEMA_PATH"), "\n")
+      cat("OUTPUT_PATH env:", Sys.getenv("OUTPUT_PATH"), "\n")
+
+      print("Req passed")
 
       py_run_string(
         "import importlib
