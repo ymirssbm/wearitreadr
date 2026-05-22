@@ -1,15 +1,15 @@
 {
-  "Study.Name": "Longitudinal Recovery Processes and Daily Experience Study",
-  "authors": "Dr. Sarah Johnson, Dr. Michael Chen, Dr. Lisa Rodriguez, Dr. James Thompson",
-  "funding": "NIH National Institute on Drug Abuse Grant R01DA045678; Substance Abuse and Mental Health Services Administration Grant TI123456",
-  "abstract": "This intensive longitudinal study examines the daily processes and contextual factors associated with substance use recovery. Participants completed a comprehensive baseline assessment followed by ecological momentary assessments (EMA) 10 times daily for 30 days. The study investigates temporal patterns of craving, affect, stress, coping strategies, social context, and substance use in real-world settings to identify proximal predictors of relapse and recovery milestones.",
+  "Study.Name": "Mediterranean Diet Intervention for Cardiovascular Outcomes in Type 2 Diabetes (MED-CVD)",
+  "authors": "Maria Rodriguez, MD, PhD; James Chen, MD, MPH; Sarah Johnson, RD, PhD; Robert Williams, MD; Lisa Park, MD, MPH",
+  "funding": "National Heart, Lung, and Blood Institute (NHLBI) Grant R01HL145678; National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) Grant R01DK098765",
+  "abstract": "This multicenter randomized controlled trial examined the effect of a structured Mediterranean diet intervention versus standard care on cardiovascular events in 1,200 adults aged 50-75 with Type 2 diabetes across 12 outpatient clinical centers. Participants were randomized 1:1 to receive intensive Mediterranean diet counseling and meal provision versus standard diabetes education. The primary outcome was a composite of myocardial infarction, stroke, and cardiovascular death over 3 years of follow-up. The study demonstrated a 25% relative risk reduction in the primary composite endpoint in the intervention group compared to standard care (adjusted for baseline HbA1c, BMI, smoking status, and statin use). Secondary outcomes included individual cardiovascular events, HbA1c changes, and dietary adherence measured at 6-month intervals.",
   "burst": [
     {
       "burstID": 1,
       "Timing.Type": "Discrete",
       "survey": [
         {
-          "Survey.LongName": "Baseline Assessment",
+          "Survey.LongName": "Baseline Assessment and Randomization",
           "Survey.ShortName": "BL",
           "Scheduling.Info": {
             "Timing.Info": {
@@ -24,25 +24,47 @@
             "Window.Info": {
               "window.length": [
                 {
-                  "value": 7,
+                  "value": 1,
                   "unit": "days"
                 }
               ],
               "random": false,
-              "Trigger.Info": {
-                "Conditional.Source": "enrollment_date",
-                "Conditional.Threshold": "immediate",
-                "Conditional.Type": "1"
-              }
+              "Trigger.Info": {}
             }
           },
           "question": [
             {
-              "Item.ID": "bl_age",
-              "Question.ID": "baseline_age",
-              "Question.Long.Name": "Participant Age",
-              "Question.Text": "What is your current age (in years)?",
-              "Question.Description": "Age in years at time of study enrollment",
+              "Item.ID": "item_rand_group",
+              "Question.ID": "randomization_group",
+              "Question.Text": "Randomization group assignment",
+              "Question.Description": "Treatment allocation to Mediterranean diet intervention or standard care control",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "1",
+                  "definition": "Mediterranean Diet Intervention"
+                },
+                {
+                  "value": "2",
+                  "definition": "Standard Care Control"
+                }
+              ],
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              }
+            },
+            {
+              "Item.ID": "item_age",
+              "Question.ID": "age_baseline",
+              "Question.Text": "Age at enrollment (years)",
+              "Question.Description": "Participant age in years, inclusion criteria 50-75",
               "Question.Type.Display.Name": "Free Response",
               "Item.Type": "Question",
               "Data.Type": "integer",
@@ -57,11 +79,46 @@
               }
             },
             {
-              "Item.ID": "bl_gender",
-              "Question.ID": "baseline_gender",
-              "Question.Long.Name": "Gender Identity",
-              "Question.Text": "What is your current gender identity?",
-              "Question.Description": "Self-identified gender",
+              "Item.ID": "item_hba1c_bl",
+              "Question.ID": "hba1c_baseline",
+              "Question.Text": "Baseline HbA1c level (%)",
+              "Question.Description": "Glycated hemoglobin measured at baseline, primary covariate for adjustment",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Data.Type": "numeric",
+              "Parent": null,
+              "responseKey": [],
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              }
+            },
+            {
+              "Item.ID": "item_bmi_bl",
+              "Question.ID": "bmi_baseline",
+              "Question.Text": "Baseline Body Mass Index (kg/m\u00b2)",
+              "Question.Description": "Calculated from measured height and weight at baseline",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Data.Type": "numeric",
+              "Parent": null,
+              "responseKey": [],
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              }
+            },
+            {
+              "Item.ID": "item_smoking_bl",
+              "Question.ID": "smoking_status",
+              "Question.Text": "Current smoking status",
+              "Question.Description": "Smoking status for covariate adjustment and stratification",
               "Question.Type.Display.Name": "Multiple Choice",
               "Item.Type": "Question",
               "Data.Type": "character",
@@ -69,343 +126,30 @@
               "responseKey": [
                 {
                   "value": "1",
-                  "definition": "Male"
+                  "definition": "Never smoker"
                 },
                 {
                   "value": "2",
-                  "definition": "Female"
+                  "definition": "Former smoker"
                 },
                 {
                   "value": "3",
-                  "definition": "Non-binary"
-                },
-                {
-                  "value": "4",
-                  "definition": "Transgender"
-                },
-                {
-                  "value": "5",
-                  "definition": "Other"
-                },
-                {
-                  "value": "6",
-                  "definition": "Prefer not to say"
+                  "definition": "Current smoker"
                 }
               ],
               "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
+                "Conditional.Child.Item.ID": "item_cpd_bl",
                 "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
+                "Conditional.Master.Item.ID": "item_smoking_bl",
+                "Conditional.Threshold": "3",
+                "Conditional.Type": "1"
               }
             },
             {
-              "Item.ID": "bl_race",
-              "Question.ID": "baseline_race",
-              "Question.Long.Name": "Race and Ethnicity",
-              "Question.Text": "Which of the following best describes your racial and ethnic background? (Select all that apply)",
-              "Question.Description": "Self-identified race and ethnicity categories",
-              "Question.Type.Display.Name": "Multiple Select",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "American Indian or Alaska Native"
-                },
-                {
-                  "value": "2",
-                  "definition": "Asian"
-                },
-                {
-                  "value": "3",
-                  "definition": "Black or African American"
-                },
-                {
-                  "value": "4",
-                  "definition": "Hispanic or Latino"
-                },
-                {
-                  "value": "5",
-                  "definition": "Native Hawaiian or Pacific Islander"
-                },
-                {
-                  "value": "6",
-                  "definition": "White"
-                },
-                {
-                  "value": "7",
-                  "definition": "Other"
-                },
-                {
-                  "value": "8",
-                  "definition": "Prefer not to say"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "bl_education",
-              "Question.ID": "baseline_education",
-              "Question.Long.Name": "Educational Attainment",
-              "Question.Text": "What is the highest level of education you have completed?",
-              "Question.Description": "Highest completed education level",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "Less than high school"
-                },
-                {
-                  "value": "2",
-                  "definition": "High school diploma or GED"
-                },
-                {
-                  "value": "3",
-                  "definition": "Some college"
-                },
-                {
-                  "value": "4",
-                  "definition": "Associate degree"
-                },
-                {
-                  "value": "5",
-                  "definition": "Bachelor's degree"
-                },
-                {
-                  "value": "6",
-                  "definition": "Graduate or professional degree"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "bl_employment",
-              "Question.ID": "baseline_employment",
-              "Question.Long.Name": "Employment Status",
-              "Question.Text": "Which of the following best describes your current employment status?",
-              "Question.Description": "Current employment situation",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "Employed full-time"
-                },
-                {
-                  "value": "2",
-                  "definition": "Employed part-time"
-                },
-                {
-                  "value": "3",
-                  "definition": "Self-employed"
-                },
-                {
-                  "value": "4",
-                  "definition": "Unemployed, looking for work"
-                },
-                {
-                  "value": "5",
-                  "definition": "Unable to work"
-                },
-                {
-                  "value": "6",
-                  "definition": "Retired"
-                },
-                {
-                  "value": "7",
-                  "definition": "Student"
-                },
-                {
-                  "value": "8",
-                  "definition": "Homemaker"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "bl_income",
-              "Question.ID": "baseline_income",
-              "Question.Long.Name": "Annual Household Income",
-              "Question.Text": "What is your approximate annual household income before taxes?",
-              "Question.Description": "Annual income level",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "Less than $10,000"
-                },
-                {
-                  "value": "2",
-                  "definition": "$10,000 - $24,999"
-                },
-                {
-                  "value": "3",
-                  "definition": "$25,000 - $49,999"
-                },
-                {
-                  "value": "4",
-                  "definition": "$50,000 - $74,999"
-                },
-                {
-                  "value": "5",
-                  "definition": "$75,000 - $99,999"
-                },
-                {
-                  "value": "6",
-                  "definition": "$100,000 or more"
-                },
-                {
-                  "value": "7",
-                  "definition": "Prefer not to say"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "bl_housing",
-              "Question.ID": "baseline_housing",
-              "Question.Long.Name": "Housing Stability",
-              "Question.Text": "Which of the following best describes your current housing situation?",
-              "Question.Description": "Current housing stability and type",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "Own home or apartment"
-                },
-                {
-                  "value": "2",
-                  "definition": "Rent home or apartment"
-                },
-                {
-                  "value": "3",
-                  "definition": "Stay with family or friends"
-                },
-                {
-                  "value": "4",
-                  "definition": "Residential treatment facility"
-                },
-                {
-                  "value": "5",
-                  "definition": "Sober living house"
-                },
-                {
-                  "value": "6",
-                  "definition": "Shelter or transitional housing"
-                },
-                {
-                  "value": "7",
-                  "definition": "No stable housing"
-                },
-                {
-                  "value": "8",
-                  "definition": "Other"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "bl_primary_substance",
-              "Question.ID": "baseline_primary_substance",
-              "Question.Long.Name": "Primary Substance of Concern",
-              "Question.Text": "Which substance do you consider your primary substance of concern?",
-              "Question.Description": "Primary drug of choice or problematic substance",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "Alcohol"
-                },
-                {
-                  "value": "2",
-                  "definition": "Cannabis"
-                },
-                {
-                  "value": "3",
-                  "definition": "Opioids (heroin, prescription painkillers)"
-                },
-                {
-                  "value": "4",
-                  "definition": "Cocaine or crack"
-                },
-                {
-                  "value": "5",
-                  "definition": "Methamphetamine or other stimulants"
-                },
-                {
-                  "value": "6",
-                  "definition": "Benzodiazepines"
-                },
-                {
-                  "value": "7",
-                  "definition": "Multiple substances equally"
-                },
-                {
-                  "value": "8",
-                  "definition": "Other"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "bl_age_first_use",
-              "Question.ID": "baseline_age_first_use",
-              "Question.Long.Name": "Age of First Use",
-              "Question.Text": "How old were you when you first used your primary substance?",
-              "Question.Description": "Age at first use of primary substance",
+              "Item.ID": "item_cpd_bl",
+              "Question.ID": "cigarettes_per_day",
+              "Question.Text": "If current smoker, average cigarettes per day",
+              "Question.Description": "Quantify smoking intensity for current smokers only",
               "Question.Type.Display.Name": "Free Response",
               "Item.Type": "Question",
               "Data.Type": "integer",
@@ -420,117 +164,22 @@
               }
             },
             {
-              "Item.ID": "bl_treatment_episodes",
-              "Question.ID": "baseline_treatment_episodes",
-              "Question.Long.Name": "Previous Treatment Episodes",
-              "Question.Text": "How many times have you received formal substance use treatment (including detox, residential, outpatient)?",
-              "Question.Description": "Number of prior treatment episodes",
-              "Question.Type.Display.Name": "Free Response",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "bl_longest_abstinence",
-              "Question.ID": "baseline_longest_abstinence",
-              "Question.Long.Name": "Longest Period of Abstinence",
-              "Question.Text": "What is the longest period of time (in months) that you have been completely abstinent from all substances since you started using regularly?",
-              "Question.Description": "Longest duration of complete abstinence in months",
-              "Question.Type.Display.Name": "Free Response",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "bl_mental_health",
-              "Question.ID": "baseline_mental_health",
-              "Question.Long.Name": "Mental Health Diagnoses",
-              "Question.Text": "Have you ever been diagnosed with any of the following mental health conditions? (Select all that apply)",
-              "Question.Description": "Comorbid mental health diagnoses",
-              "Question.Type.Display.Name": "Multiple Select",
+              "Item.ID": "item_statin_bl",
+              "Question.ID": "statin_use",
+              "Question.Text": "Current statin medication use",
+              "Question.Description": "Baseline statin use for covariate adjustment",
+              "Question.Type.Display.Name": "Multiple Choice",
               "Item.Type": "Question",
               "Data.Type": "character",
               "Parent": null,
               "responseKey": [
                 {
                   "value": "1",
-                  "definition": "Depression"
+                  "definition": "Yes"
                 },
-                {
-                  "value": "2",
-                  "definition": "Anxiety disorder"
-                },
-                {
-                  "value": "3",
-                  "definition": "Bipolar disorder"
-                },
-                {
-                  "value": "4",
-                  "definition": "PTSD"
-                },
-                {
-                  "value": "5",
-                  "definition": "ADHD"
-                },
-                {
-                  "value": "6",
-                  "definition": "Schizophrenia or psychotic disorder"
-                },
-                {
-                  "value": "7",
-                  "definition": "None"
-                },
-                {
-                  "value": "8",
-                  "definition": "Other"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "bl_social_support",
-              "Question.ID": "baseline_social_support",
-              "Question.Long.Name": "Perceived Social Support",
-              "Question.Text": "Overall, how satisfied are you with the social support you receive from friends and family?",
-              "Question.Description": "General perception of social support availability",
-              "Question.Type.Display.Name": "Slider",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [
                 {
                   "value": "0",
-                  "definition": "Very dissatisfied"
-                },
-                {
-                  "value": "50",
-                  "definition": "Neutral"
-                },
-                {
-                  "value": "100",
-                  "definition": "Very satisfied"
+                  "definition": "No"
                 }
               ],
               "Conditional.Info": {
@@ -544,13 +193,13 @@
           ]
         },
         {
-          "Survey.LongName": "Daily Experience Assessment",
-          "Survey.ShortName": "EMA",
+          "Survey.LongName": "Baseline Clinical Site Information",
+          "Survey.ShortName": "BL-Site",
           "Scheduling.Info": {
             "Timing.Info": {
               "offset": [
                 {
-                  "value": 1,
+                  "value": 0,
                   "unit": "days"
                 }
               ],
@@ -559,53 +208,36 @@
             "Window.Info": {
               "window.length": [
                 {
-                  "value": 84,
-                  "unit": "minutes"
+                  "value": 1,
+                  "unit": "days"
                 }
               ],
-              "random": true,
+              "random": false,
               "Trigger.Info": {}
             }
           },
           "question": [
             {
-              "Item.ID": "ema_location",
-              "Question.ID": "daily_location",
-              "Question.Long.Name": "Current Location",
-              "Question.Text": "Where are you right now?",
-              "Question.Description": "Current physical location of participant",
+              "Item.ID": "item_site_id",
+              "Question.ID": "clinical_site",
+              "Question.Text": "Clinical site identifier",
+              "Question.Description": "Multicenter site ID (1-12)",
               "Question.Type.Display.Name": "Multiple Choice",
               "Item.Type": "Question",
               "Data.Type": "character",
               "Parent": null,
               "responseKey": [
                 {
-                  "value": "1",
-                  "definition": "Home"
+                  "value": "01",
+                  "definition": "Site 1 - Boston"
                 },
                 {
-                  "value": "2",
-                  "definition": "Work or school"
+                  "value": "02",
+                  "definition": "Site 2 - Chicago"
                 },
                 {
-                  "value": "3",
-                  "definition": "Someone else's home"
-                },
-                {
-                  "value": "4",
-                  "definition": "Outdoors or public place"
-                },
-                {
-                  "value": "5",
-                  "definition": "Bar or club"
-                },
-                {
-                  "value": "6",
-                  "definition": "Treatment or recovery center"
-                },
-                {
-                  "value": "7",
-                  "definition": "Other"
+                  "value": "03",
+                  "definition": "Site 3 - Houston"
                 }
               ],
               "Conditional.Info": {
@@ -615,337 +247,45 @@
                 "Conditional.Threshold": null,
                 "Conditional.Type": null
               }
-            },
-            {
-              "Item.ID": "ema_social",
-              "Question.ID": "daily_social_context",
-              "Question.Long.Name": "Social Context",
-              "Question.Text": "Who are you currently with? (Select all that apply)",
-              "Question.Description": "Current social companions",
-              "Question.Type.Display.Name": "Multiple Select",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "burstID": 2,
+      "Timing.Type": "Discrete",
+      "survey": [
+        {
+          "Survey.LongName": "18-Month Follow-up Assessment",
+          "Survey.ShortName": "FU18",
+          "Scheduling.Info": {
+            "Timing.Info": {
+              "offset": [
                 {
-                  "value": "1",
-                  "definition": "Alone"
-                },
-                {
-                  "value": "2",
-                  "definition": "Family members"
-                },
-                {
-                  "value": "3",
-                  "definition": "Friends"
-                },
-                {
-                  "value": "4",
-                  "definition": "Co-workers or classmates"
-                },
-                {
-                  "value": "5",
-                  "definition": "Counselor or sponsor"
-                },
-                {
-                  "value": "6",
-                  "definition": "Strangers"
-                },
-                {
-                  "value": "7",
-                  "definition": "People using substances"
+                  "value": 18,
+                  "unit": "months"
                 }
               ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
+              "children": []
             },
-            {
-              "Item.ID": "ema_craving",
-              "Question.ID": "daily_craving",
-              "Question.Long.Name": "Current Craving Intensity",
-              "Question.Text": "Right now, how strong is your urge or craving to use your primary substance?",
-              "Question.Description": "Real-time assessment of substance craving intensity",
-              "Question.Type.Display.Name": "Slider",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [
+            "Window.Info": {
+              "window.length": [
                 {
-                  "value": "0",
-                  "definition": "No craving at all"
-                },
-                {
-                  "value": "50",
-                  "definition": "Moderate craving"
-                },
-                {
-                  "value": "100",
-                  "definition": "Extremely strong craving"
+                  "value": 4,
+                  "unit": "weeks"
                 }
               ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
+              "random": false,
+              "Trigger.Info": {}
+            }
+          },
+          "question": [
             {
-              "Item.ID": "ema_happy",
-              "Question.ID": "daily_positive_happy",
-              "Question.Long.Name": "Positive Affect - Happy",
-              "Question.Text": "Right now, how happy do you feel?",
-              "Question.Description": "Current level of happiness",
-              "Question.Type.Display.Name": "Slider",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "Not at all"
-                },
-                {
-                  "value": "50",
-                  "definition": "Moderately"
-                },
-                {
-                  "value": "100",
-                  "definition": "Extremely"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "ema_content",
-              "Question.ID": "daily_positive_content",
-              "Question.Long.Name": "Positive Affect - Content",
-              "Question.Text": "Right now, how content or peaceful do you feel?",
-              "Question.Description": "Current level of contentment",
-              "Question.Type.Display.Name": "Slider",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "Not at all"
-                },
-                {
-                  "value": "50",
-                  "definition": "Moderately"
-                },
-                {
-                  "value": "100",
-                  "definition": "Extremely"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "ema_anxious",
-              "Question.ID": "daily_negative_anxious",
-              "Question.Long.Name": "Negative Affect - Anxious",
-              "Question.Text": "Right now, how anxious or nervous do you feel?",
-              "Question.Description": "Current level of anxiety",
-              "Question.Type.Display.Name": "Slider",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "Not at all"
-                },
-                {
-                  "value": "50",
-                  "definition": "Moderately"
-                },
-                {
-                  "value": "100",
-                  "definition": "Extremely"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "ema_sad",
-              "Question.ID": "daily_negative_sad",
-              "Question.Long.Name": "Negative Affect - Sad",
-              "Question.Text": "Right now, how sad or depressed do you feel?",
-              "Question.Description": "Current level of sadness",
-              "Question.Type.Display.Name": "Slider",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "Not at all"
-                },
-                {
-                  "value": "50",
-                  "definition": "Moderately"
-                },
-                {
-                  "value": "100",
-                  "definition": "Extremely"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "ema_stress",
-              "Question.ID": "daily_stress",
-              "Question.Long.Name": "Current Stress Level",
-              "Question.Text": "Right now, how stressed do you feel?",
-              "Question.Description": "Current perceived stress level",
-              "Question.Type.Display.Name": "Slider",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "Not at all stressed"
-                },
-                {
-                  "value": "50",
-                  "definition": "Moderately stressed"
-                },
-                {
-                  "value": "100",
-                  "definition": "Extremely stressed"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "ema_self_efficacy",
-              "Question.ID": "daily_self_efficacy",
-              "Question.Long.Name": "Confidence to Resist Use",
-              "Question.Text": "Right now, how confident are you that you could resist using your primary substance if it were available?",
-              "Question.Description": "Current self-efficacy for resisting substance use",
-              "Question.Type.Display.Name": "Slider",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "Not at all confident"
-                },
-                {
-                  "value": "50",
-                  "definition": "Moderately confident"
-                },
-                {
-                  "value": "100",
-                  "definition": "Extremely confident"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "ema_coping",
-              "Question.ID": "daily_coping",
-              "Question.Long.Name": "Coping Strategies Used",
-              "Question.Text": "Since the last prompt, which of the following coping strategies have you used? (Select all that apply)",
-              "Question.Description": "Coping strategies used since last assessment",
-              "Question.Type.Display.Name": "Multiple Select",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "Prayer or meditation"
-                },
-                {
-                  "value": "2",
-                  "definition": "Exercise or physical activity"
-                },
-                {
-                  "value": "3",
-                  "definition": "Talked to friend or family"
-                },
-                {
-                  "value": "4",
-                  "definition": "Talked to sponsor or counselor"
-                },
-                {
-                  "value": "5",
-                  "definition": "Distraction (TV, music, reading)"
-                },
-                {
-                  "value": "6",
-                  "definition": "Deep breathing or relaxation"
-                },
-                {
-                  "value": "7",
-                  "definition": "Used substances"
-                },
-                {
-                  "value": "8",
-                  "definition": "None of the above"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "ema_substance_use",
-              "Question.ID": "daily_substance_use",
-              "Question.Long.Name": "Substance Use Since Last Prompt",
-              "Question.Text": "Since the last prompt, have you used any substances?",
-              "Question.Description": "Substance use since last assessment",
+              "Item.ID": "item_mi_18mo",
+              "Question.ID": "mi_since_baseline",
+              "Question.Text": "Myocardial infarction since baseline",
+              "Question.Description": "Primary outcome component - myocardial infarction adjudicated by clinical events committee",
               "Question.Type.Display.Name": "Multiple Choice",
               "Item.Type": "Question",
               "Data.Type": "character",
@@ -953,23 +293,15 @@
               "responseKey": [
                 {
                   "value": "0",
-                  "definition": "No substance use"
+                  "definition": "No MI"
                 },
                 {
                   "value": "1",
-                  "definition": "Alcohol only"
+                  "definition": "Non-fatal MI"
                 },
                 {
                   "value": "2",
-                  "definition": "Primary substance only"
-                },
-                {
-                  "value": "3",
-                  "definition": "Other substances"
-                },
-                {
-                  "value": "4",
-                  "definition": "Multiple substances"
+                  "definition": "Fatal MI"
                 }
               ],
               "Conditional.Info": {
@@ -981,11 +313,72 @@
               }
             },
             {
-              "Item.ID": "ema_sleep",
-              "Question.ID": "daily_sleep_quality",
-              "Question.Long.Name": "Sleep Quality Last Night",
-              "Question.Text": "How would you rate the quality of your sleep last night?",
-              "Question.Description": "Retrospective rating of previous night's sleep",
+              "Item.ID": "item_stroke_18mo",
+              "Question.ID": "stroke_since_baseline",
+              "Question.Text": "Stroke since baseline",
+              "Question.Description": "Primary outcome component - stroke adjudicated by clinical events committee",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No stroke"
+                },
+                {
+                  "value": "1",
+                  "definition": "Ischemic stroke"
+                },
+                {
+                  "value": "2",
+                  "definition": "Hemorrhagic stroke"
+                },
+                {
+                  "value": "3",
+                  "definition": "Fatal stroke"
+                }
+              ],
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              }
+            },
+            {
+              "Item.ID": "item_cvdeath_18mo",
+              "Question.ID": "cv_death",
+              "Question.Text": "Cardiovascular death since baseline",
+              "Question.Description": "Primary outcome component - CV death adjudicated by clinical events committee",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No"
+                },
+                {
+                  "value": "1",
+                  "definition": "Yes"
+                }
+              ],
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              }
+            },
+            {
+              "Item.ID": "item_adherence_18mo",
+              "Question.ID": "diet_adherence_score",
+              "Question.Text": "Mediterranean diet adherence score (0-17)",
+              "Question.Description": "14-item Mediterranean Diet Assessment Tool score, higher indicates better adherence",
               "Question.Type.Display.Name": "Slider",
               "Item.Type": "Question",
               "Data.Type": "integer",
@@ -993,17 +386,157 @@
               "responseKey": [
                 {
                   "value": "0",
-                  "definition": "Very poor"
+                  "definition": "No adherence"
                 },
                 {
-                  "value": "50",
-                  "definition": "Fair"
-                },
-                {
-                  "value": "100",
-                  "definition": "Very good"
+                  "value": "17",
+                  "definition": "Maximum adherence"
                 }
               ],
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "burstID": 3,
+      "Timing.Type": "Discrete",
+      "survey": [
+        {
+          "Survey.LongName": "36-Month Final Assessment",
+          "Survey.ShortName": "FU36",
+          "Scheduling.Info": {
+            "Timing.Info": {
+              "offset": [
+                {
+                  "value": 36,
+                  "unit": "months"
+                }
+              ],
+              "children": []
+            },
+            "Window.Info": {
+              "window.length": [
+                {
+                  "value": 4,
+                  "unit": "weeks"
+                }
+              ],
+              "random": false,
+              "Trigger.Info": {}
+            }
+          },
+          "question": [
+            {
+              "Item.ID": "item_mi_36mo",
+              "Question.ID": "mi_final",
+              "Question.Text": "Myocardial infarction since last assessment",
+              "Question.Description": "Final assessment for primary outcome - MI",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No MI"
+                },
+                {
+                  "value": "1",
+                  "definition": "Non-fatal MI"
+                },
+                {
+                  "value": "2",
+                  "definition": "Fatal MI"
+                }
+              ],
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              }
+            },
+            {
+              "Item.ID": "item_stroke_36mo",
+              "Question.ID": "stroke_final",
+              "Question.Text": "Stroke since last assessment",
+              "Question.Description": "Final assessment for primary outcome - stroke",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No stroke"
+                },
+                {
+                  "value": "1",
+                  "definition": "Ischemic stroke"
+                },
+                {
+                  "value": "2",
+                  "definition": "Hemorrhagic stroke"
+                },
+                {
+                  "value": "3",
+                  "definition": "Fatal stroke"
+                }
+              ],
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              }
+            },
+            {
+              "Item.ID": "item_cvdeath_36mo",
+              "Question.ID": "cv_death_final",
+              "Question.Text": "Cardiovascular death since last assessment",
+              "Question.Description": "Final assessment for primary outcome - CV death",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Item.Type": "Question",
+              "Data.Type": "character",
+              "Parent": null,
+              "responseKey": [
+                {
+                  "value": "0",
+                  "definition": "No"
+                },
+                {
+                  "value": "1",
+                  "definition": "Yes"
+                }
+              ],
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              }
+            },
+            {
+              "Item.ID": "item_hba1c_36mo",
+              "Question.ID": "hba1c_final",
+              "Question.Text": "Final HbA1c level (%)",
+              "Question.Description": "36-month HbA1c measurement",
+              "Question.Type.Display.Name": "Free Response",
+              "Item.Type": "Question",
+              "Data.Type": "numeric",
+              "Parent": null,
+              "responseKey": [],
               "Conditional.Info": {
                 "Conditional.Child.Item.ID": null,
                 "Conditional.Fail.Item.ID": null,
@@ -1018,46 +551,76 @@
     }
   ],
   "data": {
-    "Participant.ID": [],
-    "Session.ID": [],
-    "Alert.Times": [],
-    "Survey.Start": [],
-    "Survey.Date.Completed": [],
-    "Survey.Date.Submitted": [],
-    "Timezone": [],
-    "Offset": [],
-    "Network.Type": [],
-    "App.Version": [],
-    "OS": [],
-    "Model": [],
-    "User.Response": [],
-    "Question.ID": [],
-    "External.ID": []
+    "Participant.ID": [
+      "P001",
+      "P002",
+      "P003",
+      "P004",
+      "P005",
+      "P001",
+      "P002"
+    ],
+    "Session.ID": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      3,
+      3
+    ],
+    "Survey.Date.Completed": [
+      "2024-01-15T09:00:00Z",
+      "2024-01-15T09:30:00Z",
+      "2024-01-15T10:00:00Z",
+      "2024-01-15T10:30:00Z",
+      "2024-01-15T11:00:00Z",
+      "2027-01-15T09:00:00Z",
+      "2027-01-15T09:30:00Z"
+    ],
+    "User.Response": [
+      "1",
+      "62",
+      "7.2",
+      "28.5",
+      "3",
+      "0",
+      "0"
+    ],
+    "Question.ID": [
+      "randomization_group",
+      "age_baseline",
+      "hba1c_baseline",
+      "bmi_baseline",
+      "smoking_status",
+      "mi_final",
+      "stroke_final"
+    ]
   },
   "itemMap": {
-    "Item.Text": "Right now, how strong is your urge or craving to use your primary substance?",
-    "Conceptualization": "Substance craving and urge to use",
-    "Modeling.Characteristics": "Typically used as outcome variable or predictor of substance use events; often examined as time-varying covariate in intensive longitudinal models",
-    "Validated": false,
-    "Scale.Name": "Single Item Craving Assessment",
+    "Item.Text": "Mediterranean Diet Intervention versus Standard Care",
+    "Conceptualization": "Dietary intervention assignment for cardiovascular risk reduction in Type 2 diabetes",
+    "Modeling.Characteristics": "Primary exposure variable; analyzed as intent-to-treat with Cox proportional hazards model adjusting for baseline HbA1c, BMI, smoking status, and statin use; demonstrated 25% relative risk reduction in composite CV endpoint",
+    "Validated": true,
+    "Scale.Name": "Mediterranean Diet Intervention",
     "Parent.Scale": "",
     "Sub.Scale": "",
     "scaleOrItem": "item",
-    "Scale.Type": "Visual Analog Scale",
-    "Scoring": "0-100 point scale, higher values indicate greater craving",
+    "Scale.Type": "Binary",
+    "Scoring": "1=Intervention, 2=Control",
     "Reverse.Coded": false,
     "Transformation": "None",
     "Identifying.Info": false,
-    "Data.Type": "numeric",
-    "Time.Stem": "in the last month",
+    "Data.Type": "categorical",
+    "Time.Stem": "baseline randomization",
     "Top.Level.Question": "",
-    "Values": "0-100",
-    "Definition": "0=No craving at all, 50=Moderate craving, 100=Extremely strong craving",
-    "Delivery.Mechanism": "mobile app",
-    "Delivery.Frequency": "10 times daily",
-    "Article.Title": "Real-time assessment of substance use",
-    "Citation": "Shiffman, S., et al. (2008). https://doi.org/example",
-    "notes": "Single item adapted for ecological momentary assessment in recovery populations"
+    "Values": "1,2",
+    "Definition": "1=Mediterranean Diet Intervention (intensive counseling and meal provision), 2=Standard Care Control (usual diabetes education)",
+    "Delivery.Mechanism": "multicenter outpatient clinical trial",
+    "Delivery.Frequency": "baseline only",
+    "Article.Title": "Mediterranean Diet and Cardiovascular Outcomes in Adults with Type 2 Diabetes: A Multicenter Randomized Trial",
+    "Citation": "Rodriguez M, Chen J, Johnson S, et al. (2024). New England Journal of Medicine, 390(12), 1101-1112. https://doi.org/10.1056/NEJMoa2401234",
+    "notes": "1200 participants aged 50-75, 3-year follow-up, 12 clinical centers, primary outcome: composite of MI, stroke, CV death"
   },
   "blockMap": {}
 }

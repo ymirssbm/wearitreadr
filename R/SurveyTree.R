@@ -150,21 +150,42 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
 
   # Change conditional type to the corresponding character rather then numeric
   type_map <- c("=", "<=", ">=", "<", ">", "!=")
-  blockMap$Conditional.Type <- type_map[blockMap$Conditional.Type]
+
+  # Safe conversion
+  result <- sapply(blockMap$Conditional.Type, function(x) {
+    if (is.na(x)) {
+      return(NA_character_)
+    }
+    if (x < 1 || x > length(type_map)) {
+      warning(paste("Invalid Conditional.Type value:", x))
+      return(NA_character_)
+    }
+    return(type_map[x])
+  })
+
+  blockMap$Conditional.Type <- result
 
   # Map Conditional.Threshold to its corresponding definition in response key. If its a slider or multi slider keep as is
-  blockMap$Conditional.Threshold <- mapply(function(threshold, question_id) {
+  blockMap$Conditional.Threshold <- sapply(1:nrow(blockMap), function(i) {
+    threshold <- blockMap$Conditional.Threshold[i]
+    question_id <- blockMap$Question.ID[i]
+
+    # Skip if threshold or question_id is NA
+    if (is.na(threshold) || is.na(question_id)) {
+      return(threshold)
+    }
+
     match_row <- responseKey[
       responseKey$question == question_id &
         responseKey$value == threshold,
     ]
 
     if (nrow(match_row) > 0 && !match_row$type[1] %in% c("Slider", "Multi Slider")) {
-      match_row$definition[1]
+      return(match_row$definition[1])
     } else {
-      threshold
+      return(threshold)
     }
-  }, blockMap$Conditional.Threshold, blockMap$Question.ID)
+  })
 
   # Clean so its only text
   blockMap$Conditional.Threshold <- gsub("[^a-zA-Z ]", "", blockMap$Conditional.Threshold)
