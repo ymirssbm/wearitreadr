@@ -9,14 +9,9 @@
 #' @importFrom utils read.csv
 #' @export
 
-parseBySurvey <- function(shiny = FALSE, survey, all = FALSE) {
+parseBySurvey <- function(survey, all = FALSE) {
 
-  if (shiny==FALSE) {
-    blockMap <- read.csv("Codebook_RMD/Data/blockMap.csv")
-  }
-  if (shiny==TRUE) {
-    blockMap <- read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv"))
-  }
+  blockMap <- read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv"))
 
   # Parse by survey
   if (all == TRUE) {
@@ -35,9 +30,6 @@ parseBySurvey <- function(shiny = FALSE, survey, all = FALSE) {
 
 
 
-
-
-
 #' saveData
 #'
 #'   This is a wrapper on getStudyData that saves it to the data folder
@@ -48,26 +40,17 @@ parseBySurvey <- function(shiny = FALSE, survey, all = FALSE) {
 #' @return Saves data to data folder in codebook rmd
 
 
-saveData <- function(data, shiny = FALSE, pull = FALSE, ...) {
+saveData <- function(data, pull = FALSE, ...) {
 
   if (pull == TRUE) {
     data <- getStudyData(shiny = shiny, ...)
   }
 
+  write.csv(data$questionMap, get_resource_path("Codebook_RMD", "Data", "blockMap.csv"), row.names = FALSE)
+  write.csv(data$responseMap, get_resource_path("Codebook_RMD", "Data", "responseKey.csv"), row.names = FALSE)
+  write.csv(data$surveyCombined, get_resource_path("Codebook_RMD", "Data", "Data.csv"), row.names = FALSE)
 
-  if (shiny == TRUE) {
-    write.csv(data$questionMap, get_resource_path("Codebook_RMD", "Data", "blockMap.csv"), row.names = FALSE)
-    write.csv(data$responseMap, get_resource_path("Codebook_RMD", "Data", "responseKey.csv"), row.names = FALSE)
-    #write.csv(data$surveyData, get_resource_path("Codebook_RMD", "Data", "surveyData.csv"), row.names = FALSE)
-    write.csv(data$surveyCombined, get_resource_path("Codebook_RMD", "Data", "Data.csv"), row.names = FALSE)
-  }
-
-  if (shiny == FALSE) {
-    write.csv(data$questionMap, "Codebook_RMD/Data/blockMap.csv", row.names = FALSE)
-    write.csv(data$responseMap, "Codebook_RMD/Data/responseKey.csv", row.names = FALSE)
-    #write.csv(data$surveyData, "Codebook_RMD/Data/surveyData.csv", row.names = FALSE)
-    write.csv(data$surveyCombined, "Codebook_RMD/Data/Data.csv", row.names = FALSE)
-  }
+  return(invisible(NULL))
 }
 
 
@@ -79,16 +62,10 @@ saveData <- function(data, shiny = FALSE, pull = FALSE, ...) {
 #' @param shiny Boolean indicating whether the user is in the shiny app or not
 #' @return blockMap Data and responseKey in environment
 
-loadSavedData <- function(shiny = FALSE) {
-  if (shiny == TRUE) {
+loadSavedData <- function() {
     blockMap <<- read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv"))
     Data <<- read.csv(get_resource_path("Codebook_RMD", "Data", "Data.csv"))
     responseKey <<- read.csv(get_resource_path("Codebook_RMD", "Data", "responseKey.csv"))
-  }
-  if (shiny == FALSE) {
-    blockMap <<- read.csv("Codebook_RMD/Data/blockMap.csv")
-    Data <<- read.csv("Codebook_RMD/Data/Data.csv")
-    responseKey <<- read.csv("Codebook_RMD/Data/responseKey.csv")
-  }
-  return(blockMap)
+
+  return(invisible(NULL))
 }

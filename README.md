@@ -11,6 +11,7 @@ Simplest way is to load the app.R file in the codebookApp folder
 
 ## Known Issues / To do list
 
+- FIX PATHS (dont need shiny check if I just grab resource path)
 - Fix multiple slider generation
 - Need to be able to specify file name
 - Implement screenshots

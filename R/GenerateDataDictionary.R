@@ -9,7 +9,7 @@
 
 generateDataDictionary <- function(blockMap = read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv")),
                                    responseKey = read.csv(get_resource_path("Codebook_RMD", "Data", "responseKey.csv")),
-                                   ..., shiny = FALSE) {
+                                   ...) {
 
 
   # Missingness codes dont exists yet so initialize it and later bind to blockMap
@@ -39,11 +39,6 @@ generateDataDictionary <- function(blockMap = read.csv(get_resource_path("Codebo
   blockMap <- blockMap[, c("Survey.LongName", "Question.ID", "Question.Text", "Question.Type.Display.Name", "Result.Type", "Missingness.Codes", "Response.Range", "Response.Text")]
   blockMap <- blockMap[rowSums(is.na(blockMap)) != ncol(blockMap), ]
 
-  if (shiny == TRUE) {
-    write.csv(blockMap, get_resource_path("Codebook_RMD", "DataDictionary.csv"), row.names = FALSE)
-  }
+  write.csv(blockMap, get_resource_path("Codebook_RMD", "DataDictionary.csv"), row.names = FALSE)
 
-  if (shiny == FALSE) {
-    write.csv(blockMap, "DataDictionary.csv", row.names = FALSE)
-  }
 }
