@@ -337,12 +337,7 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
   }, fullDataSet)
 
   # Complex unpacking: pull the data and non-data elments from each block and stack'em
-  survey_data <- map_dfr(fullDataSet, \(x){
-    responses <- tryCatch(map_dfr(x$`User Responses`, unlist), error = \(e) NULL)
-    if (is.null(responses) || nrow(responses) == 0) return(NULL)
-    data.frame(data.frame(t(unlist(x[metaNames]))), responses)
-  })  # attempted fix for when no data
-
+  survey_data <- map_dfr(fullDataSet, \(x){data.frame(data.frame(t(unlist(x[metaNames]))), map_dfr(x$`User Responses`,unlist))})
 
   ####################### Changed studyDataSet to survey_data so it has proper name ~ Ethan
 
@@ -462,7 +457,7 @@ processSurveyMeta <- function(study, SurveyKey=list()) {
   # browser()
 
   # Process existing survey key
-  ## Servey header data
+  ## Survey header data
   SurveyInfo <- data.frame()
   if("SurveyInfo" %in% names(SurveyKey)) {
     # Update for appending
@@ -538,10 +533,15 @@ processSurveyMeta <- function(study, SurveyKey=list()) {
         # browser()
         if(!is.null(names(anItem)) && any(startsWith(names(anItem), "Item"))) {
           # This is a block.
-          parent_tree <- rbind.fill(parent_tree, data.frame(Survey=itemInfo$Survey,
-                                                            Item.ID=itemInfo$itemName,
-                                                            Item.Type="Block",
-                                                            Parent=itemInfo$parent))
+          itemOutput <- unlist(anItem, use.names = TRUE)
+          if(is.null(itemOutput) || length(itemOutput) == 0) next
+
+          parent_tree <- rbind.fill(parent_tree, cbind(data.frame(Survey=itemInfo$Survey,
+                                                                  Item.ID=itemInfo$itemName,
+                                                                  Item.Type="Question",
+                                                                  Parent=itemInfo$parent),
+                                                       Column = names(itemOutput),
+                                                       Value = itemOutput))
           for(subItem in names(anItem)) {
             itemQueue$push(list(Survey=SID, itemName=subItem, theItem=anItem[[subItem]],
                                 parent=itemInfo$itemName))
@@ -549,16 +549,14 @@ processSurveyMeta <- function(study, SurveyKey=list()) {
         } else {
           # This is an item
           itemOutput <- unlist(anItem, use.names = TRUE)
-          if(is.null(itemOutput)) itemOutput <- matrix()
-          # browser()
+          if(is.null(itemOutput) || length(itemOutput) == 0 || is.null(names(itemOutput))) next
           parent_tree <- rbind.fill(parent_tree, cbind(data.frame(Survey=itemInfo$Survey,
                                                                   Item.ID=itemInfo$itemName,
                                                                   Item.Type="Question",
                                                                   Parent=itemInfo$parent),
                                                        Column = names(itemOutput),
                                                        Value = itemOutput))
-
-        }
+        } # attempted fix so that I can process Tim's edited requestResults
       }
     }
   }

@@ -147,8 +147,6 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
   # I think I can just do this, this basically just gets rid of drawing a path to nowhere when the survey is done
   flowchart <- flowchart[!is.na(flowchart$to), ]
 
-  backup <- flowchart
-
   # Some blockmap prep
   # Remove anything that isnt text
   blockMap$Question.Text <- gsub("[^a-zA-Z ]", "", blockMap$Question.Text)
@@ -225,7 +223,12 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
       )
     }
   }
+  #browser()
 
+  # Drop duplicated paths
+  lines_vec <- strsplit(flowchart_syntax, "\n")[[1]]
+  lines_vec <- unique(lines_vec)
+  flowchart_syntax <- paste(lines_vec, collapse = "\n")
   # Draw flowchart
   if (shiny) {
     return(flowchart_syntax)
