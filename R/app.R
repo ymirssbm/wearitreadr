@@ -93,7 +93,16 @@ launch_app_ui <- function() {
     chatBox.scrollTop = chatBox.scrollHeight;
   }
 ")),
-
+        # Flow chart download
+        tags$script(HTML("
+  Shiny.addCustomMessageHandler('triggerExport', function(msg) {
+    if (window.exportMermaidPNG) {
+      exportMermaidPNG();
+    } else {
+      alert('Please generate the flowchart first.');
+    }
+  });
+")),
         # Enter key sends msg
         tags$script(HTML("
   $(document).ready(function() {
@@ -300,6 +309,10 @@ launch_app_ui <- function() {
               width = 12,
               status = "primary",
               solidHeader = TRUE,
+              downloadButton("exportPNG", "Export PNG",
+                             style = "background: #3c8dbc; color: white; border: none; border-radius: 8px; padding: 0.5rem 1rem; font-weight: 600; margin-bottom: 10px;"),
+              tags$small("Generate a flowchart before exporting.",
+                         style = "color: #888; margin-left: 10px;"),
               uiOutput("surveyTree")
             )
           )
@@ -585,30 +598,42 @@ launch_app_server <- function(input, output, session) {
     )
   }
 
+  mermaid_code <- reactiveVal(NULL)
+
   observeEvent(input$generateFlowChart, {
     tryCatch({
       req(input$survey)
-
       showNotification("Generating flowchart...", type = "message")
-
       responseKey <- read.csv(file.path(codebook_dir, "Data/responseKey.csv"))
       blockMapParsed(parseBySurvey(survey = input$survey))
-      mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(),
-                                         responseKey = responseKey, shiny = TRUE)
-      output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code) })
-
+      mermaid_code(generateSurveyTree(blockMapParsed = blockMapParsed(),
+                                      responseKey = responseKey, shiny = TRUE))
+      output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code()) })
       showNotification("Flowchart generated successfully!", type = "message")
-
     }, error = function(e) {
-      showNotification(
-        paste("Error generating flowchart:", e$message),
-        type = "error",
-        duration = 10
-      )
+      showNotification(paste("Error generating flowchart:", e$message), type = "error", duration = 10)
       print(paste("Full error details:", e))
       print(traceback())
     })
   })
+
+  output$exportPNG <- downloadHandler(
+    filename = function() { "flowchart.png" },
+    content = function(file) {
+      req(mermaid_code())
+      encoded <- openssl::base64_encode(mermaid_code())
+      encoded <- gsub("\n", "", encoded)          # remove linebreaks
+      encoded <- gsub("\\+", "-", encoded)        # URL-safe base64
+      encoded <- gsub("/", "_", encoded)          # URL-safe base64
+      encoded <- gsub("=", "", encoded)           # remove padding
+      url <- paste0("https://mermaid.ink/img/", encoded)
+      resp <- httr::GET(url)
+      print(httr::status_code(resp))
+      writeBin(httr::content(resp, "raw"), file)
+    },
+    contentType = "image/png"
+  )
+
 
   #---------------------------------------------
   # AI Chatbot Assistant

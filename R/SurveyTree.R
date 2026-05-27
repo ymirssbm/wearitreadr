@@ -55,6 +55,47 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
 
   blockMap <- result
 
+
+  # Sort so conditional children appear after their master
+  master_order <- which(!is.na(blockMap$Conditional.Master.Item.ID))
+  for (i in master_order) {
+    master_id <- paste0("Item ", blockMap$Conditional.Master.Item.ID[i])
+    master_row <- which(blockMap$Item.ID == master_id)
+    if (length(master_row) > 0 && master_row > i) {
+      # Child is above its master — move child to just below master
+      child_row <- blockMap[i, ]
+      blockMap <- blockMap[-i, ]
+      # Recalculate master position after removal
+      master_row <- which(blockMap$Item.ID == master_id)
+      blockMap <- rbind(
+        blockMap[1:master_row, ],
+        child_row,
+        if (master_row < nrow(blockMap)) blockMap[(master_row+1):nrow(blockMap), ] else NULL
+      )
+    }
+  }
+
+  # Sort so conditional fail items appear after the row that references them
+  fail_refs <- which(!is.na(blockMap$Conditional.Fail.Item.ID))
+  for (i in fail_refs) {
+    fail_id <- paste0("Item ", blockMap$Conditional.Fail.Item.ID[i])
+    fail_row <- which(blockMap$Item.ID == fail_id)
+    if (length(fail_row) > 0 && fail_row < i) {
+      # Fail item is above the row referencing it — move it to just below
+      fail_item <- blockMap[fail_row, ]
+      blockMap <- blockMap[-fail_row, ]
+      # Recalculate reference row position after removal
+      i <- which(blockMap$Item.ID == blockMap$Item.ID[i])
+      blockMap <- rbind(
+        blockMap[1:i, ],
+        fail_item,
+        if (i < nrow(blockMap)) blockMap[(i+1):nrow(blockMap), ] else NULL
+      )
+    }
+  }
+
+  blockMap <- blockMap[!duplicated(blockMap[, !colnames(blockMap) %in% "Question.Type.Display.Name"]), ]
+
   blockMap$childTrue  <- NA
   blockMap$parentTrue <- NA
 
@@ -223,15 +264,17 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
       )
     }
   }
-  #browser()
+
 
   # Drop duplicated paths
   lines_vec <- strsplit(flowchart_syntax, "\n")[[1]]
   lines_vec <- unique(lines_vec)
   flowchart_syntax <- paste(lines_vec, collapse = "\n")
+  #browser()
   # Draw flowchart
   if (shiny) {
     return(flowchart_syntax)
+    mermaid(flowchart_syntax)
   } else {
     mermaid(flowchart_syntax)
   }
