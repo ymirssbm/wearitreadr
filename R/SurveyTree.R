@@ -104,16 +104,18 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
 
   # If question, do these 3 checks
 
-  # 1.) If its neither a parent nor a child, draw to the next row
+  # 1.) If its neither a parent nor a child, draw to the next row that isnt a child since childs are only products of parents
   # 2.) If its a parent AT all, regardless of child status, draw to only the conditional (mark its a parent so I can draw conditional step)
-  # 3.) If its a child but not a parent, go to next row that is not a child
+  # 3.) If its a child but not a parent, go to next row that is not a child starting from the conditional master (starting from conditional master solves sorting problems)
   # NOTE child status refers to, whether it is a child of a ITEM not a BLOCK
 
   for (i in 1:nrow(blockMap)) {
     # 1.)
     if (blockMap$parentTrue[i] == FALSE && blockMap$childTrue[i] == FALSE) {
+      temp <- blockMap[(i+1):nrow(blockMap), ]
+
       flowchart <- rbind(flowchart, data.frame(from = blockMap$Item.ID[i],
-                                               to = blockMap$Item.ID[i+1],
+                                               to = temp[which(temp$childTrue == FALSE, arr.ind = TRUE)[1], ]$Item.ID,
                                                to2 = NA,
                                                parent = FALSE))
     }
@@ -126,8 +128,13 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
     }
     # 3.)
     if (blockMap$childTrue[i] == TRUE && blockMap$parentTrue[i] == FALSE) {
-      # Pull down just the current item onwards
-      temp <- blockMap[i:nrow(blockMap),]
+      #browser()
+      # Pull down just the conditional master item onwards
+      # Get current master item id
+      currentMaster <- blockMap$Conditional.Master.Item.ID[i]
+      masterRow <- which(blockMap$Item.ID == paste0("Item ", currentMaster))[1] # grabbing first just in case
+      # Get all items from master onwards
+      temp <- blockMap[(masterRow+1):nrow(blockMap),] # We do plus 1 so it doesnt draw to the master (since it draws to first that isnt child)
       flowchart <- rbind(flowchart, data.frame(from = blockMap$Item.ID[i],
                                                to = temp[which(temp$childTrue == FALSE, arr.ind = TRUE)[1],]$Item.ID,
                                                to2 = NA,
@@ -150,42 +157,21 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
 
   # Change conditional type to the corresponding character rather then numeric
   type_map <- c("=", "<=", ">=", "<", ">", "!=")
-
-  # Safe conversion
-  result <- sapply(blockMap$Conditional.Type, function(x) {
-    if (is.na(x)) {
-      return(NA_character_)
-    }
-    if (x < 1 || x > length(type_map)) {
-      warning(paste("Invalid Conditional.Type value:", x))
-      return(NA_character_)
-    }
-    return(type_map[x])
-  })
-
-  blockMap$Conditional.Type <- result
+  blockMap$Conditional.Type <- type_map[blockMap$Conditional.Type]
 
   # Map Conditional.Threshold to its corresponding definition in response key. If its a slider or multi slider keep as is
-  blockMap$Conditional.Threshold <- sapply(1:nrow(blockMap), function(i) {
-    threshold <- blockMap$Conditional.Threshold[i]
-    question_id <- blockMap$Question.ID[i]
-
-    # Skip if threshold or question_id is NA
-    if (is.na(threshold) || is.na(question_id)) {
-      return(threshold)
-    }
-
+  blockMap$Conditional.Threshold <- mapply(function(threshold, question_id) {
     match_row <- responseKey[
       responseKey$question == question_id &
         responseKey$value == threshold,
     ]
 
     if (nrow(match_row) > 0 && !match_row$type[1] %in% c("Slider", "Multi Slider")) {
-      return(match_row$definition[1])
+      match_row$definition[1]
     } else {
-      return(threshold)
+      threshold
     }
-  })
+  }, blockMap$Conditional.Threshold, blockMap$Question.ID)
 
   # Clean so its only text
   blockMap$Conditional.Threshold <- gsub("[^a-zA-Z ]", "", blockMap$Conditional.Threshold)
@@ -247,5 +233,4 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
     mermaid(flowchart_syntax)
   }
 }
-
 

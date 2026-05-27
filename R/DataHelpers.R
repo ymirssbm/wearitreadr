@@ -36,14 +36,14 @@ parseBySurvey <- function(survey, all = FALSE) {
 #'
 #' @param data data object to save from
 #' @param pull whether to pull data from wearIt before saving
-#' @param shiny Boolean indicating whether the user is in the shiny app or not
+#' @param skip_readline Boolean indicating whether the user is in the shiny app and wants to skip readline for api key
 #' @return Saves data to data folder in codebook rmd
 
 
-saveData <- function(data, pull = FALSE, ...) {
+saveData <- function(pull = FALSE, ...) {
 
   if (pull == TRUE) {
-    data <- getStudyData(shiny = shiny, ...)
+    data <- getStudyData(...)
   }
 
   write.csv(data$questionMap, get_resource_path("Codebook_RMD", "Data", "blockMap.csv"), row.names = FALSE)

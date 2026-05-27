@@ -42,7 +42,7 @@ wearIT_authorize <- function(study_ID = "1045",
                              key_name = "WearIT-API-key",
                              backup_key_file = "~/.auth/.wearit",
                              skip_keyring = TRUE,
-                             shiny = FALSE,
+                             skip_readline = FALSE,
                              apiToken,
                              ...) {
 
@@ -91,7 +91,7 @@ wearIT_authorize <- function(study_ID = "1045",
 
 
   # If using shiny, just put in app created api token
-  if (shiny == TRUE) {
+  if (skip_readline == TRUE) {
     auth <- apiToken
   } else {
     if(is.null(auth)) { # File failed, too.
@@ -337,7 +337,12 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
   }, fullDataSet)
 
   # Complex unpacking: pull the data and non-data elments from each block and stack'em
-  survey_data <- map_dfr(fullDataSet, \(x){data.frame(data.frame(t(unlist(x[metaNames]))), map_dfr(x$`User Responses`,unlist))})
+  survey_data <- map_dfr(fullDataSet, \(x){
+    responses <- tryCatch(map_dfr(x$`User Responses`, unlist), error = \(e) NULL)
+    if (is.null(responses) || nrow(responses) == 0) return(NULL)
+    data.frame(data.frame(t(unlist(x[metaNames]))), responses)
+  })  # attempted fix for when no data
+
 
   ####################### Changed studyDataSet to survey_data so it has proper name ~ Ethan
 
@@ -807,10 +812,10 @@ processSubQuestions <- function(thisCol, keyInfo, qName, subRequest=NA, verbose=
 
 
 
-getStudyData <- function(study_ID = "1045", backup_key_file = "~/.auth/.wearit", shiny = FALSE, apiToken = "",
+getStudyData <- function(study_ID = "1045", backup_key_file = "~/.auth/.wearit", skip_readline = FALSE, apiToken = "",
                          base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api", ...) {
 
-  creds <- wearIT_authorize(study_ID = study_ID, apiToken = apiToken, shiny = shiny, backup_key_file = backup_key_file, base_URL = base_URL)
+  creds <- wearIT_authorize(study_ID = study_ID, apiToken = apiToken, skip_readline = skip_readline, backup_key_file = backup_key_file, base_URL = base_URL)
   requestResults <- makeAllRequests(creds)
   studyData <- parseStudyJSON(requestResults, simpleMeta = TRUE)
 }

@@ -450,11 +450,11 @@ launch_app_server <- function(input, output, session) {
     }
     tryCatch({
       showNotification("Pulling Data...", type = "message")
-      saveData(study_ID = input$studyID, apiToken = token, shiny = TRUE,
-               base_URL = input$base_URL, pull = TRUE)
+      saveData(study_ID = input$studyID, apiToken = token,
+               base_URL = input$base_URL, pull = TRUE, skip_readline = TRUE)
       showNotification("Finished!", type = "message")
     }, error = function(e) {
-      showNotification("Error pulling data", type = "error")
+      showNotification(paste("Error pulling data:", conditionMessage(e)), type = "error")
     })
   })
 
@@ -592,10 +592,9 @@ launch_app_server <- function(input, output, session) {
       showNotification("Generating flowchart...", type = "message")
 
       responseKey <- read.csv(file.path(codebook_dir, "Data/responseKey.csv"))
-      blockMapParsed(parseBySurvey(survey = input$survey, shiny = TRUE))
+      blockMapParsed(parseBySurvey(survey = input$survey))
       mermaid_code <- generateSurveyTree(blockMapParsed = blockMapParsed(),
-                                         responseKey = responseKey,
-                                         shiny = TRUE)
+                                         responseKey = responseKey, shiny = TRUE)
       output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code) })
 
       showNotification("Flowchart generated successfully!", type = "message")
