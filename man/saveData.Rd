@@ -4,14 +4,14 @@
 \alias{saveData}
 \title{saveData}
 \usage{
-saveData(data, shiny = FALSE, pull = FALSE, ...)
+saveData(pull = FALSE, ...)
 }
 \arguments{
+\item{pull}{whether to pull data from wearIt before saving}
+
 \item{data}{data object to save from}
 
-\item{shiny}{Boolean indicating whether the user is in the shiny app or not}
-
-\item{pull}{whether to pull data from wearIt before saving}
+\item{skip_readline}{Boolean indicating whether the user is in the shiny app and wants to skip readline for api key}
 }
 \value{
 Saves data to data folder in codebook rmd

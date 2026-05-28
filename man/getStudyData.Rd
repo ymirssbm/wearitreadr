@@ -7,7 +7,7 @@
 getStudyData(
   study_ID = "1045",
   backup_key_file = "~/.auth/.wearit",
-  shiny = FALSE,
+  skip_readline = FALSE,
   apiToken = "",
   base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api",
   ...

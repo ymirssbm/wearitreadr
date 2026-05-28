@@ -4,7 +4,7 @@
 \alias{loadSavedData}
 \title{loadSavedData}
 \usage{
-loadSavedData(shiny = FALSE)
+loadSavedData()
 }
 \arguments{
 \item{shiny}{Boolean indicating whether the user is in the shiny app or not}
