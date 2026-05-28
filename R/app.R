@@ -32,6 +32,7 @@ launch_app_ui <- function() {
 
         menuItem("Codebook",
                  icon = icon("book"),
+                 startExpanded = TRUE,
                  menuSubItem("Codebook Generator",
                              tabName = "codebook_gen",
                              icon = icon("cog")),
@@ -42,6 +43,7 @@ launch_app_ui <- function() {
 
         menuItem("Data Dictionary",
                  icon = icon("table"),
+                 startExpanded = TRUE,
                  menuSubItem("Data Dictionary Generator",
                              tabName = "datadict_gen",
                              icon = icon("cog")),
@@ -74,6 +76,12 @@ launch_app_ui <- function() {
     eval(message.code);
   });
 ")),
+        tags$script(HTML("
+    $(document).ready(function() {
+      $('body').removeClass('sidebar-collapse');
+    });
+  ")),
+
 
         # Add spinner control functions
         tags$script(HTML("
@@ -103,39 +111,7 @@ launch_app_ui <- function() {
     }
   });
 ")),
-        # Enter key sends msg
-        tags$script(HTML("
-  $(document).ready(function() {
-    $('#chatInput').on('keydown', function(e) {
-      if (e.which === 13 && !e.shiftKey) {
-        e.preventDefault();
-        $('#sendChat').click();
-      }
-    });
-  });
-")),
 
-        # Controls sidebar navigation drop down speed
-        tags$script(HTML("
-    $(document).ready(function() {
-      $('.sidebar-menu').on('click', '.treeview > a', function(e) {
-        var animationSpeed = 150;
-        var parent = $(this).parent();
-        var submenu = parent.find('.treeview-menu');
-        if (parent.hasClass('active')) {
-          submenu.slideUp(animationSpeed);
-          parent.removeClass('active');
-        } else {
-          $('.sidebar-menu .treeview.active .treeview-menu').slideUp(animationSpeed);
-          $('.sidebar-menu .treeview.active').removeClass('active');
-          submenu.slideDown(animationSpeed);
-          parent.addClass('active');
-        }
-        e.preventDefault();
-        e.stopPropagation();
-      });
-    });
-  "))
       ),
 
       tabItems(
@@ -426,7 +402,7 @@ launch_app_ui <- function() {
                                      rows = 5),
                        actionButton("modifyAIStudy", "Modify (Direct)",
                                     class = "btn-lg",
-                                    style = "background: #f39c12; color: white; border: none; border-radius: 8px; padding: 1rem 2rem; font-weight: 600;")
+                                    style = "background: #3c8dbc; color: white; border: none; border-radius: 8px; padding: 1rem 2rem; font-weight: 600;")
                 )
               )
             )
