@@ -19,6 +19,9 @@ describeMissingness <- function(id, thisData, blockMap) {
   # Drop in markdown header
   cat("#### Missingness\n\n")
 
+  # Duplication problem (idk what is causing this so I put this in)
+  thisData <- thisData[, !duplicated(names(thisData))]
+
   # Calculate n
   n <- length(unique(thisData$Participant.ID))
 
