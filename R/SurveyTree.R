@@ -23,7 +23,7 @@
 
 
 generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
-
+  #browser()
   #blockMap <- blockMap[blockMap$Survey == "CSAR Daily Diary ID 35" & !is.na(blockMap$Survey),]
   blockMap <- blockMapParsed
 
@@ -54,6 +54,9 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
   }
 
   blockMap <- result
+
+
+  blockMap <- blockMap[!duplicated(blockMap[, !colnames(blockMap) %in% "Question.Type.Display.Name"]), ]
 
   blockMap$childTrue  <- NA
   blockMap$parentTrue <- NA
@@ -112,12 +115,12 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
   for (i in 1:nrow(blockMap)) {
     # 1.)
     if (blockMap$parentTrue[i] == FALSE && blockMap$childTrue[i] == FALSE) {
-      temp <- blockMap[(i+1):nrow(blockMap), ]
-
-      flowchart <- rbind(flowchart, data.frame(from = blockMap$Item.ID[i],
-                                               to = temp[which(temp$childTrue == FALSE, arr.ind = TRUE)[1], ]$Item.ID,
-                                               to2 = NA,
-                                               parent = FALSE))
+      if (i < nrow(blockMap)) {
+        flowchart <- rbind(flowchart, data.frame(from = blockMap$Item.ID[i],
+                                                 to = blockMap$Item.ID[i+1],
+                                                 to2 = NA,
+                                                 parent = FALSE))
+      }
     }
     # 2.)
     if (blockMap$parentTrue[i] == TRUE) {
@@ -128,17 +131,14 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
     }
     # 3.)
     if (blockMap$childTrue[i] == TRUE && blockMap$parentTrue[i] == FALSE) {
-      #browser()
-      # Pull down just the conditional master item onwards
-      # Get current master item id
-      currentMaster <- blockMap$Conditional.Master.Item.ID[i]
-      masterRow <- which(blockMap$Item.ID == paste0("Item ", currentMaster))[1] # grabbing first just in case
-      # Get all items from master onwards
-      temp <- blockMap[(masterRow+1):nrow(blockMap),] # We do plus 1 so it doesnt draw to the master (since it draws to first that isnt child)
-      flowchart <- rbind(flowchart, data.frame(from = blockMap$Item.ID[i],
-                                               to = temp[which(temp$childTrue == FALSE, arr.ind = TRUE)[1],]$Item.ID,
-                                               to2 = NA,
-                                               parent = FALSE))
+      temp <- blockMap[i:nrow(blockMap),]
+      next_id <- temp[which(temp$childTrue == FALSE, arr.ind = TRUE)[1],]$Item.ID
+      if (length(next_id) > 0 && !is.na(next_id)) {
+        flowchart <- rbind(flowchart, data.frame(from = blockMap$Item.ID[i],
+                                                 to = next_id,
+                                                 to2 = NA,
+                                                 parent = FALSE))
+      }
     }
   }
 

@@ -36,9 +36,12 @@ generateDataDictionary <- function(blockMap = read.csv(get_resource_path("Codebo
 
 
   blockMap <- cbind(blockMap, Missingness.Codes, Response.Range, Response.Text)
-  blockMap <- blockMap[, c("Survey.LongName", "Question.ID", "Question.Text", "Question.Type.Display.Name", "Result.Type", "Missingness.Codes", "Response.Range", "Response.Text")]
+  blockMap <- blockMap[, intersect(c("Survey", "Question.ID", "Question.Text",
+                                     "Question.Type.Display.Name", "Result.Type",
+                                     "Missingness.Codes", "Response.Range", "Response.Text"),
+                                   colnames(blockMap))]
   blockMap <- blockMap[rowSums(is.na(blockMap)) != ncol(blockMap), ]
-
+  colnames(blockMap)[colnames(blockMap) == "Survey"] <- "Survey.LongName"
   write.csv(blockMap, get_resource_path("Codebook_RMD", "DataDictionary.csv"), row.names = FALSE)
 
 }

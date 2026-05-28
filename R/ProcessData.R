@@ -311,6 +311,7 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
   block_map <- data.frame()
   for(dataSet in metaJSON) {
     studyKey <- processSurveyMeta(dataSet, studyKey)
+    #browser()
     block_map <- processBlockMap(dataSet$`Block IDs Map`, block_map)
 
   }
@@ -435,7 +436,8 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
     pivot_wider(names_from=c(Short.Descriptor),
                 values_from=c(User.Response))
 
-  return(list(questionMap=as.data.frame(studyKey$SurveyInfo),
+  return(list(#questionMap=as.data.frame(studyKey$SurveyInfo),
+              questionMap=block_map,
               responseMap=as.data.frame(studyKey$ResponseKey),
               surveyData=as.data.frame(survey_wide),
               surveyCombined=as.data.frame(survey_combined)))
@@ -545,7 +547,7 @@ processSurveyMeta <- function(study, SurveyKey=list()) {
         } else {
           # This is an item
           itemOutput <- unlist(anItem, use.names = TRUE)
-          if(is.null(itemOutput)) itemOutput <- matrix()
+          if(is.null(itemOutput)) next
           # browser()
           parent_tree <- rbind.fill(parent_tree, cbind(data.frame(Survey=itemInfo$Survey,
                                                                   Item.ID=itemInfo$itemName,
@@ -824,38 +826,120 @@ blockType <- function(itemList) {
 
 }
 
-processBlockMap <- function(json_blockmap, old_block_map=data.frame()) {
 
-  # browser()
-  if(!is.list(json_blockmap) || !length(json_blockmap) || !any(sapply(json_blockmap, is.list))) {
-    # Not unpackable
-    return(json_blockmap)
-  }
+processBlockMap <- function(json_blockmap, old_block_map = data.frame()) {
 
-  # Figure out how to map out the Block structure?
-
-  # Widens the listing set
   unlisting <- unlist(json_blockmap)
   names(unlisting) <- gsub("[ ]", "_", names(unlisting))
   awkWide <- data.frame(t(unlisting))
-  awkTall <- pivot_longer(awkWide, cols=everything(),
-                          names_pattern = "^(?:(\\w*)\\.)*(?:(Item\\w*)\\.)?(?:(Item\\w*)\\.)*(\\w+)\\.(\\w+)",
-                          names_to=c("Survey", "Block", "Sub.block", "Item", "Column"),
-                          values_to="Value") |>
-    mutate(  Survey=gsub("[_]", " ", Survey),
-             Block=gsub("[_]", " ", Block),
-             Sub.block=gsub("[_]", " ", Sub.block),
-             Item=gsub("[_]", " ", Item),
-             Column = gsub("[_ ]", ".", Column))
+
+  awkTall <- pivot_longer(
+    awkWide,
+    cols = everything(),
+    names_to = "full_name",
+    values_to = "Value"
+  ) %>%
+    mutate(
+      parts     = strsplit(full_name, "\\."),
+      Column    = sapply(parts, tail, 1),
+      Item      = sapply(parts, function(x) x[length(x) - 1]),
+      hierarchy = lapply(parts, function(x) x[1:(length(x) - 2)]),
+      Survey    = sapply(hierarchy, function(h) {
+        non_item <- h[!grepl("^Item_\\d+$", h)]
+        if (length(non_item) > 0) non_item[1] else NA_character_
+      }),
+      Block     = sapply(hierarchy, function(h) {
+        item_like <- h[grepl("^Item_\\d+$", h)]
+        if (length(item_like) > 0) item_like[1] else NA_character_
+      }),
+      Sub.block = sapply(hierarchy, function(h) {
+        item_like <- h[grepl("^Item_\\d+$", h)]
+        if (length(item_like) > 1) item_like[2] else NA_character_
+      })
+    ) %>%
+    mutate(
+      Survey    = gsub("_", " ", Survey),
+      Block     = gsub("_", " ", Block),
+      Sub.block = gsub("_", " ", Sub.block),
+      Item      = gsub("_", " ", Item),
+      Column    = gsub("[_ ]", ".", Column)
+    ) %>%
+    select(Survey, Block, Sub.block, Item, Column, Value)
+
   output <- pivot_wider(
     awkTall,
-    names_from = "Column",
+    names_from  = "Column",
     values_from = "Value",
-    values_fn = list(Value = function(x) x[[1]])  # Just take the first value temp defualt ~ Ethan
-  )
-  output$Question.Type <- as.integer(output$Question.Type)
+    values_fn   = list(Value = function(x) x[[1]])
+  ) %>%
+    mutate(
+      Question.Type = as.integer(Question.Type),
+      Item.Type     = "Question",
+      Item.ID       = Item,
+      Parent        = case_when(
+        !is.na(Sub.block) ~ Sub.block,
+        !is.na(Block)     ~ Block,
+        TRUE              ~ Survey
+      ),
+      row_order = row_number()
+    )
+
+  block_rows <- output %>%
+    filter(!is.na(Block)) %>%
+    select(Survey, Block) %>%
+    distinct() %>%
+    transmute(
+      Survey        = Survey,
+      Item          = Block,
+      Item.ID       = Block,
+      Item.Type     = "Block",
+      Parent        = Survey,
+      Block         = NA_character_,
+      Sub.block     = NA_character_,
+      Question.ID   = NA_character_,
+      Question.Text = NA_character_,
+      Question.Type = NA_integer_
+    ) %>%
+    left_join(
+      output %>%
+        filter(!is.na(Block)) %>%
+        group_by(Survey, Block) %>%
+        summarise(row_order = min(row_order) - 0.5, .groups = "drop"),
+      by = c("Survey", "Item" = "Block")
+    )
+
+  subblock_rows <- output %>%
+    filter(!is.na(Sub.block)) %>%
+    select(Survey, Block, Sub.block) %>%
+    distinct() %>%
+    transmute(
+      Survey        = Survey,
+      Item          = Sub.block,
+      Item.ID       = Sub.block,
+      Item.Type     = "Block",
+      Parent        = Block,
+      Block         = Block,
+      Sub.block     = NA_character_,
+      Question.ID   = NA_character_,
+      Question.Text = NA_character_,
+      Question.Type = NA_integer_
+    ) %>%
+    left_join(
+      output %>%
+        filter(!is.na(Sub.block)) %>%
+        group_by(Survey, Block, Sub.block) %>%
+        summarise(row_order = min(row_order) - 0.4, .groups = "drop"),
+      by = c("Survey", "Block", "Item" = "Sub.block")
+    )
+
+  output <- bind_rows(block_rows, subblock_rows, output) %>%
+    arrange(Survey, row_order) %>%
+    select(-row_order)
+
   output <- left_join(output, WearIT.blockTypes, by = join_by(Question.Type))
   output <- distinct(rbind.fill(old_block_map, output))
+
+  return(output)
 }
 
 # Survey Block Diagram
