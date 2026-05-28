@@ -32,26 +32,16 @@ generateCodebook <- function(title = "This is a temp default title, please set",
                               generate_item_description = FALSE,
                               # Using shiny or not
                               shiny = FALSE,
-                              codebookChunkDisplayOptions = "",
+                              codebookChunkDisplayOptions = c("title page", "name of study", "authors", "study metadata", "desired graphic", "funding",
+                                                              "abstract", "effective summary", "data types",
+                                                              "freeresponse", "informationalfullscreen", "multiplechoice", "multipleselect",
+                                                              "multipleslider", "slider", "timepicker", "timescaleslider", "block", "endblock",
+                                                              "variable pages", "histograms", "missingness page", "descriptives", "bar plot",
+                                                              "frequency table", "type of data", "way question was delivered", "screenshot", "skip logic",
+                                                              "include data"),
                               # Name of the file to be created
                               output_file = "Codebook.html") {
 
-  if (shiny == FALSE) {
-    codebookChunkDisplayOptions <- c(
-      "title page",
-      "name of study",
-      "authors",
-      "desired graphic",
-      "funding",
-      "abstract",
-      "effective summary",
-      "study metadata",
-      "historgrams",
-      "missingness page",
-      "descriptives"
-    )
-
-  }
 
   # Remove all data if user selected
   if(!"include data" %in% codebookChunkDisplayOptions) {
@@ -210,11 +200,8 @@ generateCodebook <- function(title = "This is a temp default title, please set",
     dataTypes <- sub("\\.Rmd$", "", dataTypes)
     # Grab user selected datatypes
     # If using app, get user selected, otherwise, use all available in DataTypes folder
-    if (shiny == TRUE) {
     selectedDataTypes <- dataTypes[tolower(dataTypes) %in% codebookChunkDisplayOptions]
-    } else {
-      selectedDataTypes <- dataTypes
-    }
+
 
     # Keep only user selected
     blockMap <- blockMap[(gsub(" ", "", blockMap$Question.Type.Display.Name) %in% selectedDataTypes), ]
