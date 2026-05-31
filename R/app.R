@@ -125,7 +125,20 @@ launch_app_ui <- function() {
               status = "primary",
               solidHeader = TRUE,
               p("This is a human accessible tool to help pull data and generate codebooks for Wear-IT users")
-            )
+              ),
+            box(
+              width = 12,
+              title = "Set App Working Directory",
+              status = "primary",
+              solidHeader = TRUE,
+              p("Use this to set the working directory of the App. It will reference this directory when saving and viewing, codebooks, data dictionaries, and study flowchart exports"),
+              shinyDirButton(
+                id = "setWorkingDirectory",
+                label = "Select Working Directory",
+                title = "Please select a file",
+                multiple = FALSE
+              )
+            ),
           )
         ),
 
@@ -582,7 +595,7 @@ launch_app_server <- function(input, output, session) {
       showNotification("Generating flowchart...", type = "message")
       responseKey <- read.csv(file.path(codebook_dir, "Data/responseKey.csv"))
       blockMapParsed(parseBySurvey(survey = input$survey))
-      mermaid_code(generateSurveyTree(blockMapParsed = blockMapParsed(),
+      mermaid_code(generateSurveyFlowchart(blockMapParsed = blockMapParsed(),
                                       responseKey = responseKey, shiny = TRUE))
       output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code()) })
       showNotification("Flowchart generated successfully!", type = "message")

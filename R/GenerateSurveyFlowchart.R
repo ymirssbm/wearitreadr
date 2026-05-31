@@ -1,8 +1,10 @@
-#' Generate Survey Tree
+#' Generate Survey Flowchart
 #'
-#' This generates a Survey Tree for a studies WearIT data
+#' This generates a Survey Flowchart for a studies WearIT data
 #'
 #' @param blockMap Blockmap containing data for a single survey
+#' @param responseKey wearit responseKey
+#' @param survey Full name of survey you want a flowchart for
 #' @param shiny boolean indicating whether using shiny app
 #' @return Mermaid flowchart
 #' @import DiagrammeR
@@ -22,39 +24,9 @@
 # NOTE child status refers to, whether it is a child of a ITEM not a BLOCK
 
 
-generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
-  #browser()
-  #blockMap <- blockMap[blockMap$Survey == "CSAR Daily Diary ID 35" & !is.na(blockMap$Survey),]
-  blockMap <- blockMapParsed
+generateSurveyFlowchart <- function(blockMap, responseKey, survey, shiny = FALSE) {
 
-  # File the blocks into the right position of the blockmap
-  # Separate blocks from questions
-  blocks <- blockMap[blockMap$Item.Type == "Block", ]
-  questions <- blockMap[blockMap$Item.Type != "Block", ]
-
-  # For each block, find where it belongs and insert it
-  result <- data.frame()
-
-  i <- 1
-  while (i <= nrow(questions)) {
-    current_row <- questions[i, ]
-
-    # Check if any block is the parent of this row
-    matching_block <- blocks[blocks$Item.ID == current_row$Parent, ]
-
-    if (nrow(matching_block) > 0) {
-      # Check we haven't already inserted this block
-      if (!matching_block$Item.ID %in% result$Item.ID) {
-        result <- rbind(result, matching_block)
-      }
-    }
-
-    result <- rbind(result, current_row)
-    i <- i + 1
-  }
-
-  blockMap <- result
-
+  blockMap <- parseBySurvey(blockMap, survey, shiny)
 
   blockMap <- blockMap[!duplicated(blockMap[, !colnames(blockMap) %in% "Question.Type.Display.Name"]), ]
 
@@ -223,7 +195,7 @@ generateSurveyTree <- function(shiny = FALSE, blockMapParsed, responseKey) {
       )
     }
   }
-  #browser()
+
 
   # Drop duplicated paths
   lines_vec <- strsplit(flowchart_syntax, "\n")[[1]]

@@ -8,10 +8,11 @@ Simplest way is to load the app.R file in the codebookApp folder
 
 ## Urgent TDL
 
+- Fix paths issues again... user specified, default to current wd? 
+- Make the app not suck ass for non shiny user again (data dictionary, study flowchart, codebook)
 
 ## Known Issues / To do list
 
-- FIX PATHS (dont need shiny check if I just grab resource path)
 - Fix multiple slider generation
 - Need to be able to specify file name
 - Implement screenshots

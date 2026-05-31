@@ -9,9 +9,11 @@
 #' @importFrom utils read.csv
 #' @export
 
-parseBySurvey <- function(survey, all = FALSE) {
+parseBySurvey <- function(blockMap, survey, shiny = FALSE, all = FALSE) {
 
-  blockMap <- read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv"))
+  if (shiny) {
+    blockMap <- read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv"))
+  }
 
   # Parse by survey
   if (all == TRUE) {
