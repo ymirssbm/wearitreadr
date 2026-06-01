@@ -7,8 +7,8 @@
 #' @export
 
 
-generateDataDictionary <- function(blockMap = read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv")),
-                                   responseKey = read.csv(get_resource_path("Codebook_RMD", "Data", "responseKey.csv")),
+generateDataDictionary <- function(blockMap = read.csv("blockMap.csv"),
+                                   responseKey = read.csv("responseKey.csv"),
                                    ...) {
 
 
@@ -42,6 +42,8 @@ generateDataDictionary <- function(blockMap = read.csv(get_resource_path("Codebo
                                    colnames(blockMap))]
   blockMap <- blockMap[rowSums(is.na(blockMap)) != ncol(blockMap), ]
   colnames(blockMap)[colnames(blockMap) == "Survey"] <- "Survey.LongName"
-  write.csv(blockMap, get_resource_path("Codebook_RMD", "DataDictionary.csv"), row.names = FALSE)
 
+  write.csv(blockMap, "DataDictionary.csv", row.names = FALSE)
+  wd <- paste0("Saved to... ", getwd())
+  return(print(wd))
 }

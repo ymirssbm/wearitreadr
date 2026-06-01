@@ -23,9 +23,9 @@ generateCodebook <- function(title = "This is a temp default title, please set",
                               funding = "This is a temp default funding source, please set",
                               abstract = "This is a temp default abstract, please set",
                               summary = "This is a temp default summary, please set",
-                              thisData = read.csv(get_resource_path("Codebook_RMD", "Data", "Data.csv")),
-                              blockMap = read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv")),
-                              responseKey = read.csv(get_resource_path("Codebook_RMD", "Data", "responseKey.csv")),
+                              thisData = read.csv("Data.csv"),
+                              blockMap = read.csv("blockMap.csv"),
+                              responseKey = read.csv("responseKey.csv"),
                               include_practice_items = FALSE,
                               include_html = FALSE,
                               print_blockmap_missing = FALSE,
@@ -42,6 +42,9 @@ generateCodebook <- function(title = "This is a temp default title, please set",
                               # Name of the file to be created
                               output_file = "Codebook.html") {
 
+
+  # Fix output file path
+  output_file <- normalizePath(output_file, mustWork = FALSE)
 
   # Remove all data if user selected
   if(!"include data" %in% codebookChunkDisplayOptions) {
@@ -267,13 +270,14 @@ generateCodebook <- function(title = "This is a temp default title, please set",
   cat("Dropping unsupported data types ... \n")
   blockMap <- blockMap[!(blockMap$Question.Type.Display.Name %in% unsupported_data_types), ]
 
-  # Render codebook
   # Save temp workspace
-  save.image(file = get_resource_path("Codebook_RMD", "temp_workspace.RData"))
+  render_env <- list2env(as.list(environment()), parent = globalenv())
+
   # Render codebook
   rmarkdown::render(
     input = get_resource_path("Codebook_RMD", "Highest-level-template.Rmd"),
     output_file = output_file,
+    envir = render_env,
     params = list(
       title = title,
       authors = authors,
@@ -297,7 +301,5 @@ generateCodebook <- function(title = "This is a temp default title, please set",
       skipLogic = "skip logic" %in% codebookChunkDisplayOptions
     )
   )
-  # Remove temp workspace
-  file.remove(get_resource_path("Codebook_RMD", "temp_workspace.RData"))
-
+  cat("Saving codebook to:", output_file, "\n")
 }

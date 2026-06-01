@@ -24,9 +24,9 @@
 # NOTE child status refers to, whether it is a child of a ITEM not a BLOCK
 
 
-generateSurveyFlowchart <- function(blockMap, responseKey, survey, shiny = FALSE) {
+generateSurveyFlowchart <- function(survey, export = FALSE, blockMap = read.csv("blockMap.csv"), responseKey = read.csv("responseKey.csv"), shiny = FALSE) {
 
-  blockMap <- parseBySurvey(blockMap, survey, shiny)
+  blockMap <- parseBySurvey(blockMap, survey)
 
   blockMap <- blockMap[!duplicated(blockMap[, !colnames(blockMap) %in% "Question.Type.Display.Name"]), ]
 
@@ -204,7 +204,20 @@ generateSurveyFlowchart <- function(blockMap, responseKey, survey, shiny = FALSE
   # Draw flowchart
   if (shiny) {
     return(flowchart_syntax)
+  } else if (export) {
+    encoded <- openssl::base64_encode(charToRaw(flowchart_syntax))
+    encoded <- gsub("\n", "", encoded)
+    encoded <- gsub("\\+", "-", encoded)
+    encoded <- gsub("/", "_", encoded)
+    encoded <- gsub("=", "", encoded)
+    url <- paste0("https://mermaid.ink/img/", encoded)
+    resp <- httr::GET(url)
+    export_file <- file.path(getwd(), paste0(survey, "_flowchart.png"))
+    writeBin(httr::content(resp, "raw"), export_file)
+    message("Flowchart exported to: ", export_file)
+    mermaid(flowchart_syntax)
   } else {
     mermaid(flowchart_syntax)
   }
+
 }

@@ -74,6 +74,7 @@ describeByQuestion <- function(out2, thisData, blockMap, responseKey) {
       parentChildBlock <- itemBlock
 
       # If item is a child and parent hasnt been knitted, knit it then knit child
+      #browser()
       if (itemBlock$childTrue == TRUE & !(itemBlock$Parent %in% index)) {
         parentBlock <- surveyBlock[(surveyBlock$Item.ID == itemBlock$Parent),]
         parentChildBlock <- rbind(parentBlock, itemBlock)

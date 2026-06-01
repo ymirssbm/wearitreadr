@@ -126,6 +126,7 @@ launch_app_ui <- function() {
               solidHeader = TRUE,
               p("This is a human accessible tool to help pull data and generate codebooks for Wear-IT users")
               ),
+            # Set wd button
             box(
               width = 12,
               title = "Set App Working Directory",
@@ -429,6 +430,14 @@ launch_app_ui <- function() {
 
 # Server function - SAME AS BEFORE, just remove the navigation observers
 launch_app_server <- function(input, output, session) {
+
+  # Reset wd on exit
+  original_wd <- getwd()
+
+  session$onSessionEnded(function() {
+    setwd(original_wd)
+  })
+
   shinyjs::useShinyjs()
   # Get package directory once at the start
   pkg_dir <- system.file(package = "WearItReadR")
@@ -441,6 +450,50 @@ launch_app_server <- function(input, output, session) {
   # Rest of your server code stays exactly the same...
   # (All the observeEvent for buttons, data processing, etc.)
 
+
+  #-----------------------
+  # Set working directory
+  #-----------------------
+
+  volumes <- c(Home = fs::path_home())
+
+  shinyDirChoose(input, "setWorkingDirectory",
+                 roots = volumes,
+                 session = session)
+
+  working_dir <- reactiveVal(NULL)
+
+  observeEvent(input$setWorkingDirectory, {
+    req(is.list(input$setWorkingDirectory))
+    selected_dir <- parseDirPath(volumes, input$setWorkingDirectory)
+    if (length(selected_dir) > 0) {
+      working_dir(selected_dir)
+      setwd(selected_dir)
+      addResourcePath("userwd", selected_dir)
+      showNotification(paste("Working directory set to:", selected_dir), type = "message", duration = 5)
+    }
+
+    if (file.exists(file.path(working_dir(), "Codebook.html"))) {
+      output$codebook <- renderUI({
+        tags$iframe(src = paste0("userwd/Codebook.html?", as.numeric(Sys.time())),
+                    width = "100%", height = "800px",
+                    frameborder = 0, scrolling = "auto")
+      })
+    }
+    if (file.exists("DataDictionary.csv")) {
+      output$dataDictionary <- renderTable({
+        read.csv("DataDictionary.csv")
+      })
+    }
+
+    if (file.exists("blockMap.csv")) {
+      blockMap <- read.csv("blockMap.csv")
+      choices <- unique(blockMap$Survey[!is.na(blockMap$Survey)])
+      updateSelectInput(session, "survey", choices = choices)
+    }
+
+  })
+
   #--------------------
   # Pull Data Page
   #--------------------
@@ -451,13 +504,21 @@ launch_app_server <- function(input, output, session) {
       keyring::key_get(input$keyringToken)
     }
     tryCatch({
-      showNotification("Pulling Data...", type = "message")
+      notif_id <- showNotification("Pulling Data...", type = "message", duration = NULL)
       saveData(study_ID = input$studyID, apiToken = token,
                base_URL = input$base_URL, pull = TRUE, skip_readline = TRUE)
+      removeNotification(notif_id)
       showNotification("Finished!", type = "message")
     }, error = function(e) {
       showNotification(paste("Error pulling data:", conditionMessage(e)), type = "error")
     })
+
+    # Update flowchart options for new blockMap
+    if (file.exists("blockMap.csv")) {
+      blockMap <- read.csv("blockMap.csv")
+      choices <- unique(blockMap$Survey[!is.na(blockMap$Survey)])
+      updateSelectInput(session, "survey", choices = choices)
+    }
   })
 
   #-----------------------
@@ -495,19 +556,26 @@ launch_app_server <- function(input, output, session) {
   })
 
   observeEvent(input$generateCodebook, {
+    req(working_dir())
     codebookOptions <- tolower(get_selected(input$codebookOptions, format = "names"))
     tryCatch({
-      showNotification("Generating codebook...", type = "message")
-      generateCodebook(shiny = TRUE,
-                       codebookChunkDisplayOptions = codebookOptions,
-                       title = input$title,
-                       authors = input$authors,
-                       funding = input$funding,
-                       abstract = input$abstract,
-                       summary = input$summary)
+      notif_id <- showNotification("Generating codebook...", type = "message", duration = NULL)
+      generateCodebook(
+        shiny = TRUE,
+        codebookChunkDisplayOptions = codebookOptions,
+        title = input$title,
+        authors = input$authors,
+        funding = input$funding,
+        abstract = input$abstract,
+        summary = input$summary,
+        output_file = file.path(working_dir(), "Codebook.html")
+      )
+      removeNotification(notif_id)
       showNotification("Codebook Generation Complete!", type = "message")
+      addResourcePath("userwd", working_dir())
+
       output$codebook <- renderUI({
-        tags$iframe(src = paste0("codebook/Codebook.html?", as.numeric(Sys.time())),
+        tags$iframe(src = paste0("userwd/Codebook.html?", as.numeric(Sys.time())),
                     width = "100%", height = "800px",
                     frameborder = 0, scrolling = "auto")
       })
@@ -517,13 +585,14 @@ launch_app_server <- function(input, output, session) {
     })
   })
 
-  if (file.exists(file.path(codebook_dir, "Codebook.html"))) {
+  if (file.exists("Codebook.html")) {
     output$codebook <- renderUI({
-      tags$iframe(src = paste0("codebook/Codebook.html?", as.numeric(Sys.time())),
+      tags$iframe(src = paste0("userwd/Codebook.html?", as.numeric(Sys.time())),
                   width = "100%", height = "800px",
                   frameborder = 0, scrolling = "auto")
     })
   }
+
 
   #---------------------------------------------
   # Data Dictionary
@@ -534,7 +603,7 @@ launch_app_server <- function(input, output, session) {
       generateDataDictionary(shiny = TRUE)
       showNotification("Data dictionary generation complete!", type = "message")
       output$dataDictionary <- renderTable({
-        read.csv(file.path(codebook_dir, "DataDictionary.csv"))
+        read.csv("DataDictionary.csv")
       })
     }, error = function(e) {
       showNotification(paste("Error generating data dictionary:", e$message), type = "error")
@@ -542,21 +611,21 @@ launch_app_server <- function(input, output, session) {
     })
   })
 
-  if (file.exists(file.path(codebook_dir, "DataDictionary.csv"))) {
+  if (file.exists("DataDictionary.csv")) {
     output$dataDictionary <- renderTable({
-      read.csv(file.path(codebook_dir, "DataDictionary.csv"))
+      read.csv("DataDictionary.csv")
     })
+
   }
 
   #---------------------------------------------
   # Flowchart
   #---------------------------------------------
-  blockMapParsed <- reactiveVal(NULL)
+
 
   observe({
-    blockmap_path <- file.path(codebook_dir, "Data/blockMap.csv")
-    if (file.exists(blockmap_path)) {
-      blockMap <- read.csv(blockmap_path)
+    if (file.exists("blockMap.csv")) {
+      blockMap <- read.csv("blockMap.csv")
       choices <- unique(blockMap$Survey[!is.na(blockMap$Survey)])
       updateSelectInput(session, "survey", choices = choices)
     }
@@ -593,9 +662,8 @@ launch_app_server <- function(input, output, session) {
     tryCatch({
       req(input$survey)
       showNotification("Generating flowchart...", type = "message")
-      responseKey <- read.csv(file.path(codebook_dir, "Data/responseKey.csv"))
-      blockMapParsed(parseBySurvey(survey = input$survey))
-      mermaid_code(generateSurveyFlowchart(blockMapParsed = blockMapParsed(),
+      responseKey <- read.csv("responseKey.csv")
+      mermaid_code(generateSurveyFlowchart(blockMap = blockMap, survey = input$survey,
                                       responseKey = responseKey, shiny = TRUE))
       output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code()) })
       showNotification("Flowchart generated successfully!", type = "message")
@@ -843,11 +911,10 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
 
   # Keep existing direct generation/modification code
   observeEvent(input$generateAIStudy, {
-    # Your existing code...
   })
 
   observeEvent(input$modifyAIStudy, {
-    # Your existing code...
+
   })
 }
 

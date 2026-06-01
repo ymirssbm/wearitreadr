@@ -45,8 +45,6 @@ params:
 
 ```{r Highest-Level-Template-Chunk, include = FALSE}
 
-load("temp_workspace.RData")
-
 library(knitr)
 out <- knit_expand("Codebook.Rmd")
 

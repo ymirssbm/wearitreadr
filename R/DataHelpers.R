@@ -9,11 +9,7 @@
 #' @importFrom utils read.csv
 #' @export
 
-parseBySurvey <- function(blockMap, survey, shiny = FALSE, all = FALSE) {
-
-  if (shiny) {
-    blockMap <- read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv"))
-  }
+parseBySurvey <- function(blockMap, survey, all = FALSE) {
 
   # Parse by survey
   if (all == TRUE) {
@@ -48,9 +44,9 @@ saveData <- function(pull = FALSE, ...) {
     data <- getStudyData(...)
   }
 
-  write.csv(data$questionMap, get_resource_path("Codebook_RMD", "Data", "blockMap.csv"), row.names = FALSE)
-  write.csv(data$responseMap, get_resource_path("Codebook_RMD", "Data", "responseKey.csv"), row.names = FALSE)
-  write.csv(data$surveyCombined, get_resource_path("Codebook_RMD", "Data", "Data.csv"), row.names = FALSE)
+  write.csv(data$questionMap, "blockMap.csv", row.names = FALSE)
+  write.csv(data$responseMap, "responseKey.csv", row.names = FALSE)
+  write.csv(data$surveyCombined, "Data.csv", row.names = FALSE)
 
   return(invisible(NULL))
 }
