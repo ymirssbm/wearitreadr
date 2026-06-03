@@ -24,7 +24,10 @@
 # NOTE child status refers to, whether it is a child of a ITEM not a BLOCK
 
 
-generateSurveyFlowchart <- function(survey, export = FALSE, blockMap = read.csv("blockMap.csv"), responseKey = read.csv("responseKey.csv"), shiny = FALSE) {
+generateSurveyFlowchart <- function(survey, export = FALSE,
+                                    blockMap = read.csv("blockMap.csv"),
+                                    responseKey = read.csv("responseKey.csv"),
+                                    shiny = FALSE, generateText = FALSE) {
 
   blockMap <- parseBySurvey(blockMap, survey)
 
@@ -121,8 +124,9 @@ generateSurveyFlowchart <- function(survey, export = FALSE, blockMap = read.csv(
 
   # Some blockmap prep
   # Remove anything that isnt text
-  blockMap$Question.Text <- gsub("[^a-zA-Z ]", "", blockMap$Question.Text)
+  #blockMap$Question.Text <- gsub("[^a-zA-Z ]", "", blockMap$Question.Text)
   # If its a block, set Question.Text to "Block"
+  blockMap$Question.Text <- gsub("</?u>", "", blockMap$Question.Text)
   blockMap$Question.Text <- ifelse(is.na(blockMap$Question.Text), "Block", blockMap$Question.Text)
 
   # Change conditional type to the corresponding character rather then numeric
@@ -144,7 +148,7 @@ generateSurveyFlowchart <- function(survey, export = FALSE, blockMap = read.csv(
   }, blockMap$Conditional.Threshold, blockMap$Question.ID)
 
   # Clean so its only text
-  blockMap$Conditional.Threshold <- gsub("[^a-zA-Z ]", "", blockMap$Conditional.Threshold)
+  blockMap$Conditional.Threshold <- gsub("[^a-zA-Z0-9 ]", "", blockMap$Conditional.Threshold)
 
   wrap_text <- function(text, width = 20) {
     words <- strsplit(text, " ")[[1]]
@@ -174,21 +178,19 @@ generateSurveyFlowchart <- function(survey, export = FALSE, blockMap = read.csv(
     current <- flowchart[i,]
     # If parent draw decision node, else just regular path
     if (current$parent) {
-
       lines <- c(
         # Draw to decision
-        paste0(gsub(" ", "_",current$from),"[",blockMap$Question.Text[blockMap$Item.ID == current$from],"] --> ", "decision",i,"{", blockMap$Conditional.Type[blockMap$Item.ID == current$from], " ", blockMap$Conditional.Threshold[blockMap$Item.ID == current$from], "}"),
+        paste0(gsub(" ", "_",current$from),'["',blockMap$Question.Text[blockMap$Item.ID == current$from],'"] --> ', "decision",i,"{", blockMap$Conditional.Type[blockMap$Item.ID == current$from], " ", blockMap$Conditional.Threshold[blockMap$Item.ID == current$from], "}"),
         # Draw from decision node
-        paste0("decision",i,"{", blockMap$Conditional.Type[blockMap$Item.ID == current$from], " ", blockMap$Conditional.Threshold[blockMap$Item.ID == current$from], "} -->|Yes| ", gsub(" ", "_", current$to),"[", blockMap$Question.Text[blockMap$Item.ID == current$to],"]"),
-        paste0("decision",i,"{", blockMap$Conditional.Type[blockMap$Item.ID == current$from], " ", blockMap$Conditional.Threshold[blockMap$Item.ID == current$from], "} -->|No| ", gsub(" ", "_", current$to2),"[",blockMap$Question.Text[blockMap$Item.ID == current$to2],"]")
+        paste0("decision",i,"{", blockMap$Conditional.Type[blockMap$Item.ID == current$from], " ", blockMap$Conditional.Threshold[blockMap$Item.ID == current$from], "} -->|Yes| ", gsub(" ", "_", current$to),'["', blockMap$Question.Text[blockMap$Item.ID == current$to],'"]'),
+        paste0("decision",i,"{", blockMap$Conditional.Type[blockMap$Item.ID == current$from], " ", blockMap$Conditional.Threshold[blockMap$Item.ID == current$from], "} -->|No| ", gsub(" ", "_", current$to2),'["',blockMap$Question.Text[blockMap$Item.ID == current$to2],'"]')
       )
-
       flowchart_syntax <- paste(
         c(flowchart_syntax, lines),
         collapse = "\n"
       )
     } else {
-      lines <- c(paste0(gsub(" ", "_",current$from),"[",blockMap$Question.Text[blockMap$Item.ID == current$from],"] --> ", gsub(" ", "_", current$to), "[",blockMap$Question.Text[blockMap$Item.ID == current$to],"]"))
+      lines <- c(paste0(gsub(" ", "_",current$from),'["',blockMap$Question.Text[blockMap$Item.ID == current$from],'"] --> ', gsub(" ", "_", current$to), '["',blockMap$Question.Text[blockMap$Item.ID == current$to],'"]'))
       flowchart_syntax <- paste(
         c(flowchart_syntax, lines),
         collapse = "\n"
@@ -201,6 +203,73 @@ generateSurveyFlowchart <- function(survey, export = FALSE, blockMap = read.csv(
   lines_vec <- strsplit(flowchart_syntax, "\n")[[1]]
   lines_vec <- unique(lines_vec)
   flowchart_syntax <- paste(lines_vec, collapse = "\n")
+
+  if (generateText) {
+    blockMap$Conditional.Threshold <- gsub("<br/>", " ", blockMap$Conditional.Threshold)
+    output <- c()
+    seen <- c()
+    get_label <- function(item_id) {
+      label <- blockMap$Question.Text[blockMap$Item.ID == item_id]
+      if (length(label) == 0 || is.na(label)) return(item_id)
+      return(label[1])
+    }
+    get_qid <- function(item_id) {
+      qid <- blockMap$Question.ID[blockMap$Item.ID == item_id]
+      if (length(qid) == 0 || is.na(qid)) return("")
+      return(qid[1])
+    }
+    get_cond <- function(item_id) {
+      cond_type   <- blockMap$Conditional.Type[blockMap$Item.ID == item_id]
+      cond_thresh <- blockMap$Conditional.Threshold[blockMap$Item.ID == item_id]
+      paste0(cond_type[1], " ", cond_thresh[1])
+    }
+    indent_level <- list()
+    for (i in 1:nrow(flowchart)) {
+      row <- flowchart[i, ]
+      current_indent <- if (!is.null(indent_level[[row$from]])) indent_level[[row$from]] else 0
+      pad       <- strrep("  ", current_indent)
+      child_pad <- strrep("  ", current_indent + 1)
+      # Add FROM node if not seen
+      if (!row$from %in% seen) {
+        label <- get_label(row$from)
+        qid   <- get_qid(row$from)
+        if (label != "Block") {
+          output <- c(output, paste0(pad, qid, ": ", label))
+        }
+        seen <- c(seen, row$from)
+      }
+      # If conditional, show branches with increased indent
+      if (row$parent & !is.na(row$to2)) {
+        cond      <- get_cond(row$from)
+        yes_label <- get_label(row$to)
+        no_label  <- get_label(row$to2)
+        yes_qid   <- get_qid(row$to)
+        no_qid    <- get_qid(row$to2)
+        output <- c(output, paste0(pad, "  - IF [", cond, "]:"))
+        # If YES points to a block, expand the block's questions inline
+        if (yes_label == "Block") {
+          block_items <- blockMap[!is.na(blockMap$Block) & blockMap$Block == row$to & blockMap$Item.Type == "Question", ]
+          output <- c(output, paste0(child_pad, "  (YES) → Block:"))
+          for (j in 1:nrow(block_items)) {
+            b_qid   <- block_items$Question.ID[j]
+            b_label <- block_items$Question.Text[j]
+            output  <- c(output, paste0(child_pad, "    ", b_qid, ": ", b_label))
+            seen    <- c(seen, block_items$Item.ID[j])
+          }
+          indent_level[[row$to]] <- current_indent + 1
+        } else {
+          output <- c(output, paste0(child_pad, "  ", yes_qid, ": (YES) ", yes_label))
+          indent_level[[row$to]] <- current_indent + 1
+        }
+        output <- c(output, paste0(child_pad, "  ", no_qid, ": (NO)  ", no_label))
+        indent_level[[row$to2]] <- current_indent + 1
+        seen <- c(seen, row$to, row$to2)
+      }
+    }
+    return(cat(paste(output, collapse = "\n")))
+  }
+
+  #browser()
   # Draw flowchart
   if (shiny) {
     return(flowchart_syntax)

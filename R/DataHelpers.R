@@ -38,7 +38,7 @@ parseBySurvey <- function(blockMap, survey, all = FALSE) {
 #' @return Saves data to data folder in codebook rmd
 
 
-saveData <- function(pull = FALSE, ...) {
+saveData <- function(data = NULL, pull = FALSE, ...) {
 
   if (pull == TRUE) {
     data <- getStudyData(...)
