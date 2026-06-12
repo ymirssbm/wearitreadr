@@ -13,6 +13,7 @@ Simplest way is to load the app.R file in the codebookApp folder
 
 ## Known Issues / To do list
 
+- Add simple conditional column to Data dictionary 
 - Fix multiple slider generation
 - Need to be able to specify file name
 - Implement screenshots
@@ -26,6 +27,10 @@ Simplest way is to load the app.R file in the codebookApp folder
 - Dispatch model for AI generator
 - For survey tree, display additional info on clicking node
 - Figure out where the header for a slider histogram is drawn
+
+
+
+
 
 ## Contributers
 
