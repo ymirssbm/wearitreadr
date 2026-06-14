@@ -1,0 +1,270 @@
+{
+  "Study.Name": "Recovery Community Center Project",
+  "authors": "Jane Smith, John Doe, Emily R. Johnson",
+  "funding": "NIH Grant R01DA012345; NSF Award 9876543",
+  "abstract": "This study examined daily stress and recovery patterns among adults attending a recovery community center. Participants completed ecological momentary assessments four times daily over 14 days across two bursts.",
+
+  "ai_generation": {
+    "ai_generated": true,
+    "tool": "claude-sonnet-4-20250514",
+    "generated_at": "2025-06-03T14:00:00Z"
+  },
+
+  "burst": {
+    "baseline": {
+      "burstID": 1,
+      "description": "14-day baseline data collection period using 4x daily EMA.",
+      "survey": {
+        "daily_stress_ema": {
+          "Survey.LongName": "Daily Stress Ecological Momentary Assessment",
+          "Survey.ShortName": "Stress EMA",
+
+          "schedule": {
+            "Timing.Type": "Random",
+            "window": {
+              "start": "06:00",
+              "end": "22:00",
+              "length": {
+                "value": 16,
+                "unit": "hours"
+              }
+            },
+            "cadence": {
+              "repeat": {
+                "count": 4,
+                "random": true
+              },
+              "timing": {
+                "offset": {
+                  "value": 240,
+                  "unit": "minutes"
+                }
+              }
+            }
+          },
+
+          "question": [
+            {
+              "Item.ID": "item_stress_01",
+              "Item.Type": "Question",
+              "Question.ID": "stress_now",
+              "Question.Long.Name": "Current Perceived Stress",
+              "Question.Text": "How stressed do you feel right now?",
+              "Question.Description": "A single-item measure of momentary perceived stress on a 0–100 visual analog scale.",
+              "Question.Type.Display.Name": "Slider",
+              "Data.Type": "numeric",
+              "Parent": null,
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": "item_stress_source_01",
+                "Conditional.Fail.Item.ID": "item_mood_01",
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": "40",
+                "Conditional.Type": "3"
+              },
+              "responseKey": [
+                { "value": "0",   "definition": "Not at all stressed" },
+                { "value": "50",  "definition": "Moderately stressed" },
+                { "value": "100", "definition": "Extremely stressed" }
+              ]
+            },
+            {
+              "Item.ID": "item_stress_source_01",
+              "Item.Type": "Question",
+              "Question.ID": "stress_source",
+              "Question.Long.Name": "Source of Stress",
+              "Question.Text": "What is the main source of your stress right now?",
+              "Question.Description": "Categorical measure of the primary perceived stressor. Only shown if stress_now >= 40.",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Data.Type": "character",
+              "Parent": null,
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": "item_stress_01",
+                "Conditional.Threshold": "40",
+                "Conditional.Type": "3"
+              },
+              "responseKey": [
+                { "value": "1", "definition": "Work or school" },
+                { "value": "2", "definition": "Family or relationships" },
+                { "value": "3", "definition": "Finances" },
+                { "value": "4", "definition": "Health" },
+                { "value": "5", "definition": "Other" }
+              ]
+            },
+            {
+              "Item.ID": "item_mood_01",
+              "Item.Type": "Question",
+              "Question.ID": "mood_now",
+              "Question.Long.Name": "Current Mood",
+              "Question.Text": "How would you describe your mood right now?",
+              "Question.Description": "Single-item mood rating on a 0–100 scale from very negative to very positive.",
+              "Question.Type.Display.Name": "Slider",
+              "Data.Type": "numeric",
+              "Parent": null,
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "responseKey": [
+                { "value": "0",   "definition": "Very negative" },
+                { "value": "50",  "definition": "Neutral" },
+                { "value": "100", "definition": "Very positive" }
+              ]
+            },
+            {
+              "Item.ID": "item_location_01",
+              "Item.Type": "Question",
+              "Question.ID": "current_location",
+              "Question.Long.Name": "Current Location",
+              "Question.Text": "Where are you right now?",
+              "Question.Description": "Self-reported current location category.",
+              "Question.Type.Display.Name": "Multiple Choice",
+              "Data.Type": "character",
+              "Parent": null,
+              "Conditional.Info": {
+                "Conditional.Child.Item.ID": null,
+                "Conditional.Fail.Item.ID": null,
+                "Conditional.Master.Item.ID": null,
+                "Conditional.Threshold": null,
+                "Conditional.Type": null
+              },
+              "responseKey": [
+                { "value": "1", "definition": "Home" },
+                { "value": "2", "definition": "Work or school" },
+                { "value": "3", "definition": "Recovery community center" },
+                { "value": "4", "definition": "In transit" },
+                { "value": "5", "definition": "Other" }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  "dataSets": {
+    "Participant.ID":           ["P001", "P001", "P001", "P001", "P001", "P001", "P001", "P001", "P001", "P001", "P001", "P001"],
+    "Session.ID":               [1,      1,      1,      1,      2,      2,      2,      2,      3,      3,      3,      3],
+    "Alert.Times": [
+      ["2025-03-01T08:14:00Z", "2025-03-01T11:47:00Z", "2025-03-01T15:22:00Z", "2025-03-01T19:05:00Z"],
+      ["2025-03-01T08:14:00Z", "2025-03-01T11:47:00Z", "2025-03-01T15:22:00Z", "2025-03-01T19:05:00Z"],
+      ["2025-03-01T08:14:00Z", "2025-03-01T11:47:00Z", "2025-03-01T15:22:00Z", "2025-03-01T19:05:00Z"],
+      ["2025-03-01T08:14:00Z", "2025-03-01T11:47:00Z", "2025-03-01T15:22:00Z", "2025-03-01T19:05:00Z"],
+      ["2025-03-02T07:55:00Z", "2025-03-02T12:03:00Z", "2025-03-02T16:41:00Z", "2025-03-02T20:17:00Z"],
+      ["2025-03-02T07:55:00Z", "2025-03-02T12:03:00Z", "2025-03-02T16:41:00Z", "2025-03-02T20:17:00Z"],
+      ["2025-03-02T07:55:00Z", "2025-03-02T12:03:00Z", "2025-03-02T16:41:00Z", "2025-03-02T20:17:00Z"],
+      ["2025-03-02T07:55:00Z", "2025-03-02T12:03:00Z", "2025-03-02T16:41:00Z", "2025-03-02T20:17:00Z"],
+      ["2025-03-03T09:02:00Z", "2025-03-03T13:30:00Z", "2025-03-03T17:15:00Z", "2025-03-03T21:00:00Z"],
+      ["2025-03-03T09:02:00Z", "2025-03-03T13:30:00Z", "2025-03-03T17:15:00Z", "2025-03-03T21:00:00Z"],
+      ["2025-03-03T09:02:00Z", "2025-03-03T13:30:00Z", "2025-03-03T17:15:00Z", "2025-03-03T21:00:00Z"],
+      ["2025-03-03T09:02:00Z", "2025-03-03T13:30:00Z", "2025-03-03T17:15:00Z", "2025-03-03T21:00:00Z"]
+    ],
+    "Survey.Start": [
+      "2025-03-01T08:15:42Z",
+      "2025-03-01T08:15:42Z",
+      "2025-03-01T08:15:42Z",
+      "2025-03-01T08:15:42Z",
+      "2025-03-02T12:04:11Z",
+      "2025-03-02T12:04:11Z",
+      "2025-03-02T12:04:11Z",
+      "2025-03-02T12:04:11Z",
+      "2025-03-03T09:03:28Z",
+      "2025-03-03T09:03:28Z",
+      "2025-03-03T09:03:28Z",
+      "2025-03-03T09:03:28Z"
+    ],
+    "Survey.Date.Completed": [
+      "2025-03-01T08:17:55Z",
+      "2025-03-01T08:17:55Z",
+      "2025-03-01T08:17:55Z",
+      "2025-03-01T08:17:55Z",
+      "2025-03-02T12:06:44Z",
+      "2025-03-02T12:06:44Z",
+      "2025-03-02T12:06:44Z",
+      "2025-03-02T12:06:44Z",
+      "2025-03-03T09:05:10Z",
+      "2025-03-03T09:05:10Z",
+      "2025-03-03T09:05:10Z",
+      "2025-03-03T09:05:10Z"
+    ],
+    "Survey.Date.Submitted": [
+      "2025-03-01T08:17:58Z",
+      "2025-03-01T08:17:58Z",
+      "2025-03-01T08:17:58Z",
+      "2025-03-01T08:17:58Z",
+      "2025-03-02T12:06:47Z",
+      "2025-03-02T12:06:47Z",
+      "2025-03-02T12:06:47Z",
+      "2025-03-02T12:06:47Z",
+      "2025-03-03T09:05:13Z",
+      "2025-03-03T09:05:13Z",
+      "2025-03-03T09:05:13Z",
+      "2025-03-03T09:05:13Z"
+    ],
+    "Timezone":     ["America/New_York", "America/New_York", "America/New_York", "America/New_York", "America/New_York", "America/New_York", "America/New_York", "America/New_York", "America/New_York", "America/New_York", "America/New_York", "America/New_York"],
+    "Offset":       [-300, -300, -300, -300, -300, -300, -300, -300, -300, -300, -300, -300],
+    "Network.Type": ["Wifi", "Wifi", "Wifi", "Wifi", "Cellular", "Cellular", "Cellular", "Cellular", "Wifi", "Wifi", "Wifi", "Wifi"],
+    "App.Version":  ["2.4.1", "2.4.1", "2.4.1", "2.4.1", "2.4.1", "2.4.1", "2.4.1", "2.4.1", "2.4.1", "2.4.1", "2.4.1", "2.4.1"],
+    "OS":           ["iOS 17.3", "iOS 17.3", "iOS 17.3", "iOS 17.3", "iOS 17.3", "iOS 17.3", "iOS 17.3", "iOS 17.3", "iOS 17.3", "iOS 17.3", "iOS 17.3", "iOS 17.3"],
+    "Model":        ["iPhone 14", "iPhone 14", "iPhone 14", "iPhone 14", "iPhone 14", "iPhone 14", "iPhone 14", "iPhone 14", "iPhone 14", "iPhone 14", "iPhone 14", "iPhone 14"],
+
+    "Question.ID": [
+      "stress_now", "stress_source", "mood_now", "current_location",
+      "stress_now", "mood_now", "current_location", "stress_now",
+      "stress_now", "stress_source", "mood_now", "current_location"
+    ],
+
+    "User.Response": [
+      "72",
+      "2",
+      "38",
+      "3",
+      "21",
+      "65",
+      "1",
+      "55",
+      "81",
+      "1",
+      "29",
+      "2"
+    ],
+
+    "External.ID": [
+      "rcc_p001", "rcc_p001", "rcc_p001", "rcc_p001",
+      "rcc_p001", "rcc_p001", "rcc_p001", "rcc_p001",
+      "rcc_p001", "rcc_p001", "rcc_p001", "rcc_p001"
+    ]
+  },
+
+  "itemMap": {
+    "Item.Text": "How stressed do you feel right now?",
+    "Conceptualization": "Momentary perceived psychological stress",
+    "Modeling.Characteristics": "Typically used as a time-varying outcome or predictor in multilevel models; no transformation required for normal distributions but check for skew.",
+    "Validated": false,
+    "Scale.Name": "Single-Item Stress VAS",
+    "Parent.Scale": null,
+    "Sub.Scale": null,
+    "scaleOrItem": "item",
+    "Scale.Type": "VAS",
+    "Scoring": "Raw score 0–100; no aggregation applied at item level.",
+    "Reverse.Coded": false,
+    "Transformation": "None",
+    "Identifying.Info": false,
+    "Data.Type": "continuous",
+    "Time.Stem": "right now",
+    "Top.Level.Question": null,
+    "Values": "0-100",
+    "Definition": "0 = Not at all stressed, 50 = Moderately stressed, 100 = Extremely stressed",
+    "Delivery.Mechanism": "mobile app",
+    "Delivery.Frequency": "4 times daily, randomly within 6am–10pm window",
+    "Article.Title": null,
+    "Citation": null,
+    "notes": "Single-item VAS adapted for EMA delivery. Conditional branching: if response >= 40, stress_source item is presented next."
+  },
+
+  "blockMap": {}
+}
