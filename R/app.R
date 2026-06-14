@@ -663,7 +663,7 @@ launch_app_server <- function(input, output, session) {
       req(input$survey)
       showNotification("Generating flowchart...", type = "message")
       responseKey <- read.csv("responseKey.csv")
-      mermaid_code(generateSurveyFlowchart(blockMap = blockMap, survey = input$survey,
+      mermaid_code(generateSurveyFlowchart(blockMap = read.csv("blockMap.csv"), survey = input$survey,
                                       responseKey = responseKey, shiny = TRUE))
       output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code()) })
       showNotification("Flowchart generated successfully!", type = "message")
