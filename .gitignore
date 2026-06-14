@@ -22,3 +22,8 @@ inst/Codebook_RMD/DataDictionary.csv
 *_files/
 *_cache/
 *.RData
+
+*Data.csv
+*blockMap.csv
+*responseKey.csv
+
