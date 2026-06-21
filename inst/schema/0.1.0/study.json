@@ -14,6 +14,20 @@
     }
   ],
   "properties": {
+    "AI.Disclosure" {
+      "descriptions": "Object containing AI metadata",
+      "type": "object",
+      "properties": {
+        "AI.Generated": {
+          "description": "Boolean indicating whether the data or study design is AI generated"
+          "type": "boolean"
+        },
+        "Model": {
+          "description": "String indicating what generative AI model used",
+          "type": "string"
+        }
+      }
+    },
     "Study.Name": {
       "description": "Human readable long name for a study",
       "type": "string"
@@ -30,10 +44,14 @@
       "description": "String containing qualitative description of the study. This could include main study objectives, relevant findings, study population etc.",
       "type": "string"
     },
+    https://github.com/charlieroth/jsoncalendar/blob/main/schema.json
+    https://icalendar.org/rrule-tool.html
+
+
     "burst": {
       "$anchor": "burst",
       "title": "Burst Specifications",
-      "description": "Array of burst specifications. Each burst represents a distinct data collection period. May be empty if no bursts have been defined yet.",
+      "description": "Array of burst specifications. A burst is a repeat block. If something has 3 bursts, that is means repeat the schedule 3 times",
       "type": "array",
       "minItems": 0,
       "items": {
@@ -43,10 +61,75 @@
             "description": "Burst ordered numeric identifier",
             "type": "integer"
           },
+          "schedule": {
+            "description": "Object containing scheduling info for either burst or survey",
+            "type": "object",
+            "properties": {
+              "Timing.Window": {
+                "description": "Object that contains the timing window information for when a survey is delivered in a day"
+                "type": "object",
+                "properties": {
+                  "User.Specified": {
+                    "description": "Boolean indicating whether the timing window is user specified",
+                    "type": "boolean"
+                  },
+                  "Timing": {
+                    "description": "If not user specified and fixed at the outset of the study, times the user is prompted for a survey",
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "start.time": {
+                          "description": "Start of the window time",
+                          "type": "string"
+                        },
+                        "end.time": {
+                          "description": "End of the window time",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "rrule": {
+                  "description": "Recurrence rule for burst or survey",
+                  "type": "object",
+                  "properties": {
+                    "frequency": {
+                      "type": "string",
+                      "enum": [
+                        "DAILY",
+                        "WEEKLY",
+                        "MONTHLY",
+                        "YEARLY"
+                      ]
+                    },
+                    "interval": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "default": 1
+                    },
+                    "byDay": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": ["MO", "TU", "WE", "TH", "FR", "SA", "SU"]
+                      },
+                      "uniqueItems": true
+                    },
+                    "count": {
+                      "type": "integer",
+                      "description": "How many times to repeat the scheduled event"
+                    }
+                  }
+                }
+              }
+            }
+
           "Timing.Type": {
-            "description": "Type of timing. Discrete means equal time distance, random is drawing a random sample from a time period, triggered is based on set rules more in depth than just random in a time period, and continuous is uneven time intervals.",
+            "description": "Type of timing. Fixed means, no variation in timing window. Random is drawing a random sample from a time period, triggered is based on set rules more in depth than just random in a time period, and continuous is uneven time intervals.",
             "type": "string",
-            "enum": ["Discrete", "Random", "Triggered", "Continous"]
+            "enum": ["Fixed", "Random", "Triggered"]
           },
           "survey": {
             "$anchor": "survey",

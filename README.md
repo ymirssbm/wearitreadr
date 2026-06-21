@@ -4,12 +4,9 @@ This is a codebook generator r package that can interface with WearIT's api. The
 
 ## How to run
 
-Simplest way is to load the app.R file in the codebookApp folder
+devtools:load_all() -> wearitreadr()
 
 ## Urgent TDL
-
-- Fix paths issues again... user specified, default to current wd? 
-- Make the app not suck ass for non shiny user again (data dictionary, study flowchart, codebook)
 
 ## Known Issues / To do list
 
@@ -27,9 +24,6 @@ Simplest way is to load the app.R file in the codebookApp folder
 - Dispatch model for AI generator
 - For survey tree, display additional info on clicking node
 - Figure out where the header for a slider histogram is drawn
-
-
-
 
 
 ## Contributers
