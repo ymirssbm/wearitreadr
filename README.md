@@ -25,6 +25,9 @@ devtools:load_all() -> wearitreadr()
 - For survey tree, display additional info on clicking node
 - Figure out where the header for a slider histogram is drawn
 
+# Citations
+https://github.com/charlieroth/jsoncalendar/blob/main/schema.json
+https://icalendar.org/rrule-tool.html
 
 ## Contributers
 
