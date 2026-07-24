@@ -18,10 +18,12 @@
       "descriptions": "Object containing AI metadata",
       "type": "object",
       "properties": {
+        NOTE: Make this a list where each element is a characteristic and each model that was used to generate it (for multi agent applications)
         "AI.Generated": {
           "description": "Boolean indicating whether the data or study design is AI generated"
           "type": "boolean"
         },
+
         "Model": {
           "description": "String indicating what generative AI model used",
           "type": "string"
@@ -61,6 +63,7 @@
             "description": "Burst ordered numeric identifier",
             "type": "integer"
           },
+          NOTE: Drop in json calendar to the spec
           "schedule": {
             "description": "Object containing scheduling info for either burst or survey",
             "type": "object",
@@ -69,6 +72,7 @@
                 "description": "Object that contains the timing window information for when a survey is delivered in a day"
                 "type": "object",
                 "properties": {
+                  NOTE: Add this and anything else that is not in the json calendar to extensions
                   "User.Specified": {
                     "description": "Boolean indicating whether the timing window is user specified",
                     "type": "boolean"
