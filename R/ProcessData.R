@@ -156,7 +156,7 @@ makeOneRequest <- function(URL, endpointInfo, argList=list()) {
   } else {
     URL <- paste(URL, argString, sep="?")
   }
-
+  #message(URL)
   output <- curl_fetch_memory(URL) # TODO: Replace with CRUL functions.
   # Process to sensible code:
   output$content <- rawToChar(output$content)
@@ -814,6 +814,7 @@ getStudyData <- function(study_ID = "1045", backup_key_file = "~/.auth/.wearit",
                          base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api", ...) {
 
   creds <- wearIT_authorize(study_ID = study_ID, apiToken = apiToken, skip_readline = skip_readline, backup_key_file = backup_key_file, base_URL = base_URL)
+  #browser()
   requestResults <- makeAllRequests(creds)
   studyData <- parseStudyJSON(requestResults, simpleMeta = TRUE)
 }
@@ -828,7 +829,7 @@ blockType <- function(itemList) {
 
 
 processBlockMap <- function(json_blockmap, old_block_map = data.frame()) {
-
+  #browser()
   unlisting <- unlist(json_blockmap)
   names(unlisting) <- gsub("[ ]", "_", names(unlisting))
   awkWide <- data.frame(t(unlisting))
