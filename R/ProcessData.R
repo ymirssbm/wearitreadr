@@ -299,7 +299,7 @@ getFitbitData <- function(participant, datelist, endpointInfo,
 # ggplot(filter(splitSleep, isMainSleep==TRUE), aes(x=startDate, y=startTime)) + geom_crossbar(stat="identity", color="blue", fill="blue", aes(ymin=startTime, ymax=endTime, group=startDate)) + geom_linerange(aes(y=hms(0,0,0), ymin=hms(0,0,0), ymax=hms(0,0,24))) + stat_summary(aes(x=startDate, yintercept=meanStart), geom="hline", fun="mean") + stat_summary(aes(x=startDate, yintercept=meanEnd), geom="hline", fun="mean")
 
 
-parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount=1) {
+parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount=1, pullComplexConditional = FALSE) {
 
   # Process metadata
   metaJSON <- studyJSON
@@ -435,6 +435,11 @@ parseStudyJSON <- function(studyJSON, keepAll=FALSE, simpleMeta=FALSE, metaCount
     select(-Question.ID, -Item, -Cog.Test.Result) |>
     pivot_wider(names_from=c(Short.Descriptor),
                 values_from=c(User.Response))
+
+  if (pullComplexConditional == TRUE) {
+    block_map <- complexConditional(blockMap = block_map)
+  }
+
 
   return(list(#questionMap=as.data.frame(studyKey$SurveyInfo),
               questionMap=block_map,
@@ -811,12 +816,12 @@ processSubQuestions <- function(thisCol, keyInfo, qName, subRequest=NA, verbose=
 
 
 getStudyData <- function(study_ID = "1045", backup_key_file = "~/.auth/.wearit", skip_readline = FALSE, apiToken = "",
-                         base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api", ...) {
+                         base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api", pullComplexConditional = FALSE, ...) {
 
   creds <- wearIT_authorize(study_ID = study_ID, apiToken = apiToken, skip_readline = skip_readline, backup_key_file = backup_key_file, base_URL = base_URL)
   #browser()
   requestResults <- makeAllRequests(creds)
-  studyData <- parseStudyJSON(requestResults, simpleMeta = TRUE)
+  studyData <- parseStudyJSON(requestResults, simpleMeta = TRUE, pullComplexConditional = pullComplexConditional)
 }
 
 

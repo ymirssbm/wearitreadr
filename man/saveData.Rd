@@ -4,12 +4,12 @@
 \alias{saveData}
 \title{saveData}
 \usage{
-saveData(pull = FALSE, ...)
+saveData(data = NULL, pull = FALSE, ...)
 }
 \arguments{
-\item{pull}{whether to pull data from wearIt before saving}
-
 \item{data}{data object to save from}
+
+\item{pull}{whether to pull data from wearIt before saving}
 
 \item{skip_readline}{Boolean indicating whether the user is in the shiny app and wants to skip readline for api key}
 }

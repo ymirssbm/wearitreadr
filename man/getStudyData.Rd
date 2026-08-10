@@ -10,6 +10,7 @@ getStudyData(
   skip_readline = FALSE,
   apiToken = "",
   base_URL = "https://wearables.vmhost.psu.edu/wearables-survey/api",
+  pullComplexConditional = FALSE,
   ...
 )
 }

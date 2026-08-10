@@ -5,8 +5,8 @@
 \title{Generate Data Dictionary}
 \usage{
 generateDataDictionary(
-  blockMap = read.csv(get_resource_path("Codebook_RMD", "Data", "blockMap.csv")),
-  responseKey = read.csv(get_resource_path("Codebook_RMD", "Data", "responseKey.csv")),
+  blockMap = read.csv("blockMap.csv"),
+  responseKey = read.csv("responseKey.csv"),
   ...
 )
 }

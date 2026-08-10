@@ -14,3 +14,10 @@ get_resource_path <- function(...) {
   }
   file.path(pkg_dir, ...)
 }
+
+
+# Function for splitting info that has error guarding
+splitList <- function(x) {
+  if (is.na(x) || !nzchar(trimws(x))) return(character(0))
+  trimws(strsplit(x, ";")[[1]])
+}

@@ -4,14 +4,14 @@
 \alias{parseBySurvey}
 \title{Parse by Survey}
 \usage{
-parseBySurvey(blockMap, survey, shiny = FALSE, all = FALSE)
+parseBySurvey(blockMap, survey, all = FALSE)
 }
 \arguments{
 \item{survey}{Name of the survey to pull ex. "Daily Diary"}
 
-\item{shiny}{Boolean indicating whether using shiny app}
-
 \item{all}{Whether to pull a different blockMap for each survey... not implemented yet}
+
+\item{shiny}{Boolean indicating whether using shiny app}
 }
 \value{
 A block map for a given "survey"
