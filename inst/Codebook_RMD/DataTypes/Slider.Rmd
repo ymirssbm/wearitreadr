@@ -42,10 +42,10 @@ describeMissingness(id = "{{question_id}}", thisData = thisData, blockMap = bloc
 
 
 ```{r screenshot-{{chunk_label}}, eval = params$screenshot, echo = FALSE, results = 'asis'}
-
-cat("#### Screenshot")
-
+cat("#### Screenshots")
+displayScreenshot(id = "{{item_id}}", screenshotDir = screenshotDir)
 ```
+
 
 
 </div>

@@ -9,4 +9,32 @@ displaySkipLogic(id = "{{question_id}}", blockMap = blockMap)
 
 
 
+
+<button 
+  onclick="let e = document.getElementById('{{question_id}}');
+           let arrow = document.getElementById('{{question_id}}_arrow');
+           e.style.display = e.style.display === 'none' ? 'block' : 'none';
+           arrow.textContent = e.style.display === 'none' ? '▼' : '▲';"
+  style="background: none; border: none; padding: 0; font-weight: bold; font-size: 18px; color: #2a5caa; cursor: pointer;">
+Click to view visuals <span id="{{question_id}}_arrow">▼</span>
+</button>
+
+<div id="{{question_id}}" style="display: none;">
+
+
+<!-- TOC-IGNORE-BEGIN -->
+
+### Descriptives {.tabset}
+
+
+
+```{r screenshot-{{chunk_label}}, eval = params$screenshot, echo = FALSE, results = 'asis'}
+cat("#### Screenshots")
+displayScreenshot(id = "{{item_id}}", screenshotDir = screenshotDir)
+```
+
+
+</div>
+
+
 </div>

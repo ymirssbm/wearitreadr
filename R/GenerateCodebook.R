@@ -26,6 +26,7 @@ generateCodebook <- function(title = "This is a temp default title, please set",
                               thisData = read.csv("Data.csv"),
                               blockMap = read.csv("blockMap.csv"),
                               responseKey = read.csv("responseKey.csv"),
+                              screenshotDir = file.path(getwd(), "screenshots"),
                               include_practice_items = FALSE,
                               include_html = FALSE,
                               print_blockmap_missing = FALSE,
@@ -45,6 +46,8 @@ generateCodebook <- function(title = "This is a temp default title, please set",
 
   # Fix output file path
   output_file <- normalizePath(output_file, mustWork = FALSE)
+  screenshotDir <- normalizePath(screenshotDir, mustWork = FALSE)
+
 
   # Remove all data if user selected
   if(!"include data" %in% codebookChunkDisplayOptions) {

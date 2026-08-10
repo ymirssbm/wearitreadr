@@ -568,6 +568,7 @@ launch_app_server <- function(input, output, session) {
         funding = input$funding,
         abstract = input$abstract,
         summary = input$summary,
+        screenshotDir = file.path(working_dir(), "screenshots"),
         output_file = file.path(working_dir(), "Codebook.html")
       )
       removeNotification(notif_id)

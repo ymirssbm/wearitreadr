@@ -106,10 +106,10 @@ Missing descriptives for Multiple Slider questions have not been implemented yet
 
 
 ```{r screenshot-{{chunk_label}}, eval = params$screenshot, echo = FALSE, results = 'asis'}
-
-cat("#### Screenshot")
-
+cat("#### Screenshots")
+displayScreenshot(id = "{{item_id}}", screenshotDir = screenshotDir)
 ```
+
 
 
 </div>
