@@ -1,0 +1,437 @@
+appId: com.your.app.package
+---
+- takeScreenshot: "Item 5734"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5734_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- repeat:
+    while:
+      notVisible:
+        text: "Other activity"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Other activity"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5792"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5735"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5735_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5736"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5736_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- repeat:
+    while:
+      notVisible:
+        text: "Recovery Community Center (RCC)"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Recovery Community Center (RCC)"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5737"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5737_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5738"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5738_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- repeat:
+    while:
+      notVisible:
+        text: "Other"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Other"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5739"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5740"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5741"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- repeat:
+    while:
+      notVisible:
+        text: "Recovery Community Center (RCC)"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Recovery Community Center (RCC)"
+- repeat:
+    while:
+      notVisible:
+        text: "Home"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Home"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5742"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5742_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- repeat:
+    while:
+      notVisible:
+        text: "Other"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Other"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5743"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5798"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5748"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5748_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- repeat:
+    while:
+      notVisible:
+        text: "Grief support"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Grief support"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5784"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5784_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- repeat:
+    while:
+      notVisible:
+        text: "Other"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Other"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5785"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5750"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5751"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5752"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5753"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5754"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5755"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5757"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5757_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- repeat:
+    while:
+      notVisible:
+        text: "Yes"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Yes"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5758"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5759"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5760"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5761"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- back
+- waitForAnimationToEnd
+- repeat:
+    while:
+      notVisible:
+        text: "Yes"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Yes"
+- repeat:
+    while:
+      notVisible:
+        text: "No"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "No"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5762"
+- swipe:
+    start: 50%, 85%
+    end: 50%, 55%
+    duration: 400
+- takeScreenshot: "Item 5762_2"
+- swipe:
+    start: 50%, 55%
+    end: 50%, 85%
+    duration: 400
+- repeat:
+    while:
+      notVisible:
+        text: "Skipped for other reason"
+    commands:
+    - swipe:
+        start: 50%, 85%
+        end: 50%, 55%
+        duration: 400
+- tapOn: "Skipped for other reason"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5794"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5764"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5765"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5766"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5767"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5769"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5770"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5771"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5772"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5773"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5774"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5775"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5776"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5777"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5778"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5779"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5780"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd
+- takeScreenshot: "Item 5787"
+- tapOn: "Right-facing arrow indicating next question"
+- waitForAnimationToEnd
+- tapOn: "OK"
+- waitForAnimationToEnd

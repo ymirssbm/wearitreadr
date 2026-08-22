@@ -12,22 +12,22 @@ parseJsonSpec(filepath)
 }
 \value{
 Invisibly returns \code{NULL}. As a side effect, writes three CSV
-files to \code{../codebookApp/Codebook_RMD/Data/}:
+files to the same directory as \code{filepath}:
 \describe{
-\item{Data.csv}{One row per question response per session, containing
-participant metadata (ID, session, timestamps, device info) alongside
-item-level response data and question attributes.}
-\item{blockMap.csv}{One row per question per survey per burst, containing
-question metadata including item IDs, types, display names, conditional
-logic fields, and survey labels. Falls back to \code{Survey.LongName}
-if \code{Survey.ShortName} is missing.}
-\item{responseKey.csv}{One row per response option per question, mapping
-numeric values to their text definitions for closed-ended items.}
+\item{Data.csv}{One row per participant/session, containing the
+column-vector fields defined under the top-level \code{data}
+property of the 0.1.0 schema.}
+\item{blockMap.csv}{One row per question per survey, matching the
+column set expected by \code{generateSurveyFlowchart()} and the
+codebook generator.}
+\item{responseKey.csv}{One row per response option per question,
+mapping numeric values to their text definitions for closed-ended
+items.}
 }
 }
 \description{
-Reads a WearIt study JSON file and extracts three structured data objects:
-participant response data, a block map of survey questions, and a response
-key mapping numeric values to their labels. Writes all three to CSV files
-as a side effect.
+Reads a WearIt study JSON file (0.1.0 spec) and extracts three structured
+data objects: participant response data, a block map of survey questions,
+and a response key mapping numeric values to their labels. Writes all
+three to CSV files as a side effect.
 }

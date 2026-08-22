@@ -13,3 +13,6 @@ saveData(data)
 
 # Generate codebook
 generateCodebook()
+
+# Running App
+wearitreadr()

@@ -72,46 +72,135 @@ launch_app_ui <- function() {
         tags$script(HTML("mermaid.initialize({ startOnLoad: false, theme: 'default' });")),
 
         tags$script(HTML("
-  Shiny.addCustomMessageHandler('jsCode', function(message) {
-    eval(message.code);
-  });
+Shiny.addCustomMessageHandler('jsCode', function(message) {
+  eval(message.code);
+});
 ")),
         tags$script(HTML("
-    $(document).ready(function() {
-      $('body').removeClass('sidebar-collapse');
-    });
-  ")),
-
+  $(document).ready(function() {
+    $('body').removeClass('sidebar-collapse');
+  });
+")),
 
         # Add spinner control functions
         tags$script(HTML("
-  function showChatSpinner() {
-    document.getElementById('chatSpinner').style.display = 'block';
-    document.getElementById('sendChat').disabled = true;
-  }
+function showChatSpinner() {
+  document.getElementById('chatSpinner').style.display = 'block';
+  document.getElementById('sendChat').disabled = true;
+}
 
-  function hideChatSpinner() {
-    document.getElementById('chatSpinner').style.display = 'none';
-    document.getElementById('sendChat').disabled = false;
-  }
+function hideChatSpinner() {
+  document.getElementById('chatSpinner').style.display = 'none';
+  document.getElementById('sendChat').disabled = false;
+}
 
-  // Scroll chat to bottom
-  function scrollChatToBottom() {
-    var chatBox = document.getElementById('chatHistory');
-    chatBox.scrollTop = chatBox.scrollHeight;
+// Scroll chat to bottom
+function scrollChatToBottom() {
+  var chatBox = document.getElementById('chatHistory');
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+")),
+
+        # ===== Mermaid PNG export function =====
+        tags$script(HTML("
+  function exportMermaidPNG() {
+    try {
+      var svgEl = document.querySelector('#mermaid-container svg');
+      if (!svgEl) { alert('Please generate the flowchart first.'); return; }
+
+      // Measure the LIVE element (correct fonts/metrics) before cloning
+      var bbox = svgEl.getBBox();
+      var padding = 20;
+      var x = bbox.x - padding;
+      var y = bbox.y - padding;
+      var width = bbox.width + padding * 2;
+      var height = bbox.height + padding * 2;
+
+      if (!width || !height) {
+        alert('Could not determine flowchart size for export.');
+        return;
+      }
+
+      var clone = svgEl.cloneNode(true);
+      clone.removeAttribute('style');
+      clone.setAttribute('viewBox', x + ' ' + y + ' ' + width + ' ' + height);
+      clone.setAttribute('width', width);
+      clone.setAttribute('height', height);
+      clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+
+      // Inline all same-origin page CSS so text/fonts render the same way
+      // standalone as they do on-screen (fixes text getting clipped/wrong width)
+      var cssText = '';
+      for (var i = 0; i < document.styleSheets.length; i++) {
+        try {
+          var rules = document.styleSheets[i].cssRules || document.styleSheets[i].rules;
+          if (!rules) continue;
+          for (var j = 0; j < rules.length; j++) {
+            cssText += rules[j].cssText + '\\n';
+          }
+        } catch (e) {
+          // Cross-origin stylesheet (e.g. CDN font/theme) - can't read its rules, skip
+        }
+      }
+      var styleEl = document.createElementNS('http://www.w3.org/2000/svg', 'style');
+      styleEl.textContent = cssText;
+      clone.insertBefore(styleEl, clone.firstChild);
+
+      var scale = 2; // higher = sharper PNG
+
+      var svgData = new XMLSerializer().serializeToString(clone);
+      var svgBlob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+      var url = URL.createObjectURL(svgBlob);
+
+      var img = new Image();
+      img.onload = function() {
+        try {
+          var canvas = document.createElement('canvas');
+          canvas.width = width * scale;
+          canvas.height = height * scale;
+          var ctx = canvas.getContext('2d');
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          URL.revokeObjectURL(url);
+
+          canvas.toBlob(function(blob) {
+            var a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'flowchart.png';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+          });
+        } catch (err) {
+          console.error('exportMermaidPNG canvas error:', err);
+          alert('Export failed while drawing the image: ' + err.message);
+        }
+      };
+      img.onerror = function(err) {
+        console.error('exportMermaidPNG image load error:', err);
+        URL.revokeObjectURL(url);
+        alert('Could not load the flowchart image for export.');
+      };
+      img.src = url;
+
+    } catch (err) {
+      console.error('exportMermaidPNG error:', err);
+      alert('Export failed: ' + err.message);
+    }
   }
 ")),
+
         # Flow chart download
         tags$script(HTML("
-  Shiny.addCustomMessageHandler('triggerExport', function(msg) {
-    if (window.exportMermaidPNG) {
-      exportMermaidPNG();
-    } else {
-      alert('Please generate the flowchart first.');
-    }
-  });
+Shiny.addCustomMessageHandler('triggerExport', function(msg) {
+  if (window.exportMermaidPNG) {
+    exportMermaidPNG();
+  } else {
+    alert('Please generate the flowchart first.');
+  }
+});
 ")),
-
       ),
 
       tabItems(
@@ -299,8 +388,9 @@ launch_app_ui <- function() {
               width = 12,
               status = "primary",
               solidHeader = TRUE,
-              downloadButton("exportPNG", "Export PNG",
-                             style = "background: #3c8dbc; color: white; border: none; border-radius: 8px; padding: 0.5rem 1rem; font-weight: 600; margin-bottom: 10px;"),
+              actionButton("exportPNG", "Export PNG",
+                           icon = icon("download"),
+                           style = "background: #3c8dbc; color: white; border: none; border-radius: 8px; padding: 0.5rem 1rem; font-weight: 600; margin-bottom: 10px;"),
               tags$small("Generate a flowchart before exporting.",
                          style = "color: #888; margin-left: 10px;"),
               uiOutput("surveyTree")
@@ -470,6 +560,12 @@ launch_app_server <- function(input, output, session) {
       working_dir(selected_dir)
       setwd(selected_dir)
       addResourcePath("userwd", selected_dir)
+
+      # Reset the AI assistant so it re-initializes against the new working
+      # directory next time it's needed (its output_path and its internal
+      # "does a study already exist" check are both baked in at creation)
+      assistant(NULL)
+
       showNotification(paste("Working directory set to:", selected_dir), type = "message", duration = 5)
     }
 
@@ -622,7 +718,9 @@ launch_app_server <- function(input, output, session) {
   #---------------------------------------------
   # Flowchart
   #---------------------------------------------
-
+  #---------------------------------------------
+  # Flowchart
+  #---------------------------------------------
 
   observe({
     if (file.exists("blockMap.csv")) {
@@ -665,7 +763,7 @@ launch_app_server <- function(input, output, session) {
       showNotification("Generating flowchart...", type = "message")
       responseKey <- read.csv("responseKey.csv")
       mermaid_code(generateSurveyFlowchart(blockMap = read.csv("blockMap.csv"), survey = input$survey,
-                                      responseKey = responseKey, shiny = TRUE))
+                                           responseKey = responseKey, shiny = TRUE))
       output$surveyTree <- renderUI({ renderMermaidUI(mermaid_code()) })
       showNotification("Flowchart generated successfully!", type = "message")
     }, error = function(e) {
@@ -675,22 +773,11 @@ launch_app_server <- function(input, output, session) {
     })
   })
 
-  output$exportPNG <- downloadHandler(
-    filename = function() { "flowchart.png" },
-    content = function(file) {
-      req(mermaid_code())
-      encoded <- openssl::base64_encode(mermaid_code())
-      encoded <- gsub("\n", "", encoded)          # remove linebreaks
-      encoded <- gsub("\\+", "-", encoded)        # URL-safe base64
-      encoded <- gsub("/", "_", encoded)          # URL-safe base64
-      encoded <- gsub("=", "", encoded)           # remove padding
-      url <- paste0("https://mermaid.ink/img/", encoded)
-      resp <- httr::GET(url)
-      print(httr::status_code(resp))
-      writeBin(httr::content(resp, "raw"), file)
-    },
-    contentType = "image/png"
-  )
+  # Replaces the old downloadHandler-based exportPNG
+  observeEvent(input$exportPNG, {
+    req(mermaid_code())
+    session$sendCustomMessage("triggerExport", list())
+  })
 
 
   #---------------------------------------------
@@ -703,13 +790,11 @@ launch_app_server <- function(input, output, session) {
 
   # Initialize the assistant when credentials are available
   observe({
-    req(input$AI_URL, input$AIApiToken)
-
+    req(input$AI_URL, input$AIApiToken, working_dir())
     if (is.null(assistant())) {
       tryCatch({
         schema_dir <- file.path(pkg_dir, "schema")
-        output_dir <- file.path(codebook_dir, "Data")
-
+        output_dir <- working_dir()
         # Check and install dependencies
         py_run_string(
           "import importlib
@@ -717,14 +802,11 @@ import importlib.util
 packages = ['pandas', 'langchain_openai', 'jsonschema', 'langchain_core']
 missing = [p for p in packages if importlib.util.find_spec(p) is None]
 ")
-
         if (length(py$missing) > 0) {
           showNotification("Installing AI dependencies...", type = "message", duration = 5)
           py_install(py$missing, pip = TRUE)
         }
-
         source_python(file.path(python_dir, "aiStudyDispatcher.py"))
-
         # Create assistant instance
         assistant(py$StudyAssistant(
           url = input$AI_URL,
@@ -732,13 +814,11 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
           schema_path = schema_dir,
           output_path = output_dir
         ))
-
         # Add welcome message
         chat_messages(list(
           list(role = "assistant",
                content = "Hi! I'm your AI Study Assistant. I can help you generate new studies or modify existing ones. Type 'help' to see what I can do!")
         ))
-
       }, error = function(e) {
         showNotification(paste("Error initializing assistant:", e$message),
                          type = "error", duration = 10)
@@ -797,7 +877,7 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
 
   # Main send handler - SIMPLE SYNCHRONOUS VERSION
   observeEvent(input$sendChat, {
-    req(input$chatInput, assistant())
+    req(input$chatInput, assistant(), working_dir())
 
     user_message <- trimws(input$chatInput)
     if (user_message == "") return()
@@ -828,9 +908,10 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
           api_token = input$AIApiToken,
           query = result$query,
           schema_path = file.path(pkg_dir, "schema"),
-          output_path = file.path(codebook_dir, "Data")
+          item_repository_path = file.path(codebook_dir, "Data"),
+          output_path = working_dir()
         )
-        parseJsonSpec(get_resource_path("Codebook_RMD", "Data", "study_output.json"))
+        parseJsonSpec(file.path(working_dir(), "study_output.json"))
 
         msgs <- chat_messages()
         msgs[[length(msgs) + 1]] <- list(
@@ -846,9 +927,10 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
           api_token = input$AIApiToken,
           query = result$query,
           schema_path = file.path(pkg_dir, "schema"),
-          output_path = file.path(codebook_dir, "Data")
+          item_repository_path = file.path(codebook_dir, "Data"),
+          output_path = working_dir()
         )
-        parseJsonSpec(get_resource_path("Codebook_RMD", "Data", "study_output.json"))
+        parseJsonSpec(file.path(working_dir(), "study_output.json"))
 
         msgs <- chat_messages()
         msgs[[length(msgs) + 1]] <- list(
@@ -911,11 +993,108 @@ missing = [p for p in packages if importlib.util.find_spec(p) is None]
   })
 
   # Keep existing direct generation/modification code
+  # Generate AI Study (direct prompt, bypasses dispatcher intent classification)
   observeEvent(input$generateAIStudy, {
+    req(input$AI_URL, input$AIApiToken, input$aiGenerationPrompt, assistant(), working_dir())
+
+    tryCatch({
+      schema_dir <- file.path(pkg_dir, "schema")
+      item_repo_dir <- file.path(codebook_dir, "Data")
+      output_dir <- working_dir()
+
+      py_run_string(
+        "import importlib
+import importlib.util
+packages = ['pandas', 'langchain_openai', 'jsonschema', 'langchain_core']
+missing = [p for p in packages if importlib.util.find_spec(p) is None]
+"
+      )
+
+      if (length(py$missing) > 0) {
+        showNotification("Installing AI dependencies, this may take a moment...", type = "message")
+        py_install(py$missing, pip = TRUE)
+      }
+
+      notif_id <- showNotification("Generating study...", type = "message", duration = NULL)
+
+      source_python(file.path(python_dir, "aiStudyGenerator.py"))
+      generate_ai_study(
+        url                  = input$AI_URL,
+        api_token            = input$AIApiToken,
+        query                = input$aiGenerationPrompt,
+        schema_path          = schema_dir,
+        item_repository_path = item_repo_dir,
+        output_path          = output_dir
+      )
+
+      parseJsonSpec(file.path(output_dir, "study_output.json"))
+
+      removeNotification(notif_id)
+      showNotification("Study generated!", type = "message")
+
+      msgs <- chat_messages()
+      msgs[[length(msgs) + 1]] <- list(
+        role = "system",
+        content = paste("Study generated via direct prompt:", input$aiGenerationPrompt)
+      )
+      chat_messages(msgs)
+
+    }, error = function(e) {
+      showNotification(paste("Error generating AI study:", conditionMessage(e)), type = "error", duration = 10)
+      print(e)
+    })
   })
 
+  # Modify AI Study (direct prompt, bypasses dispatcher intent classification)
   observeEvent(input$modifyAIStudy, {
+    req(input$AI_URL, input$AIApiToken, input$aiModificationPrompt, assistant(), working_dir())
 
+    tryCatch({
+      schema_dir <- file.path(pkg_dir, "schema")
+      item_repo_dir <- file.path(codebook_dir, "Data")
+      output_dir <- working_dir()
+
+      py_run_string(
+        "import importlib
+import importlib.util
+packages = ['pandas', 'langchain_openai', 'jsonschema', 'langchain_core']
+missing = [p for p in packages if importlib.util.find_spec(p) is None]
+"
+      )
+
+      if (length(py$missing) > 0) {
+        showNotification("Installing AI dependencies, this may take a moment...", type = "message")
+        py_install(py$missing, pip = TRUE)
+      }
+
+      notif_id <- showNotification("Modifying study...", type = "message", duration = NULL)
+
+      source_python(file.path(python_dir, "aiStudyModifier.py"))
+      modify_ai_study(
+        url                  = input$AI_URL,
+        api_token            = input$AIApiToken,
+        query                = input$aiModificationPrompt,
+        schema_path          = schema_dir,
+        item_repository_path = item_repo_dir,
+        output_path          = output_dir
+      )
+
+      parseJsonSpec(file.path(output_dir, "study_output.json"))
+
+      removeNotification(notif_id)
+      showNotification("Study modified!", type = "message")
+
+      msgs <- chat_messages()
+      msgs[[length(msgs) + 1]] <- list(
+        role = "system",
+        content = paste("Study modified via direct prompt:", input$aiModificationPrompt)
+      )
+      chat_messages(msgs)
+
+    }, error = function(e) {
+      showNotification(paste("Error modifying AI study:", conditionMessage(e)), type = "error", duration = 10)
+      print(e)
+    })
   })
 }
 

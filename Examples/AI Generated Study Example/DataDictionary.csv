@@ -1,0 +1,22 @@
+"Survey.LongName","Question.ID","Question.Text","Question.Type.Display.Name","Result.Type","Missingness.Codes","Response.Range","Response.Text"
+"Baseline Demographics","block_base",NA,"Block",NA,NA,NA,NA
+"Baseline Demographics","age","What is your age (in years)?","Free Response","integer",NA,NA,NA
+"Baseline Demographics","gender","What is your gender identity?","Multiple Choice","character",NA,"1 - 6","Male, Female, Non-binary, Transgender, Other, Prefer not to say"
+"Baseline Demographics","race","What is your race/ethnicity? (Select all that apply)","Multiple Select","character",NA,"1 - 8","White, Black or African American, Hispanic or Latino, Asian, Native American or Alaska Native, Native Hawaiian or Pacific Islander, Other, Prefer not to say"
+"Baseline Demographics","education","What is the highest level of education you have completed?","Multiple Choice","character",NA,"1 - 6","Less than high school, High school diploma or GED, Some college, Associate degree, Bachelor's degree, Graduate degree"
+"Baseline Demographics","employment","What is your current employment status?","Multiple Choice","character",NA,"1 - 7","Employed full-time, Employed part-time, Unemployed, Student, Retired, Unable to work, Other"
+"Baseline Demographics","block_base_end",NA,"End Block",NA,NA,NA,NA
+"Morning EMA","block_morning",NA,"Block",NA,NA,NA,NA
+"Morning EMA","pa_interested","How interested have you felt since waking up this morning?","Slider","numeric",NA,"0 - 100","Not at all, Extremely"
+"Morning EMA","pa_excited","How excited have you felt since waking up this morning?","Slider","numeric",NA,"0 - 100","Not at all, Extremely"
+"Morning EMA","pa_strong","How strong have you felt since waking up this morning?","Slider","numeric",NA,"0 - 100","Not at all, Extremely"
+"Morning EMA","craving_morning","How strong is your desire or craving to use substances right now?","Slider","numeric",NA,"0 - 100","No craving at all, Extremely strong craving"
+"Morning EMA","block_morning_end",NA,"End Block",NA,NA,NA,NA
+"Evening EMA","block_evening",NA,"Block",NA,NA,NA,NA
+"Evening EMA","na_distressed","How distressed have you felt today?","Slider","numeric",NA,"0 - 100","Not at all, Extremely"
+"Evening EMA","na_upset","How upset have you felt today?","Slider","numeric",NA,"0 - 100","Not at all, Extremely"
+"Evening EMA","na_nervous","How nervous have you felt today?","Slider","numeric",NA,"0 - 100","Not at all, Extremely"
+"Evening EMA","craving_evening","How strong was your desire or craving to use substances today?","Slider","numeric",NA,"0 - 100","No craving at all, Extremely strong craving"
+"Evening EMA","ss_supported","I felt supported by others today","Slider","numeric",NA,"0 - 100","Strongly disagree, Strongly agree"
+"Evening EMA","ss_talk","Did you have someone to talk to today if you needed help?","Multiple Choice","character",NA,"0 - 1","No, Yes"
+"Evening EMA","block_evening_end",NA,"End Block",NA,NA,NA,NA

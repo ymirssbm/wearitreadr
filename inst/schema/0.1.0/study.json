@@ -14,25 +14,42 @@
     }
   ],
   "properties": {
-    "AI.Disclosure": {
-      "description": "List of AI-generated characteristics and the model used to generate each one. Supports multi-agent/multi-model provenance, or a single entry with Characteristic='All' if one model generated everything.",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "Characteristic": {
-            "description": "The specific data element, section, or design aspect that was AI generated (e.g. 'study design', 'survey text', 'data analysis code', 'summary narrative', 'figure captions'). Use 'All' if a single model was responsible for the entire output.",
-            "type": "string"
-          },
-          "Model": {
-            "description": "String indicating what generative AI model was used to produce this characteristic",
-            "type": "string"
+    "AI.Information": {
+      "description": "Container for all AI-provenance metadata associated with this study: which model(s) generated which characteristics, and the exact prompts used to generate and subsequently modify the study via the AI Study Assistant.",
+      "type": "object",
+      "properties": {
+        "AI.Disclosure": {
+          "description": "List of AI-generated characteristics and the model used to generate each one. Supports multi-agent/multi-model provenance, or a single entry with Characteristic='All' if one model generated everything.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Characteristic": {
+                "description": "The specific data element, section, or design aspect that was AI generated (e.g. 'study design', 'survey text', 'data analysis code', 'summary narrative', 'figure captions'). Use 'All' if a single model was responsible for the entire output.",
+                "type": "string"
+              },
+              "Model": {
+                "description": "String indicating what generative AI model was used to produce this characteristic",
+                "type": "string"
+              }
+            },
+            "required": [
+              "Characteristic",
+              "Model"
+            ]
           }
         },
-        "required": [
-          "Characteristic",
-          "Model"
-        ]
+        "AI.Generation.Prompt": {
+          "description": "The exact user-provided prompt used to initially generate this study via the AI Study Generator. Null or omitted if the study was not AI-generated.",
+          "type": ["string", "null"]
+        },
+        "AI.Modification.Prompts": {
+          "description": "Chronological list of user-provided prompts used to modify this study via the AI Study Modifier, one entry per modification request, in the order they were applied. Empty or omitted if the study has never been modified via the AI assistant.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     },
     "Study.Name": {
@@ -363,7 +380,8 @@
                   },
                   "Survey.Name": {
                     "description": "Name of the survey delivered by this schedule, referencing a Survey.Name value elsewhere in this document. Optional — some schedules (e.g. passive/sensor sync, administrative reminders) deliver no survey. JSON Schema cannot verify the referenced survey actually exists; any agent or tool generating or consuming this data must independently confirm it resolves to a real Survey.Name in the same study spec.",
-                     "type": "string"
+                    "type": "string"
+                  }
                 }
               }
             }

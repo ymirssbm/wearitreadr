@@ -1,11 +1,10 @@
 import json
 import os
 from jsonschema import validate, ValidationError
-from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from langchain_openai import ChatOpenAI
 import pandas as pd
-
-def generate_ai_study(url, api_token, query, schema_path='schema', output_path='Codebook_RMD/Data'):
+def generate_ai_study(url, api_token, query, schema_path='schema', item_repository_path='Codebook_RMD/Data', output_path='Codebook_RMD/Data'):
     """
     Generates a synthetic study following wearIts JSON spec using kimi.
     
@@ -19,8 +18,10 @@ def generate_ai_study(url, api_token, query, schema_path='schema', output_path='
         Description of the study to be generated in as much detail as possible.
     schema_path : str
         Path to schema directory.
+    item_repository_path : str
+        Path to directory containing itemRepository.csv (static reference data, package-local).
     output_path : str
-        Path to output directory.
+        Path to output directory where study_output.json is saved (typically the user's working directory).
     
     Output
     ------
@@ -38,15 +39,16 @@ def generate_ai_study(url, api_token, query, schema_path='schema', output_path='
         schema = json.load(f)
     #endpoint = "https://genai-fa2026-resource-1.services.ai.azure.com/api/projects/Ethan_Kile_GenAI_Project/openai/v1"
     #endpoint + "/openai/v1"
+    MODEL_NAME = "Kimi-K2.5"
     llm = ChatOpenAI(
-        model="Kimi-K2.5",
+        model=MODEL_NAME,
         base_url=url,
         api_key=api_token,
         temperature=0,
         timeout=300,
         max_tokens=16000
     )
-    itemRepository = pd.read_csv(os.path.join(output_path, 'itemRepository.csv'))
+    itemRepository = pd.read_csv(os.path.join(item_repository_path, 'itemRepository.csv'))
     system_prompt = f"""You are a synthetic study generator.
 Return ONLY valid JSON, no markdown, no explanation.
 Use 'Item.Type' as the field name, NOT 'Type'.
@@ -74,8 +76,14 @@ RULES:
             print(f"✗ Attempt {attempt + 1} failed: {e.message if hasattr(e, 'message') else str(e)}")
             if attempt == max_retries - 1:
                 raise
-            messages.append({"role": "assistant", "content": response.content})
-            messages.append({"role": "user", "content": f"That was invalid JSON. Error: {e.message if hasattr(e, 'message') else str(e)}. Please fix and try again, returning only valid JSON."})
+            messages.append(AIMessage(content=response.content))
+            messages.append(HumanMessage(content=f"That was invalid JSON. Error: {e.message if hasattr(e, 'message') else str(e)}. Please fix and try again, returning only valid JSON."))
+    # Record the generation prompt deterministically, rather than trusting the
+    # model to self-report it — the model may omit AI.Information entirely.
+    data.setdefault("AI.Information", {})
+    data["AI.Information"]["AI.Disclosure"] = [{"Characteristic": "All", "Model": MODEL_NAME}]
+    data["AI.Information"]["AI.Generation.Prompt"] = query
+    data["AI.Information"].setdefault("AI.Modification.Prompts", [])
     with open(os.path.join(output_path, "study_output.json"), "w") as f:
         json.dump(data, f, indent=2)
     print(f"Saved to {os.path.join(output_path, 'study_output.json')}")

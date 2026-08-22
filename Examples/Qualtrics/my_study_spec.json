@@ -3,12 +3,12 @@
   "authors": "Jane Smith, John Doe",
   "funding": "NIH Grant R01DA012345",
   "abstract": "Study abstract here",
-  "burst": {
-    "burstID": 1,
-    "survey": {
+  "schedules": [],
+  "surveys": [
+    {
       "Survey.LongName": "Ethan's Awesome Survey",
-      "Survey.ShortName": "",
-      "question": [
+      "Survey.Name": "Ethan's Awesome Survey",
+      "questions": [
         {
           "Item.ID": "Item QID1721085514",
           "Item.Type": "Question",
@@ -48,11 +48,11 @@
             }
           ],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -110,11 +110,11 @@
             }
           ],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -148,11 +148,11 @@
             }
           ],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -186,11 +186,11 @@
             }
           ],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -232,11 +232,11 @@
             }
           ],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -278,11 +278,11 @@
             }
           ],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -316,11 +316,11 @@
             }
           ],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -354,11 +354,11 @@
             }
           ],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -371,11 +371,11 @@
           "Data.Type": "character",
           "responseKey": [],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -388,11 +388,11 @@
           "Data.Type": "character",
           "responseKey": [],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         },
         {
@@ -405,15 +405,88 @@
           "Data.Type": "character",
           "responseKey": [],
           "Conditional.Info": {
-            "Conditional.Type": null,
+            "Conditional.Master.Item.ID": null,
             "Conditional.Threshold": null,
-            "Conditional.Child.Item.ID": null,
+            "Conditional.Type": null,
             "Conditional.Fail.Item.ID": null,
-            "Conditional.Master.Item.ID": null
+            "Conditional.Child.Mappings": null
           }
         }
       ]
     }
-  },
-  "blockMap": []
+  ],
+  "blockMap": [
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item BL_9N33IENRbRDbXVA",
+      "Item.Type": "Block",
+      "Parent": null
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085514",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085515",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085506",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085508",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085509",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085507",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085510",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085516",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085511",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085512",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    },
+    {
+      "Survey.Name": "Ethan's Awesome Survey",
+      "Item.ID": "Item QID1721085513",
+      "Item.Type": "Question",
+      "Parent": "Item BL_9N33IENRbRDbXVA"
+    }
+  ]
 }

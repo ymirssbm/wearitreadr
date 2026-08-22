@@ -1,626 +1,463 @@
 {
-  "Study.Name": "Mediterranean Diet Intervention for Cardiovascular Outcomes in Type 2 Diabetes (MED-CVD)",
-  "authors": "Maria Rodriguez, MD, PhD; James Chen, MD, MPH; Sarah Johnson, RD, PhD; Robert Williams, MD; Lisa Park, MD, MPH",
-  "funding": "National Heart, Lung, and Blood Institute (NHLBI) Grant R01HL145678; National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK) Grant R01DK098765",
-  "abstract": "This multicenter randomized controlled trial examined the effect of a structured Mediterranean diet intervention versus standard care on cardiovascular events in 1,200 adults aged 50-75 with Type 2 diabetes across 12 outpatient clinical centers. Participants were randomized 1:1 to receive intensive Mediterranean diet counseling and meal provision versus standard diabetes education. The primary outcome was a composite of myocardial infarction, stroke, and cardiovascular death over 3 years of follow-up. The study demonstrated a 25% relative risk reduction in the primary composite endpoint in the intervention group compared to standard care (adjusted for baseline HbA1c, BMI, smoking status, and statin use). Secondary outcomes included individual cardiovascular events, HbA1c changes, and dietary adherence measured at 6-month intervals.",
-  "burst": [
+  "Study.Name": "Temporal Dynamics of Recovery: A 30-Day Intensive Longitudinal Study",
+  "authors": "Sarah J. Martinez, PhD, Robert K. Chen, MD, Angela L. Thompson, PhD",
+  "funding": "National Institute on Drug Abuse (NIDA) Grant R01DA045678; Substance Abuse and Mental Health Services Administration (SAMHSA) Award TI234567",
+  "abstract": "This study examines the dynamic, day-to-day processes of recovery from substance use disorders using ecological momentary assessment (EMA). Participants (N=150) in early recovery (0-6 months abstinent) completed brief surveys twice daily (morning and evening) for 30 days. The study investigates temporal patterns of craving, mood variability, stress reactivity, and substance use lapses. Key outcomes include real-time prediction models of lapse risk and identification of high-risk temporal windows. Data were collected via smartphone-based EMA with geolocation tagging.",
+  "AI.Disclosure": [
     {
-      "burstID": 1,
-      "Timing.Type": "Discrete",
-      "survey": [
+      "Characteristic": "All",
+      "Model": "Claude-3.5-Sonnet-20241022"
+    }
+  ],
+  "schedules": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "name": "30-Day EMA Protocol",
+      "events": [
         {
-          "Survey.LongName": "Baseline Assessment and Randomization",
-          "Survey.ShortName": "BL",
-          "Scheduling.Info": {
-            "Timing.Info": {
-              "offset": [
-                {
-                  "value": 0,
-                  "unit": "days"
-                }
-              ],
-              "children": []
-            },
-            "Window.Info": {
-              "window.length": [
-                {
-                  "value": 1,
-                  "unit": "days"
-                }
-              ],
-              "random": false,
-              "Trigger.Info": {}
-            }
+          "id": "550e8400-e29b-41d4-a716-446655440001",
+          "title": "Morning Assessment",
+          "start": "2024-01-01T08:00:00-05:00",
+          "end": "2024-01-01T10:00:00-05:00",
+          "recurrence": {
+            "frequency": "DAILY",
+            "interval": 1,
+            "count": 30
           },
-          "question": [
-            {
-              "Item.ID": "item_rand_group",
-              "Question.ID": "randomization_group",
-              "Question.Text": "Randomization group assignment",
-              "Question.Description": "Treatment allocation to Mediterranean diet intervention or standard care control",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "Mediterranean Diet Intervention"
-                },
-                {
-                  "value": "2",
-                  "definition": "Standard Care Control"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_age",
-              "Question.ID": "age_baseline",
-              "Question.Text": "Age at enrollment (years)",
-              "Question.Description": "Participant age in years, inclusion criteria 50-75",
-              "Question.Type.Display.Name": "Free Response",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_hba1c_bl",
-              "Question.ID": "hba1c_baseline",
-              "Question.Text": "Baseline HbA1c level (%)",
-              "Question.Description": "Glycated hemoglobin measured at baseline, primary covariate for adjustment",
-              "Question.Type.Display.Name": "Free Response",
-              "Item.Type": "Question",
-              "Data.Type": "numeric",
-              "Parent": null,
-              "responseKey": [],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_bmi_bl",
-              "Question.ID": "bmi_baseline",
-              "Question.Text": "Baseline Body Mass Index (kg/m\u00b2)",
-              "Question.Description": "Calculated from measured height and weight at baseline",
-              "Question.Type.Display.Name": "Free Response",
-              "Item.Type": "Question",
-              "Data.Type": "numeric",
-              "Parent": null,
-              "responseKey": [],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_smoking_bl",
-              "Question.ID": "smoking_status",
-              "Question.Text": "Current smoking status",
-              "Question.Description": "Smoking status for covariate adjustment and stratification",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "Never smoker"
-                },
-                {
-                  "value": "2",
-                  "definition": "Former smoker"
-                },
-                {
-                  "value": "3",
-                  "definition": "Current smoker"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": "item_cpd_bl",
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": "item_smoking_bl",
-                "Conditional.Threshold": "3",
-                "Conditional.Type": "1"
-              }
-            },
-            {
-              "Item.ID": "item_cpd_bl",
-              "Question.ID": "cigarettes_per_day",
-              "Question.Text": "If current smoker, average cigarettes per day",
-              "Question.Description": "Quantify smoking intensity for current smokers only",
-              "Question.Type.Display.Name": "Free Response",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_statin_bl",
-              "Question.ID": "statin_use",
-              "Question.Text": "Current statin medication use",
-              "Question.Description": "Baseline statin use for covariate adjustment",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "1",
-                  "definition": "Yes"
-                },
-                {
-                  "value": "0",
-                  "definition": "No"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            }
-          ]
+          "extensions": {
+            "Timing.Type": "Random",
+            "User.Specified": false,
+            "Survey.Name": "Morning EMA"
+          }
         },
         {
-          "Survey.LongName": "Baseline Clinical Site Information",
-          "Survey.ShortName": "BL-Site",
-          "Scheduling.Info": {
-            "Timing.Info": {
-              "offset": [
-                {
-                  "value": 0,
-                  "unit": "days"
-                }
-              ],
-              "children": []
-            },
-            "Window.Info": {
-              "window.length": [
-                {
-                  "value": 1,
-                  "unit": "days"
-                }
-              ],
-              "random": false,
-              "Trigger.Info": {}
-            }
+          "id": "550e8400-e29b-41d4-a716-446655440002",
+          "title": "Evening Assessment",
+          "start": "2024-01-01T18:00:00-05:00",
+          "end": "2024-01-01T20:00:00-05:00",
+          "recurrence": {
+            "frequency": "DAILY",
+            "interval": 1,
+            "count": 30
           },
-          "question": [
-            {
-              "Item.ID": "item_site_id",
-              "Question.ID": "clinical_site",
-              "Question.Text": "Clinical site identifier",
-              "Question.Description": "Multicenter site ID (1-12)",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "01",
-                  "definition": "Site 1 - Boston"
-                },
-                {
-                  "value": "02",
-                  "definition": "Site 2 - Chicago"
-                },
-                {
-                  "value": "03",
-                  "definition": "Site 3 - Houston"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "burstID": 2,
-      "Timing.Type": "Discrete",
-      "survey": [
-        {
-          "Survey.LongName": "18-Month Follow-up Assessment",
-          "Survey.ShortName": "FU18",
-          "Scheduling.Info": {
-            "Timing.Info": {
-              "offset": [
-                {
-                  "value": 18,
-                  "unit": "months"
-                }
-              ],
-              "children": []
-            },
-            "Window.Info": {
-              "window.length": [
-                {
-                  "value": 4,
-                  "unit": "weeks"
-                }
-              ],
-              "random": false,
-              "Trigger.Info": {}
-            }
-          },
-          "question": [
-            {
-              "Item.ID": "item_mi_18mo",
-              "Question.ID": "mi_since_baseline",
-              "Question.Text": "Myocardial infarction since baseline",
-              "Question.Description": "Primary outcome component - myocardial infarction adjudicated by clinical events committee",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "No MI"
-                },
-                {
-                  "value": "1",
-                  "definition": "Non-fatal MI"
-                },
-                {
-                  "value": "2",
-                  "definition": "Fatal MI"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_stroke_18mo",
-              "Question.ID": "stroke_since_baseline",
-              "Question.Text": "Stroke since baseline",
-              "Question.Description": "Primary outcome component - stroke adjudicated by clinical events committee",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "No stroke"
-                },
-                {
-                  "value": "1",
-                  "definition": "Ischemic stroke"
-                },
-                {
-                  "value": "2",
-                  "definition": "Hemorrhagic stroke"
-                },
-                {
-                  "value": "3",
-                  "definition": "Fatal stroke"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_cvdeath_18mo",
-              "Question.ID": "cv_death",
-              "Question.Text": "Cardiovascular death since baseline",
-              "Question.Description": "Primary outcome component - CV death adjudicated by clinical events committee",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "No"
-                },
-                {
-                  "value": "1",
-                  "definition": "Yes"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_adherence_18mo",
-              "Question.ID": "diet_adherence_score",
-              "Question.Text": "Mediterranean diet adherence score (0-17)",
-              "Question.Description": "14-item Mediterranean Diet Assessment Tool score, higher indicates better adherence",
-              "Question.Type.Display.Name": "Slider",
-              "Item.Type": "Question",
-              "Data.Type": "integer",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "No adherence"
-                },
-                {
-                  "value": "17",
-                  "definition": "Maximum adherence"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "burstID": 3,
-      "Timing.Type": "Discrete",
-      "survey": [
-        {
-          "Survey.LongName": "36-Month Final Assessment",
-          "Survey.ShortName": "FU36",
-          "Scheduling.Info": {
-            "Timing.Info": {
-              "offset": [
-                {
-                  "value": 36,
-                  "unit": "months"
-                }
-              ],
-              "children": []
-            },
-            "Window.Info": {
-              "window.length": [
-                {
-                  "value": 4,
-                  "unit": "weeks"
-                }
-              ],
-              "random": false,
-              "Trigger.Info": {}
-            }
-          },
-          "question": [
-            {
-              "Item.ID": "item_mi_36mo",
-              "Question.ID": "mi_final",
-              "Question.Text": "Myocardial infarction since last assessment",
-              "Question.Description": "Final assessment for primary outcome - MI",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "No MI"
-                },
-                {
-                  "value": "1",
-                  "definition": "Non-fatal MI"
-                },
-                {
-                  "value": "2",
-                  "definition": "Fatal MI"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_stroke_36mo",
-              "Question.ID": "stroke_final",
-              "Question.Text": "Stroke since last assessment",
-              "Question.Description": "Final assessment for primary outcome - stroke",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "No stroke"
-                },
-                {
-                  "value": "1",
-                  "definition": "Ischemic stroke"
-                },
-                {
-                  "value": "2",
-                  "definition": "Hemorrhagic stroke"
-                },
-                {
-                  "value": "3",
-                  "definition": "Fatal stroke"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_cvdeath_36mo",
-              "Question.ID": "cv_death_final",
-              "Question.Text": "Cardiovascular death since last assessment",
-              "Question.Description": "Final assessment for primary outcome - CV death",
-              "Question.Type.Display.Name": "Multiple Choice",
-              "Item.Type": "Question",
-              "Data.Type": "character",
-              "Parent": null,
-              "responseKey": [
-                {
-                  "value": "0",
-                  "definition": "No"
-                },
-                {
-                  "value": "1",
-                  "definition": "Yes"
-                }
-              ],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            },
-            {
-              "Item.ID": "item_hba1c_36mo",
-              "Question.ID": "hba1c_final",
-              "Question.Text": "Final HbA1c level (%)",
-              "Question.Description": "36-month HbA1c measurement",
-              "Question.Type.Display.Name": "Free Response",
-              "Item.Type": "Question",
-              "Data.Type": "numeric",
-              "Parent": null,
-              "responseKey": [],
-              "Conditional.Info": {
-                "Conditional.Child.Item.ID": null,
-                "Conditional.Fail.Item.ID": null,
-                "Conditional.Master.Item.ID": null,
-                "Conditional.Threshold": null,
-                "Conditional.Type": null
-              }
-            }
-          ]
+          "extensions": {
+            "Timing.Type": "Random",
+            "User.Specified": false,
+            "Survey.Name": "Evening EMA"
+          }
         }
       ]
     }
   ],
-  "data": {
-    "Participant.ID": [
-      "P001",
-      "P002",
-      "P003",
-      "P004",
-      "P005",
-      "P001",
-      "P002"
-    ],
-    "Session.ID": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      3,
-      3
-    ],
-    "Survey.Date.Completed": [
-      "2024-01-15T09:00:00Z",
-      "2024-01-15T09:30:00Z",
-      "2024-01-15T10:00:00Z",
-      "2024-01-15T10:30:00Z",
-      "2024-01-15T11:00:00Z",
-      "2027-01-15T09:00:00Z",
-      "2027-01-15T09:30:00Z"
-    ],
-    "User.Response": [
-      "1",
-      "62",
-      "7.2",
-      "28.5",
-      "3",
-      "0",
-      "0"
-    ],
-    "Question.ID": [
-      "randomization_group",
-      "age_baseline",
-      "hba1c_baseline",
-      "bmi_baseline",
-      "smoking_status",
-      "mi_final",
-      "stroke_final"
-    ]
-  },
-  "itemMap": {
-    "Item.Text": "Mediterranean Diet Intervention versus Standard Care",
-    "Conceptualization": "Dietary intervention assignment for cardiovascular risk reduction in Type 2 diabetes",
-    "Modeling.Characteristics": "Primary exposure variable; analyzed as intent-to-treat with Cox proportional hazards model adjusting for baseline HbA1c, BMI, smoking status, and statin use; demonstrated 25% relative risk reduction in composite CV endpoint",
-    "Validated": true,
-    "Scale.Name": "Mediterranean Diet Intervention",
-    "Parent.Scale": "",
-    "Sub.Scale": "",
-    "scaleOrItem": "item",
-    "Scale.Type": "Binary",
-    "Scoring": "1=Intervention, 2=Control",
-    "Reverse.Coded": false,
-    "Transformation": "None",
-    "Identifying.Info": false,
-    "Data.Type": "categorical",
-    "Time.Stem": "baseline randomization",
-    "Top.Level.Question": "",
-    "Values": "1,2",
-    "Definition": "1=Mediterranean Diet Intervention (intensive counseling and meal provision), 2=Standard Care Control (usual diabetes education)",
-    "Delivery.Mechanism": "multicenter outpatient clinical trial",
-    "Delivery.Frequency": "baseline only",
-    "Article.Title": "Mediterranean Diet and Cardiovascular Outcomes in Adults with Type 2 Diabetes: A Multicenter Randomized Trial",
-    "Citation": "Rodriguez M, Chen J, Johnson S, et al. (2024). New England Journal of Medicine, 390(12), 1101-1112. https://doi.org/10.1056/NEJMoa2401234",
-    "notes": "1200 participants aged 50-75, 3-year follow-up, 12 clinical centers, primary outcome: composite of MI, stroke, CV death"
-  },
-  "blockMap": {}
+  "surveys": [
+    {
+      "Survey.Name": "Morning EMA",
+      "Survey.LongName": "Morning Ecological Momentary Assessment",
+      "questions": [
+        {
+          "Item.ID": "block_morning_start",
+          "Question.ID": "block_morning_start",
+          "Question.Type.Display.Name": "Block",
+          "Item.Type": "Block",
+          "Parent": null
+        },
+        {
+          "Item.ID": "item_sleep_quality",
+          "Question.ID": "sleep_quality",
+          "Question.Type.Display.Name": "Slider",
+          "Item.Type": "Question",
+          "Parent": "block_morning_start",
+          "Data.Type": "integer",
+          "Question.Text": "How well did you sleep last night?",
+          "Question.Description": "Self-reported sleep quality on a visual analog scale",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "Very poor"
+            },
+            {
+              "value": "100",
+              "definition": "Excellent"
+            }
+          ]
+        },
+        {
+          "Item.ID": "item_positive_affect",
+          "Question.ID": "positive_affect",
+          "Question.Type.Display.Name": "Slider",
+          "Item.Type": "Question",
+          "Parent": "block_morning_start",
+          "Data.Type": "integer",
+          "Question.Text": "Right now, how positive do you feel?",
+          "Question.Description": "Momentary positive affect rating",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "Not at all positive"
+            },
+            {
+              "value": "100",
+              "definition": "Extremely positive"
+            }
+          ]
+        },
+        {
+          "Item.ID": "item_negative_affect",
+          "Question.ID": "negative_affect",
+          "Question.Type.Display.Name": "Slider",
+          "Item.Type": "Question",
+          "Parent": "block_morning_start",
+          "Data.Type": "integer",
+          "Question.Text": "Right now, how negative do you feel?",
+          "Question.Description": "Momentary negative affect rating",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "Not at all negative"
+            },
+            {
+              "value": "100",
+              "definition": "Extremely negative"
+            }
+          ]
+        },
+        {
+          "Item.ID": "item_morning_craving",
+          "Question.ID": "morning_craving",
+          "Question.Type.Display.Name": "Slider",
+          "Item.Type": "Question",
+          "Parent": "block_morning_start",
+          "Data.Type": "integer",
+          "Question.Text": "Right now, how strong is your urge or craving to use alcohol or drugs?",
+          "Question.Description": "Intensity of substance craving",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "No craving at all"
+            },
+            {
+              "value": "100",
+              "definition": "Extremely strong craving"
+            }
+          ]
+        },
+        {
+          "Item.ID": "item_self_efficacy",
+          "Question.ID": "self_efficacy",
+          "Question.Type.Display.Name": "Slider",
+          "Item.Type": "Question",
+          "Parent": "block_morning_start",
+          "Data.Type": "integer",
+          "Question.Text": "How confident are you that you can stay sober today?",
+          "Question.Description": "Abstinence self-efficacy for the upcoming day",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "Not at all confident"
+            },
+            {
+              "value": "100",
+              "definition": "Extremely confident"
+            }
+          ]
+        },
+        {
+          "Item.ID": "block_morning_end",
+          "Question.ID": "block_morning_end",
+          "Question.Type.Display.Name": "End Block",
+          "Item.Type": "Block",
+          "Parent": "block_morning_start"
+        }
+      ]
+    },
+    {
+      "Survey.Name": "Evening EMA",
+      "Survey.LongName": "Evening Ecological Momentary Assessment",
+      "questions": [
+        {
+          "Item.ID": "block_evening_start",
+          "Question.ID": "block_evening_start",
+          "Question.Type.Display.Name": "Block",
+          "Item.Type": "Block",
+          "Parent": null
+        },
+        {
+          "Item.ID": "item_substance_use",
+          "Question.ID": "substance_use",
+          "Question.Type.Display.Name": "Multiple Choice",
+          "Item.Type": "Question",
+          "Parent": "block_evening_start",
+          "Data.Type": "integer",
+          "Question.Text": "Did you use any alcohol or drugs today?",
+          "Question.Description": "Self-reported substance use occurrence",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "No"
+            },
+            {
+              "value": "1",
+              "definition": "Yes"
+            }
+          ]
+        },
+        {
+          "Item.ID": "item_substance_details",
+          "Question.ID": "substance_details",
+          "Question.Type.Display.Name": "Multiple Select",
+          "Item.Type": "Question",
+          "Parent": "block_evening_start",
+          "Data.Type": "character",
+          "Question.Text": "Which substances did you use today? (Select all that apply)",
+          "Question.Description": "Types of substances used if any",
+          "responseKey": [
+            {
+              "value": "1",
+              "definition": "Alcohol"
+            },
+            {
+              "value": "2",
+              "definition": "Cannabis"
+            },
+            {
+              "value": "3",
+              "definition": "Opioids"
+            },
+            {
+              "value": "4",
+              "definition": "Stimulants (cocaine, methamphetamine, etc.)"
+            },
+            {
+              "value": "5",
+              "definition": "Sedatives or prescription medications"
+            },
+            {
+              "value": "6",
+              "definition": "Other"
+            }
+          ],
+          "Conditional.Info": {
+            "Conditional.Master.Item.ID": "item_substance_use",
+            "Conditional.Type": "1",
+            "Conditional.Threshold": "1",
+            "Conditional.Child.Mappings": [
+              {
+                "Conditional.Child.Item.ID": "item_substance_details",
+                "Definition": "Yes"
+              }
+            ],
+            "Conditional.Fail.Item.ID": "item_stress_level",
+            "Multi.Conditional": false
+          }
+        },
+        {
+          "Item.ID": "item_stress_level",
+          "Question.ID": "stress_level",
+          "Question.Type.Display.Name": "Slider",
+          "Item.Type": "Question",
+          "Parent": "block_evening_start",
+          "Data.Type": "integer",
+          "Question.Text": "How stressed have you felt today overall?",
+          "Question.Description": "Daily stress level",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "Not at all stressed"
+            },
+            {
+              "value": "100",
+              "definition": "Extremely stressed"
+            }
+          ]
+        },
+        {
+          "Item.ID": "item_coping_strategies",
+          "Question.ID": "coping_strategies",
+          "Question.Type.Display.Name": "Multiple Select",
+          "Item.Type": "Question",
+          "Parent": "block_evening_start",
+          "Data.Type": "character",
+          "Question.Text": "Which coping strategies did you use today to deal with cravings or difficult situations? (Select all that apply)",
+          "Question.Description": "Coping strategies utilized",
+          "responseKey": [
+            {
+              "value": "1",
+              "definition": "Talked to sponsor or recovery coach"
+            },
+            {
+              "value": "2",
+              "definition": "Attended a meeting (AA, NA, SMART, etc.)"
+            },
+            {
+              "value": "3",
+              "definition": "Exercise or physical activity"
+            },
+            {
+              "value": "4",
+              "definition": "Meditation or mindfulness"
+            },
+            {
+              "value": "5",
+              "definition": "Called a friend or family member"
+            },
+            {
+              "value": "6",
+              "definition": "Avoided triggers or high-risk situations"
+            },
+            {
+              "value": "7",
+              "definition": "Used prescription medication as directed"
+            },
+            {
+              "value": "8",
+              "definition": "Other"
+            },
+            {
+              "value": "9",
+              "definition": "None of the above"
+            }
+          ]
+        },
+        {
+          "Item.ID": "item_social_support",
+          "Question.ID": "social_support",
+          "Question.Type.Display.Name": "Slider",
+          "Item.Type": "Question",
+          "Parent": "block_evening_start",
+          "Data.Type": "integer",
+          "Question.Text": "How supported did you feel by others today?",
+          "Question.Description": "Perceived social support",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "Not at all supported"
+            },
+            {
+              "value": "100",
+              "definition": "Extremely supported"
+            }
+          ]
+        },
+        {
+          "Item.ID": "item_evening_craving",
+          "Question.ID": "evening_craving",
+          "Question.Type.Display.Name": "Slider",
+          "Item.Type": "Question",
+          "Parent": "block_evening_start",
+          "Data.Type": "integer",
+          "Question.Text": "What was the strongest craving you experienced today?",
+          "Question.Description": "Peak craving intensity during the day",
+          "responseKey": [
+            {
+              "value": "0",
+              "definition": "No craving"
+            },
+            {
+              "value": "100",
+              "definition": "Extremely strong craving"
+            }
+          ]
+        },
+        {
+          "Item.ID": "block_evening_end",
+          "Question.ID": "block_evening_end",
+          "Question.Type.Display.Name": "End Block",
+          "Item.Type": "Block",
+          "Parent": "block_evening_start"
+        }
+      ]
+    }
+  ],
+  "blockMap": [
+    {
+      "Survey.Name": "Morning EMA",
+      "Item.ID": "block_morning_start",
+      "Item.Type": "Block",
+      "Parent": null
+    },
+    {
+      "Survey.Name": "Morning EMA",
+      "Item.ID": "item_sleep_quality",
+      "Item.Type": "Question",
+      "Parent": "block_morning_start"
+    },
+    {
+      "Survey.Name": "Morning EMA",
+      "Item.ID": "item_positive_affect",
+      "Item.Type": "Question",
+      "Parent": "block_morning_start"
+    },
+    {
+      "Survey.Name": "Morning EMA",
+      "Item.ID": "item_negative_affect",
+      "Item.Type": "Question",
+      "Parent": "block_morning_start"
+    },
+    {
+      "Survey.Name": "Morning EMA",
+      "Item.ID": "item_morning_craving",
+      "Item.Type": "Question",
+      "Parent": "block_morning_start"
+    },
+    {
+      "Survey.Name": "Morning EMA",
+      "Item.ID": "item_self_efficacy",
+      "Item.Type": "Question",
+      "Parent": "block_morning_start"
+    },
+    {
+      "Survey.Name": "Morning EMA",
+      "Item.ID": "block_morning_end",
+      "Item.Type": "Block",
+      "Parent": "block_morning_start"
+    },
+    {
+      "Survey.Name": "Evening EMA",
+      "Item.ID": "block_evening_start",
+      "Item.Type": "Block",
+      "Parent": null
+    },
+    {
+      "Survey.Name": "Evening EMA",
+      "Item.ID": "item_substance_use",
+      "Item.Type": "Question",
+      "Parent": "block_evening_start"
+    },
+    {
+      "Survey.Name": "Evening EMA",
+      "Item.ID": "item_substance_details",
+      "Item.Type": "Question",
+      "Parent": "block_evening_start"
+    },
+    {
+      "Survey.Name": "Evening EMA",
+      "Item.ID": "item_stress_level",
+      "Item.Type": "Question",
+      "Parent": "block_evening_start"
+    },
+    {
+      "Survey.Name": "Evening EMA",
+      "Item.ID": "item_coping_strategies",
+      "Item.Type": "Question",
+      "Parent": "block_evening_start"
+    },
+    {
+      "Survey.Name": "Evening EMA",
+      "Item.ID": "item_social_support",
+      "Item.Type": "Question",
+      "Parent": "block_evening_start"
+    },
+    {
+      "Survey.Name": "Evening EMA",
+      "Item.ID": "item_evening_craving",
+      "Item.Type": "Question",
+      "Parent": "block_evening_start"
+    },
+    {
+      "Survey.Name": "Evening EMA",
+      "Item.ID": "block_evening_end",
+      "Item.Type": "Block",
+      "Parent": "block_evening_start"
+    }
+  ]
 }

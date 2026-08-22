@@ -170,8 +170,13 @@ generateSurveyFlowchart <- function(survey, export = FALSE,
   multi_idx <- which(blockMap$Multi.Conditional == TRUE)
   blockMap$Conditional.Threshold[multi_idx] <- lapply(
     blockMap$Definitions[multi_idx],
-    function(x) trimws(strsplit(x, ";")[[1]])
+    function(x) {
+      x <- as.character(x)
+      if (is.na(x)) return(NA_character_)
+      trimws(strsplit(x, ";")[[1]])
+    }
   )
+
 
   # Clean + wrap. Multi-conditional entries are a vector (one element per path/group);
   # everything else stays a single string, wrapped as before.
@@ -193,7 +198,13 @@ generateSurveyFlowchart <- function(survey, export = FALSE,
 
   blockMap$Conditional.Threshold <- lapply(blockMap$Conditional.Threshold, function(vals) {
     if (all(is.na(vals))) return(vals)
-    vals <- gsub("[^a-zA-Z0-9 ]", "", vals)
+    vals <- sapply(vals, function(v) {
+      items <- trimws(strsplit(v, "\\|")[[1]])
+      paste(items, collapse = " - ")
+    })
+    vals <- gsub("[^a-zA-Z0-9 ,'-]", " ", vals)  # replace stray punctuation with a space (not deleted)
+    vals <- gsub("\\s+", " ", vals)              # collapse any resulting double spaces
+    vals <- trimws(vals)
     vapply(vals, wrap_text, character(1), width = 20, USE.NAMES = FALSE)
   })
 

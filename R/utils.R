@@ -18,6 +18,7 @@ get_resource_path <- function(...) {
 
 # Function for splitting info that has error guarding
 splitList <- function(x) {
+  x <- as.character(x)
   if (is.na(x) || !nzchar(trimws(x))) return(character(0))
   trimws(strsplit(x, ";")[[1]])
 }

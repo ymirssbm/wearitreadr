@@ -1,0 +1,23 @@
+# Grab from qualtrics..
+result <- qualtrics_to_wearit(
+    survey_id   = "SV_3JVDH61TNOr2pJI",
+    api_key     = api_key,
+    data_center = "yul1",
+    schema_path = "inst/schema/0.1.0/study.json",
+    study_meta  = list(
+        Study.Name = "My Study",
+        authors    = "Jane Smith, John Doe",
+        funding    = "NIH Grant R01DA012345",
+        abstract   = "Study abstract here"
+    )
+)
+
+cat("Valid:", result$valid, "\n")
+print(result$errors)
+write(result$spec_json, "my_study_spec.json")
+
+# Parse JSON
+parseJsonSpec("my_study_spec.json")
+
+# Generation
+Used app to generate codebook, data dictionary, and study flowchart.

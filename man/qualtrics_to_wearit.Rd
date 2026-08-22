@@ -2,13 +2,13 @@
 % Please edit documentation in R/qualtricsTranslator.R
 \name{qualtrics_to_wearit}
 \alias{qualtrics_to_wearit}
-\title{Translate Qualtrics Survey to Wear-IT Study Spec}
+\title{Translate Qualtrics Survey to Wear-IT Study Spec (schema v0.1.0)}
 \usage{
 qualtrics_to_wearit(
   survey_id,
   api_key,
   data_center,
-  schema_path,
+  schema_path = "inst/schema/0.1.0/study.json",
   study_meta = list()
 )
 }
@@ -24,8 +24,8 @@ qualtrics_to_wearit(
 \item{study_meta}{Optional list with Study.Name, authors, funding, abstract}
 }
 \value{
-Validated Wear-IT study spec as a list
+list(spec, spec_json, valid, errors)
 }
 \description{
-Translate Qualtrics Survey to Wear-IT Study Spec
+Translate Qualtrics Survey to Wear-IT Study Spec (schema v0.1.0)
 }

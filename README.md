@@ -13,21 +13,19 @@ devtools:load_all() -> wearitreadr()
 - Add simple conditional column to Data dictionary 
 - Fix multiple slider generation
 - Need to be able to specify file name
-- Implement screenshots
 - Missingness codes
 - Survey beeps
 - Figure out how to fix TOC when the first item in a survey is not a block
 - Citations for scales
 - Scale metadata
 - Create data manual generation tool
-- Decide on name for the project (doc-IT?)
 - Dispatch model for AI generator
 - For survey tree, display additional info on clicking node
 - Figure out where the header for a slider histogram is drawn
 
 # Citations
-https://github.com/charlieroth/jsoncalendar/blob/main/schema.json
-https://icalendar.org/rrule-tool.html
+
+Until we have a paper out on this. Just site the Github
 
 ## Contributers
 

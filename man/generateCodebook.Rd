@@ -13,6 +13,7 @@ generateCodebook(
   thisData = read.csv("Data.csv"),
   blockMap = read.csv("blockMap.csv"),
   responseKey = read.csv("responseKey.csv"),
+  screenshotDir = file.path(getwd(), "screenshots"),
   include_practice_items = FALSE,
   include_html = FALSE,
   print_blockmap_missing = FALSE,
