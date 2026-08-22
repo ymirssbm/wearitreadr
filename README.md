@@ -25,7 +25,8 @@ devtools:load_all() -> wearitreadr()
 
 # Citations
 
-Until we have a paper out on this. Just cite the Github
+v0.1.0  ymirssbm/wearitreadr: WearITReadR
+DOI: 10.5281/zenodo.22060584 
 
 ## Contributers
 
