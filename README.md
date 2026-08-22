@@ -25,7 +25,7 @@ devtools:load_all() -> wearitreadr()
 
 # Citations
 
-Until we have a paper out on this. Just site the Github
+Until we have a paper out on this. Just cite the Github
 
 ## Contributers
 
