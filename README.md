@@ -4,6 +4,8 @@ WearITReadR repo contains a shiny app and open source R package that is currentl
 
 NOTE: Screenshot scraper and Qualtrics translator have yet to be implemented into the Shiny app. 
 
+<img width="1918" height="927" alt="wearitreadr screenshot" src="https://github.com/user-attachments/assets/55036984-d4a0-4b79-93cb-91ea6b54db4e" />
+
 ## How to run
 
 devtools:load_all() -> wearitreadr()
