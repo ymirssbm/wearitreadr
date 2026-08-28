@@ -59,11 +59,6 @@ wearIT_authorize <- function(study_ID = "1045",
     if(!skip_keyring) {
       warning("Cannot access system keyring. Check keyring access.")
     }
-  } else {
-    keyring_support <- FALSE
-    if(!skip_keyring) {
-      warning("Install the keyring package to save credentials in system keyring.")
-    }
   }
 
   auth <- NULL
