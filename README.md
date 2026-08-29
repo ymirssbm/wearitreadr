@@ -1,8 +1,12 @@
-# WearITReadR Codebook Generator and Data Documentation Tool
+# WearITReadR Codebook Generator and Data Documentation Tool for Wear-IT
 
-WearITReadR repo contains a shiny app and open source R package that is currently in development. Functionality includes... WearIT (smartphone EMA data collection app) api pull, customizable codebook, data dictionary, and study flow chart generator, AI study generator and modifier which generates JSON following the WearITReadR's data description and storage spec, a screenshot scraper which walks a study block map to generate YAML to walk a study and scrape screenshots (which then can be embedded inside a generated codebook) as well as a Qualtrics translator which translates from Qualtrics API to our internal JSON storage then parses it. This allows us to generate all of the things mentioned from Qualtrics surveys. See examples folder in the WearITReadR repo
+## What is WearITReadR
+
+WearITReadR repo contains a shiny app and open source R package that is currently in development. Functionality includes... Wear-IT (smartphone EMA data collection app) api pull, customizable codebook, data dictionary, and study flow chart generator, AI study generator and modifier which generates JSON following the WearITReadR's data description and storage spec, a screenshot scraper which walks a study block map to generate YAML to walk a study and scrape screenshots (which then can be embedded inside a generated codebook) as well as a Qualtrics translator which translates from Qualtrics API to our internal JSON storage then parses it. This allows us to generate all of the things mentioned from Qualtrics surveys. See examples folder in the WearITReadR repo
 
 Accompanying the WearITReadR app, is a JSON specification that acts as an initial draft of a data description standard for complex study designs (see inst/schema/0.1.0/study.json).
+
+## Using WearITReadR with other data collection apps
 
 Although this tool is designed primarily to interface with Wear-IT's API, it can be adapted to work with other data collection API's as well. To proof of concept this, we successfully vibe coded a simple translator that translates studies ran on Qualtrics to WearITReadR using API translator function. This allows us to use any of the features from the WearITReadR app for any studies ran on Qualtrics. We intentionally employed vibe coding for this part of the project to demonstrate that even researchers with limited technical ability could quickly build API translators from their preferred data collection apps to the Wear-IT api so that they could use the WearITReadR's many functionalities on their own datasets. All in all the process of building a translator leveraging generative AI only took a couple minutes.
 
@@ -24,7 +28,7 @@ This section includes a few examples of the WearITReadR's functionality. This se
 
 ![Flowchart](https://raw.githubusercontent.com/ymirssbm/wearitreadr/main/Examples/Recovery%20Community%20Center%20(RCC)%20Project/flowchart.png)
 
-## AI Generated Study Data Dictionary
+## Link to Data Dictionary for a AI Generated Study
 
 📄 [Data Dictionary (CSV)](https://github.com/ymirssbm/wearitreadr/blob/main/Examples/AI%20Generated%20Study%20Example/DataDictionary.csv)
 
