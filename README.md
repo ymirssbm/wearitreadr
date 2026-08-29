@@ -6,6 +6,14 @@ NOTE: Screenshot scraper and Qualtrics translator have yet to be implemented int
 
 <img width="1918" height="927" alt="wearitreadr screenshot" src="https://github.com/user-attachments/assets/55036984-d4a0-4b79-93cb-91ea6b54db4e" />
 
+## Link to Codebook Example from a Recovery Community Center Project
+
+🔗 [View Codebook Example (RCC Project)](https://ymirssbm.github.io/wearitreadr/Examples/Recovery%20Community%20Center%20(RCC)%20Project/Codebook.html)
+
+## Recovery Community Center Project Study Flowchart
+
+![Flowchart](https://raw.githubusercontent.com/ymirssbm/wearitreadr/main/Examples/Recovery%20Community%20Center%20(RCC)%20Project/flowchart.png)
+
 ## How to run
 
 devtools:load_all() -> wearitreadr()
