@@ -2,8 +2,15 @@
 title: Codebook
 ---
 
-# Codebook Requirements
+# Defining Codebooks 
 
+Codebooks define the conceptual characteristics of the measurements, their relationships to other constructs, provenance, etc., and written in a more human-friendly way. We argue that this should include justification for design decisions that are related to the meaning or operationalization of constructs. For example,  
+
+"We selected Happy, Joyful, and Cheery as the indicators for positive affect. These represent a subset of the PANAS positive affect scale (Watson, Clark, & Tellegen, 1988), and were selected because of their high loadings in prior work (e.g. Brick, et al., 2027). The overall PA score is derived as a mean of these three indicators, omitting missing values (code link). 
+
+In contrast to data dictionaries, which may be associated with any data file, codebooks are most commonly used in conjunction with data files or databases that have been preprocessed (for example, to remove outliers and fix errors of data entry) and are ready for analysis. For this reason, codebooks are more commonly used by researchers to … .  
+
+Note that the information in data dictionaries and codebooks overlaps significantly.  For example, both include some description of the mapping between the qualitative answers selected by participants and the numeric values that represent them in the data.    
 
 
 # Codebook Layout
