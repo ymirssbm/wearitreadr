@@ -1,5 +1,7 @@
 ---
-title: Data Manual
+layout: default
+title: Your Page Title
+nav_order: 1
 ---
 
 # Introducing and Defining Data Manuals 

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="041f3676-57cb-43aa-aa89-cae73531d2e5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AI Codebook Generator.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AI Codebook Generator.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process data ai NEW API.R" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../R/FrequencyTable.R" beforeDir="false" afterPath="$PROJECT_DIR$/../R/FrequencyTable.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

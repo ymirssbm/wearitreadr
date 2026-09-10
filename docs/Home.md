@@ -1,3 +1,10 @@
+---
+layout: default
+title: Your Page Title
+nav_order: 1
+---
+
+
 ![Wear-IT photo](img/WearIT_logo.png)
 
 

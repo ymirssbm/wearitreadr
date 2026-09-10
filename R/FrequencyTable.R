@@ -82,7 +82,7 @@ frequencyTable <- function(id, thisData, responseKey){
       df %>%
         kbl() %>%
         kable_styling() %>%
-        column_spec(3, color = "darkgreen")
+        column_spec(3, color = "#006400")
     )
     cat(html_table)
   }
