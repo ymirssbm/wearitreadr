@@ -1,7 +1,7 @@
 ---
 layout: default
-title: JSONSchema
-parent: DataDescriptionStandard
+title: JSON Schema
+parent: Data Description Standard
 nav_order: 7
 ---
 

@@ -20,9 +20,10 @@ to ease that burden, and the standard it's built around.
 
 ## Start here
 
-- **[GettingStarted](GettingStarted)** — install and run WearITReadR
+- **[Wear-IT](Wear-IT)** — Overview of Wear-IT
+- **[Getting Started](GettingStarted)** — install and run WearITReadR
 - **[WearITReadR](WearITReadR)** — software documentation: the Shiny app, API translators, AI study generator, screenshot scraper
-- **[DataDescriptionStandard](standard/)** — what a codebook, data dictionary, and data manual should include, and why
+- **[Data Description Standard](standard/)** — what a codebook, data dictionary, and data manual should include, and why
 - **[Contributing](Contributing)** — help shape the standard
 
 ## Open practices

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: DataDescriptionStandard
+title: Data Description Standard
 nav_order: 4
 has_children: true
 ---
@@ -46,10 +46,10 @@ where complex, adaptive designs make description hardest.
 - **[Codebooks](Codebooks)** — human-oriented documents defining the
   conceptual characteristics of measurements, their relationships to
   other constructs, and their provenance and design justification.
-- **[DataDictionaries](DataDictionaries)** — machine/technical-oriented
+- **[Data Dictionaries](DataDictionaries)** — machine/technical-oriented
   documents describing the information needed to decode and model each
   data file: data types, codes, valid value ranges, and provenance.
-- **[DataManuals](DataManuals)** — the umbrella document tying together
+- **[Data Manuals](DataManuals)** — the umbrella document tying together
   every codebook and data dictionary for a study, along with survey
   timing, intervention triggering, data use agreements, regulatory
   information, and preregistration/IRB details.
@@ -91,16 +91,16 @@ documentation process much harder than in traditional single- or
 few-assessment studies. This standard gives specific guidance for three
 of the hardest areas:
 
-- **[DescribingMissingness](DescribingMissingness)** — adaptive skip and
+- **[Describing Missingness](DescribingMissingness)** — adaptive skip and
   trigger logic creates missingness patterns that simple frequency
   reporting can't capture.
-- **[SoftwareAndHardware](SoftwareAndHardware)** — passive sensing
+- **[Software And Hardware](SoftwareAndHardware)** — passive sensing
   hardware and cloud processing pipelines make undocumented decisions
   that can affect results and break replication.
-- **[UIAndDelivery](UIAndDelivery)** — the device, format, and scale used
+- **[UI And Delivery](UIAndDelivery)** — the device, format, and scale used
   to deliver an assessment can bias responses in ways that are rarely
   documented.
 
-Finally, **[JSONSchema](JSONSchema)** documents the machine-readable
+Finally, **[JSON Schema](JSONSchema)** documents the machine-readable
 specification (`study.json`) that WearITReadR uses to implement this
 standard in practice.

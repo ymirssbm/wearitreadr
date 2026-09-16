@@ -17,8 +17,7 @@ nav_order: 2
 
 ## What WearITReadR does
 
-WearITReadR pulls study data directly from the Wear-IT API — the software
-that actually delivered the study — and uses it to generate:
+WearITReadR pulls study data directly from the Wear-IT API and uses it to generate:
 
 - Customizable **codebooks**
 - **Data dictionaries**
@@ -58,7 +57,7 @@ generate a codebook, data dictionary, or study flowchart directly.
 - See **[WearITReadR](WearITReadR)** for a full walkthrough of each feature
   (API translators, AI study generator, screenshot scraper) and worked
   examples.
-- See **[DataDescriptionStandard](standard/)** if you want to understand
+- See **[Data Description Standard](standard/)** if you want to understand
   *what* WearITReadR is generating and why — the definitions and
   reporting recommendations behind codebooks, data dictionaries, and data
   manuals.

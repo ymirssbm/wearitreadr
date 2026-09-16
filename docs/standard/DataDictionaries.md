@@ -1,7 +1,7 @@
 ---
 layout: default
-title: DataDictionaries
-parent: DataDescriptionStandard
+title: Data Dictionaries
+parent: Data Description Standard
 nav_order: 2
 ---
 
@@ -9,11 +9,7 @@ nav_order: 2
 
 ## Definition
 
-Data dictionaries describe the information needed to decode and model
-each data file. That means: data types; encoding of any categorical or
-missingness codes; valid and invalid value lists; and any provenance
-required for understanding (e.g., that a set of response times has been
-log-transformed).
+Data dictionaries describe the information needed to decode and model each data file. That means data types, encoding of any categorical or missingness codes, valid and invalid value lists, and any provenance required for understanding (e.g. that these response times are log-transformed).  
 
 ### Example entry
 
@@ -33,20 +29,34 @@ directly from a data file. Conversely, a well-maintained and documented
 database should contain enough information to be reconstructed back into
 raw data and its data dictionary.
 
-Data dictionaries may be associated with **any** data file, including raw
-or intermediate files — unlike codebooks, which are typically paired with
-preprocessed, analysis-ready data. See [Codebooks](Codebooks) for the
-counterpart definition.
+Data dictionaries tend to be designed for technological use, and the dictionary for a data file is often stored as a single table in a database or a single spreadsheet file. Data dictionaries help to detail the structure of the respective data files (Buchanan et al., n.d.). Data management teams use data dictionaries to transform raw data files into usable databases in order to reproduce analyses or verify descriptive statistics; they may also serve researchers as quick-reference guides when working from a data file. Conversely, a well maintained and documented database will contain enough information to be transformed back into raw data and data dictionary files.  
+
 
 ## What a data dictionary should include
 
-- Data type for each variable
-- Encoding of categorical and missingness codes (see
-  [DescribingMissingness](DescribingMissingness))
-- Valid and invalid value lists / response ranges
-- Provenance notes for any transformed variable
-- A structured, machine-ingestible format — CSV or TSV are preferred for
-  the table itself
+Following the design principles in the
+[Data Description Standard](index) overview, a data dictionary should
+include one row per item/variable, with the following fields:
+
+- **Survey Name**
+  - The survey or instrument the item belongs to
+- **Item ID**
+  - The variable name as it appears in the dataset
+- **Question ID**
+  - The unique identifier for the question within the survey
+- **Question Text**
+  - The question exactly as presented to the participant
+- **Question Type Display Name**
+  - The response format used to collect the data (e.g., Slider, Multiple Choice, Text Entry)
+- **Result Type**
+  - The data type of the stored value (e.g., numeric, categorical, string)
+- **Missingness Codes**
+  - The value(s) used to represent missing data (e.g., -999, NA)
+- **Response Range**
+  - The valid range or set of values the item can take (e.g., 0–100, 1–5)
+- **Response Text**
+  - The labels corresponding to the response options or endpoints of the range (e.g., "Not at all" to "Extremely")
+  
 
 ## Generating data dictionaries with WearITReadR
 

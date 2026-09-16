@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Codebooks
-parent: DataDescriptionStandard
+parent: Data Description Standard
 nav_order: 1
 ---
 
@@ -33,34 +33,89 @@ with raw files.
 
 One way to think about the difference: codebooks are built to be
 **human-accessible**, whereas data dictionaries are primarily
-**machine-readable**. The information in the two overlaps significantly —
-for example, both typically describe the mapping between the qualitative
-answers a participant selected and the numeric values that represent them
-in the data — but they serve different audiences and different points in
-the data pipeline.
+**machine-readable**. 
+
+Note that the information in data dictionaries and codebooks overlaps significantly. For example, both include some description of the mapping between the qualitative answers selected by participants and the numeric values that represent them in the data.    
 
 See [DataDictionaries](DataDictionaries) for the counterpart definition.
 
 ## What a codebook should include
 
 Following the design principles in the
-[DataDescriptionStandard](index) overview, a codebook should:
+[Data Description Standard](index) overview, a codebook should include:
 
-- Be written in a simple, human-readable markup format (HTML or Markdown
-  are preferred)
-- Include the conceptual meaning of each measured construct, not just its
-  numeric encoding
-- Provide full provenance for any item or scale used, including any
-  modification from its original/canonical form
-- Include rich paradata: how, how often, and under what conditions each
-  item was delivered
-- Include rich metadata: statistical description of the data to aid
-  interpretation
-- Include missingness codes and, where appropriate, missingness
-  description — see [DescribingMissingness](DescribingMissingness)
-- Include screenshots or short video clips of the delivered UI for
-  interactive or configurable items — see
-  [UIAndDelivery](UIAndDelivery)
+### Title page
+
+- Name of study
+- Authors
+- Any desired graphics
+- Funding source(s)
+
+### Abstract page
+
+- Brief description of study
+- Study aims
+- History, and date of data collection
+- Location of data collection
+- People involved and respective roles of those people
+  - Who, what, where, when, + what did you do
+
+### Executive summary (optional)
+
+- A results page summarizing main findings of the study
+
+### Table of contents
+
+### Variable page for each question
+
+**Text/name elements**
+
+- Variable name
+  - As it appears in the dataset
+- Human readable name
+- If it's a survey question
+  - Exactly as it is presented to participant
+- If observational, or obtained from passive technology
+  - Description of variable in layman's terms
+  - If layman's terms not possible, citation of a longer explanation of terms
+
+**Paradata / metadata elements**
+
+- Privacy status (e.g., is this identifying info?)
+- Modeling characteristics (e.g., reaction time data should be log transformed)
+- Transformations applied to the raw data
+- Skip logic
+  - For whom and when this data is collected
+  - Trigger / JIT-delivery logic
+  - Adaptive design logic
+- How the data was obtained
+  - Sensing, survey, observation, circling something on a page, digital slider, etc.
+- Type of data
+  - Numeric, categorical, continuous, etc.
+- Possible values of the data, including item codes (1 = strongly disagree)
+  - I.e., ranges from 0–10, 1–5 ranging from strongly disagree to strongly agree
+- Screenshot of question
+- Measurement citation
+- Distance between measurements
+  - e.g., 1 day, 1 hour (if complex, this will need to be described in the skip logic)
+
+**Statistical elements**
+
+- Descriptives of variable
+  - Min, max, mean, std dev, # of valid observations
+- Report missingness
+  - Frequency of missingness
+  - Structure of missingness
+    - MAR, MNAR, MCAR
+  - For repeated assessment data
+    - ICC, min, max, means, standard deviation, and missingness (planned and unplanned range)
+  - Types of missingness
+    - Refused, don't know, not applicable, not ascertained
+  - Code for types of missingness in data
+    - 99999, -1, -5, -7, NA, etc.
+  - For questions using uneven assessment intervals
+    - Descriptions of the min, max, means, and standard deviation of the distance between measurements
+
 
 ## Generating codebooks with WearITReadR
 

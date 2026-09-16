@@ -1,7 +1,7 @@
 ---
 layout: default
-title: UIAndDelivery
-parent: DataDescriptionStandard
+title: UI And Delivery
+parent: Data Description Standard
 nav_order: 6
 ---
 
@@ -19,14 +19,14 @@ nav_order: 6
 ## Why UI and delivery details matter
 
 The widespread availability of smart devices has substantially improved
-real-time survey assessment — they help ensure participants don't
+real-time survey assessment in many ways. Smart devices help ensure that participants don't
 fabricate or tamper with data, are compact, and include sensor
 technologies (cameras, microphones, accelerometers). On-device computation
-also allows real-time adaptation and automated prompt timing, so data is
-collected only at the desired moment.
+also allows real-time adaptation and automated prompt timing, so that data can be
+collected and intervention delivered using precise timing.
 
 But smart-device data collection relies on research software that lacks
-standardized interfaces, and researchers have enormous freedom in how they
+standardized interfaces. Researchers today have an enormous amount of flexibility in how they
 choose to deliver an assessment. For example, the same scale (say, the
 PANAS) might be delivered as:
 
@@ -36,10 +36,7 @@ PANAS) might be delivered as:
 - A spoken list via text-to-speech through a home assistant
 
 On top of these high-level choices, there's an enormous number of smaller
-UI decisions — layout, size, anchoring, and interactivity — that can also
-vary. Some visual-analog sliders provide live visual feedback on the
-chosen answer; others don't. These details are commonly left out of study
-descriptions, but can directly affect responses and outcomes.
+UI decisions to be made. The same scale delivered by two different data collection apps may vary by layout, size, anchoring, and interactivity. These details are rarely described and may bias the resulting distributions or results in unintuitive ways. 
 
 ### What we know changes outcomes
 
@@ -59,12 +56,9 @@ descriptions, but can directly affect responses and outcomes.
 
 Most of what's known here comes from standalone studies designed a priori
 to test these specific questions. Large-scale, standardized, FAIR
-description of UI elements would make it possible to run meta- and
-mega-analyses across studies already using the same scales in different
-forms — attributing variability to form, subgroup, or other factors — and
-could open the door to exploratory analysis of UI elements that haven't
-been examined yet, since researchers are unlikely to study a UI element
-they have no a priori theoretical reason to expect matters.
+description of UI elements would make it possible to run meta-analyses across 
+studies already using the same scales in different forms and could open the door to exploratory analysis of UI elements that haven't been examined yet, since researchers 
+are unlikely to study a UI element they have no a priori theoretical reason to expect matters.
 
 ## What to include
 

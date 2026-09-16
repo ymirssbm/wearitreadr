@@ -1,7 +1,7 @@
 ---
 layout: default
-title: DescribingMissingness
-parent: DataDescriptionStandard
+title: Describing Missingness
+parent: Data Description Standard
 nav_order: 4
 ---
 
@@ -27,7 +27,6 @@ missingness per variable — which is sufficient for traditional designs
 with one or a few equally-spaced assessments, but breaks down for complex,
 adaptive designs.
 
-### A worked example
 
 Consider a study assessing substance use craving in 100 participants.
 
@@ -84,8 +83,8 @@ For repeated-assessment data:
 
 ## Describing complex design more broadly
 
-Well-established standards exist for describing classical research
-protocols, and should still be followed alongside the above wherever
+Well-established standards exist for describing many research
+protocols already, and should still be followed alongside the above wherever
 applicable:
 
 - **Randomized controlled trials** — [CONSORT](http://www.consort-statement.org/) guidelines
