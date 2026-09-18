@@ -142,6 +142,7 @@ generateSurveyFlowchart <- function(survey, export = FALSE,
   # If its a block, set Question.Text to "Block"
   blockMap$Question.Text <- gsub("</?u>", "", blockMap$Question.Text)
   blockMap$Question.Text <- ifelse(is.na(blockMap$Question.Text), "Block", blockMap$Question.Text)
+  blockMap <- addMultiSliderLabels(blockMap, responseKey)
 
   # Change conditional type to the corresponding character rather then numeric
   type_map <- c("=", "<=", ">=", "<", ">", "!=")
@@ -177,24 +178,6 @@ generateSurveyFlowchart <- function(survey, export = FALSE,
     }
   )
 
-
-  # Clean + wrap. Multi-conditional entries are a vector (one element per path/group);
-  # everything else stays a single string, wrapped as before.
-  wrap_text <- function(text, width = 20) {
-    words <- strsplit(text, " ")[[1]]
-    lines <- character()
-    current_line <- ""
-    for (word in words) {
-      if (nchar(paste(current_line, word)) <= width) {
-        current_line <- trimws(paste(current_line, word))
-      } else {
-        lines <- c(lines, current_line)
-        current_line <- word
-      }
-    }
-    lines <- c(lines, current_line)
-    paste(lines, collapse = "<br/>")
-  }
 
   blockMap$Conditional.Threshold <- lapply(blockMap$Conditional.Threshold, function(vals) {
     if (all(is.na(vals))) return(vals)
@@ -268,6 +251,7 @@ generateSurveyFlowchart <- function(survey, export = FALSE,
 
   if (generateText) {
     blockMap$Conditional.Threshold <- gsub("<br/>", " ", blockMap$Conditional.Threshold)
+    blockMap$Question.Text <- gsub("<br/>", " ", blockMap$Question.Text)   # <-- add this
     output <- c()
     seen <- c()
     get_label <- function(item_id) {
@@ -351,4 +335,61 @@ generateSurveyFlowchart <- function(survey, export = FALSE,
     mermaid(flowchart_syntax)
   }
 
+}
+
+
+# Helper functions
+
+wrap_text <- function(text, width = 20) {
+  words <- strsplit(text, " ")[[1]]
+  lines <- character()
+  current_line <- ""
+  for (word in words) {
+    if (nchar(paste(current_line, word)) <= width) {
+      current_line <- trimws(paste(current_line, word))
+    } else {
+      lines <- c(lines, current_line)
+      current_line <- word
+    }
+  }
+  lines <- c(lines, current_line)
+  paste(lines, collapse = "<br/>")
+}
+
+
+addMultiSliderLabels <- function(blockMap, responseKey, width = 25, compact = FALSE) {
+
+  isSlider <- !is.na(blockMap$Question.Type.Display.Name) &
+    blockMap$Question.Type.Display.Name == "Multiple Slider"
+
+  for (i in which(isSlider)) {
+    id <- blockMap$Question.ID[i]
+
+    labels <- unique(responseKey$definition[responseKey$question %in% id &
+                                              !is.na(responseKey$definition) &
+                                              responseKey$type %in% "Multi Slider"])
+    labels <- trimws(labels)
+    labels <- labels[nzchar(labels)]
+    if (length(labels) == 0) next
+
+    labels <- gsub("[^a-zA-Z0-9 ,'-]", " ", labels)
+    labels <- trimws(gsub("\\s+", " ", labels))
+
+    if (compact) {
+      labelBlock <- wrap_text(paste(labels, collapse = " / "), width)
+    } else {
+      labelBlock <- paste(
+        vapply(labels, function(l) wrap_text(paste0("- ", l), width), character(1)),
+        collapse = "<br/>"
+      )
+    }
+
+    blockMap$Question.Text[i] <- paste0(
+      wrap_text(blockMap$Question.Text[i], width),
+      "<br/>",
+      labelBlock
+    )
+  }
+
+  blockMap
 }
