@@ -7,10 +7,12 @@
   "type": "object",
   "examples": [
     {
-      "Study.Name": "Recovery Community Center Project",
-      "authors": "Jane Smith, John Doe, Emily R. Johnson",
-      "funding": "NIH Grant R01DA012345; NSF Award 9876543",
-      "abstract": "This study examined daily stress and recovery patterns among adults attending a recovery community center. Participants completed ecological momentary assessments four times daily over 14 days across two bursts."
+      "Study.Metadata": {
+        "Study.Name": "Recovery Community Center Project",
+        "authors": "Jane Smith, John Doe, Emily R. Johnson",
+        "funding": "NIH Grant R01DA012345; NSF Award 9876543",
+        "abstract": "This study examined daily stress and recovery patterns among adults attending a recovery community center. Participants completed ecological momentary assessments four times daily over 14 days across two bursts."
+      }
     }
   ],
   "properties": {
@@ -52,21 +54,243 @@
         }
       }
     },
-    "Study.Name": {
-      "description": "Human readable long name for a study",
-      "type": "string"
-    },
-    "authors": {
-      "description": "String of all people to be credited for this study. This will appear in the authors section of a generated codebook.",
-      "type": "string"
-    },
-    "funding": {
-      "description": "String containing relevant funding info for the study",
-      "type": "string"
-    },
-    "abstract": {
-      "description": "String containing qualitative description of the study. This could include main study objectives, relevant findings, study population etc.",
-      "type": "string"
+    "Study.Metadata": {
+      "description": "Study- and dataset-level metadata: identification, credits, provenance, sampling, recruitment flow, access, regulatory restrictions, reuse, and linkage to other datasets.",
+      "type": "object",
+      "$comment": "Question.ID references in Identifier.Groups and Data.Provenance are strings pointing to Question.ID values elsewhere in this document. JSON Schema cannot verify these resolve; consuming tools must check independently.",
+      "properties": {
+        "Study.Name": {
+          "description": "Human readable long name for a study",
+          "type": "string"
+        },
+        "authors": {
+          "description": "String of all people to be credited for this study. This will appear in the authors section of a generated codebook.",
+          "type": "string"
+        },
+        "funding": {
+          "description": "String containing relevant funding info for the study",
+          "type": "string"
+        },
+        "abstract": {
+          "description": "String containing qualitative description of the study. This could include main study objectives, relevant findings, study population etc.",
+          "type": "string"
+        },
+        "Data.Version": {
+          "description": "Version of the dataset (distinct from the schema 'version' field, which versions this specification format).",
+          "type": "object",
+          "properties": {
+            "Version": { "type": "string", "description": "Dataset version identifier, e.g. '2.1.0' or 'Wave 3 release'." },
+            "Release.Date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+            "Changelog": { "type": "string", "description": "What changed relative to the previous version." }
+          },
+          "required": ["Version"]
+        },
+        "Protocol.Links": {
+          "description": "Links to IRB documents, GitHub repositories, preregistrations, or other protocol descriptions.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Type": { "type": "string", "enum": ["IRB", "GitHub", "Preregistration", "OSF", "Protocol Paper", "Other"] },
+              "Label": { "type": "string" },
+              "URL": { "type": "string", "format": "uri" },
+              "IRB.Number": { "type": "string", "description": "IRB protocol number, if Type is IRB." }
+            },
+            "required": ["Type", "URL"]
+          }
+        },
+        "Sampling": {
+          "description": "How participants were sampled.",
+          "type": "object",
+          "properties": {
+            "Method": {
+              "type": "string",
+              "description": "e.g. convenience, probability, stratified, snowball, respondent-driven, census."
+            },
+            "Target.Population": { "type": "string" },
+            "Sampling.Frame": { "type": "string", "description": "The list or source from which participants were drawn." },
+            "Description": { "type": "string" }
+          },
+          "required": ["Method"]
+        },
+        "CONSORT": {
+          "description": "Recruitment, eligibility, selection, and participant flow. Flow stages are free-form so the structure works for both trials and observational designs.",
+          "type": "object",
+          "properties": {
+            "Recruitment": {
+              "type": "object",
+              "properties": {
+                "Setting": { "type": "string" },
+                "Methods": { "type": "string", "description": "e.g. flyers, clinic referral, social media, panel." },
+                "Start.Date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+                "End.Date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+              }
+            },
+            "Eligibility": {
+              "type": "object",
+              "properties": {
+                "Inclusion.Criteria": { "type": "array", "items": { "type": "string" } },
+                "Exclusion.Criteria": { "type": "array", "items": { "type": "string" } }
+              }
+            },
+            "Selection": {
+              "type": "string",
+              "description": "How eligible individuals were selected or allocated into the study (and into arms/groups, if applicable)."
+            },
+            "Flow": {
+              "description": "Ordered participant-flow stages, e.g. Assessed for eligibility, Excluded, Enrolled, Allocated, Lost to follow-up, Analyzed.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Stage": { "type": "string" },
+                  "N": { "type": "integer", "minimum": 0 },
+                  "Reasons": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Reason": { "type": "string" },
+                        "N": { "type": "integer", "minimum": 0 }
+                      },
+                      "required": ["Reason"]
+                    }
+                  }
+                },
+                "required": ["Stage", "N"]
+              }
+            }
+          }
+        },
+        "Data.Provenance": {
+          "description": "Ordered record of how the released data were derived from raw collection, including cleaning, recoding, merging, scoring, and de-identification steps.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Step": { "type": "integer", "minimum": 1, "description": "Position of this activity in the processing sequence." },
+              "Activity": {
+                "type": "string",
+                "description": "Short name for the activity, e.g. 'Remove test accounts', 'Reverse code PSS items', 'Merge sensor data', 'Top-code age'."
+              },
+              "Description": { "type": "string" },
+              "Inputs": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Question.IDs, files, or dataset versions this activity used."
+              },
+              "Outputs": {
+                "type": "array",
+                "items": { "type": "string" },
+                "description": "Question.IDs, files, or dataset versions this activity produced or modified."
+              },
+              "Agent": { "type": "string", "description": "Person, team, or software responsible for this activity." },
+              "Date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+              "Script.URL": { "type": "string", "format": "uri" }
+            },
+            "required": ["Step", "Activity"]
+          }
+        },
+        "Data.Access": {
+          "description": "How to obtain the data.",
+          "type": "object",
+          "properties": {
+            "Access.Level": { "type": "string", "enum": ["Open", "Registered", "Controlled", "Restricted", "Not Available"] },
+            "Repository": { "type": "string", "description": "e.g. ICPSR, NDA, OSF, Dataverse." },
+            "URL": { "type": "string", "format": "uri" },
+            "DUA.Required": { "type": "boolean", "description": "Whether a data use agreement is required." },
+            "Contact": { "type": "string" },
+            "Instructions": { "type": "string" }
+          },
+          "required": ["Access.Level"]
+        },
+        "Publications": {
+          "description": "Published papers that use this dataset.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Citation": { "type": "string", "description": "APA-formatted citation." },
+              "DOI": { "type": "string" },
+              "Year": { "type": "integer" }
+            },
+            "required": ["Citation"]
+          }
+        },
+        "Regulatory.Restrictions": {
+          "description": "Legal and regulatory frameworks governing this data.",
+          "type": "object",
+          "properties": {
+            "Frameworks": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["HIPAA", "FERPA", "42 CFR Part 2", "Common Rule", "GDPR", "COPPA", "State Law", "Other"]
+              },
+              "uniqueItems": true
+            },
+            "Certificate.Of.Confidentiality": { "type": "boolean" },
+            "Notes": { "type": "string" }
+          }
+        },
+        "Identifier.Groups": {
+          "description": "Sets of variables that are identifying or high-risk in combination (quasi-identifiers, differential identifiability). Single-item identifiers are flagged in itemMap.Identifying.Info.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Label": { "type": "string" },
+              "Question.IDs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+              "Risk.Type": {
+                "type": "string",
+                "enum": ["Direct Identifier", "Quasi-Identifier", "Differentially Identifiable", "High Risk to Participant", "Other"]
+              },
+              "Description": { "type": "string" }
+            },
+            "required": ["Question.IDs", "Risk.Type"]
+          }
+        },
+        "Data.Usage": {
+          "description": "How heavily the data have been used, for privacy and generalizability purposes.",
+          "type": "object",
+          "properties": {
+            "Access.Grant.Count": { "type": "integer", "minimum": 0, "description": "Number of approved data access requests." },
+            "Publication.Count": { "type": "integer", "minimum": 0 },
+            "Privacy.Budget": {
+              "type": "object",
+              "description": "For differentially private releases.",
+              "properties": {
+                "Epsilon.Total": { "type": "number", "minimum": 0 },
+                "Epsilon.Spent": { "type": "number", "minimum": 0 }
+              }
+            },
+            "Generalizability.Notes": {
+              "type": "string",
+              "description": "Qualitative notes on overuse, e.g. hypotheses already tested, risk of garden-of-forking-paths."
+            },
+            "Last.Updated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+          }
+        },
+        "Linkages": {
+          "description": "Relationships to other datasets.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Dataset.Name": { "type": "string" },
+              "Relationship": {
+                "type": "string",
+                "enum": ["Subset Of", "Superset Of", "Linked By ID", "Overlapping Sample", "Derived From", "Other"]
+              },
+              "Linkage.Key": { "type": "string", "description": "Variable used to link records, if any (e.g. External.ID)." },
+              "URL": { "type": "string", "format": "uri" },
+              "Notes": { "type": "string" }
+            },
+            "required": ["Dataset.Name", "Relationship"]
+          }
+        }
+      },
+      "required": ["Study.Name"]
     },
     "schedules": {
       "description": "Array containing schedules for a study",
@@ -438,7 +662,7 @@
                   ],
                   "Conditional.Info": {
                     "Conditional.Master.Item.ID": null,
-                    "Conditional.Child.Item.ID": null,
+                    "Conditional.Child.Mappings": null,
                     "Conditional.Fail.Item.ID": null,
                     "Conditional.Threshold": null,
                     "Conditional.Type": null
@@ -930,8 +1154,8 @@
           "type": "boolean"
         },
         "Identifying.Info": {
-          "description": "If Identifying.Info is true, describes the category of identifying information this item captures (e.g. 'SSN', 'Government ID', 'HIPAA identifier - medical record number', 'Financial account number', 'Biometric', 'Full legal name', 'Address', 'Other').",
-          "type": "string"
+          "description": "Category of identifying information this item captures (e.g. 'SSN', 'Government ID', 'HIPAA identifier - medical record number', 'Financial account number', 'Biometric', 'Full legal name', 'Address', 'Other'). Null if the item captures no identifying information.",
+          "type": ["string", "null"]
         },
         "Data.Type": {
           "description": "Type of data this item produces.",
@@ -1060,7 +1284,7 @@
     }
   },
   "required": [
-    "Study.Name",
+    "Study.Metadata",
     "schedules",
     "surveys",
     "blockMap"
