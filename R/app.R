@@ -781,320 +781,189 @@ launch_app_server <- function(input, output, session) {
 
 
   #---------------------------------------------
-  # AI Chatbot Assistant
+  # AI Chatbot Assistant (bring your own AI)
   #---------------------------------------------
 
-  # Initialize chatbot reactive values
-  chat_messages <- reactiveVal(list())
-  assistant <- reactiveVal(NULL)
+  welcome <- list(list(
+    role = "assistant",
+    content = "Hi! I'm your AI Study Assistant. Enter your AI URL and API key above, then ask me to create or change a study. Type 'help' to see what I can do."
+  ))
+  chat_messages  <- reactiveVal(welcome)
+  assistant      <- reactiveVal(NULL)   # setWorkingDirectory observer already resets this
+  tool_log       <- new.env()
+  tool_log$names <- character()
 
-  # Initialize the assistant when credentials are available
-  observe({
-    req(input$AI_URL, input$AIApiToken, working_dir())
-    if (is.null(assistant())) {
-      tryCatch({
-        schema_dir <- file.path(pkg_dir, "schema")
-        output_dir <- working_dir()
-        # Check and install dependencies
-        py_run_string(
-          "import importlib
-import importlib.util
-packages = ['pandas', 'langchain_openai', 'jsonschema', 'langchain_core']
-missing = [p for p in packages if importlib.util.find_spec(p) is None]
-")
-        if (length(py$missing) > 0) {
-          showNotification("Installing AI dependencies...", type = "message", duration = 5)
-          py_install(py$missing, pip = TRUE)
-        }
-        source_python(file.path(python_dir, "aiStudyDispatcher.py"))
-        # Create assistant instance
-        assistant(py$StudyAssistant(
-          url = input$AI_URL,
-          api_token = input$AIApiToken,
-          schema_path = schema_dir,
-          output_path = output_dir
-        ))
-        # Add welcome message
-        chat_messages(list(
-          list(role = "assistant",
-               content = "Hi! I'm your AI Study Assistant. I can help you generate new studies or modify existing ones. Type 'help' to see what I can do!")
-        ))
-      }, error = function(e) {
-        showNotification(paste("Error initializing assistant:", e$message),
-                         type = "error", duration = 10)
-      })
+  tool_labels <- c(
+    get_study_schema         = "read the study schema",
+    search_item_repository   = "searched the item repository",
+    get_current_study        = "read your current study",
+    save_study               = "validated & saved the study",
+    pull_data                = "pulled data from Wear-IT",
+    generate_codebook        = "generated the codebook",
+    generate_data_dictionary = "generated the data dictionary",
+    survey_flowchart         = "built a survey flowchart"
+  )
+
+  add_msg <- function(role, content) {
+    msgs <- chat_messages()
+    msgs[[length(msgs) + 1]] <- list(role = role, content = content)
+    chat_messages(msgs)
+  }
+
+  # Changing the URL or key starts a fresh connection
+  observeEvent(list(input$AI_URL, input$AIApiToken), {
+    assistant(NULL)
+  }, ignoreInit = TRUE)
+
+  get_assistant <- function() {
+    if (!is.null(assistant())) return(assistant())
+    a <- wearit_chat(
+      url     = input$AI_URL,
+      api_key = input$AIApiToken,
+      dir     = working_dir(),
+      on_tool = function(name) tool_log$names <- c(tool_log$names, name)
+    )
+    assistant(a)
+    a
+  }
+
+  # One turn of conversation; used by Send and by the Advanced buttons
+  run_turn <- function(user_message, show_user = TRUE) {
+    if (is.null(working_dir())) {
+      add_msg("system", "Please set your working directory on the Home tab first.")
+      return(invisible())
     }
-  })
+    if (show_user) add_msg("user", user_message)
 
-  # Render chat messages with auto-scroll
+    if (tolower(trimws(user_message)) %in% c("help", "?", "commands", "what can you do")) {
+      add_msg("assistant", wearit_help_text(working_dir()))
+      return(invisible())
+    }
+
+    study_file <- file.path(working_dir(), "study_output.json")
+    before <- if (file.exists(study_file)) file.mtime(study_file) else NA
+    tool_log$names <- character()
+
+    shinyjs::runjs("document.getElementById('chatSpinner').style.display = 'block';")
+    shinyjs::runjs("document.getElementById('sendChat').disabled = true;")
+
+    tryCatch({
+      a <- get_assistant()
+      reply <- as.character(a$chat(user_message, echo = "none"))
+
+      used <- unique(tool_log$names)
+      if (length(used) > 0) {
+        nice <- ifelse(used %in% names(tool_labels), tool_labels[used], used)
+        add_msg("system", paste("AI", paste(nice, collapse = ", ")))
+      }
+
+      if (!nzchar(trimws(reply))) reply <- "Done."
+      add_msg("assistant", reply)
+
+      after <- if (file.exists(study_file)) file.mtime(study_file) else NA
+      if (!identical(before, after) && !is.na(after)) {
+        showNotification("Study saved! You can now generate a codebook.", type = "message")
+      }
+      if (file.exists(file.path(working_dir(), "blockMap.csv"))) {
+        bm <- read.csv(file.path(working_dir(), "blockMap.csv"))
+        updateSelectInput(session, "survey",
+                          choices = unique(bm$Survey[!is.na(bm$Survey)]))
+      }
+    }, error = function(e) {
+      assistant(NULL)  # reconnect fresh next time
+      add_msg("assistant", paste0(
+        "Sorry, I couldn't reach your AI. Check your AI URL and API key above.\n\n",
+        "Details: ", conditionMessage(e)
+      ))
+    })
+
+    shinyjs::runjs("document.getElementById('chatSpinner').style.display = 'none';")
+    shinyjs::runjs("document.getElementById('sendChat').disabled = false;")
+  }
+
+  # Render chat messages
   output$chatMessages <- renderUI({
     messages <- chat_messages()
 
     if (length(messages) == 0) {
       return(div(
         style = "text-align: center; color: #999; padding: 50px;",
-        icon("comments", "fa-3x"),
-        br(), br(),
+        icon("comments", "fa-3x"), br(), br(),
         "Start a conversation..."
       ))
     }
 
     message_divs <- lapply(messages, function(msg) {
       if (msg$role == "user") {
-        div(
-          style = "background: #3c8dbc; color: white; padding: 10px 15px; border-radius: 15px; margin: 10px 20% 10px 10px; text-align: left;",
-          icon("user"),
-          " ",
-          msg$content
-        )
+        div(style = "background: #3c8dbc; color: white; padding: 10px 15px; border-radius: 15px; margin: 10px 20% 10px 10px; text-align: left;",
+            icon("user"), " ", msg$content)
       } else if (msg$role == "assistant") {
-        div(
-          style = "background: white; color: #333; padding: 10px 15px; border-radius: 15px; margin: 10px 10px 10px 20%; border: 1px solid #ddd; text-align: left;",
-          " ",
-          HTML(gsub("\n", "<br>", msg$content))
-        )
-      } else if (msg$role == "system") {
-        div(
-          style = "background: #f0f0f0; color: #666; padding: 8px 15px; border-radius: 10px; margin: 10px auto; text-align: center; max-width: 80%; font-style: italic;",
-          icon("info-circle"),
-          " ",
-          msg$content
-        )
+        div(style = "background: white; color: #333; padding: 10px 15px; border-radius: 15px; margin: 10px 10px 10px 20%; border: 1px solid #ddd; text-align: left;",
+            HTML(markdown::markdownToHTML(text = msg$content, fragment.only = TRUE)))
+      } else {
+        div(style = "background: #f0f0f0; color: #666; padding: 8px 15px; border-radius: 10px; margin: 10px auto; text-align: center; max-width: 80%; font-style: italic;",
+            icon("info-circle"), " ", msg$content)
       }
     })
 
-    # Add auto-scroll JavaScript
     tagList(
       message_divs,
       tags$script(HTML("
-      setTimeout(function() {
-        var chatBox = document.getElementById('chatHistory');
-        if(chatBox) chatBox.scrollTop = chatBox.scrollHeight;
-      }, 100);
-    "))
+        setTimeout(function() {
+          var chatBox = document.getElementById('chatHistory');
+          if (chatBox) chatBox.scrollTop = chatBox.scrollHeight;
+        }, 100);
+      "))
     )
   })
 
-  # Main send handler - SIMPLE SYNCHRONOUS VERSION
+  # Send
   observeEvent(input$sendChat, {
-    req(input$chatInput, assistant(), working_dir())
-
+    req(input$chatInput)
     user_message <- trimws(input$chatInput)
     if (user_message == "") return()
-
-    # Add user message immediately
-    msgs <- chat_messages()
-    msgs[[length(msgs) + 1]] <- list(role = "user", content = user_message)
-    chat_messages(msgs)
-
-    # Clear input
     updateTextAreaInput(session, "chatInput", value = "")
-
-    # Show spinner
-    shinyjs::runjs("document.getElementById('chatSpinner').style.display = 'block';")
-    shinyjs::runjs("document.getElementById('sendChat').disabled = true;")
-
-    # Tiny delay to let UI update
-    Sys.sleep(0.05)
-
-    # Process with assistant
-    tryCatch({
-      result <- assistant()$chat(user_message)
-
-      if (result$action == "generate") {
-        source_python(file.path(python_dir, "aiStudyGenerator.py"))
-        generate_ai_study(
-          url = input$AI_URL,
-          api_token = input$AIApiToken,
-          query = result$query,
-          schema_path = file.path(pkg_dir, "schema"),
-          item_repository_path = file.path(codebook_dir, "Data"),
-          output_path = working_dir()
-        )
-        parseJsonSpec(file.path(working_dir(), "study_output.json"))
-
-        msgs <- chat_messages()
-        msgs[[length(msgs) + 1]] <- list(
-          role = "assistant",
-          content = "✅ Study generated successfully! You can now modify it or generate a codebook."
-        )
-        chat_messages(msgs)
-
-      } else if (result$action == "modify") {
-        source_python(file.path(python_dir, "aiStudyModifier.py"))
-        modify_ai_study(
-          url = input$AI_URL,
-          api_token = input$AIApiToken,
-          query = result$query,
-          schema_path = file.path(pkg_dir, "schema"),
-          item_repository_path = file.path(codebook_dir, "Data"),
-          output_path = working_dir()
-        )
-        parseJsonSpec(file.path(working_dir(), "study_output.json"))
-
-        msgs <- chat_messages()
-        msgs[[length(msgs) + 1]] <- list(
-          role = "assistant",
-          content = "Study modified successfully!"
-        )
-        chat_messages(msgs)
-
-      } else {
-        response_text <- result$response
-        if (is.null(response_text) || response_text == "") {
-          response_text <- "I'm having trouble responding right now. Could you try rephrasing that?"
-        }
-
-        msgs <- chat_messages()
-        msgs[[length(msgs) + 1]] <- list(
-          role = "assistant",
-          content = response_text
-        )
-        chat_messages(msgs)
-      }
-
-    }, error = function(e) {
-      msgs <- chat_messages()
-      msgs[[length(msgs) + 1]] <- list(
-        role = "assistant",
-        content = paste("Error:", e$message)
-      )
-      chat_messages(msgs)
-    })
-
-    # Hide spinner
-    shinyjs::runjs("document.getElementById('chatSpinner').style.display = 'none';")
-    shinyjs::runjs("document.getElementById('sendChat').disabled = false;")
+    run_turn(user_message)
   })
 
-  # Clear chat
+  # Clear
   observeEvent(input$clearChat, {
-    chat_messages(list())
-    if (!is.null(assistant())) {
-      assistant()$reset_conversation()
-    }
+    chat_messages(welcome)
+    if (!is.null(assistant())) assistant()$set_turns(list())
     showNotification("Chat cleared", type = "message")
   })
 
-  # Help button
+  # Help + examples
   observeEvent(input$helpBtn, {
     updateTextAreaInput(session, "chatInput", value = "help")
   })
-
-  # Example buttons
   observeEvent(input$exampleGenerate, {
     updateTextAreaInput(session, "chatInput",
                         value = "Create a study measuring stress and anxiety in college students with daily surveys")
   })
-
   observeEvent(input$exampleModify, {
     updateTextAreaInput(session, "chatInput",
                         value = "Add demographic questions for age, gender, and year in school")
   })
 
-  # Keep existing direct generation/modification code
-  # Generate AI Study (direct prompt, bypasses dispatcher intent classification)
+  # Advanced: direct prompts go through the same AI, with the intent forced
   observeEvent(input$generateAIStudy, {
-    req(input$AI_URL, input$AIApiToken, input$aiGenerationPrompt, assistant(), working_dir())
-
-    tryCatch({
-      schema_dir <- file.path(pkg_dir, "schema")
-      item_repo_dir <- file.path(codebook_dir, "Data")
-      output_dir <- working_dir()
-
-      py_run_string(
-        "import importlib
-import importlib.util
-packages = ['pandas', 'langchain_openai', 'jsonschema', 'langchain_core']
-missing = [p for p in packages if importlib.util.find_spec(p) is None]
-"
-      )
-
-      if (length(py$missing) > 0) {
-        showNotification("Installing AI dependencies, this may take a moment...", type = "message")
-        py_install(py$missing, pip = TRUE)
-      }
-
-      notif_id <- showNotification("Generating study...", type = "message", duration = NULL)
-
-      source_python(file.path(python_dir, "aiStudyGenerator.py"))
-      generate_ai_study(
-        url                  = input$AI_URL,
-        api_token            = input$AIApiToken,
-        query                = input$aiGenerationPrompt,
-        schema_path          = schema_dir,
-        item_repository_path = item_repo_dir,
-        output_path          = output_dir
-      )
-
-      parseJsonSpec(file.path(output_dir, "study_output.json"))
-
-      removeNotification(notif_id)
-      showNotification("Study generated!", type = "message")
-
-      msgs <- chat_messages()
-      msgs[[length(msgs) + 1]] <- list(
-        role = "system",
-        content = paste("Study generated via direct prompt:", input$aiGenerationPrompt)
-      )
-      chat_messages(msgs)
-
-    }, error = function(e) {
-      showNotification(paste("Error generating AI study:", conditionMessage(e)), type = "error", duration = 10)
-      print(e)
-    })
+    req(input$aiGenerationPrompt)
+    add_msg("system", paste("Direct generation:", input$aiGenerationPrompt))
+    run_turn(paste0("Create a NEW study (mode = 'generate'). Request: ",
+                    input$aiGenerationPrompt), show_user = FALSE)
   })
 
-  # Modify AI Study (direct prompt, bypasses dispatcher intent classification)
   observeEvent(input$modifyAIStudy, {
-    req(input$AI_URL, input$AIApiToken, input$aiModificationPrompt, assistant(), working_dir())
-
-    tryCatch({
-      schema_dir <- file.path(pkg_dir, "schema")
-      item_repo_dir <- file.path(codebook_dir, "Data")
-      output_dir <- working_dir()
-
-      py_run_string(
-        "import importlib
-import importlib.util
-packages = ['pandas', 'langchain_openai', 'jsonschema', 'langchain_core']
-missing = [p for p in packages if importlib.util.find_spec(p) is None]
-"
-      )
-
-      if (length(py$missing) > 0) {
-        showNotification("Installing AI dependencies, this may take a moment...", type = "message")
-        py_install(py$missing, pip = TRUE)
-      }
-
-      notif_id <- showNotification("Modifying study...", type = "message", duration = NULL)
-
-      source_python(file.path(python_dir, "aiStudyModifier.py"))
-      modify_ai_study(
-        url                  = input$AI_URL,
-        api_token            = input$AIApiToken,
-        query                = input$aiModificationPrompt,
-        schema_path          = schema_dir,
-        item_repository_path = item_repo_dir,
-        output_path          = output_dir
-      )
-
-      parseJsonSpec(file.path(output_dir, "study_output.json"))
-
-      removeNotification(notif_id)
-      showNotification("Study modified!", type = "message")
-
-      msgs <- chat_messages()
-      msgs[[length(msgs) + 1]] <- list(
-        role = "system",
-        content = paste("Study modified via direct prompt:", input$aiModificationPrompt)
-      )
-      chat_messages(msgs)
-
-    }, error = function(e) {
-      showNotification(paste("Error modifying AI study:", conditionMessage(e)), type = "error", duration = 10)
-      print(e)
-    })
+    req(input$aiModificationPrompt)
+    if (is.null(working_dir()) ||
+        !file.exists(file.path(working_dir(), "study_output.json"))) {
+      add_msg("system", "No study yet. Generate one first.")
+      return()
+    }
+    add_msg("system", paste("Direct modification:", input$aiModificationPrompt))
+    run_turn(paste0("MODIFY the current study (mode = 'modify'). Request: ",
+                    input$aiModificationPrompt), show_user = FALSE)
   })
 }
 

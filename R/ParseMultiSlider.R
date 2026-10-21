@@ -41,5 +41,3 @@ parseMultiSlider <- function(blockMap, responseKey) {
   blockMap
 }
 
-# usage
-test <- parseMultiSlider(blockMap = blockMap,responseKey =responseKey)
